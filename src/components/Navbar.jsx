@@ -58,7 +58,7 @@ const MainNav = () => {
                 fill="currentColor"
               />
             </svg> */}
-            FMCG
+            <img src=""/>
           </Link>
           <nav className="hidden space-x-2 md:flex">
           <button className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
@@ -69,9 +69,6 @@ const MainNav = () => {
               onMouseEnter={() => setActiveDropdown("vehicles")}
               // onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
-                Product
-              </button>
             </div>
             <button className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
               Service
@@ -82,9 +79,6 @@ const MainNav = () => {
             <Link to="/Contact" className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
               Contact us
             </Link>
-            <button className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
-              Shop
-            </button>
             <Link to="/faq" className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
               FAQ
             </Link>
