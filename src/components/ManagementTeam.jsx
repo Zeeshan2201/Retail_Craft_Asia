@@ -44,7 +44,7 @@ function Card({ children, className }) {
 
 function ManagementTeam() {
   return (
-    <section className="bg-gradient-to-r from-yellow-600 to-white-500 py-15 px-6 bg-gray-100">
+    <section className="bg-gradient-to-r from-yellow-600 to-white-500 py-20 px-36 bg-gray-100">
       <h2 className="text-4xl font-bold text-center mb-8">Our Management Team</h2>
 
       {/* Wrapper div to ensure proper rendering */}

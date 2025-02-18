@@ -13,8 +13,8 @@ function WhyChooseUs() {
   const [selected, setSelected] = useState({ title: "WHY CHOOSE US", text: "We provide top-tier services with a commitment to excellence and efficiency.", color: "gold" });
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '50px', background: '#f8f9fa', position: 'relative' }}
-    className='pl-[36px]'>
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '80px', background: '#f8f9fa', position: 'relative' }}
+    className='pl-[60px]'>
       <motion.div 
         whileHover={{ scale: 1.1, rotate: 5 }}
         style={{ width: '300px', height: '300px', background: `radial-gradient(circle, ${selected.color},rgb(239, 192, 75))`, borderRadius: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: 'white', textAlign: 'center', position: 'relative', zIndex: 2, transition: 'all 0.2s ease-in-out' }}
