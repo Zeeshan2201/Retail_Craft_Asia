@@ -49,7 +49,7 @@ const MainNav = () => {
 
   return (
     <>
-      <header className="fixed left-0 right-0 top-0 z-50 flex h-16 items-center bg-white px-12">
+      <header className="fixed left-0 right-0 top-0 z-50 flex h-16 items-center bg-white">
         <div className="flex flex-1 items-center gap-16">
           <Link to="/" className="shrink-0">
             {/* <svg className="h-6 w-32" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
