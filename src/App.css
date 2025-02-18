@@ -1,6 +1,5 @@
 /* Apply the gradient to the entire website */
-body {
-  overflow-x: hidden;
+/* body {
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
@@ -8,7 +7,7 @@ body {
   align-items: center;
   width: 100vw;
   box-sizing: border-box;
-}
+} */
 
 .foundation-principles-container {
   text-align: center;
@@ -17,10 +16,9 @@ body {
   padding: 0;
 }
 
-/* Who We Are Section */
 .who-we-are-section {
-  height: 100vh; /* Full viewport height */
-  width: 100vw; /* Full viewport width */
+  height: 100vh; 
+  width: 100vw; 
   background-size: cover;
   background-position: center;
   display: flex;
@@ -29,9 +27,9 @@ body {
   color: white;
   text-align: center;
   box-sizing: border-box;
-  position: relative; /* Required for absolute positioning of child elements */
-  overflow: hidden; /* Prevent content from overflowing */
-  perspective: 1000px; /* Required for 3D transformations */
+  position: relative; 
+  overflow: hidden; 
+  perspective: 1000px;
 }
 .who-we-are-content,
 .who-we-are-back-content {
@@ -50,21 +48,21 @@ body {
   border-radius: 15px;
   box-sizing: border-box;
   transform-style: preserve-3d;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center the element */
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
 }
 
 .who-we-are-back-content {
-  transform: translate(-50%, -50%) rotateY(180deg); /* Initially hidden */
+  transform: translate(-50%, -50%) rotateY(180deg);
 }
 
 .who-we-are-section.flipped .who-we-are-content {
-  transform: translate(-50%, -50%) rotateY(180deg); /* Flip front content */
+  transform: translate(-50%, -50%) rotateY(180deg); 
 }
 
 .who-we-are-section.flipped .who-we-are-back-content {
-  transform: translate(-50%, -50%) rotateY(0deg); /* Show back content */
+  transform: translate(-50%, -50%) rotateY(0deg); 
 }
 .who-we-are-heading {
   font-size: 40px;
@@ -84,8 +82,6 @@ body {
 }
 
 
-/* Principles Section */
-/* Principles Section */
 .principles-section {
   padding: 60px 20px;
   background: linear-gradient(to bottom right, #ffffff, #95909043);
@@ -106,22 +102,22 @@ body {
   font-weight: bold;
   margin-bottom: 40px;
   text-align: center;
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scale */
+  transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .principles-heading:hover {
-  color: #007bff; /* Change color on hover */
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  color: #007bff; 
+  transform: scale(1.1);
 }
 
 .principles-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-template-rows: repeat(2, 1fr); /* 2 rows */
-  gap: 30px; /* Space between cards */
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 30px; 
   width: 100%;
-  max-width: 1200px; /* Limit the grid width */
-  margin: 0 auto; /* Center the grid */
+  max-width: 1200px; 
+  margin: 0 auto; 
   box-sizing: border-box;
 }
 
@@ -133,7 +129,7 @@ body {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  width: 100%; /* Ensure cards take full width of their grid cell */
+  width: 100%; 
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -142,8 +138,8 @@ body {
 }
 
 .principle-card:hover {
-  transform: scale(1.05); /* Zoom effect on hover */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+  transform: scale(1.05); 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
 }
 
 .principle-image {
@@ -162,7 +158,7 @@ body {
 }
 
 .principle-title:hover {
-  color: #0088ff; /* Change color on hover */
+  color: #0088ff; 
 }
 
 .principle-card p {
@@ -179,7 +175,7 @@ body {
   visibility: visible;
   height: auto;
 }
-/* Vision & Mission Sections */
+
 .vision-section,
 .mission-section {
   padding: 60px 20px;
@@ -254,7 +250,7 @@ body {
   color: #333;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -275,7 +271,6 @@ body {
   }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .principles-grid {
     grid-template-columns: repeat(2, 1fr);
