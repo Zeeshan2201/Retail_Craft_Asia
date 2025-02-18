@@ -19,13 +19,8 @@
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.5",
-<<<<<<< HEAD
     "swiper": "^11.2.4",
     "three": "^0.173.0"
-=======
-    "swiper": "^11.2.3",
-    "tailwindcss-animate": "^1.0.7"
->>>>>>> 7507e3c40f97758e1a3b566f4a14b1142441066e
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
