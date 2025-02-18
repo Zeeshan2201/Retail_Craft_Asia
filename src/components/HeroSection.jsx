@@ -112,3 +112,93 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+
+// import React from "react";
+// import bgImage from "../images/bg.jpg";
+// import logo from "../images/2.png";
+// import codeImage from "../images/code.png";
+// import bg1 from "../images/bg.png";
+// import bg2 from "../images/bg2.png";
+// import mockup from "../images/mockup.png";
+// import rock1 from "../images/rock1.png";
+// import rock2 from "../images/rock2.png";
+// import rock3 from "../images/rock3.png";
+
+// const HeroSection = () => {
+//   return (
+//     <section
+//       className="relative h-screen bg-gray-300 bg-opacity-75 bg-cover bg-center"
+//       style={{ backgroundImage: `url(${bgImage})` }}
+//     >
+//       <div className="container mx-auto px-4 py-16">
+//         {/* Header */}
+//         <header className="flex justify-between items-start flex-wrap">
+//           <div className="flex flex-col justify-start items-start max-w-lg">
+//             <h1 className="text-5xl font-semibold text-gray-800 font-karantina leading-tight">
+//               CSS ONLY
+//             </h1>
+//             <img src={logo} alt="Logo" className="w-32 mt-4" />
+//           </div>
+//           <div className="text-right max-w-xs">
+//             <h3 className="text-4xl font-karantina text-gray-800">LUN DEV</h3>
+//             <div className="mt-2">
+//               <p>Design By</p>
+//               <p className="font-medium">Lun Dev</p>
+//             </div>
+//             <div className="mt-2">
+//               <p>Code By</p>
+//               <p className="font-medium">Lun Dev</p>
+//             </div>
+//             <img src={codeImage} alt="Code" className="mt-4 w-64" />
+//           </div>
+//         </header>
+
+//         {/* Image Slider Section */}
+//         <div className="absolute bottom-40 left-1/2 transform -translate-x-1/2 z-10">
+//           <div className="flex space-x-4">
+//             <div className="relative w-72 h-96 bg-white rounded-lg overflow-hidden">
+//               <div
+//                 className="w-full h-full bg-cover bg-center"
+//                 style={{
+//                   backgroundImage: `url(${bg1})`,
+//                   WebkitMaskImage: `url(${mockup})`,
+//                   maskImage: `url(${mockup})`,
+//                   WebkitMaskSize: "contain",
+//                   maskSize: "contain",
+//                   WebkitMaskRepeat: "no-repeat",
+//                   maskRepeat: "no-repeat",
+//                 }}
+//               />
+//             </div>
+//             <div className="relative w-72 h-96 bg-white rounded-lg overflow-hidden opacity-0 hover:opacity-100 transition-opacity duration-700">
+//               <div
+//                 className="w-full h-full bg-cover bg-center"
+//                 style={{
+//                   backgroundImage: `url(${bg2})`,
+//                   WebkitMaskImage: `url(${mockup})`,
+//                   maskImage: `url(${mockup})`,
+//                   WebkitMaskSize: "contain",
+//                   maskSize: "contain",
+//                   WebkitMaskRepeat: "no-repeat",
+//                   maskRepeat: "no-repeat",
+//                 }}
+//               />
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Rock Images Section */}
+//         <div className="absolute inset-0 z-0 pointer-events-none">
+//           <div className="absolute w-full h-full flex justify-center items-start space-x-8 bottom-8 z-10">
+//             <img src={rock1} alt="Rock 1" className="h-40 transition-all duration-700" />
+//             <img src={rock2} alt="Rock 2" className="h-1/2 absolute bottom-0 left-0 transition-all duration-700" />
+//             <img src={rock3} alt="Rock 3" className="h-full absolute bottom-0 right-0 -rotate-6 transition-all duration-700" />
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default HeroSection;
