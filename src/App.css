@@ -1,4 +1,4 @@
-/* Apply the gradient to the entire website */
+/* Apply the gradient to the entire website
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@ body {
   align-items: center;
   width: 100vw;
   box-sizing: border-box;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrolling 
 }
 
 .foundation-principles-container {
@@ -18,12 +18,12 @@ body {
 }
 
 /* Main section container */
-.who-we-are-section {
-  min-height: 100vh; /* Ensures it always takes at least full viewport height */
+/*.who-we-are-section {
+  min-height: 100vh; /* Ensures it always takes at least full viewport height 
   width: 100vw;
-  background-size: cover; /* Ensures the background image covers the entire section */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents repeating */
+  background-size: cover; /* Ensures the background image covers the entire section 
+  background-position: center; /* Centers the background image 
+  background-repeat: no-repeat; /* Prevents repeating 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,17 +32,17 @@ body {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  perspective: 1000px; /* Creates a 3D effect */
+  perspective: 1000px; /* Creates a 3D effect 
 }
 
-/* Content containers */
+/* Content containers 
 .who-we-are-content,
 .who-we-are-back-content {
   position: absolute;
-  width: 90%; /* Adjusted for better responsiveness */
+  width: 90%; /* Adjusted for better responsiveness 
   max-width: 1200px;
   height: auto;
-  min-height: 50vh; /* Ensures content area has enough height */
+  min-height: 50vh; /* Ensures content area has enough height 
   padding: 20px;
   backface-visibility: hidden;
   transition: transform 0.8s ease, min-height 0.3s ease-in-out;
@@ -50,7 +50,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.75); /* Slightly transparent black background */
+  background-color: rgba(0, 0, 0, 0.75); /* Slightly transparent black background 
   border-radius: 15px;
   box-sizing: border-box;
   transform-style: preserve-3d;
@@ -59,12 +59,12 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* Backside content initially rotated */
+/* Backside content initially rotated 
 .who-we-are-back-content {
   transform: translate(-50%, -50%) rotateY(180deg);
 }
 
-/* Flip effect */
+/* Flip effect 
 .who-we-are-section.flipped .who-we-are-content {
   transform: translate(-50%, -50%) rotateY(180deg);
 }
@@ -73,7 +73,7 @@ body {
   transform: translate(-50%, -50%) rotateY(0deg);
 }
 
-/* Heading styling */
+/* Heading styling 
 .who-we-are-heading {
   font-size: 40px;
   font-weight: bold;
@@ -81,19 +81,19 @@ body {
   transition: transform 0.3s, color 0.3s;
 }
 
-/* Hover effect */
+/* Hover effect 
 .who-we-are-heading:hover {
   transform: scale(1.1);
   color: #007bff;
 }
 
-/* Text styling */
+/* Text styling 
 .who-we-are-text {
   font-size: 24px;
   animation: fadeIn 3s ease-in-out;
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments 
 @media (max-width: 1200px) {
   .who-we-are-heading {
     font-size: 36px;
@@ -114,14 +114,14 @@ body {
   }
 
   .who-we-are-section {
-    background-size: cover; /* Ensures full coverage for tablets */
-    background-position: center top; /* Adjust position to prevent cropping */
+    background-size: cover; /* Ensures full coverage for tablets 
+    background-position: center top; /* Adjust position to prevent cropping 
   }
 
   .who-we-are-content,
   .who-we-are-back-content {
     width: 95%;
-    min-height: 60vh; /* Adjusted for better fit */
+    min-height: 60vh; /* Adjusted for better fit 
     padding: 15px;
   }
 }
@@ -136,14 +136,14 @@ body {
   }
 
   .who-we-are-section {
-    background-size: cover; /* Ensures the background image covers the section */
-    background-position: center center; /* Center aligns the background */
+    background-size: cover; /* Ensures the background image covers the section 
+    background-position: center center; /* Center aligns the background 
   }
 
   .who-we-are-content,
   .who-we-are-back-content {
     width: 100%;
-    min-height: 70vh; /* Ensures full usage of vertical space */
+    min-height: 70vh; /* Ensures full usage of vertical space 
     padding: 10px;
   }
 }
@@ -369,4 +369,4 @@ body {
   .mission-svg {
     width: 80%;
   }
-}
+} */
