@@ -86,7 +86,7 @@ const MainNav = () => {
             
           </nav>
         </div>
-        <div className="flex items-center gap-2">
+        {/* <div className="flex items-center gap-2">
           <button className="rounded-md p-2 text-neutral-900 hover:bg-neutral-100">
             <HelpCircle className="h-5 w-5" />
           </button>
@@ -96,7 +96,7 @@ const MainNav = () => {
           <button className="rounded-md p-2 text-neutral-900 hover:bg-neutral-100">
             <User className="h-5 w-5" />
           </button>
-        </div>
+        </div> */}
       </header>
 
       {/* Full-width dropdown menu */}

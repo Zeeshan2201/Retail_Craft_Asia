@@ -9,9 +9,12 @@ const Home = () => {
   return (
     <div >
       <HeroSection />
-      <ProductShowcase></ProductShowcase>
+      {/* <ProductShowcase></ProductShowcase> */}
+
+
       <WhyChooseUs></WhyChooseUs>
       <ManagementTeam></ManagementTeam>
+      
     </div>
       
   );

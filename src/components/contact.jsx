@@ -24,18 +24,33 @@ const Button = ({ type, className, children, onClick }) => {
 };
 
 const ContactCards = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [formData, setFormData] = useState({ name: '', phone: '', email: '', scheduleTime: '' });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+    setModalOpen(false); // Close the modal after submission
+  };
+
   return (
     <div className="relative flex flex-col items-center p-6 mt-10">
       <div className="fixed top-0 h-[100vh] bg-red-500 opacity-5 w-[100vw]"></div>
       
       {/* Support Section */}
-      <div className="text-center mb-60 mt-10">
+      <div className="text-center mb-10 mt-10">
         <h2 className="text-6xl">How can RetailCraftAsia customer support help you today?</h2>
         <p className="text-gray-500 mt-5 text-2xl">Our friendly customer support team is ready & excited to help with any issue!</p>
         <div className="mt-4 flex items-center justify-center gap-4">
           <span className="text-sm text-gray-500">Responds in 4-8 hours</span>
         </div>
       </div>
+      <div className='mt-5 mb-5 text-4xl'>Looking for answers? Try one of these helpful resources:</div>
       
       {/* Cards Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
@@ -46,7 +61,7 @@ const ContactCards = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
-            <Card onClick={title === 'Email-Support' ? () => window.location.href = 'mailto:chaubeyvinit02@gmail.com' : null}>
+            <Card onClick={title === 'Email-Support' ? () => window.location.href = 'mailto:chaubeyvinit02@gmail.com' : (title === 'Schedule-Call' ? () => setModalOpen(true) : null)}>
               <CardContent>
                 {title}
                 <DotLottieReact src={
@@ -60,8 +75,97 @@ const ContactCards = () => {
           </motion.div>
         ))}
       </div>
+
+      {/* Additional Support Information */}
+      <div className="text-center mt-10 mb-10">
+        <h3 className="text-4xl font-semibold">Need More Help?</h3>
+        <p className="mt-4">Call us at <a href="tel:+1234567890" className="text-blue-500 font-bold hover:underline">+1 234 567 890</a></p>
+        <p className="mt-2">Support Hours: Mon-Fri, 9 AM - 6 PM</p>
+        <p>We usually respond within <strong>4-8 hours</strong>.</p>
+      </div>
+      <div className="text-center mt-10 bg-white p-6 rounded-4xl shadow-lg">
+        <h3 className="text-3xl sm:text-4xl font-semibold text-gray-800">Contact Us</h3>
+        <p className="mt-4 text-lg sm:text-xl text-gray-600">Office-Address: 65,42 Tower Building, Room No 1107, Sukhumvit 42 Road,<br/> Phra Khanong Sub-district, Khlong Toei District, Bangkok, Thailand - 10110</p>
+      </div>
+      
+
+      {/* Social Media Links */}
+      <div className="flex justify-center space-x-4 mt-6">
+        <a href="https://twitter.com/yourbrand" className="text-blue-500 hover:underline">Twitter</a>
+        <a href="https://facebook.com/yourbrand" className="text-blue-500 hover:underline">Facebook</a>
+        <a href="https://linkedin.com/company/yourbrand" className="text-blue-500 hover:underline">LinkedIn</a>
+      </div>
+     
+
+      {/* Pop-Up Form */}
+      {isModalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+          <motion.div 
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            exit={{ scale: 0 }}
+            transition={{ duration: 0.3 }}
+            className="bg-white p-8 rounded-lg shadow-lg w-96"
+          >
+            <h2 className="text-2xl font-bold mb-4">Schedule a Call</h2>
+            <form onSubmit={handleSubmit}>
+              <div className="mb-4">
+                <label className="block text-sm font-semibold mb-2">Name</label>
+                <input 
+                  type="text" 
+                  name="name" 
+                  value={formData.name} 
+                  onChange={handleChange} 
+                  required 
+                  className="w-full p-2 border border-gray-300 rounded-lg"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-sm font-semibold mb-2">Phone Number</label>
+                <input 
+                  type="tel" 
+                  name="phone" 
+                  value={formData.phone} 
+                  onChange={handleChange} 
+                  required 
+                  className="w-full p-2 border border-gray-300 rounded-lg"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-sm font-semibold mb-2">Email</label>
+                <input 
+                  type="email" 
+                  name="email" 
+                  value={formData.email} 
+                  onChange={handleChange} 
+                  required 
+                  className="w-full p-2 border border-gray-300 rounded-lg"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-sm font-semibold mb-2">Schedule Time</label>
+                <input 
+                  type="datetime-local" 
+                  name="scheduleTime" 
+                  value={formData.scheduleTime} 
+                  onChange={handleChange} 
+                  required 
+                  className="w-full p-2 border border-gray-300 rounded-lg"
+                />
+              </div>
+              <div className="flex justify-end">
+                <Button type="button" className="bg-gray-300 text-black px-4 py-2 mr-2 hover:bg-gray-400" onClick={() => setModalOpen(false)}>
+                  Cancel
+                </Button>
+                <Button type="submit" className="bg-blue-500 text-white px-4 py-2 hover:bg-blue-600">
+                  Submit
+                </Button>
+              </div>
+            </form>
+          </motion.div>
+        </div>
+      )}
     </div>
-    
   );
 };
 
