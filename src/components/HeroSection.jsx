@@ -21,10 +21,10 @@ const HeroSection = () => {
       dotsRef.current = Array.from({ length: 50 }, () => ({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        size: Math.random() * 3 + 5,
+        size: Math.random() * 3 + 3,
         color: colors[Math.floor(Math.random() * colors.length)],
-        vx: (Math.random() - 0.5) * 1.5, // Velocity X
-        vy: (Math.random() - 0.5) * 1.5, // Velocity Y
+        vx: (Math.random() - 0.5) * 2, // Velocity X
+        vy: (Math.random() - 0.5) * 2, // Velocity Y
       }));
     };
 
@@ -58,11 +58,11 @@ const HeroSection = () => {
     const handleMouseMove = (event) => {
       const rect = container.getBoundingClientRect();
       const mouse = { x: event.clientX - rect.left, y: event.clientY - rect.top };
-      
+
       drawDots(); // Keep dots visible while interacting
       dotsRef.current.forEach((dot) => {
         const distance = Math.sqrt((mouse.x - dot.x) ** 2 + (mouse.y - dot.y) ** 2);
-        if (distance < 150) {
+        if (distance < 120) {
           ctx.strokeStyle = dot.color;
           ctx.lineWidth = 1;
           ctx.beginPath();
@@ -89,19 +89,21 @@ const HeroSection = () => {
   return (
     <main
       ref={containerRef}
-      className="relative h-screen flex flex-col justify-center items-center text-center text-white mt-[-70px] banner"
+      className="relative h-screen flex flex-col justify-center items-center text-center text-white bg-black overflow-hidden"
     >
-      <h5>@Lundeveloper</h5>
-      <div>
-        <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-400 via-red-400 to-yellow-400 bg-clip-text text-transparent uppercase">
-          ANIMATION spider man
+      <h5 className="text-lg text-gray-300">@Lundeveloper</h5>
+      <div className="mt-2">
+        <h1 className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-blue-400 via-red-400 to-yellow-400 bg-clip-text text-transparent uppercase">
+          ANIMATION SPIDER-MAN
         </h1>
-        <h1 className="text-6xl font-bold bg-gradient-to-l from-blue-400 via-red-400 to-yellow-400 bg-clip-text text-transparent uppercase">
-          using JavaScript
+        <h1 className="text-5xl sm:text-6xl font-bold bg-gradient-to-l from-blue-400 via-red-400 to-yellow-400 bg-clip-text text-transparent uppercase">
+          USING JAVASCRIPT
         </h1>
       </div>
-      <h4 className="mt-4">Subscribe to the channel to continuously update interesting videos</h4>
-      <button className="mt-4 px-6 py-2 border border-gray-400 rounded-full bg-gradient-to-b from-red-500 to-transparent hover:bg-purple-500 hover:text-black hover:shadow-lg transition">
+      <h4 className="mt-4 text-lg text-gray-300">
+        Subscribe to the channel for more amazing videos!
+      </h4>
+      <button className="mt-6 px-6 py-2 text-lg border border-gray-400 rounded-full bg-gradient-to-b from-red-500 to-transparent hover:bg-purple-500 hover:text-black hover:shadow-lg transition">
         Subscribe Now &#8599;
       </button>
       <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full pointer-events-none"></canvas>
