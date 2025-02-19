@@ -5,11 +5,14 @@
 
 import BrandingServices from "../components/BrandingServices"
 import FeaturedProject from "../components/FeaturedProject"
+import HorizontalScroll from "../components/HorizontalScroll"
+import ServiceHero from "../components/ServiceHero"
 
 // import Link from "next/link";
 const Services = () => {
-  return (
+  return (<>
     <section className="bg-[#1a237e] min-h-screen py-20 px-4">
+      <ServiceHero/>
     <div className="max-w-6xl mx-auto text-center mb-16">
         <h2 className="text-white/80 uppercase tracking-wider mb-4 text-lg font-medium">
           OUR WORK
@@ -23,7 +26,11 @@ const Services = () => {
       </div>
      <FeaturedProject/>
      <BrandingServices/>
+     <div className="h-[80vh">
+     <HorizontalScroll/>
+     </div>
     </section>
+    </>
   )
 }
 
