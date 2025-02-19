@@ -21,6 +21,12 @@ export default function BrandingServices() {
         "Create a unique and memorable name for your brand with our thoughtful, insightful and research-driven approach to brand naming. Within our proven brand naming process, we consider important elements, such as memorability, relevance, differentiation and impact, to give you a name that represents your identity and resonates with your target audience.",
     },
     {
+      icon: <BrainCircuit className="w-6 h-6" />,
+      title: "Brand Strategy",
+      description:
+        "Utilize our proven brand strategy process to grow your brand both online and offline. Our brand discovery sessions, foundational messaging and research services are designed to help your business succeed in connecting with your target audience. We create custom strategies for every client, based on thorough industry analysis and competitor research.",
+    },
+    {
       icon: <Package className="w-6 h-6" />,
       title: "Brand Package Designs",
       description:
@@ -40,8 +46,8 @@ export default function BrandingServices() {
         </div>
 
         {/* Hero Image */}
-        <div className="flex">
-        <div className="relative mr-6 flex items-center mb-20">
+        <div className="flex relative overflow-auto scrollbar-hide h-[80vh]">
+        <div className=" sticky top-4 mr-6 flex items-center mb-20">
           <img
             src="/img.png"
             alt="Branding Services Showcase"
