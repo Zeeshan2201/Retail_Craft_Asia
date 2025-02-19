@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../App.css";
+import "../components/Css/about.css";
  // Ensure this CSS file exists for styling
 
 // Import images for each principle
@@ -110,7 +110,8 @@ const FoundationPrinciples = () => {
             <div
               key={index}
               className={`principle-card ${expandedCard === index ? "expanded" : ""}`}
-              onClick={() => handleCardClick(index)}
+              onMouseEnter={() => handleCardClick(index)}
+              onMouseLeave={() => handleCardClick("")}
             >
               <img src={principle.image} alt={principle.title} className="principle-image" />
               <h3 className="principle-title">{principle.title}</h3>
