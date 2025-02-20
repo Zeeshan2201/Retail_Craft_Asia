@@ -1,5 +1,5 @@
 /* Apply the gradient to the entire website */
-body {
+/* body {
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
@@ -7,8 +7,9 @@ body {
   align-items: center;
   width: 100vw;
   box-sizing: border-box;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
-}
+  overflow-x: hidden; 
+} */
+/* Prevents horizontal scrolling */
 
 .foundation-principles-container {
   text-align: center;

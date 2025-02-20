@@ -3,34 +3,34 @@ import { BrainCircuit, Palette, TextQuote, Package } from "lucide-react"
 export default function BrandingServices() {
   const services = [
     {
-      icon: <BrainCircuit className="w-6 h-6" />,
-      title: "Brand Strategy",
+      icon: <Palette className="w-6 h-6" />,
+      title: "Consultation & Understanding Needs",
       description:
-        "Utilize our proven brand strategy process to grow your brand both online and offline. Our brand discovery sessions, foundational messaging and research services are designed to help your business succeed in connecting with your target audience. We create custom strategies for every client, based on thorough industry analysis and competitor research.",
+        "We begin with a detailed discussion to understand your business, challenges, and objectives. This helps us craft tailored strategies that drive real results.",
     },
     {
-      icon: <Palette className="w-6 h-6" />,
-      title: "Logo Design & Style Guide",
+      icon: <BrainCircuit className="w-6 h-6" />,
+      title: "Strategy Development",
       description:
-        "Drive brand awareness with a custom-crafted brand identity and instantly recognizable logo design. When it comes to branding and messaging, consistency is key to making sure your audience understands your offering and unique value proposition. Our comprehensive brand guidelines ensure your brand's visual identity is used correctly, consistently and with impact across platforms and channels.",
+        "Based on our insights, we create a strategic plan outlining the best approach, tools, and techniques to achieve your goals. We focus on data-driven decision-making to ensure success..",
     },
     {
       icon: <TextQuote className="w-6 h-6" />,
-      title: "Brand Naming",
+      title: "Implementation & Execution",
       description:
-        "Create a unique and memorable name for your brand with our thoughtful, insightful and research-driven approach to brand naming. Within our proven brand naming process, we consider important elements, such as memorability, relevance, differentiation and impact, to give you a name that represents your identity and resonates with your target audience.",
+        "Our team executes the plan with precision, whether it’s sales and merchandising, digital marketing, or technology integration. We ensure smooth operations while maintaining quality and efficiency.",
     },
     {
       icon: <BrainCircuit className="w-6 h-6" />,
-      title: "Brand Strategy",
+      title: "Monitoring & Optimization",
       description:
-        "Utilize our proven brand strategy process to grow your brand both online and offline. Our brand discovery sessions, foundational messaging and research services are designed to help your business succeed in connecting with your target audience. We create custom strategies for every client, based on thorough industry analysis and competitor research.",
+        "We continuously track performance, analyze data, and refine strategies to enhance effectiveness. Our goal is to maximize ROI and ensure sustainable growth for your business.",
     },
     {
       icon: <Package className="w-6 h-6" />,
-      title: "Brand Package Designs",
+      title: "Reporting & Support",
       description:
-        "Influence purchase decisions in seconds with our expert package design solutions. Your product's packaging is a key part of your product offering, so it needs to stand out on shelves while remaining true to your brand. Our branding team brings years of industry experience in retail and consumer packaged goods to your brands package design.",
+        "We provide transparent reports with key insights and recommendations. Our team remains available for ongoing support, ensuring long-term success and continuous improvement.",
     },
   ]
 
@@ -38,10 +38,9 @@ export default function BrandingServices() {
     <div className="min-h-screen bg-gradient-to-br from-navy-950 via-indigo-950 to-purple-950 text-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Branding Services</h2>
+          <h2 className="text-4xl font-bold mb-4">Our Process</h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Work with our award-winning design team to bring your brand to life or give your brand across channels
-            through custom strategies, logo design, brand naming and more.
+          We follow a structured and result-driven approach to ensure seamless execution and maximum impact for our clients. Our process is designed to deliver customized solutions that align with your business goals.
           </p>
         </div>
 

@@ -44,7 +44,7 @@ export default function Carousel() {
             ${index === current ? "opacity-100" : "opacity-0"}`}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-purple-600/40 to-blue-600/40" />
-          <img src={slide.image || "/placeholder.svg"} alt={slide.alt} className="w-full h-full object-cover" />
+          <img src={slide.image || "/placeholder.svg"} alt={slide.alt} className="w-full h-full rounded-lg shadow-lg object-cover" />
         </div>
       ))}
 
