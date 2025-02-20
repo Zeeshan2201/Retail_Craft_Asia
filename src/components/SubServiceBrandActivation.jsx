@@ -107,80 +107,67 @@ export default function ServicesPage() {
       <section className="container mx-auto px-4 py-20 text-center text-white">
        
        <h1 className="mt-4 mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-          Brand Activation 
+       Brand Activation & Experiential Marketing
         </h1> <br></br>
-        <p className="mb-4 mt-4  text-justify text-2xl font-semibold tracking-wider">We help brands maximize their market presence by ensuring that the right products are available at the right time and place. Our expert team focuses on enhancing product visibility, executing strategic in-store promotions, and optimizing shelf placement to drive higher sales and brand recall.
-
-With a data-driven approach, we analyze consumer behavior, market trends, and competitor strategies to develop customized merchandising plans that increase product engagement and boost conversions.</p>
+        <p className="mb-4 mt-4  text-justify text-2xl font-semibold tracking-wider">We create immersive brand experiences that engage consumers and leave a lasting impression. Through interactive campaigns, live events, and on-ground activations, we help brands establish deeper connections with their audiences. These experiences enhance brand recall, foster customer loyalty, and drive higher engagement.</p>
         <Button className="mt-8">SPEAK WITH OUR EXPERTS →</Button>
       </section>
 
       {/* Service Sections with Glassmorphism & Hover Animation */}
       <ServiceSection
-        title="Field Sales"
+        title="Brand Ambassador Programmes"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
-          "Engages directly with retailers, wholesalers, and distributors", 
-          "Builds strong relationships to expand market reach", 
-          "Provides real-time market insights for improved sales performance"]}
+          "Utilizes influencers and representatives to promote brand trust", 
+          "Builds long-term customer relationships through personal engagement", 
+          "Boosts credibility and visibility in target markets"]}
         gradientColors={["#ffbc00", "#ff0058"]}
       />
 
       <ServiceSection
-        title="Merchandising"
+        title="Events & Road Shows"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
-          "Implements strategic product placement and eye-catching displays",
-          "Enhances brand visibility and influences customer purchasing decisions",
-          "Ensures compliance with brand guidelines for in-store execution",
+          "Engages consumers directly through interactive and mobile campaigns",
+          "Increases brand awareness in high-footfall locations",
+          "Provides real-time feedback and consumer interaction opportunities",
         ]}
         imageLeft={false}
         gradientColors={["#03a9f4", "#ff0058"]}
       />
 
       <ServiceSection
-        title="Retail Audit"
+        title="Sampling"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
-          "Evaluates product availability, pricing, and shelf positioning", 
-          "Monitors compliance with promotional and branding guidelines", 
-          "Provides data-driven insights for optimizing retail execution"]}
+          "Encourages product trials to boost consumer confidence", 
+          "Helps in generating word-of-mouth marketing and customer reviews", 
+          "Drives sales conversion by reducing purchase hesitation"]}
         gradientColors={["#4dff03", "#00d0ff"]}
       />
 
       <ServiceSection
-        title="Point of Sale Execution"
+        title="Shopper Marketing"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
-          "Ensures flawless execution of branding and promotions at retail outlets",
-          "Manages promotional displays, signage, and in-store branding",
-          "Enhances consumer engagement at the final point of purchase",
+          "Influences buying decisions at the point of sale",
+          "Uses in-store promotions, displays, and personalized offers",
+          "Enhances customer shopping experience and increases basket value",
         ]}
         imageLeft={false}
         gradientColors={["#ffbc00", "#ff0058"]}
       />
 
       <ServiceSection
-        title="Asset Optimisation"
+        title="Instore Activation"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
-          "Maximizes the effectiveness of in-store assets like shelves and signage", 
-          "Ensures proper utilization, maintenance, and strategic placement", 
-          "Increases shopper engagement and improves sales efficiency"]}
+          "Creates engaging in-store experiences to attract customers", 
+          "Includes product demonstrations, promotional campaigns, and contests", 
+          "Strengthens brand visibility and customer loyalty"]}
         gradientColors={["#03a9f4", "#ff0058"]}
       />
 
-      <ServiceSection
-        title="Product Management"
-        image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
-        listItems={[
-          "Oversees the entire lifecycle of FMCG products from launch to market expansion",
-          "Ensures competitive pricing and efficient distribution",
-          "Adapts to market trends and consumer preferences for sustained growth",
-        ]}
-        imageLeft={false}
-        gradientColors={["#4dff03", "#00d0ff"]}
-      />
     </main>
   );
 }
