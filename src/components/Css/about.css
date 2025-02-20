@@ -1,5 +1,9 @@
 /* Apply the gradient to the entire website */
+<<<<<<< HEAD
 /* body {
+=======
+/*body {
+>>>>>>> 1b6145c2e115c323b79704216108ccdae9c081bf
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
@@ -7,15 +11,21 @@
   align-items: center;
   width: 100vw;
   box-sizing: border-box;
+<<<<<<< HEAD
   overflow-x: hidden; 
 } */
 /* Prevents horizontal scrolling */
+=======
+
+}*/
+>>>>>>> 1b6145c2e115c323b79704216108ccdae9c081bf
 
 .foundation-principles-container {
   text-align: center;
   width: 100%;
   box-sizing: border-box;
   padding: 0;
+  overflow-x: hidden;
 }
 
 /* Main section container */
