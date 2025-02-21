@@ -8,11 +8,13 @@ import Navbar from "./components/Navbar";
 import Footer from './components/Footer';
 import FaQ from './pages/FaQ';
 import Services from './pages/Services';
-import ServicesPage from './components/ServicesPages';
-import SubServiceBrandActivation from './components/SubServiceBrandActivation';
-import SubServiceDataAndTechnology from './components/SubServiceDataAndTechnology';
-import SubServiceMarketExpansion from './components/SubServiceMarketExpansion';
-import SubServiceDigitalMarketing from './components/SubServiceDigitalMarketing';
+// import ServicesPage from './components/ServicesPages';
+// import SubServiceDataAndTechnology from './components/SubServiceDataAndTechnology';
+import SalesAndMerchandising from './pages/Services/SalesAndMerchandising';
+import BrandActivation from './pages/Services/BrandActivation';
+import MarketExpansion from './pages/Services/MarketExpansion';
+import DataAndTechnology from './pages/Services/DataAndTechnology';
+import DigitalMarketing from './pages/Services/DigitalMarketing';
 // import ComingSoon from './pages/CommingSoon';
 
 function App() {
@@ -27,11 +29,11 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FaQ />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/servicesN" element={<ServicesPage />} />
-          <Route path="/servicesNX" element={<SubServiceBrandActivation />} />
-          <Route path="/servicesNX1" element={<SubServiceDataAndTechnology />} />
-          <Route path="/servicesNX2" element={<SubServiceMarketExpansion />} />
-          <Route path="/servicesNX3" element={<SubServiceDigitalMarketing/>} />
+          <Route path="/services/SalesAndMerchandising" element={<SalesAndMerchandising/>} />
+          <Route path="/services/BrandActivation" element={<BrandActivation/>} />
+          <Route path="/services/MarketExpansion" element={<MarketExpansion/>} />
+          <Route path="/services/DataAndTechnology" element={<DataAndTechnology/>} />
+          <Route path="/services/DigitalMarketing" element={<DigitalMarketing/>} />
         </Routes>
         <Footer />
       </Router>

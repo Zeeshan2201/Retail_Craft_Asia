@@ -64,6 +64,8 @@ const ServiceCarousel = () => {
   };
 
   return (
+    <div className="w-full max-w-8xl mx-auto py-10 bg-gradient-to-r from-yellow-600 to-white-500">
+      <div className="text-6xl font-bold text-center mb-8 text-white">Our Services</div>
     <div className="w-full py-10 bg-gradient-to-r from-yellow-600 to-white">
       <div className="text-6xl text-center mb-8 text-white">Our Services</div>
       <Slider {...settings} className="flex justify-center items-center">
