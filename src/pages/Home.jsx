@@ -3,7 +3,7 @@ import React from 'react';
 import WhyChooseUs from '../components/WhyChooseUs';
 import ManagementTeam from '../components/ManagementTeam';
 import HeroSection from '../components/HeroSection';
-import ServicesSlider from '../components/Ser';
+// import ServicesSlider from '../components/Ser';
 
 
 const Home = () => {
