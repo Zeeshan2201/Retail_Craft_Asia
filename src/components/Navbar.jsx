@@ -1,35 +1,11 @@
 import React, { useState } from 'react';
-import { Globe, HelpCircle, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
-// import Image from 'react-image';
-
-const vehicles = [
-  {
-    name: "Sales and Merchandising ",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3ze7My4Grm0mgN34J2qnGtNmViop3v.png",
-  },
-  {
-    name: "Brand Activation and Experiental Marketing",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3ze7My4Grm0mgN34J2qnGtNmViop3v.png",
-  },
-  {
-    name: "Market Expansion Services ",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3ze7My4Grm0mgN34J2qnGtNmViop3v.png",
-  },
-  {
-    name: "Data & Technology ",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3ze7My4Grm0mgN34J2qnGtNmViop3v.png",
-    isNew: true,
-  },
-  {
-    name: "Digital Marketing",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3ze7My4Grm0mgN34J2qnGtNmViop3v.png",
-  },
-];
+import { Menu, X } from 'lucide-react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const secondaryLinks = [
   { title: "Sales and Merchandising", href: "/services/SalesAndMerchandising" },
-  { title: "Brand Activation and Experiental Marketing", href: "/services/BrandActivation" },
+  { title: "Brand Activation and Experiential Marketing", href: "/services/BrandActivation" },
   { title: "Market Expansion Services", href: "/services/MarketExpansion" },
   { title: "Data & Technology", href: "/services/DataAndTechnology" },
   { title: "Digital Marketing", href: "/services/DigitalMarketing" },
@@ -37,81 +13,108 @@ const secondaryLinks = [
 
 const MainNav = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
   return (
     <>
-      <header className="fixed left-0 right-0 top-0 z-50 flex h-16 items-center bg-white px-12">
-        <div className="flex flex-1 items-center gap-16">
+      <header className="fixed left-0 right-0 top-0 z-50 flex h-20 items-center bg-white px-6 md:px-12 shadow-lg">
+        <div className="flex flex-1 items-center justify-between w-full">
           <Link to="/" className="shrink-0">
-         
-            <img className='w-20 h-15' src="/logo.png"/>
+            <img className='w-20 h-15' src="/logo.png" alt="Logo" />
           </Link>
-          <nav className="hidden space-x-2 md:flex">
-          <Link to="/" className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
-              Home
-            </Link>
-            {/* <div
-              className="group relative"
-              
-            >vehical
-            </div> */}
-            <Link onMouseEnter={() => setActiveDropdown("vehicles")}
-              onMouseLeave={() => setActiveDropdown(null)} to="/Services" className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
-              Service
-            </Link>
-            <Link  to="/About" className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
-              About Us 
-            </Link>
-            <Link to="/Contact" className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
-              Contact us
-            </Link>
-            <Link to="/faq" className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
-              FAQ
-            </Link>
-            
+          
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex space-x-4">
+            <Link to="/" className="px-4 py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100">Home</Link>
+            <div
+              className="relative flex flex-row px-4 py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100"
+              onMouseEnter={() => setActiveDropdown("services")}
+              onMouseLeave={() => setActiveDropdown(null)}
+            >
+              <Link to="/Services" className=" flex text-base font-medium text-neutral-900 hover:bg-neutral-100">
+                <span>Services</span>
+                
+              <span className='transition-all duration-300 ease-in-out ml-1 px-1 pt-1'>{activeDropdown ?  (<ChevronUp className="w-6 h-6 transition-all duration-300 ease-in-out " />): (<ChevronDown className="w-6 h-6 transition-all  duration-300 ease-in-out" />)}</span>
+              </Link>
+              {/* Dropdown */}
+              <div
+                className={`absolute bg-purple-900 left-0 w-56 top-full mt-1 z-50 shadow-lg transition-all duration-300 ease-in-out ${
+                  activeDropdown === "services" ? "opacity-100" : "opacity-0 pointer-events-none"
+                }`}
+              >
+                <div className="p-4">
+                  {secondaryLinks.map((link, index) => (
+                    <div key={index} className="py-2">
+                      <Link
+                        onClick={() => setActiveDropdown(null)}
+                        to={link.href}
+                        className="text-base text-white hover:text-gray-400"
+                      >
+                        {link.title}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <Link to="/About" className="px-4 py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100">About Us</Link>
+            <Link to="/Contact" className="px-4 py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100">Contact Us</Link>
+            <Link to="/faq" className="px-4 py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100">FAQ</Link>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden p-2 rounded-md text-neutral-900"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
-        {/* <div className="flex items-center gap-2">
-          <button className="rounded-md p-2 text-neutral-900 hover:bg-neutral-100">
-            <HelpCircle className="h-5 w-5" />
-          </button>
-          <button className="rounded-md p-2 text-neutral-900 hover:bg-neutral-100">
-            <Globe className="h-5 w-5" />
-          </button>
-          <button className="rounded-md p-2 text-neutral-900 hover:bg-neutral-100">
-            <User className="h-5 w-5" />
-          </button>
-        </div> */}
       </header>
 
-      {/* Full-width dropdown menu */}
+      {/* Mobile Menu */}
       <div
-        className={`fixed inset-x-0 top-16 z-40 transform bg-white shadow-lg transition-all duration-300 ease-in-out ${
-          activeDropdown === "vehicles"
-            ? "pointer-events-auto translate-y-0 opacity-100"
-            : "pointer-events-none -translate-y-2 opacity-0"
-        }`}
-        onMouseEnter={() => setActiveDropdown("vehicles")}
-        onMouseLeave={() => setActiveDropdown(null)}
-      >
-        <div className=" w-[20vw] px-12 py-8">
-              <div className="grid gap-y-4">
-                {secondaryLinks.map((link) => (
-                  <Link onClick={()=>setActiveDropdown(null)} key={link.title} to={link.href} className="text-sm text-neutral-500 hover:text-neutral-900">
-                    {link.title}
-                  </Link>
-                ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Overlay for the rest of the page when dropdown is active */}
-      <div
-        className={`fixed inset-0 z-30 bg-black/20 transition-opacity ${
-          activeDropdown ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
-        }`}
-        onMouseEnter={() => setActiveDropdown(null)}
+        className={`fixed inset-0 z-40 bg-black/50 transition-opacity ${mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+        onClick={() => setMobileMenuOpen(false)}
       />
+      <div
+        className={`fixed top-0 right-0 h-full w-64 bg-white z-50 transform transition-transform duration-300 ease-in-out ${
+          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        } p-6 shadow-lg`}
+      >
+        <button className="mb-4" onClick={() => setMobileMenuOpen(false)}>
+          <X size={28} />
+        </button>
+        <nav className="flex flex-col space-y-4">
+          <Link to="/" className="text-base font-medium text-neutral-900" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+          {/* <Link to="/Services" className="text-base font-medium text-neutral-900" onClick={() => setMobileMenuOpen(false)}>Services</Link> */}
+          <div className="relative">
+        <button
+          onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
+          className="flex items-center  w-full text-base font-medium text-neutral-900 py-2"
+        >
+          Services
+          <span className='ml-1 pl-1 pt-1'>{isSubMenuOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}</span>
+        </button>
+
+        {/* Sub-Services Dropdown */}
+        {isSubMenuOpen && (
+          <div className="ml-4 mt-2 flex flex-col space-y-2">
+            <Link to="/services/SalesAndMerchandising" className="text-sm text-gray-700 hover:text-gray-900" onClick={() => setMobileMenuOpen(false)}>Sales and Merchandising</Link>
+            <Link to="/services/BrandActivation" className="text-sm text-gray-700 hover:text-gray-900" onClick={() => setMobileMenuOpen(false)}>Brand Activation</Link>
+            <Link to="/services/MarketExpansion" className="text-sm text-gray-700 hover:text-gray-900" onClick={() => setMobileMenuOpen(false)}>Market Expansion</Link>
+            <Link to="/services/DataAndTechnology" className="text-sm text-gray-700 hover:text-gray-900" onClick={() => setMobileMenuOpen(false)}>Data & Technology</Link>
+            <Link to="/services/DigitalMarketing" className="text-sm text-gray-700 hover:text-gray-900" onClick={() => setMobileMenuOpen(false)}>Digital Marketing</Link>
+          </div>
+        )}
+      </div>
+          <Link to="/About" className="text-base font-medium text-neutral-900" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
+          <Link to="/Contact" className="text-base font-medium text-neutral-900" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
+          <Link to="/faq" className="text-base font-medium text-neutral-900" onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
+        </nav>
+      </div>
     </>
   );
 };

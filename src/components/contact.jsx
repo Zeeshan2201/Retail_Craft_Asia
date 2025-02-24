@@ -39,7 +39,7 @@ const ContactCards = () => {
   };
 
   return (
-    <div className="relative flex flex-col items-center p-6 mt-10">
+    <div className="relative px-32 flex flex-col items-center p-6 mt-10">
       <div className="fixed top-0 h-[100vh] bg-red-500 opacity-5 w-[100vw]"></div>
       
       {/* Support Section */}

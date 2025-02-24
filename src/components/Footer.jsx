@@ -24,9 +24,24 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold mb-4 uppercase tracking-wider">Useful Links</h3>
             <ul className="space-y-2">
+            <li>
+                <Link href="#" className="hover:text-white transition-colors">
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link href="#" className="hover:text-white transition-colors">
-                  Ask FMCG (FAQs)
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-white transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-white transition-colors">
+                  Ask Retail Craft (FAQs)
                 </Link>
               </li>
               <li>
@@ -34,41 +49,36 @@ export default function Footer() {
                   Contact us
                 </Link>
               </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Search for jobs
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Sign up for news
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Speak Up
-                </Link>
-              </li>
             </ul>
           </div>
 
           {/* Downloads Column */}
           <div>
-            <h3 className="text-sm font-semibold mb-4 uppercase tracking-wider">Downloads</h3>
+            <h3 className="text-sm font-semibold mb-4 uppercase tracking-wider">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="hover:text-white transition-colors flex items-center gap-1">
-                  Annual Review <span className="text-sm text-gray-400">(pdf, 11Mb)</span>
+                <Link href="/services/SalesAndMerchandising" className="hover:text-white transition-colors flex items-center gap-1">
+                Sales and Merchandising
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white transition-colors flex items-center gap-1">
-                  CSV and Sustainability Report <span className="text-sm text-gray-400">(pdf, 19Mb)</span>
+                <Link href="/services/BrandActivation" className="hover:text-white transition-colors flex items-center gap-1">
+                Brand Activation and Experiental Marketing
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white transition-colors flex items-center gap-1">
-                  Responsible Sourcing <span className="text-sm text-gray-400">(pdf, 2Mb)</span>
+                <Link href="/services/MarketExpansion" className="hover:text-white transition-colors flex items-center gap-1">
+                Market Expansion Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/DataAndTechnology" className="hover:text-white transition-colors flex items-center gap-1">
+                Data & Technology
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/DigitalMarketing" className="hover:text-white transition-colors flex items-center gap-1">
+                Digital Marketing
                 </Link>
               </li>
             </ul>

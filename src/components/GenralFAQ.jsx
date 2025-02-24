@@ -73,7 +73,7 @@ const faqData = [
   };
 
   return (
-    <div className="w-full p-6  bg-gradient-to-r from-transparent to-[#fdf6e3]  min-h-screen">
+    <div className=" px-32 p-6  bg-gradient-to-r from-transparent to-[#fdf6e3]  min-h-screen">
       {faqData.map((section, sectionIndex) => (
         <div key={sectionIndex} className="mb-6">
           <h2 className="text-xl font-bold mb-4 text-gray-800">{section.category}</h2>
