@@ -121,7 +121,7 @@ export default function ServicesPage() {
           "Analyzes business operations to improve efficiency",
          "Uses real-time insights to optimize processes",
          "Enhances productivity and reduces operat",]}      
-          gradientColors={["#4B0082", "#D4AF37"]}
+         gradientColors={["#03a9f4", "#ff0058"]}
       />
 
       <ServiceSection
@@ -134,7 +134,8 @@ export default function ServicesPage() {
           
         ]}
         imageLeft={false}
-        gradientColors={["#4B0082", "#D4AF37"]}
+        gradientColors={["#ffbc00", "#ff0058"]}
+        // gradientColors={["#4B0082", "#D4AF37"]}
       />
 
       <ServiceSection
@@ -144,7 +145,7 @@ export default function ServicesPage() {
             "Provides training programs for skill development",
             "Enhances employee productivity and business performance",
             "Covers leadership, sales, and customer service training",]}
-            gradientColors={["#4B0082", "#D4AF37"]}
+            gradientColors={["#4dff03", "#00d0ff"]}
       />
 
       <ServiceSection
@@ -156,7 +157,7 @@ export default function ServicesPage() {
         "Improves customer retention and engagement.",
         ]}
         imageLeft={false}
-        gradientColors={["#4B0082", "#D4AF37"]}
+        gradientColors={["#03a9f4", "#ff0058"]}
       />
 
     </main>

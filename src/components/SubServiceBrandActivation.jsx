@@ -124,7 +124,7 @@ export default function ServicesPage() {
           "Builds long-term customer relationships through personal engagement",
           "Boosts credibility and visibility in target markets",
         ]}
-        gradientColors={["#4B0082", "#D4AF37"]}
+        gradientColors={["#ffbc00", "#ff0058"]}
       />
 
       <ServiceSection
@@ -136,7 +136,7 @@ export default function ServicesPage() {
           "Provides real-time feedback and consumer interaction opportunities",
         ]}
         imageLeft={false}
-        gradientColors={["#4B0082", "#D4AF37"]}
+        gradientColors={["#4dff03", "#00d0ff"]}
       />
 
       <ServiceSection
@@ -147,7 +147,7 @@ export default function ServicesPage() {
           "Helps in generating word-of-mouth marketing and customer reviews",
           "Drives sales conversion by reducing purchase hesitation",
         ]}
-        gradientColors={["#4B0082", "#D4AF37"]}
+        gradientColors={["#03a9f4", "#ff0058"]}
       />
 
       <ServiceSection
@@ -159,7 +159,7 @@ export default function ServicesPage() {
           "Enhances customer shopping experience and increases basket value",
         ]}
         imageLeft={false}
-        gradientColors={["#4B0082", "#D4AF37"]}
+        gradientColors={["#4dff03", "#00d0ff"]}
       />
 
       <ServiceSection
@@ -170,7 +170,7 @@ export default function ServicesPage() {
           "Includes product demonstrations, promotional campaigns, and contests",
           "Strengthens brand visibility and customer loyalty",
         ]}
-        gradientColors={["#4B0082", "#D4AF37"]}
+        gradientColors={["#03a9f4", "#ff0058"]}
       />
     </main>
   );
