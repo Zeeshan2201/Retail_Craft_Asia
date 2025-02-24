@@ -120,7 +120,8 @@ const ServiceSection = ({ title, description,  image, listItems, imageLeft = tru
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700">
+    <main className="min-h-screen bg-purple-900">
+    {/* <main className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700"> */}
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center text-white">
        
@@ -132,7 +133,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Service Sections with Glassmorphism & Hover Animation */}
-      <section className="container  mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center">
+      <section className="container  mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-br from-purple-900 via-purple-900 to-[#]">
         <div className="relative h-[400px] overflow-hidden rounded-lg">
         <Lottie
   options={{
