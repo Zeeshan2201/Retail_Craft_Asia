@@ -5,7 +5,6 @@
 
 import BrandingServices from "../components/BrandingServices"
 import FeaturedProject from "../components/FeaturedProject"
-import HorizontalScroll from "../components/HorizontalScroll"
 import ServiceHero from "../components/ServiceHero"
 
 // import Link from "next/link";
@@ -26,9 +25,7 @@ const Services = () => {
       </div>
      <FeaturedProject/>
      <BrandingServices/>
-     <div className="h-[100vh">
-     <HorizontalScroll/>
-     </div>
+    
     </section>
     </>
   )
