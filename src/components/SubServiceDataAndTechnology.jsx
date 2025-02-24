@@ -11,9 +11,9 @@ const Button = ({ children, variant = "primary", className = "" }) => {
 };
 
 const ServiceSection = ({ title, description, image, listItems, imageLeft = true, gradientColors }) => (
-  <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center">
+  <>
     {imageLeft ? (
-      <>
+       <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
         <div className="relative h-[400px] overflow-hidden rounded-lg">
           <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" />
         </div>
@@ -53,9 +53,9 @@ const ServiceSection = ({ title, description, image, listItems, imageLeft = true
             </ul>
           </div>
         </div>
-      </>
+      </section>
     ) : (
-      <>
+       <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900  to-[#D4AF37]">
         {/* Card Effect for Text Side */}
         <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
           {/* Tilted Background Card */}
@@ -95,16 +95,16 @@ const ServiceSection = ({ title, description, image, listItems, imageLeft = true
         <div className="relative h-[400px] overflow-hidden rounded-lg">
           <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" />
         </div>
-      </>
+      </section>
     )}
-  </section>
+  </>
 );
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700">
+    <main className="min-h-screen  bg-purple-900">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 text-center text-white">
+      <section className="container mx-auto px-4 py-20 text-center text-white  bg-purple-900">
        
        <h1 className="mt-4 mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
           Data And Technology
@@ -120,8 +120,8 @@ export default function ServicesPage() {
         listItems={[
           "Analyzes business operations to improve efficiency",
          "Uses real-time insights to optimize processes",
-         "Enhances productivity and reduces operational risks"]}
-        gradientColors={["#ffbc00", "#ff0058"]}
+         "Enhances productivity and reduces operat",]}      
+         gradientColors={["#03a9f4", "#ff0058"]}
       />
 
       <ServiceSection
@@ -134,7 +134,8 @@ export default function ServicesPage() {
           
         ]}
         imageLeft={false}
-        gradientColors={["#03a9f4", "#ff0058"]}
+        gradientColors={["#ffbc00", "#ff0058"]}
+        // gradientColors={["#4B0082", "#D4AF37"]}
       />
 
       <ServiceSection
@@ -144,7 +145,7 @@ export default function ServicesPage() {
             "Provides training programs for skill development",
             "Enhances employee productivity and business performance",
             "Covers leadership, sales, and customer service training",]}
-        gradientColors={["#4dff03", "#00d0ff"]}
+            gradientColors={["#4dff03", "#00d0ff"]}
       />
 
       <ServiceSection
@@ -156,7 +157,7 @@ export default function ServicesPage() {
         "Improves customer retention and engagement.",
         ]}
         imageLeft={false}
-        gradientColors={["#ffbc00", "#ff0058"]}
+        gradientColors={["#03a9f4", "#ff0058"]}
       />
 
     </main>
