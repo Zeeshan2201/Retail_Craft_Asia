@@ -5,6 +5,7 @@ import ManagementTeam from '../components/ManagementTeam';
 import HeroSection from '../components/HeroSection';
 // import ServicesSlider from '../components/Ser';
 
+import HorizontalScroll from "../components/HorizontalScroll"
 
 const Home = () => {
   return (
@@ -15,6 +16,9 @@ const Home = () => {
 
 
       <WhyChooseUs></WhyChooseUs>
+      <div className="h-[100vh">
+     <HorizontalScroll/>
+     </div>
       <ManagementTeam></ManagementTeam>
       
     </div>

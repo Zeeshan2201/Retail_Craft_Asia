@@ -11,9 +11,9 @@ const Button = ({ children, variant = "primary", className = "" }) => {
 };
 
 const ServiceSection = ({ title, description, image, listItems, imageLeft = true, gradientColors }) => (
-  <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center">
+  <>
     {imageLeft ? (
-      <>
+      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
         <div className="relative h-[400px] overflow-hidden rounded-lg">
           <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" />
         </div>
@@ -53,9 +53,9 @@ const ServiceSection = ({ title, description, image, listItems, imageLeft = true
             </ul>
           </div>
         </div>
-      </>
+      </section>
     ) : (
-      <>
+      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900  to-[#D4AF37]">
         {/* Card Effect for Text Side */}
         <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
           {/* Tilted Background Card */}
@@ -95,16 +95,16 @@ const ServiceSection = ({ title, description, image, listItems, imageLeft = true
         <div className="relative h-[400px] overflow-hidden rounded-lg">
           <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" />
         </div>
-      </>
+      </section>
     )}
-  </section>
+  </>
 );
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700">
+    <main className="min-h-screen bg-purple-900">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 text-center text-white">
+      <section className="container mx-auto px-4 py-20 text-center text-white bg-purple-900">
        
        <h1 className="mt-4 mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
           Sales and Merchandising
