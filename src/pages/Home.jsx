@@ -1,10 +1,9 @@
 import React from 'react';
-import ProductShowcase from '../components/ProductShowCase';
+// import ProductShowcase from '../components/ProductShowCase';
 import WhyChooseUs from '../components/WhyChooseUs';
 import ManagementTeam from '../components/ManagementTeam';
 import HeroSection from '../components/HeroSection';
-import ServicesSlider from '../components/Ser';
-import FlipCardApp from '../components/Industries';
+// import ServicesSlider from '../components/Ser';
 
 
 const Home = () => {
@@ -12,8 +11,7 @@ const Home = () => {
     <div >
       <HeroSection />
       {/* <ProductShowcase></ProductShowcase> */}
-      <ServicesSlider></ServicesSlider>
-      <FlipCardApp></FlipCardApp>
+      {/* <ServicesSlider></ServicesSlider> */}
 
 
       <WhyChooseUs></WhyChooseUs>

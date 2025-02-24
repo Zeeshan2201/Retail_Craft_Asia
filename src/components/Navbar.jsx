@@ -5,43 +5,34 @@ import { Link } from 'react-router-dom';
 
 const vehicles = [
   {
-    name: "Model S",
+    name: "Sales and Merchandising ",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3ze7My4Grm0mgN34J2qnGtNmViop3v.png",
   },
   {
-    name: "Model 3",
+    name: "Brand Activation and Experiental Marketing",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3ze7My4Grm0mgN34J2qnGtNmViop3v.png",
   },
   {
-    name: "Model Y",
+    name: "Market Expansion Services ",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3ze7My4Grm0mgN34J2qnGtNmViop3v.png",
   },
   {
-    name: "New Model Y",
+    name: "Data & Technology ",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3ze7My4Grm0mgN34J2qnGtNmViop3v.png",
     isNew: true,
   },
   {
-    name: "Model X",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3ze7My4Grm0mgN34J2qnGtNmViop3v.png",
-  },
-  {
-    name: "Cybertruck",
+    name: "Digital Marketing",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3ze7My4Grm0mgN34J2qnGtNmViop3v.png",
   },
 ];
 
 const secondaryLinks = [
-  { title: "Inventory", href: "#" },
-  { title: "Used Cars", href: "#" },
-  { title: "Demo Drive", href: "#" },
-  { title: "Trade-In", href: "#" },
-  { title: "Compare", href: "#" },
-  { title: "Help Me Charge", href: "#" },
-  { title: "Fleet", href: "#" },
-  { title: "Semi", href: "#" },
-  { title: "Roadster", href: "#" },
-  { title: "Federal Tax Credit", href: "#" },
+  { title: "Sales and Merchandising", href: "/services/SalesAndMerchandising" },
+  { title: "Brand Activation and Experiental Marketing", href: "/services/BrandActivation" },
+  { title: "Market Expansion Services", href: "/services/MarketExpansion" },
+  { title: "Data & Technology", href: "/services/DataAndTechnology" },
+  { title: "Digital Marketing", href: "/services/DigitalMarketing" },
 ];
 
 const MainNav = () => {
@@ -52,29 +43,23 @@ const MainNav = () => {
       <header className="fixed left-0 right-0 top-0 z-50 flex h-16 items-center bg-white px-12">
         <div className="flex flex-1 items-center gap-16">
           <Link to="/" className="shrink-0">
-            {/* <svg className="h-6 w-32" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h24v27.9h11.5V7h24.5V0H85.3z"
-                fill="currentColor"
-              />
-            </svg> */}
-            
+         
             <img className='w-20 h-15' src="/logo.png"/>
           </Link>
           <nav className="hidden space-x-2 md:flex">
           <Link to="/" className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
               Home
             </Link>
-            <div
+            {/* <div
               className="group relative"
-              onMouseEnter={() => setActiveDropdown("vehicles")}
-              // onMouseLeave={() => setActiveDropdown(null)}
-            >
-            </div>
-            <Link to="/Services" className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
+              
+            >vehical
+            </div> */}
+            <Link onMouseEnter={() => setActiveDropdown("vehicles")}
+              onMouseLeave={() => setActiveDropdown(null)} to="/Services" className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
               Service
             </Link>
-            <Link to="/About" className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
+            <Link  to="/About" className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
               About Us 
             </Link>
             <Link to="/Contact" className="rounded-md px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100">
@@ -109,44 +94,13 @@ const MainNav = () => {
         onMouseEnter={() => setActiveDropdown("vehicles")}
         onMouseLeave={() => setActiveDropdown(null)}
       >
-        <div className="mx-auto max-w-7xl px-12 py-8">
-          <div className="grid grid-cols-12 gap-8">
-            <div className="col-span-8 grid grid-cols-3 gap-8">
-              {vehicles.map((vehicle) => (
-                <div key={vehicle.name} className="group/card">
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-neutral-100">
-                    <img
-                      src={vehicle.image || "/placeholder.svg"}
-                      alt={vehicle.name}
-                      className="object-cover transition-transform duration-300 group-hover/card:scale-105"
-                    />
-                  </div>
-                  <div className="mt-4 flex items-baseline justify-between">
-                    <h3 className="text-base font-medium text-neutral-900">
-                      {vehicle.name}
-                      {vehicle.isNew && <span className="ml-2 text-xs font-medium text-neutral-500">New</span>}
-                    </h3>
-                  </div>
-                  <div className="mt-1 flex gap-4 text-sm text-neutral-500">
-                    <Link to="#" className="hover:text-neutral-900 hover:underline">
-                      Learn
-                    </Link>
-                    <Link to="#" className="hover:text-neutral-900 hover:underline">
-                      Order
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="col-span-4">
+        <div className=" w-[20vw] px-12 py-8">
               <div className="grid gap-y-4">
                 {secondaryLinks.map((link) => (
-                  <Link key={link.title} to={link.href} className="text-sm text-neutral-500 hover:text-neutral-900">
+                  <Link onClick={()=>setActiveDropdown(null)} key={link.title} to={link.href} className="text-sm text-neutral-500 hover:text-neutral-900">
                     {link.title}
                   </Link>
                 ))}
-              </div>
-            </div>
           </div>
         </div>
       </div>

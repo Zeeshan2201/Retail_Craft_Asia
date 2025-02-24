@@ -107,79 +107,65 @@ export default function ServicesPage() {
       <section className="container mx-auto px-4 py-20 text-center text-white">
        
        <h1 className="mt-4 mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-          Market Expansion
+       Market Expansion Services
         </h1> <br></br>
-        <p className="mb-4 mt-4  text-justify text-2xl font-semibold tracking-wider">We help brands maximize their market presence by ensuring that the right products are available at the right time and place. Our expert team focuses on enhancing product visibility, executing strategic in-store promotions, and optimizing shelf placement to drive higher sales and brand recall.
-
-With a data-driven approach, we analyze consumer behavior, market trends, and competitor strategies to develop customized merchandising plans that increase product engagement and boost conversions.</p>
+        <p className="mb-4 mt-4  text-justify text-2xl font-semibold tracking-wider">Expanding into new markets requires strategic planning and execution. We support brands with tailored market entry strategies, local partnerships, and distribution solutions. Our expertise helps businesses overcome entry barriers, minimize risks, and establish a strong market presence.</p>
         <Button className="mt-8">SPEAK WITH OUR EXPERTS →</Button>
       </section>
 
       {/* Service Sections with Glassmorphism & Hover Animation */}
       <ServiceSection
-        title="Field Sales"
+        title="Product Sourcing"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
-          "Engages directly with retailers, wholesalers, and distributors", 
-          "Builds strong relationships to expand market reach", 
-          "Provides real-time market insights for improved sales performance"]}
+          "Identifies and procures high-quality products for businesses", 
+          "Ensures cost-effectiveness and compliance with industry standards", 
+          "Manages supplier relationships and supply chain efficiency"]}
         gradientColors={["#ffbc00", "#ff0058"]}
       />
 
       <ServiceSection
-        title="Merchandising"
+        title="Market Research & Insights"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
-          "Implements strategic product placement and eye-catching displays",
-          "Enhances brand visibility and influences customer purchasing decisions",
-          "Ensures compliance with brand guidelines for in-store execution",
+          "Collects and analyzes consumer and market data",
+          "Identifies trends, preferences, and opportunities",
+          "Helps brands make informed business decisions",
         ]}
         imageLeft={false}
         gradientColors={["#03a9f4", "#ff0058"]}
       />
 
       <ServiceSection
-        title="Retail Audit"
+        title="Sales & Marketing"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
-          "Evaluates product availability, pricing, and shelf positioning", 
-          "Monitors compliance with promotional and branding guidelines", 
-          "Provides data-driven insights for optimizing retail execution"]}
+          "Develops strategies to increase brand reach and sales", 
+          "Combines traditional and digital marketing techniques", 
+          "Focuses on customer acquisition, engagement, and retention"]}
         gradientColors={["#4dff03", "#00d0ff"]}
       />
 
       <ServiceSection
-        title="Point of Sale Execution"
+        title="Distribution & Logistics"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
-          "Ensures flawless execution of branding and promotions at retail outlets",
-          "Manages promotional displays, signage, and in-store branding",
-          "Enhances consumer engagement at the final point of purchase",
+          "Ensures efficient supply chain management and product delivery",
+          "Covers warehousing, transportation, and inventory control.",
+          "Reduces costs and improves operational efficiency",
         ]}
         imageLeft={false}
         gradientColors={["#ffbc00", "#ff0058"]}
       />
 
       <ServiceSection
-        title="Asset Optimisation"
+        title="After-Sales Services"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
-          "Maximizes the effectiveness of in-store assets like shelves and signage", 
-          "Ensures proper utilization, maintenance, and strategic placement", 
-          "Increases shopper engagement and improves sales efficiency"]}
+          "Provides customer support, warranty handling, and issue resolution", 
+          "Enhances customer satisfaction and brand loyalty", 
+          "Includes maintenance, repairs, and product assistance"]}
         gradientColors={["#03a9f4", "#ff0058"]}
-      />
-
-      <ServiceSection
-        title="Product Management"
-        image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
-        listItems={[
-          "Oversees the entire lifecycle of FMCG products from launch to market expansion",
-          "Ensures competitive pricing and efficient distribution",
-          "Adapts to market trends and consumer preferences for sustained growth",
-        ]}
-        imageLeft={false}
-        gradientColors={["#4dff03", "#00d0ff"]}
       />
     </main>
   );
