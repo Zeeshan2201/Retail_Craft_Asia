@@ -5,15 +5,15 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const slides = [
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-n2aXU1Vw1hQaEFKN41Bc5zm3GEXDkm.png",
+    image: "https://thumbs.dreamstime.com/b/elegant-white-yellow-modern-social-media-marketing-instagram-post-template-new-design-341975888.jpg",
     alt: "J&H Tackle Fishing Equipment",
   },
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8SxHdZNSA2hAcq3yaKYkMekKoSp6Hd.png",
+    image: "https://en.pimg.jp/097/077/319/1/97077319.jpg",
     alt: "J&H Tackle Brand",
   },
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-pIPNMMrDHOnc7mvDWlC6fphM3kcZQV.png",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC6Ns_kG8HIbWkgViviXBg4tHRA7IKchWT7Q&s",
     alt: "Absolute Dogs Training",
   },
 ]
