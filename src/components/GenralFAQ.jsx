@@ -65,7 +65,7 @@ const faqData = [
   }
 ];
 
- function GenFAQ() {
+function GenFAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -73,26 +73,42 @@ const faqData = [
   };
 
   return (
-    <div className=" px-32 p-6  bg-gradient-to-r from-transparent to-[#fdf6e3]  min-h-screen">
+    <div className="px-32 py-12 bg-gradient-to-r from-[#fdf6e3] to-[#f0e6d6] min-h-screen">
+      <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">Frequently Asked Questions</h1>
       {faqData.map((section, sectionIndex) => (
-        <div key={sectionIndex} className="mb-6">
-          <h2 className="text-xl font-bold mb-4 text-gray-800">{section.category}</h2>
+        <div key={sectionIndex} className="mb-8">
+          <h2 className="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-yellow-500 pb-2">
+            {section.category}
+          </h2>
           {section.items.map((item, index) => (
             <div
               key={index}
-              className="border-b border-gray-300 cursor-pointer"
-              onClick={() => toggleAccordion(`${sectionIndex}-${index}`)}
+              className="mb-4 transition-all duration-300 ease-in-out"
             >
               <div
-                className={`flex justify-between items-center p-4 hover:bg-gray-200 transition-all shadow-md rounded-lg ${
-                  openIndex === `${sectionIndex}-${index}` ? "text-red-600" : "text-gray-900"
+                className={`flex justify-between items-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg cursor-pointer transition-all ${
+                  openIndex === `${sectionIndex}-${index}` ? "border-l-4 border-yellow-500" : ""
                 }`}
+                onClick={() => toggleAccordion(`${sectionIndex}-${index}`)}
               >
-                <span>{item.question}</span>
-                <span>{openIndex === `${sectionIndex}-${index}` ? "−" : "+"}</span>
+                <span className={`text-lg font-semibold ${
+                  openIndex === `${sectionIndex}-${index}` ? "text-yellow-600" : "text-gray-800"
+                }`}>
+                  {item.question}
+                </span>
+                <span className={`text-2xl transition-transform duration-300 ${
+                  openIndex === `${sectionIndex}-${index}` ? "rotate-180" : ""
+                }`}>
+                  {openIndex === `${sectionIndex}-${index}` ? "−" : "+"}
+                </span>
               </div>
+              {/* <div className="h-[1rem] w-full bg-gray-700"></div> */}
               {openIndex === `${sectionIndex}-${index}` && (
-                <div className="p-4 text-gray-600 bg-white shadow-lg rounded-lg">{item.answer}</div>
+               
+               <div className="p-6 border-t-black border-t-2 border-l-4 border-yellow-500 bg-white rounded-lg shadow-md text-gray-600">
+                 
+                  {item.answer}
+                </div>
               )}
             </div>
           ))}
@@ -101,4 +117,5 @@ const faqData = [
     </div>
   );
 }
-export default GenFAQ
+
+export default GenFAQ;
