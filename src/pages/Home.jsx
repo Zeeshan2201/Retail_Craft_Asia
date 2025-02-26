@@ -3,6 +3,7 @@ import React from 'react';
 import WhyChooseUs from '../components/WhyChooseUs';
 import ManagementTeam from '../components/ManagementTeam';
 import HeroSection from '../components/HeroSection';
+import Industries from '../components/Industries'
 // import ServicesSlider from '../components/Ser';
 
 import HorizontalScroll from "../components/HorizontalScroll"
@@ -13,6 +14,7 @@ const Home = () => {
       <HeroSection />
       {/* <ProductShowcase></ProductShowcase> */}
       {/* <ServicesSlider></ServicesSlider> */}
+      <Industries />
 
 
       <WhyChooseUs></WhyChooseUs>
