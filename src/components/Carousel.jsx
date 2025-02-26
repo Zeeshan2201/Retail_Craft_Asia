@@ -13,7 +13,7 @@ const slides = [
     alt: "J&H Tackle Brand",
   },
   {
-    image: "/Services/Growth_3.jpg",
+    image: "/Services/Growth_4.png",
     alt: "Absolute Dogs Training",
   },
 ]
