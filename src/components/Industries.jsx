@@ -8,25 +8,26 @@ import PharmaceuticalsIcon from '../assets/Industry/health_pharmacy.svg';
 
 const FlipCard = () => {
   return (
-    <>
-      <h2 className="text-center font-bold text-6xl mt-15 py-10 bg-gradient-to-r from-yellow-600 to-white-500">
+    <div className='bg-white'>
+    {/* <div className='bg-gradient-to-r from-purple-900 via-purple-600 to-purple-800'> */}
+      <h2 className="text-center font-bold text-6xl mt-15 py-10 ">
         Industries and Sectors
       </h2>
-      <div className="flex flex-wrap gap-x-[8vw] gap-y-[2vh] justify-evenly px-32 bg-gradient-to-r from-yellow-600 to-white-500">
+      <div className="flex flex-wrap gap-x-[8vw] gap-y-[2vh] justify-evenly px-32 ">
         {/* FMCG Card */}
-        <div className="h-[40vh] w-[20vw] m-4 mx-auto perspective-[1000px] cursor-pointer group">
-          <div className="relative w-[20vw] h-[40vh] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
+        <div className="h-[40vh] w-[20vw] m-4 mx-auto  perspective-[1000px] cursor-pointer group">
+          <div className="relative w-[20vw] h-[40vh]  transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-lg bg-white border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
+            <div className="absolute w-full h-full  backface-hidden flex flex-col items-center justify-center rounded-3xl  bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
               <img src={FMCGIcon} alt="FMCG" className="w-24 h-24 mb-4" />
               <p className="text-xl text-center px-2">
                 FMCG (Fast-Moving Consumer Goods) refers to products that are sold quickly and at relatively low cost.
               </p>
             </div>
             {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-lg bg-yellow-400 text-white">
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
               <img src={FMCGIcon} alt="FMCG" className="w-24 h-24 mb-4" />
-              <p className="text-2xl">FMCG</p>
+              <p className="text-2xl font-semibold">FMCG</p>
             </div>
           </div>
         </div>
@@ -35,16 +36,16 @@ const FlipCard = () => {
         <div className="h-[40vh] w-[20vw] m-4 mx-auto perspective-[1000px] cursor-pointer group">
           <div className="relative w-[20vw] h-[40vh] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-lg bg-white border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
               <img src={RetailIcon} alt="Retail" className="w-24 h-24 mb-4" />
               <p className="text-xl text-center px-2">
                 Retail involves selling goods and services directly to consumers through various channels.
               </p>
             </div>
             {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-lg bg-yellow-400 text-white">
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
               <img src={RetailIcon} alt="Retail" className="w-24 h-24 mb-4" />
-              <p className="text-2xl">Retail</p>
+              <p className="text-2xl font-semibold">Retail</p>
             </div>
           </div>
         </div>
@@ -53,16 +54,16 @@ const FlipCard = () => {
         <div className="h-[40vh] w-[20vw] m-4 mx-auto perspective-[1000px] cursor-pointer group">
           <div className="relative w-[20vw] h-[40vh] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-lg bg-white border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
               <img src={HealthBeautyIcon} alt="Health and Beauty" className="w-24 h-24 mb-4" />
               <p className="text-xl text-center px-2">
                 This sector includes products and services related to personal care, skincare, cosmetics, and wellness.
               </p>
             </div>
             {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-lg bg-yellow-400 text-white">
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
               <img src={HealthBeautyIcon} alt="Health and Beauty" className="w-24 h-24 mb-4" />
-              <p className="text-2xl">Health and Beauty</p>
+              <p className="text-2xl font-semibold">Health and Beauty</p>
             </div>
           </div>
         </div>
@@ -71,17 +72,17 @@ const FlipCard = () => {
         <div className="h-[40vh] w-[20vw] m-4 mx-auto perspective-[1000px] cursor-pointer group">
           <div className="relative w-[20vw] h-[40vh] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-lg bg-white border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
               <img src={ConsumerDurablesIcon} alt="Consumer Durables" className="w-24 h-24 mb-4" />
               <p className="text-xl text-center px-2">
                 This category includes long-lasting goods such as home appliances, gadgets, smartphones, and furniture.
               </p>
             </div>
             {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-lg bg-yellow-500 text-white">
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
               <img src={ConsumerDurablesIcon} alt="Consumer Durables" className="w-24 h-24 mb-4" />
-              <p className="text-2xl px-5">Consumer Durables and Electronics</p>
-            </div>
+              <p className="text-2xl text-center font-semibold px-5">Consumer Durables and Electronics</p>
+            </div>  
           </div>
         </div>
 
@@ -89,16 +90,16 @@ const FlipCard = () => {
         <div className="h-[40vh] w-[20vw] m-4 mx-auto perspective-[1000px] cursor-pointer group">
           <div className="relative w-[20vw] h-[40vh] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-lg bg-white border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
               <img src={BankingIcon} alt="Banking" className="w-24 h-24 mb-4" />
               <p className="text-xl text-center px-2">
                 This sector covers financial institutions providing banking, investment, insurance, and wealth management services.
               </p>
             </div>
             {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-lg bg-yellow-400 text-white">
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
               <img src={BankingIcon} alt="Banking" className="w-24 h-24 mb-4" />
-              <p className="text-2xl px-5">Banking and Financial Services</p>
+              <p className="text-2xl text-center font-semibold px-5">Banking and Financial Services</p>
             </div>
           </div>
         </div>
@@ -107,21 +108,21 @@ const FlipCard = () => {
         <div className="h-[40vh] w-[20vw] m-4 mx-auto perspective-[1000px] cursor-pointer group">
           <div className="relative w-[20vw] h-[40vh] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-lg bg-white border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
               <img src={PharmaceuticalsIcon} alt="Pharmaceuticals" className="w-24 h-24 mb-4" />
               <p className="text-xl text-center px-2">
                 This industry comprises prescription and over-the-counter medicines, medical devices, and healthcare services.
               </p>
             </div>
             {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-lg bg-yellow-400 text-white">
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
               <img src={PharmaceuticalsIcon} alt="Pharmaceuticals" className="w-24 h-24 mb-4" />
-              <p className="text-2xl">Health and Pharmaceuticals</p>
+              <p className="text-2xl  font-semibold text-center ">Health and Pharmaceuticals</p>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

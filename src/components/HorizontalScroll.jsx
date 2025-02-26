@@ -1,6 +1,12 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+
+import Tech from '../../src/animation/service/tech.json'
+import Marketing from '../../src/animation/service/marketing.json'
+
+import Sales from "../animation/MarketExpansion/sales.json"
+import Lottie from "react-lottie";
 // import Image from "next/image"
 
 const HorizontalScroll = () => {
@@ -42,10 +48,10 @@ const HorizontalScroll = () => {
           className="flex transition-transform duration-300 ease-out"
           style={{ transform: `translateX(-${scrollPosition}px)` }}
         >
-          <Section  color=" bg-black flex flex-col w-[80dvw] px-12">
+          <Section  color=" bg-white flex flex-col w-[75dvw] px-12">
             
-            <div className='flex flex-row  items-center  justify-center' >
-                <div className="w-[90%]">
+            <div className='flex flex-row  rounded-xl bg-purple-900 py-4 px-8  items-center  justify-center' >
+                <div className="w-[64%] ">
                   <div className="text-3xl font-bold ">Sales and Merchandising</div>
                   <p className="my-4 text-2xl">Our expertise ensures that your products reach the right customers at the right time, maximizing your market potential.<br></br></p>
                   <div className="">
@@ -75,17 +81,29 @@ const HorizontalScroll = () => {
               </div>
             </div>
             <div className="w-[80%] ">
-              <img src="/example.jpg" 
+              {/* <img src="/example.jpg" 
         alt="Example Image" 
         width={500} 
-        height={300} />
+        height={300} /> */}
+        <Lottie
+  options={{
+    loop: true,
+    autoplay: true,
+    animationData: Sales,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  }}
+  height={400}
+  width={400}
+/>
             </div>
             </div>
           </Section>
 
-          <Section color="bg-black flex flex-col w-[80dvw] px-12">
-          <div className='flex flex-row items-center  justify-center' >
-          <div className="w-[90%]">
+          <Section color="bg-white flex flex-col w-[75dvw] px-12">
+          <div className='flex flex-row  px-8 py-4 rounded-xl bg-purple-900 items-center  justify-center' >
+          <div className="w-[70%]">
             <div className="text-3xl font-bold">Brand Activation and Experimental Marketing</div>
             <p className="text-2xl my-4">At Retail Craft Asia, we create impactful brand experiences that engage, inspire, and drive consumer action.</p>
             <div className="">
@@ -121,9 +139,9 @@ const HorizontalScroll = () => {
             </div>
           </Section>
 
-          <Section color="bg-black flex flex-col w-[80dvw] px-12">
-          <div className='flex flex-row items-center  justify-center' >
-          <div className="w-[90%]">
+          <Section color="bg-white flex flex-col w-[75dvw] px-12">
+          <div className='flex flex-row rounded-xl py-4 px-8 bg-purple-900 items-center  justify-center' >
+          <div className="w-[64%]">
             <div className="text-3xl font-bold">Market Expansion Services</div>
             <p className="text-2xl my-4">At Retail Craft Asia, we help businesses expand into new markets with end-to-end solutions</p>
             <div className="">
@@ -158,9 +176,9 @@ const HorizontalScroll = () => {
             </div>
             </div>
           </Section>
-          <Section color="bg-black flex flex-col w-[80dvw] px-12">
-          <div className='flex flex-row items-center  justify-center' >
-          <div className="w-[90%]">
+          <Section color="bg-white flex flex-col w-[75dvw] px-12">
+          <div className='flex flex-row rounded-xl py-4 px-8 bg-purple-900 items-center  justify-center' >
+          <div className="w-[64%]">
             <div className="text-3xl font-bold">Data and Technology</div>
             <p className="text-2xl my-4">At Retail Craft Asia,we harness the power of data and technology to drive smarter business decisions</p>
             <div className="">
@@ -195,9 +213,9 @@ const HorizontalScroll = () => {
             </div>
             </div>
           </Section>
-          <Section color="bg-black flex flex-col w-[80dvw] px-12">
-          <div className='flex flex-row items-center  justify-center' >
-          <div className="w-[90%]">
+          <Section color="bg-white flex flex-col w-[75dvw] px-12">
+          <div className='flex flex-row  rounded-xl py-4 px-8 bg-purple-900 items-center  justify-center' >
+          <div className="w-[64%]">
             <div className="text-3xl font-bold">Digital Marketing</div>
             <p className="text-2xl my-2">we create impactful digital marketing strategies that drive brand awareness, engagement, and conversions</p>
             <div className="my-2">

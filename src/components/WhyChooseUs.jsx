@@ -16,13 +16,14 @@ function WhyChooseUs() {
 
   return (
     <>
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '80px', background: '#f8f9fa', position: 'relative' }}
-    className='pl-[60px]'>
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '80px',  position: 'relative' }}
+    className='pl-[60px] bg-gradient-to-r from-purple-900 via-purple-600 to-purple-800 '>
       <div style={{ position: "relative" }}>
   <motion.div 
     whileHover={{ scale: 1.1, rotate: 5 }}
-    className=""
-    style={{ width: '300px', height: '300px', background: `radial-gradient(circle, ${selected.color}, rgb(239, 192, 75))`, borderRadius: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: 'white', textAlign: 'center', position: 'relative', zIndex: 2, transition: 'all 0.2s ease-in-out' }}
+    className=" overflow-hidden"
+    style={{ width: '320px', height: '320px', background: `radial-gradient(circle, ${selected.color}, rgb(239, 192, 75))`, borderRadius: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: 'white', textAlign: 'center', position: 'relative', zIndex: 2, transition: 'all 0.2s ease-in-out' }}
+    // style={{ width: '300px', height: '300px', background: `radial-gradient(circle, ${selected.color}, rgb(239, 192, 75))`, borderRadius: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: 'white', textAlign: 'center', position: 'relative', zIndex: 2, transition: 'all 0.2s ease-in-out' }}
   >
     <h2 style={{ fontSize: '24px', fontWeight: 'bold' }}>{selected.title}</h2>
     <p style={{ fontSize: '14px', marginTop: '10px', padding: '0 20px' }}>{selected.text}</p>
@@ -30,8 +31,9 @@ function WhyChooseUs() {
 
   {/* Background Element - Outside motion.div */}
   <div 
-    className="-z-10" 
-    style={{ position: 'absolute', width: '400px', height: '400px', background: '#e0e0e0', borderRadius: '50%', zIndex: 1, right:'10%', top: '50%', transform: 'translateY(-50%)' }}>
+
+    className="-z-10 bg-gray-300 " 
+    style={{ position: 'absolute', width: '400px', height: '400px',  borderRadius: '50%', zIndex: 1, right:'10%', top: '50%', transform: 'translateY(-50%)' }}>
   </div>
 </div>
 

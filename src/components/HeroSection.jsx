@@ -128,7 +128,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="flex items-center justify-center h-screen bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 px-10">
+    <section className="flex items-center justify-center h-screen bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] px-10">
       <div className="flex w-full max-w-5xl items-center justify-between">
         <div className="text-white max-w-lg">
           <h1 className="text-5xl font-bold">Welcome to Our 3D Cube Animation</h1>
