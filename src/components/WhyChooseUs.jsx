@@ -3,26 +3,50 @@ import { FaGem, FaStopwatch, FaHandPointer, FaHeart } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const data = [
-  { icon: <FaGem />, title: "Premium Quality", text: "We ensure the best quality in our services.", color: "gold" },
-  { icon: <FaStopwatch />, title: "Timely Service", text: "Punctuality is our priority.", color: "#b8860b" },
-  { icon: <FaHandPointer />, title: "Easy Process", text: "Seamless and user-friendly experience.", color: "#daa520" },
-  { icon: <FaHeart />, title: "Customer Satisfaction", text: "We prioritize your happiness and trust.", color: "#ff6347" },
+  { icon: <FaGem />, title: "Long Term Strategic Partnership ", text: "Building lasting partnerships for sustainable growth and innovation in retail across Asia.", color: "gold" },
+  { icon: <FaStopwatch />, title: "Deep Industry Knowledge and Global Network ", text: "Leveraging deep industry expertise and a vast global network for strategic growth.", color: "#b8860b" },
+  { icon: <FaHandPointer />, title: "Client Centric focus ", text: "Prioritizing client needs with tailored solutions for lasting success.", color: "#daa520" },
+  { icon: <FaHeart />, title: "Tailored made solutions ", text: "Crafting tailor-made solutions to drive business excellence and growth.", color: "#ff6347" },
+  { icon: <FaStopwatch />, title: "Data Driven Approach", text: "Empowering decisions with a data-driven approach for measurable success.", color: "#b8860b" },
+  { icon: <FaHandPointer />, title: "Inbuilt Technology Platforms", text: "Enhancing business efficiency with inbuilt technology platforms.", color: "#daa520" },
 ];
 
 function WhyChooseUs() {
   const [selected, setSelected] = useState({ title: "WHY CHOOSE US", text: "We provide top-tier services with a commitment to excellence and efficiency.", color: "gold" });
 
   return (
+    <>
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '80px', background: '#f8f9fa', position: 'relative' }}
     className='pl-[60px]'>
+      <div style={{ position: "relative" }}>
+  <motion.div 
+    whileHover={{ scale: 1.1, rotate: 5 }}
+    className=""
+    style={{ width: '300px', height: '300px', background: `radial-gradient(circle, ${selected.color}, rgb(239, 192, 75))`, borderRadius: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: 'white', textAlign: 'center', position: 'relative', zIndex: 2, transition: 'all 0.2s ease-in-out' }}
+  >
+    <h2 style={{ fontSize: '24px', fontWeight: 'bold' }}>{selected.title}</h2>
+    <p style={{ fontSize: '14px', marginTop: '10px', padding: '0 20px' }}>{selected.text}</p>
+  </motion.div>
+
+  {/* Background Element - Outside motion.div */}
+  <div 
+    className="-z-10" 
+    style={{ position: 'absolute', width: '400px', height: '400px', background: '#e0e0e0', borderRadius: '50%', zIndex: 1, right:'10%', top: '50%', transform: 'translateY(-50%)' }}>
+  </div>
+</div>
+
+      {/* <div >
       <motion.div 
         whileHover={{ scale: 1.1, rotate: 5 }}
+        className=""
         style={{ width: '300px', height: '300px', background: `radial-gradient(circle, ${selected.color},rgb(239, 192, 75))`, borderRadius: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: 'white', textAlign: 'center', position: 'relative', zIndex: 2, transition: 'all 0.2s ease-in-out' }}
       >
         <h2 style={{ fontSize: '24px', fontWeight: 'bold' }}>{selected.title}</h2>
         <p style={{ fontSize: '14px', marginTop: '10px', padding: '0 20px' }}>{selected.text}</p>
+      <div className="-z-10" style={{ position: 'absolute', width: '400px', height: '400px', background: '#e0e0e0', borderRadius: '50%', zIndex: 1, left: '120px' }}></div>
       </motion.div>
-      <div style={{ position: 'absolute', width: '400px', height: '400px', background: '#e0e0e0', borderRadius: '50%', zIndex: 1, left: '120px' }}></div>
+      
+      </div> */}
       <div style={{ marginLeft: '120px', position: 'relative' }}>
         {data.map((item, i) => (
           <motion.div 
@@ -32,7 +56,7 @@ function WhyChooseUs() {
             transition={{ duration: 0.3, delay: i * 0.1 }}
             whileHover={{ scale: 1.1, boxShadow: '0px 6px 10px rgba(0,0,0,0.2)' }}
             onClick={() => setSelected(item)}
-            style={{ display: 'flex', alignItems: 'center', marginBottom: '20px', background: 'white', padding: '15px', borderRadius: '10px', boxShadow: '0px 4px 6px rgba(0,0,0,0.1)', maxWidth: '350px', transition: 'all 0.2s ease-in-out', position: 'relative', cursor: 'pointer' }}
+            style={{ display: 'flex', alignItems: 'center', marginBottom: '20px', background: 'white', padding: '15px', borderRadius: '10px', boxShadow: '0px 4px 6px rgba(0,0,0,0.1)',  transition: 'all 0.2s ease-in-out', position: 'relative', cursor: 'pointer' }}
           >
             <motion.div 
               whileHover={{ rotate: 30 }}
@@ -49,6 +73,7 @@ function WhyChooseUs() {
         ))}
       </div>
     </div>
+</>
   );
 }
 
