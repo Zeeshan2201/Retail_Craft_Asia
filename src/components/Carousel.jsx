@@ -5,15 +5,15 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const slides = [
   {
-    image: "https://thumbs.dreamstime.com/b/elegant-white-yellow-modern-social-media-marketing-instagram-post-template-new-design-341975888.jpg",
+    image: "/Services/Growth_1.jpg",
     alt: "J&H Tackle Fishing Equipment",
   },
   {
-    image: "https://en.pimg.jp/097/077/319/1/97077319.jpg",
+    image: "/Services/Growth_2.jpeg",
     alt: "J&H Tackle Brand",
   },
   {
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC6Ns_kG8HIbWkgViviXBg4tHRA7IKchWT7Q&s",
+    image: "/Services/Growth_3.jpg",
     alt: "Absolute Dogs Training",
   },
 ]

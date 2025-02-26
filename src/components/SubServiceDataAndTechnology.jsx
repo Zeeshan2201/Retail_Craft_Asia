@@ -327,8 +327,8 @@ export default function ServicesPage() {
         "lisManages customer relationships effectively.",
        " Automates interactions and tracks customer journeys.",
         "Improves customer retention and engagement.",
-        ]}      
-         gradientColors={["#03a9f4", "#ff0058"].map((item, index) => (
+        ]      
+         .map((item, index) => (
                 <li key={index} className="text-white">• {item}</li>
               ))}
             </ul>
