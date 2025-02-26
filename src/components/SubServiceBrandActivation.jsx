@@ -1,4 +1,11 @@
 import React from 'react';
+import Brand from "../animation/BrandActivation/Brand.json";
+import Marketing from "../animation/BrandActivation/marketing.json";
+import Instore from "../animation/BrandActivation/Instore.json";
+import sampeling from "../animation/BrandActivation/sampeling.json";
+import Event from "../animation/BrandActivation/Event.json";
+import Lottie from "react-lottie";
+
 
 const Button = ({ children, variant = "primary", className = "" }) => {
   const baseStyle = "px-6 py-2 font-semibold rounded-md transition-colors duration-300";
@@ -116,7 +123,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Service Sections with Glassmorphism & Hover Animation */}
-      <ServiceSection
+      {/* <ServiceSection
         title="Brand Ambassador Programmes"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
@@ -125,9 +132,66 @@ export default function ServicesPage() {
           "Boosts credibility and visibility in target markets",
         ]}
         gradientColors={["#ffbc00", "#ff0058"]}
-      />
+      /> */}
 
-      <ServiceSection
+<section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
+        <div className="relative h-[400px] overflow-hidden rounded-lg ">
+        <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:Brand,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    }}
+    height={400}
+    width={400}
+    />
+        </div>
+        {/* Card Effect for Text Side */}
+        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+          {/* Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058)` }}
+          ></div>
+          {/* Blurred Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058)` }}
+          ></div>
+
+          {/* Bouncing Square Animation */}
+          <div className="absolute top-0 left-0 right-0 bottom-0 z-5 pointer-events-none">
+            <div
+              className="absolute top-0 left-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '0s' }}
+            ></div>
+            <div
+              className="absolute bottom-0 right-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '1s' }}
+            ></div>
+          </div>
+
+          {/* Main Content */}
+          <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
+            <h2 className="text-3xl font-bold text-white">Brand Ambassador Programmes</h2>
+            <p className="mt-2 text-lg text-purple-100"></p>
+            <ul className="mt-4 space-y-2">
+              {[
+          "Utilizes influencers and representatives to promote brand trust",
+          "Builds long-term customer relationships through personal engagement",
+          "Boosts credibility and visibility in target markets",
+        ].map((item, index) => (
+                <li key={index} className="text-white">• {item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* <ServiceSection
         title="Events & Road Shows"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
@@ -137,9 +201,66 @@ export default function ServicesPage() {
         ]}
         imageLeft={false}
         gradientColors={["#4dff03", "#00d0ff"]}
-      />
+      /> */}
 
-      <ServiceSection
+<section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900 to-[#D4AF37]">
+        {/* Card Effect for Text Side */}
+        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+          {/* Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #4dff03, #00d0ff)` }}
+          ></div>
+          {/* Blurred Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #4dff03, #00d0ff)` }}
+          ></div>
+
+          {/* Bouncing Square Animation */}
+          <div className="absolute top-0 left-0 right-0 bottom-0 z-5 pointer-events-none">
+            <div
+              className="absolute top-0 left-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '0s' }}
+            ></div>
+            <div
+              className="absolute bottom-0 right-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '1s' }}
+            ></div>
+          </div>
+
+          {/* Main Content */}
+          <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
+            <h2 className="text-3xl font-bold text-white">Events & Road Shows</h2>
+            <p className="mt-2 text-lg text-purple-100"></p>
+            <ul className="mt-4 space-y-2">
+              {[
+          "Engages consumers directly through interactive and mobile campaigns",
+          "Increases brand awareness in high-footfall locations",
+          "Provides real-time feedback and consumer interaction opportunities",
+        ].map((item, index) => (
+                <li key={index} className="text-white">• {item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="relative h-[400px] overflow-hidden rounded-lg">
+        <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:Event,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    }}
+    height={400}
+    width={400}
+    />
+        </div>
+      </section>
+
+      {/* <ServiceSection
         title="Sampling"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
@@ -148,9 +269,68 @@ export default function ServicesPage() {
           "Drives sales conversion by reducing purchase hesitation",
         ]}
         gradientColors={["#03a9f4", "#ff0058"]}
-      />
+      /> */}
 
-      <ServiceSection
+<section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
+        <div className="relative h-[400px] overflow-hidden rounded-lg ">
+        <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:sampeling,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    }}
+    height={300}
+    width={400}
+    />
+        </div>
+        {/* Card Effect for Text Side */}
+        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+          {/* Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #03a9f4, #ff0058)` }}
+          ></div>
+          {/* Blurred Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg,  #03a9f4, #ff0058)` }}
+          ></div>
+
+          {/* Bouncing Square Animation */}
+          <div className="absolute top-0 left-0 right-0 bottom-0 z-5 pointer-events-none">
+            <div
+              className="absolute top-0 left-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '0s' }}
+            ></div>
+            <div
+              className="absolute bottom-0 right-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '1s' }}
+            ></div>
+          </div>
+
+          {/* Main Content */}
+          <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
+            <h2 className="text-3xl font-bold text-white">Sampling</h2>
+            <p className="mt-2 text-lg text-purple-100"></p>
+            <ul className="mt-4 space-y-2">
+              {[
+          
+            "Encourages product trials to boost consumer confidence",
+            "Helps in generating word-of-mouth marketing and customer reviews",
+            "Drives sales conversion by reducing purchase hesitation",
+          
+        ].map((item, index) => (
+                <li key={index} className="text-white">• {item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* <ServiceSection
         title="Shopper Marketing"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
@@ -160,9 +340,68 @@ export default function ServicesPage() {
         ]}
         imageLeft={false}
         gradientColors={["#4dff03", "#00d0ff"]}
-      />
+      /> */}
 
-      <ServiceSection
+
+        <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900 to-[#D4AF37]">
+        {/* Card Effect for Text Side */}
+        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+          {/* Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #4dff03, #00d0ff)` }}
+          ></div>
+          {/* Blurred Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #4dff03, #00d0ff)` }}
+          ></div>
+
+          {/* Bouncing Square Animation */}
+          <div className="absolute top-0 left-0 right-0 bottom-0 z-5 pointer-events-none">
+            <div
+              className="absolute top-0 left-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '0s' }}
+            ></div>
+            <div
+              className="absolute bottom-0 right-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '1s' }}
+            ></div>
+          </div>
+
+          {/* Main Content */}
+          <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
+            <h2 className="text-3xl font-bold text-white">Shopper Marketing</h2>
+            <p className="mt-2 text-lg text-purple-100"></p>
+            <ul className="mt-4 space-y-2">
+              {[
+                    "Influences buying decisions at the point of sale",
+                    "Uses in-store promotions, displays, and personalized offers",
+                    "Enhances customer shopping experience and increases basket value",
+        ].map((item, index) => (
+                <li key={index} className="text-white">• {item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="relative h-[400px] overflow-hidden rounded-lg">
+        <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:Marketing,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    }}
+    height={400}
+    width={400}
+    />
+        </div>
+      </section>
+
+
+      {/* <ServiceSection
         title="Instore Activation"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
@@ -171,7 +410,67 @@ export default function ServicesPage() {
           "Strengthens brand visibility and customer loyalty",
         ]}
         gradientColors={["#03a9f4", "#ff0058"]}
-      />
+      /> */}
+
+        
+<section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
+        <div className="relative h-[400px] overflow-hidden rounded-lg ">
+        <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:Instore,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    }}
+    height={400}
+    width={400}
+    />
+        </div>
+        {/* Card Effect for Text Side */}
+        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+          {/* Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058)` }}
+          ></div>
+          {/* Blurred Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058)` }}
+          ></div>
+
+          {/* Bouncing Square Animation */}
+          <div className="absolute top-0 left-0 right-0 bottom-0 z-5 pointer-events-none">
+            <div
+              className="absolute top-0 left-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '0s' }}
+            ></div>
+            <div
+              className="absolute bottom-0 right-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '1s' }}
+            ></div>
+          </div>
+
+          {/* Main Content */}
+          <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
+            <h2 className="text-3xl font-bold text-white">Instore Activation</h2>
+            <p className="mt-2 text-lg text-purple-100"></p>
+            <ul className="mt-4 space-y-2">
+              {[
+          "Creates engaging in-store experiences to attract customers",
+          "Includes product demonstrations, promotional campaigns, and contests",
+          "Strengthens brand visibility and customer loyalty",
+        ].map((item, index) => (
+                <li key={index} className="text-white">• {item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
     </main>
   );
 }
