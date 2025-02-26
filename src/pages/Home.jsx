@@ -21,7 +21,7 @@ const Home = () => {
       <div className="h-[100vh">
      <HorizontalScroll/>
      </div>
-      <ManagementTeam></ManagementTeam>
+      <ManagementTeam />
       
     </div>
       

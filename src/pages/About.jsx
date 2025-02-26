@@ -14,6 +14,7 @@ import backgroundImage from "../assets/background.jpg"; // Add a background imag
 // Import SVG images for Vision and Mission
 import visionSvg from "../assets/vision.svg"; // Replace with your SVG file path
 import missionSvg from "../assets/mission.svg"; // Replace with your SVG file path
+import TeamMemberDetail from "../components/TeamMemberDetail";
 
 const FoundationPrinciples = () => {
   const principles = [
@@ -134,6 +135,8 @@ const FoundationPrinciples = () => {
           <img src={missionSvg} alt="Mission" className="mission-svg" />
         </div>
       </div>
+
+      <TeamMemberDetail />
     </div>
   );
 };
