@@ -46,7 +46,7 @@ export default function BrandingServices() {
 
         {/* Hero Image */}
         <div className="flex relative overflow-auto scrollbar-hide h-[80vh]">
-        <div className=" sticky top-4 mr-6 flex items-center mb-20">
+        <div className=" sticky top-4  flex items-center mb-20">
         <DotLottieReact
         className="rounded-lg shadow-2xl"
       src="https://lottie.host/f6a9b5be-6ec4-4843-8aaa-5c0ea6a199e0/yiuHIZIML7.lottie"

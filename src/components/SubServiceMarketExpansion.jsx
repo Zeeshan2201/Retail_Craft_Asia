@@ -133,7 +133,8 @@ export default function ServicesPage() {
       </section>
 
       {/* Service Sections with Glassmorphism & Hover Animation */}
-      <section className="container  mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-br from-purple-900 via-purple-900 to-[#]">
+      <section className="container  mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-[#D4AF37] via-[20%] to-transparent">
+      {/* <section className="container  mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-br from-purple-900 via-purple-900 via-[80%] to-[#D4AF37]"> */}
         <div className="relative h-[400px] overflow-hidden rounded-lg">
         <Lottie
   options={{
@@ -188,7 +189,7 @@ export default function ServicesPage() {
           </div>
         </div>
   </section>
-      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center">
+      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-bl from-purple-900 via-purple-900 to-[#D4AF37]">
         <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
         
           <div
@@ -240,7 +241,7 @@ export default function ServicesPage() {
 /></div>
         </div>
   </section>
-      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center">
+      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-br from-purple-900 via-purple-900 to-[#D4AF37]">
         <div className="relative h-[400px] overflow-hidden rounded-lg">
         <Lottie
   options={{
@@ -295,7 +296,7 @@ export default function ServicesPage() {
           </div>
         </div>
   </section>
-      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center">
+      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-bl from-purple-900 via-purple-900 to-[#D4AF37]">
         <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
         
           <div
@@ -347,7 +348,7 @@ export default function ServicesPage() {
 />
         </div>
   </section>
-  <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center">
+  <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-br from-purple-900 via-purple-900 to-[#D4AF37]">
         <div className="relative h-[400px] overflow-hidden rounded-lg">
         <Lottie
   options={{
