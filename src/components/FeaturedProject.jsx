@@ -1,5 +1,7 @@
 // import Image from "next/image";
 // import Link from "next/link";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
 
 export default function FeaturedProject() {
   return (
@@ -8,11 +10,13 @@ export default function FeaturedProject() {
     <div>
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
             <div className="relative">
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20115725-gf6VDjkl99E32d27J44UogB2P6Wnio.png"
-                alt="J&H Tackle Website Mockups"
-                className="w-full h-auto rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
-              />
+            <DotLottieReact
+      src="https://lottie.host/90ff9944-9dce-4f64-907b-9a3ad1b4d1ff/7ogF0XlY1l.lottie"
+      loop
+      autoplay
+    />
+
+             
             </div>
 
             <div className="text-white space-y-6 px-4">
@@ -75,20 +79,22 @@ export default function FeaturedProject() {
               </div>
             </div>
             <div className="relative">
-              <img
-                src="https://www.digitalsilk.com/wp-content/uploads/2024/08/FrontierABS.png.webp"
-                alt="J&H Tackle Website Mockups"
-                className="w-full h-auto rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
-              />
+            <DotLottieReact
+      src="https://lottie.host/af206ab1-250f-43d9-8308-2cee354481ca/76CXF5NodU.lottie"
+      loop
+      autoplay
+    />
+
             </div>
           </div>
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
             <div className="relative">
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20115725-gf6VDjkl99E32d27J44UogB2P6Wnio.png"
-                alt="J&H Tackle Website Mockups"
-                className="w-full h-auto rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
-              />
+            <DotLottieReact
+      src="https://lottie.host/96c18b5c-99e1-4a44-9617-66423ec4a335/QSRNUUsVff.lottie"
+      loop
+      autoplay
+    />
+
             </div>
 
             <div className="text-white space-y-6 px-4">
@@ -152,20 +158,22 @@ export default function FeaturedProject() {
               </div>
             </div>
             <div className="relative">
-              <img
-                src="https://www.digitalsilk.com/wp-content/uploads/2024/08/FrontierABS.png.webp"
-                alt="J&H Tackle Website Mockups"
-                className="w-full h-auto rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
-              />
+            <DotLottieReact
+      src="https://lottie.host/dc6dcc14-2e94-4c69-bc18-84a0b1df7211/lXDcz5OyJe.lottie"
+      loop
+      autoplay
+    />
+
             </div>
           </div>
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div className="relative">
-              <img
-                src="https://www.digitalsilk.com/wp-content/uploads/2024/08/FrontierABS.png.webp"
-                alt="J&H Tackle Website Mockups"
-                className="w-full h-auto rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
-              />
+                  <DotLottieReact
+      src="https://lottie.host/dc6dcc14-2e94-4c69-bc18-84a0b1df7211/lXDcz5OyJe.lottie"
+      loop
+      autoplay
+    />
+
             </div>
             <div className="text-white space-y-6 px-4">
               <h3 className="text-[#00E5FF] text-3xl md:text-4xl font-bold leading-tight">
