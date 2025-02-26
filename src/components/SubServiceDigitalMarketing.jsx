@@ -1,4 +1,7 @@
 import React from 'react';
+import Lottie from "react-lottie";
+import GIF_1 from "../animation/Digital_Marketing/GIF_1.json"
+import GIF_2 from "../animation/Digital_Marketing/GIF_2.json"
 
 const Button = ({ children, variant = "primary", className = "" }) => {
   const baseStyle = "px-6 py-2 font-semibold rounded-md transition-colors duration-300";
@@ -113,8 +116,67 @@ export default function ServicesPage() {
         <Button className="mt-8">SPEAK WITH OUR EXPERTS →</Button>
       </section>
 
+
+      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
+        <div className="relative h-[400px] overflow-hidden rounded-lg">
+        <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData: GIF_2,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    }}
+    height={400}
+    width={400}
+  />
+
+
+        </div>
+        {/* Card Effect for Text Side */}
+        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+          {/* Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #ffbc00, ,#ff0058)` }}
+          ></div>
+          {/* Blurred Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg,#ffbc00,#ff0058)` }}
+          ></div>
+
+          {/* Bouncing Square Animation */}
+          <div className="absolute top-0 left-0 right-0 bottom-0 z-5 pointer-events-none">
+            <div
+              className="absolute top-0 left-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '0s' }}
+            ></div>
+            <div
+              className="absolute bottom-0 right-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '1s' }}
+            ></div>
+          </div>
+
+          {/* Main Content */}
+          <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
+            <h2 className="text-3xl font-bold text-white"> Content Marketing</h2>
+            <p className="mt-2 text-lg text-blue-50"></p>
+            <ul className="mt-4 space-y-2">
+              {[
+          "Creates valuable and relevant content for target audiences",
+            "Improves brand authority and customer trust",
+            "Boosts website traffic and social media engagement.",].map((item, index) => (
+                <li key={index} className="text-white">• {item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
       {/* Service Sections with Glassmorphism & Hover Animation */}
-      <ServiceSection
+      {/* <ServiceSection
+
         title="Content Marketing"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
@@ -122,9 +184,68 @@ export default function ServicesPage() {
             "Improves brand authority and customer trust",
             "Boosts website traffic and social media engagement.",]}
         gradientColors={["#ffbc00", "#ff0058"]}
-      />
+      /> */}
 
-      <ServiceSection
+<section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900  to-[#D4AF37]">
+        {/* Card Effect for Text Side */}
+        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+          {/* Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #03a9f4,#ff0058 )` }}
+          ></div>
+          {/* Blurred Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #03a9f4, #ff0058)` }}
+          ></div>
+
+          {/* Bouncing Square Animation */}
+          <div className="absolute top-0 left-0 right-0 bottom-0 z-5 pointer-events-none">
+            <div
+              className="absolute top-0 left-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '0s' }}
+            ></div>
+            <div
+              className="absolute bottom-0 right-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '1s' }}
+            ></div>
+          </div>
+
+          {/* Main Content */}
+          <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
+            <h2 className="text-3xl font-bold text-white">Social Media Marketing</h2>
+            <p className="mt-2 text-lg text-blue-50"></p>
+            <ul className="mt-4 space-y-2">
+              {[
+          "Builds brand awareness through social media platforms",
+            "Engages with customers via organic and paid campaigns",
+            "Drives sales and brand loyalty through targeted marketing",
+        ].map((item, index) => (
+                <li key={index} className="text-white">• {item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="relative h-[400px] overflow-hidden rounded-lg">
+          {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
+          <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData: GIF_1,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    }}
+    height={400}
+    width={400}
+  />
+
+        </div>
+      </section>
+
+      {/* <ServiceSection
         title="Social Media Marketing"
         image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-17%20140427-dkbFh7tQ496AEJoHKD13Slz6nBp5Q5.png"
         listItems={[
@@ -134,7 +255,7 @@ export default function ServicesPage() {
         ]}
         imageLeft={false}
         gradientColors={["#03a9f4", "#ff0058"]}
-      />
+      /> */}
 
     </main>
   );
