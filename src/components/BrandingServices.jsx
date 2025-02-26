@@ -1,5 +1,7 @@
 import { BrainCircuit, Palette, TextQuote, Package } from "lucide-react"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import Process from '../../src/animation/service/process.json'
+import Lottie from "react-lottie";
 export default function BrandingServices() {
   const services = [
     {
@@ -46,14 +48,25 @@ export default function BrandingServices() {
 
         {/* Hero Image */}
         <div className="flex relative overflow-auto scrollbar-hide h-[80vh]">
-        <div className=" sticky top-4  flex items-center mb-20">
-        <DotLottieReact
+        <div className=" sticky top-4 w-[50%]  flex items-center mb-20">
+        {/* <DotLottieReact
         className="rounded-lg shadow-2xl"
       src="https://lottie.host/f6a9b5be-6ec4-4843-8aaa-5c0ea6a199e0/yiuHIZIML7.lottie"
       loop
       autoplay
-    />
-
+    /> */}
+<Lottie
+  options={{
+    loop: true,
+    autoplay: true,
+    animationData: Process,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  }}
+  height={400}
+  width={400}
+/>
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 to-transparent rounded-lg" />
         </div>
 
