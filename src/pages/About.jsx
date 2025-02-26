@@ -120,6 +120,7 @@ const FoundationPrinciples = () => {
           ))}
         </div>
       </div>
+      
 
       {/* Mission Section */}
       <div className="mission-section" ref={missionSectionRef}>
