@@ -35,14 +35,14 @@ Outside work, he is an avid traveler and has explored over 40 countries.`,
 
 const TeamMemberDetail = () => {
   return (
-    <section className="py-10 bg-gray-100">
+    <section className="my-10 bg-purple-900">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-6 text-center">Meet Our Team</h2>
-        <div className="space-y-10">
+        <h2 className="text-4xl font-bold mb-6 text-center hover:text-white">Meet Our Team</h2>
+        <div className="space-y-10 mx-10">
           {teamMembers.map((member, index) => (
             <div
               key={member.id}
-              className={`flex flex-col md:flex-row items-center bg-white p-6 shadow-lg rounded-lg w-full ${
+              className={`flex flex-col md:flex-row items-center rounded-xl bg-white p-6 shadow-lg w-full ${
                 index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
               }`}
             >

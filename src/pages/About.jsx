@@ -68,7 +68,7 @@ const FoundationPrinciples = () => {
   }, []);
 
   return (
-    <div className="foundation-principles-container">
+    <div className="foundation-principles-container bg-purple-900">
       {/* Who We Are Section */}
       <div
         className={`who-we-are-section ${isWhoWeAreFlipped ? "flipped" : ""}`}
@@ -104,24 +104,39 @@ const FoundationPrinciples = () => {
       </div>
 
       {/* Principles Section */}
-      <div className="principles-section" ref={principlesSectionRef}>
-  <h2 className="principles-heading">Our Foundational Principles</h2>
-  <div className="principles-grid">
-    {principles.map((principle, index) => (
-      <div
-        key={index}
-        className={`principle-card ${expandedCard === index ? "expanded" : ""}`}
-        onMouseEnter={() => setExpandedCard(index)}
-        onMouseLeave={() => setExpandedCard(null)}
-      >
-        <img src={principle.image} alt={principle.title} className="principle-image" />
-        <h3 className="principle-title">{principle.title}</h3>
-        <p className="principle-description">{principle.description}</p>
+      <div className="w-full px-5 py-16 ">
+      <h2 className="text-4xl font-bold text-center mb-10 transition-transform duration-300 hover:scale-110 hover:text-white">
+        Our Foundational Principles
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {principles.map((principle, index) => (
+          <div
+            key={index}
+            className={`relative flex flex-col items-center text-center bg-gradient-to-br from-yellow-100 to-yellow-200 border-2 border-gray-300 rounded-xl p-5 cursor-pointer transition-all duration-300 ${
+              expandedCard === index ? "scale-105 shadow-xl" : "hover:scale-105 hover:shadow-lg"
+            }`}
+            onMouseEnter={() => setExpandedCard(index)}
+            onMouseLeave={() => setExpandedCard(null)}
+          >
+            <img
+              src={principle.image}
+              alt={principle.title}
+              className="w-full max-h-40 object-contain rounded-xl"
+            />
+            <h3 className="text-xl font-semibold mt-4 transition-colors hover:text-blue-600">
+              {principle.title}
+            </h3>
+            <p
+              className={`text-gray-700 text-sm mt-2 transition-opacity duration-300 ${
+                expandedCard === index ? "opacity-100 max-h-40" : "opacity-0 max-h-0"
+              }`}
+            >
+              {principle.description}
+            </p>
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
-</div>
-
+    </div>
       
 
       {/* Mission Section */}

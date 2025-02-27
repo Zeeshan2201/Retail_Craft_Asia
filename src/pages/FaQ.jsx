@@ -5,8 +5,8 @@ import GenFAQ from '../components/GenralFAQ'
 const FaQ = () => {
   return (
     <>
-   <FAQHero></FAQHero>
-   <GenFAQ></GenFAQ>
+   <FAQHero />
+   <GenFAQ />
    </>
 
   )
