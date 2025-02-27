@@ -85,7 +85,7 @@
 /* Hover effect */
 .who-we-are-heading:hover {
   transform: scale(1.1);
-  color: #007bff;
+  color: goldenrod;
 }
 
 /* Text styling */
@@ -308,13 +308,13 @@
 
 .vision-heading:hover,
 .mission-heading:hover {
-  color: #007bff;
+  color: white;
 }
 
 .vision-text,
 .mission-text {
   font-size: 20px;
-  color: #333;
+  color: black;
 }
 
 @keyframes fadeIn {

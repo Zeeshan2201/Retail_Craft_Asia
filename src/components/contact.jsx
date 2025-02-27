@@ -31,8 +31,8 @@ const ContactCards = () => {
   };
 
   return (
-    <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6 mt-10">
-      <div className="text-center mb-10 mt-10">
+    <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6 bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] ">
+      <div className="text-center mb-10 mt-20 ">
         <h2 className="text-4xl sm:text-6xl">How can RetailCraftAsia customer support help you today?</h2>
         <p className="text-gray-500 mt-5 text-lg sm:text-2xl">Our friendly customer support team is ready & excited to help with any issue!</p>
       </div>
@@ -61,7 +61,7 @@ const ContactCards = () => {
         ))}
       </div>
 
-      <div className="text-center mt-10 bg-white p-6 rounded-4xl shadow-lg">
+      <div className="text-center mt-10 bg-white p-6 rounded-4xl shadow-lg rounded-xl">
         <h3 className="text-3xl sm:text-4xl font-semibold text-gray-800">Contact Us</h3>
         <p className="mt-4 text-lg sm:text-xl text-gray-600">Office-Address: 65,42 Tower Building, Room No 1107, Sukhumvit 42 Road,<br/> Phra Khanong Sub-district, Khlong Toei District, Bangkok, Thailand - 10110</p>
       </div>

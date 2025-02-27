@@ -3,9 +3,9 @@ import React from "react";
 
 const FAQSection = () => {
   return (
-    <div className=" bg-[#deb030] py-16 px-8 flex justify-center items-center relative">
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#fdf6e3] opacity-50 shadow-xl" />
-      <div className="max-w-5xl flex flex-col md:flex-row items-center relative z-10">
+    <div className=" bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] py-16 px-8 flex justify-center items-center relative">
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent opacity-50 shadow-xl" />
+      <div className="max-w-5xl flex flex-col md:flex-row items-center relative z-10 mt-20">
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-5xl font-bold text-gray-800">Frequently Asked Questions</h2>
         </div>
