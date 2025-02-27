@@ -115,7 +115,7 @@ export default function ServicesPage() {
        <h1 className="mt-4 mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
           Data And Technology
         </h1> <br></br>
-        <p className="mb-4 mt-4  text-justify text-2xl font-semibold tracking-wider">We leverage cutting-edge technology to optimize business operations and decision-making. Our solutions include AI-driven analytics, automation tools, and digital transformation strategies to enhance efficiency, improve customer experiences, and drive business growth.</p>
+        <p className="mb-4 mt-4 md:m-8 text-justify text-2xl font-semibold tracking-wider">We leverage cutting-edge technology to optimize business operations and decision-making. Our solutions include AI-driven analytics, automation tools, and digital transformation strategies to enhance efficiency, improve customer experiences, and drive business growth.</p>
         <Button className="mt-8">SPEAK WITH OUR EXPERTS →</Button>
       </section>
 
