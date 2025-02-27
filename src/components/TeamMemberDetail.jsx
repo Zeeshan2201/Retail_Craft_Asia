@@ -37,8 +37,8 @@ const TeamMemberDetail = () => {
   return (
     <section className="my-10 bg-purple-900">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-6 text-center hover:text-white">Meet Our Team</h2>
-        <div className="space-y-10 mx-10">
+        <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-center hover:text-white">Meet Our Team</h2>
+        <div className="space-y-10 mx-2 sm:mx-10">
           {teamMembers.map((member, index) => (
             <div
               key={member.id}
@@ -55,7 +55,7 @@ const TeamMemberDetail = () => {
                 <h3 className="text-xl font-semibold text-center mt-4">{member.name}</h3>
                 <p className="text-gray-600 font-medium text-center">{member.role}</p>
               </div>
-              <div className="w-full md:w-2/3 text-left p-4">
+              <div className="w-full md:w-2/3 text-left sm:p-4">
                 <p className="text-gray-700 mt-2">{member.fullDescription}</p>
               </div>
             </div>

@@ -118,7 +118,7 @@ import { Link } from 'react-router-dom';
         <h1 className="mt-4 mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
             Sales and Merchandising
           </h1> <br></br>
-          <p className="mb-4 mt-4 md:m-8  text-justify text-2xl font-semibold tracking-wider">We help brands maximize their market presence by ensuring that the right products are available at the right time and place. Our expert team focuses on enhancing product visibility, executing strategic in-store promotions, and optimizing shelf placement to drive higher sales and brand recall.
+          <p className="mb-4 mt-4 md:m-8  text-justify text-lg sm:text-2xl font-semibold tracking-wider">We help brands maximize their market presence by ensuring that the right products are available at the right time and place. Our expert team focuses on enhancing product visibility, executing strategic in-store promotions, and optimizing shelf placement to drive higher sales and brand recall.
 
   With a data-driven approach, we analyze consumer behavior, market trends, and competitor strategies to develop customized merchandising plans that increase product engagement and boost conversions.</p>
           <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
@@ -134,8 +134,8 @@ import { Link } from 'react-router-dom';
             "Provides real-time market insights for improved sales performance"]}
           gradientColors={["#ffbc00", "#ff0058"]}
         /> */}
-        <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
-          <div className="relative h-[400px] overflow-hidden rounded-lg">
+        <section className="container mx-auto grid sm:gap-8 sm:px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
+          <div className="relative hidden sm:block h-full sm:h-[400px] overflow-hidden rounded-lg">
           <Lottie
     options={{
       loop: true,
@@ -243,7 +243,7 @@ import { Link } from 'react-router-dom';
               </ul>
             </div>
           </div>
-          <div className="relative h-[400px] overflow-hidden rounded-lg">
+          <div className="relative hidden sm:block h-[400px] overflow-hidden rounded-lg">
           <Lottie
     options={{
       loop: true,
@@ -273,7 +273,7 @@ import { Link } from 'react-router-dom';
 
 
         <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
-          <div className="relative h-[400px] overflow-hidden rounded-lg">
+          <div className="relative hidden sm:block h-[400px] overflow-hidden rounded-lg">
           <Lottie
     options={{
       loop: true,
@@ -381,7 +381,7 @@ import { Link } from 'react-router-dom';
       </ul>
     </div>
   </div>
-  <div className="relative h-[400px] overflow-hidden rounded-lg">
+  <div className="relative hidden sm:block h-[400px] overflow-hidden rounded-lg">
   <Lottie
   options={{
   loop: true,
@@ -411,7 +411,7 @@ import { Link } from 'react-router-dom';
 
 
         <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
-          <div className="relative h-[400px] overflow-hidden rounded-lg">
+          <div className="relative hidden sm:block h-[400px] overflow-hidden rounded-lg">
           <Lottie
     options={{
       loop: true,
@@ -520,7 +520,7 @@ import { Link } from 'react-router-dom';
               </ul>
             </div>
           </div>
-          <div className="relative h-[400px] overflow-hidden rounded-lg">
+          <div className="relative hidden sm:block h-[400px] overflow-hidden rounded-lg">
           <Lottie
           options={{
           loop: true,

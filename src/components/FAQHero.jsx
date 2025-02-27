@@ -13,7 +13,7 @@ const FAQSection = () => {
           <img
             src="https://media.licdn.com/dms/image/D4D12AQHnEVbtKZHmQw/article-cover_image-shrink_720_1280/0/1701861450850?e=2147483647&v=beta&t=tRdfZ6hHB4gzDzn4cdOJ_YLJpQ0S2uLqcXVWUoStR64" 
             alt="Rib Rack Sugar-Free Marinades and Seasonings"
-            className="max-w-md"
+            className="sm:max-w-md"
           />
         </div>
       </div>
