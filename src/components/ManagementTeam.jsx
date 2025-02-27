@@ -19,13 +19,13 @@ const teamMembers = [
 function ManagementTeam() {
 
   return (
-    <div className="w-[100%] pb-16 pt-10 px-16 bg-purple-900 ">
-      <h2 className="text-5xl  mb-14 font-bold text-center text-white">Management Team</h2>
+    <div className="w-[100%] pb-16 pt-10 md:px-16 px-8  bg-purple-900 ">
+      <h2 className="md:text-5xl text-4xl  mb-14 font-bold text-center text-white">Management Team</h2>
       <div className="grid md:flex md:justify-center gap-6">
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="p-8 w-[90%] border rounded-xl  shadow-lg bg-white transition-transform duration-300 hover:shadow-xl hover:scale-105"
+            className="p-8 md:w-[90%] w-[100%] border rounded-xl  shadow-lg bg-white transition-transform duration-300 hover:shadow-xl hover:scale-105"
           >
             <div className="flex items-center gap-4">
               <img

@@ -128,7 +128,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="flex items-center justify-center h-screen bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] px-10">
+    <section className="flex items-center justify-center md:h-screen h-[90vh] bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] px-10">
       <div className="flex w-full max-w-5xl items-center justify-between">
         <div className="text-white max-w-lg">
           <h1 className="text-5xl uppercase font-bold">Innovative Retail Solutions, Crafted to Perfection</h1>
@@ -144,7 +144,7 @@ const HeroSection = () => {
             </Link>
           </div>
         </div>
-        <div className="relative pr-40 mt-10">
+        <div className="relative md:block hidden pr-40 mt-10">
           <Container>
             <Cube color={colors[currentColor]} />
             <Cube color={colors[currentColor]} />
