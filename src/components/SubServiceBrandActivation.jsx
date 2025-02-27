@@ -6,6 +6,7 @@ import sampeling from "../animation/BrandActivation/sampeling.json";
 import Event from "../animation/BrandActivation/Event.json";
 import Lottie from "react-lottie";
 
+import { Link } from 'react-router-dom';
 
 const Button = ({ children, variant = "primary", className = "" }) => {
   const baseStyle = "px-6 py-2 font-semibold rounded-md transition-colors duration-300";
@@ -119,7 +120,7 @@ export default function ServicesPage() {
         <p className="mb-4 mt-4 md:m-8 text-justify text-2xl font-semibold tracking-wider">
           We create immersive brand experiences that engage consumers and leave a lasting impression. Through interactive campaigns, live events, and on-ground activations, we help brands establish deeper connections with their audiences. These experiences enhance brand recall, foster customer loyalty, and drive higher engagement.
         </p>
-        <Button className="mt-8">SPEAK WITH OUR EXPERTS →</Button>
+        <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
       </section>
 
       {/* Service Sections with Glassmorphism & Hover Animation */}

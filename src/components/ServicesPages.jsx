@@ -6,6 +6,8 @@
   import Asset from "../animation/sales/Asset.json";
   import Product from "../animation/sales/Product.json";
   import Lottie from "react-lottie";
+  
+import { Link } from 'react-router-dom';
 
   const Button = ({ children, variant = "primary", className = "" }) => {
     const baseStyle = "px-6 py-2 font-semibold rounded-md transition-colors duration-300";
@@ -119,7 +121,7 @@
           <p className="mb-4 mt-4 md:m-8  text-justify text-2xl font-semibold tracking-wider">We help brands maximize their market presence by ensuring that the right products are available at the right time and place. Our expert team focuses on enhancing product visibility, executing strategic in-store promotions, and optimizing shelf placement to drive higher sales and brand recall.
 
   With a data-driven approach, we analyze consumer behavior, market trends, and competitor strategies to develop customized merchandising plans that increase product engagement and boost conversions.</p>
-          <Button className="mt-8">SPEAK WITH OUR EXPERTS →</Button>
+          <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
         </section>
 
         {/* Service Sections with Glassmorphism & Hover Animation */}

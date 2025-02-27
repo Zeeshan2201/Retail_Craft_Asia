@@ -5,6 +5,7 @@ import GIF_6 from "../animation/Data_Technology/GIF_6.json"
 import GIF_3 from "../animation/Data_Technology/GIF_3.json"
 import GIF_7 from "../animation/Data_Technology/GIF_7.json"
 
+import { Link } from 'react-router-dom';
 
 const Button = ({ children, variant = "primary", className = "" }) => {
   const baseStyle = "px-6 py-2 font-semibold rounded-md transition-colors duration-300";
@@ -116,7 +117,7 @@ export default function ServicesPage() {
           Data And Technology
         </h1> <br></br>
         <p className="mb-4 mt-4 md:m-8 text-justify text-2xl font-semibold tracking-wider">We leverage cutting-edge technology to optimize business operations and decision-making. Our solutions include AI-driven analytics, automation tools, and digital transformation strategies to enhance efficiency, improve customer experiences, and drive business growth.</p>
-        <Button className="mt-8">SPEAK WITH OUR EXPERTS →</Button>
+        <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
       </section>
 
       

@@ -6,6 +6,7 @@ import MarketResearch from "../animation/MarketExpansion/MarketResearch.json"
 import services from "../animation/MarketExpansion/services.json"
 import Lottie from "react-lottie";
 
+import { Link } from 'react-router-dom';
 const Button = ({ children, variant = "primary", className = "" }) => {
   const baseStyle = "px-6 py-2 font-semibold rounded-md transition-colors duration-300";
   const variants = {
@@ -20,7 +21,7 @@ const ServiceSection = ({ title, description,  image, listItems, imageLeft = tru
   <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center">
     {imageLeft ? (
       <>
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
+        <div className="relative h-[400px]  flex justify-center items-center overflow-hidden rounded-lg">
         {/* <Lottie
   options={{
     loop: true,
@@ -110,7 +111,7 @@ const ServiceSection = ({ title, description,  image, listItems, imageLeft = tru
             </ul>
           </div>
         </div>
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
+        <div className="relative h-[400px]  flex justify-center items-center overflow-hidden rounded-lg">
           <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" />
         </div>
       </>
@@ -129,13 +130,13 @@ export default function ServicesPage() {
        Market Expansion Services
         </h1> <br></br>
         <p className="mb-4 mt-4 md:m-8 text-justify text-2xl font-semibold tracking-wider">Expanding into new markets requires strategic planning and execution. We support brands with tailored market entry strategies, local partnerships, and distribution solutions. Our expertise helps businesses overcome entry barriers, minimize risks, and establish a strong market presence.</p>
-        <Button className="mt-8">SPEAK WITH OUR EXPERTS →</Button>
+        <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
       </section>
 
       {/* Service Sections with Glassmorphism & Hover Animation */}
       <section className="container  mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
       {/* <section className="container  mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-br from-purple-900 via-purple-900 via-[80%] to-[#D4AF37]"> */}
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
+        <div className="relative flex justify-center items-center h-[400px] overflow-hidden rounded-lg">
         <Lottie
   options={{
     loop: true,
@@ -145,8 +146,8 @@ export default function ServicesPage() {
       preserveAspectRatio: "xMidYMid slice"
     }
   }}
-  height={400}
-  width={400}
+  height={300}
+  width={300}
 />
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
         </div>
@@ -225,7 +226,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
+        <div className="relative flex justify-center items-center h-[400px] overflow-hidden rounded-lg">
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
           <div className='bg-white'><Lottie
   options={{
@@ -242,7 +243,7 @@ export default function ServicesPage() {
         </div>
   </section>
       <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900 to-[#D4AF37]">
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
+        <div className="relative flex justify-center items-center h-[400px] overflow-hidden rounded-lg">
         <Lottie
   options={{
     loop: true,
@@ -332,7 +333,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
+        <div className="relative h-[400px]  flex justify-center items-center overflow-hidden rounded-lg">
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
           <Lottie
   options={{
@@ -343,13 +344,13 @@ export default function ServicesPage() {
       preserveAspectRatio: "xMidYMid slice"
     }
   }}
-  height={400}
-  width={400}
+  height={300}
+  width={300}
 />
         </div>
   </section>
   <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900 to-[#D4AF37]">
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
+        <div className="relative h-[400px]  flex justify-center items-center overflow-hidden rounded-lg">
         <Lottie
   options={{
     loop: true,
