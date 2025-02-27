@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import Tech from '../../src/animation/service/tech.json'
 import Marketing from '../../src/animation/service/marketing.json'
 
@@ -131,10 +132,15 @@ const HorizontalScroll = () => {
             </div>
             </div>
             <div className="w-[80%] ">
-              <img src="/example.jpg" 
+              {/* <img src="/example.jpg" 
         alt="Example Image" 
         width={500} 
-        height={300} />
+        height={300} /> */}
+        <DotLottieReact
+      src="https://lottie.host/af206ab1-250f-43d9-8308-2cee354481ca/76CXF5NodU.lottie"
+      loop
+      autoplay
+    />
             </div>
             </div>
           </Section>
@@ -169,10 +175,15 @@ const HorizontalScroll = () => {
               </div>
             </div>
             <div className="w-[80%] ">
-              <img src="/example.jpg" 
+              {/* <img src="/example.jpg" 
         alt="Example Image" 
         width={500} 
-        height={300} />
+        height={300} /> */}
+        <DotLottieReact
+      src="https://lottie.host/96c18b5c-99e1-4a44-9617-66423ec4a335/QSRNUUsVff.lottie"
+      loop
+      autoplay
+    />
             </div>
             </div>
           </Section>
@@ -206,10 +217,22 @@ const HorizontalScroll = () => {
               </div>
             </div>
             <div className="w-[80%] ">
-              <img src="/example.jpg" 
+              {/* <img src="/example.jpg" 
         alt="Example Image" 
         width={500} 
-        height={300} />
+        height={300} /> */}
+        <Lottie
+  options={{
+    loop: true,
+    autoplay: true,
+    animationData: Tech,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  }}
+  height={300}
+  width={300}
+/>
             </div>
             </div>
           </Section>
@@ -241,10 +264,22 @@ const HorizontalScroll = () => {
 
             </div>
             <div className="w-[80%] ">
-              <img src="/example.jpg" 
+              {/* <img src="/example.jpg" 
         alt="Example Image" 
         width={500} 
-        height={300} />
+        height={300} /> */}
+        <Lottie
+  options={{
+    loop: true,
+    autoplay: true,
+    animationData: Marketing,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  }}
+  height={300}
+  width={300}
+/>
             </div>
             </div>
           </Section>
