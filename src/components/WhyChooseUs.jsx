@@ -16,8 +16,8 @@ function WhyChooseUs() {
 
   return (
     <>
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '80px',  position: 'relative' }}
-    className='pl-[60px] bg-gradient-to-r from-purple-900 via-purple-600 to-purple-800 '>
+    <div 
+    className='relative flex items-center justify-center p-16 pl-40 bg-gradient-to-r from-purple-900 via-purple-600 to-purple-800 '>
       {/* <h2 className="text-4xl">Why Choose us</h2> */}
       <div style={{ position: "relative" }}>
   <motion.div 
