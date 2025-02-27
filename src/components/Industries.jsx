@@ -10,13 +10,13 @@ const FlipCard = () => {
   return (
     <div className='bg-white mb-10'>
     {/* <div className='bg-gradient-to-r from-purple-900 via-purple-600 to-purple-800'> */}
-      <h2 className="text-center font-bold text-6xl mt-15 py-10 ">
+      <h2 className="text-center font-bold md:text-6xl text-4xl mt-15 py-10 ">
         Industries and Sectors
       </h2>
-      <div className="flex flex-wrap gap-x-[8vw] gap-y-[2vh] justify-evenly px-32 ">
+      <div className="flex flex-wrap md:gap-x-[8vw] gap-y-[2vh] justify-evenly md:px-32 ">
         {/* FMCG Card */}
-        <div className="h-[40vh] w-[20vw] m-4 mx-auto  perspective-[1000px] cursor-pointer group">
-          <div className="relative w-[20vw] h-[40vh]  transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
+        <div className="md:h-[40vh] md:w-[20vw] h-[25vh] w-[88vw] md:m-4 md:mx-auto  perspective-[1000px] cursor-pointer group">
+          <div className="relative md:w-[20vw] md:h-[40vh] h-[25vh] w-[88vw]  transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
             <div className="absolute w-full h-full  backface-hidden flex flex-col items-center justify-center rounded-3xl  bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10 ">
               <img src={FMCGIcon} alt="FMCG" className="w-24 h-24 mb-4" />
@@ -33,8 +33,8 @@ const FlipCard = () => {
         </div>
 
         {/* Retail Card */}
-        <div className="h-[40vh] w-[20vw] m-4 mx-auto perspective-[1000px] cursor-pointer group">
-          <div className="relative w-[20vw] h-[40vh] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
+        <div className="md:h-[40vh] md:w-[20vw] h-[25vh] w-[88vw] md:m-4 md:mx-auto perspective-[1000px] cursor-pointer group">
+          <div className="relative md:w-[20vw] md:h-[40vh] h-[25vh] w-[88vw] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
             <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
               <img src={RetailIcon} alt="Retail" className="w-24 h-24 mb-4" />
@@ -51,8 +51,8 @@ const FlipCard = () => {
         </div>
 
         {/* Health and Beauty Card */}
-        <div className="h-[40vh] w-[20vw] m-4 mx-auto perspective-[1000px] cursor-pointer group">
-          <div className="relative w-[20vw] h-[40vh] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
+        <div className="md:h-[40vh] md:w-[20vw] h-[25vh] w-[88vw] md:m-4 md:mx-auto perspective-[1000px] cursor-pointer group">
+          <div className="relative md:h-[40vh] md:w-[20vw] h-[25vh] w-[88vw] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
             <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
               <img src={HealthBeautyIcon} alt="Health and Beauty" className="w-24 h-24 mb-4" />
@@ -69,8 +69,8 @@ const FlipCard = () => {
         </div>
 
         {/* Consumer Durables and Electronics Card */}
-        <div className="h-[40vh] w-[20vw] m-4 mx-auto perspective-[1000px] cursor-pointer group">
-          <div className="relative w-[20vw] h-[40vh] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
+        <div className="md:h-[40vh] md:w-[20vw] h-[25vh] w-[88vw] md:m-4 md:mx-auto perspective-[1000px] cursor-pointer group">
+          <div className="relative md:h-[40vh] md:w-[20vw] h-[25vh] w-[88vw] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
             <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
               <img src={ConsumerDurablesIcon} alt="Consumer Durables" className="w-24 h-24 mb-4" />
@@ -87,8 +87,8 @@ const FlipCard = () => {
         </div>
 
         {/* Banking and Financial Services Card */}
-        <div className="h-[40vh] w-[20vw] m-4 mx-auto perspective-[1000px] cursor-pointer group">
-          <div className="relative w-[20vw] h-[40vh] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
+        <div className="md:h-[40vh] md:w-[20vw] h-[25vh] w-[88vw] md:m-4 md:mx-auto perspective-[1000px] cursor-pointer group">
+          <div className="relative md:h-[40vh] md:w-[20vw] h-[25vh] w-[88vw] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
             <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
               <img src={BankingIcon} alt="Banking" className="w-24 h-24" />
@@ -105,8 +105,8 @@ const FlipCard = () => {
         </div>
 
         {/* Health and Pharmaceuticals Card */}
-        <div className="h-[40vh] w-[20vw] m-4 mx-auto perspective-[1000px] cursor-pointer group">
-          <div className="relative w-[20vw] h-[40vh] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
+        <div className="md:h-[40vh] md:w-[20vw] h-[25vh] w-[88vw] md:m-4 md:mx-auto perspective-[1000px] cursor-pointer group">
+          <div className="relative md:h-[40vh] md:w-[20vw] h-[25vh] w-[88vw] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
             <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
               <img src={PharmaceuticalsIcon} alt="Pharmaceuticals" className="w-24 h-24" />

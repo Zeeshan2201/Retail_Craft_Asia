@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
@@ -42,17 +43,17 @@ const HorizontalScroll = () => {
 
   return (
     <>
-      <div ref={containerTopRef} className="  h-[10vh]"></div>
-      <h2 className="text-6xl font-bold text-center">Our Services</h2>
+      <div ref={containerTopRef} className="  md:h-[10vh] h-[5vh]"></div>
+      <h2 className="md:text-6xl text-4xl font-bold text-center">Our Services</h2>
       <div className="sticky top-0 h-[100vh] overflow-hidden">
         <div
           ref={containerRef}
           className="flex transition-transform duration-300 ease-out"
           style={{ transform: `translateX(-${scrollPosition}px)` }}
         >
-          <Section  color=" bg-white flex flex-col w-[75dvw]     ">
+          <Section  color=" bg-white flex flex-col md:w-[75dvw] w-[100dvw]     ">
             <div className='ml-20 flex flex-row  border-l-4 border-[#ffd700] rounded-xl h-[75%] bg-purple-900 py-4 px-8  items-center  justify-center' >
-                <div className="w-[64%]  ">
+                <div className="md:w-[64%] w-[100%] ">
                   <div className="text-4xl font-bold ">Sales and Merchandising</div>
                   <p className="my-4 text-2xl">Our expertise ensures that your products reach the right customers at the right time, maximizing your market potential.<br></br></p>
                   <div className="">
@@ -101,7 +102,6 @@ const HorizontalScroll = () => {
             </div>
             </div>
           </Section>
-
           <Section color="bg-white flex flex-col w-[75dvw] ">
           <div className=' flex flex-row border-l-4 border-[#ffd700]  h-[75%] px-8 py-4 rounded-xl bg-purple-900 items-center  justify-center' >
           <div className="w-[70%]">
@@ -144,7 +144,6 @@ const HorizontalScroll = () => {
             </div>
             </div>
           </Section>
-
           <Section color="bg-white flex flex-col w-[75dvw] ">
           <div className=' flex flex-row border-l-4 border-[#ffd700] h-[75%] rounded-xl py-4 px-8 bg-purple-900 items-center  justify-center' >
           <div className="w-[64%]">
@@ -299,52 +298,3 @@ const Section = ({ children, color }) => (
 
 export default HorizontalScroll;
 
-
-// "use client"
-
-// import React, { useState, useEffect, useRef } from "react";
-
-// const HorizontalScroll = () => {
-//   const [scrollPosition, setScrollPosition] = useState(0);
-//   const containerRef = useRef(null);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (containerRef.current) {
-//         const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
-//         const maxScroll = containerRef.current.scrollWidth - containerRef.current.clientWidth;
-//         setScrollPosition(scrollPercentage * maxScroll);
-//       }
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-//     return () => window.removeEventListener("scroll", handleScroll);
-//   }, []);
-
-//   return (
-//     <>
-//     <div className="min-h-[100vh] ">
-//       <div className="sticky top-0 h-screen overflow-hidden">
-//         <div
-//           ref={containerRef}
-//           className="flex transition-transform duration-300 ease-out"
-//           style={{ transform: `translateX(-${scrollPosition}px)` }}
-//         >
-//           <Section color="bg-red-500">Section 1</Section>
-//           <Section color="bg-blue-500">Section 2</Section>
-//           <Section color="bg-green-500">Section 3</Section>
-//           <Section color="bg-yellow-500">Section 4</Section>
-//         </div>
-//       </div>
-//     </div>
-//     </>
-//   );
-// };
-
-// const Section = ({ children, color }) => (
-//   <div className={`flex-shrink-0 w-screen h-screen ${color} flex items-center justify-center text-white text-4xl font-bold`}>
-//     {children}
-//   </div>
-// );
-
-// export default HorizontalScroll;
