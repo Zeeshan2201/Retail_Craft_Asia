@@ -93,7 +93,7 @@ const FoundationPrinciples = () => {
       {/* Vision Section */}
       <div className="vision-section" ref={visionSectionRef}>
         <div className="vision-content">
-          <img src={visionSvg} alt="Vision" className="vision-svg" />
+          <img src={visionSvg} alt="Vision" className="vision-svg overflow-hidden" />
           <div className="vision-text-content">
             <h2 className="vision-heading">Our Vision</h2>
             <p className="vision-text">
@@ -105,22 +105,23 @@ const FoundationPrinciples = () => {
 
       {/* Principles Section */}
       <div className="principles-section" ref={principlesSectionRef}>
-        <h2 className="principles-heading">Our Foundational Principles</h2>
-        <div className="principles-grid">
-          {principles.map((principle, index) => (
-            <div
-              key={index}
-              className={`principle-card ${expandedCard === index ? "expanded" : ""}`}
-              onMouseEnter={() => handleCardClick(index)}
-              onMouseLeave={() => handleCardClick("")}
-            >
-              <img src={principle.image} alt={principle.title} className="principle-image" />
-              <h3 className="principle-title">{principle.title}</h3>
-              {expandedCard === index && <p className="principle-description">{principle.description}</p>}
-            </div>
-          ))}
-        </div>
+  <h2 className="principles-heading">Our Foundational Principles</h2>
+  <div className="principles-grid">
+    {principles.map((principle, index) => (
+      <div
+        key={index}
+        className={`principle-card ${expandedCard === index ? "expanded" : ""}`}
+        onMouseEnter={() => setExpandedCard(index)}
+        onMouseLeave={() => setExpandedCard(null)}
+      >
+        <img src={principle.image} alt={principle.title} className="principle-image" />
+        <h3 className="principle-title">{principle.title}</h3>
+        <p className="principle-description">{principle.description}</p>
       </div>
+    ))}
+  </div>
+</div>
+
       
 
       {/* Mission Section */}

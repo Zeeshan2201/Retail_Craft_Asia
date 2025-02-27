@@ -11,13 +11,13 @@ import ServiceHero from "../components/ServiceHero"
 const Services = () => {
   return (<>
       <ServiceHero/>
-    <section className=" min-h-screen py-20  bg-gradient-to-tl from-white via-[#d4af37] from-[38%] to-[64%]  to-white">
+    <section className=" min-h-screen py-10  bg-gradient-to-tl from-white via-[#d4af37] from-[38%] to-[64%]  to-white">
     {/* <section className="bg-[#1a237e] min-h-screen py-20 "> */}
-    <div className="max-w-6xl  mx-auto text-center mb-16">
+    <div className="max-w-6xl  mx-auto text-center ">
         {/* <h2 className="text-white  uppercase tracking-wider mb-4 text-6xl font-bold">
         Our Services
         </h2> */}
-        <h2 className="text-black mt-14 text-5xl md:text-6xl font-bold mb-6">
+        <h2 className="text-black  text-5xl md:text-6xl font-bold mb-6">
         Our Services
         </h2>
         <p className="text-gray-700 text-xl max-w-3xl mx-auto">
