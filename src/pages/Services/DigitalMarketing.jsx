@@ -3,8 +3,7 @@ import SubServiceDigitalMarketing from './../../components/SubServiceDigitalMark
 
 const DigitalMarketing = () => {
   return (
-    <div>
-Digital Marketing    
+    <div> 
 <SubServiceDigitalMarketing/>
 </div>
 

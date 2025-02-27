@@ -124,7 +124,7 @@ export default function Footer() {
           </div> */}
 
           {/* Company Column */}
-          <div>
+          {/* <div>
             <h3 className="text-sm font-bold mb-4 uppercase tracking-wider">Company</h3>
             <ul className="space-y-2">
               <li>
@@ -158,7 +158,7 @@ export default function Footer() {
             <Link to="#" className="hover:text-purple-900 font-semibold transition-colors flex items-center gap-1">
               Share Price <ExternalLink className="h-4 w-4" />
             </Link>
-          </div>
+          </div> */}
         </div>
 
         {/* Social Media Section */}

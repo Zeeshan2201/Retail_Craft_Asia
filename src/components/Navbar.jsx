@@ -91,13 +91,13 @@ const MainNav = () => {
           <Link to="/" className="text-base font-medium text-neutral-900" onClick={() => setMobileMenuOpen(false)}>Home</Link>
           {/* <Link to="/Services" className="text-base font-medium text-neutral-900" onClick={() => setMobileMenuOpen(false)}>Services</Link> */}
           <div className="relative">
-        <button
-          onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
+        <Link
+          to="/services"
           className="flex items-center  w-full text-base font-medium text-neutral-900 py-2"
         >
           Services
-          <span className='ml-1 pl-1 pt-1'>{isSubMenuOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}</span>
-        </button>
+          <span className='ml-1 pl-1 pt-1'>{isSubMenuOpen ? <ChevronUp className="w-4 h-4" onClick={() => setIsSubMenuOpen(!isSubMenuOpen)} /> : <ChevronDown className="w-4 h-4" onClick={() => setIsSubMenuOpen(!isSubMenuOpen)} />}</span>
+        </Link>
 
         {/* Sub-Services Dropdown */}
         {isSubMenuOpen && (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
-
+import { Link } from 'react-router-dom';
 const colors = ["#ef4149", "#4287f5", "#42f54b", "#f5f242", "#9642f5", "#f542f2"];
 
 // Existing hue rotation animation
@@ -131,17 +131,17 @@ const HeroSection = () => {
     <section className="flex items-center justify-center h-screen bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] px-10">
       <div className="flex w-full max-w-5xl items-center justify-between">
         <div className="text-white max-w-lg">
-          <h1 className="text-5xl font-bold">Welcome to Our 3D Cube Animation</h1>
+          <h1 className="text-5xl uppercase font-bold">Innovative Retail Solutions, Crafted to Perfection</h1>
           <p className="mt-4 text-lg">
-            Experience a visually stunning 3D cube animation with interactive elements.
+          We design and deliver cutting-edge retail solutions that enhance customer experiences and drive business success.
           </p>
           <div className="mt-6 flex gap-4">
-            <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg">
+            <Link to="/contact" className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg">
               Get Started
-            </button>
-            <button className="px-6 py-3 border border-white hover:bg-white hover:text-black text-white font-bold rounded-lg">
+            </Link>
+            <Link to="/about" className="px-6 py-3 border border-white hover:bg-white hover:text-black text-white font-bold rounded-lg">
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
         <div className="relative pr-40 mt-10">

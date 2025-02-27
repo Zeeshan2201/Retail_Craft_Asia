@@ -5,7 +5,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import Tech from '../../src/animation/service/tech.json'
 import Marketing from '../../src/animation/service/marketing.json'
-
+import { Link } from 'react-router-dom';
 import Sales from "../animation/MarketExpansion/sales.json"
 import Lottie from "react-lottie";
 // import Image from "next/image"
@@ -64,20 +64,20 @@ const HorizontalScroll = () => {
                   <p className="mt-2 text-base text-gray-300"><span className=" text-white text-xl">6. Product Management</span></p>
                  
                   <div className="flex flex-wrap gap-4 pt-4">
-                <a 
-                  href="/services/SalesAndMerchandising" 
+                <Link 
+                  to="/services/SalesAndMerchandising" 
                   className="inline-flex text-base items-center px-3  py-2 bg-white text-[#1a237e] font-semibold rounded-lg hover:bg-opacity-90 transition-colors"
                 >
                   Get Started
                   <span className="ml-2">→</span>
-                </a>
-                <a 
-                  href="#" 
+                </Link>
+                <Link 
+                  to="/contact" 
                   className="inline-flex items-center px-3 text-base py-2 border-2 border-[#00E5FF] text-[#00E5FF] font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
-                </a>
+                </Link>
               </div>
               </div>
             </div>
@@ -114,20 +114,20 @@ const HorizontalScroll = () => {
             <p className="text-base text-gray-300 mt-2"> <span className="text-xl text-white">4. Shopper Marketing</span></p>
             <p className="text-base text-gray-300 mt-2"> <span className="text-xl text-white">5. In-Store Activation</span></p>
             <div className="flex flex-wrap gap-4 pt-4">
-                <a 
-                  href="/services/BrandActivation" 
+                <Link 
+                  to="/services/BrandActivation" 
                   className="inline-flex text-base items-center px-3  py-2 bg-white text-[#1a237e] font-semibold rounded-lg hover:bg-opacity-90 transition-colors"
                 >
                   Get Started
                   <span className="ml-2">→</span>
-                </a>
-                <a 
-                  href="#" 
+                </Link>
+                <Link 
+                  to="/contact" 
                   className="inline-flex items-center px-3 text-base py-2 border-2 border-[#00E5FF] text-[#00E5FF] font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
-                </a>
+                </Link>
               </div>
             </div>
             </div>
@@ -157,20 +157,20 @@ const HorizontalScroll = () => {
               <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">4. Distribution & Logistics</span></p>
               <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">5. After-Sales Services</span></p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <a 
-                  href="/services/MarketExpansion" 
+                <Link 
+                  to="/services/MarketExpansion" 
                   className="inline-flex text-base items-center px-3 py-2 bg-white text-[#1a237e] font-semibold rounded-lg hover:bg-opacity-90 transition-colors"
                 >
                   Get Started
                   <span className="ml-2">→</span>
-                </a>
-                <a 
-                  href="#" 
+                </Link>
+                <Link 
+                  to="/contact" 
                   className="inline-flex  text-base  items-center px-3 py-2 border-2 border-[#00E5FF] text-[#00E5FF] font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
-                </a>
+                </Link>
               </div>
               </div>
             </div>
@@ -199,20 +199,20 @@ const HorizontalScroll = () => {
               <p className="text-base text-gray-300 mt-2"><span className=" text-white text-xl"> 4. CRM Solutions-</span></p>
               
               <div className="flex flex-wrap gap-4 pt-4">
-                <a 
-                  href="/services/DataAndTechnology" 
+                <Link 
+                  to="/services/DataAndTechnology" 
                   className="inline-flex items-center text-base px-3 py-2 bg-white text-[#1a237e] font-semibold rounded-lg hover:bg-opacity-90 transition-colors"
                 >
                   Get Started
                   <span className="ml-2">→</span>
-                </a>
-                <a 
-                  href="#" 
+                </Link>
+                <Link 
+                  to="/contact" 
                   className="inline-flex items-center text-base px-3 py-2 border-2 border-[#00E5FF] text-[#00E5FF] font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
-                </a>
+                </Link>
               </div>
               </div>
             </div>
@@ -246,20 +246,20 @@ const HorizontalScroll = () => {
               <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">2. Social Media Marketing</span></p>
               
               <div className="flex flex-wrap gap-4 pt-4">
-                <a 
-                  href="/services/DigitalMarketing" 
+                <Link 
+                  to="/services/DigitalMarketing" 
                   className="inline-flex items-center px-3  text-base bg-white text-[#1a237e] font-semibold rounded-lg hover:bg-opacity-90 transition-colors"
                 >
                   Get Started
                   <span className="ml-2">→</span>
-                </a>
-                <a 
-                  href="#" 
+                </Link>
+                <Link 
+                  to="/contact" 
                   className="inline-flex items-center px-3 py-2 border-2 text-base border-[#00E5FF] text-[#00E5FF] font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
-                </a>
+                </Link>
               </div></div>
 
             </div>

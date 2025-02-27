@@ -5,7 +5,6 @@ import SubServiceBrandActivation from './../../components/SubServiceBrandActivat
 const BrandActivation = () => {
   return (
     <div>
-      Brand Activation and Experiental Marketing 
       <SubServiceBrandActivation/>
     </div>
   );

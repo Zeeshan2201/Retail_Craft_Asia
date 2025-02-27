@@ -5,7 +5,6 @@ import SubServiceMarketExpansion from './../../components/SubServiceMarketExpans
 const MarketExpansion = () => {
   return (
     <div>
-      MarketExpansion
       <SubServiceMarketExpansion/>
     </div>
   );

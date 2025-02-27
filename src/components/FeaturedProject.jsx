@@ -4,6 +4,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import Tech from '../../src/animation/service/tech.json'
 import Marketing from '../../src/animation/service/marketing.json'
 import Lottie from "react-lottie";
+import { Link } from 'react-router-dom';
 
 export default function FeaturedProject() {
   return (
@@ -107,20 +108,20 @@ export default function FeaturedProject() {
  </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                <a 
-                  href="#" 
+                <Link 
+                  to="/services/SalesAndMerchandising" 
                   className="inline-flex items-center px-6 py-3 bg-gray-100 text-black font-semibold rounded-lg hover:bg-opacity-90 transition-colors"
                 >
                   Get Started
                   <span className="ml-2">→</span>
-                </a>
-                <a 
-                  href="#" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
+                </Link>
+                <Link
+                  to="/contact" 
+                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -137,20 +138,20 @@ export default function FeaturedProject() {
               From product sampling to shopper marketing, we craft experiential campaigns that boost engagement and drive sales. Whether online or offline, every interaction enhances brand perception and builds strong consumer relationships. </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                <a 
-                  href="#" 
+                <Link 
+                  to="/services/BrandActivation" 
                   className="inline-flex items-center px-6 py-3 bg-gray-100 text-black font-semibold rounded-lg hover:bg-opacity-90 transition-colors"
                 >
                   Get Started
                   <span className="ml-2">→</span>
-                </a>
-                <a 
-                  href="#" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
+                </Link>
+                <Link 
+                  to="/contact" 
+                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="relative">
@@ -169,9 +170,7 @@ export default function FeaturedProject() {
       loop
       autoplay
     />
-
             </div>
-
             <div className="text-white space-y-6 px-4">
               <h3 className="text-purple-900 text-3xl md:text-4xl font-bold leading-tight">
               Market Expansion Services
@@ -184,20 +183,20 @@ export default function FeaturedProject() {
               Our solutions optimize supply chain operations, helping businesses reach the right customers and achieve long-term success.</p>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                <a 
-                  href="#" 
+                <Link 
+                  to="/services/MarketExpansion" 
                   className="inline-flex items-center px-6 py-3 bg-gray-100 text-black font-semibold rounded-lg hover:bg-opacity-90 transition-colors"
                 >
                   Get Started
                   <span className="ml-2">→</span>
-                </a>
-                <a 
-                  href="#" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
+                </Link>
+                <Link 
+                  to="/contact" 
+                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -216,20 +215,20 @@ export default function FeaturedProject() {
  </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                <a 
-                  href="#" 
+                <Link 
+                  to="/services/DataAndTechnology" 
                   className="inline-flex items-center px-6 py-3 bg-gray-100 text-black font-semibold rounded-lg hover:bg-opacity-90 transition-colors"
                 >
                   Get Started
                   <span className="ml-2">→</span>
-                </a>
-                <a 
-                  href="#" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
+                </Link>
+                <Link 
+                  to="/contact" 
+                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="relative">
@@ -287,20 +286,20 @@ export default function FeaturedProject() {
  </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                <a 
-                  href="#" 
+                <Link 
+                  to="/services/DigitalMarketing" 
                   className="inline-flex items-center px-6 py-3 bg-gray-100 text-black font-semibold rounded-lg hover:bg-opacity-90 transition-colors"
                 >
                   Get Started
                   <span className="ml-2">→</span>
-                </a>
-                <a 
-                  href="#" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
+                </Link>
+                <Link 
+                  to="/contact" 
+                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
-                </a>
+                </Link>
               </div>
             </div>
             

@@ -4,7 +4,6 @@ import ServicesPage from './../../components/ServicesPages';
 const SalesAndMerchandising = () => {
   return (
     <div>
-      Sales and Merchandising
       <ServicesPage/>
     </div>
   );
