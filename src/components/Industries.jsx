@@ -8,7 +8,7 @@ import PharmaceuticalsIcon from '../assets/Industry/health_pharmacy.svg';
 
 const FlipCard = () => {
   return (
-    <div className='bg-white'>
+    <div className='bg-white mb-10'>
     {/* <div className='bg-gradient-to-r from-purple-900 via-purple-600 to-purple-800'> */}
       <h2 className="text-center font-bold text-6xl mt-15 py-10 ">
         Industries and Sectors

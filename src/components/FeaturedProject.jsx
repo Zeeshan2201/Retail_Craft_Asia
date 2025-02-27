@@ -8,9 +8,9 @@ import Lottie from "react-lottie";
 export default function FeaturedProject() {
   return (
     <>
-    <section className="">
+    <section className="mt-10">
     <div>
-          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+          <div className="max-w-7xl  mx-auto grid md:grid-cols-2 gap-8 items-center">
             <div className="relative">
             {/* <DotLottieReact
       src="https://lottie.host/90ff9944-9dce-4f64-907b-9a3ad1b4d1ff/7ogF0XlY1l.lottie"
@@ -94,12 +94,12 @@ export default function FeaturedProject() {
 </svg>        
             </div>
 
-            <div className="text-white space-y-6 px-4">
-              <h3 className="text-[#00E5FF] text-3xl md:text-4xl font-bold leading-tight">
+            <div className="text-black space-y-6 px-4">
+              <h3 className="text-purple-900 text-3xl md:text-4xl font-bold leading-tight">
               Sales and Merchandising
               </h3>
               
-              <p className="text-white/90 text-lg">
+              <p className="text-gray-700 text-lg">
               Maximize your brand’s presence with expert sales, merchandising, and retail audits. We ensure optimal product placement, asset optimization, and point-of-sale execution.
               </p>
               <p className="text-white/80 text-lg">
@@ -116,7 +116,7 @@ export default function FeaturedProject() {
                 </a>
                 <a 
                   href="#" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-[#00E5FF] text-[#00E5FF] font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
+                  className="inline-flex items-center px-6 py-3 border-2 border-[#00E5FF] text-purple-900 font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
@@ -126,11 +126,11 @@ export default function FeaturedProject() {
           </div>
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
             <div className="text-white space-y-6 px-4">
-              <h3 className="text-[#00E5FF] text-3xl md:text-4xl font-bold leading-tight">
+              <h3 className="text-purple-900 text-3xl md:text-4xl font-bold leading-tight">
               Brand Activation & Experiential Marketing
               </h3>
               
-              <p className="text-white/90 text-lg">
+              <p className="text-gray-700 text-lg">
               We create immersive brand experiences through ambassador programs, roadshows, and in-store activations to captivate audiences and strengthen brand loyalty. </p>
               
               <p className="text-white/80 text-lg">
@@ -146,7 +146,7 @@ export default function FeaturedProject() {
                 </a>
                 <a 
                   href="#" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-[#00E5FF] text-[#00E5FF] font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
+                  className="inline-flex items-center px-6 py-3 border-2 border-[#00E5FF] text-purple-900 font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
@@ -173,11 +173,11 @@ export default function FeaturedProject() {
             </div>
 
             <div className="text-white space-y-6 px-4">
-              <h3 className="text-[#00E5FF] text-3xl md:text-4xl font-bold leading-tight">
+              <h3 className="text-purple-900 text-3xl md:text-4xl font-bold leading-tight">
               Market Expansion Services
               </h3>
               
-              <p className="text-white/90 text-lg">
+              <p className="text-gray-700 text-lg">
               Our market expansion services offer end-to-end solutions for business growth, including product sourcing, sales, and marketing for a seamless market entry.  </p>
               
               <p className="text-white/80 text-lg">
@@ -193,7 +193,7 @@ export default function FeaturedProject() {
                 </a>
                 <a 
                   href="#" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-[#00E5FF] text-[#00E5FF] font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
+                  className="inline-flex items-center px-6 py-3 border-2 border-[#00E5FF] text-purple-900 font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
@@ -203,11 +203,11 @@ export default function FeaturedProject() {
           </div>
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
             <div className="text-white space-y-6 px-4">
-              <h3 className="text-[#00E5FF] text-3xl md:text-4xl font-bold leading-tight">
+              <h3 className="text-purple-900 text-3xl md:text-4xl font-bold leading-tight">
               Data & Technology
               </h3>
               
-              <p className="text-white/90 text-lg">
+              <p className="text-gray-700 text-lg">
               We empower businesses with data-driven intelligence and automation tools to streamline operations and improve decision-making. </p>
               
               <p className="text-white/80 text-lg">
@@ -225,7 +225,7 @@ export default function FeaturedProject() {
                 </a>
                 <a 
                   href="#" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-[#00E5FF] text-[#00E5FF] font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
+                  className="inline-flex items-center px-6 py-3 border-2 border-[#00E5FF] text-purple-900 font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
@@ -273,11 +273,11 @@ export default function FeaturedProject() {
 />
             </div>
             <div className="text-white space-y-6 px-4">
-              <h3 className="text-[#00E5FF] text-3xl md:text-4xl font-bold leading-tight">
+              <h3 className="text-purple-900 text-3xl md:text-4xl font-bold leading-tight">
               Digital Marketing
               </h3>
               
-              <p className="text-white/90 text-lg">
+              <p className="text-gray-700 text-lg">
               Our digital marketing services enhance brand presence through content marketing and social media strategies, helping businesses engage audiences and drive customer interactions. 
               </p>
               
@@ -296,7 +296,7 @@ export default function FeaturedProject() {
                 </a>
                 <a 
                   href="#" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-[#00E5FF] text-[#00E5FF] font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
+                  className="inline-flex items-center px-6 py-3 border-2 border-[#00E5FF] text-purple-900 font-semibold rounded-lg hover:bg-[#00E5FF] hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>

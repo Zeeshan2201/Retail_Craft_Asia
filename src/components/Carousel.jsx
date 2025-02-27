@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+// import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const slides = [
   {
@@ -25,9 +25,9 @@ export default function Carousel() {
     setCurrent((current) => (current === slides.length - 1 ? 0 : current + 1))
   }
 
-  const previous = () => {
-    setCurrent((current) => (current === 0 ? slides.length - 1 : current - 1))
-  }
+  // const previous = () => {
+  //   setCurrent((current) => (current === 0 ? slides.length - 1 : current - 1))
+  // }
 
   useEffect(() => {
     const timer = setInterval(next, 5000)
@@ -49,21 +49,21 @@ export default function Carousel() {
       ))}
 
       {/* Navigation Arrows */}
-      <button
+      {/* <button
         onClick={previous}
         className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
         aria-label="Previous slide"
       >
         <ChevronLeft className="w-6 h-6" />
-      </button>
+      </button> */}
 
-      <button
+      {/* <button
         onClick={next}
         className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
         aria-label="Next slide"
       >
         <ChevronRight className="w-6 h-6" />
-      </button>
+      </button> */}
 
       {/* Dot Indicators */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">

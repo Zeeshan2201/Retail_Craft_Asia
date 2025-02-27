@@ -12,17 +12,19 @@ const Home = () => {
   return (
     <div >
       <HeroSection />
-      {/* <ProductShowcase></ProductShowcase> */}
-      {/* <ServicesSlider></ServicesSlider> */}
+      
       <Industries />
-
-
-      <WhyChooseUs></WhyChooseUs>
-      <div className="h-[100vh">
-     <HorizontalScroll/>
+     
+     
+     <WhyChooseUs/>
+     <div className="">
+        {/* services */}
+     <HorizontalScroll/> 
      </div>
       <ManagementTeam />
       
+      {/* <ProductShowcase></ProductShowcase> */}
+      {/* <ServicesSlider></ServicesSlider> */}
     </div>
       
   );

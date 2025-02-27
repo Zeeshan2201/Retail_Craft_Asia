@@ -19,8 +19,8 @@ const teamMembers = [
 function ManagementTeam() {
 
   return (
-    <div className="w-[100%] py-8 px-16 bg-purple-900 ">
-      <h2 className="text-3xl font-bold text-center mb-8">Management Team</h2>
+    <div className="w-[100%] pb-16 pt-10 px-16 bg-purple-900 ">
+      <h2 className="text-5xl  mb-14 font-bold text-center text-white">Management Team</h2>
       <div className="grid md:flex md:justify-center gap-6">
         {teamMembers.map((member, index) => (
           <div

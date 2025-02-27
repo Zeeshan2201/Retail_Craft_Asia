@@ -42,25 +42,25 @@ const HorizontalScroll = () => {
   return (
     <>
       <div ref={containerTopRef} className="  h-[10vh]"></div>
+      <h2 className="text-6xl font-bold text-center">Our Services</h2>
       <div className="sticky top-0 h-[100vh] overflow-hidden">
         <div
           ref={containerRef}
           className="flex transition-transform duration-300 ease-out"
           style={{ transform: `translateX(-${scrollPosition}px)` }}
         >
-          <Section  color=" bg-white flex flex-col w-[75dvw] px-12">
-            
-            <div className='flex flex-row  rounded-xl bg-purple-900 py-4 px-8  items-center  justify-center' >
-                <div className="w-[64%] ">
-                  <div className="text-3xl font-bold ">Sales and Merchandising</div>
+          <Section  color=" bg-white flex flex-col w-[75dvw]     ">
+            <div className='ml-20 flex flex-row  border-l-4 border-[#ffd700] rounded-xl h-[75%] bg-purple-900 py-4 px-8  items-center  justify-center' >
+                <div className="w-[64%]  ">
+                  <div className="text-4xl font-bold ">Sales and Merchandising</div>
                   <p className="my-4 text-2xl">Our expertise ensures that your products reach the right customers at the right time, maximizing your market potential.<br></br></p>
                   <div className="">
-                  <p className="mt-2 text-base text-gray-300"><span className="text-white text-xl">1. Field Sales- </span>Our expert sales team drives market penetration, strengthens customer relationships</p>
-                  <p className="mt-2 text-base text-gray-300"><span className=" text-white text-xl">2. Merchandising-</span> We optimize product placement, stock availability, and visual appeal to maximize sales</p>
-                  <p className="mt-2 text-base text-gray-300"><span className=" text-white text-xl">3. Retail Audit-</span>Our in-depth audits provide actionable insights on stock levels, compliance, and competitor analysis</p>
-                  <p className="mt-2 text-base text-gray-300"><span className=" text-white text-xl">4. Point of Sales Execution-</span>We ensure seamless in-store execution of promotions and branding to drive customer engage</p>
-                  <p className="mt-2 text-base text-gray-300"><span className=" text-white text-xl">5. Asset Optimization-</span>We maximize the efficiency of retail assets, ensuring better utilization, higher ROI</p>
-                  <p className="mt-2 text-base text-gray-300"><span className=" text-white text-xl">6. Product Management-</span>Empowering businesses with seamless product management solutions to drive efficiency, innovation, and customer satisfaction.</p>
+                  <p className="mt-2 text-base text-gray-300"><span className="text-white text-xl">1. Field Sales</span></p>
+                  <p className="mt-2 text-base text-gray-300"><span className=" text-white text-xl">2. Merchandising</span></p>
+                  <p className="mt-2 text-base text-gray-300"><span className=" text-white text-xl">3. Retail Audit</span> </p>
+                  <p className="mt-2 text-base text-gray-300"><span className=" text-white text-xl">4. Point of Sales Execution</span> </p>
+                  <p className="mt-2 text-base text-gray-300"><span className=" text-white text-xl">5. Asset Optimization</span></p>
+                  <p className="mt-2 text-base text-gray-300"><span className=" text-white text-xl">6. Product Management</span></p>
                  
                   <div className="flex flex-wrap gap-4 pt-4">
                 <a 
@@ -101,17 +101,17 @@ const HorizontalScroll = () => {
             </div>
           </Section>
 
-          <Section color="bg-white flex flex-col w-[75dvw] px-12">
-          <div className='flex flex-row  px-8 py-4 rounded-xl bg-purple-900 items-center  justify-center' >
+          <Section color="bg-white flex flex-col w-[75dvw] ">
+          <div className=' flex flex-row border-l-4 border-[#ffd700]  h-[75%] px-8 py-4 rounded-xl bg-purple-900 items-center  justify-center' >
           <div className="w-[70%]">
-            <div className="text-3xl font-bold">Brand Activation and Experimental Marketing</div>
+            <div className="text-4xl font-bold">Brand Activation and Experimental Marketing</div>
             <p className="text-2xl my-4">At Retail Craft Asia, we create impactful brand experiences that engage, inspire, and drive consumer action.</p>
             <div className="">
-            <p className="text-base text-gray-300 mt-2"> <span className="text-xl text-white">1. Brand Ambassadors & Programs- </span>Our trained ambassadors create meaningful interactions that enhance brand loyalty </p>
-            <p className="text-base text-gray-300 mt-2"> <span className="text-xl text-white">2. Events & Roadshows- </span>We execute high-impact activations that increase brand visibility and connect with target audiences.</p>
-            <p className="text-base text-gray-300 mt-2"> <span className="text-xl text-white">3. Sampling- </span>We drive product trials with strategic sampling campaigns that build trust and accelerate purchase decisions.</p>
-            <p className="text-base text-gray-300 mt-2"> <span className="text-xl text-white">4. Shopper Marketing– </span> Our targeted marketing strategies influence buying behavior and optimize the path to purchase.</p>
-            <p className="text-base text-gray-300 mt-2"> <span className="text-xl text-white">5. In-Store Activation– </span>We create engaging in-store experiences that enhance brand presence and boost retail sales.</p>
+            <p className="text-base text-gray-300 mt-2"> <span className="text-xl text-white">1. Brand Ambassadors & Programs</span></p>
+            <p className="text-base text-gray-300 mt-2"> <span className="text-xl text-white">2. Events & Roadshows</span></p>
+            <p className="text-base text-gray-300 mt-2"> <span className="text-xl text-white">3. Sampling</span></p>
+            <p className="text-base text-gray-300 mt-2"> <span className="text-xl text-white">4. Shopper Marketing</span></p>
+            <p className="text-base text-gray-300 mt-2"> <span className="text-xl text-white">5. In-Store Activation</span></p>
             <div className="flex flex-wrap gap-4 pt-4">
                 <a 
                   href="/services/BrandActivation" 
@@ -139,17 +139,17 @@ const HorizontalScroll = () => {
             </div>
           </Section>
 
-          <Section color="bg-white flex flex-col w-[75dvw] px-12">
-          <div className='flex flex-row rounded-xl py-4 px-8 bg-purple-900 items-center  justify-center' >
+          <Section color="bg-white flex flex-col w-[75dvw] ">
+          <div className=' flex flex-row border-l-4 border-[#ffd700] h-[75%] rounded-xl py-4 px-8 bg-purple-900 items-center  justify-center' >
           <div className="w-[64%]">
-            <div className="text-3xl font-bold">Market Expansion Services</div>
+            <div className="text-4xl font-bold">Market Expansion Services</div>
             <p className="text-2xl my-4">At Retail Craft Asia, we help businesses expand into new markets with end-to-end solutions</p>
             <div className="">
-              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">1. Product Sourcing – </span>We connect you with reliable suppliers to ensure quality products that meet market demand.</p>
-              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">2. Market Research & Insights– </span>Our data driven insights help businesses make informed decisions and stay ahead of competitors.</p>
-              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">3. Sales & Marketing-</span>We implement strategic sales and marketing plans to drive brand awareness, customer acquisition, </p>
-              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">4. Distribution & Logistics-</span>We ensure seamless supply chain management, warehousing, and delivery for maximum market reach.</p>
-              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">5. After-Sales Services -</span> Our dedicated after-sales support enhances customer satisfaction and strengthens brand loyalty.</p>
+              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">1. Product Sourcing</span></p>
+              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">2. Market Research & Insights</span></p>
+              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">3. Sales & Marketing</span></p>
+              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">4. Distribution & Logistics</span></p>
+              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">5. After-Sales Services</span></p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <a 
                   href="/services/MarketExpansion" 
@@ -176,16 +176,16 @@ const HorizontalScroll = () => {
             </div>
             </div>
           </Section>
-          <Section color="bg-white flex flex-col w-[75dvw] px-12">
-          <div className='flex flex-row rounded-xl py-4 px-8 bg-purple-900 items-center  justify-center' >
+          <Section color="bg-white flex flex-col w-[75dvw] ">
+          <div className=' flex flex-row border-l-4 border-[#ffd700] rounded-xl h-[75%] py-4 px-8 bg-purple-900 items-center  justify-center' >
           <div className="w-[64%]">
-            <div className="text-3xl font-bold">Data and Technology</div>
+            <div className="text-4xl font-bold">Data and Technology</div>
             <p className="text-2xl my-4">At Retail Craft Asia,we harness the power of data and technology to drive smarter business decisions</p>
             <div className="">
-              <p className="text-base text-gray-300 mt-2"><span className=" text-white text-xl"> 1. Data & Operations Intelligence-</span> We provide real-time data insights to optimize operations, improve efficiency,</p>
-              <p className="text-base text-gray-300 mt-2"><span className=" text-white text-xl"> 2. Sales Force Automation Tools– </span> Our advanced automation tools enhance sales tracking, performance monitoring,</p>
-              <p className="text-base text-gray-300 mt-2"><span className=" text-white text-xl"> 3. Learning & Development Modules–  </span> We empower teams with customized training programs for skill enhancement</p>
-              <p className="text-base text-gray-300 mt-2"><span className=" text-white text-xl"> 4. CRM Solutions-</span>  Our CRM systems streamline customer interactions, improve retention, and drive long-term brand engagement.</p>
+              <p className="text-base text-gray-300 mt-2"><span className=" text-white text-xl"> 1. Data & Operations Intelligence</span></p>
+              <p className="text-base text-gray-300 mt-2"><span className=" text-white text-xl"> 2. Sales Force Automation Tools</span></p>
+              <p className="text-base text-gray-300 mt-2"><span className=" text-white text-xl"> 3. Learning & Development Modules</span></p>
+              <p className="text-base text-gray-300 mt-2"><span className=" text-white text-xl"> 4. CRM Solutions-</span></p>
               
               <div className="flex flex-wrap gap-4 pt-4">
                 <a 
@@ -213,14 +213,14 @@ const HorizontalScroll = () => {
             </div>
             </div>
           </Section>
-          <Section color="bg-white flex flex-col w-[75dvw] px-12">
-          <div className='flex flex-row  rounded-xl py-4 px-8 bg-purple-900 items-center  justify-center' >
+          <Section color="bg-white  flex flex-col w-[75dvw] ">
+          <div className=' flex mr-20 flex-row border-l-4 border-[#ffd700] h-[75%]  rounded-xl py-4 px-8 bg-purple-900 items-center  justify-center' >
           <div className="w-[64%]">
-            <div className="text-3xl font-bold">Digital Marketing</div>
-            <p className="text-2xl my-2">we create impactful digital marketing strategies that drive brand awareness, engagement, and conversions</p>
+            <div className="text-4xl font-bold">Digital Marketing</div>
+            <p className="text-2xl my-4">we create impactful digital marketing strategies that drive brand awareness, engagement, and conversions</p>
             <div className="my-2">
-              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">1. Content Marketing -</span>We craft compelling content that strengthens brand identity, educates audiences, and drives engagement.</p>
-              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">2. Social Media Marketing- </span>Our strategic campaigns leverage social platforms to maximize brand reach, engagement, and conversions.</p>
+              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">1. Content Marketing </span></p>
+              <p className="text-base text-gray-300 mt-2"><span className="text-white text-xl">2. Social Media Marketing</span></p>
               
               <div className="flex flex-wrap gap-4 pt-4">
                 <a 

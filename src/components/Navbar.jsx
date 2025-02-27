@@ -19,7 +19,7 @@ const MainNav = () => {
 
   return (
     <>
-      <header className="fixed left-0 right-0 top-0 z-50 flex h-20 items-center bg-white px-6 md:px-12 shadow-lg">
+      <header className="fixed left-0 right-0 top-0 z-50 flex h-20 items-center bg-purple-900/80 px-6 md:px-12 shadow-lg">
         <div className="flex flex-1 items-center justify-between w-full">
           <Link to="/" className="shrink-0">
             <img className='w-20 h-15' src="/logo.png" alt="Logo" />

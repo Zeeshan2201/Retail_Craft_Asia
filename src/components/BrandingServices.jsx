@@ -2,6 +2,7 @@ import { BrainCircuit, Palette, TextQuote, Package } from "lucide-react"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import Process from '../../src/animation/service/process.json'
 import Lottie from "react-lottie";
+import { div } from "framer-motion/client";
 export default function BrandingServices() {
   const services = [
     {
@@ -37,18 +38,19 @@ export default function BrandingServices() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-navy-950 via-indigo-950 to-purple-950 text-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-gradient-to-tl from-purple-900 via-purple-900 to-[#ffd700] ">
+    <div className="min-h-screen text-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto ">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Our Process</h2>
+          <h2 className="text-6xl font-bold mb-4">Our Process</h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
           We follow a structured and result-driven approach to ensure seamless execution and maximum impact for our clients. Our process is designed to deliver customized solutions that align with your business goals.
           </p>
         </div>
 
         {/* Hero Image */}
-        <div className="flex relative overflow-auto scrollbar-hide h-[80vh]">
-        <div className=" sticky top-4 w-[50%]  flex items-center mb-20">
+        <div className="flex relative overflow-auto z-10 scrollbar-hide h-[80vh]">
+        <div className="z-10 sticky top-4 w-[50%]  flex items-center mb-20">
         {/* <DotLottieReact
         className="rounded-lg shadow-2xl"
       src="https://lottie.host/f6a9b5be-6ec4-4843-8aaa-5c0ea6a199e0/yiuHIZIML7.lottie"
@@ -67,7 +69,7 @@ export default function BrandingServices() {
   height={400}
   width={400}
 />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 to-transparent rounded-lg" />
+          <div className="absolute inset-0  rounded-lg" />
         </div>
 
         {/* Services Grid */}
@@ -87,6 +89,7 @@ export default function BrandingServices() {
         </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

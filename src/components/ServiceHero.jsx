@@ -3,7 +3,7 @@ import Carousel from './Carousel';
  
  const ServiceHero = () => {
    return (
-     <div className='flex bg-[#0A1A5C] text-white py-16  md:pl-6 md:mr-0  lg:px-24'>
+     <div className='flex pt-32 bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] text-white pb-16  md:pl-6 md:mr-0  lg:px-24'>
        <div className='w-[50%]  items-center'>
         <div className='mr-6'>
             <h1 className='text-4xl md:text-5xl font-bold leading-tight'>Driving Growth & Innovation for Your Business</h1>
@@ -24,7 +24,7 @@ import Carousel from './Carousel';
           </ul>
         </div>
     </div>
-       <div className='w-[50%]'>
+       <div className='ml-20 w-[50%]'>
             <div><Carousel/></div>
        </div>
      </div>

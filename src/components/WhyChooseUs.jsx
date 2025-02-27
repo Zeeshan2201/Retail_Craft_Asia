@@ -18,6 +18,7 @@ function WhyChooseUs() {
     <>
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '80px',  position: 'relative' }}
     className='pl-[60px] bg-gradient-to-r from-purple-900 via-purple-600 to-purple-800 '>
+      {/* <h2 className="text-4xl">Why Choose us</h2> */}
       <div style={{ position: "relative" }}>
   <motion.div 
     whileHover={{ scale: 1.1, rotate: 5 }}
@@ -25,8 +26,8 @@ function WhyChooseUs() {
     style={{ width: '320px', height: '320px', background: `radial-gradient(circle, ${selected.color}, rgb(239, 192, 75))`, borderRadius: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: 'white', textAlign: 'center', position: 'relative', zIndex: 2, transition: 'all 0.2s ease-in-out' }}
     // style={{ width: '300px', height: '300px', background: `radial-gradient(circle, ${selected.color}, rgb(239, 192, 75))`, borderRadius: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: 'white', textAlign: 'center', position: 'relative', zIndex: 2, transition: 'all 0.2s ease-in-out' }}
   >
-    <h2 style={{ fontSize: '24px', fontWeight: 'bold' }}>{selected.title}</h2>
-    <p style={{ fontSize: '14px', marginTop: '10px', padding: '0 20px' }}>{selected.text}</p>
+    <h2 style={{ fontSize: '2rem', fontWeight: 'bold' }}>{selected.title}</h2>
+    <p style={{ fontSize: '1rem', marginTop: '10px', padding: '0 20px' }}>{selected.text}</p>
   </motion.div>
 
   {/* Background Element - Outside motion.div */}
