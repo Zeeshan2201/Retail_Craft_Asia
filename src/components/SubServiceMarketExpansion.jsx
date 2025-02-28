@@ -228,7 +228,7 @@ export default function ServicesPage() {
         </div>
         <div className="relative  row-start-1 md:row-start-auto flex justify-center items-center h-[400px] overflow-hidden rounded-lg">
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
-          <div className='bg-white'><Lottie
+          <div className=' '><Lottie
   options={{
     loop: true,
     autoplay: true,
