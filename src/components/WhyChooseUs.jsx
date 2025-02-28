@@ -110,8 +110,8 @@ function WhyChooseUs() {
       >
         {item.icon}
       </motion.div>
-      <div>
-        <h3 className="text-base font-bold">{item.title}</h3>
+      <div className="ml-2">
+        <h3 className=" text-base font-bold">{item.title}</h3>
         <p className="text-sm text-gray-600">{item.text}</p>
       </div>
       <div 

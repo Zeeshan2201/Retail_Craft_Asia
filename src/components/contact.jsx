@@ -33,11 +33,11 @@ const ContactCards = () => {
   return (
     <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6 bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] ">
       <div className="text-center mb-10 mt-20 ">
-        <h2 className="text-4xl sm:text-6xl">How can RetailCraftAsia customer support help you today?</h2>
-        <p className="text-gray-500 mt-5 text-lg sm:text-2xl">Our friendly customer support team is ready & excited to help with any issue!</p>
+        <h2 className="text-4xl uppercase text-white sm:text-6xl">How can Retail Craft Asia customer support help you today?</h2>
+        <p className="text-gray-200 mt-5 text-lg sm:text-2xl">Our friendly customer support team is ready & excited to help with any issue!</p>
       </div>
       
-      <div className='mt-5 mb-5 text-2xl sm:text-4xl text-center'>Looking for answers? Try one of these helpful resources:</div>
+      <div className='mt-5 mb-5 text-white text-2xl sm:text-4xl text-center'>Looking for answers? Try one of these helpful resources:</div>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
         {['Get Appointment', 'Email-Support', 'FAQ'].map((title, index) => (
@@ -47,7 +47,16 @@ const ContactCards = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
-            <Card onClick={title === 'Email-Support' ? () => window.location.href = 'mailto:chaubeyvinit02@gmail.com' : (title === 'Get Appointment' ? () => setModalOpen(true) : null)}>
+            <Card onClick={
+  title === 'Email-Support' 
+    ? () => window.location.href = 'mailto:career@retailcraftasia.com' 
+    : title === 'Get Appointment' 
+      ? () => setModalOpen(true) 
+      : title === 'FAQ' 
+        ? () => window.location.href = '/faq'  // Redirects to FAQ page
+        : null
+}
+>
               <CardContent>
                 {title}
                 <DotLottieReact src={
@@ -68,9 +77,9 @@ const ContactCards = () => {
       
       <div className="text-center mt-10 mb-10">
         <h3 className="text-4xl font-semibold">Need More Help?</h3>
-        <p className="mt-4">Call us at <a href="tel:+1234567890" className="text-blue-500 font-bold hover:underline">+1 234 567 890</a></p>
+        <p className="mt-4">Call us at <a href="tel:+6623658200" className="text-white font-bold hover:underline">+6623658200</a></p>
         <p className="mt-2">Support Hours: Mon-Fri, 9 AM - 6 PM</p>
-        <p>We usually respond within <strong>4-8 hours</strong>.</p>
+        {/* <p>We usually respond within <strong>4-8 hours</strong>.</p> */}
       </div>
 
       {isModalOpen && (
