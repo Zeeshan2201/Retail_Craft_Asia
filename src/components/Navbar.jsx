@@ -27,13 +27,13 @@ const MainNav = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-4">
-            <Link to="/" className="px-4 py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100">Home</Link>
+            <Link to="/" className="px-4 py-2 text-base  font-medium text-white hover:hover:bg-neutral-100 hover:text-black">Home</Link>
             <div
-              className="relative flex flex-row px-4 py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100"
+              className="relative flex flex-row px-4 py-2 text-base font-medium text-white hover:hover:bg-neutral-100 hover:text-black"
               onMouseEnter={() => setActiveDropdown("services")}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <Link to="/Services" className=" flex text-base font-medium text-neutral-900 hover:bg-neutral-100">
+              <Link to="/Services" className=" flex text-base font-medium text-white hover:hover:bg-neutral-100 hover:text-black">
                 <span>Services</span>
                 
               <span className='transition-all duration-300 ease-in-out ml-1 px-1 pt-1'>{activeDropdown ?  (<ChevronUp className="w-6 h-6 transition-all duration-300 ease-in-out " />): (<ChevronDown className="w-6 h-6 transition-all  duration-300 ease-in-out" />)}</span>
@@ -59,14 +59,14 @@ const MainNav = () => {
                 </div>
               </div>
             </div>
-            <Link to="/About" className="px-4 py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100">About Us</Link>
-            <Link to="/Contact" className="px-4 py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100">Contact Us</Link>
-            <Link to="/faq" className="px-4 py-2 text-base font-medium text-neutral-900 hover:bg-neutral-100">FAQ</Link>
+            <Link to="/About" className="px-4 py-2 text-base font-medium text-white hover:hover:bg-neutral-100 hover:text-black">About Us</Link>
+            <Link to="/Contact" className="px-4 py-2 text-base font-medium text-white hover:hover:bg-neutral-100 hover:text-black">Contact Us</Link>
+            <Link to="/faq" className="px-4 py-2 text-base font-medium text-white hover:hover:bg-neutral-100 hover:text-black">FAQ</Link>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-md text-neutral-900"
+            className="md:hidden p-2 rounded-md text-white"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -84,16 +84,16 @@ const MainNav = () => {
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         } p-6 shadow-lg`}
       >
-        <button className="mb-4" onClick={() => setMobileMenuOpen(false)}>
+        <button className="mb-4 text-purple-900" onClick={() => setMobileMenuOpen(false)}>
           <X size={28} />
         </button>
         <nav className="flex flex-col space-y-4">
-          <Link to="/" className="text-base font-medium text-neutral-900" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-          {/* <Link to="/Services" className="text-base font-medium text-neutral-900" onClick={() => setMobileMenuOpen(false)}>Services</Link> */}
+          <Link to="/" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+          {/* <Link to="/Services" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>Services</Link> */}
           <div className="relative">
         <Link
           to="/services"
-          className="flex items-center  w-full text-base font-medium text-neutral-900 py-2"
+          className="flex items-center  w-full text-base font-medium text-purple-900 py-2"
         >
           Services
           <span className='ml-1 pl-1 pt-1'>{isSubMenuOpen ? <ChevronUp className="w-4 h-4" onClick={() => setIsSubMenuOpen(!isSubMenuOpen)} /> : <ChevronDown className="w-4 h-4" onClick={() => setIsSubMenuOpen(!isSubMenuOpen)} />}</span>
@@ -102,17 +102,17 @@ const MainNav = () => {
         {/* Sub-Services Dropdown */}
         {isSubMenuOpen && (
           <div className="ml-4 mt-2 flex flex-col space-y-2">
-            <Link to="/services/SalesAndMerchandising" className="text-sm text-gray-700 hover:text-gray-900" onClick={() => setMobileMenuOpen(false)}>Sales and Merchandising</Link>
-            <Link to="/services/BrandActivation" className="text-sm text-gray-700 hover:text-gray-900" onClick={() => setMobileMenuOpen(false)}>Brand Activation</Link>
-            <Link to="/services/MarketExpansion" className="text-sm text-gray-700 hover:text-gray-900" onClick={() => setMobileMenuOpen(false)}>Market Expansion</Link>
-            <Link to="/services/DataAndTechnology" className="text-sm text-gray-700 hover:text-gray-900" onClick={() => setMobileMenuOpen(false)}>Data & Technology</Link>
-            <Link to="/services/DigitalMarketing" className="text-sm text-gray-700 hover:text-gray-900" onClick={() => setMobileMenuOpen(false)}>Digital Marketing</Link>
+            <Link to="/services/SalesAndMerchandising" className="text-sm text-purple-700 hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Sales and Merchandising</Link>
+            <Link to="/services/BrandActivation" className="text-sm text-purple-700 hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Brand Activation</Link>
+            <Link to="/services/MarketExpansion" className="text-sm text-purple-700 hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Market Expansion</Link>
+            <Link to="/services/DataAndTechnology" className="text-sm text-purple-700 hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Data & Technology</Link>
+            <Link to="/services/DigitalMarketing" className="text-sm text-purple-700 hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Digital Marketing</Link>
           </div>
         )}
       </div>
-          <Link to="/About" className="text-base font-medium text-neutral-900" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
-          <Link to="/Contact" className="text-base font-medium text-neutral-900" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
-          <Link to="/faq" className="text-base font-medium text-neutral-900" onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
+          <Link to="/About" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
+          <Link to="/Contact" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
+          <Link to="/faq" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
         </nav>
       </div>
     </>
