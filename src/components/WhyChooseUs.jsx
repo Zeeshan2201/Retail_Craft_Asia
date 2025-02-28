@@ -17,7 +17,7 @@ function WhyChooseUs() {
   return (
     <>
     <div 
-    className='relative  flex flex-col md:flex-row items-center justify-center p-16 md:pl-45 bg-gradient-to-r from-purple-900 via-purple-600 to-purple-800 '>
+    className='relative  flex flex-col md:flex-row items-center justify-center p-16 md:pl-40 bg-gradient-to-r from-purple-900 via-purple-600 to-purple-800 '>
       {/* <h2 className="text-4xl">Why Choose us</h2> */}
       <div style={{ position: "relative" }}>
   {/* <motion.div 
@@ -110,9 +110,6 @@ function WhyChooseUs() {
       >
         {item.icon}
       </motion.div>
-      <div>
-        <h3 className="text-2xl md:text-[30px] font-bold">{item.title}</h3>
-        <p className="text-base md:text-[20px] text-gray-600">{item.text}</p>
       <div className="ml-2">
         <h3 className=" text-base font-bold">{item.title}</h3>
         <p className="text-sm text-gray-600">{item.text}</p>
