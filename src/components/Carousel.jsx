@@ -35,7 +35,7 @@ export default function Carousel() {
   }, []) // Removed next from dependencies
 
   return (
-    <div className="relative h-[60vh] w-[90%] overflow-hidden">
+    <div className="relative md:h-[60vh] md:w-[90%] h-[40vh] w-[100%] overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div

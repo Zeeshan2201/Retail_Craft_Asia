@@ -9,54 +9,16 @@ import { Link } from 'react-router-dom';
 export default function FeaturedProject() {
   return (
     <>
-    <section className="mt-10">
+    <section className="mt-10 ">
     <div>
-          <div className="max-w-7xl  mx-auto grid md:grid-cols-2 gap-8 items-center">
+          <div className="max-w-7xl  md:mx-auto grid md:grid-cols-2 gap-8 items-center">
             <div className="relative">
             {/* <DotLottieReact
       src="https://lottie.host/90ff9944-9dce-4f64-907b-9a3ad1b4d1ff/7ogF0XlY1l.lottie"
       loop
       autoplay
     /> */}
-{/* <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
- 
-  <rect width="100%" height="100%" fill="#f0f0f0" />
-
-  <line x1="50" y1="150" x2="350" y2="150" stroke="#000" stroke-width="2" />
-
-
-  <line x1="50" y1="150" x2="50" y2="50" stroke="#000" stroke-width="2" />
-
-  <text x="30" y="155" fontSize="12" fill="#000">0</text>
-  <text x="30" y="100" fontSize="12" fill="#000">50</text>
-  <text x="30" y="50" fontSize="12" fill="#000">100</text>
-
-  <text x="50" y="170" fontSize="12" fill="#000">0%</text>
-  <text x="150" y="170" fontSize="12" fill="#000">25%</text>
-  <text x="250" y="170" fontSize="12" fill="#000">50%</text>
-  <text x="350" y="170" fontSize="12" fill="#000">100%</text>
-
-  
-  <polyline points="50,150" stroke="#000" stroke-width="3" fill="none">
-    <animate attributeName="points" dur="4s" fill="freeze" 
-             from="50,150" 
-             to="50,150 150,100 250,50 350,50" />
-  </polyline>
-
-  <circle cx="50" cy="150" r="5" fill="#000">
-    <animate attributeName="r" from="0" to="5" dur="0.5s" fill="freeze" />
-  </circle>
-  <circle cx="150" cy="100" r="0" fill="#000">
-    <animate attributeName="r" from="0" to="5" dur="0.5s" begin="1s" fill="freeze" />
-  </circle>
-  <circle cx="250" cy="50" r="0" fill="#000">
-    <animate attributeName="r" from="0" to="5" dur="0.5s" begin="2s" fill="freeze" />
-  </circle>
-  <circle cx="350" cy="50" r="0" fill="#000">
-    <animate attributeName="r" from="0" to="5" dur="0.5s" begin="3s" fill="freeze" />
-  </circle>
-</svg> */}
-  <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <svg className='md:w-[400px] md:h-[200px]  w-[380px] h-[180px]' xmlns="http://www.w3.org/2000/svg">
 
   <rect width="100%" height="100%" fill="none" />
 
@@ -81,16 +43,12 @@ export default function FeaturedProject() {
   </path>
 
   <circle cx="50" cy="150" r="5" fill="#000">
-    {/* <animate attributeName="r" from="0" to="5" dur="0.5s" repeatCount="indefinite" /> */}
   </circle>
   <circle cx="150" cy="100" r="0" fill="#000">
-    {/* <animate attributeName="r" from="0" to="5" dur="0.5s" begin="1s" repeatCount="indefinite" /> */}
   </circle>
   <circle cx="250" cy="50" r="0" fill="#000">
-    {/* <animate attributeName="r" from="0" to="5" dur="0.5s" begin="2s" repeatCount="indefinite" /> */}
   </circle>
   <circle cx="350" cy="50" r="0" fill="#000">
-    {/* <animate attributeName="r" from="0" to="5" dur="0.5s" begin="3s" repeatCount="indefinite" /> */}
   </circle>
 </svg>        
             </div>
@@ -117,7 +75,7 @@ export default function FeaturedProject() {
                 </Link>
                 <Link
                   to="/contact" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
+                  className="md:inline-flex items-center px-6 py-3 border-2 hidden border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
@@ -147,7 +105,7 @@ export default function FeaturedProject() {
                 </Link>
                 <Link 
                   to="/contact" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
+                  className="md:inline-flex items-center px-6 py-3 border-2 hidden border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
@@ -192,7 +150,7 @@ export default function FeaturedProject() {
                 </Link>
                 <Link 
                   to="/contact" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
+                  className="md:inline-flex items-center px-6 py-3 border-2 hidden border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
@@ -224,20 +182,17 @@ export default function FeaturedProject() {
                 </Link>
                 <Link 
                   to="/contact" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
+                  className="md:inline-flex items-center px-6 py-3 border-2 hidden border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
                 </Link>
               </div>
             </div>
-            <div className="relative">
-            {/* <DotLottieReact
-      src="https://lottie.host/dc6dcc14-2e94-4c69-bc18-84a0b1df7211/lXDcz5OyJe.lottie"
-      loop
-      autoplay
-    /> */}
+            <div className="relative md:w-[400px] w-[380px] h-[400px]">
+            
 <Lottie
+className=""
   options={{
     loop: true,
     autoplay: true,
@@ -246,18 +201,14 @@ export default function FeaturedProject() {
       preserveAspectRatio: "xMidYMid slice"
     }
   }}
-  height={400}
-  width={400}
+  // height={400}
+  // width={400}
 />
             </div>
           </div>
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div className="relative">
-                  {/* <DotLottieReact
-      src="https://lottie.host/dc6dcc14-2e94-4c69-bc18-84a0b1df7211/lXDcz5OyJe.lottie"
-      loop
-      autoplay
-    /> */}
+                  
 <Lottie
   options={{
     loop: true,
@@ -295,7 +246,7 @@ export default function FeaturedProject() {
                 </Link>
                 <Link 
                   to="/contact" 
-                  className="inline-flex items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
+                  className="md:inline-flex hidden items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
@@ -309,3 +260,13 @@ export default function FeaturedProject() {
     </>
   );
 }
+{/* <DotLottieReact
+      src="https://lottie.host/dc6dcc14-2e94-4c69-bc18-84a0b1df7211/lXDcz5OyJe.lottie"
+      loop
+      autoplay
+    /> */}
+    {/* <DotLottieReact
+      src="https://lottie.host/dc6dcc14-2e94-4c69-bc18-84a0b1df7211/lXDcz5OyJe.lottie"
+      loop
+      autoplay
+    /> */}

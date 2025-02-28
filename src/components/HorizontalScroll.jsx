@@ -102,9 +102,9 @@ const HorizontalScroll = () => {
             </div>
             </div>
           </Section>
-          <Section color="bg-white flex flex-col w-[75dvw] ">
+          <Section color="bg-white flex flex-col w-[75dvw]  w-[100dvw]">
           <div className=' flex flex-row border-l-4 border-[#ffd700]  h-[75%] px-8 py-4 rounded-xl bg-purple-900 items-center  justify-center' >
-          <div className="w-[70%]">
+          <div className="w-[64%]">
             <div className="text-4xl font-bold">Brand Activation and Experimental Marketing</div>
             <p className="text-2xl my-4">At Retail Craft Asia, we create impactful brand experiences that engage, inspire, and drive consumer action.</p>
             <div className="">

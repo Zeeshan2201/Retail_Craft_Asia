@@ -92,7 +92,7 @@ function WhyChooseUs() {
           </motion.div>
         ))}
       </div> */}
-      <div className="relative md:w-full w-[41vh] pr-4 mt-10 md:ml-[120px] sm:ml-4">
+      <div className="relative md:w-[45vw] w-[86vw] pr-4 mt-10 md:ml-[120px] sm:ml-4">
   {data.map((item, i) => (
     <motion.div 
       key={i}

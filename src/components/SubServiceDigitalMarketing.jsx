@@ -140,12 +140,12 @@ export default function ServicesPage() {
           {/* Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #ffbc00, ,#ff0058)` }}
+            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058` }}
           ></div>
           {/* Blurred Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg,#ffbc00,#ff0058)` }}
+            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058` }}
           ></div>
 
           {/* Bouncing Square Animation */}

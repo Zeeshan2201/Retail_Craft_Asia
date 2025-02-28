@@ -50,7 +50,7 @@ export default function BrandingServices() {
 
         {/* Hero Image */}
         <div className="flex relative overflow-auto z-10 scrollbar-hide h-[80vh]">
-        <div className="z-10 sticky top-4 w-[50%]  flex items-center mb-20">
+        <div className="z-10 hidden sticky top-4 w-[50%]  md:flex items-center mb-20">
         {/* <DotLottieReact
         className="rounded-lg shadow-2xl"
       src="https://lottie.host/f6a9b5be-6ec4-4843-8aaa-5c0ea6a199e0/yiuHIZIML7.lottie"
@@ -73,7 +73,7 @@ export default function BrandingServices() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid w-[60%] grid-cols-1 md:grid-cols-1 gap-8">
+        <div className="grid md:w-[60%] w-[100%]  grid-cols-1 md:grid-cols-1 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
