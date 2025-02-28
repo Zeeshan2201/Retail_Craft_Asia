@@ -190,8 +190,8 @@ export default function ServicesPage() {
           </div>
         </div>
   </section>
-      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900 to-[#D4AF37]">
-        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+      <section className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900 to-[#D4AF37]">
+        <div className="group relative row-start-2 md:row-start-auto md:col-start-1 flex justify-center items-center w-[320px] h-[400px] mx-auto">
         
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
@@ -226,7 +226,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative flex justify-center items-center h-[400px] overflow-hidden rounded-lg">
+        <div className="relative  row-start-1 md:row-start-auto flex justify-center items-center h-[400px] overflow-hidden rounded-lg">
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
           <div className='bg-white'><Lottie
   options={{
@@ -297,8 +297,8 @@ export default function ServicesPage() {
           </div>
         </div>
   </section>
-      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900 to-[#D4AF37]">
-        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+      <section className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900 to-[#D4AF37]">
+        <div className="group relative flex row-start-2 md:row-start-auto md:col-start-1 justify-center items-center w-[320px] h-[400px] mx-auto">
         
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
@@ -333,7 +333,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative h-[400px]  flex justify-center items-center overflow-hidden rounded-lg">
+        <div className="relative h-[400px]  row-start-1 md:row-start-auto flex justify-center items-center overflow-hidden rounded-lg">
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
           <Lottie
   options={{

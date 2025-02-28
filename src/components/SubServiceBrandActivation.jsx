@@ -117,7 +117,7 @@ export default function ServicesPage() {
         <h1 className="mt-4 mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
           Brand Activation & Experiential Marketing
         </h1> <br></br>
-        <p className="mb-4 mt-4 md:m-8 text-justify text-2xl font-semibold tracking-wider">
+        <p className="mb-4 mt-4 md:m-8 text-justify  md:text-2xl font-semibold tracking-wider">
           We create immersive brand experiences that engage consumers and leave a lasting impression. Through interactive campaigns, live events, and on-ground activations, we help brands establish deeper connections with their audiences. These experiences enhance brand recall, foster customer loyalty, and drive higher engagement.
         </p>
         <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
@@ -136,7 +136,7 @@ export default function ServicesPage() {
       /> */}
 
 <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
-        <div className="relative h-[400px] overflow-hidden rounded-lg ">
+        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
         <Lottie
     options={{
       loop: true,
@@ -146,8 +146,8 @@ export default function ServicesPage() {
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={400}
-    width={400}
+    height={window.innerWidth < 768 ? 300 : 400}
+    width={window.innerWidth < 768 ? 300 : 400}
     />
         </div>
         {/* Card Effect for Text Side */}
@@ -204,9 +204,9 @@ export default function ServicesPage() {
         gradientColors={["#4dff03", "#00d0ff"]}
       /> */}
 
-<section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900 to-[#D4AF37]">
+<section className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto  gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900 to-[#D4AF37]">
         {/* Card Effect for Text Side */}
-        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+        <div className="group row-start-2 md:row-start-auto md:col-start-1 relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
           {/* Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
@@ -245,7 +245,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
+        <div className="relative row-start-1 md:row-start-auto md:col-start-2 h-[400px] overflow-hidden rounded-lg">
         <Lottie
     options={{
       loop: true,
@@ -344,9 +344,9 @@ export default function ServicesPage() {
       /> */}
 
 
-        <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900 to-[#D4AF37]">
+        <section className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto  gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900 to-[#D4AF37]">
         {/* Card Effect for Text Side */}
-        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+        <div className="group relative row-start-2 md:row-start-auto md:col-start-1 flex justify-center items-center w-[320px] h-[400px] mx-auto">
           {/* Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
@@ -385,7 +385,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
+        <div className="relative h-[400px] row-start-1 md:row-start-auto md:col-start-2 overflow-hidden rounded-lg">
         <Lottie
     options={{
       loop: true,
