@@ -134,9 +134,9 @@ export default function ServicesPage() {
       </section>
 
       {/* Service Sections with Glassmorphism & Hover Animation */}
-      <section className="container  mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
+      <section className="container  mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900 ">
       {/* <section className="container  mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-br from-purple-900 via-purple-900 via-[80%] to-[#D4AF37]"> */}
-        <div className="relative flex justify-center items-center h-[400px] overflow-hidden rounded-lg">
+        <div className="relative  md:h-[400px] h-[300px] overflow-hidden rounded-lg">
         <Lottie
   options={{
     loop: true,
@@ -146,8 +146,8 @@ export default function ServicesPage() {
       preserveAspectRatio: "xMidYMid slice"
     }
   }}
-  height={300}
-  width={300}
+  height={window.innerWidth < 768 ? 300 : 400}
+  width={window.innerWidth < 768 ? 300 : 400}
 />
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
         </div>
@@ -156,12 +156,12 @@ export default function ServicesPage() {
           {/* Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058` }}
+            style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37` }}
           ></div>
           {/* Blurred Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058` }}
+            style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37` }}
           ></div>
 
           {/* Bouncing Square Animation */}
@@ -190,17 +190,17 @@ export default function ServicesPage() {
           </div>
         </div>
   </section>
-      <section className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900 to-[#D4AF37]">
+      <section className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900">
         <div className="group relative row-start-2 md:row-start-auto md:col-start-1 flex justify-center items-center w-[320px] h-[400px] mx-auto">
         
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #03a9f4, #ff0058` }}
+            style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37` }}
           ></div>
           
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #03a9f4, #ff0058` }}
+            style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37` }}
           ></div>
 
          
@@ -226,7 +226,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative  row-start-1 md:row-start-auto flex justify-center items-center h-[400px] overflow-hidden rounded-lg">
+        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
           <div className=' '><Lottie
   options={{
@@ -237,12 +237,12 @@ export default function ServicesPage() {
       preserveAspectRatio: "xMidYMid slice"
     }
   }}
-  height={400}
-  width={400}
+  height={window.innerWidth < 768 ? 300 : 400}
+  width={window.innerWidth < 768 ? 300 : 400}
 /></div>
         </div>
   </section>
-      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900 to-[#D4AF37]">
+      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900">
         <div className="relative flex justify-center items-center h-[400px] overflow-hidden rounded-lg">
         <Lottie
   options={{
@@ -263,12 +263,12 @@ export default function ServicesPage() {
           {/* Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058` }}
+            style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37` }}
           ></div>
           {/* Blurred Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058` }}
+            style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37` }}
           ></div>
 
           {/* Bouncing Square Animation */}
@@ -297,17 +297,17 @@ export default function ServicesPage() {
           </div>
         </div>
   </section>
-      <section className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900 to-[#D4AF37]">
+      <section className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900">
         <div className="group relative flex row-start-2 md:row-start-auto md:col-start-1 justify-center items-center w-[320px] h-[400px] mx-auto">
         
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058` }}
+            style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37` }}
           ></div>
           
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058` }}
+            style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37` }}
           ></div>
 
          
@@ -333,7 +333,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative h-[400px]  row-start-1 md:row-start-auto flex justify-center items-center overflow-hidden rounded-lg">
+        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
           <Lottie
   options={{
@@ -344,13 +344,13 @@ export default function ServicesPage() {
       preserveAspectRatio: "xMidYMid slice"
     }
   }}
-  height={300}
-  width={300}
+  height={window.innerWidth < 768 ? 300 : 400}
+    width={window.innerWidth < 768 ? 300 : 400}
 />
         </div>
   </section>
-  <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900 to-[#D4AF37]">
-        <div className="relative h-[400px]  flex justify-center items-center overflow-hidden rounded-lg">
+  <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900">
+        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
         <Lottie
   options={{
     loop: true,
@@ -360,8 +360,8 @@ export default function ServicesPage() {
       preserveAspectRatio: "xMidYMid slice"
     }
   }}
-  height={400}
-  width={400}
+  height={window.innerWidth < 768 ? 300 : 400}
+  width={window.innerWidth < 768 ? 300 : 400}
 />
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
         </div>
@@ -370,12 +370,12 @@ export default function ServicesPage() {
           {/* Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #03a9f4, #ff0058` }}
+            style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37` }}
           ></div>
           {/* Blurred Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #03a9f4, #ff0058` }}
+            style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37` }}
           ></div>
 
           {/* Bouncing Square Animation */}

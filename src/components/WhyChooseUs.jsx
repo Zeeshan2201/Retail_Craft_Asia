@@ -113,6 +113,9 @@ function WhyChooseUs() {
       <div>
         <h3 className="text-2xl md:text-[30px] font-bold">{item.title}</h3>
         <p className="text-base md:text-[20px] text-gray-600">{item.text}</p>
+      <div className="ml-2">
+        <h3 className=" text-base font-bold">{item.title}</h3>
+        <p className="text-sm text-gray-600">{item.text}</p>
       </div>
       <div 
         className="absolute left-[-40px] md:w-10 w-6 h-[2px] top-1/2"
