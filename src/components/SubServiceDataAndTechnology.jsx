@@ -121,8 +121,8 @@ export default function ServicesPage() {
       </section>
 
       
-      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
+      <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900">
+        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
           <Lottie
     options={{
@@ -133,8 +133,8 @@ export default function ServicesPage() {
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={400}
-    width={400}
+    height={window.innerWidth < 768 ? 300 : 400}
+    width={window.innerWidth < 768 ? 300 : 400}
   />
         </div>
         {/* Card Effect for Text Side */}
@@ -142,12 +142,12 @@ export default function ServicesPage() {
           {/* Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #03a9f4, #ff0058)` }}
+            style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
           ></div>
           {/* Blurred Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #03a9f4, #ff0058)` }}
+            style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
           ></div>
 
           {/* Bouncing Square Animation */}
@@ -170,8 +170,8 @@ export default function ServicesPage() {
               {[
           "Analyzes business operations to improve efficiency",
          "Uses real-time insights to optimize processes",
-         "Enhances productivity and reduces operat",]}      
-         gradientColors={["#03a9f4", "#ff0058"].map((item, index) => (
+         "Enhances productivity and reduces operat",]      
+         .map((item, index) => (
                 <li key={index} className="text-white">• {item}</li>
               ))}
             </ul>
@@ -190,18 +190,18 @@ export default function ServicesPage() {
          gradientColors={["#03a9f4", "#ff0058"]}
       /> */}
 
-<section className="container mx-auto grid md:grid-rows-1 md:grid-rows-auto grid-flow-dense md:grid-flow-row grid-rows-2 gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900  to-[#D4AF37]">
+<section className="container mx-auto grid md:grid-rows-1 md:grid-rows-auto grid-flow-dense md:grid-flow-row grid-rows-2 gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900">
         {/* Card Effect for Text Side */}
         <div className="group relative row-start-2 md:row-start-auto flex justify-center items-center w-[320px] h-[400px] mx-auto">
           {/* Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058)` }}
+            style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
           ></div>
           {/* Blurred Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #ffbc00, #ff0058)` }}
+            style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
           ></div>
 
           {/* Bouncing Square Animation */}
@@ -232,7 +232,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative row-start-1 h-[400px] overflow-hidden rounded-lg">
+        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
           <Lottie
     options={{
@@ -243,8 +243,8 @@ export default function ServicesPage() {
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={400}
-    width={400}
+    height={window.innerWidth < 768 ? 300 : 400}
+    width={window.innerWidth < 768 ? 300 : 400}
   />
 
         </div>
@@ -263,7 +263,63 @@ export default function ServicesPage() {
         gradientColors={["#ffbc00", "#ff0058"]}
         // gradientColors={["#4B0082", "#D4AF37"]}
       /> */}
-      
+       
+       <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900">
+        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
+          {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
+          <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData: GIF_3,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    }}
+    height={window.innerWidth < 768 ? 300 : 400}
+    width={window.innerWidth < 768 ? 300 : 400}
+  />
+        </div>
+        {/* Card Effect for Text Side */}
+        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+          {/* Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
+          ></div>
+          {/* Blurred Tilted Background Card */}
+          <div
+            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
+          ></div>
+
+          {/* Bouncing Square Animation */}
+          <div className="absolute top-0 left-0 right-0 bottom-0 z-5 pointer-events-none">
+            <div
+              className="absolute top-0 left-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '0s' }}
+            ></div>
+            <div
+              className="absolute bottom-0 right-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+              style={{ animationDelay: '1s' }}
+            ></div>
+          </div>
+
+          {/* Main Content */}
+          <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
+            <h2 className="text-3xl font-bold text-white">Learning & Development Modules</h2>
+            <p className="mt-2 text-lg text-blue-50"></p>
+            <ul className="mt-4 space-y-2">
+              {[
+          "Provides training programs for skill development",
+          "Enhances employee productivity and business performance",
+          "Covers leadership, sales, and customer service training",].map((item, index) => (
+                <li key={index} className="text-white">• {item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
       
       {/* <ServiceSection
         title="Learning & Development Modules"
@@ -276,35 +332,18 @@ export default function ServicesPage() {
       /> */}
 
 
-
-     
-<section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
-          {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
-          <Lottie
-    options={{
-      loop: true,
-      autoplay: true,
-      animationData: GIF_7,
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice"
-      }
-    }}
-    height={400}
-    width={400}
-  />
-        </div>
+<section className="container mx-auto grid md:grid-rows-1 md:grid-rows-auto grid-flow-dense md:grid-flow-row grid-rows-2 gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900">
         {/* Card Effect for Text Side */}
-        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+        <div className="group relative row-start-2 md:row-start-auto flex justify-center items-center w-[320px] h-[400px] mx-auto">
           {/* Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg,#03a9f4, #ff0058)` }}
+            style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
           ></div>
           {/* Blurred Tilted Background Card */}
           <div
             className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #03a9f4, #ff0058)` }}
+            style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
           ></div>
 
           {/* Bouncing Square Animation */}
@@ -325,17 +364,35 @@ export default function ServicesPage() {
             <p className="mt-2 text-lg text-blue-50"></p>
             <ul className="mt-4 space-y-2">
               {[
-        "lisManages customer relationships effectively.",
-       " Automates interactions and tracks customer journeys.",
-        "Improves customer retention and engagement.",
-        ]      
-         .map((item, index) => (
+           "lisManages customer relationships effectively.",
+           " Automates interactions and tracks customer journeys.",
+            "Improves customer retention and engagement.",
+          
+        ].map((item, index) => (
                 <li key={index} className="text-white">• {item}</li>
               ))}
             </ul>
           </div>
         </div>
+        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
+          {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
+          <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData: GIF_7,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    }}
+    height={window.innerWidth < 768 ? 300 : 400}
+    width={window.innerWidth < 768 ? 300 : 400}
+  />
+
+        </div>
       </section>
+
+     
 {/*      
       <ServiceSection
         title="CRM Solutions"
