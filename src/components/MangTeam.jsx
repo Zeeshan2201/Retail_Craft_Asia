@@ -1,0 +1,187 @@
+"use client"
+
+import { useState, useEffect } from "react"
+import { ChevronDown, ChevronUp, Linkedin, Award, Briefcase } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
+import { Link, useLocation } from 'react-router-dom';
+
+const teamMembers = [
+  {
+    id: 1,
+    name: "Jean-Boris ROUX",
+    role: "Founder",
+    shortBio:
+      "A seasoned leader with over 25 years of diverse experience spanning distribution, hospitality, FMCG, and retail industries across Europe and Asia.",
+    fullDescription: `Jean-Boris ROUX, aka "JB", is a seasoned leader with over 25 years of diverse experience spanning distribution, hospitality, FMCG, and retail industries across Europe and Asia. His career has allowed him to work with some of the world's most prestigious companies, where he gained invaluable expertise in strategic growth, operational excellence, and market expansion.
+
+Over the years, JB has built a strong track record in shaping growth strategies, managing franchise development, and building distribution networks, resulting in market dominance in the regions he oversaw. This expertise covers supermarkets, convenience stores, and dealerships, with hands-on experience at companies like Shell, Lidl, and Ford, where he led successful retail transformations and market expansions.
+
+Throughout his career, JB has served on multiple Boards of Directors across Cambodia, Thailand, Singapore, Myanmar, and Laos, including that of a regional airport food retail group acquired by global multi-sector catering leader Newrest and offering a diverse range of in-house brands as well as international chains such as Burger King, Starbucks, Subway, The Pizza Company, Dairy Queen, and Krispy Kreme. JB's leadership is characterized by his ability to blend visionary thinking with operational execution. His true passion lies in building sustainable businesses and developing strong high-performing teams. Whether transforming a company's operations or leading brands to new heights, JB's focus remains on creating lasting success, inspiring growth, and delivering exceptional value to all stakeholders.
+
+In addition to his corporate leadership roles, JB has held the position of President of the French-Cambodian Chamber of Commerce for five years and is currently serving as Vice President of the Franco-Thai Chamber of Commerce, actively contributing to business development and trade initiatives in the region.
+
+JB holds a Master's degree in Business Administration from EDC Business School in France and speaks French, English, Cambodian, Thai, and German. A certified professional coach, he has also successfully completed the Director Certification Program at the Institute of Directors in Thailand and holds a Six Sigma Green Belt certification. Outside of work, he is married and a proud father of two children.`,
+    image: "/Team/Member_1.png",
+    highlights: [
+      "25+ years of experience across Europe and Asia",
+      "Former President of French-Cambodian Chamber of Commerce",
+      "Expertise in strategic growth and market expansion",
+      "Certified professional coach and Six Sigma Green Belt",
+    ],
+    linkedin: "#",
+  },
+  {
+    id: 2,
+    name: "Parag Wasnik",
+    role: "CEO",
+    shortBio:
+      "An engineer and MBA with more than two decades of entrepreneurial experience across FMCG, Retail, Consumer Durables, and Healthcare sectors.",
+    fullDescription: `An engineer and an MBA from premier institute, Parag brings in more than two decades of entrepreneurial, South East Asia and Pan India corporate experience across FMCG, Retail, Consumer Durables, and Healthcare sectors with top multinational organizations. His expertise lies in developing and executing growth strategies, driving operational excellence, developing world-class teams, leading strategic transformations, and empowering numerous businesses to achieve remarkable success.
+
+Consistently recognized as a top performer and recipient of multiple prestigious corporate excellence awards, demonstrating an unwavering commitment to outstanding achievement and leadership in the industry, Parag's career is marked by a proven track record of accelerating quality growth, fostering collaborations, and providing thought leadership. He has successfully grown brands, managed client portfolios, and maintained strong relationships with senior leadership to jointly drive business growth.
+
+In his role as CEO, Parag has built and scaled businesses from the ground up, managing multicultural and multi-country sensitivities. As a result-oriented leader with a passion for people development, he has successfully demonstrated an increase in revenue and market share by enhancing customer experience, complemented by his proficiency in driving innovation and digital transformation to boost productivity and revenue.
+
+Parag is not just a leader but an inspiration, embodying excellence in every endeavor. An empathetic leader committed to DEI and ESG and driven by a passion for creating a better world for all. His visionary leadership continues to pave the way for sustainable growth and success in the industry.
+
+Outside work, he is an avid traveler and has explored over 40 countries.`,
+    image: "/Team/Member_2.png",
+    highlights: [
+      "20+ years of experience in South East Asia and India",
+      "Expert in growth strategies and operational excellence",
+      "Driven innovation and digital transformation",
+      "Explored over 40 countries as an avid traveler",
+    ],
+    linkedin: "#",
+  },
+]
+
+const TeamMemberDetail = () => {
+  const [expandedId, setExpandedId] = useState()
+// const [state, setstate] = useState(initialState);
+  const toggleExpand = (id) => {
+    setExpandedId(expandedId === id ? null : id)
+  }
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", ""); // Remove #
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+  return (
+    <section  style={{
+        background: "linear-gradient(to bottom, #581c87 0%, #581c87 10%, #581c87 95%, white 100%)"
+      }} className="py-20 ">
+        {/* bg-gradient-to-b from-purple-900 to-purple-800 */}
+    <div className="container mx-auto px-4 mb-10">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-white inline-block relative">
+            Meet Our <span className="underline decoration-yellow-500 ">Leadership</span> Team
+            {/* <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-yellow-400 rounded-full"></span> */}
+          </h2>
+          <p className="text-purple-200 text-lg max-w-2xl mx-auto mt-6">
+            Visionary leaders with decades of experience, driving innovation and excellence across global markets.
+          </p>
+        </div>
+
+        <div className="space-y-12">
+          {teamMembers.map((member, index) => (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              key={member.id}
+              id={member.id}
+              className="bg-white rounded-2xl shadow-xl overflow-hidden"
+            >
+              <div className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}>
+                {/* Image Section */}
+                <div className="w-full lg:w-1/3 bg-gradient-to-br from-purple-800 to-purple-900 p-8 flex flex-col items-center justify-center">
+                  <div className="relative">
+                    <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                      <img
+                        src={member.image || "/placeholder.svg"}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 -right-2 bg-yellow-400 rounded-full p-2 shadow-lg">
+                      <a href={member.linkedin} className="text-purple-900 hover:text-purple-700 transition-colors">
+                        <Linkedin className="w-6 h-6" />
+                      </a>
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mt-6 text-center">{member.name}</h3>
+                  <div className="flex items-center mt-2 mb-4">
+                    <Briefcase className="w-4 h-4 text-yellow-400 mr-2" />
+                    <p className="text-yellow-400 font-medium">{member.role}</p>
+                  </div>
+                  <div className="mt-4 space-y-2 w-full">
+                    {member.highlights.map((highlight, i) => (
+                      <div key={i} className="flex items-start">
+                        <Award className="w-5 h-5 text-yellow-400 mr-2 flex-shrink-0 mt-0.5" />
+                        <p className="text-purple-100 text-left text-sm">{highlight}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Content Section */}
+                <div className="w-full lg:w-2/3 p-8 lg:p-12">
+                  <p className="text-lg text-left  text-gray-700 font-medium mb-6">{member.shortBio}</p>
+
+                  <AnimatePresence>
+                    {expandedId === member.id && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="prose prose-purple max-w-none">
+                          {member.fullDescription.split("\n\n").map((paragraph, i) => (
+                            <p key={i} className="text-gray-600 text-left mb-4">
+                              {paragraph}
+                            </p>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+
+                  <button
+                    onClick={() => toggleExpand(member.id)}
+                    className="mt-6 flex items-center text-purple-700 hover:text-purple-900 font-medium transition-colors group"
+                  >
+                    {expandedId === member.id ? (
+                      <>
+                        <span>Read Less</span>
+                        <ChevronUp className="ml-2 w-5 h-5 group-hover:-translate-y-1 transition-transform" />
+                      </>
+                    ) : (
+                      <>
+                        <span>Read Full Bio</span>
+                        <ChevronDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
+                      </>
+                    )}
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default TeamMemberDetail
+
