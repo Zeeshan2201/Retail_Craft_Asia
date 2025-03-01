@@ -17,7 +17,11 @@ function WhyChooseUs() {
   return (
     <>
     <div 
-    className='relative  flex flex-col md:flex-row items-center justify-center p-16 md:pl-40 bg-gradient-to-r from-purple-900 via-purple-600 to-purple-800 '>
+    style={{
+      background: "linear-gradient(to bottom, white 0%, #581c87 10%, #581c87 90%, white 100%)"
+    }}
+    className='relative  flex flex-col md:flex-row items-center justify-center p-16 md:pl-40 '>
+    {/* className='relative  flex flex-col md:flex-row items-center justify-center p-16 md:pl-40 bg-gradient-to-b from-white  via-purple-900 via-[10%] to-purple-900'> */}
       {/* <h2 className="text-4xl">Why Choose us</h2> */}
       <div style={{ position: "relative" }}>
   {/* <motion.div 

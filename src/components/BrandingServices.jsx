@@ -38,7 +38,7 @@ export default function BrandingServices() {
   ]
 
   return (
-    <div className="bg-gradient-to-tl from-purple-900 via-purple-900 to-[#ffd700] ">
+    <div className="bg-gradient-to-tl from-purple-900 via-purple-900 to-[#fff3b0] ">
     <div className="min-h-screen text-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto ">
         <div className="text-center mb-16">
