@@ -1,9 +1,16 @@
 import React from 'react';
+import FMCGIcon1 from '../assets/Industry/fmcg1.svg'; // Replace with actual paths to your SVGs
 import FMCGIcon from '../assets/Industry/fmcg.svg'; // Replace with actual paths to your SVGs
 import RetailIcon from '../assets/Industry/retail.svg';
+import RetailIcon1 from '../assets/Industry/retail1.svg';
 import HealthBeautyIcon from '../assets/Industry/health.svg';
+import HealthBeautyIcon1 from '../assets/Industry/health1.svg';
 import ConsumerDurablesIcon from '../assets/Industry/Electronic.svg';
+import ConsumerDurablesIcon1 from '../assets/Industry/Electronic1.svg';
 import BankingIcon from '../assets/Industry/account_balance.svg';
+import BankingIcon1 from '../assets/Industry/account_balance1.svg';
+// import BankingIcon from '../assets/Industry/account_balance.svg';
+import PharmaceuticalsIcon1 from '../assets/Industry/health_pharmacy1.svg';
 import PharmaceuticalsIcon from '../assets/Industry/health_pharmacy.svg';
 
 const FlipCard = () => {
@@ -19,14 +26,14 @@ const FlipCard = () => {
           <div className="relative md:w-[20vw] md:h-[40vh] h-[25vh] w-[88vw]  transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
             <div className="absolute w-full h-full  backface-hidden flex flex-col items-center justify-center rounded-3xl  bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10 ">
-              <img src={FMCGIcon} alt="FMCG" className="w-24 h-24 mb-4" />
+              <img src={FMCGIcon} alt="FMCG" className="w-24  text-black  h-24 mb-4" />
               <p className="text-lg text-center px-2">
                 FMCG (Fast-Moving Consumer Goods) refers to products that are sold quickly and at relatively low cost.
               </p>
             </div>
             {/* Front Face */}
             <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
-              <img src={FMCGIcon} alt="FMCG" className="w-24 h-24 mb-4" />
+              <img src={FMCGIcon1} alt="FMCG" className="w-24 text-white h-24 mb-4" />
               <p className="text-2xl font-semibold">FMCG</p>
             </div>
           </div>
@@ -44,7 +51,7 @@ const FlipCard = () => {
             </div>
             {/* Front Face */}
             <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
-              <img src={RetailIcon} alt="Retail" className="w-24 h-24 mb-4" />
+              <img src={RetailIcon1} alt="Retail" className="w-24 h-24 mb-4" />
               <p className="text-2xl font-semibold">Retail</p>
             </div>
           </div>
@@ -62,7 +69,7 @@ const FlipCard = () => {
             </div>
             {/* Front Face */}
             <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
-              <img src={HealthBeautyIcon} alt="Health and Beauty" className="w-24 h-24 mb-4" />
+              <img src={HealthBeautyIcon1} alt="Health and Beauty" className="w-24 h-24 mb-4" />
               <p className="text-2xl font-semibold">Health and Beauty</p>
             </div>
           </div>
@@ -80,7 +87,7 @@ const FlipCard = () => {
             </div>
             {/* Front Face */}
             <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
-              <img src={ConsumerDurablesIcon} alt="Consumer Durables" className="w-24 h-24 mb-4" />
+              <img src={ConsumerDurablesIcon1} alt="Consumer Durables" className="w-24 h-24 mb-4" />
               <p className="text-2xl text-center font-semibold px-5">Consumer Durables and Electronics</p>
             </div>  
           </div>
@@ -98,7 +105,7 @@ const FlipCard = () => {
             </div>
             {/* Front Face */}
             <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
-              <img src={BankingIcon} alt="Banking" className="w-24 h-24 mb-4" />
+              <img src={BankingIcon1} alt="Banking" className="w-24 h-24 mb-4" />
               <p className="text-2xl text-center font-semibold px-5">Banking and Financial Services</p>
             </div>
           </div>
@@ -116,7 +123,7 @@ const FlipCard = () => {
             </div>
             {/* Front Face */}
             <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
-              <img src={PharmaceuticalsIcon} alt="Pharmaceuticals" className="w-24 h-24 mb-4" />
+              <img src={PharmaceuticalsIcon1} alt="Pharmaceuticals" className="w-24 h-24 mb-4" />
               <p className="text-2xl  font-semibold text-center ">Health and Pharmaceuticals</p>
             </div>
           </div>

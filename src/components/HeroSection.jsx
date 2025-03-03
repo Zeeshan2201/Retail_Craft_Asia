@@ -141,7 +141,7 @@ const HeroSection = () => {
           We design and deliver cutting-edge retail solutions that enhance customer experiences and drive business success.
           </p>
           <div className="mt-6 flex gap-4">
-            <Link to="/services" className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg">
+            <Link to="/services" className="px-6 py-3 bg-blue-500 border border-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg">
               Get Started
             </Link>
             <Link to="/about" className="px-6 py-3 border border-white hover:bg-white hover:text-black text-white font-bold rounded-lg">

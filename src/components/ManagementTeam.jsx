@@ -25,7 +25,7 @@ function ManagementTeam() {
     <div  style={{
       background: "linear-gradient(to bottom, white 0%, #581c87 10%, #581c87 90%, white 100%)"
     }} className="w-[100%] pb-16 pt-10 md:px-16 px-8  ">
-    <h2 className="md:text-5xl md:mt-2 text-4xl  mb-14 font-bold text-center text-white">Management Team</h2>
+    <h2 className="md:text-5xl md:mt-2 text-4xl   mb-14 font-bold text-center text-white">Management Team</h2>
     <div className=" md:mb-4  md:flex md:overflow-visible flex-row flex overflow-x-scroll space-x-4 md:justify-center gap-6">
     {/* <div className="grid md:flex  md:justify-center gap-6"> */}
       {teamMembers.map((member, index) => (
