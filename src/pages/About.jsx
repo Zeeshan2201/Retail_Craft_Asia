@@ -184,7 +184,7 @@ const FoundationPrinciples = () => {
             className="w-60 ml-5 sm:ml-40 bg-transparent max-w-md transition-transform hover:scale-110 hover:shadow-xl hover:bg-gray-200/10 hover:border-2 hover:border-yellow-300/40 rounded-full"
           />
           <div className="w-full md:w-1/2 text-center sm:text-left">
-            <h2 className="text-5xl font-bold mb-4 transition-colors hover:text-white">
+            <h2 className="text-5xl font-bold mb-4 transition-color text-white hover:text-[#4df700]">
               Our Vision
             </h2>
             <p className="text-xl text-black">
