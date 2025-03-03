@@ -1,7 +1,7 @@
 import React from 'react';
 import Brand from "../animation/BrandActivation/Brand.json";
 import Marketing from "../animation/BrandActivation/marketing.json";
-import Instore from "../animation/BrandActivation/Instore.json";
+import Instore_1 from "../animation/BrandActivation/Instore_1.json";
 import sampeling from "../animation/BrandActivation/sampeling.json";
 import Event from "../animation/BrandActivation/Event.json";
 import Lottie from "react-lottie";
@@ -334,7 +334,7 @@ export default function ServicesPage() {
     options={{
       loop: true,
       autoplay: true,
-      animationData:Instore,
+      animationData:Instore_1,
       rendererSettings: {
         preserveAspectRatio: "xMidYMid slice"
       }
