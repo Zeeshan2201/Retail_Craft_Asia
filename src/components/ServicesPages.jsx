@@ -1,10 +1,14 @@
   import React from 'react';
   import Sales from "../animation/sales/Sales1.json";
   import Merchandising from "../animation/sales/Merchandising.json";
-  import RetailAudit from "../animation/sales/RetailAudit.json";
-  import PointOfSale from "../animation/sales/PointOfSale.json";
-  import Asset from "../animation/sales/Asset.json";
-  import Product from "../animation/sales/Product.json";
+  import RetailAudit from "../animation/sales/RetailAudit/animations/75a1ac79-ede4-4910-a8c5-34e5a465018b.json";
+  // import RetailAudit from "../animation/sales/RetailAudit.json";
+  import PointOfSale from "../animation/sales/PointOfSale/animations/aad9511c-736a-40eb-96f0-26cfdb57c69f.json";
+  // import PointOfSale from "../animation/sales/PointOfSale.json";
+  import Asset from "../animation/sales/Asset/animations/f6bdf513-e5e2-4564-8cdc-ad82fc627148.json";
+  // import Asset from "../animation/sales/Asset.json";
+  import Product from "../animation/sales/Product/animations/58297e4c-7fc0-4406-94d2-1d1e641dadfc.json";
+  // import Product from "../animation/sales/Product.json";
   import Lottie from "react-lottie";
   import { Link } from 'react-router-dom';
 

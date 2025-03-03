@@ -1,6 +1,7 @@
 import React from 'react';
 import Lottie from "react-lottie";
-import GIF_1 from "../animation/Digital_Marketing/GIF_1.json"
+// import GIF_1 from "../animation/Digital_Marketing/GIF_1.json"
+import GIF_1 from "../animation/Digital_Marketing/GIF_2/animations/852ea4b1-d163-4f9a-bbf3-3775e247f5ee.json"
 import GIF_2 from "../animation/Digital_Marketing/GIF_2.json"
 
 import { Link } from 'react-router-dom';

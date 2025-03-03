@@ -1,8 +1,11 @@
 import React from 'react';
-import ProductSourcing from "../animation/MarketExpansion/ProductSourcing.json"
+// import ProductSourcing from "../animation/MarketExpansion/ProductSourcing.json"
+import ProductSourcing from "../animation/MarketExpansion/ProductSourcing/animations/2955fdf2-b20c-4ff9-b5c5-c0dbe39d2155.json"
 import Sales from "../animation/MarketExpansion/sales.json"
-import DistributionLogistics from "../animation/MarketExpansion/DistributionLogistics.json"
-import MarketResearch from "../animation/MarketExpansion/MarketResearch.json"
+// import DistributionLogistics from "../animation/MarketExpansion/DistributionLogistics.json"
+import DistributionLogistics from "../animation/MarketExpansion/DistributionLogistics/animations/d8a3753c-91b1-4bac-8078-b81e90e7d2d4.json"
+// import MarketResearch from "../animation/MarketExpansion/MarketResearch.json"
+import MarketResearch from "../animation/MarketExpansion/MarketResearch/animations/26045bbd-8505-4050-b72d-2db09aa57f83.json"
 import services from "../animation/MarketExpansion/services.json"
 import Lottie from "react-lottie";
 

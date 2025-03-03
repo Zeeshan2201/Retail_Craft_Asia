@@ -1,6 +1,7 @@
 import { BrainCircuit, Palette, TextQuote, Package } from "lucide-react"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import Process from '../../src/animation/service/process.json'
+import Process from '../../src/animation/service/process/animations/62cc34f5-8619-45d6-9e31-e94acf024640.json'
+// import Process from '../../src/animation/service/process.json'
 import Lottie from "react-lottie";
 import { div } from "framer-motion/client";
 export default function BrandingServices() {

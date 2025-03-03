@@ -1,6 +1,7 @@
 import React from 'react';
 import Lottie from "react-lottie";
-import GIF_1 from "../animation/Data_Technology/GIF_1.json"
+import GIF_1 from "../animation/Data_Technology/GIF_1/animations/de1f599d-57f5-4f97-868b-e6b14e39db48.json"
+// import GIF_1 from "../animation/Data_Technology/GIF_1.json"
 import GIF_6 from "../animation/Data_Technology/GIF_6.json"
 import GIF_3 from "../animation/Data_Technology/GIF_3.json"
 import GIF_7 from "../animation/Data_Technology/GIF_7.json"
