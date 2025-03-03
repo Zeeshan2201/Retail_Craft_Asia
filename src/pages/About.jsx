@@ -3,6 +3,7 @@ import "../components/Css/about.css";
 // Ensure this CSS file exists for styling
 
 // Import images for each principle
+
 import growthImage from "../assets/growth.svg";
 import integrityImage from "../assets/integrity.svg";
 import entrepreneurshipImage from "../assets/entrepreneurship.svg";
@@ -140,7 +141,7 @@ const FoundationPrinciples = () => {
       {/* Who We Are Section */}
       <div
         className={`who-we-are-section ${isWhoWeAreFlipped ? "flipped" : ""}`}
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{ backgroundImage: `url("/About/Map_image.png")` }}
         onClick={handleWhoWeAreClick}
       >
         <div className="who-we-are-content">
@@ -184,10 +185,10 @@ const FoundationPrinciples = () => {
             className="w-60 ml-5 sm:ml-40 bg-transparent max-w-md transition-transform hover:scale-110 hover:shadow-xl hover:bg-gray-200/10 hover:border-2 hover:border-yellow-300/40 rounded-full"
           />
           <div className="w-full md:w-1/2 text-center sm:text-left">
-            <h2 className="text-5xl font-bold mb-4 transition-color text-white hover:text-[#4df700]">
+            <h2 className="text-5xl font-bold mb-4 transition-color text-white hover:text-[#0e110c]">
               Our Vision
             </h2>
-            <p className="text-xl text-black">
+            <p className="text-xl text-gray-200">
               To be the trusted business partners for Market expansion and
               Execution services for Businesses in Asia.
             </p>
@@ -197,7 +198,7 @@ const FoundationPrinciples = () => {
 
       {/* Principles Section */}
       <div className="w-full px-5 py-16 ">
-        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-10 transition-transform duration-300 hover:scale-110 hover:text-white">
+        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-10 transition-transform duration-300 hover:scale-110 hover:text-black text-white">
           Our Foundational Principles
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-8 max-w-6xl mx-auto">
@@ -243,7 +244,7 @@ const FoundationPrinciples = () => {
       >
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:justify-between">
           <div className="w-full md:w-1/2 text-center sm:text-right">
-            <h2 className="text-5xl font-bold mb-4 transition-colors hover:text-white">
+            <h2 className="text-5xl font-bold mb-4 transition-colors hover:text-black text-white">
               Our Mission
             </h2>
             <p className="text-xl text-black">

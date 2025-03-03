@@ -33,7 +33,9 @@
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  perspective: 1000px; /* Creates a 3D effect */
+  perspective: 1000px;
+  margin-top: 5rem;
+ /* Creates a 3D effect */
 }
 
 /* Content containers */
@@ -371,6 +373,7 @@
     width: 80%;
   }
 }
+
 
 
 

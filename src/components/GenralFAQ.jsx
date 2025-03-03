@@ -2,67 +2,51 @@ import { useState } from "react";
 
 const faqData = [
   {
-    category: "General",
     items: [
       {
-        question: "Where are Retail Craft Asia products made?",
-        answer: "Retail Craft Asia products are proudly made in state-of-the-art facilities ensuring high quality and safety standards."
+        question: "What services does Retail Craft Asia provide?",
+        answer: "Retail Craft Asia offers expert consulting services for the retail industry, including business strategy, store optimization, digital transformation, and customer experience enhancement."
       },
       {
-        question: "Where can I buy Retail Craft Asia products?",
-        answer: "You can find our products in major retail stores and supermarkets."
+        question: "Who can benefit from Retail Craft Asia’s services?",
+        answer: "Retailers of all sizes, from small businesses to large enterprises, can benefit from our insights and tailored strategies to improve efficiency, sales, and customer engagement"
       },
       {
-        question: "Can I buy Retail Craft Asia products online?",
-        answer: "Yes, our products are available for purchase online through our website and major e-commerce platforms."
+        question: "How does Retail Craft Asia help retailers improve their business?",
+        answer: "We analyze market trends, assess operational challenges, and provide data-driven recommendations to enhance store performance, supply chain management, and omnichannel strategies."
       },
       {
-        question: "Why do I have to shake Retail Craft Asia BBQ sauces and marinades before I use them?",
-        answer: "Our BBQ sauces and marinades contain natural ingredients, which may settle over time. Shaking ensures a well-mixed and flavorful experience."
+        question: "Can Retail Craft Asia assist with branding and marketing strategies?",
+        answer: "Absolutely. We provide branding guidance, customer engagement strategies, and digital marketing solutions to boost visibility and sales."
       },
       {
-        question: "Is it okay to consume Retail Craft Asia products after the 'Best By' date?",
-        answer: "For the best taste and quality, we recommend consuming our products before the 'Best By' date. However, certain products may still be safe to consume beyond that date."
+        question: "How do I get started with your services?",
+        answer: "You can contact us through our website or email us to schedule a consultation. Our team will assess your needs and provide a customized solution."
       },
       {
-        question: "Is Retail Craft Asia packaging recyclable?",
-        answer: "Yes, we use eco-friendly and recyclable packaging to support sustainability efforts."
-      }
+        question: " Do you work with international clients?",
+        answer: "Yes, we provide consulting services to retailers across different regions, helping them adapt to global market trends and customer expectations."
+      },
+      {
+        question:"What makes Retail Craft Asia different from other consulting firms?",
+        answer:"Our industry-specific expertise, data-driven approach, and deep understanding of retail trends allow us to deliver actionable strategies that drive real business growth."
+      },
+      {
+        question:"How does Retail Craft Asia stay updated with retail industry trends?",
+        answer:"Our team continuously researches market developments, analyzes consumer behavior, and collaborates with industry leaders to provide the most relevant and effective solutions for our clients."
+      },
+      {
+        question:"Can Retail Craft Asia help with inventory management and supply chain optimization?",
+        answer:"Yes, we provide strategies to improve inventory control, reduce costs, and enhance supply chain efficiency to ensure smooth operations and better profitability."
+      },
+      {
+        question:"Can Retail Craft Asia assist with store layout and visual merchandising?",
+        answer:"Yes, we provide expert guidance on store design, product placement, and visual merchandising strategies to enhance customer experience and maximize sales"
+      },
+      
     ]
   },
-  {
-    category: "Nutrition, Allergen and Ingredients",
-    items: [
-      {
-        question: "Do Retail Craft Asia products contain high fructose corn syrup?",
-        answer: "No, Retail Craft Asia products do not contain high fructose corn syrup. We focus on using natural and high-quality ingredients."
-      },
-      {
-        question: "Do Retail Craft Asia products contain any of the FDA's Top 8 allergens (milk, eggs, fish, shellfish, tree nuts, peanuts, wheat, soy)?",
-        answer: "Retail Craft Asia products are carefully crafted to minimize allergens. However, please check individual product labels for specific allergen information."
-      },
-      {
-        question: "Are Retail Craft Asia products gluten-free and suitable for individuals with dietary restrictions?",
-        answer: "Yes, many of our products are gluten-free and suitable for individuals with dietary restrictions. Please refer to product packaging for details."
-      },
-      {
-        question: "Are Retail Craft Asia products made with non-GMO ingredients?",
-        answer: "Yes, Retail Craft Asia prioritizes the use of non-GMO ingredients in our products."
-      },
-      {
-        question: "What is the cooking process for Retail Craft Asia Pork Rinds?",
-        answer: "Our pork rinds are slow-cooked to perfection using a traditional process that ensures a crispy and flavorful experience."
-      },
-      {
-        question: "Are Retail Craft Asia sugar-free products suitable for keto and low-carb diets?",
-        answer: "Yes, our sugar-free products are ideal for keto and low-carb diets, offering delicious taste without added sugars."
-      },
-      {
-        question: "What is Allulose, and why is it used in Retail Craft Asia products?",
-        answer: "Allulose is a natural sweetener that provides sweetness without impacting blood sugar levels, making it a great alternative to sugar."
-      }
-    ]
-  }
+  
 ];
 
 function GenFAQ() {
