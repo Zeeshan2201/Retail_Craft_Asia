@@ -6,7 +6,8 @@ import Sales from "../animation/MarketExpansion/sales.json"
 import DistributionLogistics from "../animation/MarketExpansion/DistributionLogistics/animations/d8a3753c-91b1-4bac-8078-b81e90e7d2d4.json"
 // import MarketResearch from "../animation/MarketExpansion/MarketResearch.json"
 import MarketResearch from "../animation/MarketExpansion/MarketResearch/animations/26045bbd-8505-4050-b72d-2db09aa57f83.json"
-import services from "../animation/MarketExpansion/services.json"
+import services from "../animation/Sales/services/animations/17dadaa1-6370-4c5d-b0b3-5a48d0edbafc.json"
+// import services from "../animation/MarketExpansion/services.json"
 import Lottie from "react-lottie";
 
 import { Link } from 'react-router-dom';

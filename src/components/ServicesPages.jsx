@@ -1,6 +1,8 @@
   import React from 'react';
-  import Sales from "../animation/sales/Sales1.json";
-  import Merchandising from "../animation/sales/Merchandising.json";
+  // import Sales from "../animation/sales/Sales1.json";
+  import Sales from "../animation/sales/Merchandising/animations/bfc35f78-399f-4657-8c3d-7954678cb6fe.json";
+  import Merchandising from "../animation/Data_Technology/Merchandising/animations/d7ff85b4-f50a-4a1e-b49c-0273e5ce9e02.json";
+  // import Merchandising from "../animation/sales/Merchandising.json";
   import RetailAudit from "../animation/sales/RetailAudit/animations/75a1ac79-ede4-4910-a8c5-34e5a465018b.json";
   // import RetailAudit from "../animation/sales/RetailAudit.json";
   import PointOfSale from "../animation/sales/PointOfSale/animations/aad9511c-736a-40eb-96f0-26cfdb57c69f.json";
