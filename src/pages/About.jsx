@@ -247,7 +247,7 @@ const FoundationPrinciples = () => {
             <h2 className="text-5xl font-bold mb-4 transition-colors hover:text-black text-white">
               Our Mission
             </h2>
-            <p className="text-xl text-black">
+            <p className="text-xl text-gray-200">
               To be the leading partners for Brands and Businesses in Asia,
               recognized for transformation and Growth with innovative,
               technology-driven solutions leading with expertise and dedication.

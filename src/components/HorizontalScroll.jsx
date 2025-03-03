@@ -299,7 +299,8 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import Tech from '../../src/animation/service/tech.json';
+import Tech from '../../src/animation/service/Tech/animations/a473d880-55e7-45db-930c-320a743b2afe.json';
+// import Tech from '../../src/animation/service/tech.json';
 import Marketing from '../../src/animation/service/marketing.json';
 import { Link } from 'react-router-dom';
 import Sales from "../animation/MarketExpansion/sales.json";
