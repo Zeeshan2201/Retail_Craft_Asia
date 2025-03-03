@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
+import AnimatedWave from "./AnimatedWave";
 import { Link } from 'react-router-dom';
 const colors = ["#ef4149", "#4287f5", "#42f54b", "#f5f242", "#9642f5", "#f542f2"];
 
@@ -128,8 +129,12 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="flex items-center justify-center md:h-screen h-[90vh] bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] px-10">
-      <div className="flex w-full max-w-5xl items-center justify-between">
+    <section className="flex relative items-center justify-center md:h-screen h-[90vh] bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] px-10">
+      <div className=" w-full  absolute top-0 left-0">
+        <AnimatedWave/>
+      </div>
+        
+      <div className="flex z-10 w-full max-w-5xl items-center justify-between">
         <div className="text-white max-w-lg">
           <h1 className="text-5xl uppercase font-bold">Innovative Retail Solutions, Crafted to Perfection</h1>
           <p className="mt-4 text-lg">
