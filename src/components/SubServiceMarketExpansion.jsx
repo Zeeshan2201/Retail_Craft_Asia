@@ -42,7 +42,7 @@ export default function ServicesPage() {
       {/* Service Sections with Glassmorphism & Hover Animation */}
       <section className="container  mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900 ">
       {/* <section className="container  mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-br from-purple-900 via-purple-900 via-[80%] to-[#D4AF37]"> */}
-        <div className="relative  md:h-[400px] h-[300px] overflow-hidden rounded-lg">
+        <div className="relative flex justify-center items-center  md:h-[400px] h-[300px] overflow-hidden rounded-lg">
         <Lottie
   options={{
     loop: true,
@@ -52,8 +52,8 @@ export default function ServicesPage() {
       preserveAspectRatio: "xMidYMid slice"
     }
   }}
-  height={window.innerWidth < 768 ? 300 : 400}
-  width={window.innerWidth < 768 ? 300 : 400}
+  height={window.innerWidth < 768 ? 300 : 280}
+  width={window.innerWidth < 768 ? 300 : 280}
 />
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
         </div>
@@ -96,6 +96,7 @@ export default function ServicesPage() {
           </div>
         </div>
   </section>
+
       <section className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l from-purple-900 via-purple-900">
         <div className="group relative row-start-2 md:row-start-auto md:col-start-1 flex justify-center items-center w-[320px] h-[400px] mx-auto">
         
@@ -143,8 +144,8 @@ export default function ServicesPage() {
       preserveAspectRatio: "xMidYMid slice"
     }
   }}
-  height={window.innerWidth < 768 ? 300 : 400}
-  width={window.innerWidth < 768 ? 300 : 400}
+  height={window.innerWidth < 768 ? 300 : 350}
+  width={window.innerWidth < 768 ? 300 : 350}
 /></div>
         </div>
   </section>
@@ -239,7 +240,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
+        <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg">
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
           <Lottie
   options={{
@@ -250,8 +251,8 @@ export default function ServicesPage() {
       preserveAspectRatio: "xMidYMid slice"
     }
   }}
-  height={window.innerWidth < 768 ? 300 : 400}
-    width={window.innerWidth < 768 ? 300 : 400}
+  height={window.innerWidth < 768 ? 300 : 280}
+    width={window.innerWidth < 768 ? 300 : 280}
 />
         </div>
   </section>
@@ -266,8 +267,8 @@ export default function ServicesPage() {
       preserveAspectRatio: "xMidYMid slice"
     }
   }}
-  height={window.innerWidth < 768 ? 300 : 400}
-  width={window.innerWidth < 768 ? 300 : 400}
+  height={window.innerWidth < 768 ? 300 : 340}
+  width={window.innerWidth < 768 ? 300 : 340}
 />
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
         </div>

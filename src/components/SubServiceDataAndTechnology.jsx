@@ -38,7 +38,7 @@ export default function ServicesPage() {
 
       
       <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900">
-        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
+        <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg">
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
           <Lottie
     options={{
@@ -49,8 +49,8 @@ export default function ServicesPage() {
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={window.innerWidth < 768 ? 300 : 400}
-    width={window.innerWidth < 768 ? 300 : 400}
+    height={window.innerWidth < 768 ? 300 : 340}
+    width={window.innerWidth < 768 ? 300 : 340}
   />
         </div>
         {/* Card Effect for Text Side */}
@@ -148,7 +148,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
+        <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg">
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
           <Lottie
     options={{
@@ -159,8 +159,8 @@ export default function ServicesPage() {
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={window.innerWidth < 768 ? 300 : 400}
-    width={window.innerWidth < 768 ? 300 : 400}
+    height={window.innerWidth < 768 ? 300 : 360}
+    width={window.innerWidth < 768 ? 300 : 360}
   />
 
         </div>
