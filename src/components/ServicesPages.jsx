@@ -44,7 +44,7 @@
 
         <section className="container mx-auto grid sm:gap-8 sm:px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900 ">
         {/* <section className="container mx-auto grid sm:gap-8 sm:px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">   */}
-        <div className="relative md:h-[400px] flex justify-center items-center h-[300px] overflow-hidden rounded-lg ">
+        <div className="relative   md:h-[400px] flex justify-center items-center h-[300px] overflow-hidden rounded-lg ">
           <Lottie
     options={{
       loop: true,
@@ -54,7 +54,7 @@
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={window.innerWidth < 768 ? 300 : 300}
+    height={window.innerWidth < 768 ? 300 : 400}
     width={window.innerWidth < 768 ? 300 : 300}
   />
 
