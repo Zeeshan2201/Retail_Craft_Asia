@@ -24,14 +24,14 @@ function ManagementTeam() {
   return (
     <div  style={{
       background: "linear-gradient(to bottom, white 0%, #581c87 10%, #581c87 90%, white 100%)"
-    }} className="w-[100%] pb-16 pt-10 md:px-16 px-8  ">
+    }} className="md:w-[100%] w-[100%] pb-16 pt-10 md:px-16   ">
     <h2 className="md:text-5xl md:mt-2 text-4xl   mb-14 font-bold text-center text-white">Management Team</h2>
-    <div className=" md:mb-4  md:flex md:overflow-visible flex-row flex overflow-x-scroll space-x-4 md:justify-center gap-6">
+    <div className=" md:mb-4  md:flex md:overflow-visible flex-col md:flex-row  flex items-center  md:space-x-4 md:justify-center gap-6">
     {/* <div className="grid md:flex  md:justify-center gap-6"> */}
       {teamMembers.map((member, index) => (
         <div
           key={index}
-          className="p-8 md:w-[90%] w-[100vw] border rounded-xl  shadow-lg bg-white transition-transform duration-300 hover:shadow-xl hover:scale-105"
+          className="p-8 md:w-[90%] w-[90vw] border md:h-[30vh] rounded-xl  shadow-lg bg-white transition-transform duration-300 hover:shadow-xl hover:scale-105"
         >
           <div className="flex items-center gap-4">
             <img

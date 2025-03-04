@@ -67,10 +67,10 @@ const ContactCards = () => {
         console.log('Data successfully sent to Google Sheets');
         setModalOpen(false); // ✅ Ensure this is called correctly
       } else {
-        console.error('Failed to send data:', result.message);
+        console.log('Failed to send data:', result.message);
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.log('Error:', error);
     }
   };
 
