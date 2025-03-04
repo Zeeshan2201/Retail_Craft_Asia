@@ -8,6 +8,7 @@ import boxIcon5 from "../assets/Industry/health_pharmacy.svg";
 const icons = [boxIcon1, boxIcon2, boxIcon3, boxIcon4, boxIcon5]; // List of SVGs
 
 const BackgroundAnimation = () => {
+
   const [boxes, setBoxes] = useState([]);
 
   useEffect(() => {
