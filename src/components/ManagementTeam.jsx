@@ -31,7 +31,7 @@ function ManagementTeam() {
       {teamMembers.map((member, index) => (
         <div
           key={index}
-          className="p-8 md:w-[90%] w-[90vw] border md:h-[30vh] rounded-xl  shadow-lg bg-white transition-transform duration-300 hover:shadow-xl hover:scale-105"
+          className="p-8 md:w-[90%] w-[90vw] border md:h-[40vh] rounded-xl  shadow-lg bg-white transition-transform duration-300 hover:shadow-xl hover:scale-105"
         >
           <div className="flex items-center gap-4">
             <img
