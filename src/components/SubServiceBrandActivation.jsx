@@ -51,7 +51,7 @@ export default function ServicesPage() {
       /> */}
 
 <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900">
-        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
+        <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
         <Lottie
     options={{
       loop: true,
@@ -160,7 +160,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
+        <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg">
         <Lottie
     options={{
       loop: true,
@@ -170,8 +170,8 @@ export default function ServicesPage() {
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={window.innerWidth < 768 ? 300 : 400}
-    width={window.innerWidth < 768 ? 300 : 400}
+    height={window.innerWidth < 768 ? 300 : 300}
+    width={window.innerWidth < 768 ? 300 : 300}
     />
         </div>
       </section>
@@ -330,7 +330,7 @@ export default function ServicesPage() {
 
         
 <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900">
-<div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
+<div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
         <Lottie
     options={{
       loop: true,
@@ -340,8 +340,8 @@ export default function ServicesPage() {
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={window.innerWidth < 768 ? 300 : 400}
-    width={window.innerWidth < 768 ? 300 : 400}
+    height={window.innerWidth < 768 ? 300 : 350}
+    width={window.innerWidth < 768 ? 300 : 350}
     />
         </div>
         {/* Card Effect for Text Side */}
