@@ -84,8 +84,8 @@ export default function FeaturedProject() {
               </div>
             </div>
           </div>
-          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center mt-10">
-            <div className="text-white space-y-6 px-4">
+          <div className="max-w-7xl mx-auto grid grid-flow-dense md:grid-cols-2 grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 items-center mt-10">
+            <div className="text-white row-start-2 md:row-start-auto md:col-start-1 space-y-6 px-4">
               <h3 className="text-purple-900 text-3xl md:text-4xl font-bold leading-tight">
               Brand Activation & Experiential Marketing
               </h3>
@@ -159,8 +159,8 @@ export default function FeaturedProject() {
               </div>
             </div>
           </div>
-          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center mt-10">
-            <div className="text-white space-y-6 px-4">
+          <div  className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center">
+          <div className=" row-start-2 md:row-start-auto md:col-start-1 text-white space-y-6 px-4">
               <h3 className="text-purple-900 text-3xl md:text-4xl font-bold leading-tight">
               Data & Technology
               </h3>
