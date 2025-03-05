@@ -39,7 +39,7 @@
           <p className="mb-4 mt-4 md:m-8  text-justify text-lg sm:text-2xl font-semibold tracking-wider">We help brands maximize their market presence by ensuring that the right products are available at the right time and place. Our expert team focuses on enhancing product visibility, executing strategic in-store promotions, and optimizing shelf placement to drive higher sales and brand recall.
 
   With a data-driven approach, we analyze consumer behavior, market trends, and competitor strategies to develop customized merchandising plans that increase product engagement and boost conversions.</p>
-          <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
+          <Link to="/contact" className="mt-8 bg-white text-purple-900 text-lg  px-4 py-3 hover:text-xl hover:px-4 hover:py-3">Get in Touch →</Link>
         </section>
 
         <section className="container mx-auto grid sm:gap-8 sm:px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900 ">
@@ -55,7 +55,7 @@
       }
     }}
     height={window.innerWidth < 768 ? 300 : 400}
-    width={window.innerWidth < 768 ? 300 : 300}
+    width={window.innerWidth < 768 ? 300 : 400}
   />
 
           </div>
@@ -86,9 +86,9 @@
 
             {/* Main Content */}
             <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-              <h2 className="text-3xl font-bold text-white">Field Sales</h2>
+              <h2 className="text-4xl font-bold text-white">Field Sales</h2>
               <p className="mt-2 text-lg text-blue-50"></p>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 md:text-lg">
                 {["Engages directly with retailers, wholesalers, and distributors", 
             "Builds strong relationships to expand market reach", 
             "Provides real-time market insights for improved sales performance"].map((item, index) => (
@@ -130,9 +130,9 @@
 
             {/* Main Content */}
             <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-              <h2 className="text-3xl font-bold text-white">Merchandising</h2>
+              <h2 className="text-4xl font-bold text-white">Merchandising</h2>
               <p className="mt-2 text-lg text-blue-50"></p>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 md:text-lg">
                 {["Implements strategic product placement and eye-catching displays",
             "Enhances brand visibility and influences customer purchasing decisions",
             "Ensures compliance with brand guidelines for in-store execution",].map((item, index) => (
@@ -168,8 +168,8 @@
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={window.innerWidth < 768 ? 300 : 300}
-    width={window.innerWidth < 768 ? 300 : 300}
+    height={window.innerWidth < 768 ? 300 : 400}
+    width={window.innerWidth < 768 ? 300 : 400}
   />
 
           </div>
@@ -200,9 +200,9 @@
 
             {/* Main Content */}
             <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-              <h2 className="text-3xl font-bold text-white">Retail Audit</h2>
+              <h2 className="text-4xl font-bold text-white">Retail Audit</h2>
               <p className="mt-2 text-lg text-blue-50"></p>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 md:text-lg">
                 {[ "Evaluates product availability, pricing, and shelf positioning", 
             "Monitors compliance with promotional and branding guidelines", 
             "Provides data-driven insights for optimizing retail execution"].map((item, index) => (
@@ -242,9 +242,9 @@
 
     {/* Main Content */}
     <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-      <h2 className="text-3xl font-bold text-white">Point of Sale Execution</h2>
+      <h2 className="text-4xl font-bold text-white">Point of Sale Execution</h2>
       <p className="mt-2 text-lg text-blue-50"></p>
-      <ul className="mt-4 space-y-2">
+      <ul className="mt-4 space-y-2 md:text-lg">
         {["Ensures flawless execution of branding and promotions at retail outlets",
             "Manages promotional displays, signage, and in-store branding",
             "Enhances consumer engagement at the final point of purchase",].map((item, index) => (
@@ -263,8 +263,8 @@
   preserveAspectRatio: "xMidYMid slice"
   }
   }}
-  height={window.innerWidth < 768 ? 300 : 320}
-  width={window.innerWidth < 768 ? 300 : 320}
+  height={window.innerWidth < 768 ? 300 : 400}
+  width={window.innerWidth < 768 ? 300 : 400}
   />
   </div>
           </section>
@@ -281,8 +281,8 @@
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={window.innerWidth < 768 ? 300 : 300}
-    width={window.innerWidth < 768 ? 300 : 300}
+    height={window.innerWidth < 768 ? 300 : 400}
+    width={window.innerWidth < 768 ? 300 : 400}
   />
 
           </div>
@@ -313,9 +313,9 @@
 
             {/* Main Content */}
             <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-              <h2 className="text-3xl font-bold text-white">Asset Optimisation</h2>
+              <h2 className="text-4xl font-bold text-white">Asset Optimisation</h2>
               <p className="mt-2 text-lg text-blue-50"></p>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 md:text-lg">
                 {["Maximizes the effectiveness of in-store assets like shelves and signage", 
             "Ensures proper utilization, maintenance, and strategic placement", 
             "Increases shopper engagement and improves sales efficiency"].map((item, index) => (
@@ -355,9 +355,9 @@
 
             {/* Main Content */}
             <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-              <h2 className="text-3xl font-bold text-white">Product Management</h2>
+              <h2 className="text-4xl font-bold text-white">Product Management</h2>
               <p className="mt-2 text-lg text-blue-50"></p>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 md:text-lg">
                 {["Oversees the entire lifecycle of FMCG products from launch to market expansion",
                     "Ensures competitive pricing and efficient distribution",
                     "Adapts to market trends and consumer preferences for sustained growth",].map((item, index) => (
@@ -376,8 +376,8 @@
           preserveAspectRatio: "xMidYMid slice"
           }
           }}
-          height={window.innerWidth < 768 ? 300 : 380}
-    width={window.innerWidth < 768 ? 300 : 380}
+          height={window.innerWidth < 768 ? 300 : 420}
+    width={window.innerWidth < 768 ? 300 : 420}
           />
           </div>
               </section>

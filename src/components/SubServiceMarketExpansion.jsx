@@ -36,7 +36,7 @@ export default function ServicesPage() {
        Market Expansion Services
         </h1> <br></br>
         <p className="mb-4 mt-4 md:m-8  text-justify text-lg sm:text-2xl font-semibold tracking-wider">Expanding into new markets requires strategic planning and execution. We support brands with tailored market entry strategies, local partnerships, and distribution solutions. Our expertise helps businesses overcome entry barriers, minimize risks, and establish a strong market presence.</p>
-        <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
+          <Link to="/contact" className="mt-8 bg-white text-purple-900 text-lg  px-4 py-3 hover:text-xl hover:px-4 hover:py-3">Get in Touch →</Link>
       </section>
 
       {/* Service Sections with Glassmorphism & Hover Animation */}

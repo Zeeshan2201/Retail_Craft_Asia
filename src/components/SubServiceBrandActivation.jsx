@@ -35,7 +35,7 @@ export default function ServicesPage() {
         <p className="mb-4 mt-4 md:m-8 text-justify  md:text-2xl font-semibold tracking-wider">
           We create immersive brand experiences that engage consumers and leave a lasting impression. Through interactive campaigns, live events, and on-ground activations, we help brands establish deeper connections with their audiences. These experiences enhance brand recall, foster customer loyalty, and drive higher engagement.
         </p>
-        <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
+          <Link to="/contact" className="mt-8 bg-white text-purple-900 text-lg  px-4 py-3 hover:text-xl hover:px-4 hover:py-3">Get in Touch →</Link>
       </section>
 
       {/* Service Sections with Glassmorphism & Hover Animation */}
@@ -61,8 +61,8 @@ export default function ServicesPage() {
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={window.innerWidth < 768 ? 300 : 400}
-    width={window.innerWidth < 768 ? 300 : 400}
+    height={window.innerWidth < 768 ? 300 : 500}
+    width={window.innerWidth < 768 ? 300 : 500}
     />
         </div>
         {/* Card Effect for Text Side */}
@@ -93,8 +93,8 @@ export default function ServicesPage() {
           {/* Main Content */}
           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
             <h2 className="text-3xl font-bold text-white">Brand Ambassador Programmes</h2>
-            <p className="mt-2 text-lg text-purple-100"></p>
-            <ul className="mt-4 space-y-2">
+            <p className="mt-2 text-lg md:te text-purple-100"></p>
+            <ul className="mt-4 md:text-lg space-y-2">
               {[
           "Utilizes influencers and representatives to promote brand trust",
           "Builds long-term customer relationships through personal engagement",

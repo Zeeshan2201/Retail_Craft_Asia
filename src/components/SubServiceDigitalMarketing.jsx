@@ -29,7 +29,7 @@ export default function ServicesPage() {
           Digital Marketing
         </h1> <br></br>
         <p className="mb-4 mt-4 md:m-8 text-justify text-2xl font-semibold tracking-wider">We boost online brand presence through digital marketing strategies, including SEO, PPC, and performance marketing. Our targeted campaigns engage audiences, generate leads, and drive conversions, ensuring measurable growth.</p>
-        <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
+          <Link to="/contact" className="mt-8 bg-white text-purple-900 text-lg  px-4 py-3 hover:text-xl hover:px-4 hover:py-3">Get in Touch →</Link>
       </section>
 
 
