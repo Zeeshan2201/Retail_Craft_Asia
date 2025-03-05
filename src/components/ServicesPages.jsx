@@ -107,12 +107,12 @@
           <div className="group row-start-2 md:row-start-auto md:col-start-1 relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
             {/* Tilted Background Card */}
             <div
-              className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+              className="absolute  top-[-25px] left-10 w-[50%] h-[calc(100%+50px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
               style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
             ></div>
             {/* Blurred Tilted Background Card */}
             <div
-              className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+              className="absolute  top-[-25px] left-10 w-[50%] h-[calc(100%+50px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
               style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
             ></div>
 
@@ -219,12 +219,12 @@
   <div className="group row-start-2 md:row-start-auto md:col-start-1 relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
     {/* Tilted Background Card */}
     <div
-      className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+      className="absolute  top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
       style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
     ></div>
     {/* Blurred Tilted Background Card */}
     <div
-      className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+      className="absolute  top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
       style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
     ></div>
 
@@ -290,12 +290,12 @@
           <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
             {/* Tilted Background Card */}
             <div
-              className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+              className="absolute top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
               style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37 )`}}
             ></div>
             {/* Blurred Tilted Background Card */}
             <div
-              className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+              className="absolute top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
               style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
             ></div>
 
@@ -332,12 +332,12 @@
           <div className="group row-start-2 md:row-start-auto md:col-start-1 relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
             {/* Tilted Background Card */}
             <div
-              className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+              className="absolute  top-[-25px] left-10 w-[50%] h-[calc(100%+50px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
               style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
             ></div>
             {/* Blurred Tilted Background Card */}
             <div
-              className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+              className="absolute  top-[-25px] left-10 w-[50%] h-[calc(100%+50px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
               style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
             ></div>
 
@@ -376,8 +376,8 @@
           preserveAspectRatio: "xMidYMid slice"
           }
           }}
-          height={window.innerWidth < 768 ? 300 : 420}
-    width={window.innerWidth < 768 ? 300 : 420}
+          height={window.innerWidth < 768 ? 300 : 400}
+    width={window.innerWidth < 768 ? 300 : 400}
           />
           </div>
               </section>

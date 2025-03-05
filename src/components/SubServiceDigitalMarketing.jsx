@@ -79,7 +79,7 @@ export default function ServicesPage() {
           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
             <h2 className="text-3xl font-bold text-white"> Content Marketing</h2>
             <p className="mt-2 text-lg text-blue-50"></p>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 md:text-lg space-y-2">
               {[
           "Creates valuable and relevant content for target audiences",
             "Improves brand authority and customer trust",
@@ -132,7 +132,7 @@ export default function ServicesPage() {
           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
             <h2 className="text-3xl font-bold text-white">Social Media Marketing</h2>
             <p className="mt-2 text-lg text-blue-50"></p>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 md:text-lg space-y-2">
               {[
           "Builds brand awareness through social media platforms",
             "Engages with customers via organic and paid campaigns",
