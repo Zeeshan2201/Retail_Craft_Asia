@@ -10,7 +10,7 @@ import entrepreneurshipImage from "../assets/entrepreneurship.svg";
 import collaborationImage from "../assets/collaboration.svg";
 import empowermentImage from "../assets/empowerment.svg";
 import sustainabilityImage from "../assets/sustainability.svg";
-import backgroundImage from "../assets/background.jpg"; // Add a background image for the "Who We Are" section
+ // Add a background image for the "Who We Are" section
 import MangTeam from "../components/MangTeam"
 // Import SVG images for Vision and Mission
 import visionSvg from "../assets/vision.svg"; // Replace with your SVG file path
