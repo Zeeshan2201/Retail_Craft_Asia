@@ -10,7 +10,7 @@ import entrepreneurshipImage from "../assets/entrepreneurship.svg";
 import collaborationImage from "../assets/collaboration.svg";
 import empowermentImage from "../assets/empowerment.svg";
 import sustainabilityImage from "../assets/sustainability.svg";
-import backgroundImage from "../assets/background.jpg"; // Add a background image for the "Who We Are" section
+ // Add a background image for the "Who We Are" section
 import MangTeam from "../components/MangTeam"
 // Import SVG images for Vision and Mission
 import visionSvg from "../assets/vision.svg"; // Replace with your SVG file path
@@ -141,7 +141,7 @@ const FoundationPrinciples = () => {
       {/* Who We Are Section */}
       <div
         className={`who-we-are-section ${isWhoWeAreFlipped ? "flipped" : ""}`}
-        style={{ backgroundImage: `url("/About/Map_image.png")` }}
+        style={{ backgroundImage: `url("https://media.istockphoto.com/id/1346669669/vector/world-map-divided.jpg?s=612x612&w=0&k=20&c=71xT8qPpLt-y1aVb9F6HFpLforj94uR-0bEGrMdQZ8Y=")` }}
         onClick={handleWhoWeAreClick}
       >
         <div className="who-we-are-content">
