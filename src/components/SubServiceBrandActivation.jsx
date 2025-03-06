@@ -51,7 +51,7 @@ export default function ServicesPage() {
       /> */}
 
 <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900">
-        <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
+        <div className="relative flex justify-center mb-20 items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
         <Lottie
     options={{
       loop: true,
@@ -61,8 +61,8 @@ export default function ServicesPage() {
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={window.innerWidth < 768 ? 300 : 500}
-    width={window.innerWidth < 768 ? 300 : 500}
+    height={window.innerWidth < 768 ? 500 : 900}
+    width={window.innerWidth < 768 ? 500 : 700}
     />
         </div>
         {/* Card Effect for Text Side */}

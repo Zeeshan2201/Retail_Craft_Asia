@@ -16,6 +16,7 @@ import MangTeam from "../components/MangTeam"
 import visionSvg from "../assets/vision.svg"; // Replace with your SVG file path
 import missionSvg from "../assets/mission.svg"; // Replace with your SVG file path
 import TeamMemberDetail from "../components/TeamMemberDetail";
+import AnimatedBackground from "../components/AboutAnimation";
 
 const FoundationPrinciples = () => {
   const principles = [
@@ -138,20 +139,25 @@ const FoundationPrinciples = () => {
 
   return (
     <div className="foundation-principles-container bg-purple-900">
-      {/* Who We Are Section */}
-      <div
+     {/* Who We Are Section */}
+     <div
         className={`who-we-are-section ${isWhoWeAreFlipped ? "flipped" : ""}`}
-        style={{ backgroundImage: `url("/About/Map_image.png")` }}
         onClick={handleWhoWeAreClick}
+        style={{ position: "relative", height: "100vh", overflow: "hidden" }}
       >
-        <div className="who-we-are-content">
+        {/* Animated Background */}
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: 0 }}>
+          <AnimatedBackground />
+        </div>
+         
+        <div className="who-we-are-content" style={{ zIndex: 1 }}>
           <h1 className="who-we-are-heading">Who We Are?</h1>
           <p className="who-we-are-text">
             We are your strategic partners who will help you grow and transform
             your business and brands at Market Place.
           </p>
         </div>
-        <div className="who-we-are-back-content">
+        <div className="who-we-are-back-content" style={{ zIndex: 1 }}>
           <h1 className="who-we-are-heading">Who We Are?</h1>
           <p className="who-we-are-text">
             At Retail Craft Asia, we are more than just service providers—we are
