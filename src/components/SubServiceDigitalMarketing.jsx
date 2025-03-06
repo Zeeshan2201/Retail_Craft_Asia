@@ -29,7 +29,7 @@ export default function ServicesPage() {
           Digital Marketing
         </h1> <br></br>
         <p className="mb-4 mt-4 md:m-8 text-justify text-2xl font-semibold tracking-wider">We boost online brand presence through digital marketing strategies, including SEO, PPC, and performance marketing. Our targeted campaigns engage audiences, generate leads, and drive conversions, ensuring measurable growth.</p>
-        <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
+          <Link to="/contact" className="mt-8 bg-white text-purple-900 text-lg  px-4 py-3 hover:text-xl hover:px-4 hover:py-3">Get in Touch →</Link>
       </section>
 
 
@@ -79,7 +79,7 @@ export default function ServicesPage() {
           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
             <h2 className="text-3xl font-bold text-white"> Content Marketing</h2>
             <p className="mt-2 text-lg text-blue-50"></p>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 md:text-lg space-y-2">
               {[
           "Creates valuable and relevant content for target audiences",
             "Improves brand authority and customer trust",
@@ -132,7 +132,7 @@ export default function ServicesPage() {
           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
             <h2 className="text-3xl font-bold text-white">Social Media Marketing</h2>
             <p className="mt-2 text-lg text-blue-50"></p>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 md:text-lg space-y-2">
               {[
           "Builds brand awareness through social media platforms",
             "Engages with customers via organic and paid campaigns",

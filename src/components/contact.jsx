@@ -24,12 +24,78 @@ const ContactCards = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    setModalOpen(false);
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const url = 'https://script.google.com/macros/s/AKfycbycQUoonVYOeiLDTw50GLzQubZQDJyK-iQE_MXzR4OS60HAO9JGUKgNXDmUPO5CUjon/exec'; // Replace with your Web App URL
 
+  //   try {
+  //     const response = await fetch(url, {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       mode: "no-cors",
+  //       body: JSON.stringify(formData),
+  //     });
+
+  //     if (response.ok) {
+  //       console.log('Data successfully sent to Google Sheets');
+  //       setModalOpen(false);
+  //     } else {
+  //       console.error('Failed to send data to Google Sheets');
+  //     }
+  //   } catch (error) {
+  //     console.log('Error:', error);
+  //     console.error('Error:', error);
+  //   }
+  // };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const response = await fetch("https://script.google.com/macros/s/AKfycbycQUoonVYOeiLDTw50GLzQubZQDJyK-iQE_MXzR4OS60HAO9JGUKgNXDmUPO5CUjon/exec", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       mode: "no-cors",
+  //       body: JSON.stringify(formData),
+  //       // body: JSON.stringify(formData),
+  //     });
+  // // console.log("formData"+formData)
+  //     const result = await response.json(); // ✅ Parse JSON properly
+ 
+  //     if (result.success) {
+  //       console.log('Data successfully sent to Google Sheets');
+  //       setModalOpen(false); // ✅ Ensure this is called correctly
+  //     } else {
+  //       console.log('Failed to send data:', result.message);
+  //     }
+  //   } catch (error) {
+  //     console.log('Error:', error);
+  //   }
+  // };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbycQUoonVYOeiLDTw50GLzQubZQDJyK-iQE_MXzR4OS60HAO9JGUKgNXDmUPO5CUjon/exec", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            mode: "no-cors",
+            body: JSON.stringify(formData),
+        });
+
+        console.log("Data successfully sent to Google Sheets");
+        setModalOpen(false); // Close modal after submitting
+        setFormData({})
+        alert("Data successfully sent to Google Sheets")
+    } catch (error) {
+        console.error("Error:", error);
+    }
+};
+
+  
   return (
     <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6 bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] ">
       <div className="text-center mb-10 mt-20 ">
@@ -126,6 +192,16 @@ const ContactCards = () => {
                   className="w-full p-2 border border-gray-300 rounded-lg"
                 />
               </div>
+              <label className="block text-sm font-semibold mb-2">Schedule Time</label>
+<input 
+  type="time" 
+  name="scheduleTime" 
+  value={formData.scheduleTime} 
+  onChange={handleChange} 
+  required 
+  className="w-full p-2 border border-gray-300 rounded-lg"
+/>
+
               <div className="flex justify-end">
                 <button type="button" className="bg-gray-300 text-black px-4 py-2 mr-2 hover:bg-gray-400" onClick={() => setModalOpen(false)}>Cancel</button>
                 <button type="submit" className="bg-blue-500 text-white px-4 py-2 hover:bg-blue-600">Submit</button>

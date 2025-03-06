@@ -39,12 +39,12 @@
           <p className="mb-4 mt-4 md:m-8  text-justify text-lg sm:text-2xl font-semibold tracking-wider">We help brands maximize their market presence by ensuring that the right products are available at the right time and place. Our expert team focuses on enhancing product visibility, executing strategic in-store promotions, and optimizing shelf placement to drive higher sales and brand recall.
 
   With a data-driven approach, we analyze consumer behavior, market trends, and competitor strategies to develop customized merchandising plans that increase product engagement and boost conversions.</p>
-          <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
+          <Link to="/contact" className="mt-8 bg-white text-purple-900 text-lg  px-4 py-3 hover:text-xl hover:px-4 hover:py-3">Get in Touch →</Link>
         </section>
 
         <section className="container mx-auto grid sm:gap-8 sm:px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900 ">
         {/* <section className="container mx-auto grid sm:gap-8 sm:px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900  to-[#D4AF37]">   */}
-        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
+        <div className="relative   md:h-[400px] flex justify-center items-center h-[300px] overflow-hidden rounded-lg ">
           <Lottie
     options={{
       loop: true,
@@ -86,9 +86,9 @@
 
             {/* Main Content */}
             <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-              <h2 className="text-3xl font-bold text-white">Field Sales</h2>
+              <h2 className="text-4xl font-bold text-white">Field Sales</h2>
               <p className="mt-2 text-lg text-blue-50"></p>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 md:text-lg">
                 {["Engages directly with retailers, wholesalers, and distributors", 
             "Builds strong relationships to expand market reach", 
             "Provides real-time market insights for improved sales performance"].map((item, index) => (
@@ -107,12 +107,12 @@
           <div className="group row-start-2 md:row-start-auto md:col-start-1 relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
             {/* Tilted Background Card */}
             <div
-              className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+              className="absolute  top-[-25px] left-10 w-[50%] h-[calc(100%+50px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
               style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
             ></div>
             {/* Blurred Tilted Background Card */}
             <div
-              className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+              className="absolute  top-[-25px] left-10 w-[50%] h-[calc(100%+50px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
               style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
             ></div>
 
@@ -130,9 +130,9 @@
 
             {/* Main Content */}
             <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-              <h2 className="text-3xl font-bold text-white">Merchandising</h2>
+              <h2 className="text-4xl font-bold text-white">Merchandising</h2>
               <p className="mt-2 text-lg text-blue-50"></p>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 md:text-lg">
                 {["Implements strategic product placement and eye-catching displays",
             "Enhances brand visibility and influences customer purchasing decisions",
             "Ensures compliance with brand guidelines for in-store execution",].map((item, index) => (
@@ -158,7 +158,7 @@
         </section>
 
         <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900 ">
-        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
+        <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
           <Lottie
     options={{
       loop: true,
@@ -200,9 +200,9 @@
 
             {/* Main Content */}
             <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-              <h2 className="text-3xl font-bold text-white">Retail Audit</h2>
+              <h2 className="text-4xl font-bold text-white">Retail Audit</h2>
               <p className="mt-2 text-lg text-blue-50"></p>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 md:text-lg">
                 {[ "Evaluates product availability, pricing, and shelf positioning", 
             "Monitors compliance with promotional and branding guidelines", 
             "Provides data-driven insights for optimizing retail execution"].map((item, index) => (
@@ -219,12 +219,12 @@
   <div className="group row-start-2 md:row-start-auto md:col-start-1 relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
     {/* Tilted Background Card */}
     <div
-      className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+      className="absolute  top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
       style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
     ></div>
     {/* Blurred Tilted Background Card */}
     <div
-      className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+      className="absolute  top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
       style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
     ></div>
 
@@ -242,9 +242,9 @@
 
     {/* Main Content */}
     <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-      <h2 className="text-3xl font-bold text-white">Point of Sale Execution</h2>
+      <h2 className="text-4xl font-bold text-white">Point of Sale Execution</h2>
       <p className="mt-2 text-lg text-blue-50"></p>
-      <ul className="mt-4 space-y-2">
+      <ul className="mt-4 space-y-2 md:text-lg">
         {["Ensures flawless execution of branding and promotions at retail outlets",
             "Manages promotional displays, signage, and in-store branding",
             "Enhances consumer engagement at the final point of purchase",].map((item, index) => (
@@ -253,7 +253,7 @@
       </ul>
     </div>
   </div>
-  <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
+  <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
   <Lottie
   options={{
   loop: true,
@@ -271,7 +271,7 @@
         
 
         <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900">
-        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
+        <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
           <Lottie
     options={{
       loop: true,
@@ -290,12 +290,12 @@
           <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
             {/* Tilted Background Card */}
             <div
-              className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+              className="absolute top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
               style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37 )`}}
             ></div>
             {/* Blurred Tilted Background Card */}
             <div
-              className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+              className="absolute top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
               style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
             ></div>
 
@@ -313,9 +313,9 @@
 
             {/* Main Content */}
             <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-              <h2 className="text-3xl font-bold text-white">Asset Optimisation</h2>
+              <h2 className="text-4xl font-bold text-white">Asset Optimisation</h2>
               <p className="mt-2 text-lg text-blue-50"></p>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 md:text-lg">
                 {["Maximizes the effectiveness of in-store assets like shelves and signage", 
             "Ensures proper utilization, maintenance, and strategic placement", 
             "Increases shopper engagement and improves sales efficiency"].map((item, index) => (
@@ -332,12 +332,12 @@
           <div className="group row-start-2 md:row-start-auto md:col-start-1 relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
             {/* Tilted Background Card */}
             <div
-              className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+              className="absolute  top-[-25px] left-10 w-[50%] h-[calc(100%+50px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
               style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
             ></div>
             {/* Blurred Tilted Background Card */}
             <div
-              className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+              className="absolute  top-[-25px] left-10 w-[50%] h-[calc(100%+50px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
               style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
             ></div>
 
@@ -355,9 +355,9 @@
 
             {/* Main Content */}
             <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-              <h2 className="text-3xl font-bold text-white">Product Management</h2>
+              <h2 className="text-4xl font-bold text-white">Product Management</h2>
               <p className="mt-2 text-lg text-blue-50"></p>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 md:text-lg">
                 {["Oversees the entire lifecycle of FMCG products from launch to market expansion",
                     "Ensures competitive pricing and efficient distribution",
                     "Adapts to market trends and consumer preferences for sustained growth",].map((item, index) => (
@@ -366,7 +366,7 @@
               </ul>
             </div>
           </div>
-          <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
+          <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
           <Lottie
           options={{
           loop: true,

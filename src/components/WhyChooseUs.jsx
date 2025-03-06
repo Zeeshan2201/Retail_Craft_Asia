@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaGem, FaStopwatch, FaHandPointer, FaHeart } from "react-icons/fa";
 import { motion } from "framer-motion";
+import BackgroundAnimation from "./BackgroundAnimation";
 
 const data = [
   { icon: <FaGem />, title: "Long Term Strategic Partnership ", text: "Building lasting partnerships for sustainable growth and innovation in retail across Asia.", color: "gold" },
@@ -24,7 +25,7 @@ function WhyChooseUs() {
     {/* className='relative  flex flex-col md:flex-row items-center justify-center p-16 md:pl-40 bg-gradient-to-b from-white  via-purple-900 via-[10%] to-purple-900'> */}
       {/* <h2 className="text-4xl">Why Choose us</h2> */}
       <div style={{ position: "relative" }}>
- 
+ <BackgroundAnimation/>
  {/* Yellow Baground circle */}
           <motion.div 
           whileHover={{ scale: 1.1, rotate: 5 }}

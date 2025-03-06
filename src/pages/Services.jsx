@@ -25,6 +25,7 @@ const Services = () => {
         We transform businesses with tailored, data-driven solutions in sales, marketing, and technology to drive growth, optimize operations, and enhance customer engagement.
         </p>
      <FeaturedProject/>
+
       </div>
     </section>
      <BrandingServices/>

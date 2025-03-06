@@ -15,12 +15,14 @@ import BrandActivation from './pages/Services/BrandActivation';
 import MarketExpansion from './pages/Services/MarketExpansion';
 import DataAndTechnology from './pages/Services/DataAndTechnology';
 import DigitalMarketing from './pages/Services/DigitalMarketing';
+import ScrollToTop from './components/ScrollToTop';
 // import ComingSoon from './pages/CommingSoon';
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop/>
         <Navbar />
         <Routes>
           {/* <Route path="/" element={<ComingSoon />} /> Coming Soon Page */}

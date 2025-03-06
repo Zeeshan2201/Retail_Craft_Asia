@@ -130,7 +130,7 @@ const HeroSection = () => {
 
   return (
     <section className="flex relative items-center justify-center md:h-screen h-[90vh] bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] px-10">
-      <div className=" w-full  absolute top-0 left-0">
+      <div className=" md:w-full md:h-auto h-[40%] md:overflow-auto absolute top-0 left-0">
         <AnimatedWave/>
       </div>
         

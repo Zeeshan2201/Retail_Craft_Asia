@@ -35,7 +35,7 @@ export default function ServicesPage() {
         <p className="mb-4 mt-4 md:m-8 text-justify  md:text-2xl font-semibold tracking-wider">
           We create immersive brand experiences that engage consumers and leave a lasting impression. Through interactive campaigns, live events, and on-ground activations, we help brands establish deeper connections with their audiences. These experiences enhance brand recall, foster customer loyalty, and drive higher engagement.
         </p>
-        <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
+          <Link to="/contact" className="mt-8 bg-white text-purple-900 text-lg  px-4 py-3 hover:text-xl hover:px-4 hover:py-3">Get in Touch →</Link>
       </section>
 
       {/* Service Sections with Glassmorphism & Hover Animation */}
@@ -51,7 +51,7 @@ export default function ServicesPage() {
       /> */}
 
 <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900">
-        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
+        <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
         <Lottie
     options={{
       loop: true,
@@ -61,20 +61,20 @@ export default function ServicesPage() {
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={window.innerWidth < 768 ? 300 : 400}
-    width={window.innerWidth < 768 ? 300 : 400}
+    height={window.innerWidth < 768 ? 300 : 500}
+    width={window.innerWidth < 768 ? 300 : 500}
     />
         </div>
         {/* Card Effect for Text Side */}
         <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
           {/* Tilted Background Card */}
           <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            className="absolute  top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
             style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
           ></div>
           {/* Blurred Tilted Background Card */}
           <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            className="absolute top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
             style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
           ></div>
 
@@ -93,8 +93,8 @@ export default function ServicesPage() {
           {/* Main Content */}
           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
             <h2 className="text-3xl font-bold text-white">Brand Ambassador Programmes</h2>
-            <p className="mt-2 text-lg text-purple-100"></p>
-            <ul className="mt-4 space-y-2">
+            <p className="mt-2 text-lg md:te text-purple-100"></p>
+            <ul className="mt-4 md:text-lg space-y-2">
               {[
           "Utilizes influencers and representatives to promote brand trust",
           "Builds long-term customer relationships through personal engagement",
@@ -124,12 +124,12 @@ export default function ServicesPage() {
         <div className="group row-start-2 md:row-start-auto md:col-start-1 relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
           {/* Tilted Background Card */}
           <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            className="absolute  top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
             style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
           ></div>
           {/* Blurred Tilted Background Card */}
           <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            className="absolute  top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
             style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
           ></div>
 
@@ -149,7 +149,7 @@ export default function ServicesPage() {
           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
             <h2 className="text-3xl font-bold text-white">Events & Road Shows</h2>
             <p className="mt-2 text-lg text-purple-100"></p>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 md:text-lg space-y-2">
               {[
           "Engages consumers directly through interactive and mobile campaigns",
           "Increases brand awareness in high-footfall locations",
@@ -160,7 +160,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
+        <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg">
         <Lottie
     options={{
       loop: true,
@@ -231,7 +231,7 @@ export default function ServicesPage() {
           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
             <h2 className="text-3xl font-bold text-white">Sampling</h2>
             <p className="mt-2 text-lg text-purple-100"></p>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 md:text-lg space-y-2">
               {[
           
             "Encourages product trials to boost consumer confidence",
@@ -264,12 +264,12 @@ export default function ServicesPage() {
         <div className="group relative row-start-2 md:row-start-auto md:col-start-1 flex justify-center items-center w-[320px] h-[400px] mx-auto">
           {/* Tilted Background Card */}
           <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            className="absolute  top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
             style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
           ></div>
           {/* Blurred Tilted Background Card */}
           <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            className="absolute  top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
             style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
           ></div>
 
@@ -289,7 +289,7 @@ export default function ServicesPage() {
           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
             <h2 className="text-3xl font-bold text-white">Shopper Marketing</h2>
             <p className="mt-2 text-lg text-purple-100"></p>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 md:text-lg space-y-2">
               {[
                     "Influences buying decisions at the point of sale",
                     "Uses in-store promotions, displays, and personalized offers",
@@ -330,7 +330,7 @@ export default function ServicesPage() {
 
         
 <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900">
-<div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
+<div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
         <Lottie
     options={{
       loop: true,
@@ -348,12 +348,12 @@ export default function ServicesPage() {
         <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
           {/* Tilted Background Card */}
           <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            className="absolute  top-[-35px] left-10 w-[50%] h-[calc(100%+75px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
             style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
           ></div>
           {/* Blurred Tilted Background Card */}
           <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            className="absolute top-[-35px] left-10 w-[50%] h-[calc(100%+75px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
             style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
           ></div>
 
@@ -373,7 +373,7 @@ export default function ServicesPage() {
           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
             <h2 className="text-3xl font-bold text-white">Instore Activation</h2>
             <p className="mt-2 text-lg text-purple-100"></p>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 md:text-lg space-y-2">
               {[
           "Creates engaging in-store experiences to attract customers",
           "Includes product demonstrations, promotional campaigns, and contests",

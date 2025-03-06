@@ -33,67 +33,66 @@ export default function ServicesPage() {
           Data And Technology
         </h1> <br></br>
         <p className="mb-4 mt-4 md:m-8 text-justify text-2xl font-semibold tracking-wider">We leverage cutting-edge technology to optimize business operations and decision-making. Our solutions include AI-driven analytics, automation tools, and digital transformation strategies to enhance efficiency, improve customer experiences, and drive business growth.</p>
-        <Link to="/contact" className="mt-8 bg-white text-purple-900 hover:bg-purple-50 px-3 py-2">SPEAK WITH OUR EXPERTS →</Link>
+          <Link to="/contact" className="mt-8 bg-white text-purple-900 text-lg  px-4 py-3 hover:text-xl hover:px-4 hover:py-3">Get in Touch →</Link>
       </section>
 
       
       <section className="container mx-auto grid gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-r from-purple-900 via-purple-900">
-        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
-          {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
-          <Lottie
-    options={{
-      loop: true,
-      autoplay: true,
-      animationData: GIF_1,
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice"
-      }
-    }}
-    height={window.innerWidth < 768 ? 300 : 400}
-    width={window.innerWidth < 768 ? 300 : 400}
-  />
-        </div>
-        {/* Card Effect for Text Side */}
-        <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
-          {/* Tilted Background Card */}
-          <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
-          ></div>
-          {/* Blurred Tilted Background Card */}
-          <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
-            style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
-          ></div>
+  <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg">
+    <Lottie
+      options={{
+        loop: true,
+        autoplay: true,
+        animationData: GIF_1,
+        rendererSettings: {
+          preserveAspectRatio: "xMidYMid slice"
+        }
+      }}
+      height={window.innerWidth < 768 ? 300 : 400}
+      width={window.innerWidth < 768 ? 300 : 400}
+    />
+  </div>
+  {/* Card Effect for Text Side */}
+  <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
+    {/* Tilted Background Card */}
+    <div
+      className="absolute top-[-25px] left-10 w-[50%] h-[calc(100%+50px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+      style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
+    ></div>
+    {/* Blurred Tilted Background Card */}
+    <div
+      className="absolute top-[-25px] left-10 w-[50%] h-[calc(100%+50px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+      style={{ background: `linear-gradient(315deg,#4B0082, #D4AF37)` }}
+    ></div>
 
-          {/* Bouncing Square Animation */}
-          <div className="absolute top-0 left-0 right-0 bottom-0 z-5 pointer-events-none">
-            <div
-              className="absolute top-0 left-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
-              style={{ animationDelay: '0s' }}
-            ></div>
-            <div
-              className="absolute bottom-0 right-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
-              style={{ animationDelay: '1s' }}
-            ></div>
-          </div>
+    {/* Bouncing Square Animation */}
+    <div className="absolute top-0 left-0 right-0 bottom-0 z-5 pointer-events-none">
+      <div
+        className="absolute top-0 left-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+        style={{ animationDelay: '0s' }}
+      ></div>
+      <div
+        className="absolute bottom-0 right-0 w-0 h-0 rounded-lg bg-white/10 backdrop-blur-sm opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] animate-bounce"
+        style={{ animationDelay: '1s' }}
+      ></div>
+    </div>
 
-          {/* Main Content */}
-          <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-            <h2 className="text-3xl font-bold text-white">Data & Operational Intelligence</h2>
-            <p className="mt-2 text-lg text-blue-50"></p>
-            <ul className="mt-4 space-y-2">
-              {[
+    {/* Main Content */}
+    <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
+      <h2 className="text-3xl font-bold text-white">Data & Operational Intelligence</h2>
+      <p className="mt-2 text-lg text-blue-50"></p>
+      <ul className="mt-4 md:text-lg space-y-2">
+        {[
           "Analyzes business operations to improve efficiency",
-         "Uses real-time insights to optimize processes",
-         "Enhances productivity and reduces operat",]      
-         .map((item, index) => (
-                <li key={index} className="text-white">• {item}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
+          "Uses real-time insights to optimize processes",
+          "Enhances productivity and reduces operat",
+        ].map((item, index) => (
+          <li key={index} className="text-white">• {item}</li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>
 
       {/* Service Sections with Glassmorphism & Hover Animation
       <ServiceSection
@@ -111,12 +110,12 @@ export default function ServicesPage() {
         <div className="group relative row-start-2 md:row-start-auto flex justify-center items-center w-[320px] h-[400px] mx-auto">
           {/* Tilted Background Card */}
           <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            className="absolute top-[-25px] left-10 w-[50%] h-[calc(100%+50px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
             style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
           ></div>
           {/* Blurred Tilted Background Card */}
           <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            className="absolute top-[-25px] left-10 w-[50%] h-[calc(100%+50px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
             style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
           ></div>
 
@@ -136,7 +135,7 @@ export default function ServicesPage() {
           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
             <h2 className="text-3xl font-bold text-white">Sales Force Automation Tools</h2>
             <p className="mt-2 text-lg text-blue-50"></p>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 md:text-lg space-y-2">
               {[
           "Streamlines sales processes with technology-driven solutions",
             "Improves sales tracking, reporting, and performance",
@@ -148,7 +147,7 @@ export default function ServicesPage() {
             </ul>
           </div>
         </div>
-        <div className="relative md:h-[400px] h-[300px] overflow-hidden rounded-lg">
+        <div className="relative flex justify-center items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg">
           {/* <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" /> */}
           <Lottie
     options={{
@@ -159,8 +158,8 @@ export default function ServicesPage() {
         preserveAspectRatio: "xMidYMid slice"
       }
     }}
-    height={window.innerWidth < 768 ? 300 : 400}
-    width={window.innerWidth < 768 ? 300 : 400}
+    height={window.innerWidth < 768 ? 300 : 360}
+    width={window.innerWidth < 768 ? 300 : 360}
   />
 
         </div>
@@ -200,12 +199,12 @@ export default function ServicesPage() {
         <div className="group relative flex justify-center items-center w-[320px] h-[400px] mx-auto">
           {/* Tilted Background Card */}
           <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            className="absolute  top-[-30px] left-10 w-[50%] h-[calc(100%+75px)] bg-white rounded-lg transform skew-x-12 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
             style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
           ></div>
           {/* Blurred Tilted Background Card */}
           <div
-            className="absolute top-0 left-10 w-[50%] h-full bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
+            className="absolute top-[-30px] left-10 w-[50%] h-[calc(100%+75px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]"
             style={{ background: `linear-gradient(315deg, #4B0082, #D4AF37)` }}
           ></div>
 
@@ -225,7 +224,7 @@ export default function ServicesPage() {
           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
             <h2 className="text-3xl font-bold text-white">Learning & Development Modules</h2>
             <p className="mt-2 text-lg text-blue-50"></p>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 md:text-lg space-y-2">
               {[
           "Provides training programs for skill development",
           "Enhances employee productivity and business performance",
@@ -278,9 +277,9 @@ export default function ServicesPage() {
           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
             <h2 className="text-3xl font-bold text-white">CRM Solutions</h2>
             <p className="mt-2 text-lg text-blue-50"></p>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 md:text-lg space-y-2">
               {[
-           "lisManages customer relationships effectively.",
+           "Manages customer relationships effectively.",
            " Automates interactions and tracks customer journeys.",
             "Improves customer retention and engagement.",
           
