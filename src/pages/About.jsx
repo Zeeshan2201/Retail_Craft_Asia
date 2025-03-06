@@ -228,7 +228,7 @@ const FoundationPrinciples = () => {
                 {principle.title}
               </h3>
               <p
-                className={`text-gray-700 text-sm mt-2 transition-opacity duration-300 ${
+                className={`text-gray-700 md:text-base text-sm mt-2 transition-opacity duration-300 ${
                   expandedCard === index
                     ? "opacity-100 max-h-40"
                     : "opacity-0 max-h-0"

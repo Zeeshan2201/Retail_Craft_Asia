@@ -49,11 +49,12 @@ const HorizontalScroll = () => {
 
   return (
     <>
-      <div ref={containerTopRef} className="md:h-[10vh] h-[5vh] "></div>
-      <h2 className="md:text-6xl text-4xl font-bold text-center ">Our Services</h2>
+      <div ref={containerTopRef} className=" md:h-[10vh] h-[5vh] "></div>
+      {/* <h2 className="md:text-6xl text-4xl font-bold text-center ">Our Services</h2> */}
       <div style={{
       background: "linear-gradient(to bottom, white 0%, #581c87 10%, #581c87 90%, white 100%)"
-    }} className=" h-[100vh] overflow-hidden  ">
+    }} className="  relative h-[100vh]  overflow-hidden  ">
+      <h2 className="md:text-6xl absolute md:left-[38%] left-[25%] text-white z-10 top-[7%] text-4xl font-bold text-center ">Our Services</h2>
       
       {/* <div className="sticky top-0 h-[100vh] overflow-hidden bg-black"> */}
         <div
@@ -95,8 +96,8 @@ const HorizontalScroll = () => {
                       preserveAspectRatio: "xMidYMid slice"
                     }
                   }}
-                  height={400}
-                  width={400}
+                  height={500}
+                  width={500}
                 />
               </div>
             </div>
@@ -168,7 +169,7 @@ const HorizontalScroll = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-[80%] md:block hidden">
+              <div className="w-[100%] md:block hidden">
                 {/* <Lottie
                   options={{
                     loop: true,

@@ -121,13 +121,13 @@ const TeamMemberDetail = () => {
                   <h3 className="text-2xl font-bold text-white mt-6 text-center">{member.name}</h3>
                   <div className="flex items-center mt-2 mb-4">
                     <Briefcase className="w-4 h-4 text-yellow-400 mr-2" />
-                    <p className="text-yellow-400 font-medium">{member.role}</p>
+                    <p className="text-yellow-400 md:text-lg font-medium">{member.role}</p>
                   </div>
                   <div className="mt-4 space-y-2 w-full">
                     {member.highlights.map((highlight, i) => (
                       <div key={i} className="flex items-start">
                         <Award className="w-5 h-5 text-yellow-400 mr-2 flex-shrink-0 mt-0.5" />
-                        <p className="text-purple-100 text-left text-sm">{highlight}</p>
+                        <p className="text-purple-100 text-left md:text-base text-sm">{highlight}</p>
                       </div>
                     ))}
                   </div>
