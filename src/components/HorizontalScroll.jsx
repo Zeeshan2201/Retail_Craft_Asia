@@ -55,7 +55,7 @@ const HorizontalScroll = () => {
     //   style={{
     //   background: "linear-gradient(to bottom, white 0%, #581c87 10%, #581c87 90%, white 100%)"
     // }} 
-    className="  relative h-[100vh]  overflow-hidden  ">
+    className="  relative h-[100vh]  overflow-hidden  bg-gray-200 ">
       <h2 className="md:text-6xl absolute md:left-[38%] left-[25%] text-black z-10 top-[7%] text-4xl font-bold text-center ">Our Services</h2>
       
       {/* <div className="sticky top-0 h-[100vh] overflow-hidden bg-black"> */}
@@ -65,7 +65,7 @@ const HorizontalScroll = () => {
           style={{ transform: `translateX(-${scrollPosition}px)` }}
         >
            <Section color=" flex flex-col md:w-[95dvw] w-[100dvw]">
-          <div className='md:ml-20 ml-2 flex md:flex-row flex-col border-[#ffd700] rounded-xl md:h-[75%] h-[90%] bg-gray-200 py-4 px-8 items-center justify-center'>
+          <div className='md:ml-20 ml-2 flex md:flex-row flex-col border-[#ffd700] rounded-xl md:h-[75%] h-[90%]  py-4 px-8 items-center justify-center'>
           <div className="md:w-[64%] w-[100%]">
                 <div className="text-4xl font-bold">Market Expansion Services</div>
                 <p className="my-4 text-2xl">At Retail Craft Asia, we help businesses expand into new markets with end-to-end solutions.<br></br></p>

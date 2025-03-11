@@ -72,4 +72,8 @@ button:focus-visible {
 
 body {
   @apply antialiased;
+
+}
+*{
+  font-family: sans-serif;
 }
