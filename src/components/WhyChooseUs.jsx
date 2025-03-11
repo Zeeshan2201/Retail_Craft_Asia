@@ -18,14 +18,14 @@ function WhyChooseUs() {
   return (
     <>
     <div 
-    style={{
-      background: "linear-gradient(to bottom, white 0%, #581c87 10%, #581c87 90%, white 100%)"
-    }}
+    // style={{
+    //   background: "linear-gradient(to bottom, white 0%, #581c87 10%, #581c87 90%, white 100%)"
+    // }}
     className='relative  flex flex-col md:flex-row items-center justify-center p-16 md:pl-40 '>
     {/* className='relative  flex flex-col md:flex-row items-center justify-center p-16 md:pl-40 bg-gradient-to-b from-white  via-purple-900 via-[10%] to-purple-900'> */}
       {/* <h2 className="text-4xl">Why Choose us</h2> */}
       <div style={{ position: "relative" }}>
- <BackgroundAnimation/>
+ {/* <BackgroundAnimation/> */}
  {/* Yellow Baground circle */}
           <motion.div 
           whileHover={{ scale: 1.1, rotate: 5 }}
@@ -53,7 +53,7 @@ function WhyChooseUs() {
 
       {/* Background Element Gray circle - Outside motion.div */}
       <div 
-      className=" bg-gray-300 absolute opacity-[0.2] rounded-full right-[10%] top-1/2 transform -translate-y-1/2 w-[250px] h-[250px] md:w-[400px] md:h-[400px]">
+      className=" bg-gray-300 absolute  rounded-full right-[10%] top-1/2 transform -translate-y-1/2 w-[250px] h-[250px] md:w-[400px] md:h-[400px]">
     </div>
     </div>
 
