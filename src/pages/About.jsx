@@ -16,7 +16,7 @@ import MangTeam from "../components/MangTeam"
 import visionSvg from "../assets/vision.svg"; // Replace with your SVG file path
 import missionSvg from "../assets/mission.svg"; // Replace with your SVG file path
 import TeamMemberDetail from "../components/TeamMemberDetail";
-import AnimatedBackground from "../components/AboutAnimation";
+import About from "../assets/About/About.jpeg"
 
 const FoundationPrinciples = () => {
   const principles = [
@@ -138,17 +138,26 @@ const FoundationPrinciples = () => {
   }, []);
 
   return (
-    <div className="foundation-principles-container bg-purple-900">
+    <div
+  className="foundation-principles-container"
+  // style={{
+  //   backgroundImage: `url(${About})`, // Ensure 'About' is correctly imported
+  //   backgroundSize: "cover",
+  //   backgroundPosition: "center",
+  // }}
+>
+
      {/* Who We Are Section */}
+     
      <div
         className={`who-we-are-section ${isWhoWeAreFlipped ? "flipped" : ""}`}
         onClick={handleWhoWeAreClick}
         style={{ position: "relative", height: "100vh", overflow: "hidden" }}
       >
         {/* Animated Background */}
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: 0 }}>
+        {/* <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: 0 }}>
           <AnimatedBackground />
-        </div>
+        </div> */}
          
         <div className="who-we-are-content" style={{ zIndex: 1 }}>
           <h1 className="who-we-are-heading">Who We Are?</h1>
@@ -159,13 +168,13 @@ const FoundationPrinciples = () => {
         </div>
         <div className="who-we-are-back-content" style={{ zIndex: 1 }}>
           <h1 className="who-we-are-heading">Who We Are?</h1>
-          <p className="who-we-are-text">
+          { <p className="who-we-are-text">
             At Retail Craft Asia, we are more than just service providers—we are
             your strategic partners in business growth and brand transformation.
             With deep expertise in the FMCG industry, we help you expand your
             market reach, optimize supply chains, enhance brand visibility, and
             drive consumer engagement.
-          </p>
+          </p> }
           <p className="who-we-are-text">
             Whether you're launching a new product, scaling operations, or
             enhancing your brand presence, we provide end-to-end solutions that
@@ -180,7 +189,7 @@ const FoundationPrinciples = () => {
       {/* Vision Section */}
       <div
         ref={visionSectionRef}
-        className={`w-full px-5 py-16 bg-gradient-to-br from-yellow-400/0 to-yellow-300/20 transition-all duration-1000 ${
+        className={`w-full px-5 py-16 transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
@@ -191,10 +200,10 @@ const FoundationPrinciples = () => {
             className="w-60 ml-5 sm:ml-40 bg-transparent max-w-md transition-transform hover:scale-110 hover:shadow-xl hover:bg-gray-200/10 hover:border-2 hover:border-yellow-300/40 rounded-full"
           />
           <div className="w-full md:w-1/2 text-center sm:text-left">
-            <h2 className="text-5xl font-bold mb-4 transition-color text-white hover:text-[#0e110c]">
+            <h2 className="text-5xl font-bold mb-4 transition-color text-black hover:text-[#0e110c]">
               Our Vision
             </h2>
-            <p className="text-xl text-gray-200">
+            <p className="text-xl text-black">
               To be the trusted business partners for Market expansion and
               Execution services for Businesses in Asia.
             </p>
@@ -204,14 +213,14 @@ const FoundationPrinciples = () => {
 
       {/* Principles Section */}
       <div className="w-full px-5 py-16 ">
-        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-10 transition-transform duration-300 hover:scale-110 hover:text-black text-white">
+        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-10 transition-transform duration-300 hover:scale-110 hover:text-black text-black">
           Our Foundational Principles
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-8 max-w-6xl mx-auto">
           {principles.map((principle, index) => (
             <div
               key={index}
-              className={`relative flex flex-col items-center text-center bg-gradient-to-br from-yellow-100 to-yellow-200 border-2 border-gray-300 rounded-xl p-5 cursor-pointer transition-all duration-300 ${
+              className={`relative flex flex-col items-center text-center bg-white border-2 border-gray-300 rounded-xl p-5 cursor-pointer transition-all duration-300 ${
                 expandedCard === index
                   ? "scale-105 shadow-xl"
                   : "hover:scale-105 hover:shadow-lg"
@@ -224,7 +233,7 @@ const FoundationPrinciples = () => {
                 alt={principle.title}
                 className="w-full max-h-40 object-contain rounded-xl"
               />
-              <h3 className="text-lg sm:text-xl font-semibold mt-4 transition-colors hover:text-blue-600">
+              <h3 className="text-lg sm:text-xl font-semibold mt-4 transition-colors ">
                 {principle.title}
               </h3>
               <p
@@ -244,16 +253,16 @@ const FoundationPrinciples = () => {
       {/* Mission Section */}
       <div
         ref={missionSectionRef}
-        className={`w-full px-5 py-16 bg-gradient-to-br from-yellow-400/0 to-yellow-300/20 transition-all duration-1000 ${
+        className={`w-full px-5 py-16  transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:justify-between">
           <div className="w-full md:w-1/2 text-center sm:text-right">
-            <h2 className="text-5xl font-bold mb-4 transition-colors hover:text-black text-white">
+            <h2 className="text-5xl font-bold mb-4 transition-colors hover:text-black text-black">
               Our Mission
             </h2>
-            <p className="text-xl text-gray-200">
+            <p className="text-xl text-black">
               To be the leading partners for Brands and Businesses in Asia,
               recognized for transformation and Growth with innovative,
               technology-driven solutions leading with expertise and dedication.
