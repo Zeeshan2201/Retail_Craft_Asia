@@ -9,7 +9,6 @@ const teamMembers = [
   {
     id: 1,
     name: "Jean-Boris ROUX",
-    role: "Founder",
     shortBio:
       "A seasoned leader with over 25 years of diverse experience spanning distribution, hospitality, FMCG, and retail industries across Europe and Asia.",
     fullDescription: `Jean-Boris ROUX, aka "JB", is a seasoned leader with over 25 years of diverse experience spanning distribution, hospitality, FMCG, and retail industries across Europe and Asia. His career has allowed him to work with some of the world's most prestigious companies, where he gained invaluable expertise in strategic growth, operational excellence, and market expansion.
@@ -76,16 +75,16 @@ const TeamMemberDetail = () => {
   }, [location]);
   return (
     <section  style={{
-        background: "linear-gradient(to bottom, #581c87 0%, #581c87 10%, #581c87 95%, white 100%)"
+        // background: "linear-gradient(to bottom, #581c87 0%, #581c87 10%, #581c87 95%, white 100%)"
       }} className="py-20 ">
         {/* bg-gradient-to-b from-purple-900 to-purple-800 */}
     <div className="container mx-auto px-4 mb-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-white inline-block relative">
-            Meet Our <span className="underline decoration-yellow-500 ">Leadership</span> Team
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-black inline-block relative">
+            Meet Our  Leadership Team
             {/* <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-yellow-400 rounded-full"></span> */}
           </h2>
-          <p className="text-purple-200 text-lg max-w-2xl mx-auto mt-6">
+          <p className="text-black text-lg max-w-2xl mx-auto mt-6">
             Visionary leaders with decades of experience, driving innovation and excellence across global markets.
           </p>
         </div>
@@ -103,7 +102,7 @@ const TeamMemberDetail = () => {
             >
               <div className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}>
                 {/* Image Section */}
-                <div className="w-full lg:w-1/3 bg-gradient-to-br from-purple-800 to-purple-900 p-8 flex flex-col items-center justify-center">
+                <div className="w-full lg:w-1/3  p-8 flex flex-col items-center justify-center">
                   <div className="relative">
                     <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
                       <img
@@ -113,21 +112,21 @@ const TeamMemberDetail = () => {
                       />
                     </div>
                     <div className="absolute -bottom-2 -right-2 bg-yellow-400 rounded-full p-2 shadow-lg">
-                      <a href={member.linkedin} className="text-purple-900 hover:text-purple-700 transition-colors">
+                      <a href={member.linkedin} className="text-black hover:text-purple-700 transition-colors">
                         <Linkedin className="w-6 h-6" />
                       </a>
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mt-6 text-center">{member.name}</h3>
+                  <h3 className="text-2xl font-bold text-black mt-6 text-center">{member.name}</h3>
                   <div className="flex items-center mt-2 mb-4">
-                    <Briefcase className="w-4 h-4 text-yellow-400 mr-2" />
-                    <p className="text-yellow-400 font-medium">{member.role}</p>
+                    <Briefcase className="w-4 h-4 text-black mr-2" />
+                    <p className="text-black md:text-lg font-medium">{member.role}</p>
                   </div>
                   <div className="mt-4 space-y-2 w-full">
                     {member.highlights.map((highlight, i) => (
                       <div key={i} className="flex items-start">
                         <Award className="w-5 h-5 text-yellow-400 mr-2 flex-shrink-0 mt-0.5" />
-                        <p className="text-purple-100 text-left text-sm">{highlight}</p>
+                        <p className="text-black text-left md:text-base text-sm">{highlight}</p>
                       </div>
                     ))}
                   </div>
@@ -135,7 +134,7 @@ const TeamMemberDetail = () => {
 
                 {/* Content Section */}
                 <div className="w-full lg:w-2/3 p-8 lg:p-12">
-                  <p className="text-lg text-left  text-gray-700 font-medium mb-6">{member.shortBio}</p>
+                  <p className="text-lg text-left  text-black font-medium mb-6">{member.shortBio}</p>
 
                   <AnimatePresence>
                     {expandedId === member.id && (
@@ -159,7 +158,7 @@ const TeamMemberDetail = () => {
 
                   <button
                     onClick={() => toggleExpand(member.id)}
-                    className="mt-6 flex items-center text-purple-700 hover:text-purple-900 font-medium transition-colors group"
+                    className="mt-6 flex items-center text-black hover:text-purple-900 font-medium transition-colors group"
                   >
                     {expandedId === member.id ? (
                       <>

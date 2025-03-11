@@ -1,42 +1,58 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Lottie from "react-lottie" 
 // import { ChevronLeft, ChevronRight } from "lucide-react"
+import Service_1 from "../animation/service/Service_1.json"
 
-const slides = [
-  {
-    image: "/Services/Growth_1.jpg",
-    alt: "J&H Tackle Fishing Equipment",
-  },
-  {
-    image: "/Services/Growth_2.jpeg",
-    alt: "J&H Tackle Brand",
-  },
-  {
-    image: "/Services/Growth_4.png",
-    alt: "Absolute Dogs Training",
-  },
-]
+// const slides = [
+//   {
+//     image: "/Services/Growth_1.jpg",
+//     alt: "J&H Tackle Fishing Equipment",
+//   },
+//   {
+//     image: "/Services/Growth_2.jpeg",
+//     alt: "J&H Tackle Brand",
+//   },
+//   {
+//     image: "/Services/Growth_4.png",
+//     alt: "Absolute Dogs Training",
+//   },
+// ]
+
 
 export default function Carousel() {
-  const [current, setCurrent] = useState(0)
+  // const [current, setCurrent] = useState(0)
 
-  const next = () => {
-    setCurrent((current) => (current === slides.length - 1 ? 0 : current + 1))
-  }
+  // const next = () => {
+  //   setCurrent((current) => (current === slides.length - 1 ? 0 : current + 1))
+  // }
 
   // const previous = () => {
   //   setCurrent((current) => (current === 0 ? slides.length - 1 : current - 1))
   // }
 
-  useEffect(() => {
-    const timer = setInterval(next, 5000)
-    return () => clearInterval(timer)
-  }, []) // Removed next from dependencies
+  // useEffect(() => {
+  //   const timer = setInterval(next, 5000)
+  //   return () => clearInterval(timer)
+  // }, []) // Removed next from dependencies
 
   return (
     <div className="relative md:h-[60vh] md:w-[90%] h-[40vh] w-[100%] overflow-hidden">
-      {/* Slides */}
+         <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:Service_1,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    }}
+    height={window.innerWidth < 768 ? 300 : 400}
+    width={window.innerWidth < 768 ? 300 : 400}
+    />
+      
+      {/* Slides
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -46,7 +62,7 @@ export default function Carousel() {
           <div className="absolute inset-0 bg-gradient-to-b from-purple-600/40 to-blue-600/40" />
           <img src={slide.image || "/placeholder.svg"} alt={slide.alt} className="w-full h-full rounded-lg shadow-lg object-cover" />
         </div>
-      ))}
+      ))} */}
 
       {/* Navigation Arrows */}
       {/* <button
@@ -66,7 +82,7 @@ export default function Carousel() {
       </button> */}
 
       {/* Dot Indicators */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+      {/* <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -76,7 +92,7 @@ export default function Carousel() {
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   )
 }

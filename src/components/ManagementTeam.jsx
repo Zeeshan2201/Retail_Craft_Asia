@@ -22,10 +22,12 @@ const teamMembers = [
 function ManagementTeam() {
   
   return (
-    <div  style={{
-      background: "linear-gradient(to bottom, white 0%, #581c87 10%, #581c87 90%, white 100%)"
-    }} className="md:w-[100%] w-[100%] pb-16 pt-10 md:px-16   ">
-    <h2 className="md:text-5xl md:mt-2 text-4xl   mb-14 font-bold text-center text-white">Management Team</h2>
+    <div  
+    // style={{
+    //   background: "linear-gradient(to bottom, white 0%, #581c87 10%, #581c87 90%, white 100%)"
+    // }} 
+    className="md:w-[100%] w-[100%] pb-16 pt-10 md:px-16   ">
+    <h2 className="md:text-5xl md:mt-2 text-4xl   mb-14 font-bold text-center text-black">Management Team</h2>
     <div className=" md:mb-4  md:flex md:overflow-visible flex-col md:flex-row  flex items-center  md:space-x-4 md:justify-center gap-6">
     {/* <div className="grid md:flex  md:justify-center gap-6"> */}
       {teamMembers.map((member, index) => (
@@ -48,7 +50,7 @@ function ManagementTeam() {
           {/* <Link to={`/about#${member.name === "Jean-Boris ROUX"?'1':'2'}`} className="mt-4 text-base font-medium text-neutral-900 hover:bg-neutral-300">Read More</Link> */}
           <Link to={`/about#${member.name === "Jean-Boris ROUX" ? '1' : '2'}`} 
       className="mt-4 text-base font-medium text-neutral-900 hover:bg-neutral-300">
-  Read More
+  Full Bio
 </Link>
 
         </div>

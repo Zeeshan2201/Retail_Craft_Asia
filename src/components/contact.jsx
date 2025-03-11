@@ -97,13 +97,13 @@ const ContactCards = () => {
 
   
   return (
-    <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6 bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] ">
+    <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6  ">
       <div className="text-center mb-10 mt-20 ">
-        <h2 className="text-4xl uppercase font-bold text-white sm:text-5xl">How can Retail Craft Asia customer support help you today?</h2>
-        <p className="text-gray-200 mt-5 text-lg sm:text-2xl">Our friendly customer support team is ready & excited to help with any issue!</p>
+        <h2 className="text-4xl uppercase font-bold text-black sm:text-5xl">How can Retail Craft Asia customer support help you today?</h2>
+        <p className="text-black mt-5 text-lg sm:text-2xl">Our friendly customer support team is ready & excited to help with any issue!</p>
       </div>
       
-      <div className='mt-5 mb-5 text-white text-2xl sm:text-4xl text-center'>Looking for answers? Try one of these helpful resources:</div>
+      <div className='mt-5 mb-5 text-black text-2xl sm:text-4xl text-center'>Looking for answers? Try one of these helpful resources:</div>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
         {['Get Appointment', 'Email-Support', 'FAQ'].map((title, index) => (
@@ -202,7 +202,7 @@ const ContactCards = () => {
   className="w-full p-2 border border-gray-300 rounded-lg"
 />
 
-              <div className="flex justify-end">
+              <div className="flex mt-4 justify-end">
                 <button type="button" className="bg-gray-300 text-black px-4 py-2 mr-2 hover:bg-gray-400" onClick={() => setModalOpen(false)}>Cancel</button>
                 <button type="submit" className="bg-blue-500 text-white px-4 py-2 hover:bg-blue-600">Submit</button>
               </div>

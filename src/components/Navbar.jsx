@@ -19,7 +19,7 @@ const MainNav = () => {
 
   return (
     <>
-      <header className="fixed left-0 right-0 top-0 z-50 flex h-20 items-center bg-purple-900/80 px-6 md:px-12 shadow-lg">
+      <header className="fixed left-0 right-0 top-0 z-50 flex h-20 items-center bg-white px-6 md:px-12 shadow-lg">
         <div className="flex flex-1 items-center justify-between w-full">
           <Link to="/" className="shrink-0">
             <img className='w-20 h-15' src="/logo.png" alt="Logo" />
@@ -27,13 +27,13 @@ const MainNav = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-4">
-            <Link to="/" className="px-4 py-2 text-base  font-medium text-white hover:hover:bg-neutral-100 hover:text-black">Home</Link>
+            <Link to="/" className="px-4 py-2 text-base  font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Home</Link>
             <div
-              className="relative flex flex-row px-4 py-2 text-base font-medium text-white hover:hover:bg-neutral-100 hover:text-black"
+              className="relative flex flex-row px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black"
               onMouseEnter={() => setActiveDropdown("services")}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <Link to="/Services" className=" flex text-base font-medium text-white hover:hover:bg-neutral-100 hover:text-black">
+              <Link to="/Services" className=" flex text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">
                 <span>Services</span>
                 
               <span className='transition-all duration-300 ease-in-out ml-1 px-1 pt-1'>{activeDropdown ?  (<ChevronUp className="w-6 h-6 transition-all duration-300 ease-in-out " />): (<ChevronDown className="w-6 h-6 transition-all  duration-300 ease-in-out" />)}</span>
@@ -50,7 +50,7 @@ const MainNav = () => {
                       <Link
                         onClick={() => setActiveDropdown(null)}
                         to={link.href}
-                        className="text-base text-white hover:text-gray-400"
+                        className="text-base text-black hover:text-gray-400"
                       >
                         {link.title}
                       </Link>
@@ -59,14 +59,14 @@ const MainNav = () => {
                 </div>
               </div>
             </div>
-            <Link to="/About" className="px-4 py-2 text-base font-medium text-white hover:hover:bg-neutral-100 hover:text-black">About Us</Link>
-            <Link to="/Contact" className="px-4 py-2 text-base font-medium text-white hover:hover:bg-neutral-100 hover:text-black">Contact Us</Link>
-            <Link to="/faq" className="px-4 py-2 text-base font-medium text-white hover:hover:bg-neutral-100 hover:text-black">FAQ</Link>
+            <Link to="/About" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">About Us</Link>
+            <Link to="/Contact" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Contact Us</Link>
+            {/* <Link to="/faq" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">FAQ</Link> */}
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-md text-white"
+            className="md:hidden p-2 rounded-md text-black"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -112,7 +112,7 @@ const MainNav = () => {
       </div>
           <Link to="/About" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
           <Link to="/Contact" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
-          <Link to="/faq" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
+          {/* <Link to="/faq" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>FAQ</Link> */}
         </nav>
       </div>
     </>
@@ -129,7 +129,7 @@ export default MainNav;
 // export function Button({ children, onClick, className = "" }) {
 //   return (
 //     <button
-//       className={`px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition ${className}`}
+//       className={`px-4 py-2 bg-blue-600 text-black rounded-md hover:bg-blue-700 transition ${className}`}
 //       onClick={onClick}
 //     >
 //       {children}
