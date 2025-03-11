@@ -3,11 +3,11 @@ import Carousel from './Carousel';
  
  const ServiceHero = () => {
    return (
-     <div className='flex pt-32 md:flex-row justify-center items-center flex-col-reverse bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] text-white pb-16  md:pl-6 md:mr-0  lg:px-24'>
+     <div className='flex pt-32 md:flex-row justify-center items-center flex-col-reverse bg-gradient-to-br from-white  to-[#88c6e588] text-black pb-16  md:pl-6 md:mr-0  lg:px-24'>
        <div className='md:w-[50%]  w-[100%] p-4 items-center'>
         <div className='mr-6'>
             <h1 className='text-4xl md:text-5xl font-bold leading-tight'>Driving Growth & Innovation for Your Business</h1>
-            <div className='text-lg text-gray-300 mt-4 leading-relaxed'>We provide comprehensive solutions tailored to boost your brand’s visibility, optimize operations, and maximize sales. From expert field sales and merchandising to cutting-edge digital marketing, we help businesses grow with data-driven strategies and seamless execution.</div>
+            <div className='text-lg text-black mt-4 leading-relaxed'>We provide comprehensive solutions tailored to boost your brand’s visibility, optimize operations, and maximize sales. From expert field sales and merchandising to cutting-edge digital marketing, we help businesses grow with data-driven strategies and seamless execution.</div>
             <ul className="mt-6 space-y-2 text-lg">
             <li className="flex items-center gap-2">
               <span className="text-blue-400 text-xl">✔</span> <b> End-to-end business solutions tailored to your needs</b>
