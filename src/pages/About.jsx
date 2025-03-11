@@ -189,7 +189,7 @@ const FoundationPrinciples = () => {
       {/* Vision Section */}
       <div
         ref={visionSectionRef}
-        className={`w-full px-5 py-16 transition-all duration-1000 ${
+        className={`w-full px-5 py-16 border-2 border-gray-400 transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
@@ -253,7 +253,7 @@ const FoundationPrinciples = () => {
       {/* Mission Section */}
       <div
         ref={missionSectionRef}
-        className={`w-full px-5 py-16  transition-all duration-1000 ${
+        className={`w-full px-5 py-16 border-2 border-gray-400  transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
