@@ -61,7 +61,7 @@ const MainNav = () => {
             </div>
             <Link to="/About" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">About Us</Link>
             <Link to="/Contact" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Contact Us</Link>
-            <Link to="/faq" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">FAQ</Link>
+            {/* <Link to="/faq" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">FAQ</Link> */}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -112,7 +112,7 @@ const MainNav = () => {
       </div>
           <Link to="/About" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
           <Link to="/Contact" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
-          <Link to="/faq" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
+          {/* <Link to="/faq" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>FAQ</Link> */}
         </nav>
       </div>
     </>
