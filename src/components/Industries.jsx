@@ -30,8 +30,8 @@ const FlipCard = () => {
               </p>
             </div>
             {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
-              <img src={FMCGIcon1} alt="FMCG" className="w-24 h-24 mb-4" />
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-white shadow-lg border  text-black">
+              <img src={FMCGIcon} alt="FMCG" className="w-24 h-24 mb-4" />
               <p className="text-2xl font-semibold">FMCG</p>
             </div>
           </div>
@@ -48,8 +48,8 @@ const FlipCard = () => {
               </p>
             </div>
             {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
-              <img src={RetailIcon1} alt="Retail" className="w-24 h-24 mb-4" />
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-white shadow-lg border  text-black">
+              <img src={RetailIcon} alt="Retail" className="w-24 h-24 mb-4" />
               <p className="text-2xl font-semibold">Retail</p>
             </div>
           </div>
@@ -66,8 +66,8 @@ const FlipCard = () => {
               </p>
             </div>
             {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
-              <img src={HealthBeautyIcon1} alt="Health and Beauty" className="w-24 h-24 mb-4" />
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-white shadow-lg border  text-black">
+              <img src={HealthBeautyIcon} alt="Health and Beauty" className="w-24 h-24 mb-4" />
               <p className="text-2xl font-semibold">Health and Beauty</p>
             </div>
           </div>
@@ -84,8 +84,8 @@ const FlipCard = () => {
               </p>
             </div>
             {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
-              <img src={ConsumerDurablesIcon1} alt="Consumer Durables" className="w-24 h-24 mb-4" />
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-white shadow-lg border  text-black">
+              <img src={ConsumerDurablesIcon} alt="Consumer Durables" className="w-24 h-24 mb-4" />
               <p className="text-2xl text-center font-semibold px-5">Consumer Durables and Electronics</p>
             </div>  
           </div>
@@ -102,8 +102,8 @@ const FlipCard = () => {
               </p>
             </div>
             {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
-              <img src={BankingIcon1} alt="Banking" className="w-24 h-24 mb-4" />
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-white shadow-lg border  text-black">
+              <img src={BankingIcon} alt="Banking" className="w-24 h-24 mb-4" />
               <p className="text-2xl text-center font-semibold px-5">Banking and Financial Services</p>
             </div>
           </div>
@@ -120,8 +120,8 @@ const FlipCard = () => {
               </p>
             </div>
             {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-purple-900 text-white">
-              <img src={PharmaceuticalsIcon1} alt="Pharmaceuticals" className="w-24 h-24 mb-4" />
+            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-white shadow-lg border  text-black">
+              <img src={PharmaceuticalsIcon} alt="Pharmaceuticals" className="w-24 h-24 mb-4" />
               <p className="text-2xl font-semibold text-center">Health and Pharmaceuticals</p>
             </div>
           </div>
