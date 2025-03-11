@@ -39,12 +39,12 @@ export default function BrandingServices() {
   ]
 
   return (
-    <div className="bg-gradient-to-tl from-purple-900 via-purple-900 to-[#ffd700] ">
-    <div className="min-h-screen text-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-tl from-white to-[#88c6e588] ">
+    <div className="min-h-screen text-black py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto ">
         <div className="text-center mb-16">
           <h2 className="text-6xl font-bold mb-4">Our Process</h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <p className="text-black max-w-2xl mx-auto">
           We follow a structured and result-driven approach to ensure seamless execution and maximum impact for our clients. Our process is designed to deliver customized solutions that align with your business goals.
           </p>
         </div>
@@ -78,13 +78,13 @@ export default function BrandingServices() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white/5 backdrop-blur-sm rounded-lg p-6 hover:bg-white/10 transition-colors duration-300"
+              className="bg-black/5 backdrop-blur-sm rounded-lg p-6 hover:bg-black/10 transition-colors duration-300"
             >
               <div className="flex items-center gap-4 mb-4">
-                <div className="p-3 rounded-full bg-cyan-500/20 text-cyan-400">{service.icon}</div>
+                <div className="p-3 rounded-full bg-cyan-500/20 text-pink-400">{service.icon}</div>
                 <h3 className="text-xl font-semibold">{service.title}</h3>
               </div>
-              <p className="text-gray-300 text-sm leading-relaxed">{service.description}</p>
+              <p className="text-black text-sm leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>

@@ -59,10 +59,10 @@ export default function FeaturedProject() {
               Sales and Merchandising
               </h3>
               
-              <p className="text-amber-950 text-lg">
+              <p className="text-amber-950 text-lg  text-justify">
               Maximize your brand’s presence with expert sales, merchandising, and retail audits. We ensure optimal product placement, asset optimization, and point-of-sale execution.
               </p>
-              <p className="text-amber-950 text-lg">
+              <p className="text-amber-950 text-lg text-justify">
               Enhance customer engagement and drive conversions with data-driven insights.
  </p>
 
@@ -90,10 +90,10 @@ export default function FeaturedProject() {
               Brand Activation & Experiential Marketing
               </h3>
               
-              <p className="text-amber-950 text-lg">
+              <p className="text-amber-950 text-lg text-justify">
               We create immersive brand experiences through ambassador programs, roadshows, and in-store activations to captivate audiences and strengthen brand loyalty. </p>
               
-              <p className="text-amber-950 text-lg">
+              <p className="text-amber-950 text-lg text-justify">
               From product sampling to shopper marketing, we craft experiential campaigns that boost engagement and drive sales. Whether online or offline, every interaction enhances brand perception and builds strong consumer relationships. </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
@@ -135,10 +135,10 @@ export default function FeaturedProject() {
               Market Expansion Services
               </h3>
               
-              <p className="text-amber-950 text-lg">
+              <p className="text-amber-950 text-lg text-justify">
               Our market expansion services offer end-to-end solutions for business growth, including product sourcing, sales, and marketing for a seamless market entry.  </p>
               
-              <p className="text-amber-950 text-lg">
+              <p className="text-amber-950 text-lg text-justify">
               Our solutions optimize supply chain operations, helping businesses reach the right customers and achieve long-term success.</p>
 
               <div className="flex flex-wrap gap-4 pt-4">
@@ -165,10 +165,10 @@ export default function FeaturedProject() {
               Data & Technology
               </h3>
               
-              <p className="text-amber-950 text-lg">
+              <p className="text-amber-950 text-lg text-justify">
               We empower businesses with data-driven intelligence and automation tools to streamline operations and improve decision-making. </p>
               
-              <p className="text-amber-950 text-lg">
+              <p className="text-amber-950 text-lg text-justify">
               By integrating innovation with efficiency, we enable brands to leverage data for smarter, more effective strategies.
 
  </p>
@@ -228,11 +228,11 @@ className=""
               Digital Marketing
               </h3>
               
-              <p className="text-amber-950 text-lg">
+              <p className="text-amber-950 text-lg text-justify">
               Our digital marketing services enhance brand presence through content marketing and social media strategies, helping businesses engage audiences and drive customer interactions. 
               </p>
               
-              <p className="text-amber-950 text-lg">
+              <p className="text-amber-950 text-lg text-justify">
               With a results-driven approach, we ensure businesses stay visible and competitive online. Our tailored strategies generate leads, boost conversions, and maximize digital outreach for long-term success.
 
  </p>
