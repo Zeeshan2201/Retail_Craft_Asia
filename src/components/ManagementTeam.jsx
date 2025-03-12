@@ -48,7 +48,7 @@ function ManagementTeam() {
           </div>
           <p className="mt-4 text-gray-700">{member.shortDescription}</p>
           {/* <Link to={`/about#${member.name === "Jean-Boris ROUX"?'1':'2'}`} className="mt-4 text-base font-medium text-neutral-900 hover:bg-neutral-300">Read More</Link> */}
-          <Link to={`/about#${member.name === "Jean-Boris ROUX" ? '1' : '2'}`} 
+          <Link to={`/MangTeam#${member.name === "Jean-Boris ROUX" ? '1' : '2'}`} 
       className="mt-4 text-base font-medium text-neutral-900 hover:bg-neutral-300">
   Full Bio
 </Link>
