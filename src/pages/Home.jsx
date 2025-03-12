@@ -10,7 +10,7 @@ import HorizontalScroll from "../components/HorizontalScroll"
 
 const Home = () => {
   return (
-    <div >
+    <div className='bg-gray-50'>
       <HeroSection />
       
       <Industries />

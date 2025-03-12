@@ -14,8 +14,8 @@ import PharmaceuticalsIcon from '../assets/Industry/health_pharmacy.svg';
 
 const FlipCard = () => {
   return (
-    <div className='bg-white mb-10'>
-      <h2 className="text-center font-bold md:text-6xl text-4xl mt-15 py-10 ">
+    <div className=' mb-10'>
+      <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-bold md:text-6xl text-4xl mt-15 py-10 ">
         Industries and Sectors
       </h2>
       <div className="flex flex-wrap md:gap-x-[8vw] gap-y-[2vh] justify-evenly md:px-32 px-4">
@@ -23,7 +23,7 @@ const FlipCard = () => {
         <div className="md:h-[40vh] md:w-[20vw] h-[40vh] w-[88vw] md:m-4 md:mx-auto perspective-[1000px] cursor-pointer group">
           <div className="relative md:w-[20vw] md:h-[40vh] h-[40vh] w-[88vw] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
             {/* Back Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
+            <div className="absolute bg w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
               <img src={FMCGIcon} alt="FMCG" className="w-24 h-24 mb-4" />
               <p className="text-lg text-center px-2">
                 FMCG (Fast-Moving Consumer Goods) refers to products that are sold quickly and at relatively low cost.

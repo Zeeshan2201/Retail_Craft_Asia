@@ -40,7 +40,7 @@ const MainNav = () => {
               </Link>
               {/* Dropdown */}
               <div
-                className={`absolute bg-purple-900 left-0 w-56 top-full mt-1 z-50 shadow-lg transition-all duration-300 ease-in-out ${
+                className={`absolute bg-gray-100 left-0 w-56 top-full mt-1 z-50 shadow-lg transition-all duration-300 ease-in-out ${
                   activeDropdown === "services" ? "opacity-100" : "opacity-0 pointer-events-none"
                 }`}
               >
