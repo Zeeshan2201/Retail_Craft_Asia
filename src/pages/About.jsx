@@ -11,12 +11,9 @@ import collaborationImage from "../assets/collaboration.svg";
 import empowermentImage from "../assets/empowerment.svg";
 import sustainabilityImage from "../assets/sustainability.svg";
  // Add a background image for the "Who We Are" section
-import MangTeam from "../components/MangTeam"
 // Import SVG images for Vision and Mission
 import visionSvg from "../assets/vision.svg"; // Replace with your SVG file path
 import missionSvg from "../assets/mission.svg"; // Replace with your SVG file path
-import TeamMemberDetail from "../components/TeamMemberDetail";
-import About from "../assets/About/About.jpeg"
 
 const FoundationPrinciples = () => {
   const principles = [
@@ -275,9 +272,6 @@ const FoundationPrinciples = () => {
           />
         </div>
       </div>
-
-      {/* <TeamMemberDetail /> */}
-      <MangTeam/>
     </div>
   );
 };

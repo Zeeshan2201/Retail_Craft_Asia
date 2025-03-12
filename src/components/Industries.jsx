@@ -1,15 +1,10 @@
 import React from 'react';
-import FMCGIcon1 from '../assets/Industry/fmcg1.svg'; // Replace with actual paths to your SVGs
+// Replace with actual paths to your SVGs
 import FMCGIcon from '../assets/Industry/fmcg.svg'; // Replace with actual paths to your SVGs
 import RetailIcon from '../assets/Industry/retail.svg';
-import RetailIcon1 from '../assets/Industry/retail1.svg';
 import HealthBeautyIcon from '../assets/Industry/health.svg';
-import HealthBeautyIcon1 from '../assets/Industry/health1.svg';
 import ConsumerDurablesIcon from '../assets/Industry/Electronic.svg';
-import ConsumerDurablesIcon1 from '../assets/Industry/Electronic1.svg';
 import BankingIcon from '../assets/Industry/account_balance.svg';
-import BankingIcon1 from '../assets/Industry/account_balance1.svg';
-import PharmaceuticalsIcon1 from '../assets/Industry/health_pharmacy1.svg';
 import PharmaceuticalsIcon from '../assets/Industry/health_pharmacy.svg';
 
 const FlipCard = () => {

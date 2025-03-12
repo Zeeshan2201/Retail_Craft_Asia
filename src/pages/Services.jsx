@@ -18,10 +18,10 @@ const Services = () => {
         {/* <h2 className="text-white  uppercase tracking-wider mb-4 text-6xl font-bold">
         Our Services
         </h2> */}
-        <h2 className="text-black  text-5xl md:text-6xl font-bold mb-6">
+        <h2 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700  text-5xl md:text-6xl font-bold mb-6">
         Our Services
         </h2>
-        <p className="text-gray-700 text-xl max-w-3xl mx-auto">
+        <p className="text-black text-xl max-w-3xl mx-auto">
         We transform businesses with tailored, data-driven solutions in sales, marketing, and technology to drive growth, optimize operations, and enhance customer engagement.
         </p>
      <FeaturedProject/>
