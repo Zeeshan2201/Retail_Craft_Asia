@@ -97,9 +97,9 @@ const ContactCards = () => {
 
   
   return (
-    <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6  ">
+    <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6  bg-blue-100 ">
       <div className="text-center mb-10 mt-20 ">
-        <h2 className="text-4xl uppercase font-bold text-black sm:text-5xl">How can Retail Craft Asia customer support help you today?</h2>
+        <h2 className="text-4xl uppercase font-bold text-black sm:text-5xl ">How can Retail Craft Asia customer support help you today?</h2>
         <p className="text-black mt-5 text-lg sm:text-2xl">Our friendly customer support team is ready & excited to help with any issue!</p>
       </div>
       
