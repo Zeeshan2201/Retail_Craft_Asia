@@ -6,6 +6,8 @@ export default {
   ],
   theme: {
     extend: {
+
+    
       animation: {
         blink: "blink 1s infinite",
         "horizontal-scroll": "horizontal-scroll 1s infinite",
