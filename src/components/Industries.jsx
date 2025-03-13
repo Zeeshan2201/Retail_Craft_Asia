@@ -17,21 +17,21 @@ const industries = [
 
 const IndustryCard = ({ icon, title, description }) => {
   return (
-    <div className='bg-gradient-to-b from-[#FDFBF5] to-white shadow-lg rounded-2xl p-8 w-85 text-center border border-gray-200 transform transition duration-300 hover:scale-105 hover:shadow-2xl'>
-      <div className='bg-[#B89C65] p-5 rounded-full w-28 h-28 mx-auto flex items-center justify-center'>
+    <div className='bg-gradient-to-b from-blue-50 to-white shadow-xl rounded-2xl p-8 w-85 text-center border transform transition duration-300 hover:scale-105 hover:shadow-2xl'>
+      <div className='bg-blue-100 p-4 rounded-full w-28 h-28 mx-auto flex items-center justify-center'>
         <img src={icon} alt={title} className='w-16 h-16' />
       </div>
-      <h3 className='text-3xl font-bold mt-4 text-black'>{title}</h3>
-      <p className='text-lg text-gray-700 mt-3 leading-relaxed'>{description}</p>
+      <h3 className='text-2xl font-bold mt-4 text-gray-800'>{title}</h3>
+      <p className='text-gray-600 mt-3 leading-relaxed'>{description}</p>
     </div>
   );
 };
 
 const IndustriesGrid = () => {
   return (
-    <div className='py-12 text-center'>
-      <h2 className='text-5xl font-bold text-[#B89C65] mb-10'>Industries and Sectors</h2>
-      <div className='grid md:grid-cols-3 gap-10 px-6 justify-center'>
+    <div className='py-10 text-center'>
+      <h2 className='text-4xl font-bold text-gray-800 mb-8'>Industries and Sectors</h2>
+      <div className='grid md:grid-cols-3 gap-8 px-6 justify-center'>
         {industries.map((industry, index) => (
           <IndustryCard key={index} {...industry} />
         ))}

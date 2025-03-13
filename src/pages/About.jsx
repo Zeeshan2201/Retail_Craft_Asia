@@ -10,18 +10,12 @@ import empowermentImage from "../assets/empowerment.svg";
 import sustainabilityImage from "../assets/sustainability.svg";
 import img from "../assets/About/img.png"
 
-<<<<<<< HEAD
-import MangTeam from "../components/MangTeam";
-import visionSvg from "../assets/vision.svg";
-import missionSvg from "../assets/mission.svg";
-=======
 // import visionSvg from "../assets/vision.svg";
 // import missionSvg from "../assets/mission.svg";
  // Add a background image for the "Who We Are" section
 // Import SVG images for Vision and Mission
 import visionSvg from "../assets/vision.svg"; // Replace with your SVG file path
 import missionSvg from "../assets/mission.svg"; // Replace with your SVG file path
->>>>>>> 6a061beb081bde549e871e7d345e220ee09aa3ff
 
 const FoundationPrinciples = () => {
   const principles = [
