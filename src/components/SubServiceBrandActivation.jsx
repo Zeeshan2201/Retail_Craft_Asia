@@ -51,8 +51,8 @@
 //         {/* <Link to="/contact" className="mt-8 bg-gradient-to-r from-blue-900 to-purple-500  text-white  text-lg  text-bold rounded px-4 py-3 hover:text-xl hover:px-4 hover:py-3  ">Get in Touch →</Link> */}
 //         <Link
 //           to="/contact"
-//           className="px-6 py-3 rounded shadow-lg text-[#121212] font-bold 
-//                      bg-gradient-to-r from-[#D4AF37] to-[#B8860B] transition-all duration-300 
+//           className="px-6 py-3 rounded shadow-lg text-[#121212] font-bold
+//                      bg-gradient-to-r from-[#D4AF37] to-[#B8860B] transition-all duration-300
 //                    hover:from-[#8B6F47] hover:to-[#C0A080] hover:shadow-xl"
 //         >
 //           Get in Touch →
@@ -72,8 +72,8 @@
 //       /> */}
 
 //       <section
-//         className="container mx-auto grid gap-8 px-4 py-16 text-white 
-//                     md:grid-cols-2 md:items-center 
+//         className="container mx-auto grid gap-8 px-4 py-16 text-white
+//                     md:grid-cols-2 md:items-center
 //                     bg-gradient-to-r-[#EEF1FF]  "
 //       >
 //         <div className="relative flex justify-center mb-20 items-center md:h-[400px] h-[300px] overflow-hidden rounded-lg ">
@@ -92,25 +92,24 @@
 //         </div>
 //         {/* Card Effect for Text Side */}
 //         <div
-//           className="group relative flex justify-center items-center  mx-auto  
-//              bg-gradient-to-br from-[#D4AF37] via-[#B8860B] to-[#8B6F47]  
-//              rounded-xl shadow-lg transition-all duration-500 ease-in-out  
+//           className="group relative flex justify-center items-center  mx-auto
+//              bg-gradient-to-br from-[#D4AF37] via-[#B8860B] to-[#8B6F47]
+//              rounded-xl shadow-lg transition-all duration-500 ease-in-out
 //              hover:shadow-2xl hover:scale-105 hover:-translate-y-3 hover:from-[#8B6F47] hover:to-[#D4AF37]"
-           
 
 //         >
 //           {/* Tilted Background Card */}
 
 //           {/* <div
-//             className="absolute top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-gray-300 rounded-lg transform skew-x-12 
-//             transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)] 
+//             className="absolute top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-gray-300 rounded-lg transform skew-x-12
+//             transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]
 //             animate-floating"
 //             style={{ background: `linear-gradient(315deg, #8B1E3F, #C9A063)` }}
 //           ></div> */}
 //           {/* Blurred Tilted Background Card */}
 //           {/* <div
-//             className="absolute top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50 
-//             transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)] 
+//             className="absolute top-[-50px] left-10 w-[50%] h-[calc(100%+100px)] bg-white rounded-lg transform skew-x-12 blur-xl opacity-50
+//             transition-all duration-500 group-hover:skew-x-0 group-hover:left-5 group-hover:w-[calc(100%-40px)]
 //             animate-pulse"
 //             style={{ background: `linear-gradient(315deg, #8B1E3F, #C9A063)` }}
 //           ></div> */}
@@ -162,9 +161,9 @@
 
 //       <section className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto  gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l bg-indigo-100">
 //         {/* Card Effect for Text Side */}
-//         <div className="group relative flex justify-center items-center ml-10 mx-auto  
-//              bg-gradient-to-br from-[#D4AF37] via-[#B8860B] to-[#8B6F47]  
-//              rounded-xl shadow-lg transition-all duration-500 ease-in-out  
+//         <div className="group relative flex justify-center items-center ml-10 mx-auto
+//              bg-gradient-to-br from-[#D4AF37] via-[#B8860B] to-[#8B6F47]
+//              rounded-xl shadow-lg transition-all duration-500 ease-in-out
 //              hover:shadow-2xl hover:scale-105 hover:-translate-y-3 hover:from-[#8B6F47] hover:to-[#D4AF37]">
 //           {/* Tilted Background Card */}
 //            {/* <div
@@ -251,9 +250,9 @@
 //           />
 //         </div>
 //         {/* Card Effect for Text Side */}
-//         <div className="group relative flex justify-center items-center  mx-auto  
-//              bg-gradient-to-br from-[#D4AF37] via-[#B8860B] to-[#8B6F47]  
-//              rounded-xl shadow-lg transition-all duration-500 ease-in-out  
+//         <div className="group relative flex justify-center items-center  mx-auto
+//              bg-gradient-to-br from-[#D4AF37] via-[#B8860B] to-[#8B6F47]
+//              rounded-xl shadow-lg transition-all duration-500 ease-in-out
 //              hover:shadow-2xl hover:scale-105 hover:-translate-y-3 hover:from-[#8B6F47] hover:to-[#D4AF37]">
 //           {/* Tilted Background Card */}
 //           {/* <div
@@ -311,9 +310,9 @@
 
 //       <section className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto  gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center bg-gradient-to-l bg-indigo-100">
 //         {/* Card Effect for Text Side */}
-//         <div className="group relative flex justify-center items-center ml-10 mx-auto  
-//              bg-gradient-to-br from-[#D4AF37] via-[#B8860B] to-[#8B6F47]  
-//              rounded-xl shadow-lg transition-all duration-500 ease-in-out  
+//         <div className="group relative flex justify-center items-center ml-10 mx-auto
+//              bg-gradient-to-br from-[#D4AF37] via-[#B8860B] to-[#8B6F47]
+//              rounded-xl shadow-lg transition-all duration-500 ease-in-out
 //              hover:shadow-2xl hover:scale-105 hover:-translate-y-3 hover:from-[#8B6F47] hover:to-[#D4AF37]">
 //           {/* Tilted Background Card */}
 //           {/* <div
@@ -398,9 +397,9 @@
 //           />
 //         </div>
 //         {/* Card Effect for Text Side */}
-//         <div className="group relative flex justify-center items-center  mx-auto  
-//              bg-gradient-to-br from-[#D4AF37] via-[#B8860B] to-[#8B6F47]  
-//              rounded-xl shadow-lg transition-all duration-500 ease-in-out  
+//         <div className="group relative flex justify-center items-center  mx-auto
+//              bg-gradient-to-br from-[#D4AF37] via-[#B8860B] to-[#8B6F47]
+//              rounded-xl shadow-lg transition-all duration-500 ease-in-out
 //              hover:shadow-2xl hover:scale-105 hover:-translate-y-3 hover:from-[#8B6F47] hover:to-[#D4AF37]">
 //           {/* Tilted Background Card */}
 //           {/* <div
@@ -450,7 +449,7 @@
 // }
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaBullhorn, FaUsers, FaStore, FaGift, FaCalendarAlt } from "react-icons/fa";
+import { FaUsers, FaStore, FaChartLine, FaCalendarAlt } from "react-icons/fa";
 import BackgroundAnimation from "../components/BackgroundAnimation";
 
 const services = [
@@ -461,7 +460,7 @@ const services = [
       "Builds long-term customer relationships through personal engagement.",
       "Boosts credibility and visibility in target markets.",
     ],
-    icon: <FaUsers size={60} className="text-yellow-500" />, 
+    icon: <FaUsers size={60} className="text-yellow-500" />,
   },
   {
     title: "Events & Road Shows",
@@ -470,7 +469,7 @@ const services = [
       "Increases brand awareness in high-footfall locations.",
       "Provides real-time feedback and consumer interaction opportunities.",
     ],
-    icon: <FaCalendarAlt size={60} className="text-yellow-500" />, 
+    icon: <FaCalendarAlt size={60} className="text-yellow-500" />,
   },
   {
     title: "Sampling",
@@ -479,7 +478,7 @@ const services = [
       "Helps in generating word-of-mouth marketing and customer reviews.",
       "Drives sales conversion by reducing purchase hesitation.",
     ],
-    icon: <FaGift size={60} className="text-yellow-500" />, 
+    icon: <FaChartLine size={60} className="text-yellow-500" />,
   },
   {
     title: "Shopper Marketing",
@@ -488,7 +487,7 @@ const services = [
       "Uses in-store promotions, displays, and personalized offers.",
       "Enhances customer shopping experience and increases basket value.",
     ],
-    icon: <FaStore size={60} className="text-yellow-500" />, 
+    icon: <FaStore size={60} className="text-yellow-500" />,
   },
 ];
 
@@ -500,7 +499,11 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
         <h1 className="text-5xl font-bold text-black mt-7">
-          Brand <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-700 drop-shadow-md">Activation</span> & Experiential Marketing
+          Brand{" "}
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-700 drop-shadow-md">
+            Activation
+          </span>{" "}
+          & Experiential Marketing
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg text-black">
           We create immersive brand experiences that engage consumers and leave
@@ -509,7 +512,7 @@ export default function ServicesPage() {
 
         <Link
           to="/contact"
-          className="mt-8 inline-block bg-gradient-to-r from-yellow-500 to-yellow-700 text-black px-8 py-3 rounded shadow-sm transition-all duration-300 hover:from-yellow-400 hover:to-yellow-600 hover:shadow-md"
+          className="mt-8 inline-block bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-700 text-black px-8 py-3 rounded shadow-sm transition-all duration-300 from-yellow-400  to-yellow-600 hover:shadow-md"
         >
           Get in Touch →
         </Link>
@@ -531,7 +534,9 @@ export default function ServicesPage() {
               </h2>
               <ul className="text-black space-y-2 text-left">
                 {service.description.map((point, idx) => (
-                  <li key={idx} className="leading-relaxed">• {point}</li>
+                  <li key={idx} className="leading-relaxed">
+                    • {point}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -541,4 +546,3 @@ export default function ServicesPage() {
     </main>
   );
 }
-

@@ -81,12 +81,11 @@ export default function ServicesPage() {
           We help brands maximize their market presence by ensuring the right
           products are available at the right time and place.
         </p>
-       
 
         <Link
           to="/contact"
-          className="mt-8 inline-block bg-blue-600 text-white px-8 py-3 rounded shadow-lg transition-all duration-300 
-             hover:bg-gradient-to-r hover:from-purple-500 hover:to-teal-400 hover:scale-105"
+          className="mt-8 inline-block bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-700 text-black px-8 py-3 rounded shadow-sm transition-all duration-300 from-yellow-400  to-yellow-600 hover:shadow-md 
+             "
         >
           Speak with Our Experts →
         </Link>

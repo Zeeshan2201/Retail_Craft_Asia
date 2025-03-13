@@ -320,117 +320,15 @@
 //   );
 // }
 
-import React from "react";
-import { Link } from "react-router-dom";
-import Lottie from "react-lottie";
-import BackgroundAnimation from "../components/BackgroundAnimation";
-
-import GIF_1 from "../animation/Data_Technology/GIF_1/animations/de1f599d-57f5-4f97-868b-e6b14e39db48.json";
-import GIF_6 from "../animation/Data_Technology/GIF_6.json";
-import GIF_3 from "../animation/Data_Technology/GIF_3/animations/7739e827-9992-4c54-a610-49bacaa2605a.json";
-import GIF_7 from "../animation/Data_Technology/GIF_7.json";
-
-const services = [
-  {
-    title: "Data & Operational Intelligence",
-    description: [
-      "Analyzes business operations to improve efficiency",
-      "Uses real-time insights to optimize processes",
-      "Enhances productivity and reduces operational costs",
-    ],
-    animation: GIF_1,
-  },
-  {
-    title: "Sales Force Automation Tools",
-    description: [
-      "Streamlines sales processes with technology-driven solutions",
-      "Improves sales tracking, reporting, and performance",
-      "Enhances field sales efficiency and customer engagement",
-    ],
-    animation: GIF_6,
-  },
-  {
-    title: "Learning & Development Modules",
-    description: [
-      "Provides training programs for skill development",
-      "Enhances employee productivity and business performance",
-      "Covers leadership, sales, and customer service training",
-    ],
-    animation: GIF_3,
-  },
-  {
-    title: "CRM Solutions",
-    description: [
-      "Manages customer relationships effectively",
-      "Automates interactions and tracks customer journeys",
-      "Improves customer retention and engagement",
-    ],
-    animation: GIF_7,
-  },
-];
-
-export default function ServicesPage() {
-  return (
-    <main className="min-h-screen bg-sky-50 text-gray-900">
-      <BackgroundAnimation />
-
-      {/* Hero Section */}
-      <section className="container mx-auto px-6 py-20 text-center">
-        <h1 className="text-5xl font-bold text-blue-700 mt-7">Data & Technology</h1>
-        <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-700">
-          We leverage cutting-edge technology to optimize business operations and decision-making.
-        </p>
-        <Link
-          to="/contact"
-          className="mt-8 inline-block bg-blue-600 text-white px-8 py-3 rounded shadow-lg transition-all duration-300
-             hover:bg-gradient-to-r hover:from-purple-500 hover:to-teal-400 hover:scale-105"
-        >
-          Get in Touch →
-        </Link>
-      </section>
-
-      {/* Services Section */}
-      <section className="container mx-auto px-6 py-16 grid gap-12 md:grid-cols-2">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-lg border-t-4 border-yellow-500 transition duration-300 hover:shadow-yellow-100"
-          >
-            <div className="w-48 h-48 mb-6 md:mb-0">
-              <Lottie
-                options={{
-                  loop: true,
-                  autoplay: true,
-                  animationData: service.animation,
-                }}
-                height={180}
-                width={180}
-              />
-            </div>
-            <div className="md:ml-6">
-              <h2 className="text-2xl font-bold text-blue-700">{service.title}</h2>
-              <ul className="mt-2 text-gray-600">
-                {service.description.map((point, idx) => (
-                  <li key={idx} className="mt-1">• {point}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        ))}
-      </section>
-    </main>
-  );
-}
-
 // import React from "react";
 // import { Link } from "react-router-dom";
-// import {
-//   FaChartLine,
-//   FaTools,
-//   FaChalkboardTeacher,
-//   FaUsers,
-// } from "react-icons/fa";
+// import Lottie from "react-lottie";
 // import BackgroundAnimation from "../components/BackgroundAnimation";
+
+// import GIF_1 from "../animation/Data_Technology/GIF_1/animations/de1f599d-57f5-4f97-868b-e6b14e39db48.json";
+// import GIF_6 from "../animation/Data_Technology/GIF_6.json";
+// import GIF_3 from "../animation/Data_Technology/GIF_3/animations/7739e827-9992-4c54-a610-49bacaa2605a.json";
+// import GIF_7 from "../animation/Data_Technology/GIF_7.json";
 
 // const services = [
 //   {
@@ -440,7 +338,7 @@ export default function ServicesPage() {
 //       "Uses real-time insights to optimize processes",
 //       "Enhances productivity and reduces operational costs",
 //     ],
-//     icon: <FaChartLine className="text-yellow-500 text-6xl" />,
+//     animation: GIF_1,
 //   },
 //   {
 //     title: "Sales Force Automation Tools",
@@ -449,7 +347,7 @@ export default function ServicesPage() {
 //       "Improves sales tracking, reporting, and performance",
 //       "Enhances field sales efficiency and customer engagement",
 //     ],
-//     icon: <FaTools className="text-yellow-500 text-6xl" />,
+//     animation: GIF_6,
 //   },
 //   {
 //     title: "Learning & Development Modules",
@@ -458,7 +356,7 @@ export default function ServicesPage() {
 //       "Enhances employee productivity and business performance",
 //       "Covers leadership, sales, and customer service training",
 //     ],
-//     icon: <FaChalkboardTeacher className="text-yellow-500 text-6xl" />,
+//     animation: GIF_3,
 //   },
 //   {
 //     title: "CRM Solutions",
@@ -467,7 +365,7 @@ export default function ServicesPage() {
 //       "Automates interactions and tracks customer journeys",
 //       "Improves customer retention and engagement",
 //     ],
-//     icon: <FaUsers className="text-yellow-500 text-6xl" />,
+//     animation: GIF_7,
 //   },
 // ];
 
@@ -478,14 +376,14 @@ export default function ServicesPage() {
 
 //       {/* Hero Section */}
 //       <section className="container mx-auto px-6 py-20 text-center">
-//       <h1 className="text-5xl font-bold text-blue-600 mt-7 drop-shadow-[2px_2px_4px_rgba(255,215,0,0.5)]">Data & Technology</h1>
-//         <p className="mt-6 max-w-3xl mx-auto text-lg text-black">
-//           We leverage cutting-edge technology to optimize business operations
-//           and decision-making.
+//         <h1 className="text-5xl font-bold text-blue-700 mt-7">Data & Technology</h1>
+//         <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-700">
+//           We leverage cutting-edge technology to optimize business operations and decision-making.
 //         </p>
 //         <Link
 //           to="/contact"
-//           className="mt-8 inline-block bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-700 text-black px-8 py-3 rounded shadow-sm transition-all duration-300 from-yellow-400  to-yellow-600 hover:shadow-md"
+//           className="mt-8 inline-block bg-blue-600 text-white px-8 py-3 rounded shadow-lg transition-all duration-300
+//              hover:bg-gradient-to-r hover:from-purple-500 hover:to-teal-400 hover:scale-105"
 //         >
 //           Get in Touch →
 //         </Link>
@@ -496,20 +394,24 @@ export default function ServicesPage() {
 //         {services.map((service, index) => (
 //           <div
 //             key={index}
-//             className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-lg border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-yellow-100"
+//             className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-lg border-t-4 border-yellow-500 transition duration-300 hover:shadow-yellow-100"
 //           >
-//             <div className="w-48 h-48 mb-6 md:mb-0 flex items-center justify-center">
-//               {service.icon}
+//             <div className="w-48 h-48 mb-6 md:mb-0">
+//               <Lottie
+//                 options={{
+//                   loop: true,
+//                   autoplay: true,
+//                   animationData: service.animation,
+//                 }}
+//                 height={180}
+//                 width={180}
+//               />
 //             </div>
 //             <div className="md:ml-6">
-//               <h2 className="text-2xl font-bold text-blue-700">
-//                 {service.title}
-//               </h2>
-//               <ul className="mt-2 text-black">
+//               <h2 className="text-2xl font-bold text-blue-700">{service.title}</h2>
+//               <ul className="mt-2 text-gray-600">
 //                 {service.description.map((point, idx) => (
-//                   <li key={idx} className="mt-1">
-//                     • {point}
-//                   </li>
+//                   <li key={idx} className="mt-1">• {point}</li>
 //                 ))}
 //               </ul>
 //             </div>
@@ -519,3 +421,101 @@ export default function ServicesPage() {
 //     </main>
 //   );
 // }
+
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  FaChartLine,
+  FaTools,
+  FaChalkboardTeacher,
+  FaUsers,
+} from "react-icons/fa";
+import BackgroundAnimation from "../components/BackgroundAnimation";
+
+const services = [
+  {
+    title: "Data & Operational Intelligence",
+    description: [
+      "Analyzes business operations to improve efficiency",
+      "Uses real-time insights to optimize processes",
+      "Enhances productivity and reduces operational costs",
+    ],
+    icon: <FaChartLine className="text-yellow-500 text-6xl" />,
+  },
+  {
+    title: "Sales Force Automation Tools",
+    description: [
+      "Streamlines sales processes with technology-driven solutions",
+      "Improves sales tracking, reporting, and performance",
+      "Enhances field sales efficiency and customer engagement",
+    ],
+    icon: <FaTools className="text-yellow-500 text-6xl" />,
+  },
+  {
+    title: "Learning & Development Modules",
+    description: [
+      "Provides training programs for skill development",
+      "Enhances employee productivity and business performance",
+      "Covers leadership, sales, and customer service training",
+    ],
+    icon: <FaChalkboardTeacher className="text-yellow-500 text-6xl" />,
+  },
+  {
+    title: "CRM Solutions",
+    description: [
+      "Manages customer relationships effectively",
+      "Automates interactions and tracks customer journeys",
+      "Improves customer retention and engagement",
+    ],
+    icon: <FaUsers className="text-yellow-500 text-6xl" />,
+  },
+];
+
+export default function ServicesPage() {
+  return (
+    <main className="min-h-screen bg-sky-50 text-gray-900">
+      <BackgroundAnimation />
+
+      {/* Hero Section */}
+      <section className="container mx-auto px-6 py-20 text-center">
+      <h1 className="text-5xl font-bold text-blue-600 mt-7 drop-shadow-[2px_2px_4px_rgba(255,215,0,0.5)]">Data & Technology</h1>
+        <p className="mt-6 max-w-3xl mx-auto text-lg text-black">
+          We leverage cutting-edge technology to optimize business operations
+          and decision-making.
+        </p>
+        <Link
+          to="/contact"
+          className="mt-8 inline-block bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-700 text-black px-8 py-3 rounded shadow-sm transition-all duration-300 from-yellow-400  to-yellow-600 hover:shadow-md"
+        >
+          Get in Touch →
+        </Link>
+      </section>
+
+      {/* Services Section */}
+      <section className="container mx-auto px-6 py-16 grid gap-12 md:grid-cols-2">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-lg border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-yellow-100"
+          >
+            <div className="w-48 h-48 mb-6 md:mb-0 flex items-center justify-center">
+              {service.icon}
+            </div>
+            <div className="md:ml-6">
+              <h2 className="text-2xl font-bold text-blue-700">
+                {service.title}
+              </h2>
+              <ul className="mt-2 text-black">
+                {service.description.map((point, idx) => (
+                  <li key={idx} className="mt-1">
+                    • {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </section>
+    </main>
+  );
+}
