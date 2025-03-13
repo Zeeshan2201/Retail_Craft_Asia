@@ -8,11 +8,18 @@ import entrepreneurshipImage from "../assets/entrepreneurship.svg";
 import collaborationImage from "../assets/collaboration.svg";
 import empowermentImage from "../assets/empowerment.svg";
 import sustainabilityImage from "../assets/sustainability.svg";
+<<<<<<< HEAD
 import img from "../assets/About/img.png"
 
 import MangTeam from "../components/MangTeam";
 import visionSvg from "../assets/vision.svg";
 import missionSvg from "../assets/mission.svg";
+=======
+ // Add a background image for the "Who We Are" section
+// Import SVG images for Vision and Mission
+import visionSvg from "../assets/vision.svg"; // Replace with your SVG file path
+import missionSvg from "../assets/mission.svg"; // Replace with your SVG file path
+>>>>>>> 30f0d7a97076458815af1092d980d2bde49a3d05
 
 const FoundationPrinciples = () => {
   const principles = [
@@ -132,6 +139,7 @@ const FoundationPrinciples = () => {
           </div>
           <img src={missionSvg} alt="Mission" className="w-64 transition-transform hover:scale-110" />
         </div>
+<<<<<<< HEAD
       </div> */}
       <div className="w-full py-20 bg-gradient-to-b from-blue-50 to-white relative flex flex-col items-center text-center px-5">
       {/* Animated Heading */}
@@ -244,6 +252,9 @@ const FoundationPrinciples = () => {
 
 
       <MangTeam />
+=======
+      </div>
+>>>>>>> 30f0d7a97076458815af1092d980d2bde49a3d05
     </div>
   );
 };

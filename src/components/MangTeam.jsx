@@ -1,14 +1,15 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ChevronDown, ChevronUp, Linkedin, Award, Briefcase } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Link, useLocation } from 'react-router-dom';
+import { Linkedin, Award, Briefcase } from "lucide-react"
+import { motion } from "framer-motion"
+import { useLocation } from 'react-router-dom'
 
 const teamMembers = [
   {
     id: 1,
     name: "Jean-Boris ROUX",
+    role: "Leader",
     shortBio:
       "A seasoned leader with over 25 years of diverse experience spanning distribution, hospitality, FMCG, and retail industries across Europe and Asia.",
     fullDescription: `Jean-Boris ROUX, aka "JB", is a seasoned leader with over 25 years of diverse experience spanning distribution, hospitality, FMCG, and retail industries across Europe and Asia. His career has allowed him to work with some of the world's most prestigious companies, where he gained invaluable expertise in strategic growth, operational excellence, and market expansion.
@@ -56,35 +57,26 @@ Outside work, he is an avid traveler and has explored over 40 countries.`,
 ]
 
 const TeamMemberDetail = () => {
-  const [expandedId, setExpandedId] = useState()
-// const [state, setstate] = useState(initialState);
-  const toggleExpand = (id) => {
-    setExpandedId(expandedId === id ? null : id)
-  }
-
-  const location = useLocation();
+  const location = useLocation()
 
   useEffect(() => {
     if (location.hash) {
-      const id = location.hash.replace("#", ""); // Remove #
-      const element = document.getElementById(id);
+      const id = location.hash.replace("#", "") // Remove #
+      const element = document.getElementById(id)
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: "smooth" })
       }
     }
-  }, [location]);
+  }, [location])
+
   return (
-    <section  style={{
-        // background: "linear-gradient(to bottom, #581c87 0%, #581c87 10%, #581c87 95%, white 100%)"
-      }} className="py-20 ">
-        {/* bg-gradient-to-b from-purple-900 to-purple-800 */}
-    <div className="container mx-auto px-4 mb-10">
+    <section className="py-20 bg-gradient-to-br from-[#d9e0fc] to-white">
+      <div className="container mx-auto px-4 mb-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-black inline-block relative">
-            Meet Our  Leadership Team
-            {/* <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-yellow-400 rounded-full"></span> */}
+          <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-bold md:text-6xl text-4xl mt-15 py-10 inline-block relative">
+            Meet Our Leadership Team
           </h2>
-          <p className="text-black text-lg max-w-2xl mx-auto mt-6">
+          <p className="text-black text-2xl max-w-2xl mx-auto mt-6">
             Visionary leaders with decades of experience, driving innovation and excellence across global markets.
           </p>
         </div>
@@ -98,11 +90,11 @@ const TeamMemberDetail = () => {
               viewport={{ once: true }}
               key={member.id}
               id={member.id}
-              className="bg-white rounded-2xl shadow-xl overflow-hidden"
+              className="bg-[#EEF1FF] rounded-2xl shadow-lg overflow-hidden"
             >
               <div className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}>
                 {/* Image Section */}
-                <div className="w-full lg:w-1/3  p-8 flex flex-col items-center justify-center">
+                <div className="w-full lg:w-1/3 p-8 flex flex-col items-center justify-center">
                   <div className="relative">
                     <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
                       <img
@@ -111,22 +103,22 @@ const TeamMemberDetail = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="absolute -bottom-2 -right-2 bg-yellow-400 rounded-full p-2 shadow-lg">
-                      <a href={member.linkedin} className="text-black hover:text-purple-700 transition-colors">
+                    <div className="absolute -bottom-2 -right-2 bg-blue-500 rounded-full p-2 shadow-lg">
+                      <a href={member.linkedin} className="text-white hover:text-blue-200 transition-colors">
                         <Linkedin className="w-6 h-6" />
                       </a>
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-black mt-6 text-center">{member.name}</h3>
+                  <h3 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-bold text-2xl  mt-15 pt-10 inline-block relative">{member.name}</h3>
                   <div className="flex items-center mt-2 mb-4">
-                    <Briefcase className="w-4 h-4 text-black mr-2" />
-                    <p className="text-black md:text-lg font-medium">{member.role}</p>
+                    <Briefcase className="w-4 h-4 text-gray-600 mr-2" />
+                    <p className="text-gray-600 md:text-lg font-medium">{member.role}</p>
                   </div>
                   <div className="mt-4 space-y-2 w-full">
                     {member.highlights.map((highlight, i) => (
                       <div key={i} className="flex items-start">
-                        <Award className="w-5 h-5 text-yellow-400 mr-2 flex-shrink-0 mt-0.5" />
-                        <p className="text-black text-left md:text-base text-sm">{highlight}</p>
+                        <Award className="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-0.5" />
+                        <p className="text-gray-600 text-left md:text-base text-sm">{highlight}</p>
                       </div>
                     ))}
                   </div>
@@ -134,44 +126,14 @@ const TeamMemberDetail = () => {
 
                 {/* Content Section */}
                 <div className="w-full lg:w-2/3 p-8 lg:p-12">
-                  <p className="text-lg text-left  text-black font-medium mb-6">{member.shortBio}</p>
-
-                  <AnimatePresence>
-                    {expandedId === member.id && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="overflow-hidden"
-                      >
-                        <div className="prose prose-purple max-w-none">
-                          {member.fullDescription.split("\n\n").map((paragraph, i) => (
-                            <p key={i} className="text-gray-600 text-left mb-4">
-                              {paragraph}
-                            </p>
-                          ))}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-
-                  <button
-                    onClick={() => toggleExpand(member.id)}
-                    className="mt-6 flex items-center text-black hover:text-purple-900 font-medium transition-colors group"
-                  >
-                    {expandedId === member.id ? (
-                      <>
-                        <span>Read Less</span>
-                        <ChevronUp className="ml-2 w-5 h-5 group-hover:-translate-y-1 transition-transform" />
-                      </>
-                    ) : (
-                      <>
-                        <span>Read Full Bio</span>
-                        <ChevronDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
-                      </>
-                    )}
-                  </button>
+                  <p className="text-lg text-left text-gray-600 font-medium mb-6">{member.shortBio}</p>
+                  <div className="prose prose-blue max-w-none">
+                    {member.fullDescription.split("\n\n").map((paragraph, i) => (
+                      <p key={i} className="text-gray-600 text-left mb-4">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -183,4 +145,3 @@ const TeamMemberDetail = () => {
 }
 
 export default TeamMemberDetail
-

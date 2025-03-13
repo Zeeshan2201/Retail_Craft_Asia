@@ -55,7 +55,7 @@ export default function FeaturedProject() {
             </div>
 
             <div className="text-black space-y-6 px-4">
-              <h3 className="text-purple-900 text-3xl md:text-4xl font-bold leading-tight">
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tight">
               Sales and Merchandising
               </h3>
               
@@ -76,7 +76,7 @@ export default function FeaturedProject() {
                 </Link>
                 <Link
                   to="/contact" 
-                  className="md:inline-flex items-center px-6 py-3 border-2 hidden border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
+                  className="md:inline-flex items-center px-6 py-3 border-2 hidden border-yellow-700 text-yellow font-semibold rounded-lg text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
@@ -86,7 +86,7 @@ export default function FeaturedProject() {
           </div>
           <div className="max-w-7xl mx-auto grid grid-flow-dense md:grid-cols-2 grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 items-center mt-10">
             <div className="text-white row-start-2 md:row-start-auto md:col-start-1 space-y-6 px-4">
-              <h3 className="text-purple-900 text-3xl md:text-4xl font-bold leading-tight">
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-tl from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tight">
               Brand Activation & Experiential Marketing
               </h3>
               
@@ -106,7 +106,7 @@ export default function FeaturedProject() {
                 </Link>
                 <Link 
                   to="/contact" 
-                  className="md:inline-flex items-center px-6 py-3 border-2 hidden border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
+                  className="md:inline-flex items-center px-6 py-3 border-2 hidden border-yellow-700 text-yellow font-semibold rounded-lg text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
@@ -131,7 +131,7 @@ export default function FeaturedProject() {
     />
             </div>
             <div className="text-white space-y-6 px-4">
-              <h3 className="text-purple-900 text-3xl md:text-4xl font-bold leading-tight">
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tigh">
               Market Expansion Services
               </h3>
               
@@ -151,7 +151,7 @@ export default function FeaturedProject() {
                 </Link>
                 <Link 
                   to="/contact" 
-                  className="md:inline-flex items-center px-6 py-3 border-2 hidden border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
+                  className="md:inline-flex items-center px-6 py-3 border-2 hidden border-yellow-700 text-yellow font-semibold rounded-lg text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
@@ -161,7 +161,7 @@ export default function FeaturedProject() {
           </div>
           <div  className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center">
           <div className=" row-start-2 md:row-start-auto md:col-start-1 text-white space-y-6 px-4">
-              <h3 className="text-purple-900 text-3xl md:text-4xl font-bold leading-tight">
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tigh">
               Data & Technology
               </h3>
               
@@ -183,7 +183,7 @@ export default function FeaturedProject() {
                 </Link>
                 <Link 
                   to="/contact" 
-                  className="md:inline-flex items-center px-6 py-3 border-2 hidden border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
+                  className="md:inline-flex items-center px-6 py-3 border-2 hidden border-yellow-700 text-yellow font-semibold rounded-lg text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>
@@ -224,7 +224,7 @@ className=""
 />
             </div>
             <div className="text-white space-y-6 px-4 mt-10">
-              <h3 className="text-purple-900 text-3xl md:text-4xl font-bold leading-tight">
+              <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tigh">
               Digital Marketing
               </h3>
               
@@ -247,7 +247,7 @@ className=""
                 </Link>
                 <Link 
                   to="/contact" 
-                  className="md:inline-flex hidden items-center px-6 py-3 border-2 border-purple-900 text-purple-900 font-semibold rounded-lg hover:bg-purple-800 hover:text-white transition-colors"
+                  className="md:inline-flex hidden items-center px-6 py-3 border-2 border-yellow-700 text-yellow font-semibold rounded-lg text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 transition-colors"
                 >
                   Request a Free Consultation
                   <span className="ml-2">→</span>

@@ -16,6 +16,7 @@ import MarketExpansion from './pages/Services/MarketExpansion';
 import DataAndTechnology from './pages/Services/DataAndTechnology';
 import DigitalMarketing from './pages/Services/DigitalMarketing';
 import ScrollToTop from './components/ScrollToTop';
+import MangTeam from './components/MangTeam';
 // import ComingSoon from './pages/CommingSoon';
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/services/MarketExpansion" element={<MarketExpansion/>} />
           <Route path="/services/DataAndTechnology" element={<DataAndTechnology/>} />
           <Route path="/services/DigitalMarketing" element={<DigitalMarketing/>} />
+          <Route path="/MangTeam" element={<MangTeam/>}/>
         </Routes>
         <Footer />
       </Router>
