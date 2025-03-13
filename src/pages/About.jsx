@@ -1,61 +1,26 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../components/Css/about.css";
-
-// Import images for each principle
 import growthImage from "../assets/growth.svg";
 import integrityImage from "../assets/integrity.svg";
 import entrepreneurshipImage from "../assets/entrepreneurship.svg";
 import collaborationImage from "../assets/collaboration.svg";
 import empowermentImage from "../assets/empowerment.svg";
 import sustainabilityImage from "../assets/sustainability.svg";
-import img from "../assets/About/img.png"
+import img from "../assets/About/img.png";
 
-// import visionSvg from "../assets/vision.svg";
-// import missionSvg from "../assets/mission.svg";
- // Add a background image for the "Who We Are" section
-// Import SVG images for Vision and Mission
-import visionSvg from "../assets/vision.svg"; // Replace with your SVG file path
-import missionSvg from "../assets/mission.svg"; // Replace with your SVG file path
+// Import MangTeam if it exists
+ import MangTeam from "../components/MangTeam"; // Uncomment if this component exists
 
 const FoundationPrinciples = () => {
   const principles = [
-    {
-      title: "Growth",
-      description:
-        "Driving innovation and expansion to meet evolving consumer needs.",
-      image: growthImage,
-    },
-    {
-      title: "Integrity",
-      description:
-        "Ensuring transparency, quality, and trust in every product we deliver.",
-      image: integrityImage,
-    },
-    {
-      title: "Entrepreneurship",
-      description:
-        "Encouraging agility and forward-thinking to stay ahead in the market.",
-      image: entrepreneurshipImage,
-    },
-    {
-      title: "Collaboration",
-      description:
-        "Building strong partnerships with suppliers, retailers, and customers.",
-      image: collaborationImage,
-    },
-    {
-      title: "Empowerment",
-      description:
-        "Enabling employees and stakeholders to make impactful decisions.",
-      image: empowermentImage,
-    },
-    {
-      title: "Sustainability",
-      description:
-        "Committed to eco-friendly practices and responsible sourcing.",
-      image: sustainabilityImage,
-    },
+    { title: "Growth", description: "Driving innovation and expansion to meet evolving consumer needs.", image: growthImage },
+    { title: "Integrity", description: "Ensuring transparency, quality, and trust in every product we deliver.", image: integrityImage },
+    { title: "Entrepreneurship", description: "Encouraging agility and forward-thinking to stay ahead in the market.", image: entrepreneurshipImage },
+    { title: "Collaboration", description: "Building strong partnerships with suppliers, retailers, and customers.", image: collaborationImage },
+    { title: "Empowerment", description: "Enabling employees and stakeholders to make impactful decisions.", image: empowermentImage },
+    { title: "Sustainability", description: "Committed to eco-friendly practices and responsible sourcing.", image: sustainabilityImage },
   ];
+
 
   const [expandedCard, setExpandedCard] = useState(null);
   const [isVisionVisible, setIsVisionVisible] = useState(false);
@@ -243,15 +208,11 @@ const FoundationPrinciples = () => {
   </div>
   </div>
 
-<<<<<<< HEAD
 
 
 
       <MangTeam />
     </div>
-=======
- </div>
->>>>>>> 6a061beb081bde549e871e7d345e220ee09aa3ff
   );
 };
 
