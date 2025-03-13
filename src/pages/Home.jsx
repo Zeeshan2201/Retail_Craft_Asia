@@ -4,6 +4,8 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import ManagementTeam from '../components/ManagementTeam';
 import HomeHero from "../components/HomeHero"
 import Industries from '../components/Industries'
+import Home_Service from "../components/Home_Service"
+import Home_2 from "../components/Home_2"
 // import ServicesSlider from '../components/Ser';
 
 import HorizontalScroll from "../components/HorizontalScroll"
@@ -12,6 +14,7 @@ const Home = () => {
   return (
     <div className='bg-gray-50'>
       <HomeHero />
+      <Home_2></Home_2>
       
       <Industries />
      
@@ -19,7 +22,7 @@ const Home = () => {
      <WhyChooseUs/>
      <div className="">
         {/* services */}
-     <HorizontalScroll/> 
+     <Home_Service/> 
      </div>
       <ManagementTeam />
       

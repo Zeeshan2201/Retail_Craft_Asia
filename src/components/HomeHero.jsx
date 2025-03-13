@@ -5,9 +5,9 @@ import { WiCloud } from "react-icons/wi";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex items-center justify-center h-screen bg-gradient-to-r from-blue-50 to-gray-100 text-center px-6 overflow-hidden">
+    <section className="relative flex items-center justify-center h-screen bg-gradient-to-r bg-gray-50 text-center px-6 overflow-hidden">
       <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-10"></div>
-      
+
       {/* Floating Clouds */}
       <motion.div 
         className="absolute top-5 left-5 text-gray-300 text-9xl"
@@ -44,24 +44,26 @@ const HeroSection = () => {
       >
         <WiCloud />
       </motion.div>
-      
+
+      {/* Hero Content */}
       <motion.div 
         initial={{ opacity: 0, y: 20 }} 
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.8 }} 
         className="max-w-4xl relative z-10"
       >
-        <h1 className="text-5xl font-bold text-gray-900 md:text-6xl">
-          Elevate Your Retail Strategy with <span className="text-blue-600">Retail Craft Asia</span>
+        <h1 className="text-5xl font-bold text-[#C8A961] md:text-6xl">
+          Elevate Your Retail Strategy with 
+          <span className="text-[#7A622E]"> Retail Craft Asia</span>
         </h1>
-        <p className="mt-4 text-lg text-gray-700 md:text-xl">
+        <p className="mt-4 text-lg text-gray-800 md:text-xl">
           Expert consulting services to transform your retail business with innovative solutions and insights.
         </p>
         <div className="mt-6 flex justify-center gap-4">
           <motion.button 
             whileHover={{ scale: 1.05 }} 
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md flex items-center gap-2 hover:bg-blue-700 transition"
+            className="px-6 py-3 bg-[#C8A961] text-white font-semibold rounded-lg shadow-md flex items-center gap-2 hover:bg-[#A78A5D] transition"
           >
             Get Started <FaArrowRight />
           </motion.button>

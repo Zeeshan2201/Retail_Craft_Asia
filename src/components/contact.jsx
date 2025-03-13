@@ -97,7 +97,7 @@ const ContactCards = () => {
 
   
   return (
-    <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6  bg-blue-100 ">
+    <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6  bg-gray-50 ">
       <div className="text-center mb-10 mt-20 ">
         <h2 className="text-4xl uppercase font-bold text-black sm:text-5xl ">How can Retail Craft Asia customer support help you today?</h2>
         <p className="text-black mt-5 text-lg sm:text-2xl">Our friendly customer support team is ready & excited to help with any issue!</p>
@@ -105,8 +105,8 @@ const ContactCards = () => {
       
       <div className='mt-5 mb-5 text-black text-2xl sm:text-4xl text-center'>Looking for answers? Try one of these helpful resources:</div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
-        {['Get Appointment', 'Email-Support', 'FAQ'].map((title, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-64 mt-8">
+        {['Get Appointment', 'Email-Support',].map((title, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, scale: 0.8 }}
