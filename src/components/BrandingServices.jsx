@@ -39,11 +39,11 @@ export default function BrandingServices() {
   ]
 
   return (
-    <div className="bg-gradient-to-tl from-white to-[#88c6e588] ">
+    <div className="bg-gradient-to-tl from-white to-[#caedff88] ">
     <div className="min-h-screen text-black py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto ">
         <div className="text-center mb-16">
-          <h2 className="text-6xl font-bold mb-4">Our Process</h2>
+          <h2 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-bold text-6xl mb-4">Our Process</h2>
           <p className="text-black max-w-2xl mx-auto">
           We follow a structured and result-driven approach to ensure seamless execution and maximum impact for our clients. Our process is designed to deliver customized solutions that align with your business goals.
           </p>

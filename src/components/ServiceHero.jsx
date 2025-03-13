@@ -6,7 +6,8 @@ import Carousel from './Carousel';
      <div className='flex pt-32 md:flex-row justify-center items-center flex-col-reverse bg-gradient-to-br from-white  to-[#88c6e588] text-black pb-16  md:pl-6 md:mr-0  lg:px-24'>
        <div className='md:w-[50%]  w-[100%] p-4 items-center'>
         <div className='mr-6'>
-            <h1 className='text-4xl md:text-5xl font-bold leading-tight'>Driving Growth & Innovation for Your Business</h1>
+            {/* <h1 className='text-4xl md:text-5xl font-bold leading-tight'>Driving Growth & Innovation for Your Business</h1> */}
+            <h1 className='text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-bold text-4xl md:text-5xl leading-tight'>Driving Growth & Innovation for Your Business</h1>
             <div className='text-lg text-black mt-4 leading-relaxed'>We provide comprehensive solutions tailored to boost your brand’s visibility, optimize operations, and maximize sales. From expert field sales and merchandising to cutting-edge digital marketing, we help businesses grow with data-driven strategies and seamless execution.</div>
             <ul className="mt-6 space-y-2 text-lg">
             <li className="flex items-center gap-2">

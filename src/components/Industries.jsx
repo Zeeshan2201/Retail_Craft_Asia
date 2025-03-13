@@ -1,134 +1,48 @@
 import React from 'react';
-import FMCGIcon1 from '../assets/Industry/fmcg1.svg'; // Replace with actual paths to your SVGs
+<<<<<<< HEAD
+import FMCGIcon from '../assets/Industry/fmcg.svg';
+=======
+// Replace with actual paths to your SVGs
 import FMCGIcon from '../assets/Industry/fmcg.svg'; // Replace with actual paths to your SVGs
+>>>>>>> 30f0d7a97076458815af1092d980d2bde49a3d05
 import RetailIcon from '../assets/Industry/retail.svg';
-import RetailIcon1 from '../assets/Industry/retail1.svg';
 import HealthBeautyIcon from '../assets/Industry/health.svg';
-import HealthBeautyIcon1 from '../assets/Industry/health1.svg';
 import ConsumerDurablesIcon from '../assets/Industry/Electronic.svg';
-import ConsumerDurablesIcon1 from '../assets/Industry/Electronic1.svg';
 import BankingIcon from '../assets/Industry/account_balance.svg';
-import BankingIcon1 from '../assets/Industry/account_balance1.svg';
-import PharmaceuticalsIcon1 from '../assets/Industry/health_pharmacy1.svg';
 import PharmaceuticalsIcon from '../assets/Industry/health_pharmacy.svg';
 
-const FlipCard = () => {
+const industries = [
+  { icon: FMCGIcon, title: 'FMCG', description: 'Fast-Moving Consumer Goods are products that sell quickly at a low cost. These include everyday essentials such as packaged food, beverages, toiletries, and over-the-counter drugs, ensuring continuous consumer demand.' },
+  { icon: RetailIcon, title: 'Retail', description: 'Retail involves selling goods and services directly to consumers. It includes supermarkets, department stores, online shopping platforms, and local shops, catering to diverse consumer needs and preferences.' },
+  { icon: HealthBeautyIcon, title: 'Health & Beauty', description: 'Personal care, skincare, cosmetics, and wellness products. The industry focuses on enhancing well-being, offering items such as organic skincare, premium fragrances, and dietary supplements for a healthier lifestyle.' },
+  { icon: ConsumerDurablesIcon, title: 'Consumer Durables', description: 'Long-lasting goods like appliances, gadgets, and furniture. These products are designed for extended use, with advancements in smart technology and sustainable materials driving industry growth.' },
+  { icon: BankingIcon, title: 'Banking & Finance', description: 'Financial services, including banking, investment, and insurance. The sector facilitates economic stability through digital banking, wealth management, credit solutions, and fintech innovations.' },
+  { icon: PharmaceuticalsIcon, title: 'Pharmaceuticals', description: 'Prescription and OTC medicines, medical devices, and healthcare services. The industry plays a crucial role in global health by developing innovative treatments, vaccines, and cutting-edge diagnostic solutions.' }
+];
+
+const IndustryCard = ({ icon, title, description }) => {
   return (
-    <div className=' mb-10'>
-      <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-bold md:text-6xl text-4xl mt-15 py-10 ">
-        Industries and Sectors
-      </h2>
-      <div className="flex flex-wrap md:gap-x-[8vw] gap-y-[2vh] justify-evenly md:px-32 px-4">
-        {/* FMCG Card */}
-        <div className="md:h-[40vh] md:w-[20vw] h-[40vh] w-[88vw] md:m-4 md:mx-auto perspective-[1000px] cursor-pointer group">
-          <div className="relative md:w-[20vw] md:h-[40vh] h-[40vh] w-[88vw] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
-            {/* Back Face */}
-            <div className="absolute bg w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
-              <img src={FMCGIcon} alt="FMCG" className="w-24 h-24 mb-4" />
-              <p className="text-lg text-center px-2">
-                FMCG (Fast-Moving Consumer Goods) refers to products that are sold quickly and at relatively low cost.
-              </p>
-            </div>
-            {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-white shadow-lg border  text-black">
-              <img src={FMCGIcon} alt="FMCG" className="w-24 h-24 mb-4" />
-              <p className="text-2xl font-semibold">FMCG</p>
-            </div>
-          </div>
-        </div>
+    <div className='bg-gradient-to-b from-blue-50 to-white shadow-xl rounded-2xl p-8 w-85 text-center border transform transition duration-300 hover:scale-105 hover:shadow-2xl'>
+      <div className='bg-blue-100 p-4 rounded-full w-28 h-28 mx-auto flex items-center justify-center'>
+        <img src={icon} alt={title} className='w-16 h-16' />
+      </div>
+      <h3 className='text-2xl font-bold mt-4 text-gray-800'>{title}</h3>
+      <p className='text-gray-600 mt-3 leading-relaxed'>{description}</p>
+    </div>
+  );
+};
 
-        {/* Retail Card */}
-        <div className="md:h-[40vh] md:w-[20vw] h-[40vh] w-[88vw] md:m-4 md:mx-auto perspective-[1000px] cursor-pointer group">
-          <div className="relative md:w-[20vw] md:h-[40vh] h-[40vh] w-[88vw] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
-            {/* Back Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
-              <img src={RetailIcon} alt="Retail" className="w-24 h-24 mb-4" />
-              <p className="text-lg text-center px-2">
-                Retail involves selling goods and services directly to consumers through various channels.
-              </p>
-            </div>
-            {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-white shadow-lg border  text-black">
-              <img src={RetailIcon} alt="Retail" className="w-24 h-24 mb-4" />
-              <p className="text-2xl font-semibold">Retail</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Health and Beauty Card */}
-        <div className="md:h-[40vh] md:w-[20vw] h-[40vh] w-[88vw] md:m-4 md:mx-auto perspective-[1000px] cursor-pointer group">
-          <div className="relative md:h-[40vh] md:w-[20vw] h-[40vh] w-[88vw] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
-            {/* Back Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
-              <img src={HealthBeautyIcon} alt="Health and Beauty" className="w-24 h-24 mb-4" />
-              <p className="text-lg text-center px-2">
-                This sector includes products and services related to personal care, skincare, cosmetics, and wellness.
-              </p>
-            </div>
-            {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-white shadow-lg border  text-black">
-              <img src={HealthBeautyIcon} alt="Health and Beauty" className="w-24 h-24 mb-4" />
-              <p className="text-2xl font-semibold">Health and Beauty</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Consumer Durables and Electronics Card */}
-        <div className="md:h-[40vh] md:w-[20vw] h-[40vh] w-[88vw] md:m-4 md:mx-auto perspective-[1000px] cursor-pointer group">
-          <div className="relative md:h-[40vh] md:w-[20vw] h-[40vh] w-[88vw] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
-            {/* Back Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
-              <img src={ConsumerDurablesIcon} alt="Consumer Durables" className="w-24 h-24 mb-4" />
-              <p className="text-lg text-center px-2">
-                This category includes long-lasting goods such as home appliances, gadgets, smartphones, and furniture.
-              </p>
-            </div>
-            {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-white shadow-lg border  text-black">
-              <img src={ConsumerDurablesIcon} alt="Consumer Durables" className="w-24 h-24 mb-4" />
-              <p className="text-2xl text-center font-semibold px-5">Consumer Durables and Electronics</p>
-            </div>  
-          </div>
-        </div>
-
-        {/* Banking and Financial Services Card */}
-        <div className="md:h-[40vh] md:w-[20vw] h-[40vh] w-[88vw] md:m-4 md:mx-auto perspective-[1000px] cursor-pointer group">
-          <div className="relative md:h-[40vh] md:w-[20vw] h-[40vh] w-[88vw] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
-            {/* Back Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
-              <img src={BankingIcon} alt="Banking" className="w-24 h-24" />
-              <p className="text-lg text-center px-2">
-                This sector covers financial institutions providing banking, investment, insurance, and wealth management services.
-              </p>
-            </div>
-            {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-white shadow-lg border  text-black">
-              <img src={BankingIcon} alt="Banking" className="w-24 h-24 mb-4" />
-              <p className="text-2xl text-center font-semibold px-5">Banking and Financial Services</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Health and Pharmaceuticals Card */}
-        <div className="md:h-[40vh] md:w-[20vw] h-[40vh] w-[88vw] md:m-4 md:mx-auto perspective-[1000px] cursor-pointer group">
-          <div className="relative md:h-[40vh] md:w-[20vw] h-[40vh] w-[88vw] transition-transform duration-700 transform-style-preserve-3d group-hover:[transform:rotateY(180deg)]">
-            {/* Back Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-[#d4af37] border border-gray-200 [transform:rotateY(180deg)] group-hover:z-10">
-              <img src={PharmaceuticalsIcon} alt="Pharmaceuticals" className="w-24 h-24" />
-              <p className="text-lg text-center px-2">
-                This industry comprises prescription and over-the-counter medicines, medical devices, and healthcare services.
-              </p>
-            </div>
-            {/* Front Face */}
-            <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-3xl bg-white shadow-lg border  text-black">
-              <img src={PharmaceuticalsIcon} alt="Pharmaceuticals" className="w-24 h-24 mb-4" />
-              <p className="text-2xl font-semibold text-center">Health and Pharmaceuticals</p>
-            </div>
-          </div>
-        </div>
+const IndustriesGrid = () => {
+  return (
+    <div className='py-10 text-center'>
+      <h2 className='text-4xl font-bold text-gray-800 mb-8'>Industries and Sectors</h2>
+      <div className='grid md:grid-cols-3 gap-8 px-6 justify-center'>
+        {industries.map((industry, index) => (
+          <IndustryCard key={index} {...industry} />
+        ))}
       </div>
     </div>
   );
 };
 
-export default FlipCard;
+export default IndustriesGrid;
