@@ -26,7 +26,8 @@ import Carousel from './Carousel';
         </div>
     </div>
        <div className='md:ml-20 p-4 md:w-[50%] w-[100%] '>
-            <div><Carousel/></div>
+            {/* <div><Carousel/></div> */}
+            <div><img src="/servicehero.jpeg" alt="servicehero" /></div>
        </div>
      </div>
     //  <div className='flex mt-16 mb-8'>

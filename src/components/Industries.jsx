@@ -26,8 +26,8 @@ const IndustryCard = ({ icon, title, description }) => {
       <div className='bg-blue-100 p-4 rounded-full w-28 h-28 mx-auto flex items-center justify-center'>
         <img src={icon} alt={title} className='w-16 h-16' />
       </div>
-      <h3 className='text-2xl font-bold mt-4 text-gray-800'>{title}</h3>
-      <p className='text-gray-600 mt-3 leading-relaxed'>{description}</p>
+      <h3 className='text-2xl font-bold mt-4 text-[#C6A969]'>{title}</h3>
+      <p className='text-black text-lg mt-3 leading-relaxed'>{description}</p>
     </div>
   );
 };
@@ -35,7 +35,7 @@ const IndustryCard = ({ icon, title, description }) => {
 const IndustriesGrid = () => {
   return (
     <div className='py-10 text-center'>
-      <h2 className='text-4xl font-bold text-gray-800 mb-8'>Industries and Sectors</h2>
+      <h2 className='text-6xl font-bold text-[#C6A969] mb-8'>Industries and Sectors</h2>
       <div className='grid md:grid-cols-3 gap-8 px-6 justify-center'>
         {industries.map((industry, index) => (
           <IndustryCard key={index} {...industry} />
