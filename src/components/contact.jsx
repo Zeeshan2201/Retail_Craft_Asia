@@ -104,8 +104,8 @@ const ContactCards = () => {
       </div>
       
       <div className='mt-5 mb-5 text-black text-2xl sm:text-4xl text-center'>Looking for answers? Try one of these helpful resources:</div>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-64 mt-8">
+       
+      <div className=" flex   justify-evenly item- mt-8 w-full">
         {['Get Appointment', 'Email-Support',].map((title, index) => (
           <motion.div
             key={index}
