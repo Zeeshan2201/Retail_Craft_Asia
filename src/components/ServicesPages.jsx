@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Lottie from "react-lottie";
+
 import BackgroundAnimation from "../components/BackgroundAnimation";
 
 import Sales from "../animation/sales/Sales1.json";
@@ -74,9 +75,10 @@ export default function ServicesPage() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center ">
-        <h1 className="text-5xl font-bold text-blue-700 mt-7">
-          Sales & Merchandising
-        </h1>
+      <h1 className="text-5xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent mt-7">
+  Sales & Merchandising
+</h1>
+
         <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-700">
           We help brands maximize their market presence by ensuring the right
           products are available at the right time and place.
@@ -96,7 +98,7 @@ export default function ServicesPage() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+            className="flex flex-row items-center bg-white p-6 border-t-4 border-yellow-500 rounded-lg shadow-sm hover:shadow-md hover:shadow-yellow-100 transition-all duration-300 transform hover:scale-105 w-full mx-auto"
           >
             <div className="w-48 h-48 mb-6 md:mb-0">
               <Lottie
@@ -110,7 +112,7 @@ export default function ServicesPage() {
               />
             </div>
             <div className="md:ml-6">
-              <h2 className="text-2xl font-bold text-blue-700">
+              <h2 className="text-2xl font-bold text-black">
                 {service.title}
               </h2>
               <ul className="mt-2 text-gray-600">

@@ -449,6 +449,12 @@
 // }
 import React from "react";
 import { Link } from "react-router-dom";
+import Lottie from "react-lottie";
+import Brand from "../animation/BrandActivation/Brand.json";
+import Event from "../animation/BrandActivation/Event.json";
+import sampeling from "../animation/BrandActivation/sampeling.json"
+import Instore_1 from "../animation/BrandActivation/Instore_1.json";
+import Instore from "../animation/BrandActivation/Instore.json";
 import { FaUsers, FaStore, FaChartLine, FaCalendarAlt } from "react-icons/fa";
 import BackgroundAnimation from "../components/BackgroundAnimation";
 
@@ -460,7 +466,15 @@ const services = [
       "Builds long-term customer relationships through personal engagement.",
       "Boosts credibility and visibility in target markets.",
     ],
-    icon: <FaUsers size={60} className="text-yellow-500" />,
+    icon:  <Lottie
+                    options={{
+                      loop: true,
+                      autoplay: true,
+                      animationData:Brand,
+                    }}
+                    height={180}
+                    width={180} />,
+                   
   },
   {
     title: "Events & Road Shows",
@@ -469,7 +483,14 @@ const services = [
       "Increases brand awareness in high-footfall locations.",
       "Provides real-time feedback and consumer interaction opportunities.",
     ],
-    icon: <FaCalendarAlt size={60} className="text-yellow-500" />,
+    icon:  <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:Event,
+    }}
+    height={180}
+    width={180} />,
   },
   {
     title: "Sampling",
@@ -478,7 +499,14 @@ const services = [
       "Helps in generating word-of-mouth marketing and customer reviews.",
       "Drives sales conversion by reducing purchase hesitation.",
     ],
-    icon: <FaChartLine size={60} className="text-yellow-500" />,
+    icon:  <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:sampeling,
+    }}
+    height={180}
+    width={180} />
   },
   {
     title: "Shopper Marketing",
@@ -487,8 +515,34 @@ const services = [
       "Uses in-store promotions, displays, and personalized offers.",
       "Enhances customer shopping experience and increases basket value.",
     ],
-    icon: <FaStore size={60} className="text-yellow-500" />,
+    icon:  <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:sampeling,
+    }}
+    height={180}
+    width={180} />
   },
+  {
+    title: " Instore Activation",
+    description: [
+      "Influences buying decisions at the point of sale.",
+      "Uses in-store promotions, displays, and personalized offers.",
+      "Enhances customer shopping experience and increases basket value.",
+    ],
+    icon:  <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:Instore,
+    }}
+    height={180}
+    width={180} />,
+   
+},
+  
+  
 ];
 
 export default function ServicesPage() {

@@ -424,12 +424,13 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  FaChartLine,
-  FaTools,
-  FaChalkboardTeacher,
-  FaUsers,
-} from "react-icons/fa";
+import Lottie from "react-lottie";
+
+import GIF_1 from "../animation/Data_Technology/Gif__1/de1f599d 57f5 4f97 868b e6b14e39db48.json";
+import GIF_6 from "../animation/Data_Technology/Gif__1/GIF_6.json";
+import GIF_3 from "../animation/Data_Technology/Gif__1/JS.json";
+import GIF_7 from "../animation/Data_Technology/Gif__1/GIF_7.json";
+
 import BackgroundAnimation from "../components/BackgroundAnimation";
 
 const services = [
@@ -440,8 +441,17 @@ const services = [
       "Uses real-time insights to optimize processes",
       "Enhances productivity and reduces operational costs",
     ],
-    icon: <FaChartLine className="text-yellow-500 text-6xl" />,
-  },
+    
+    icon:  <Lottie
+                    options={{
+                      loop: true,
+                      autoplay: true,
+                      animationData:GIF_1,
+                    }}
+                    height={180}
+                    width={180} />,
+   
+},
   {
     title: "Sales Force Automation Tools",
     description: [
@@ -449,7 +459,15 @@ const services = [
       "Improves sales tracking, reporting, and performance",
       "Enhances field sales efficiency and customer engagement",
     ],
-    icon: <FaTools className="text-yellow-500 text-6xl" />,
+    icon:  <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:GIF_6,
+    }}
+    height={180}
+    width={180} />,
+
   },
   {
     title: "Learning & Development Modules",
@@ -458,7 +476,14 @@ const services = [
       "Enhances employee productivity and business performance",
       "Covers leadership, sales, and customer service training",
     ],
-    icon: <FaChalkboardTeacher className="text-yellow-500 text-6xl" />,
+    icon: <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:GIF_3,
+    }}
+    height={180}
+    width={180} />,
   },
   {
     title: "CRM Solutions",
@@ -467,7 +492,14 @@ const services = [
       "Automates interactions and tracks customer journeys",
       "Improves customer retention and engagement",
     ],
-    icon: <FaUsers className="text-yellow-500 text-6xl" />,
+    icon: <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:GIF_7,
+    }}
+    height={180}
+    width={180} />
   },
 ];
 
@@ -478,7 +510,7 @@ export default function ServicesPage() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
-      <h1 className="text-5xl font-bold text-blue-600 mt-7 drop-shadow-[2px_2px_4px_rgba(255,215,0,0.5)]">Data & Technology</h1>
+      <h1 className="text-5xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent mt-7">Data & Technology</h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg text-black">
           We leverage cutting-edge technology to optimize business operations
           and decision-making.
@@ -502,7 +534,7 @@ export default function ServicesPage() {
               {service.icon}
             </div>
             <div className="md:ml-6">
-              <h2 className="text-2xl font-bold text-blue-700">
+              <h2 className="text-2xl font-bold text-black">
                 {service.title}
               </h2>
               <ul className="mt-2 text-black">

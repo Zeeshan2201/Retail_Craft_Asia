@@ -282,8 +282,8 @@ export default function ServicesPage() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
-        <h1 className="text-5xl font-bold text-blue-600 mt-7 drop-shadow-[2px_2px_4px_rgba(255,215,0,0.5)]">Digital Marketing</h1>
-        <p className="mt-6 max-w-3xl mx-auto text-lg text-black">
+        <h1 className=" text-5xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent mt-7 h-16">Digital Marketing</h1>
+        <p className="mt-7 max-w-3xl mx-auto text-lg text-black">
           We boost online brand presence through digital marketing strategies, including SEO, PPC, and performance marketing. Our targeted campaigns engage audiences, generate leads, and drive conversions, ensuring measurable growth.
         </p>
         <Link
@@ -305,7 +305,7 @@ export default function ServicesPage() {
               {service.icon}
             </div>
             <div className="md:ml-6">
-              <h2 className="text-2xl font-bold text-blue-700">{service.title}</h2>
+              <h2 className="text-2xl font-bold text-black">{service.title}</h2>
               <ul className="mt-2 text-black">
                 {service.description.map((point, idx) => (
                   <li key={idx} className="mt-1">• {point}</li>

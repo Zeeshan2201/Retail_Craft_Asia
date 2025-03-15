@@ -371,6 +371,12 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import Lottie from "react-lottie";
+import Market from "../animation/Market/MarketResearch.json";
+import Sourcing from "../animation/Market/ProductSourcing.json";
+import Sales from "../animation/Market/sales1.json";
+
+import Distribution from "../animation/Market/DistributionLogistics.json";
 import { FaChartLine, FaShippingFast, FaClipboardList, FaHandshake } from "react-icons/fa";
 import BackgroundAnimation from "../components/BackgroundAnimation";
 
@@ -382,7 +388,14 @@ const services = [
       "Ensures cost-effectiveness and compliance with industry standards",
       "Manages supplier relationships and supply chain efficiency",
     ],
-    icon: <FaChartLine className="text-yellow-500 text-6xl" />,
+    icon: <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:Sourcing,
+    }}
+    height={180}
+    width={180} />,
   },
   {
     title: "Market Research & Insights",
@@ -391,7 +404,14 @@ const services = [
       "Identifies trends, preferences, and opportunities",
       "Helps brands make informed business decisions",
     ],
-    icon: <FaClipboardList className="text-yellow-500 text-6xl" />,
+    icon: <Lottie
+        options={{
+          loop: true,
+          autoplay: true,
+          animationData:Market,
+        }}
+        height={180}
+        width={180} />,
   },
   {
     title: "Sales & Marketing",
@@ -400,7 +420,14 @@ const services = [
       "Combines traditional and digital marketing techniques",
       "Focuses on customer acquisition, engagement, and retention",
     ],
-    icon: <FaHandshake className="text-yellow-500 text-6xl" />,
+    icon: <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:Sales,
+    }}
+    height={180}
+    width={180} />,
   },
   {
     title: "Distribution & Logistics",
@@ -409,7 +436,14 @@ const services = [
       "Covers warehousing, transportation, and inventory control",
       "Reduces costs and improves operational efficiency",
     ],
-    icon: <FaShippingFast className="text-yellow-500 text-6xl" />,
+    icon: <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:Distribution,
+    }}
+    height={180}
+    width={180} />,
   },
 ];
 
@@ -420,7 +454,7 @@ export default function ServicesPage() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
-        <h1 className="text-5xl font-bold text-blue-600 mt-7 drop-shadow-[2px_2px_4px_rgba(255,215,0,0.5)]">Market Expansion Services</h1>
+        <h1 className="text-5xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent mt-7">Market Expansion Services</h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg text-black">
           Expanding into new markets requires strategic planning and execution. We support brands with tailored market entry strategies, local partnerships, and distribution solutions.
         </p>
@@ -443,7 +477,7 @@ export default function ServicesPage() {
               {service.icon}
             </div>
             <div className="md:ml-6">
-              <h2 className="text-2xl font-bold text-blue-700">{service.title}</h2>
+              <h2 className="text-2xl font-bold text-black">{service.title}</h2>
               <ul className="mt-2 text-black">
                 {service.description.map((point, idx) => (
                   <li key={idx} className="mt-1">• {point}</li>
