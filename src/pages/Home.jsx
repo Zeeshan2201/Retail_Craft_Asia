@@ -7,6 +7,8 @@ import Industries from '../components/Industries'
 import Home_Service from "../components/Home_Service"
 import Home_2 from "../components/Home_2"
 // import ServicesSlider from '../components/Ser';
+import MangTeam from "../components/MangTeam"
+
 
 import HorizontalScroll from "../components/HorizontalScroll"
 
@@ -15,6 +17,7 @@ const Home = () => {
     <div className='bg-gray-50'>
       <HomeHero />
       <Home_2></Home_2>
+      <Home_Service/>
       
       <Industries />
      
@@ -22,9 +25,10 @@ const Home = () => {
      <WhyChooseUs/>
      <div className="">
         {/* services */}
-     <Home_Service/> 
+     
      </div>
-      <ManagementTeam />
+      {/* <ManagementTeam /> */}
+      <MangTeam />
       
       {/* <ProductShowcase></ProductShowcase> */}
       {/* <ServicesSlider></ServicesSlider> */}

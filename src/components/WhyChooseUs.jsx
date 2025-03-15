@@ -1,12 +1,36 @@
 import { FaHandshake, FaNetworkWired, FaUserCheck, FaTools, FaChartLine, FaLaptopCode } from "react-icons/fa";
 
 const whyUsData = [
-  { icon: <FaHandshake className="text-yellow-500 text-5xl" />, title: "Long Term Strategic Partnership", description: "Building lasting partnerships for sustainable growth and innovation in retail across Asia." },
-  { icon: <FaNetworkWired className="text-yellow-500 text-5xl" />, title: "Deep Industry Knowledge and Global Network", description: "Leveraging deep industry expertise and a vast global network for strategic growth." },
-  { icon: <FaUserCheck className="text-yellow-500 text-5xl" />, title: "Client Centric Focus", description: "Prioritizing client needs with tailored solutions for lasting success." },
-  { icon: <FaTools className="text-red-500 text-5xl" />, title: "Tailored Made Solutions", description: "Crafting tailor-made solutions to drive business excellence and growth." },
-  { icon: <FaChartLine className="text-yellow-500 text-5xl" />, title: "Data Driven Approach", description: "Empowering decisions with a data-driven approach for measurable success." },
-  { icon: <FaLaptopCode className="text-yellow-500 text-5xl" />, title: "Inbuilt Technology Platforms", description: "Enhancing business efficiency with inbuilt technology platforms." }
+  {
+    icon: <FaHandshake className="text-yellow-500 text-5xl" />, 
+    title: "Long Term Strategic Partnership", 
+    description: "Building lasting partnerships for sustainable growth and innovation in retail across Asia."
+  },
+  {
+    icon: <FaNetworkWired className="text-yellow-500 text-5xl" />, 
+    title: "Deep Industry Knowledge and Global Network", 
+    description: "Leveraging deep industry expertise and a vast global network for strategic growth."
+  },
+  {
+    icon: <FaUserCheck className="text-yellow-500 text-5xl" />, 
+    title: "Client Centric Focus", 
+    description: "Prioritizing client needs with tailored solutions for lasting success."
+  },
+  {
+    icon: <FaTools className="text-yellow-500 text-5xl" />, 
+    title: "Tailored Made Solutions", 
+    description: "Crafting tailor-made solutions to drive business excellence and growth."
+  },
+  {
+    icon: <FaChartLine className="text-yellow-500 text-5xl" />, 
+    title: "Data Driven Approach", 
+    description: "Empowering decisions with a data-driven approach for measurable success."
+  },
+  {
+    icon: <FaLaptopCode className="text-yellow-500 text-5xl" />, 
+    title: "Inbuilt Technology Platforms", 
+    description: "Enhancing business efficiency with inbuilt technology platforms."
+  }
 ];
 
 const WhyUs = () => {
@@ -19,8 +43,12 @@ const WhyUs = () => {
             <div className="bg-gray-100 p-8 rounded-full transition-transform duration-300 group-hover:scale-110 shadow-lg">
               {item.icon}
             </div>
-            <h3 className="text-2xl font-semibold group-hover:text-yellow-500 transition-colors text-gray-900">{item.title}</h3>
-            <p className="text-lg text-gray-700 max-w-md leading-relaxed">{item.description}</p>
+            <h3 className="text-2xl font-semibold group-hover:text-yellow-500 transition-colors text-gray-900 text-center">
+              {item.title}
+            </h3>
+            <p className="text-lg text-gray-700 max-w-md leading-relaxed text-center">
+              {item.description}
+            </p>
           </div>
         ))}
       </div>

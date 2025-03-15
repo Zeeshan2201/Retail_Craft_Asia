@@ -66,22 +66,37 @@ const ServicesSection = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        {services.map((service, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        {services.slice(0, 3).map((service, index) => (
           <div key={index} className="relative bg-white rounded-3xl shadow-xl border border-gray-300 p-8 text-center transition-all duration-300 hover:shadow-2xl hover:border-[#C8A961]">
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-28 bg-gradient-to-b from-gray-300 to-transparent rounded-t-3xl"></div>
-            
-            <div className="relative mx-auto -mt-14 w-24 h-24 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300">
+            <div className="relative mx-auto w-24 h-24 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300">
               {service.icon}
             </div>
-
             <h3 className="mt-6 text-2xl font-bold text-[#C8A961]">{service.category}</h3>
             <ul className="mt-4 text-lg text-gray-800 space-y-2">
               {service.items.map((item, idx) => (
                 <li key={idx}>{item}</li>
               ))}
             </ul>
+            <a href="#" className="mt-6 inline-block text-[#C8A961] font-semibold text-lg hover:underline">
+              Learn more
+            </a>
+          </div>
+        ))}
+      </div>
 
+      <div className="flex flex-wrap justify-center gap-16 mt-12">
+        {services.slice(3).map((service, index) => (
+          <div key={index} className=" w-[30%]  h-[70vh] relative bg-white rounded-3xl shadow-xl border border-gray-300 p-8 text-center transition-all duration-300 hover:shadow-2xl hover:border-[#C8A961]">
+            <div className="relative mx-auto w-24 h-24 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300">
+              {service.icon}
+            </div>
+            <h3 className=" mt-6 text-2xl font-bold text-[#C8A961]">{service.category}</h3>
+            <ul className="mt-4 text-lg text-gray-800 space-y-2">
+              {service.items.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
             <a href="#" className="mt-6 inline-block text-[#C8A961] font-semibold text-lg hover:underline">
               Learn more
             </a>

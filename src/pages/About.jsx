@@ -11,7 +11,8 @@ import img from "../assets/About/img.png";
 // Import MangTeam if it exists
  import MangTeam from "../components/MangTeam"; // Uncomment if this component exists
 
-const FoundationPrinciples = () => {
+
+ const FoundationPrinciples = () => {
   const principles = [
     { title: "Growth", description: "Driving innovation and expansion to meet evolving consumer needs.", image: growthImage },
     { title: "Integrity", description: "Ensuring transparency, quality, and trust in every product we deliver.", image: integrityImage },
@@ -66,9 +67,12 @@ const FoundationPrinciples = () => {
   return (
     <div className="foundation-principles-container  bg-blue-50 shadow-md">
       <div className="text-center font-extrabold mt-35 mb-5 py-20 px-5 ">
-        <h1 className="text-6xl font-bold text-gray-900 leading-tight mt-5">
-          Who we are, <span className="text-blue-600">Your Strategic Partner.</span>
-        </h1>
+      <h1 className="text-6xl font-bold leading-tight mt-5">
+  <span className="text-yellow-600">Who we are,</span>  
+  <span className="text-yellow-700"> Your Strategic Partner.</span>
+</h1>
+
+
         <p className="text-lg text-gray-700 mt-6 max-w-4xl mx-auto leading-relaxed">
           At Retail Craft Asia, we are more than just service providers—we are your strategic partners in business growth and brand transformation.
           With deep expertise in the FMCG industry, we help you expand your market reach, optimize supply chains, enhance brand visibility, and drive consumer engagement.
@@ -103,11 +107,17 @@ const FoundationPrinciples = () => {
       </div> */}
       <div className="w-full py-20 bg-gradient-to-b from-blue-50 to-white relative flex flex-col items-center text-center px-5">
       {/* Animated Heading */}
-      <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500 tracking-wide max-w-3xl transition-opacity duration-1000 ease-in-out delay-200 opacity-100">
-  Our expertise helps businesses build meaningful connections that drive success.
+      <h2 className="text-4xl sm:text-5xl font-extrabold tracking-wide max-w-3xl transition-opacity duration-1000 ease-in-out delay-200 opacity-100">
+  <span className="text-yellow-600">Our expertise</span>  
+  <span className="text-yellow-700"> helps businesses</span>  
+  <span className="text-yellow-600"> build meaningful connections that drive success.</span>
 </h2>
 
+
+
       {/* User Image with Glow */}
+  
+
       <div className="relative mt-12">
         <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative z-10">
           <img src={img} alt="User" className="w-full h-full object-cover" />
@@ -118,7 +128,7 @@ const FoundationPrinciples = () => {
         <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md">
   🏆
 </div>
-<div className="absolute top-10 -left-14 sm:-left-16 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+<div className="absolute top-10 -left-14 sm:-left-16 w-14 h-14 bg-yellow rounded-full flex items-center justify-center shadow-md">
   💙
 </div>
 <div className="absolute top-10 -right-14 sm:-right-16 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md">
@@ -139,12 +149,12 @@ const FoundationPrinciples = () => {
 
     <div className="px-6 py-20 text-center bg-gradient-to-b from-blue-50 to-white">
   {/* Our Vision Section */}
-  <h2 className="text-4xl font-extrabold text-blue-900">Our Vision for the Future</h2>
-  <p className="mt-4 text-lg text-gray-700 font-medium max-w-3xl mx-auto">
+  <h2 className="text-5xl font-extrabold text-[#D4AF37]">Our Vision for the Future</h2>
+  <p className="mt-6 text-xl text-black font-medium max-w-4xl mx-auto">
     Our vision shapes everything we aim to achieve. We set new standards, create meaningful impact, and drive transformation in our industry.
   </p>
 
-  <div className="flex flex-wrap justify-center gap-8 mt-12">
+  <div className="flex flex-wrap justify-center gap-10 mt-16">
     {[
       { icon: "🚀", title: "Innovation", desc: "We embrace change to create a better future, pushing the boundaries of technology and creativity." },
       { icon: "🤝", title: "Collaboration", desc: "Success comes from teamwork. We foster strong partnerships with industry leaders, clients, and stakeholders." },
@@ -152,22 +162,22 @@ const FoundationPrinciples = () => {
     ].map((item, index) => (
       <div 
         key={index} 
-        className="w-full sm:w-80 p-6 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+        className="w-full sm:w-96 p-8 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl text-center"
       >
-        <div className="text-5xl">{item.icon}</div>
-        <h3 className="text-2xl font-bold text-blue-800 mt-4">{item.title}</h3>
-        <p className="text-gray-600 mt-2">{item.desc}</p>
+        <div className="text-6xl text-[#D4AF37]">{item.icon}</div>
+        <h3 className="text-3xl font-bold text-[#D4AF37] mt-6">{item.title}</h3>
+        <p className="text-lg text-black mt-4 leading-relaxed">{item.desc}</p>
       </div>
     ))}
   </div>
 
   {/* Our Mission Section */}
-  <h2 className="mt-24 text-4xl font-extrabold text-blue-900">Fueling Success Through Our Mission</h2>
-  <p className="mt-4 text-lg text-gray-700 font-medium max-w-3xl mx-auto">
+  <h2 className="mt-28 text-5xl font-extrabold text-[#D4AF37]">Fueling Success Through Our Mission</h2>
+  <p className="mt-6 text-xl text-black font-medium max-w-4xl mx-auto">
     Our mission is to bring out the best in one another, deliver success to our customers, and inspire the industry through excellence and innovation.
   </p>
 
-  <div className="flex flex-wrap justify-center gap-8 mt-12">
+  <div className="flex flex-wrap justify-center gap-10 mt-16">
     {[
       { icon: "🌟", title: "Empowerment", desc: "Helping individuals and businesses thrive in a supportive, growth-oriented environment." },
       { icon: "🏆", title: "Excellence", desc: "Committed to exceeding expectations through continuous improvement and dedication." },
@@ -175,43 +185,44 @@ const FoundationPrinciples = () => {
     ].map((item, index) => (
       <div 
         key={index} 
-        className="w-full sm:w-80 p-6 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+        className="w-full sm:w-96 p-8 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl text-center"
       >
-        <div className="text-5xl">{item.icon}</div>
-        <h3 className="text-2xl font-bold text-blue-800 mt-4">{item.title}</h3>
-        <p className="text-gray-600 mt-2">{item.desc}</p>
+        <div className="text-6xl text-[#D4AF37]">{item.icon}</div>
+        <h3 className="text-3xl font-bold text-[#D4AF37] mt-6">{item.title}</h3>
+        <p className="text-lg text-black mt-4 leading-relaxed">{item.desc}</p>
       </div>
     ))}
   </div>
 </div>
 
- <div className="w-full px-5 py-16 bg-gray-50">
-  <h2 className="text-6xl font-extrabold text-center mb-16 text-gray-900">
-    Our <span className="text-blue-600">Foundational Principles</span>
+
+<div className="w-full px-5 py-16 bg-gray-50">
+  <h2 className="text-6xl font-extrabold text-center mb-16 text-[#D4AF37]">
+    Our <span className="text-[#D4AF37]">Foundational Principles</span>
   </h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
     {principles.map((principle, index) => (
       <div 
         key={index} 
-        className="relative flex flex-col items-center text-center bg-gradient-to-br from-white to-gray-100 border border-gray-200 rounded-xl w-64 h-72 p-6 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
+        className="relative flex flex-col items-center text-center bg-gradient-to-br from-white to-gray-100 border border-gray-200 rounded-xl w-80 h-88 p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
       >
-        <div className="w-24 h-24 bg-white flex items-center justify-center rounded-xl shadow-md border border-gray-300 mb-4">
-          <img src={principle.image} alt={principle.title} className="w-16 h-16 object-contain" />
+        <div className="w-28 h-28 bg-white flex items-center justify-center rounded-xl shadow-md border border-gray-300 mb-4">
+          <img src={principle.image} alt={principle.title} className="w-20 h-20 object-contain text-[#D4AF37]" />
         </div>
-        <h3 className="text-2xl font-bold text-gray-900">{principle.title}</h3>
-        <p className="text-gray-700 text-sm mt-3 px-4 leading-relaxed">
+        <h3 className="text-3xl font-bold text-black">{principle.title}</h3>
+        <p className="text-black text-lg mt-4 px-6 leading-relaxed">
           {principle.description}
         </p>
-        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-blue-300 rounded-b-xl"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#D4AF37] to-[#D4AF37] rounded-b-xl"></div>
       </div>
     ))}
   </div>
-  </div>
+</div>
 
 
 
 
-      <MangTeam />
+    
     </div>
   );
 };
