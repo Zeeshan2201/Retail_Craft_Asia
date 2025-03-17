@@ -1,5 +1,10 @@
 import React from 'react';
-import FMCGIcon from '../assets/Industry/fmcg.svg';
+ 
+// import FMCGIcon from '../assets/Industry/fmcg.svg';
+
+// Replace with actual paths to your SVGs
+import FMCGIcon from '../assets/Industry/fmcg.svg'; // Replace with actual paths to your SVGs
+
 import RetailIcon from '../assets/Industry/retail.svg';
 import HealthBeautyIcon from '../assets/Industry/health.svg';
 import ConsumerDurablesIcon from '../assets/Industry/Electronic.svg';
