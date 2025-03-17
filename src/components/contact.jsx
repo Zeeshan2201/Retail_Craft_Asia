@@ -99,13 +99,13 @@ const ContactCards = () => {
   return (
     <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6  bg-gray-50 ">
       <div className="text-center mb-10 mt-20 ">
-        <h2 className="text-4xl uppercase font-bold text-black sm:text-5xl ">How can Retail Craft Asia customer support help you today?</h2>
+        <h2 className=" text-3xl uppercase font-bold text-black sm:text-5xl ">How can Retail Craft Asia customer support help you today?</h2>
         <p className="text-black mt-5 text-lg sm:text-2xl">Our friendly customer support team is ready & excited to help with any issue!</p>
       </div>
       
-      <div className='mt-5 mb-5 text-black text-2xl sm:text-4xl text-center'>Looking for answers? Try one of these helpful resources:</div>
+      <div className='sm:mt-5 mb-5 text-black text-xl sm:text-4xl text-center'>Looking for answers? Try one of these helpful resources:</div>
        
-      <div className=" flex   justify-evenly item- mt-8 w-full">
+      <div className=" sm:flex grid grid-cols-1 ml-10 gap-4 sm:ml-0 justify-evenly mt-8 w-full">
         {['Get Appointment', 'Email-Support',].map((title, index) => (
           <motion.div
             key={index}
@@ -138,11 +138,11 @@ const ContactCards = () => {
 
       <div className="text-center mt-10 bg-white p-6 rounded-4xl shadow-lg rounded-xl">
         <h3 className="text-3xl sm:text-4xl font-semibold text-gray-800">Contact Us</h3>
-        <p className="mt-4 text-lg sm:text-xl text-gray-600">Office-Address: 65,42 Tower Building, Room No 1107, Sukhumvit 42 Road,<br/> Phra Khanong Sub-district, Khlong Toei District, Bangkok, Thailand - 10110</p>
+        <p className="mt-4 text-base sm:text-xl text-gray-600">Office-Address: 65,42 Tower Building, Room No 1107, Sukhumvit 42 Road,<br/> Phra Khanong Sub-district, Khlong Toei District, Bangkok, Thailand - 10110</p>
       </div>
       
       <div className="text-center mt-10 mb-10">
-        <h3 className="text-4xl font-semibold">Need More Help?</h3>
+        <h3 className="text-3xl sm:text-4xl font-semibold">Need More Help?</h3>
         <p className="mt-4">Call us at <a href="tel:+6623658200" className="text-black font-bold hover:underline">+6623658200</a></p>
         <p className="mt-2">Support Hours: Mon-Fri, 9 AM - 6 PM</p>
         {/* <p>We usually respond within <strong>4-8 hours</strong>.</p> */}

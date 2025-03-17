@@ -14,8 +14,8 @@ import MangTeam from "../components/MangTeam";
 // import missionSvg from "../assets/mission.svg";
  // Add a background image for the "Who We Are" section
 // Import SVG images for Vision and Mission
-import visionSvg from "../assets/vision.svg"; // Replace with your SVG file path
-import missionSvg from "../assets/mission.svg"; // Replace with your SVG file path
+import visionSvg from "../assets/vision.svg"; // Replace with your SVG file pathath
+import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pathath
 
  const FoundationPrinciples = () => {
   const principles = [
@@ -70,15 +70,14 @@ import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pa
   }, []);
 
   return (
-    <div className="foundation-principles-container  bg-blue-50 shadow-md">
-      <div className="text-center font-extrabold mt-35 mb-5 py-20 px-5 ">
-      <h1 className="text-6xl font-bold leading-tight mt-5">
-  <span className="text-yellow-600">Who we are,</span>  
-  <span className="text-yellow-700"> Your Strategic Partner.</span>
-</h1>
+    <div className="foundation-principles-container bg-blue-50 shadow-md">
+      <div className="text-center font-semibold sm:mt-20 mb-5 pt-20 px-5">
+        <h1 className="text-4xl sm:text-6xl font-bold mt-5">
+          <span className="text-yellow-600">Who we are,</span>  
+          <span className="text-yellow-700"> Your Strategic Partner.</span>
+        </h1>
 
-
-        <p className="text-lg text-gray-700 mt-6 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-base sm:text-lg text-gray-700 mt-6 max-w-4xl mx-auto">
           At Retail Craft Asia, we are more than just service providers—we are your strategic partners in business growth and brand transformation.
           With deep expertise in the FMCG industry, we help you expand your market reach, optimize supply chains, enhance brand visibility, and drive consumer engagement.
           <br /><br />
@@ -87,152 +86,114 @@ import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pa
         </p>
       </div>
 
-      {/* <div className="w-full px-5 py-16 border-2 border-gray-400 transition-all duration-1000 shadow-lg rounded-xl" ref={visionSectionRef}>
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:justify-between">
-          <img src={visionSvg} alt="Vision" className="w-64 transition-transform hover:scale-110" />
-          <div className="w-full md:w-1/2 text-center sm:text-left">
-            <h2 className="text-5xl font-bold mb-4 text-black">Our Vision</h2>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              To be the trusted business partners for Market expansion and Execution services for Businesses in Asia.
-            </p>
-          </div>
-        </div>
-      </div> */}
-
-      {/* <div className="w-full px-5 py-16 border-2 border-gray-400 transition-all duration-1000 shadow-lg rounded-xl" ref={missionSectionRef}>
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:justify-between">
-          <div className="w-full md:w-1/2 text-center sm:text-right">
-            <h2 className="text-5xl font-bold mb-4 text-black">Our Mission</h2>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              To be the leading partners for Brands and Businesses in Asia, recognized for transformation and Growth with innovative, technology-driven solutions leading with expertise and dedication.
-            </p>
-          </div>
-          <img src={missionSvg} alt="Mission" className="w-64 transition-transform hover:scale-110" />
-        </div>
-
-      </div> */}
       <div className="w-full py-20 bg-gradient-to-b from-blue-50 to-white relative flex flex-col items-center text-center px-5">
-      {/* Animated Heading */}
-      <h2 className="text-4xl sm:text-5xl font-extrabold tracking-wide max-w-3xl transition-opacity duration-1000 ease-in-out delay-200 opacity-100">
-  <span className="text-yellow-600">Our expertise</span>  
-  <span className="text-yellow-700"> helps businesses</span>  
-  <span className="text-yellow-600"> build meaningful connections that drive success.</span>
-</h2>
+        {/* Animated Heading */}
+        <h2 className="text-4xl sm:text-5xl font-bold max-w-3xl transition-opacity duration-1000 ease-in-out delay-200 opacity-100">
+          <span className="text-yellow-600">Our expertise</span>  
+          <span className="text-yellow-700"> helps businesses</span>  
+          <span className="text-yellow-600"> build meaningful connections that drive success.</span>
+        </h2>
 
+        {/* User Image with Glow */}
+        <div className="relative mt-12">
+          <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative z-10">
+            <img src={img} alt="User" className="w-full h-full object-cover" />
+          </div>
+          <div className="absolute top-0 left-0 w-full h-full bg-blue-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
 
-
-      {/* User Image with Glow */}
-  
-
-      <div className="relative mt-12">
-        <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative z-10">
-          <img src={img} alt="User" className="w-full h-full object-cover" />
+          {/* Floating Icons with Animation */}
+          <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+            🏆
+          </div>
+          <div className="absolute top-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-yellow rounded-full flex items-center justify-center shadow-md">
+            💙
+          </div>
+          <div className="absolute top-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+            📊
+          </div>
+          <div className="absolute bottom-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+            🛒
+          </div>
+          <div className="absolute bottom-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+            💬
+          </div>
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+            🚀
+          </div>
         </div>
-        <div className="absolute top-0 left-0 w-full h-full bg-blue-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
 
-        {/* Floating Icons with Animation */}
-        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md">
-  🏆
-</div>
-<div className="absolute top-10 -left-14 sm:-left-16 w-14 h-14 bg-yellow rounded-full flex items-center justify-center shadow-md">
-  💙
-</div>
-<div className="absolute top-10 -right-14 sm:-right-16 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md">
-  📊
-</div>
-<div className="absolute bottom-10 -left-14 sm:-left-16 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md">
-  🛒
-</div>
-<div className="absolute bottom-10 -right-14 sm:-right-16 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md">
-  💬
-</div>
-<div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md">
-  🚀
-</div>
+        <div className="px-6 py-20 text-center bg-gradient-to-b from-blue-50 to-white">
+          {/* Our Vision Section */}
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#D4AF37]">Our Vision for the Future</h2>
+          <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
+            Our vision shapes everything we aim to achieve. We set new standards, create meaningful impact, and drive transformation in our industry.
+          </p>
 
+          <div className="flex flex-wrap sm:grid sm:grid-cols-3 justify-center gap-10 mt-16">
+            {[
+              { icon: "🚀", title: "Innovation", desc: "We embrace change to create a better future, pushing the boundaries of technology and creativity." },
+              { icon: "🤝", title: "Collaboration", desc: "Success comes from teamwork. We foster strong partnerships with industry leaders, clients, and stakeholders." },
+              { icon: "🌱", title: "Sustainability", desc: "Responsible practices ensure long-term impact. We integrate eco-friendly approaches and ethical business strategies." }
+            ].map((item, index) => (
+              <div 
+                key={index} 
+                className="w-full sm:w-96 p-8 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)] text-center"
+              >
+                <div className="text-6xl text-[#D4AF37]">{item.icon}</div>
+                <h3 className="text-3xl font-bold text-[#D4AF37] mt-6">{item.title}</h3>
+                <p className="text-lg text-black mt-4 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Our Mission Section */}
+          <h2 className="mt-28 text-4xl sm:text-5xl font-extrabold text-[#D4AF37]">Fueling Success Through Our Mission</h2>
+          <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
+            Our mission is to bring out the best in one another, deliver success to our customers, and inspire the industry through excellence and innovation.
+          </p>
+
+          <div className="flex flex-wrap sm:grid sm:grid-cols-3 justify-center gap-10 mt-16">
+            {[
+              { icon: "🌟", title: "Empowerment", desc: "Helping individuals and businesses thrive in a supportive, growth-oriented environment." },
+              { icon: "🏆", title: "Excellence", desc: "Committed to exceeding expectations through continuous improvement and dedication." },
+              { icon: "💡", title: "Inspiration", desc: "Leading by example, driving innovation, and pioneering ideas that shape the future." }
+            ].map((item, index) => (
+              <div 
+                key={index} 
+                className="w-full sm:w-96 p-8 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)] text-center"
+              >
+                <div className="text-6xl text-[#D4AF37]">{item.icon}</div>
+                <h3 className="text-3xl font-bold text-[#D4AF37] mt-6">{item.title}</h3>
+                <p className="text-lg text-black mt-4 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="w-full px-5 py-16 bg-gray-50">
+          <h2 className="text-5xl sm:text-6xl font-bold text-center mb-16 text-[#D4AF37]">
+            Our <span className="text-[#D4AF37]">Foundational Principles</span>
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-12 max-w-6xl mx-auto">
+            {principles.map((principle, index) => (
+              <div 
+                key={index} 
+                className="relative flex flex-col items-center text-center bg-gradient-to-br from-white to-gray-100 border border-gray-200 rounded-xl w-80 h-88 p-8 shadow-xl hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)] transform hover:-translate-y-2 transition-all duration-300"
+              >
+                <div className="w-28 h-28 bg-white flex items-center justify-center rounded-xl shadow-md border border-gray-300 mb-4">
+                  <img src={principle.image} alt={principle.title} className="w-20 h-20 object-contain text-[#D4AF37]" />
+                </div>
+                <h3 className="text-3xl font-bold text-black">{principle.title}</h3>
+                <p className="text-black text-lg mt-4 px-6 leading-relaxed">
+                  {principle.description}
+                </p>
+                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#D4AF37] to-[#D4AF37] rounded-b-xl"></div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
-
-    <div className="px-6 py-20 text-center bg-gradient-to-b from-blue-50 to-white">
-  {/* Our Vision Section */}
-  <h2 className="text-5xl font-extrabold text-[#D4AF37]">Our Vision for the Future</h2>
-  <p className="mt-6 text-xl text-black font-medium max-w-4xl mx-auto">
-    Our vision shapes everything we aim to achieve. We set new standards, create meaningful impact, and drive transformation in our industry.
-  </p>
-
-  <div className="flex flex-wrap justify-center gap-10 mt-16">
-    {[
-      { icon: "🚀", title: "Innovation", desc: "We embrace change to create a better future, pushing the boundaries of technology and creativity." },
-      { icon: "🤝", title: "Collaboration", desc: "Success comes from teamwork. We foster strong partnerships with industry leaders, clients, and stakeholders." },
-      { icon: "🌱", title: "Sustainability", desc: "Responsible practices ensure long-term impact. We integrate eco-friendly approaches and ethical business strategies." }
-    ].map((item, index) => (
-      <div 
-        key={index} 
-        className="w-full sm:w-96 p-8 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl text-center"
-      >
-        <div className="text-6xl text-[#D4AF37]">{item.icon}</div>
-        <h3 className="text-3xl font-bold text-[#D4AF37] mt-6">{item.title}</h3>
-        <p className="text-lg text-black mt-4 leading-relaxed">{item.desc}</p>
-      </div>
-    ))}
-  </div>
-
-  {/* Our Mission Section */}
-  <h2 className="mt-28 text-5xl font-extrabold text-[#D4AF37]">Fueling Success Through Our Mission</h2>
-  <p className="mt-6 text-xl text-black font-medium max-w-4xl mx-auto">
-    Our mission is to bring out the best in one another, deliver success to our customers, and inspire the industry through excellence and innovation.
-  </p>
-
-  <div className="flex flex-wrap justify-center gap-10 mt-16">
-    {[
-      { icon: "🌟", title: "Empowerment", desc: "Helping individuals and businesses thrive in a supportive, growth-oriented environment." },
-      { icon: "🏆", title: "Excellence", desc: "Committed to exceeding expectations through continuous improvement and dedication." },
-      { icon: "💡", title: "Inspiration", desc: "Leading by example, driving innovation, and pioneering ideas that shape the future." }
-    ].map((item, index) => (
-      <div 
-        key={index} 
-        className="w-full sm:w-96 p-8 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl text-center"
-      >
-        <div className="text-6xl text-[#D4AF37]">{item.icon}</div>
-        <h3 className="text-3xl font-bold text-[#D4AF37] mt-6">{item.title}</h3>
-        <p className="text-lg text-black mt-4 leading-relaxed">{item.desc}</p>
-      </div>
-    ))}
-  </div>
-</div>
-
-
-<div className="w-full px-5 py-16 bg-gray-50">
-  <h2 className="text-6xl font-extrabold text-center mb-16 text-[#D4AF37]">
-    Our <span className="text-[#D4AF37]">Foundational Principles</span>
-  </h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
-    {principles.map((principle, index) => (
-      <div 
-        key={index} 
-        className="relative flex flex-col items-center text-center bg-gradient-to-br from-white to-gray-100 border border-gray-200 rounded-xl w-80 h-88 p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
-      >
-        <div className="w-28 h-28 bg-white flex items-center justify-center rounded-xl shadow-md border border-gray-300 mb-4">
-          <img src={principle.image} alt={principle.title} className="w-20 h-20 object-contain text-[#D4AF37]" />
-        </div>
-        <h3 className="text-3xl font-bold text-black">{principle.title}</h3>
-        <p className="text-black text-lg mt-4 px-6 leading-relaxed">
-          {principle.description}
-        </p>
-        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#D4AF37] to-[#D4AF37] rounded-b-xl"></div>
-      </div>
-    ))}
-  </div>
-</div>
-
-
-
-
-      <MangTeam />
-
-      </div>
-
-    
   );
 };
 

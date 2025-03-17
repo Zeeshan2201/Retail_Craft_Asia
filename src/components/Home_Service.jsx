@@ -3,18 +3,19 @@ import { FaChartLine, FaBullhorn, FaGlobe, FaDatabase, FaLaptop } from "react-ic
 
 const services = [
   {
-    category: "Sales & Merchandising",
-    icon: <FaChartLine className="text-5xl text-[#C8A961]" />,
-    link: "services/SalesAndMerchandising",
+    category: "Market Expansion Services",
+    icon: <FaGlobe className="text-5xl text-[#C8A961]" />,
+    link: "services/MarketExpansion",
     items: [
-      "Field Sales",
-      "Merchandising",
-      "Retail Audit",
-      "Point of Sale Execution",
-      "Asset Optimisation",
-      "Product Management",
+      "Product Sourcing",
+      "Market Research & Insights",
+      "Sales & Marketing",
+      "Distribution & Logistics",
+      "After Sales Services",
     ],
   },
+
+ 
   {
     category: "Brand Activation & Experiential Marketing",
     icon: <FaBullhorn className="text-5xl text-[#C8A961]" />,
@@ -28,15 +29,16 @@ const services = [
     ],
   },
   {
-    category: "Market Expansion Services",
-    icon: <FaGlobe className="text-5xl text-[#C8A961]" />,
-    link: "services/MarketExpansion",
+    category: "Sales & Merchandising",
+    icon: <FaChartLine className="text-5xl text-[#C8A961]" />,
+    link: "services/SalesAndMerchandising",
     items: [
-      "Product Sourcing",
-      "Market Research & Insights",
-      "Sales & Marketing",
-      "Distribution & Logistics",
-      "After Sales Services",
+      "Field Sales",
+      "Merchandising",
+      "Retail Audit",
+      "Point of Sale Execution",
+      "Asset Optimisation",
+      "Product Management",
     ],
   },
   {
@@ -62,7 +64,7 @@ const ServicesSection = () => {
   return (
     <div className="bg-gray-50 py-24 px-8 md:px-20 lg:px-36">
       <div className="text-center mb-16">
-        <h2 className="text-6xl font-extrabold text-[#C8A961] relative inline-block">
+        <h2 className="  uppercase tracking-wide drop-shadow-lg font-semibold text-5xl  text-[#C8A961] relative inline-block">
           Our Services
           <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#C8A961] rounded"></span>
         </h2>
@@ -77,10 +79,10 @@ const ServicesSection = () => {
             <div className="relative mx-auto w-24 h-24 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300">
               {service.icon}
             </div>
-            <h3 className="mt-6 text-2xl font-bold text-[#C8A961]">
+            <h3 className="mt-6 text-2xl font-extrabold text-[#C8A961]">
               {service.category}
             </h3>
-            <ul className="mt-4 text-lg text-gray-800 space-y-2">
+            <ul className="mt-4 text-lg text-gray-800 list-disc list-inside text-left ml-6">
               {service.items.map((item, idx) => (
                 <li key={idx}>{item}</li>
               ))}
@@ -95,19 +97,19 @@ const ServicesSection = () => {
         ))}
       </div>
 
-      <div className="flex flex-wrap justify-center gap-16 mt-12">
+      <div className="flex flex-wrap justify-center gap-12 mt-12">
         {services.slice(3).map((service, index) => (
           <div
             key={index}
-            className=" w-[30%]  h-[70vh] relative bg-white rounded-3xl shadow-xl border border-gray-300 p-8 text-center transition-all duration-300 hover:shadow-2xl hover:border-[#C8A961]"
+            className="w-full sm:w-[80%] md:w-[45%] lg:w-[30%] h-auto sm:h-[70vh] relative bg-white rounded-3xl shadow-xl border border-gray-300 p-8 text-center transition-all duration-300 hover:shadow-2xl hover:border-[#C8A961]"
           >
             <div className="relative mx-auto w-24 h-24 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300">
               {service.icon}
             </div>
-            <h3 className=" mt-6 text-2xl font-bold text-[#C8A961]">
+            <h3 className="mt-6 text-2xl font-extrabold text-[#C8A961]">
               {service.category}
             </h3>
-            <ul className="mt-4 text-lg text-gray-800 space-y-2">
+            <ul className="mt-4 text-lg text-gray-800 list-disc list-inside text-left ml-6">
               {service.items.map((item, idx) => (
                 <li key={idx}>{item}</li>
               ))}
