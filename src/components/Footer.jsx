@@ -23,30 +23,30 @@ export default function Footer() {
 {/* comment */}
           {/* Useful Links Column */}
           <div>
-            <h3 className="text-sm font-bold mb-4 uppercase tracking-wider">Useful Links</h3>
+            <h3 className="text-md font-bold mb-4 uppercase tracking-wider">Useful Links</h3>
             <ul className="space-y-2">
             <li>
-                <Link to="/" className="hover:text-yellow-600 font-semibold transition-colors">
+                <Link to="/" className="hover:text-yellow-600 font-medium transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/Services" className="hover:text-yellow-600 font-semibold transition-colors">
+                <Link to="/Services" className="hover:text-yellow-600 font-medium transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/About" className="hover:text-yellow-600 font-semibold transition-colors">
+                <Link to="/About" className="hover:text-yellow-600 font-medium transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/Contact" className="hover:text-yellow-600 font-semibold transition-colors">
+                <Link to="/Contact" className="hover:text-yellow-600 font-medium transition-colors">
                   Contact us
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="hover:text-yellow-600 font-semibold transition-colors">
+                <Link to="/faq" className="hover:text-yellow-600 font-medium transition-colors">
                   Ask Retail Craft (FAQs)
                 </Link>
               </li>
@@ -55,30 +55,30 @@ export default function Footer() {
 
           {/* Downloads Column */}
           <div>
-            <h3 className="text-sm font-bold mb-4 uppercase tracking-wider">Services</h3>
+            <h3 className="text-md font-bold mb-4 uppercase tracking-wider">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services/SalesAndMerchandising" className="hover:text-yellow-600 font-semibold transition-colors flex items-center gap-1">
+                <Link to="/services/SalesAndMerchandising" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
                 Sales and Merchandising
                 </Link>
               </li>
               <li>
-                <Link to="/services/BrandActivation" className="hover:text-yellow-600 font-semibold transition-colors flex items-center gap-1">
+                <Link to="/services/BrandActivation" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
                 Brand Activation and Experiental Marketing
                 </Link>
               </li>
               <li>
-                <Link to="/services/MarketExpansion" className="hover:text-yellow-600 font-semibold transition-colors flex items-center gap-1">
+                <Link to="/services/MarketExpansion" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
                 Market Expansion Services
                 </Link>
               </li>
               <li>
-                <Link to="/services/DataAndTechnology" className="hover:text-yellow-600 font-semibold transition-colors flex items-center gap-1">
+                <Link to="/services/DataAndTechnology" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
                 Data & Technology
                 </Link>
               </li>
               <li>
-                <Link to="/services/DigitalMarketing" className="hover:text-yellow-600 font-semibold transition-colors flex items-center gap-1">
+                <Link to="/services/DigitalMarketing" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
                 Digital Marketing
                 </Link>
               </li>
