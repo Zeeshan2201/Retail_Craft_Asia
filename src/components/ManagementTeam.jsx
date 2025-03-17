@@ -7,7 +7,7 @@ import { Link, useLocation } from 'react-router-dom';
 const teamMembers = [
   {
     name: "Jean-Boris ROUX",
-    role: "Founder",
+    role: "Independent Director",
     shortDescription: "Jean-Boris ROUX, aka 'JB', is a seasoned leader with over 25 years of experience...",
     image: "/Team/Member_1.png",
   },
