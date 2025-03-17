@@ -46,8 +46,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="hover:text-yellow-600 font-medium transition-colors">
-                  Ask Retail Craft (FAQs)
+                <Link to="/MangTeam" className="hover:text-yellow-600 font-medium transition-colors">
+                  Our Team
                 </Link>
               </li>
             </ul>

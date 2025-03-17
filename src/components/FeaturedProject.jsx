@@ -316,7 +316,7 @@ const services = [
   },
   {
     category: "Data & Technology",
-    icon: <FaDatabase className="text-6xl text-[#C8A961]" />,
+    icon: <FaDatabase className="text-6xl text-[#C8A961] pb-4" />,
     items: [
       "Data & Operation Intelligence",
       "Sales Force Automation Tools",

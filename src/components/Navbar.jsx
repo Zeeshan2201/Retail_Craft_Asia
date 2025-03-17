@@ -4,9 +4,9 @@ import { Menu, X } from 'lucide-react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const secondaryLinks = [
+  { title: "Market Expansion Services", href: "/services/MarketExpansion" },
   { title: "Sales and Merchandising", href: "/services/SalesAndMerchandising" },
   { title: "Brand Activation and Experiential Marketing", href: "/services/BrandActivation" },
-  { title: "Market Expansion Services", href: "/services/MarketExpansion" },
   { title: "Data & Technology", href: "/services/DataAndTechnology" },
   { title: "Digital Marketing", href: "/services/DigitalMarketing" },
 ];
