@@ -8,12 +8,14 @@ import Home_Service from "../components/Home_Service"
 import Home_2 from "../components/Home_2"
 // import ServicesSlider from '../components/Ser';
 import MangTeam from "../components/MangTeam"
+import HomeHeroNew from '../components/HomeHeroNew';
 
 
 const Home = () => {
   return (
     <div className='bg-gray-50'>
-      <HomeHero />
+      {/* <HomeHero /> */}
+      <HomeHeroNew/>
       <Home_2/>
       <Home_Service/>
       
