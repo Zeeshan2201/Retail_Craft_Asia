@@ -95,8 +95,9 @@ export default function WhyChooseUs() {
             </div>
           </div>
 
-          <div className="rounded-xl hidden ml-10 lg:block">
-            <img src="https://preview.uideck.com/items/smash/assets/images/about.jpg" className="rounded-xl" alt="new" />
+          <div className="rounded-xl lg:flex justify-center items-center hidden ml-10 ">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.pihP2nhgs9HeH7_GExtMkQAAAA&pid=Api&P=0&h=220" className="w-[34vw] rounded-xl" alt="new" />
+            {/* <img src="https://preview.uideck.com/items/smash/assets/images/about.jpg" className="rounded-xl" alt="new" /> */}
             </div>
         </div>
       </div>

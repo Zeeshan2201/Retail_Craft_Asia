@@ -46,6 +46,19 @@ const teamMembers = [
     ],
     linkedin: "#",
   },
+  {
+    id: 3,
+    name: "Naresh Semwal",
+    role: "Capability Director",
+    shortBio: "A global FMCG and Beverages leader with 19+ years of experience in India, Africa & Southeast Asia.",
+    image: "/Team/Member_3.jpg",
+    highlights: [
+      "RTM & GTM Expertise – Optimized distribution & retail expansion",
+      "Managed large-scale teams for brand visibility",
+      "Supports orphan houses and welfare initiatives",
+    ],
+    linkedin: "#",
+  },
 ]
 
 const TeamMemberDetail = () => {
@@ -73,7 +86,8 @@ const TeamMemberDetail = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="overflow-x-scroll flex overflow-hidden w-[80vw]  gap-8">
+        {/* <div className="grid grid-cols-1 overflow-x-auto w-[100vw] md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
           {teamMembers.map((member, index) => (
             <motion.div
               key={member.id}
@@ -82,7 +96,7 @@ const TeamMemberDetail = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="relative hover:bg-gradient-to-r from-yellow-50 via-white to-white
+              className="relative hover:bg-gradient-to-r w-[30vw]  from-yellow-50 via-white to-white
  rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 hover:shadow-yellow-700"
             >
               <div className="flex flex-col items-center p-8">

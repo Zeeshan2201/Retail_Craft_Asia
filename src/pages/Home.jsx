@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div className='bg-gray-50'>
       <HomeHero />
-      <Home_2></Home_2>
+      <Home_2/>
       <Home_Service/>
       
       <Industries />
