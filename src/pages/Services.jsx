@@ -14,7 +14,7 @@ const Services = () => {
     <section className=" min-h-screen py-10  bg-gradient-to-tl from-white via-[#ffffff] from-[38%] to-[64%]  to-white">
     {/* <section className=" min-h-screen py-10  bg-gradient-to-tl from-white via-[#d4af37] from-[38%] to-[64%]  to-white"> */}
     {/* <section className="bg-[#1a237e] min-h-screen py-20 "> */}
-    <div className="max-w-6xl  mx-auto text-center ">
+    <div className="  mx-auto text-center ">
         {/* <h2 className="text-white  uppercase tracking-wider mb-4 text-6xl font-bold">
         Our Services
         </h2> */}
