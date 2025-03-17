@@ -88,7 +88,7 @@ import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pa
 
       <div className="w-full py-20 bg-gradient-to-b from-blue-50 to-white relative flex flex-col items-center text-center px-5">
         {/* Animated Heading */}
-        <h2 className="text-4xl sm:text-5xl font-bold max-w-3xl transition-opacity duration-1000 ease-in-out delay-200 opacity-100">
+        <h2 className="text-4xl sm:text-6xl mb-4 font-bold max-w-3xl transition-opacity duration-1000 ease-in-out delay-200 opacity-100">
           <span className="text-yellow-600">Our expertise</span>  
           <span className="text-yellow-700"> helps businesses</span>  
           <span className="text-yellow-600"> build meaningful connections that drive success.</span>
@@ -124,7 +124,7 @@ import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pa
 
         <div className="px-6 py-20 text-center bg-gradient-to-b from-blue-50 to-white">
           {/* Our Vision Section */}
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-yellow-600">Our Vision for the Future</h2>
+          <h2 className="text-4xl sm:text-6xl font-bold text-yellow-600">Our Vision for the Future</h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
             Our vision shapes everything we aim to achieve. We set new standards, create meaningful impact, and drive transformation in our industry.
           </p>
@@ -147,7 +147,7 @@ import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pa
           </div>
 
           {/* Our Mission Section */}
-          <h2 className="mt-28 text-4xl sm:text-5xl font-extrabold text-yellow-600">Fueling Success Through Our Mission</h2>
+          <h2 className="mt-28 text-4xl sm:text-6xl font-bold text-yellow-600">Fueling Success Through Our Mission</h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
             Our mission is to bring out the best in one another, deliver success to our customers, and inspire the industry through excellence and innovation.
           </p>
