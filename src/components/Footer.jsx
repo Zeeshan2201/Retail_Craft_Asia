@@ -3,13 +3,13 @@ import { ExternalLink } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-purple-900 font-semibold py-12 px-4 md:px-6">
+    <footer className="bg-white text-black  font-semibold py-12 px-4 md:px-6">
       <div className="container mx-auto border-t-2 border-purple-900 pt-16 max-w-7xl">
         <div className="flex justify-evenly md:flex-row flex-col gap-8">
           {/* Brand and Mission Column */}
           <div className="lg:col-span-2 md:w-[25%]">
             <h2 className="text-xl mb-4">Retail Craft Asia</h2>
-            <p className="text-purple-900 font-semibold mb-6 text-lg ">
+            <p className="text-black font-medium mb-6 text-lg ">
             We are your strategic partners who will help you grow and transform your business and brands at Market Place 
              </p>
             {/* Bird Logo Placeholder */}
@@ -26,27 +26,27 @@ export default function Footer() {
             <h3 className="text-sm font-bold mb-4 uppercase tracking-wider">Useful Links</h3>
             <ul className="space-y-2">
             <li>
-                <Link to="/" className="hover:text-purple-900 font-semibold transition-colors">
+                <Link to="/" className="hover:text-yellow-600 font-semibold transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/Services" className="hover:text-purple-900 font-semibold transition-colors">
+                <Link to="/Services" className="hover:text-yellow-600 font-semibold transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/About" className="hover:text-purple-900 font-semibold transition-colors">
+                <Link to="/About" className="hover:text-yellow-600 font-semibold transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/Contact" className="hover:text-purple-900 font-semibold transition-colors">
+                <Link to="/Contact" className="hover:text-yellow-600 font-semibold transition-colors">
                   Contact us
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="hover:text-purple-900 font-semibold transition-colors">
+                <Link to="/faq" className="hover:text-yellow-600 font-semibold transition-colors">
                   Ask Retail Craft (FAQs)
                 </Link>
               </li>
@@ -58,27 +58,27 @@ export default function Footer() {
             <h3 className="text-sm font-bold mb-4 uppercase tracking-wider">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services/SalesAndMerchandising" className="hover:text-purple-900 font-semibold transition-colors flex items-center gap-1">
+                <Link to="/services/SalesAndMerchandising" className="hover:text-yellow-600 font-semibold transition-colors flex items-center gap-1">
                 Sales and Merchandising
                 </Link>
               </li>
               <li>
-                <Link to="/services/BrandActivation" className="hover:text-purple-900 font-semibold transition-colors flex items-center gap-1">
+                <Link to="/services/BrandActivation" className="hover:text-yellow-600 font-semibold transition-colors flex items-center gap-1">
                 Brand Activation and Experiental Marketing
                 </Link>
               </li>
               <li>
-                <Link to="/services/MarketExpansion" className="hover:text-purple-900 font-semibold transition-colors flex items-center gap-1">
+                <Link to="/services/MarketExpansion" className="hover:text-yellow-600 font-semibold transition-colors flex items-center gap-1">
                 Market Expansion Services
                 </Link>
               </li>
               <li>
-                <Link to="/services/DataAndTechnology" className="hover:text-purple-900 font-semibold transition-colors flex items-center gap-1">
+                <Link to="/services/DataAndTechnology" className="hover:text-yellow-600 font-semibold transition-colors flex items-center gap-1">
                 Data & Technology
                 </Link>
               </li>
               <li>
-                <Link to="/services/DigitalMarketing" className="hover:text-purple-900 font-semibold transition-colors flex items-center gap-1">
+                <Link to="/services/DigitalMarketing" className="hover:text-yellow-600 font-semibold transition-colors flex items-center gap-1">
                 Digital Marketing
                 </Link>
               </li>
