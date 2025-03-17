@@ -81,7 +81,7 @@ const TeamMemberDetail = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="relative hover:bg-yellow-50
+              className="relative hover:bg-gradient-to-r from-yellow-50 via-white to-white
  rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 hover:shadow-yellow-700"
             >
               <div className="flex flex-col items-center p-8">

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex items-center justify-center h-screen bg-gradient-to-r bg-gray-50 text-center px-6 overflow-hidden">
+    <section className="relative flex items-center justify-center h-screen bg-gradient-to-tl from-[#f1ecd0] via-white to-white text-center px-6 overflow-hidden">
       <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-10"></div>
 
       {/* Floating Clouds */}
@@ -53,13 +53,12 @@ const HeroSection = () => {
         transition={{ duration: 0.8 }} 
         className="max-w-4xl relative z-10"
       >
-        <h1 className="text-5xl font-semibold  md:text-6xl"> Elevate Your 
-         <span className="text-black"> Retail Strategy with </span>
-          <span className="font-bold   text-yellow-700"> Retail Craft Asia</span>
+        <h1 className="text-5xl font-semibold  md:text-6xl pb-6 "> Elevate Your Retail Strategy with
+          <span className="font-bold text-yellow-600 mb-6"> Retail Craft Asia</span>
 
         </h1>
-        <h2  className="font-bold text-yellow-600  text-2xl mt-2" >Delivering 
-        <span className="font-bold text-yellow-600  text-3xl"> Growth Consistency</span> 
+        <h2  className="font-semibold text-yellow-600  text-3xl mt-2" >Delivering 
+        <span className="font-semibold text-yellow-600  text-3xl"> Growth Consistency</span> 
         
         </h2>
         <p className="mt-4 text-lg text-gray-800 md:text-xl">

@@ -74,6 +74,14 @@ body {
   @apply antialiased;
 
 }
-*{
+/* *{
   font-family: sans-serif;
+} */
+
+* {
+  font-family: 'Ubuntu',
+}
+
+ h2, h3 {
+  font-family: 'poppins', 
 }

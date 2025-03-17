@@ -64,9 +64,9 @@ const ServicesSection = () => {
   return (
     <div className="bg-gray-50 py-24 px-8 md:px-20 lg:px-36">
       <div className="text-center mb-16">
-        <h2 className="  uppercase tracking-wide drop-shadow-lg font-semibold text-5xl text-yellow-600 relative inline-block">
+      <h2 className="text-6xl font-semibold mb-6 text-yellow-600  uppercase tracking-wide drop-shadow-lg">
           Our Services
-          <span className="absolute -bottom-2 left-0 w-full h-1 bg-yellow-600 rounded"></span>
+          
         </h2>
       </div>
 
@@ -79,7 +79,7 @@ const ServicesSection = () => {
             <div className="relative mx-auto w-24 h-24 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300">
               {service.icon}
             </div>
-            <h3 className="mt-6 text-2xl font-extrabold text-yellow-700">
+            <h3 className="mt-6 text-2xl font-semibold text-yellow-600">
               {service.category}
             </h3>
             <ul className="mt-4 text-lg text-gray-800 list-disc list-inside text-left ml-6">
@@ -89,7 +89,7 @@ const ServicesSection = () => {
             </ul>
             <a
               href={service.link}
-              className="mt-6 inline-block text-yellow-700 font-semibold text-lg hover:underline"
+              className="mt-6 inline-block text-yellow-600 font-semibold text-lg hover:underline"
             >
               Learn more
             </a>
@@ -106,7 +106,7 @@ const ServicesSection = () => {
             <div className="relative mx-auto w-24 h-24 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300">
               {service.icon}
             </div>
-            <h3 className="mt-6 text-2xl font-extrabold text-yellow-700">
+            <h3 className="mt-6 text-2xl font-semibold text-yellow-600">
               {service.category}
             </h3>
             <ul className="mt-4 text-lg text-gray-800 list-disc list-inside text-left ml-6">
