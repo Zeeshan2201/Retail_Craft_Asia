@@ -455,7 +455,7 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent mt-7 ">Market Expansion Services</h1>
-        <p className="mt-6 max-w-3xl mx-auto text-lg text-black">
+        <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-700">
           Expanding into new markets requires strategic planning and execution. We support brands with tailored market entry strategies, local partnerships, and distribution solutions.
         </p>
         <Link
@@ -471,7 +471,7 @@ export default function ServicesPage() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-yellow-300"
+            className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-yellow-700"
           >
             <div className="w-48 h-48 mb-6 md:mb-0 flex items-center justify-center">
               {service.icon}
