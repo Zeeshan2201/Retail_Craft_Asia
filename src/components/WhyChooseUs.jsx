@@ -36,7 +36,7 @@ const whyUsData = [
 const WhyUs = () => {
   return (
     <section className="py-16 px-8 max-w-7xl mx-auto text-center">
-      <h2 className="text-5xl font-bold mb-16 text-gray-900">Why Choose Us</h2>
+      <h2 className="text-5xl font-semibold mb-16 text-[#C8A961]  uppercase tracking-wide drop-shadow-lg">Why Choose Us</h2>
       <div className="grid md:grid-cols-3 gap-12">
         {whyUsData.map((item, index) => (
           <div key={index} className="flex flex-col items-center gap-6 group">
