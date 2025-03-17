@@ -18,11 +18,12 @@ const industries = [
 
 const IndustryCard = ({ icon, title, description }) => {
   return (
-    <div className='bg-gradient-to-b from-yellow-45 to-white shadow-xl rounded-2xl p-8 text-center border transform transition duration-300 hover:scale-105 hover:shadow-2xl flex flex-col items-center hover:bg-yellow-50'>
+    <div className='bg-gradient-to-b from-yellow-45 to-white shadow-xl rounded-2xl p-8 text-center border transform transition duration-300 hover:scale-105 hover:shadow-lg flex flex-col items-center hover:bg-yellow-20 hover:shadow-yellow-700
+          > '>
       <div className='bg-gradient-to-r from-blue-200 to-blue-300 p-4 rounded-full w-28 h-28 flex items-center justify-center shadow-md'>
         <img src={icon} alt={title} className='w-16 h-16' />
       </div>
-      <h3 className='text-3xl font-extrabold mt-4 text-[#C6A969] tracking-wide'>{title}</h3>
+      <h3 className='text-3xl font-extrabold mt-4 text-yellow-600 tracking-wide'>{title}</h3>
       <p className='text-black text-lg mt-3 leading-relaxed max-w-xs'>{description}</p>
     </div>
   );
@@ -31,7 +32,7 @@ const IndustryCard = ({ icon, title, description }) => {
 const IndustriesGrid = () => {
   return (
     <div className='py-16 text-center px-6 bg-gray-100'>
-      <h2 className='text-5xl font-semibold  text-[#C6A969] mb-12 uppercase tracking-wide drop-shadow-lg'>Industries and Sectors</h2>
+      <h2 className='text-5xl font-semibold  text-yellow-600 mb-12 uppercase tracking-wide drop-shadow-lg'>Industries and Sectors</h2>
       <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 max-w-7xl mx-auto'>
         {industries.map((industry, index) => (
           <IndustryCard key={index} {...industry} />

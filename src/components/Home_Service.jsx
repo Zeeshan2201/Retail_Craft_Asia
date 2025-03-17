@@ -4,7 +4,7 @@ import { FaChartLine, FaBullhorn, FaGlobe, FaDatabase, FaLaptop } from "react-ic
 const services = [
   {
     category: "Market Expansion Services",
-    icon: <FaGlobe className="text-5xl text-[#C8A961]" />,
+    icon: <FaGlobe className="text-5xl text-yellow-600" />,
     link: "services/MarketExpansion",
     items: [
       "Product Sourcing",
@@ -18,7 +18,7 @@ const services = [
  
   {
     category: "Brand Activation & Experiential Marketing",
-    icon: <FaBullhorn className="text-5xl text-[#C8A961]" />,
+    icon: <FaBullhorn className="text-5xl text-yellow-600" />,
     link: "services/BrandActivation",
     items: [
       "Brand Ambassador Programmes",
@@ -30,7 +30,7 @@ const services = [
   },
   {
     category: "Sales & Merchandising",
-    icon: <FaChartLine className="text-5xl text-[#C8A961]" />,
+    icon: <FaChartLine className="text-5xl text-yellow-600" />,
     link: "services/SalesAndMerchandising",
     items: [
       "Field Sales",
@@ -43,7 +43,7 @@ const services = [
   },
   {
     category: "Data & Technology",
-    icon: <FaDatabase className="text-5xl text-[#C8A961]" />,
+    icon: <FaDatabase className="text-5xl text-yellow-600" />,
     link: "/services/DataAndTechnology",
     items: [
       "Data & Operation Intelligence",
@@ -54,7 +54,7 @@ const services = [
   },
   {
     category: "Digital Marketing",
-    icon: <FaLaptop className="text-5xl text-[#C8A961]" />,
+    icon: <FaLaptop className="text-5xl text-yellow-600" />,
     link: "services/DigitalMarketing",
     items: ["Content Marketing", "Social Media Marketing"],
   },
@@ -64,9 +64,9 @@ const ServicesSection = () => {
   return (
     <div className="bg-gray-50 py-24 px-8 md:px-20 lg:px-36">
       <div className="text-center mb-16">
-        <h2 className="  uppercase tracking-wide drop-shadow-lg font-semibold text-5xl  text-[#C8A961] relative inline-block">
+        <h2 className="  uppercase tracking-wide drop-shadow-lg font-semibold text-5xl text-yellow-600 relative inline-block">
           Our Services
-          <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#C8A961] rounded"></span>
+          <span className="absolute -bottom-2 left-0 w-full h-1 bg-yellow-600 rounded"></span>
         </h2>
       </div>
 
@@ -74,12 +74,12 @@ const ServicesSection = () => {
         {services.slice(0, 3).map((service, index) => (
           <div
             key={index}
-            className="relative bg-white rounded-3xl shadow-xl border border-gray-300 p-8 text-center transition-all duration-300 hover:shadow-2xl hover:border-[#C8A961]"
+            className="relative bg-white rounded-3xl shadow-sm border border-yellow-700 p-8 text-center transition-all duration-300 hover:shadow-lg hover:border-[#C8A961] hover:shadow-yellow-700"
           >
             <div className="relative mx-auto w-24 h-24 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300">
               {service.icon}
             </div>
-            <h3 className="mt-6 text-2xl font-extrabold text-[#C8A961]">
+            <h3 className="mt-6 text-2xl font-extrabold text-yellow-700">
               {service.category}
             </h3>
             <ul className="mt-4 text-lg text-gray-800 list-disc list-inside text-left ml-6">
@@ -89,7 +89,7 @@ const ServicesSection = () => {
             </ul>
             <a
               href={service.link}
-              className="mt-6 inline-block text-[#C8A961] font-semibold text-lg hover:underline"
+              className="mt-6 inline-block text-yellow-700 font-semibold text-lg hover:underline"
             >
               Learn more
             </a>
@@ -101,12 +101,12 @@ const ServicesSection = () => {
         {services.slice(3).map((service, index) => (
           <div
             key={index}
-            className="w-full sm:w-[80%] md:w-[45%] lg:w-[30%] h-auto sm:h-[70vh] relative bg-white rounded-3xl shadow-xl border border-gray-300 p-8 text-center transition-all duration-300 hover:shadow-2xl hover:border-[#C8A961]"
+            className="w-full sm:w-[80%] md:w-[45%] lg:w-[30%] h-auto sm:h-[70vh] relative bg-white rounded-3xl shadow-xl border border-gray-300 p-8 text-center transition-all duration-300 hover:shadow-lg hover:border-[#C8A961] hover:shadow-yellow-700"
           >
             <div className="relative mx-auto w-24 h-24 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300">
               {service.icon}
             </div>
-            <h3 className="mt-6 text-2xl font-extrabold text-[#C8A961]">
+            <h3 className="mt-6 text-2xl font-extrabold text-yellow-700">
               {service.category}
             </h3>
             <ul className="mt-4 text-lg text-gray-800 list-disc list-inside text-left ml-6">
@@ -116,7 +116,7 @@ const ServicesSection = () => {
             </ul>
             <a
               href={service.link}
-              className="mt-6 inline-block text-[#C8A961] font-semibold text-lg hover:underline"
+              className="mt-6 inline-block text-yellow-700 font-semibold text-lg hover:underline"
             >
               Learn more
             </a>
