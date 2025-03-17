@@ -510,7 +510,8 @@ export default function ServicesPage() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
-      <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent mt-7">Data & Technology</h1>
+        
+      <h1 className="text-4xl sm:text-5xl font-bold  text-yellow-600 bg-clip-text text-transparent mt-7">Data <span className="text-black">&</span> Technology</h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-700">
           We leverage cutting-edge technology to optimize business operations
           and decision-making.

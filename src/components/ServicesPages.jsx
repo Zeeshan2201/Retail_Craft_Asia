@@ -589,8 +589,8 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-sky-50 text-gray-900">
       <BackgroundAnimation />
       <section className="container mx-auto px-6 py-20 text-center">
-        <h1 className="text-4xl sm:text-5xl  font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent mt-7">
-          Sales & Merchandising
+        <h1 className="text-4xl sm:text-5xl  font-bold text-yellow-600 bg-clip-text text-transparent mt-7">
+          Sales <span className="text-black">&</span> Merchandising
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-700">
           We help brands maximize their market presence by ensuring the right products are available at the right time and place.
