@@ -69,7 +69,7 @@ const HeroSection = () => {
           <motion.button 
             whileHover={{ scale: 1.05 }} 
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-semibold rounded-lg shadow-md flex items-center gap-2 hover:bg-[#A78A5D] transition"
+            className="px-6 mr-4 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-semibold rounded-lg shadow-md flex items-center gap-2 hover:bg-[#A78A5D] transition"
           >
             Get Started <FaArrowRight />
           </motion.button>
@@ -78,7 +78,7 @@ const HeroSection = () => {
           <motion.button 
             whileHover={{ scale: 1.05 }} 
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-3 bg-gray-200 text-gray-900 font-semibold rounded-lg shadow-md border-yellow-600 border-2 flex items-center gap-2 hover:bg-gray-300 transition"
+            className="px-6 py-3 bg-gray-200 text-gray-900 font-semibold rounded-lg shadow-md  flex items-center gap-2 hover:bg-gray-300 transition"
           >
             Learn More <FaPlay />
           </motion.button>

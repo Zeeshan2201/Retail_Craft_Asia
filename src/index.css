@@ -72,7 +72,7 @@ button:focus-visible {
 
 body {
   @apply antialiased;
-
+  font-family:  'Noto Sans', sans-serif,  'Roboto Mono', monospace;
 }
 /* *{
   font-family: sans-serif;

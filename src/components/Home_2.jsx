@@ -12,9 +12,9 @@ const IndustrySection = () => {
           INDUSTRY SOLUTIONS
         </h3>
         <h2 className=" uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-bold text-gray-900 mt-2 text-center md:text-left">
-          Tailored Solutions for <span className="text-yellow-700">Retail & FMCG</span>
+          Tailored Solutions for <span className="mt-4 text-yellow-700">Retail & FMCG</span>
         </h2>
-        <p className="mt-4 text-base md:text-lg text-gray-700 text-center md:text-left">
+        <p className="mt-8 text-base md:text-lg text-gray-700 text-center md:text-left">
           We provide expert consulting services to help businesses optimize operations, enhance customer experience, and
           drive growth in the competitive retail industry.
         </p>
