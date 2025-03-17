@@ -577,7 +577,7 @@ export default function ServicesPage() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-row items-center bg-white p-6 border-t-4 border-yellow-500 rounded-lg shadow-sm hover:shadow-md hover:shadow-yellow-100 transition-all duration-300 transform hover:scale-105 w-full mx-auto"
+            className="flex flex-col md:flex-row items-center bg-white p-6 border-t-4 border-yellow-500 rounded-lg shadow-md hover:shadow-md hover:shadow-yellow-300 transition-all duration-300 transform hover:scale-105 w-full mx-auto text-center md:text-left"
           >
             <div className="w-48 h-48 flex justify-center items-center mr-6">
               {service.icon}
@@ -586,7 +586,7 @@ export default function ServicesPage() {
               <h2 className="text-2xl font-bold text-black mb-3">
                 {service.title}
               </h2>
-              <ul className="text-black space-y-2 text-left">
+              <ul className="text-gray-600 space-y-2 text-left">
                 {service.description.map((point, idx) => (
                   <li key={idx} className="leading-relaxed">
                     • {point}

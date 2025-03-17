@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaArrowRight, FaPlay } from "react-icons/fa";
 import { WiCloud } from "react-icons/wi";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -60,6 +61,7 @@ const HeroSection = () => {
           Expert consulting services to transform your retail business with innovative solutions and insights.
         </p>
         <div className="mt-6 flex justify-center gap-4">
+          <Link to="/services">
           <motion.button 
             whileHover={{ scale: 1.05 }} 
             whileTap={{ scale: 0.95 }}
@@ -67,6 +69,8 @@ const HeroSection = () => {
           >
             Get Started <FaArrowRight />
           </motion.button>
+          </Link>
+          <Link to="/about">
           <motion.button 
             whileHover={{ scale: 1.05 }} 
             whileTap={{ scale: 0.95 }}
@@ -74,6 +78,7 @@ const HeroSection = () => {
           >
             Learn More <FaPlay />
           </motion.button>
+          </Link>
         </div>
       </motion.div>
     </section>

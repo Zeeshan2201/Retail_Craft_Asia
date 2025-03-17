@@ -394,8 +394,8 @@ const services = [
       autoplay: true,
       animationData:Sourcing,
     }}
-    height={180}
-    width={180} />,
+    height={100}
+    width={100} />,
   },
   {
     title: "Market Research & Insights",
@@ -442,8 +442,8 @@ const services = [
       autoplay: true,
       animationData:Distribution,
     }}
-    height={180}
-    width={180} />,
+    height={100}
+    width={100} />,
   },
 ];
 
@@ -471,14 +471,14 @@ export default function ServicesPage() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-lg border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-yellow-100"
+            className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-yellow-300"
           >
             <div className="w-48 h-48 mb-6 md:mb-0 flex items-center justify-center">
               {service.icon}
             </div>
             <div className="md:ml-6">
               <h2 className="text-2xl font-bold text-black">{service.title}</h2>
-              <ul className="mt-2 text-black">
+              <ul className="mt-2 text-gray-600">
                 {service.description.map((point, idx) => (
                   <li key={idx} className="mt-1">• {point}</li>
                 ))}
