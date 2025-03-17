@@ -87,17 +87,17 @@ const MainNav = () => {
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         } p-6 shadow-lg`}
       >
-        <button className="mb-4 text-purple-900" onClick={() => setMobileMenuOpen(false)}>
+        <button className="mb-4 text-black" onClick={() => setMobileMenuOpen(false)}>
           <X size={28} />
         </button>
         <nav className="flex flex-col space-y-4">
-          <Link to="/" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-            <Link to="/About" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
+          <Link to="/" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+            <Link to="/About" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
           {/* <Link to="/Services" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>Services</Link> */}
           <div className="relative">
         <Link
           to="/services"
-          className="flex items-center  w-full text-base font-medium text-purple-900 py-2"
+          className="flex items-center  w-full text-base font-medium text-black py-2"
         >
           Services
           <span className='ml-1 pl-1 pt-1'>{isSubMenuOpen ? <ChevronUp className="w-4 h-4" onClick={() => setIsSubMenuOpen(!isSubMenuOpen)} /> : <ChevronDown className="w-4 h-4" onClick={() => setIsSubMenuOpen(!isSubMenuOpen)} />}</span>
@@ -106,16 +106,16 @@ const MainNav = () => {
         {/* Sub-Services Dropdown */}
         {isSubMenuOpen && (
           <div className="ml-4 mt-2 flex flex-col space-y-2">
-            <Link to="/services/SalesAndMerchandising" className="text-sm text-purple-700 hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Sales and Merchandising</Link>
-            <Link to="/services/BrandActivation" className="text-sm text-purple-700 hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Brand Activation</Link>
-            <Link to="/services/MarketExpansion" className="text-sm text-purple-700 hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Market Expansion</Link>
-            <Link to="/services/DataAndTechnology" className="text-sm text-purple-700 hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Data & Technology</Link>
-            <Link to="/services/DigitalMarketing" className="text-sm text-purple-700 hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Digital Marketing</Link>
+            <Link to="/services/SalesAndMerchandising" className="text-sm text-black hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Sales and Merchandising</Link>
+            <Link to="/services/BrandActivation" className="text-sm text-black hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Brand Activation</Link>
+            <Link to="/services/MarketExpansion" className="text-sm text-black hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Market Expansion</Link>
+            <Link to="/services/DataAndTechnology" className="text-sm text-black hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Data & Technology</Link>
+            <Link to="/services/DigitalMarketing" className="text-sm text-black hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Digital Marketing</Link>
           </div>
         )}
       </div>
-      <Link to="/MangTeam" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>Our Team</Link>
-          <Link to="/Contact" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
+      <Link to="/MangTeam" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Our Team</Link>
+          <Link to="/Contact" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
          
           {/* <Link to="/faq" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>FAQ</Link> */}
         </nav>
