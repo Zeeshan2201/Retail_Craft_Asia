@@ -1,6 +1,5 @@
 // import React from "react";
 // import Brand from "../animation/BrandActivation/Ambass/animations/745b1692-1531-4d8c-aa8a-a881efdbce78.json";
-// import Marketing from "../animation/BrandActivation/marketing.json";
 // import Instore_1 from "../animation/BrandActivation/Instore_1.json";
 // import sampeling from "../animation/BrandActivation/sampeling.json";
 // import Event from "../animation/BrandActivation/Event_1/animations/c83bfc08-686e-4341-9742-75a33f2f4de9.json";
@@ -452,10 +451,11 @@ import { Link } from "react-router-dom";
 import Lottie from "react-lottie";
 import Brand from "../animation/BrandActivation/Brand.json";
 import Event from "../animation/BrandActivation/Event.json";
-import sampeling from "../animation/BrandActivation/sampeling.json"
-import Instore_1 from "../animation/BrandActivation/Instore_1.json";
+import sampeling from "../animation/BrandActivation/sampeling.json";
+import Marketing from "../animation/BrandActivation/marketing.json";
+// import Instore_1 from "../animation/BrandActivation/Instore_1.json";
 import Instore from "../animation/BrandActivation/Instore.json";
-import { FaUsers, FaStore, FaChartLine, FaCalendarAlt } from "react-icons/fa";
+// import { FaUsers, FaStore, FaChartLine, FaCalendarAlt } from "react-icons/fa";
 import BackgroundAnimation from "../components/BackgroundAnimation";
 
 const services = [
@@ -519,7 +519,7 @@ const services = [
     options={{
       loop: true,
       autoplay: true,
-      animationData:sampeling,
+      animationData:Marketing,
     }}
     height={180}
     width={180} />
@@ -579,7 +579,7 @@ export default function ServicesPage() {
             key={index}
             className="flex flex-col md:flex-row items-center bg-white p-6 border-t-4 border-yellow-500 rounded-lg shadow-md hover:shadow-md hover:shadow-yellow-300 transition-all duration-300 transform hover:scale-105 w-full mx-auto text-center md:text-left"
           >
-            <div className="w-20 h-20 flex justify-center items-center mr-6">
+            <div className="w-48 h-48 flex justify-center items-center mr-6">
               {service.icon}
             </div>
             <div>
