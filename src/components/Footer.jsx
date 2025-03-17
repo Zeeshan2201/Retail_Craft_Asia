@@ -4,7 +4,7 @@ import { ExternalLink } from "lucide-react"
 export default function Footer() {
   return (
     <footer className="bg-white text-black  font-semibold py-12 px-4 md:px-6">
-      <div className="container mx-auto border-t-2 border-purple-900 pt-16 max-w-7xl">
+      <div className="container mx-auto border-t-2 border-yellow-500 pt-16 max-w-7xl">
         <div className="flex justify-evenly md:flex-row flex-col gap-8">
           {/* Brand and Mission Column */}
           <div className="lg:col-span-2 md:w-[25%]">
@@ -165,7 +165,7 @@ export default function Footer() {
         </div>
 
         {/* Social Media Section */}
-        <div className="mt-12 pt-8 border-t-2 border-purple-900">
+        <div className="mt-12 pt-8 border-t-2 border-yellow-500">
           {/* <h3 className="text-sm font-semibold uppercase tracking-wider">Follow us on</h3> */}
         </div>
       </div>
