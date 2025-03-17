@@ -124,7 +124,7 @@ import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pa
 
         <div className="px-6 py-20 text-center bg-gradient-to-b from-blue-50 to-white">
           {/* Our Vision Section */}
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#D4AF37]">Our Vision for the Future</h2>
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-yellow-600">Our Vision for the Future</h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
             Our vision shapes everything we aim to achieve. We set new standards, create meaningful impact, and drive transformation in our industry.
           </p>
@@ -147,7 +147,7 @@ import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pa
           </div>
 
           {/* Our Mission Section */}
-          <h2 className="mt-28 text-4xl sm:text-5xl font-extrabold text-[#D4AF37]">Fueling Success Through Our Mission</h2>
+          <h2 className="mt-28 text-4xl sm:text-5xl font-extrabold text-yellow-600">Fueling Success Through Our Mission</h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
             Our mission is to bring out the best in one another, deliver success to our customers, and inspire the industry through excellence and innovation.
           </p>
@@ -171,8 +171,8 @@ import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pa
         </div>
 
         <div className="w-full px-5 py-16 bg-gray-50">
-          <h2 className="text-5xl sm:text-6xl font-bold text-center mb-16 text-[#D4AF37]">
-            Our <span className="text-[#D4AF37]">Foundational Principles</span>
+          <h2 className="text-5xl sm:text-6xl font-bold text-center mb-16 text-yellow-600">
+            Our <span className="text-yellow-600 ">Foundational Principles</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-12 max-w-6xl mx-auto">
             {principles.map((principle, index) => (
@@ -183,7 +183,7 @@ import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pa
                 <div className="w-28 h-28 bg-white flex items-center justify-center rounded-xl shadow-md border border-gray-300 mb-4">
                   <img src={principle.image} alt={principle.title} className="w-20 h-20 object-contain text-[#D4AF37]" />
                 </div>
-                <h3 className="text-3xl font-bold text-black">{principle.title}</h3>
+                <h3 className="text-3xl font-bold text-yellow-600">{principle.title}</h3>
                 <p className="text-black text-lg mt-4 px-6 leading-relaxed">
                   {principle.description}
                 </p>
