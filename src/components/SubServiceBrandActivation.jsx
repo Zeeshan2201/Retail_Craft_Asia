@@ -552,7 +552,7 @@ export default function ServicesPage() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
-        <h1 className="text-5xl font-bold text-black mt-7">
+        <h1 className="text-4xl sm:text-5xl  font-bold text-black mt-7">
           Brand{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-700 drop-shadow-md">
             Activation

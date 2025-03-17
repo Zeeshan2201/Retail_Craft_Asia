@@ -282,7 +282,10 @@ export default function ServicesPage() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
-        <h1 className=" text-5xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent mt-7 h-16">Digital Marketing</h1>
+      <h1 className=" text-4xl sm:text-5xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent mt-7 ">
+  Digital Marketing
+</h1>
+
         <p className="mt-7 max-w-3xl mx-auto text-lg text-black">
           We boost online brand presence through digital marketing strategies, including SEO, PPC, and performance marketing. Our targeted campaigns engage audiences, generate leads, and drive conversions, ensuring measurable growth.
         </p>
