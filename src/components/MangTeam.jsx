@@ -61,7 +61,7 @@ const TeamMemberDetail = () => {
   }, [location])
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#d9e0fc] to-white">
+    <section className="py-20">
       <div className="container mx-auto px-4 mb-10">
         <div className="text-center mb-16">
           <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-yellow-700 font-bold md:text-6xl text-4xl mt-15 py-10 inline-block relative">
@@ -81,7 +81,7 @@ const TeamMemberDetail = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="relative bg-gradient-to-r from-yellow-300 via-yellow-300 to-yellow-400
+              className="relative bg-yellow-50
  rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 hover:shadow-yellow-700"
             >
               <div className="flex flex-col items-center p-8">
@@ -91,21 +91,21 @@ const TeamMemberDetail = () => {
                     <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
                   </div>
                   <div className="absolute -bottom-2 -right-2 bg-blue-500 rounded-full p-2 shadow-lg">
-                    <a href={member.linkedin} className="text-white hover:text-blue-200 transition-colors">
+                    <a href={member.linkedin} className="text-black hover:text-blue-200 transition-colors">
                       <Linkedin className="w-6 h-6" />
                     </a>
                   </div>
                 </div>
 
                 {/* Name & Role */}
-                <h3 className="text-white font-bold text-2xl mt-10">{member.name}</h3>
-                <div className="flex items-center mt-2 mb-4 text-white">
+                <h3 className="text-black font-bold text-2xl mt-10">{member.name}</h3>
+                <div className="flex items-center mt-2 mb-4 text-black">
                   <Briefcase className="w-4 h-4 mr-2" />
                   <p className="md:text-lg font-medium">{member.role}</p>
                 </div>
 
                 {/* Highlights */}
-                <ul className="text-white text-sm text-center mt-4 space-y-2">
+                <ul className="text-black text-sm text-center mt-4 space-y-2">
                   {member.highlights.map((highlight, i) => (
                     <li key={i} className="flex items-center">
                       <Award className="w-4 h-4 mr-2 text-yellow-300" />
