@@ -547,14 +547,14 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-[#EEF1FF] text-black">
+    <main className="min-h-screen bg-sky-50 text-black">
       <BackgroundAnimation />
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
         <h1 className="text-4xl sm:text-5xl  font-bold text-black mt-7">
           Brand{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-700 drop-shadow-md">
+          <span className="bg-clip-text text-transparent  text-yellow-600 drop-shadow-md">
             Activation
           </span>{" "}
           & Experiential Marketing
