@@ -37,13 +37,13 @@ const WhyUs = () => {
   return (
     <section className="py-16 px-8 max-w-7xl mx-auto text-center">
       <h2 className="text-6xl font-semibold mb-16 text-yellow-600  uppercase tracking-wide drop-shadow-lg">Why Choose Us</h2>
-      <div className="grid md:grid-cols-3 gap-12">
+      <div className="grid  md:grid-cols-3 gap-12">
         {whyUsData.map((item, index) => (
-          <div key={index} className="flex flex-col items-center gap-6 group">
+          <div key={index} className="flex w-[26vw]   h-[50vh] px-4 py-4  flex-col items-center gap-6 group">
             <div className="bg-gray-100 p-8 rounded-full transition-transform duration-300 group-hover:scale-110 shadow-lg">
               {item.icon}
             </div>
-            <h3 className="text-2xl font-semibold group-hover:text-yellow-600 transition-colors text-gray-900 text-center">
+            <h3 className="text-2xl  w-[24vw] text-center font-semibold group-hover:text-yellow-600 transition-colors text-gray-900 ">
               {item.title}
             </h3>
             <p className="text-lg text-gray-700 max-w-md leading-relaxed text-center">
