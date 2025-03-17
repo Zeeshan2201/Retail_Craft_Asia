@@ -306,7 +306,7 @@ export default function ServicesPage() {
             </div>
             <div className="md:ml-6">
               <h2 className="text-2xl font-bold text-black">{service.title}</h2>
-              <ul className="mt-2 text-black">
+              <ul className="mt-2 text-gray-600">
                 {service.description.map((point, idx) => (
                   <li key={idx} className="mt-1">• {point}</li>
                 ))}
