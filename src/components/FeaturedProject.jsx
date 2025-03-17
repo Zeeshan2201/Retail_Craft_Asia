@@ -350,34 +350,34 @@ const ServicesSection = () => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen w-full py-24 px-8 md:px-20 lg:px-36">
-      <div className="text-center mb-16">
+    <div className=" min-h-screen w-full py-24 px-8 md:px-20 lg:px-36">
+      {/* <div className="text-center mb-16">
         <h2 className="text-6xl font-extrabold text-[#C8A961] relative inline-block">
           Our Services
           <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#C8A961] rounded"></span>
         </h2>
-      </div>
+      </div> */}
 
       {services.map((service, index) => (
-        <div key={index} className="flex flex-col md:flex-row items-start mb-16 gap-10 w-full">
+        <div key={index} className="flex flex-col md:flex-row items-start justify-center mb-16 gap-10 w-full">
           {/* Left Heading */}
-          <div className="w-full md:w-1/4 mb-8 md:mb-0">
+          <div className="w-full md:w-1/4 flex h-64 justify-center items-center mb-8 md:mb-0">
             <h3 className="text-4xl font-bold text-[#C8A961]">{service.category}</h3>
           </div>
 
           {/* Right Cards with Scroll Buttons */}
           <div className="w-full md:w-3/4 relative">
             <div
-              className="flex overflow-x-hidden scroll-smooth space-x-6"
+              className="flex overflow-x-hidden scroll-smooth "
               ref={(el) => (scrollContainerRefs.current[index] = el)}
             >
               {service.items.map((item, idx) => (
-                <div key={idx} className="flex-shrink-0 w-56 h-56 bg-white rounded-xl shadow-xl border border-gray-300 p-6 text-center transition-all duration-300 hover:shadow-2xl hover:border-[#C8A961]">
+                <div key={idx} className="flex-shrink-0 mx-5 w-64 h-64 bg-white rounded-xl shadow-xl border border-gray-300 p-6 text-center transition-all duration-300 hover:shadow-2xl hover:border-[#C8A961]">
                   <div className="relative mx-auto w-20 h-20 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300">
                     {service.icon}
                   </div>
-                  <h4 className="mt-4 text-lg font-bold text-[#C8A961]">{item}</h4>
-                  <a href="#" className="mt-4 inline-block text-[#C8A961] font-semibold text-sm hover:underline">
+                  <h4 className="mt-4 text-lg font-bold h-16 text-gray-700">{item}</h4>
+                  <a href="#" className="mt-4 inline-block h-10 text-gray-700 font-semibold text-sm hover:underline">
                     Learn more
                   </a>
                 </div>
@@ -389,13 +389,13 @@ const ServicesSection = () => {
               <>
                 <button
                   onClick={() => scrollLeft(index)}
-                  className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition-all"
+                  className="absolute -left-4 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition-all"
                 >
                   <FaChevronLeft className="text-2xl text-[#C8A961]" />
                 </button>
                 <button
                   onClick={() => scrollRight(index)}
-                  className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition-all"
+                  className="absolute -right-4 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition-all"
                 >
                   <FaChevronRight className="text-2xl text-[#C8A961]" />
                 </button>
