@@ -459,7 +459,7 @@ export default function ServicesPage() {
           Expanding into new markets requires strategic planning and execution. We support brands with tailored market entry strategies, local partnerships, and distribution solutions.
         </p>
         <Link
-          to="/contact"
+          to="/contact"bg-gradient-to-r from-yellow-400 to-yellow-600
           className="mt-8 inline-block bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-8 py-3 rounded shadow-sm transition-all duration-300 hover:from-yellow-500 hover:to-yellow-700 hover:shadow-md"
         >
           Get in Touch →

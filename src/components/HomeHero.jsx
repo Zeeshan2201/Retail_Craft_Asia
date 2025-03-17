@@ -53,10 +53,15 @@ const HeroSection = () => {
         transition={{ duration: 0.8 }} 
         className="max-w-4xl relative z-10"
       >
-        <h1 className="text-5xl font-bold text-[#C8A961] md:text-6xl">
-          Elevate Your Retail Strategy with 
-          <span className="text-[#7A622E]"> Retail Craft Asia</span>
+        <h1 className="text-5xl font-semibold  md:text-6xl"> Elevate Your 
+         <span className="text-black"> Retail Strategy with </span>
+          <span className="font-bold   text-yellow-700"> Retail Craft Asia</span>
+
         </h1>
+        <h2  className="font-bold text-yellow-600  text-2xl mt-2" >Delivering 
+        <span className="font-bold text-yellow-600  text-3xl"> Growth Consistency</span> 
+        
+        </h2>
         <p className="mt-4 text-lg text-gray-800 md:text-xl">
           Expert consulting services to transform your retail business with innovative solutions and insights.
         </p>
@@ -65,7 +70,7 @@ const HeroSection = () => {
           <motion.button 
             whileHover={{ scale: 1.05 }} 
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-3 bg-[#C8A961] text-white font-semibold rounded-lg shadow-md flex items-center gap-2 hover:bg-[#A78A5D] transition"
+            className="px-6 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-semibold rounded-lg shadow-md flex items-center gap-2 hover:bg-[#A78A5D] transition"
           >
             Get Started <FaArrowRight />
           </motion.button>
@@ -74,7 +79,7 @@ const HeroSection = () => {
           <motion.button 
             whileHover={{ scale: 1.05 }} 
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-3 bg-gray-200 text-gray-900 font-semibold rounded-lg shadow-md flex items-center gap-2 hover:bg-gray-300 transition"
+            className="px-6 py-3 bg-gray-200 text-gray-900 font-semibold rounded-lg shadow-md border-yellow-600 border-2 flex items-center gap-2 hover:bg-gray-300 transition"
           >
             Learn More <FaPlay />
           </motion.button>
