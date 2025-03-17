@@ -99,7 +99,7 @@ const ContactCards = () => {
   return (
     <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6  bg-gray-50 ">
       <div className="text-center mb-10 mt-20 ">
-        <h2 className=" text-3xl uppercase font-bold text-black sm:text-5xl ">How can Retail Craft Asia customer support help you today?</h2>
+        <h2 className=" text-3xl uppercase font-bold text-black sm:text-5xl ">How can <span className='text-yellow-700' > Retail Craft Asia </span> customer support help you today?</h2>
         <p className="text-black mt-5 text-lg sm:text-2xl">Our friendly customer support team is ready & excited to help with any issue!</p>
       </div>
       
@@ -123,7 +123,7 @@ const ContactCards = () => {
         : null
 }
 >
-              <CardContent>
+              <CardContent >
                 {title}
                 <DotLottieReact src={
                   title === 'Get Appointment' ? 'https://lottie.host/05bf2555-c89c-4afa-8974-b5a3d97d526c/daBQ9OoO2E.lottie' :
