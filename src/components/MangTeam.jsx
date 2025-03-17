@@ -7,19 +7,6 @@ import { useLocation, Link } from 'react-router-dom'
 
 const teamMembers = [
   {
-    id: 1,
-    name: "Jean-Boris ROUX",
-    role: "Independent Director",
-    shortBio: "A seasoned leader with over 25 years of experience in distribution, hospitality, FMCG, and retail.",
-    image: "/Team/Member_1.png",
-    highlights: [
-      "25+ years of experience across Europe and Asia",
-      "Former President of French-Cambodian Chamber of Commerce",
-      "Certified professional coach & Six Sigma Green Belt",
-    ],
-    linkedin: "#",
-  },
-  {
     id: 2,
     name: "Parag Wasnik",
     role: "CEO",
@@ -32,6 +19,20 @@ const teamMembers = [
     ],
     linkedin: "#",
   },
+  {
+    id: 1,
+    name: "Jean-Boris ROUX",
+    role: "Independent Director",
+    shortBio: "A seasoned leader with over 25 years of experience in distribution, hospitality, FMCG, and retail.",
+    image: "/Team/Member_1.png",
+    highlights: [
+      "25+ years of experience across Europe and Asia",
+      "Former President of French-Cambodian Chamber of Commerce",
+      "Certified professional coach & Six Sigma Green Belt",
+    ],
+    linkedin: "#",
+  },
+ 
   {
     id: 3,
     name: "Naresh Semwal",

@@ -1,6 +1,7 @@
 import React from 'react';
 // import ProductShowcase from '../components/ProductShowCase';
-import WhyChooseUs from '../components/WhyChooseUs';
+// import WhyChooseUs from '../components/WhyChooseUs';
+import WhyChooseUsNew from '../components/WhyChooseUsNew';
 import HomeHero from "../components/HomeHero"
 import Industries from '../components/Industries'
 import Home_Service from "../components/Home_Service"
@@ -19,7 +20,8 @@ const Home = () => {
       <Industries />
      
      
-     <WhyChooseUs/>
+     {/* <WhyChooseUs/> */}
+     <WhyChooseUsNew/>
      <div className="">
         {/* services */}
      
