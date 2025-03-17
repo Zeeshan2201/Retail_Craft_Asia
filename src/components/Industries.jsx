@@ -18,7 +18,7 @@ const industries = [
 
 const IndustryCard = ({ icon, title, description }) => {
   return (
-    <div className='bg-gradient-to-b from-yellow-50 to-white shadow-xl rounded-2xl p-8 text-center border transform transition duration-300 hover:scale-105 hover:shadow-lg flex flex-col items-center hover:bg-yellow-20 hover:shadow-yellow-700
+    <div className='bg-gradient-to-b from-yellow-48 to-white shadow-xl rounded-2xl p-8 text-center border transform transition duration-300 hover:scale-105 hover:shadow-lg flex flex-col items-center hover:bg-yellow-20 hover:shadow-yellow-700
           > '>
       <div className='bg-gradient-to-r from-blue-200 to-blue-300 p-4 rounded-full w-28 h-28 flex items-center justify-center shadow-md'>
         <img src={icon} alt={title} className='w-16 h-16' />
