@@ -75,7 +75,7 @@
 
 //       {/* Hero Section */}
 //       <section className="container mx-auto px-6 py-20 text-center ">
-//       <h1 className="text-5xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent mt-7">
+//       <h1 className="text-5xl font-semibold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent mt-7">
 //   Sales & Merchandising
 // </h1>
 
@@ -112,7 +112,7 @@
 //               />
 //             </div>
 //             <div className="md:ml-6">
-//               <h2 className="text-2xl font-bold text-black">
+//               <h2 className="text-2xl font-semibold text-black">
 //                 {service.title}
 //               </h2>
 //               <ul className="mt-2 text-gray-600">
@@ -165,7 +165,7 @@
 //       {/* Hero Section */}
 //       <section className="container mx-auto px-4 py-20 text-center text-white bg-purple-900">
 
-//       <h1 className="mt-4 mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
+//       <h1 className="mt-4 mx-auto max-w-4xl text-4xl font-semibold leading-tight md:text-5xl lg:text-6xl">
 //           Sales and Merchandising
 //         </h1> <br></br>
 //         <p className="mb-4 mt-4 md:m-8  text-justify text-lg sm:text-2xl font-semibold tracking-wider">We help brands maximize their market presence by ensuring that the right products are available at the right time and place. Our expert team focuses on enhancing product visibility, executing strategic in-store promotions, and optimizing shelf placement to drive higher sales and brand recall.
@@ -218,7 +218,7 @@
 
 //           {/* Main Content */}
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">Field Sales</h2>
+//             <h2 className="text-3xl font-semibold text-white">Field Sales</h2>
 //             <p className="mt-2 text-lg text-blue-50"></p>
 //             <ul className="mt-4 space-y-2">
 //               {["Engages directly with retailers, wholesalers, and distributors",
@@ -260,7 +260,7 @@
 
 //           {/* Main Content */}
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">Merchandising</h2>
+//             <h2 className="text-3xl font-semibold text-white">Merchandising</h2>
 //             <p className="mt-2 text-lg text-blue-50"></p>
 //             <ul className="mt-4 space-y-2">
 //               {["Implements strategic product placement and eye-catching displays",
@@ -330,7 +330,7 @@
 
 //           {/* Main Content */}
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">Retail Audit</h2>
+//             <h2 className="text-3xl font-semibold text-white">Retail Audit</h2>
 //             <p className="mt-2 text-lg text-blue-50"></p>
 //             <ul className="mt-4 space-y-2">
 //               {[ "Evaluates product availability, pricing, and shelf positioning",
@@ -372,7 +372,7 @@
 
 //   {/* Main Content */}
 //   <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//     <h2 className="text-3xl font-bold text-white">Point of Sale Execution</h2>
+//     <h2 className="text-3xl font-semibold text-white">Point of Sale Execution</h2>
 //     <p className="mt-2 text-lg text-blue-50"></p>
 //     <ul className="mt-4 space-y-2">
 //       {["Ensures flawless execution of branding and promotions at retail outlets",
@@ -442,7 +442,7 @@
 
 //           {/* Main Content */}
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">Asset Optimisation</h2>
+//             <h2 className="text-3xl font-semibold text-white">Asset Optimisation</h2>
 //             <p className="mt-2 text-lg text-blue-50"></p>
 //             <ul className="mt-4 space-y-2">
 //               {["Maximizes the effectiveness of in-store assets like shelves and signage",
@@ -484,7 +484,7 @@
 
 //           {/* Main Content */}
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">Product Management</h2>
+//             <h2 className="text-3xl font-semibold text-white">Product Management</h2>
 //             <p className="mt-2 text-lg text-blue-50"></p>
 //             <ul className="mt-4 space-y-2">
 //               {["Oversees the entire lifecycle of FMCG products from launch to market expansion",
@@ -586,10 +586,11 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-sky-50 text-gray-900">
+    <main className="min-h-screen bg-gray-50 text-gray-900">
+    {/* <main className="min-h-screen bg-gradient-to-b from-gray-50 to-yellow-50 text-gray-900"> */}
       <BackgroundAnimation />
       <section className="container mx-auto px-6 py-20 text-center">
-        <h1 className="text-4xl sm:text-5xl  font-bold text-yellow-600 bg-clip-text text-transparent mt-7">
+        <h1 className="text-4xl sm:text-5xl  font-semibold text-yellow-600 bg-clip-text text-transparent mt-7">
           Sales <span className="text-black">&</span> Merchandising
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-700">
@@ -617,7 +618,7 @@ export default function ServicesPage() {
               />
             </div>
             <div className="md:ml-6">
-              <h2 className="text-2xl font-bold text-black">{service.title}</h2>
+              <h2 className="text-2xl font-semibold text-black">{service.title}</h2>
               <ul className="mt-2 text-gray-600">
                 {service.description.map((point, idx) => (
                   <li key={idx} className="mt-1">• {point}</li>

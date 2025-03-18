@@ -8,8 +8,8 @@ const IndustrySection = () => {
         <h3 className="uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-semibold text-yellow-600 text-center md:text-left">
           INDUSTRY SOLUTIONS
         </h3>
-        <h2 className="uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-bold text-gray-900 mt-2 text-center md:text-left">
-          Tailored Solutions for <span className="mt-4 text-yellow-700">Retail & FMCG</span>
+        <h2 className=" uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-bold text-gray-900 mt-2 text-center md:text-left">
+          Tailored Solutions for <span className="mt-4 text-yellow-600">Retail & FMCG</span>
         </h2>
         <p className="mt-8 text-base md:text-lg text-gray-700 text-center md:text-left">
           We provide expert consulting services to help businesses optimize operations, enhance customer experience, and
@@ -24,7 +24,22 @@ const IndustrySection = () => {
           <img
             src={Mem_1 || "/placeholder.svg"}
             alt="Industry Expert"
-            className="w-72 h-72 md:w-96 md:h-96 shadow-lg border-8 border-white"
+            className="absolute w-24 h-24 md:w-36 md:h-36 rounded-full shadow-lg border-4 border-white top-[8%] left-[40%]"
+          />
+          <img
+            src={Home_2 || "/placeholder.svg"}
+            alt="Retail Professional"
+            className="absolute w-24 h-24 md:w-36 md:h-36 rounded-full shadow-lg border-4 border-white top-[35%] left-[5%] md:left-[15%]"
+          />
+          <img
+            src={Home_3 || "/placeholder.svg"}
+            alt="FMCG Specialist"
+            className="absolute w-24 h-24 md:w-32 md:h-32 rounded-full shadow-lg border-4 border-white bottom-[9%] left-[32%] md:left-[42%]"
+          />
+          <img
+            src={Home_4 || "/placeholder.svg"}
+            alt="Market Analyst"
+            className="absolute w-24 h-24 md:w-32 md:h-32 rounded-full shadow-lg border-4 border-white right-[15%] md:right-[15%] top-[35%]"
           />
         </div>
       </div>

@@ -58,10 +58,10 @@ function GenFAQ() {
 
   return (
     <div className="px-4 sm:px-32 py-12 bg-gradient-to-r from-[#fdf6e3] to-[#f0e6d6] min-h-screen">
-      <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">Frequently Asked Questions</h1>
+      <h1 className="text-4xl font-semibold text-center mb-8 text-gray-800">Frequently Asked Questions</h1>
       {faqData.map((section, sectionIndex) => (
         <div key={sectionIndex} className="mb-8">
-          <h2 className="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-yellow-500 pb-2">
+          <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b-2 border-yellow-500 pb-2">
             {section.category}
           </h2>
           {section.items.map((item, index) => (
