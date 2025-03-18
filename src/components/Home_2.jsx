@@ -11,7 +11,7 @@ const IndustrySection = () => {
         <h3 className=" uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-semibold text-yellow-600 text-center md:text-left">
           INDUSTRY SOLUTIONS
         </h3>
-        <h2 className=" uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-semibold text-gray-900 mt-2 text-center md:text-left">
+        <h2 className=" uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-bold text-gray-900 mt-2 text-center md:text-left">
           Tailored Solutions for <span className="mt-4 text-yellow-600">Retail & FMCG</span>
         </h2>
         <p className="mt-8 text-base md:text-lg text-gray-700 text-center md:text-left">
