@@ -7,7 +7,7 @@ import { useLocation } from "react-router-dom"
 
 const teamMembers = [
   {
-    id: 2,
+    id: 1,
     name: "Parag Wasnik",
     role: "CEO",
     shortBio:
@@ -31,7 +31,7 @@ Outside work, he is an avid traveler and has explored over 40 countries.`,
     linkedin: "#",
   },
   {
-    id: 1,
+    id: 2,
     name: "Jean-Boris ROUX",
     role: "Independent Director",
     shortBio:
