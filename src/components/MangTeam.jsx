@@ -1,26 +1,13 @@
 "use client"
 
-import { useEffect } from "react"
-import { Linkedin, Award, Briefcase } from "lucide-react"
-import { motion } from "framer-motion"
-import { useLocation, Link } from 'react-router-dom'
+import { useRef } from "react";
+import { Linkedin, Award, ChevronLeft, ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const teamMembers = [
   {
     id: 1,
-    name: "Jean-Boris ROUX",
-    role: "Independent Director",
-    shortBio: "A seasoned leader with over 25 years of experience in distribution, hospitality, FMCG, and retail.",
-    image: "/Team/Member_1.png",
-    highlights: [
-      "25+ years of experience across Europe and Asia",
-      "Former President of French-Cambodian Chamber of Commerce",
-      "Certified professional coach & Six Sigma Green Belt",
-    ],
-    linkedin: "#",
-  },
-  {
-    id: 2,
     name: "Parag Wasnik",
     role: "CEO",
     shortBio: "An engineer and MBA with 20+ years of entrepreneurial experience in FMCG, Retail & Healthcare.",
@@ -29,6 +16,19 @@ const teamMembers = [
       "20+ years experience in South East Asia and India",
       "Expert in growth strategies and operational excellence",
       "Explored over 40 countries as an avid traveler",
+    ],
+    linkedin: "#",
+  },
+  {
+    id: 2,
+    name: "Jean-Boris ROUX",
+    role: "Independent Director",
+    shortBio: "A seasoned leader with over 25 years of experience in distribution, hospitality, FMCG, and retail.",
+    image: "/Team/Member_1.png",
+    highlights: [
+      "25+ years of experience across Europe and Asia",
+      "Former President of French-Cambodian Chamber of Commerce",
+      "Certified professional coach & Six Sigma Green Belt",
     ],
     linkedin: "#",
   },
@@ -45,89 +45,80 @@ const teamMembers = [
     ],
     linkedin: "#",
   },
-]
+  {
+    id: 4,
+    name: "John Doe",
+    role: "Marketing Director",
+    shortBio: "Marketing expert with 15+ years of experience in brand strategy and consumer engagement.",
+    image: "/Team/Member_4.jpg",
+    highlights: [
+      "Developed award-winning marketing campaigns",
+      "Specialist in digital marketing and brand growth",
+      "Passionate about consumer behavior analytics",
+    ],
+    linkedin: "#",
+  },
+];
 
 const TeamMemberDetail = () => {
-  const location = useLocation()
+  const scrollRef = useRef(null);
 
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace("#", "") // Remove #
-      const element = document.getElementById(id)
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" })
-      }
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const cardWidth = scrollRef.current.firstChild.offsetWidth + 16;
+      scrollRef.current.scrollBy({ left: direction === "left" ? -cardWidth : cardWidth, behavior: "smooth" });
+      
+      setTimeout(() => {
+        if (direction === "right" && scrollRef.current.scrollLeft + scrollRef.current.clientWidth >= scrollRef.current.scrollWidth) {
+          scrollRef.current.scrollLeft = 0;
+        } else if (direction === "left" && scrollRef.current.scrollLeft <= 0) {
+          scrollRef.current.scrollLeft = scrollRef.current.scrollWidth - scrollRef.current.clientWidth;
+        }
+      }, 500);
     }
-  }, [location])
+  };
 
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4 mb-10">
-        <div className="text-center mb-16">
-          <h2 className="text-center text-transparent bg-clip-text bg-yellow-700 font-bold md:text-6xl text-4xl mt-15 py-10 inline-block relative">
-            Meet Our Leadership Team
-          </h2>
-          <p className="text-black text-2xl max-w-2xl mx-auto mt-6">
+    <section className="py-20 bg-gray-50">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-10">
+          <h2 className="text-gray-800 font-bold md:text-5xl text-3xl mb-6">Meet Our Leadership Team</h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Visionary leaders with decades of experience, driving innovation and excellence across global markets.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
-            <motion.div
-              key={member.id}
-              id={member.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              viewport={{ once: true }}
-              className="relative hover:bg-gradient-to-r from-yellow-50 via-white to-white
- rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 hover:shadow-yellow-700"
-            >
-              <div className="flex flex-col items-center p-8">
-                {/* Profile Image */}
-                <div className="relative">
-                  <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
+        <div className="relative flex items-center justify-center">
+          <button onClick={() => scroll("left")} className="absolute left-0 p-3 bg-white shadow-md rounded-full z-10 hover:bg-gray-200">
+            <ChevronLeft size={32} />
+          </button>
+          <div ref={scrollRef} className="flex overflow-hidden w-[80vw] gap-6">
+            {teamMembers.concat(teamMembers).map((member, index) => (
+              <motion.div
+                key={index}
+                className="relative flex-shrink-0 w-[25vw] bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform"
+              >
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-200 shadow-md">
                     <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
                   </div>
-                  <div className="absolute -bottom-2 -right-2 bg-blue-500 rounded-full p-2 shadow-lg">
-                    <a href={member.linkedin} className="text-black hover:text-blue-200 transition-colors">
-                      <Linkedin className="w-6 h-6" />
-                    </a>
-                  </div>
+                  <h3 className="text-gray-800 font-bold text-xl mt-4">{member.name}</h3>
+                  <p className="text-gray-600 text-sm mt-1">{member.role}</p>
+                  <p className="text-gray-600 text-sm mt-2">{member.shortBio}</p>
+                  <Link to={`/MemberOne#${member.id}`} className="mt-4 bg-yellow-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-yellow-700">
+                    Read Full Bio
+                  </Link>
                 </div>
-
-                {/* Name & Role */}
-                <h3 className="text-black font-bold text-2xl mt-10">{member.name}</h3>
-                <div className="flex items-center mt-2 mb-4 text-black">
-                  <Briefcase className="w-4 h-4 mr-2" />
-                  <p className="md:text-lg font-medium">{member.role}</p>
-                </div>
-
-                {/* Highlights */}
-                <ul className="text-black text-sm text-center mt-4 space-y-2">
-                  {member.highlights.map((highlight, i) => (
-                    <li key={i} className="flex items-center">
-                      <Award className="w-4 h-4 mr-2 text-yellow-300" />
-                      {highlight}
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Read More Button */}
-                <Link
-                  to={`/MemberOne#${member.id}`}
-                  className="mt-6 bg-white text-yellow-600 font-semibold px-6 py-2 rounded-full hover:bg-gray-200 transition-colors"
-                >
-                  Read Full Bio
-                </Link>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
+          </div>
+          <button onClick={() => scroll("right")} className="absolute right-0 p-3 bg-white shadow-md rounded-full z-10 hover:bg-gray-200">
+            <ChevronRight size={32} />
+          </button>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TeamMemberDetail
+export default TeamMemberDetail;
