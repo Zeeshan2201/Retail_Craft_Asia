@@ -44,7 +44,7 @@ export default function BrandingServices() {
     <div className="min-h-screen text-black py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto ">
         <div className="text-center mb-16">
-          <h2 className="text-transparent bg-clip-text bg-gradient-to-t text-yellow-600 font-bold text-6xl mb-4">Our Process</h2>
+          <h2 className="text-transparent bg-clip-text bg-gradient-to-t text-yellow-600 font-semibold text-6xl mb-4">Our Process</h2>
           <p className="text-black max-w-2xl text-xl mx-auto">
           We follow a structured and result-driven approach to ensure seamless execution and maximum impact for our clients. Our process is designed to deliver customized solutions that align with your business goals.
           </p>
