@@ -62,7 +62,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <div className="bg-amber-50 py-24 px-8 md:px-20 lg:px-36">
+    <div className="bg-gray-50 py-24 px-8 md:px-20 lg:px-36">
       <div className="text-center mb-16">
       <h2 className="text-6xl font-semibold mb-6 text-yellow-600  uppercase tracking-wide drop-shadow-lg">
           Our Services

@@ -5,7 +5,7 @@ import Home_4 from "../assets/Home_Hero/Home_4.png"
 
 const IndustrySection = () => {
   return (
-    <section className="relative flex flex-col md:flex-row items-center justify-between px-4 md:px-20 py-8 md:py-8 mb-10 bg-amber-50 overflow-hidden">
+    <section className="relative flex flex-col md:flex-row items-center justify-between px-4 md:px-20 py-8 md:py-8 mb-10 bg-gray-50 overflow-hidden">
       {/* Left Content */}
       <div className="w-full md:max-w-2xl mb-12 md:mb-0">
         <h3 className=" uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-semibold text-yellow-600 text-center md:text-left">
