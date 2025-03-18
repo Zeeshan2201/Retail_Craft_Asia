@@ -37,7 +37,7 @@ const TeamMemberDetail = () => {
   return (
     <section className="my-10 bg-purple-900">
       <div className="container mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-center hover:text-white">Meet Our Team</h2>
+        <h2 className="text-4xl sm:text-5xl font-semibold mb-6 text-center hover:text-white">Meet Our Team</h2>
         <div className="space-y-10 mx-2 sm:mx-10">
           {teamMembers.map((member, index) => (
             <div

@@ -32,7 +32,7 @@
 //       {/* Hero Section */}
 //       <section className="container mx-auto px-4 py-20 text-center text-white">
        
-//        <h1 className="mt-4 mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
+//        <h1 className="mt-4 mx-auto max-w-4xl text-4xl font-semibold leading-tight md:text-5xl lg:text-6xl">
 //        Market Expansion Services
 //         </h1> <br></br>
 //         <p className="mb-4 mt-4 md:m-8  text-justify text-lg sm:text-2xl font-semibold tracking-wider">Expanding into new markets requires strategic planning and execution. We support brands with tailored market entry strategies, local partnerships, and distribution solutions. Our expertise helps businesses overcome entry barriers, minimize risks, and establish a strong market presence.</p>
@@ -84,7 +84,7 @@
 
 //           {/* Main Content */}
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">Product Sourcing</h2>
+//             <h2 className="text-3xl font-semibold text-white">Product Sourcing</h2>
 //             <p className="mt-2 text-lg text-blue-50"></p>
 //             <ul className="mt-4 md:text-lg space-y-2">
               
@@ -124,7 +124,7 @@
 
           
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">Market Research & Insights</h2>
+//             <h2 className="text-3xl font-semibold text-white">Market Research & Insights</h2>
 //             <p className="mt-2 text-lg text-blue-50"></p>
 //             <ul className="mt-4 md:text-lg space-y-2">
 //                 <li  className="text-white">• Collects and analyzes consumer and market data</li>
@@ -192,7 +192,7 @@
 
 //           {/* Main Content */}
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">Sales & Marketing</h2>
+//             <h2 className="text-3xl font-semibold text-white">Sales & Marketing</h2>
 //             <p className="mt-2 text-lg text-blue-50"></p>
 //             <ul className="mt-4 md:text-lg space-y-2">
               
@@ -231,7 +231,7 @@
 
           
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">Distribution & Logistics</h2>
+//             <h2 className="text-3xl font-semibold text-white">Distribution & Logistics</h2>
 //             <p className="mt-2 text-lg text-blue-50"></p>
 //             <ul className="mt-4 md:text-lg space-y-2">
 //                 <li  className="text-white">• Ensures efficient supply chain management and product delivery</li>
@@ -299,7 +299,7 @@
 
 //           {/* Main Content */}
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">After-Sales Services</h2>
+//             <h2 className="text-3xl font-semibold text-white">After-Sales Services</h2>
 //             <p className="mt-2 text-lg text-blue-50"></p>
 //             <ul className="mt-4 md:text-lg space-y-2">
               
@@ -449,12 +449,12 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-sky-50 text-gray-900">
+    <main className="min-h-screen bg-gray-50 text-gray-900">
       <BackgroundAnimation />
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center ">
-        <h1 className="text-4xl sm:text-5xl font-bold  text-yellow-600 bg-clip-text text-transparent mt-7 ">Market <span className="text-black">Expansion </span>Services</h1>
+        <h1 className="text-4xl sm:text-5xl font-semibold  text-yellow-600 bg-clip-text text-transparent mt-7 ">Market <span className="text-black">Expansion </span>Services</h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-700">
           Expanding into new markets requires strategic planning and execution. We support brands with tailored market entry strategies, local partnerships, and distribution solutions.
         </p>
@@ -477,7 +477,7 @@ export default function ServicesPage() {
               {service.icon}
             </div>
             <div className="md:ml-6">
-              <h2 className="text-2xl font-bold text-black">{service.title}</h2>
+              <h2 className="text-2xl font-semibold text-black">{service.title}</h2>
               <ul className="mt-2 text-gray-600">
                 {service.description.map((point, idx) => (
                   <li key={idx} className="mt-1">• {point}</li>

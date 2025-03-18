@@ -50,13 +50,13 @@ const HorizontalScroll = () => {
   return (
     <>
       <div ref={containerTopRef} className=" md:h-[10vh] h-[5vh] "></div>
-      {/* <h2 className="md:text-6xl text-4xl font-bold text-center ">Our Services</h2> */}
+      {/* <h2 className="md:text-6xl text-4xl font-semibold text-center ">Our Services</h2> */}
       <div 
     //   style={{
     //   background: "linear-gradient(to bottom, white 0%, #581c87 10%, #581c87 90%, white 100%)"
     // }} 
     className="  relative h-[100vh]  overflow-hidden  bg-gray-200 ">
-      <h2 className="md:text-6xl absolute md:left-[38%] left-[25%] text-black z-10 top-[7%] text-4xl font-bold text-center ">Our Services</h2>
+      <h2 className="md:text-6xl absolute md:left-[38%] left-[25%] text-black z-10 top-[7%] text-4xl font-semibold text-center ">Our Services</h2>
       
       {/* <div className="sticky top-0 h-[100vh] overflow-hidden bg-black"> */}
         <div
@@ -67,7 +67,7 @@ const HorizontalScroll = () => {
            <Section color=" flex flex-col md:w-[95dvw] w-[100dvw]">
           <div className='md:ml-20 ml-2 flex md:flex-row flex-col border-[#ffd700] rounded-xl md:h-[75%] h-[90%]  py-4 px-8 items-center justify-center'>
           <div className="md:w-[64%] w-[100%]">
-                <div className="text-4xl font-bold">Market Expansion Services</div>
+                <div className="text-4xl font-semibold">Market Expansion Services</div>
                 <p className="my-4 text-2xl">At Retail Craft Asia, we help businesses expand into new markets with end-to-end solutions.<br></br></p>
                 <div>
                   <p className="text-base text-gray-300 mt-2"><span className="text-black text-xl">1. Product Sourcing</span></p>
@@ -111,7 +111,7 @@ const HorizontalScroll = () => {
           <Section color="  flex flex-col  md:w-[95dvw] w-[100dvw]">
             <div className='md:ml-20 ml-2 flex md:flex-row flex-col border-[#ffd700] rounded-xl md:h-[75%] h-[90%] bg-gray-200 py-4 px-8 items-center justify-center'>
               <div className="md:w-[64%] w-[100%]">
-                <div className="text-4xl font-bold">Sales and Merchandising</div>
+                <div className="text-4xl font-semibold">Sales and Merchandising</div>
                 <p className="my-4 text-2xl">Our expertise ensures that your products reach the right customers at the right time, maximizing your market potential.<br></br></p>
                 <div>
                   <p className="mt-2 text-base text-gray-300"><span className="text-black text-xl">1. Field Sales</span></p>
@@ -151,7 +151,7 @@ const HorizontalScroll = () => {
           <Section color=" flex flex-col md:w-[95dvw] w-[100dvw]">
             <div className='md:ml-20 ml-2 flex md:flex-row flex-col border-[#ffd700] rounded-xl md:h-[75%] h-[90%] bg-gray-200 py-4 px-8 items-center justify-center'>
               <div className="md:w-[64%] w-[100%]">
-                <div className="text-4xl font-bold">Brand Activation and Experimental Marketing</div>
+                <div className="text-4xl font-semibold">Brand Activation and Experimental Marketing</div>
                 <p className="my-4 text-2xl">At Retail Craft Asia, we create impactful brand experiences that engage, inspire, and drive consumer action.<br></br></p>
                 <div>
                   <p className="text-base text-gray-300 mt-2"> <span className="text-xl text-black">1. Brand Ambassadors & Programs</span></p>
@@ -196,7 +196,7 @@ const HorizontalScroll = () => {
           <Section color="flex flex-col md:w-[95dvw] w-[100dvw]">
           <div className='md:ml-20 ml-2 flex md:flex-row flex-col border-[#ffd700] rounded-xl md:h-[75%] h-[90%] bg-gray-200 py-4 px-8 items-center justify-center'>
           <div className="md:w-[64%] w-[100%]">
-                <div className="text-4xl font-bold">Data and Technology</div>
+                <div className="text-4xl font-semibold">Data and Technology</div>
                 <p className="my-4 text-2xl">At Retail Craft Asia,we harness the power of data and technology to drive smarter business decisions.<br></br></p>
                 <div>
                   <p className="text-base text-gray-300 mt-2"><span className=" text-black text-xl"> 1. Data & Operations Intelligence</span></p>
@@ -234,7 +234,7 @@ const HorizontalScroll = () => {
           <Section color=" flex flex-col md:w-[95dvw] w-[100dvw]">
           <div className='md:ml-20 ml-2 flex md:flex-row flex-col border-[#ffd700] rounded-xl md:h-[75%] h-[90%] bg-gray-200 py-4 px-8 items-center justify-center'>
           <div className="md:w-[64%] w-[100%]">
-                <div className="text-4xl font-bold">Digital Marketing</div>
+                <div className="text-4xl font-semibold">Digital Marketing</div>
                 <p className="my-4 text-2xl">we create impactful digital marketing strategies that drive brand awareness, engagement, and conversions.<br></br></p>
                 <div>
                   <p className="text-base text-gray-300 mt-2"><span className="text-black text-xl">1. Content Marketing </span></p>
@@ -276,7 +276,7 @@ const HorizontalScroll = () => {
 };
 
 const Section = ({ children, color }) => (
-  <div className={`flex-shrink-0 w-screen h-screen ${color} flex items-center justify-center text-black text-4xl font-bold`}>
+  <div className={`flex-shrink-0 w-screen h-screen ${color} flex items-center justify-center text-black text-4xl font-semibold`}>
     {children}
   </div>
 );

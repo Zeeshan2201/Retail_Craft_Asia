@@ -99,9 +99,9 @@ const FoundationPrinciples = () => {
   }, []);
 
   return (
-    <div className="foundation-principles-container bg-blue-50 shadow-md">
+    <div className="foundation-principles-container bg-gradient-to-b from-gray-50 to-yellow-50 shadow-md">
       <div className="text-center font-semibold sm:mt-20 mb-5 pt-20 px-5">
-        <h1 className="text-4xl sm:text-6xl font-bold mt-5">
+        <h1 className="text-4xl sm:text-6xl font-semibold mt-5">
           <span className="text-yellow-600">Who we are,</span>
           <span className="text-yellow-700"> Your Strategic Partner.</span>
         </h1>
@@ -122,9 +122,9 @@ const FoundationPrinciples = () => {
         </p>
       </div>
 
-      <div className="w-full py-20 bg-gradient-to-b from-blue-50 to-white relative flex flex-col items-center text-center px-5">
+      <div className="w-full py-20 bg-gradient-to-b from-gray-50 to-yellow-50 relative flex flex-col items-center text-center px-5">
         {/* Animated Heading */}
-        <h2 className="text-4xl sm:text-5xl  font-bold max-w-3xl transition-opacity duration-1000 ease-in-out delay-200 opacity-100 text-yellow-600">
+        <h2 className="text-4xl sm:text-5xl  font-semibold max-w-3xl transition-opacity duration-1000 ease-in-out delay-200 opacity-100 text-yellow-600">
           {/* <span className="text-yellow-600">Our expertise</span>  
           <span className="text-yellow-600"> helps businesses</span>  
           <span className="text-yellow-600"> build meaningful connections that drive success.</span> */}
@@ -140,7 +140,7 @@ const FoundationPrinciples = () => {
           <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative z-10">
             <img src={img} alt="User" className="w-full h-full object-cover" />
           </div>
-          <div className="absolute top-0 left-0 w-full h-full bg-blue-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-gray-50 to-yellow-50rounded-full blur-3xl opacity-30 animate-pulse"></div>
 
           {/* Floating Icons with Animation */}
           <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
@@ -163,9 +163,9 @@ const FoundationPrinciples = () => {
           </div>
         </div>
 
-        <div className="px-6 py-20 text-center bg-gradient-to-b from-blue-50 to-white">
+        <div className="px-6 py-20 text-center bg-gradient-to-b from-gray-50 to-yellow-50">
           {/* Our Vision Section */}
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-yellow-600">
+          <h2 className="text-4xl sm:text-5xl font-semibold text-yellow-600">
             Our Vision for the Future
           </h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
@@ -198,7 +198,7 @@ const FoundationPrinciples = () => {
                 className="w-full sm:w-96 p-8 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)] text-center"
               >
                 <div className="text-6xl text-[#D4AF37]">{item.icon}</div>
-                <h3 className="text-3xl font-bold text-[#D4AF37] mt-6">
+                <h3 className="text-3xl font-semibold text-[#D4AF37] mt-6">
                   {item.title}
                 </h3>
                 <p className="text-lg text-black mt-4 leading-relaxed">
@@ -209,7 +209,7 @@ const FoundationPrinciples = () => {
           </div>
 
           {/* Our Mission Section */}
-          <h2 className="mt-28 text-4xl sm:text-5xl font-extrabold text-yellow-600">
+          <h2 className="mt-28 text-4xl sm:text-5xl font-semibold text-yellow-600">
             Fueling Success Through Our Mission
           </h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
@@ -241,7 +241,7 @@ const FoundationPrinciples = () => {
                 className="w-full sm:w-96 p-8 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)] text-center"
               >
                 <div className="text-6xl text-[#D4AF37]">{item.icon}</div>
-                <h3 className="text-3xl font-bold text-[#D4AF37] mt-6">
+                <h3 className="text-3xl font-semibold text-[#D4AF37] mt-6">
                   {item.title}
                 </h3>
                 <p className="text-lg text-black mt-4 leading-relaxed">
@@ -253,7 +253,7 @@ const FoundationPrinciples = () => {
         </div>
 
         <div className="w-full px-5 py-16 bg-gray-50">
-          <h2 className="text-5xl sm:text-6xl font-bold text-center mb-16 text-yellow-600">
+          <h2 className="text-5xl sm:text-6xl font-semibold text-center mb-16 text-yellow-600">
             Our{" "}
             <span className="text-yellow-600 ">Foundational Principles</span>
           </h2>
@@ -270,7 +270,7 @@ const FoundationPrinciples = () => {
                     className="w-20 h-20 object-contain text-[#D4AF37]"
                   />
                 </div>
-                <h3 className="text-3xl font-bold text-yellow-600">
+                <h3 className="text-3xl font-semibold text-yellow-600">
                   {principle.title}
                 </h3>
                 <p className="text-black text-lg mt-4 px-6 leading-relaxed">

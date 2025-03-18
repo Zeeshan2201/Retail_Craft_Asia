@@ -20,7 +20,7 @@
 //       />
 //       <div className="flex items-center mt-2">
 //         <span className="text-3xl text-yellow-600">{icon}</span>
-//         <h2 className="text-2xl font-bold text-yellow-600 ml-2">{title}</h2>
+//         <h2 className="text-2xl font-semibold text-yellow-600 ml-2">{title}</h2>
 //       </div>
 //       <p className="text-gray-600 text-center">{description}</p>
 //       <p className="text-gray-500 text-center mt-2">{additionalContent}</p>
@@ -65,7 +65,7 @@
 
 //   return (
 //     <div className="w-full max-w-8xl mx-auto py-10 bg-gradient-to-r from-yellow-600 to-white-500">
-//       <div className="text-6xl font-bold text-center mb-8 text-white">Our Services</div>
+//       <div className="text-6xl font-semibold text-center mb-8 text-white">Our Services</div>
 //     <div className="w-full py-10 bg-gradient-to-r from-yellow-600 to-white">
 //       <div className="text-6xl text-center mb-8 text-white">Our Services</div>
 //       <Slider {...settings} className="flex justify-center items-center">

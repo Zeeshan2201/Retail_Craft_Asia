@@ -56,7 +56,7 @@
 //             </div>
 
 //             <div className="text-black space-y-6 px-4">
-//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tight">
+//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-semibold leading-tight">
 //               Sales and Merchandising
 //               </h3>
               
@@ -87,7 +87,7 @@
 //           </div>
 //           <div className="max-w-7xl mx-auto grid grid-flow-dense md:grid-cols-2 grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 items-center mt-10">
 //             <div className="text-white row-start-2 md:row-start-auto md:col-start-1 space-y-6 px-4">
-//               <h3 className="text-transparent bg-clip-text bg-gradient-to-tl from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tight">
+//               <h3 className="text-transparent bg-clip-text bg-gradient-to-tl from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-semibold leading-tight">
 //               Brand Activation & Experiential Marketing
 //               </h3>
               
@@ -132,7 +132,7 @@
 //     />
 //             </div>
 //             <div className="text-white space-y-6 px-4">
-//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tigh">
+//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-semibold leading-tigh">
 //               Market Expansion Services
 //               </h3>
               
@@ -162,7 +162,7 @@
 //           </div>
 //           <div  className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center">
 //           <div className=" row-start-2 md:row-start-auto md:col-start-1 text-white space-y-6 px-4">
-//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tigh">
+//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-semibold leading-tigh">
 //               Data & Technology
 //               </h3>
               
@@ -225,7 +225,7 @@
 // />
 //             </div>
 //             <div className="text-white space-y-6 px-4 mt-10">
-//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tigh">
+//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-semibold leading-tigh">
 //               Digital Marketing
 //               </h3>
               
@@ -277,59 +277,84 @@
 
 
 import React from "react";
-import { FaChartLine, FaBullhorn, FaGlobe, FaDatabase, FaLaptop, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import {
+  FaChartLine,
+  FaBullhorn,
+  FaGlobe,
+  FaDatabase,
+  FaLaptop,
+  FaUsers,
+  FaShoppingCart,
+  FaClipboardCheck,
+  FaMoneyBillWave,
+  FaBoxOpen,
+  FaRocket,
+  FaHandshake,
+  FaSearch,
+  FaTruck,
+  FaHeadset,
+  FaBrain,
+  FaRobot,
+  FaGraduationCap,
+  FaCogs,
+  FaPenFancy,
+  FaThumbsUp,
+  FaChevronLeft, 
+  FaChevronRight 
+} from "react-icons/fa";
+
 
 const services = [
   {
     category: "Sales & Merchandising",
-    icon: <FaChartLine className="text-6xl text-[#C8A961]" />,
+    // icon: <FaChartLine className="text-6xl text-[#C8A961]" />,
     items: [
-      "Field Sales",
-      "Merchandising",
-      "Retail Audit",
-      "Point of Sale Execution",
-      "Asset Optimisation",
-      "Product Management"
+      { name: "Field Sales", icon: <FaUsers />, description: "Direct in-person sales and client relationship building." },
+      { name: "Merchandising", icon: <FaShoppingCart />, description: "Strategic product placement to maximize sales." },
+      { name: "Retail Audit", icon: <FaClipboardCheck />, description: "Evaluating retail execution and compliance." },
+      { name: "Point of Sale Execution", icon: <FaMoneyBillWave />, description: "Enhancing customer purchase experience." },
+      { name: "Asset Optimisation", icon: <FaBoxOpen />, description: "Maximizing asset utilization for efficiency." },
+      { name: "Product Management", icon: <FaRocket />, description: "Strategic planning and development of products." }
     ]
   },
   {
     category: "Brand Activation & Experiential Marketing",
-    icon: <FaBullhorn className="text-6xl text-[#C8A961]" />,
+    // icon: <FaBullhorn className="text-6xl text-[#C8A961]" />,
     items: [
-      "Brand Ambassador Programmes",
-      "Events & Road Shows",
-      "Sampling",
-      "Shopper Marketing",
-      "Instore Activation"
+      { name: "Brand Ambassador Programmes", icon: <FaHandshake />, description: "Engaging brand ambassadors to represent products." },
+      { name: "Events & Road Shows", icon: <FaSearch />, description: "Creating immersive brand experiences for consumers." },
+      { name: "Sampling", icon: <FaTruck />, description: "Providing product samples to boost awareness." },
+      { name: "Shopper Marketing", icon: <FaHeadset />, description: "Influencing customers at the point of purchase." },
+      { name: "Instore Activation", icon: <FaBrain />, description: "Driving sales through in-store promotional activities." }
     ]
   },
   {
     category: "Market Expansion Services",
-    icon: <FaGlobe className="text-6xl text-[#C8A961]" />,
+    // icon: <FaGlobe className="text-6xl text-[#C8A961]" />,
     items: [
-      "Product Sourcing",
-      "Market Research & Insights",
-      "Sales & Marketing",
-      "Distribution & Logistics",
-      "After Sales Services"
+      { name: "Product Sourcing", icon: <FaRobot />, description: "Identifying and acquiring quality products efficiently." },
+      { name: "Market Research & Insights", icon: <FaGraduationCap />, description: "Analyzing market trends for business growth." },
+      { name: "Sales & Marketing", icon: <FaCogs />, description: "Developing strategies to drive revenue and brand awareness." },
+      { name: "Distribution & Logistics", icon: <FaTruck />, description: "Ensuring smooth supply chain operations." },
+      { name: "After Sales Services", icon: <FaHeadset />, description: "Providing support and solutions post-purchase." }
     ]
   },
   {
     category: "Data & Technology",
-    icon: <FaDatabase className="text-6xl text-[#C8A961] pb-4" />,
+    // icon: <FaDatabase className="text-6xl text-[#C8A961] pb-4" />,
     items: [
-      "Data & Operation Intelligence",
-      "Sales Force Automation Tools",
-      "Learning & Development Modules",
-      "CRM Solutions"
+      { name: "Data & Operation Intelligence", icon: <FaBrain />, description: "Utilizing analytics to optimize operations." },
+      { name: "Sales Force Automation Tools", icon: <FaRobot />, description: "Enhancing sales processes with automation." },
+      { name: "Learning & Development Modules", icon: <FaGraduationCap />, description: "Training solutions for workforce skill enhancement." },
+      { name: "CRM Solutions", icon: <FaCogs />, description: "Managing customer relationships effectively." }
     ]
   },
   {
     category: "Digital Marketing",
-    icon: <FaLaptop className="text-6xl text-[#C8A961]" />,
+    // icon: <FaLaptop className="text-6xl text-[#C8A961]" />,
     items: [
-      "Content Marketing",
-      "Social Media Marketing"
+      { name: "Content Marketing", icon: <FaPenFancy />, description: "Creating engaging content to attract audiences." },
+      { name: "Social Media Marketing", icon: <FaThumbsUp />, description: "Boosting brand visibility through social platforms." }
     ]
   }
 ];
@@ -359,10 +384,10 @@ const ServicesSection = () => {
       </div> */}
 
       {services.map((service, index) => (
-        <div key={index} className="flex flex-col md:flex-row items-start justify-center mb-16 gap-10 w-full">
+        <div key={index} className="flex flex-col md:flex-row p items-start justify-center mb-16 gap-10 w-full">
           {/* Left Heading */}
-          <div className="w-full md:w-1/4 flex h-64 justify-center items-center mb-8 md:mb-0">
-            <h3 className="text-4xl font-bold text-[#C8A961]">{service.category}</h3>
+          <div className="w-full md:w-1/4 flex h-[50vh] justify-center items-center mb-8 md:mb-0">
+            <h3 className="text-4xl font-semibold text-yellow-600">{service.category}</h3>
           </div>
 
           {/* Right Cards with Scroll Buttons */}
@@ -372,11 +397,12 @@ const ServicesSection = () => {
               ref={(el) => (scrollContainerRefs.current[index] = el)}
             >
               {service.items.map((item, idx) => (
-                <div key={idx} className="flex-shrink-0 mx-5 w-64 h-64 bg-white rounded-xl shadow-xl border border-gray-300 p-6 text-center transition-all duration-300 hover:shadow-2xl hover:border-[#C8A961]">
-                  <div className="relative mx-auto w-20 h-20 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300">
-                    {service.icon}
+                <div key={idx} className="flex-shrink-0 mx-5 w-64 h-[50vh] bg-white rounded-xl shadow-xl border border-gray-300 p-6 text-center transition-all duration-300 hover:shadow-2xl hover:border-[#C8A961]">
+                  <div className="relative mx-auto w-20 h-20 bg-white shadow-lg text-yellow-600 flex items-center justify-center rounded-full border border-gray-300 text-2xl ">
+                    {item.icon}
                   </div>
-                  <h4 className="mt-4 text-lg font-bold h-16 text-gray-700">{item}</h4>
+                  <h4 className="mt-4 text-lg font-semibold h-16 text-gray-700">{item.name}</h4>
+                  <p>{item.description}</p>
                   <a href="#" className="mt-4 inline-block h-10 text-gray-700 font-semibold text-sm hover:underline">
                     Learn more
                   </a>
@@ -391,13 +417,13 @@ const ServicesSection = () => {
                   onClick={() => scrollLeft(index)}
                   className="absolute -left-4 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition-all"
                 >
-                  <FaChevronLeft className="text-2xl text-[#C8A961]" />
+                  <FaChevronLeft className="text-2xl text-yellow-600" />
                 </button>
                 <button
                   onClick={() => scrollRight(index)}
                   className="absolute -right-4 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition-all"
                 >
-                  <FaChevronRight className="text-2xl text-[#C8A961]" />
+                  <FaChevronRight className="text-2xl text-yellow-600" />
                 </button>
               </>
             )}

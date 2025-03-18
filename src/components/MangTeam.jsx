@@ -47,10 +47,10 @@ const teamMembers = [
   },
   {
     id: 4,
-    name: "John Doe",
-    role: "Marketing Director",
+    name: "Wichit Thammaphimol ",
+    role: "HR Director",
     shortBio: "Marketing expert with 15+ years of experience in brand strategy and consumer engagement.",
-    image: "/Team/Member_4.jpg",
+    image: "/Team/Member_3.png",
     highlights: [
       "Developed award-winning marketing campaigns",
       "Specialist in digital marketing and brand growth",
@@ -82,30 +82,30 @@ const TeamMemberDetail = () => {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-10">
-          <h2 className="text-gray-800 font-bold md:text-5xl text-3xl mb-6">Meet Our Leadership Team</h2>
+          <h2 className="text-gray-800 font-semibold md:text-5xl text-3xl mb-6">Meet Our Leadership Team</h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Visionary leaders with decades of experience, driving innovation and excellence across global markets.
           </p>
         </div>
 
-        <div className="relative flex items-center justify-center">
+        <div className="relative flex items-center justify-center ">
           <button onClick={() => scroll("left")} className="absolute left-0 p-3 bg-white shadow-md rounded-full z-10 hover:bg-gray-200">
             <ChevronLeft size={32} />
           </button>
-          <div ref={scrollRef} className="flex overflow-hidden w-[80vw] gap-6">
+          <div ref={scrollRef} className="flex overflow-hidden w-[80vw] gap-6  ">
             {teamMembers.concat(teamMembers).map((member, index) => (
               <motion.div
                 key={index}
                 className="relative flex-shrink-0 w-[25vw] bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform"
               >
-                <div className="flex flex-col items-center text-center">
+                <div className="flex flex-col items-center text-center ">
                   <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-200 shadow-md">
                     <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
                   </div>
-                  <h3 className="text-gray-800 font-bold text-xl mt-4">{member.name}</h3>
-                  <p className="text-gray-600 text-sm mt-1">{member.role}</p>
-                  <p className="text-gray-600 text-sm mt-2">{member.shortBio}</p>
-                  <Link to={`/MemberOne#${member.id}`} className="mt-4 bg-yellow-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-yellow-700">
+                  <h3 className="text-gray-800 font-semibold text-xl mt-4">{member.name}</h3>
+                  <p className="text-gray-600 text-lg mt-1 ">{member.role}</p>
+                  <p className="text-gray-600 text-lg mt-2 h-[10vh]">{member.shortBio}</p>
+                  <Link to={`/MemberOne#${member.id}`} className="mt-6 bg-yellow-600  text-white font-semibold px-4 py-2 rounded-xl  hover:bg-yellow-700">
                     Read Full Bio
                   </Link>
                 </div>

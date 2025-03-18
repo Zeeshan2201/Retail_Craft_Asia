@@ -1,13 +1,13 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useEffect } from "react"
 import { Linkedin, Award, Briefcase } from "lucide-react"
 import { motion } from "framer-motion"
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom"
 
 const teamMembers = [
   {
-    id: 2,
+    id: 1,
     name: "Parag Wasnik",
     role: "CEO",
     shortBio:
@@ -31,7 +31,7 @@ Outside work, he is an avid traveler and has explored over 40 countries.`,
     linkedin: "#",
   },
   {
-    id: 1,
+    id: 2,
     name: "Jean-Boris ROUX",
     role: "Independent Director",
     shortBio:
@@ -54,7 +54,7 @@ JB holds a Master's degree in Business Administration from EDC Business School i
     ],
     linkedin: "#",
   },
-  
+
   {
     id: 3,
     name: "Naresh Semwal",
@@ -67,11 +67,11 @@ Naresh has a proven track record in developing and executing high-impact RTM and
 
 With proficiency in P&L management, category management, and operational execution, he has consistently led growth, enhanced customer experience, and fostered long-term partnerships with key stakeholders. He has successfully executed large-scale field operations, managing Business Unit Heads, brand advisors, merchandisers, and sales teams to ensure seamless execution and brand visibility across multiple markets.
 
-Naresh’s leadership philosophy is rooted in execution excellence, team empowerment, and strategic innovation. His ability to align vision with operational execution, combined with his expertise in digital transformation and data-driven decision-making, makes him a forward-thinking leader capable of navigating complex business landscapes.
+Naresh's leadership philosophy is rooted in execution excellence, team empowerment, and strategic innovation. His ability to align vision with operational execution, combined with his expertise in digital transformation and data-driven decision-making, makes him a forward-thinking leader capable of navigating complex business landscapes.
 
 Beyond his corporate achievements, Naresh is deeply committed to social impact and community development. He actively supports orphan houses and social welfare initiatives, working to uplift underprivileged communities and create sustainable opportunities for those in need.
 
-Naresh holds a Bachelor’s degree from Hemwati Nandan Bahuguna University in India and a Diploma in Computer Education. Naresh Speaks English, Hindi, a bit Thai also, A strong advocate for continuous learning, he integrates technology and business intelligence to drive efficiency and growth. Outside of work, he is married and a proud father, love traveling.
+Naresh holds a Bachelor's degree from Hemwati Nandan Bahuguna University in India and a Diploma in Computer Education. Naresh Speaks English, Hindi, a bit Thai also, A strong advocate for continuous learning, he integrates technology and business intelligence to drive efficiency and growth. Outside of work, he is married and a proud father, love traveling.
 `,
     image: "/Team/Member_3.jpg",
     highlights: [
@@ -79,6 +79,26 @@ Naresh holds a Bachelor’s degree from Hemwati Nandan Bahuguna University in In
       "Leadership & Execution – Managed large-scale teams, ensuring seamless operations and brand visibility",
       "Digital & Data-Driven Growth – Leveraged technology for strategic innovation.",
       "Social Impact & Community Development – Supports orphan houses and welfare initiatives.",
+    ],
+    linkedin: "#",
+  },
+  {
+    id: 4,
+    name: "Wichit Thammaphimo",
+    role: "HR Director",
+    shortBio:
+      "Wichit Thammaphimo, a seasoned HR professional, has successfully led and managed numerous multinational businesses across the ASEAN region, including Thailand, Malaysia, Singapore, Indonesia, and Vietnam.",
+    fullDescription: `Wichit has played a pivotal role in initiating and implementing continuous organizational development programs, overseeing HR strategies, policies, and processes while ensuring compliance with both organizational and local regulations. His extensive experience spans various industries, where he has provided expert consultation in human resources and general administration to leading companies such as Kerry Logistics, Kerry Freight, Kintetsu World Express, Linfox Logistics, Linfox Transport, LF Logistics, and Formica.
+
+With deep expertise in HR leadership across multiple countries, Wichit has successfully navigated the complexities of diverse cultural environments, strategic business expectations, and organizational dynamics. His capabilities include workforce planning, talent acquisition, compensation and benefits, rewards management, compliance, talent development, cost and budget planning, performance development, HRIS, policies and procedures, succession planning, employee and industrial relations, and customer satisfaction management. He is also highly skilled in learning and development, coaching, and mentoring, ensuring employees and organizations achieve sustained growth.
+
+An expert in change management and organizational transition, Wichit is deeply passionate about people development and talent empowerment. He holds a Bachelor's degree from Assumption University and has earned certifications in Professional HR, Public Industrial Relations, and Professional Occupational Health & Safety. Beyond his professional achievements, he enjoys traveling and listening to jazz music, embracing a lifestyle that balances work excellence with personal fulfillment.`,
+    image: "/Team/Member_3.png",
+    highlights: [
+      "Expert in change management and transition",
+      "Deep experience in ASEAN HR leadership",
+      "Extensive background in compliance and workforce planning",
+      "Certified in Professional HR and Occupational Health & Safety",
     ],
     linkedin: "#",
   },
@@ -101,7 +121,7 @@ const TeamMemberDetail = () => {
     <section className="py-20 bg-gradient-to-br from-[#d9e0fc] to-white">
       <div className="container mx-auto px-4 mb-10">
         <div className="text-center mb-16">
-          <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-bold md:text-6xl text-4xl mt-15 py-10 inline-block relative">
+          <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-semibold md:text-6xl text-4xl mt-15 py-10 inline-block relative">
             Meet Our Leadership Team
           </h2>
           <p className="text-black text-2xl max-w-2xl mx-auto mt-6">
@@ -137,7 +157,9 @@ const TeamMemberDetail = () => {
                       </a>
                     </div>
                   </div>
-                  <h3 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-bold text-2xl  mt-15 pt-10 inline-block relative">{member.name}</h3>
+                  <h3 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-semibold text-2xl  mt-15 pt-10 inline-block relative">
+                    {member.name}
+                  </h3>
                   <div className="flex items-center mt-2 mb-4">
                     <Briefcase className="w-4 h-4 text-gray-600 mr-2" />
                     <p className="text-gray-600 md:text-lg font-medium">{member.role}</p>
@@ -173,3 +195,4 @@ const TeamMemberDetail = () => {
 }
 
 export default TeamMemberDetail
+
