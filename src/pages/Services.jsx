@@ -11,7 +11,7 @@ import ServiceHero from "../components/ServiceHero"
 const Services = () => {
   return (<>
       <ServiceHero/>
-    <section className=" min-h-screen py-10  bg-gradient-to-tl from-white via-[#ffffff] from-[38%] to-[64%]  to-white">
+    <section className=" min-h-screen py-10  bg-gray-50">
     {/* <section className=" min-h-screen py-10  bg-gradient-to-tl from-white via-[#d4af37] from-[38%] to-[64%]  to-white"> */}
     {/* <section className="bg-[#1a237e] min-h-screen py-20 "> */}
     <div className="  mx-auto text-center ">
