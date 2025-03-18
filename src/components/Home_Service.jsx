@@ -75,7 +75,7 @@ const ServicesSection = () => {
         {services.slice(0, 3).map((service, index) => (
           <div
             key={index}
-            className="relative bg-white rounded-3xl  p-8 text-center transition-all duration-300 shadow-lg hover:border-[#C8A961] shadow-gray-300"
+            className="relative bg-white rounded-3xl  p-8 text-center transition-all duration-300 shadow-lg hover:shadow-yellow-300 shadow-gray-300"
           >
             <div className="relative mx-auto w-24 h-24 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300">
               {service.icon}
@@ -102,10 +102,10 @@ const ServicesSection = () => {
         {services.slice(3).map((service, index) => (
           <div
             key={index}
-            className="w-full sm:w-[80%] md:w-[45%] lg:w-[30%] sm:h-[64vh] relative bg-white rounded-3xl shadow-lg p-8 text-center transition-all duration-300 hover:shadow-lg hover:border-[#C8A961 shadow-gray-300"
+            className="w-full sm:w-[80%] md:w-[45%] lg:w-[30%] sm:h-[64vh] relative bg-white rounded-3xl shadow-lg p-8 text-center transition-all duration-300 hover:shadow-lg hover:shadow-yellow-300 shadow-gray-300"
             // className="hover:bg-gradient-to-r from-[#f1ecd0] via-white to-white shadow-xl transfrom transition duration-300 w-full sm:w-[80%] md:w-[45%] lg:w-[30%] sm:h-[64vh] relative bg-white rounded-3xl p-8 text-center  hover:scale-105 hover:shadow-lg flex flex-col items-center hover:bg-yellow-20 hover:shadow-yellow-700 hover:shadow-lg hover:border-[#C8A961 shadow-gray-300"
           >
-            <div className="relative mx-auto w-24 h-24 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300">
+            <div className="relative mx-auto w-24 h-24 bg-white shadow-lg flex items-center justify-center rounded-full border border-gray-300 ">
               {service.icon}
             </div>
             <h3 className="mt-6 text-2xl h-8 font-semibold text-yellow-600">
