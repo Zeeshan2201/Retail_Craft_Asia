@@ -12,7 +12,7 @@ const industries = [
   { icon: RetailIcon, title: 'Retail', description: 'Retail involves selling goods and services directly to consumers through supermarkets, department stores, and online platforms.' },
   { icon: HealthBeautyIcon, title: 'Health & Beauty', description: 'Personal care, skincare, cosmetics, and wellness products, focusing on enhancing well-being and promoting a healthier lifestyle.' },
   { icon: ConsumerDurablesIcon, title: 'Consumer Durables', description: 'Long-lasting goods like appliances, gadgets, and furniture designed for extended use and smart technology integration.' },
-  { icon: BankingIcon, title: 'Banking & Finance', description: 'Financial services including banking, investment, insurance, and fintech innovations that support economic stability.' },
+  { icon: BankingIcon, title: 'Hospitality Sector', description: 'Hotels, restaurants, travel, and tourism services that focus on customer experience and leisure industry innovations.' },
   { icon: PharmaceuticalsIcon, title: 'Pharmaceuticals', description: 'Prescription and OTC medicines, medical devices, and healthcare solutions that drive advancements in global health.' }
 ];
 

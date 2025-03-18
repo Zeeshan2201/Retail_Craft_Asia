@@ -22,7 +22,7 @@ const MainNav = () => {
       <header className="fixed left-0 right-0 top-0 z-50 flex h-20 items-center bg-white px-6 md:px-12 shadow-lg">
         <div className="flex flex-1 items-center justify-between w-full">
           <Link to="/" className="shrink-0">
-            <img className='w-20 h-15' src="/logo.png" alt="Logo" />
+            <img className='w-25 h-20' src="/logo_1.png" alt="Logo" />
           </Link>
           
           {/* Desktop Navigation */}
@@ -61,7 +61,7 @@ const MainNav = () => {
                 </div>
               </div>
             </div>
-            <Link to="/MangTeam" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Our Team</Link>
+            <Link to="/MangTeam" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Management</Link>
             <Link to="/Contact" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Contact Us</Link>
             {/* <Link to="/faq" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">FAQ</Link> */}
             
