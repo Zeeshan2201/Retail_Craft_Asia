@@ -65,9 +65,9 @@ const TeamMemberDetail = () => {
 
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const cardWidth = scrollRef.current.firstChild.offsetWidth + 16;
+      const cardWidth = scrollRef.current.firstChild.offsetWidth + 16; // Include gap
       scrollRef.current.scrollBy({ left: direction === "left" ? -cardWidth : cardWidth, behavior: "smooth" });
-      
+
       setTimeout(() => {
         if (direction === "right" && scrollRef.current.scrollLeft + scrollRef.current.clientWidth >= scrollRef.current.scrollWidth) {
           scrollRef.current.scrollLeft = 0;
@@ -80,6 +80,20 @@ const TeamMemberDetail = () => {
 
   return (
     <section className="py-20 bg-gray-50">
+      {/* Custom CSS to hide scrollbar */}
+      <style>
+        {`
+          .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+          }
+
+          .scrollbar-hide {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+          }
+        `}
+      </style>
+
       <div className="container mx-auto px-6">
         <div className="text-center mb-10">
           <h2 className="text-gray-800 font-semibold md:text-5xl text-3xl mb-6">Meet Our Leadership Team</h2>
@@ -88,33 +102,48 @@ const TeamMemberDetail = () => {
           </p>
         </div>
 
-        <div className="relative flex items-center justify-center ">
-          <button onClick={() => scroll("left")} className="absolute left-0 p-3 bg-white shadow-md rounded-full z-10 hover:bg-gray-200">
+        <div className="relative">
+          {/* Scroll Buttons */}
+          <button
+            onClick={() => scroll("left")}
+            className="absolute -left-12 top-1/2 transform -translate-y-1/2 p-3 bg-white shadow-md rounded-full z-10 hover:bg-gray-200"
+          >
             <ChevronLeft size={32} />
           </button>
-          <div ref={scrollRef} className="flex overflow-hidden w-[80vw] gap-6  ">
+          <button
+            onClick={() => scroll("right")}
+            className="absolute -right-12 top-1/2 transform -translate-y-1/2 p-3 bg-white shadow-md rounded-full z-10 hover:bg-gray-200"
+          >
+            <ChevronRight size={32} />
+          </button>
+
+          {/* Card Container */}
+          <div
+            ref={scrollRef}
+            className="flex overflow-x-hidden w-full gap-6 snap-x snap-mandatory scrollbar-hide"
+          >
             {teamMembers.concat(teamMembers).map((member, index) => (
               <motion.div
                 key={index}
-                className="relative flex-shrink-0 w-[25vw] bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform"
+                className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/3 bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform snap-center"
               >
-                <div className="flex flex-col items-center text-center ">
+                <div className="flex flex-col items-center text-center">
                   <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-200 shadow-md">
                     <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
                   </div>
                   <h3 className="text-gray-800 font-semibold text-xl mt-4">{member.name}</h3>
-                  <p className="text-gray-600 text-lg mt-1 ">{member.role}</p>
+                  <p className="text-gray-600 text-lg mt-1">{member.role}</p>
                   <p className="text-gray-600 text-lg mt-2 h-[10vh]">{member.shortBio}</p>
-                  <Link to={`/MemberOne#${member.id}`} className="mt-6 bg-yellow-600  text-white font-semibold px-4 py-2 rounded-xl  hover:bg-yellow-700">
+                  <Link
+                    to={`/MemberOne#${member.id}`}
+                    className="mt-6 bg-yellow-600 text-white font-semibold px-4 py-2 rounded-xl hover:bg-yellow-700"
+                  >
                     Read Full Bio
                   </Link>
                 </div>
               </motion.div>
             ))}
           </div>
-          <button onClick={() => scroll("right")} className="absolute right-0 p-3 bg-white shadow-md rounded-full z-10 hover:bg-gray-200">
-            <ChevronRight size={32} />
-          </button>
         </div>
       </div>
     </section>
