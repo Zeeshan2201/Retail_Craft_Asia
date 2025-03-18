@@ -70,10 +70,33 @@ button:focus-visible {
 @tailwind components;
 @tailwind utilities;
 
+
+* {
+  /* @apply border-border; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins), sans-serif;
+  @apply font-semibold;
+}
 body {
-  @apply antialiased;
+  @apply antialiased bg-background text-foreground;
+  /* font-family: sans-serif,'Roboto Mono', 'Noto Sans',    monospace; */
+  font-family: var(--font-poppins), sans-serif;
 
 }
-*{
+/* *{
   font-family: sans-serif;
-}
+} */
+
+/* * {
+  font-family: 'Ubuntu',
+} */
+
+ /* h2, h3 {
+  font-family: 'poppins', 
+} */

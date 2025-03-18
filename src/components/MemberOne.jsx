@@ -7,30 +7,6 @@ import { useLocation } from 'react-router-dom';
 
 const teamMembers = [
   {
-    id: 1,
-    name: "Jean-Boris ROUX",
-    role: "Founder",
-    shortBio:
-      "A seasoned leader with over 25 years of diverse experience spanning distribution, hospitality, FMCG, and retail industries across Europe and Asia.",
-    fullDescription: `Jean-Boris ROUX, aka "JB", is a seasoned leader with over 25 years of diverse experience spanning distribution, hospitality, FMCG, and retail industries across Europe and Asia. His career has allowed him to work with some of the world's most prestigious companies, where he gained invaluable expertise in strategic growth, operational excellence, and market expansion.
-
-Over the years, JB has built a strong track record in shaping growth strategies, managing franchise development, and building distribution networks, resulting in market dominance in the regions he oversaw. This expertise covers supermarkets, convenience stores, and dealerships, with hands-on experience at companies like Shell, Lidl, and Ford, where he led successful retail transformations and market expansions.
-
-Throughout his career, JB has served on multiple Boards of Directors across Cambodia, Thailand, Singapore, Myanmar, and Laos, including that of a regional airport food retail group acquired by global multi-sector catering leader Newrest and offering a diverse range of in-house brands as well as international chains such as Burger King, Starbucks, Subway, The Pizza Company, Dairy Queen, and Krispy Kreme. JB's leadership is characterized by his ability to blend visionary thinking with operational execution. His true passion lies in building sustainable businesses and developing strong high-performing teams. Whether transforming a company's operations or leading brands to new heights, JB's focus remains on creating lasting success, inspiring growth, and delivering exceptional value to all stakeholders.
-
-In addition to his corporate leadership roles, JB has held the position of President of the French-Cambodian Chamber of Commerce for five years and is currently serving as Vice President of the Franco-Thai Chamber of Commerce, actively contributing to business development and trade initiatives in the region.
-
-JB holds a Master's degree in Business Administration from EDC Business School in France and speaks French, English, Cambodian, Thai, and German. A certified professional coach, he has also successfully completed the Director Certification Program at the Institute of Directors in Thailand and holds a Six Sigma Green Belt certification. Outside of work, he is married and a proud father of two children.`,
-    image: "/Team/Member_1.png",
-    highlights: [
-      "25+ years of experience across Europe and Asia",
-      "Former President of French-Cambodian Chamber of Commerce",
-      "Expertise in strategic growth and market expansion",
-      "Certified professional coach and Six Sigma Green Belt",
-    ],
-    linkedin: "#",
-  },
-  {
     id: 2,
     name: "Parag Wasnik",
     role: "CEO",
@@ -54,6 +30,31 @@ Outside work, he is an avid traveler and has explored over 40 countries.`,
     ],
     linkedin: "#",
   },
+  {
+    id: 1,
+    name: "Jean-Boris ROUX",
+    role: "Independent Director",
+    shortBio:
+      "A seasoned leader with over 25 years of diverse experience spanning distribution, hospitality, FMCG, and retail industries across Europe and Asia.",
+    fullDescription: `Jean-Boris ROUX, aka "JB", is a seasoned leader with over 25 years of diverse experience spanning distribution, hospitality, FMCG, and retail industries across Europe and Asia. His career has allowed him to work with some of the world's most prestigious companies, where he gained invaluable expertise in strategic growth, operational excellence, and market expansion.
+
+Over the years, JB has built a strong track record in shaping growth strategies, managing franchise development, and building distribution networks, resulting in market dominance in the regions he oversaw. This expertise covers supermarkets, convenience stores, and dealerships, with hands-on experience at companies like Shell, Lidl, and Ford, where he led successful retail transformations and market expansions.
+
+Throughout his career, JB has served on multiple Boards of Directors across Cambodia, Thailand, Singapore, Myanmar, and Laos, including that of a regional airport food retail group acquired by global multi-sector catering leader Newrest and offering a diverse range of in-house brands as well as international chains such as Burger King, Starbucks, Subway, The Pizza Company, Dairy Queen, and Krispy Kreme. JB's leadership is characterized by his ability to blend visionary thinking with operational execution. His true passion lies in building sustainable businesses and developing strong high-performing teams. Whether transforming a company's operations or leading brands to new heights, JB's focus remains on creating lasting success, inspiring growth, and delivering exceptional value to all stakeholders.
+
+In addition to his corporate leadership roles, JB has held the position of President of the French-Cambodian Chamber of Commerce for five years and is currently serving as Vice President of the Franco-Thai Chamber of Commerce, actively contributing to business development and trade initiatives in the region.
+
+JB holds a Master's degree in Business Administration from EDC Business School in France and speaks French, English, Cambodian, Thai, and German. A certified professional coach, he has also successfully completed the Director Certification Program at the Institute of Directors in Thailand and holds a Six Sigma Green Belt certification. Outside of work, he is married and a proud father of two children.`,
+    image: "/Team/Member_1.png",
+    highlights: [
+      "25+ years of experience across Europe and Asia",
+      "Former President of French-Cambodian Chamber of Commerce",
+      "Expertise in strategic growth and market expansion",
+      "Certified professional coach and Six Sigma Green Belt",
+    ],
+    linkedin: "#",
+  },
+  
   {
     id: 3,
     name: "Naresh Semwal",

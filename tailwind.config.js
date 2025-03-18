@@ -5,9 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-
-    
+    extend: {    
       animation: {
         blink: "blink 1s infinite",
         "horizontal-scroll": "horizontal-scroll 1s infinite",
