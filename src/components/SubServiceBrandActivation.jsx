@@ -32,8 +32,8 @@
 //       {/* <main className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700"> */}
 //       {/* Hero Section */}
 //       <section className="container mx-auto px-4 py-20 text-center text-white bg-[#EEF1FF]">
-//       <h1 className="mt-10 mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl text-black">
-//   Brand <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r  text-#D4AF37]from-[#8c6b2f] to-[#b78c2a]">Activation</span> & Experiential Marketing
+//       <h1 className="mt-10 mx-auto max-w-4xl text-4xl font-semibold leading-tight md:text-5xl lg:text-6xl text-black">
+//   Brand <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r  text-#D4AF37]from-[#8c6b2f] to-[#b78c2a]">Activation</span> & Experiential Marketing
 // </h1>
 // #D4AF37
 
@@ -50,7 +50,7 @@
 //         {/* <Link to="/contact" className="mt-8 bg-gradient-to-r from-blue-900 to-purple-500  text-white  text-lg  text-bold rounded px-4 py-3 hover:text-xl hover:px-4 hover:py-3  ">Get in Touch →</Link> */}
 //         <Link
 //           to="/contact"
-//           className="px-6 py-3 rounded shadow-lg text-[#121212] font-bold
+//           className="px-6 py-3 rounded shadow-lg text-[#121212] font-semibold
 //                      bg-gradient-to-r from-[#D4AF37] to-[#B8860B] transition-all duration-300
 //                    hover:from-[#8B6F47] hover:to-[#C0A080] hover:shadow-xl"
 //         >
@@ -127,7 +127,7 @@
 
 //           {/* Main Content */}
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">
+//             <h2 className="text-3xl font-semibold text-white">
 //               Brand Ambassador Programmes
 //             </h2>
 //             <p className="mt-2 text-lg md:te text-purple-100"></p>
@@ -189,7 +189,7 @@
 
 //           {/* Main Content */}
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">
+//             <h2 className="text-3xl font-semibold text-white">
 //               Events & Road Shows
 //             </h2>
 //             <p className="mt-2 text-lg text-purple-100"></p>
@@ -278,7 +278,7 @@
 
 //           {/* Main Content */}
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">Sampling</h2>
+//             <h2 className="text-3xl font-semibold text-white">Sampling</h2>
 //             <p className="mt-2 text-lg text-purple-100"></p>
 //             <ul className="mt-4 md:text-lg space-y-2">
 //               {[
@@ -338,7 +338,7 @@
 
 //           {/* Main Content */}
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">Shopper Marketing</h2>
+//             <h2 className="text-3xl font-semibold text-white">Shopper Marketing</h2>
 //             <p className="mt-2 text-lg text-purple-100"></p>
 //             <ul className="mt-4 md:text-lg space-y-2">
 //               {[
@@ -425,7 +425,7 @@
 
 //           {/* Main Content */}
 //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-//             <h2 className="text-3xl font-bold text-white">
+//             <h2 className="text-3xl font-semibold text-white">
 //               Instore Activation
 //             </h2>
 //             <p className="mt-2 text-lg text-purple-100"></p>
@@ -547,12 +547,12 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-sky-50 text-black">
+    <main className="min-h-screen bg-gray-50 text-black">
       <BackgroundAnimation />
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center ">
-        <h1 className="text-4xl sm:text-5xl  font-bold text-black mt-7">
+        <h1 className="text-4xl sm:text-5xl  font-semibold text-black mt-7">
           Brand{" "}
           <span className="bg-clip-text text-transparent  text-yellow-600 drop-shadow-md">
             Activation
@@ -583,7 +583,7 @@ export default function ServicesPage() {
               {service.icon}
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-black mb-3">
+              <h2 className="text-2xl font-semibold text-black mb-3">
                 {service.title}
               </h2>
               <ul className="text-gray-600 mt-2">

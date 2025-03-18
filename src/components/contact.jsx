@@ -99,7 +99,7 @@ const ContactCards = () => {
   return (
     <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6  bg-gray-50 ">
       <div className="text-center mb-10 mt-20 ">
-        <h2 className=" text-3xl uppercase font-bold text-black sm:text-5xl ">How can <span className='text-yellow-700' > Retail Craft Asia </span> customer support help you today?</h2>
+        <h2 className=" text-3xl uppercase font-semibold text-black sm:text-5xl ">How can <span className='text-yellow-600' > Retail Craft Asia </span> customer support help you today?</h2>
         <p className="text-black mt-5 text-lg sm:text-2xl">Our friendly customer support team is ready & excited to help with any issue!</p>
       </div>
       
@@ -143,7 +143,7 @@ const ContactCards = () => {
       
       <div className="text-center mt-10 mb-10">
         <h3 className="text-3xl sm:text-4xl font-semibold">Need More Help?</h3>
-        <p className="mt-4">Call us at <a href="tel:+6623658200" className="text-black font-bold hover:underline">+6623658200</a></p>
+        <p className="mt-4">Call us at <a href="tel:+6623658200" className="text-black font-semibold hover:underline">+6623658200</a></p>
         <p className="mt-2">Support Hours: Mon-Fri, 9 AM - 6 PM</p>
         {/* <p>We usually respond within <strong>4-8 hours</strong>.</p> */}
       </div>
@@ -157,7 +157,7 @@ const ContactCards = () => {
             transition={{ duration: 0.3 }}
             className="bg-white p-8 rounded-lg shadow-lg w-96"
           >
-            <h2 className="text-2xl font-bold mb-4">Schedule a Call</h2>
+            <h2 className="text-2xl font-semibold mb-4">Schedule a Call</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label className="block text-sm font-semibold mb-2">Name</label>

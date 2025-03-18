@@ -25,7 +25,7 @@
 // //       {/* Hero Section */}
 // //       <section className="container mx-auto px-4 py-20 text-center text-white bg-purple-900">
        
-// //        <h1 className="mt-4 mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
+// //        <h1 className="mt-4 mx-auto max-w-4xl text-4xl font-semibold leading-tight md:text-5xl lg:text-6xl">
 // //           Digital Marketing
 // //         </h1> <br></br>
 // //         <p className="mb-4 mt-4 md:m-8 text-justify text-2xl font-semibold tracking-wider">We boost online brand presence through digital marketing strategies, including SEO, PPC, and performance marketing. Our targeted campaigns engage audiences, generate leads, and drive conversions, ensuring measurable growth.</p>
@@ -77,7 +77,7 @@
 
 // //           {/* Main Content */}
 // //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-// //             <h2 className="text-3xl font-bold text-white"> Content Marketing</h2>
+// //             <h2 className="text-3xl font-semibold text-white"> Content Marketing</h2>
 // //             <p className="mt-2 text-lg text-blue-50"></p>
 // //             <ul className="mt-4 md:text-lg space-y-2">
 // //               {[
@@ -130,7 +130,7 @@
 
 // //           {/* Main Content */}
 // //           <div className="relative bg-white/10 backdrop-blur-md shadow-lg rounded-lg p-8 w-full transition-all duration-500 transform group-hover:scale-105">
-// //             <h2 className="text-3xl font-bold text-white">Social Media Marketing</h2>
+// //             <h2 className="text-3xl font-semibold text-white">Social Media Marketing</h2>
 // //             <p className="mt-2 text-lg text-blue-50"></p>
 // //             <ul className="mt-4 md:text-lg space-y-2">
 // //               {[
@@ -210,7 +210,7 @@
 
 //       {/* Hero Section */}
 //       <section className="container mx-auto px-6 py-20 text-center">
-//         <h1 className="text-5xl font-bold text-blue-600 mt-7 drop-shadow-[2px_2px_4px_rgba(255,215,0,0.5)]">Digital Marketing</h1>
+//         <h1 className="text-5xl font-semibold text-blue-600 mt-7 drop-shadow-[2px_2px_4px_rgba(255,215,0,0.5)]">Digital Marketing</h1>
 //         <p className="mt-6 max-w-3xl mx-auto text-lg text-black">
 //           We boost online brand presence through digital marketing strategies, including SEO, PPC, and performance marketing. Our targeted campaigns engage audiences, generate leads, and drive conversions, ensuring measurable growth.
 //         </p>
@@ -233,7 +233,7 @@
 //               {service.icon}
 //             </div>
 //             <div className="md:ml-6">
-//               <h2 className="text-2xl font-bold text-blue-700">{service.title}</h2>
+//               <h2 className="text-2xl font-semibold text-blue-700">{service.title}</h2>
 //               <ul className="mt-2 text-black">
 //                 {service.description.map((point, idx) => (
 //                   <li key={idx} className="mt-1">• {point}</li>
@@ -277,12 +277,12 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-sky-50 text-gray-900">
+    <main className="min-h-screen bg-gray-50 text-gray-900">
       <BackgroundAnimation />
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center ">
-      <h1 className=" text-4xl sm:text-5xl font-bold  text-yellow-600 bg-clip-text text-transparent mt-7 ">
+      <h1 className=" text-4xl sm:text-5xl font-semibold  text-yellow-600 bg-clip-text text-transparent mt-7 ">
   Digital Marketing
 </h1>
 
@@ -308,7 +308,7 @@ export default function ServicesPage() {
               {service.icon}
             </div>
             <div className="md:ml-6">
-              <h2 className="text-2xl font-bold text-black">{service.title}</h2>
+              <h2 className="text-2xl font-semibold text-black">{service.title}</h2>
               <ul className="mt-2 text-gray-600">
                 {service.description.map((point, idx) => (
                   <li key={idx} className="mt-1">• {point}</li>
