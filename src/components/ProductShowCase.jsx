@@ -88,7 +88,7 @@ function ProductShowcase() {
             <WaveAnimation fill="#FFD700" speed={2.5} />
             <WaveAnimation fill="#FFFACD" speed={3} />
             
-            <h2 className="text-4xl font-bold mb-6 text-center z-10">Product Showcase</h2>
+            <h2 className="text-4xl font-semibold mb-6 text-center z-10">Product Showcase</h2>
             <p className="text-lg mb-4 text-center max-w-2xl z-10">Discover seamless transactions with our secure and efficient payment platform.</p>
             <motion.div className="flex gap-6 mb-8 flex-wrap justify-center z-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                 {categories.map((category, index) => (

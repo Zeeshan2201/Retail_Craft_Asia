@@ -56,7 +56,7 @@
 //             </div>
 
 //             <div className="text-black space-y-6 px-4">
-//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tight">
+//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-semibold leading-tight">
 //               Sales and Merchandising
 //               </h3>
               
@@ -87,7 +87,7 @@
 //           </div>
 //           <div className="max-w-7xl mx-auto grid grid-flow-dense md:grid-cols-2 grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 items-center mt-10">
 //             <div className="text-white row-start-2 md:row-start-auto md:col-start-1 space-y-6 px-4">
-//               <h3 className="text-transparent bg-clip-text bg-gradient-to-tl from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tight">
+//               <h3 className="text-transparent bg-clip-text bg-gradient-to-tl from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-semibold leading-tight">
 //               Brand Activation & Experiential Marketing
 //               </h3>
               
@@ -132,7 +132,7 @@
 //     />
 //             </div>
 //             <div className="text-white space-y-6 px-4">
-//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tigh">
+//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-semibold leading-tigh">
 //               Market Expansion Services
 //               </h3>
               
@@ -162,7 +162,7 @@
 //           </div>
 //           <div  className="container mx-auto grid grid-flow-dense grid-rows-2 md:grid-rows-1 md:grid-rows-auto gap-8 px-4 py-16 text-white md:grid-cols-2 md:items-center">
 //           <div className=" row-start-2 md:row-start-auto md:col-start-1 text-white space-y-6 px-4">
-//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tigh">
+//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-semibold leading-tigh">
 //               Data & Technology
 //               </h3>
               
@@ -225,7 +225,7 @@
 // />
 //             </div>
 //             <div className="text-white space-y-6 px-4 mt-10">
-//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-bold leading-tigh">
+//               <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 text-3xl md:text-4xl font-semibold leading-tigh">
 //               Digital Marketing
 //               </h3>
               
@@ -387,7 +387,7 @@ const ServicesSection = () => {
         <div key={index} className="flex flex-col md:flex-row p items-start justify-center mb-16 gap-10 w-full">
           {/* Left Heading */}
           <div className="w-full md:w-1/4 flex h-[50vh] justify-center items-center mb-8 md:mb-0">
-            <h3 className="text-4xl font-bold text-yellow-600">{service.category}</h3>
+            <h3 className="text-4xl font-semibold text-yellow-600">{service.category}</h3>
           </div>
 
           {/* Right Cards with Scroll Buttons */}
@@ -401,7 +401,7 @@ const ServicesSection = () => {
                   <div className="relative mx-auto w-20 h-20 bg-white shadow-lg text-yellow-600 flex items-center justify-center rounded-full border border-gray-300 text-2xl ">
                     {item.icon}
                   </div>
-                  <h4 className="mt-4 text-lg font-bold h-16 text-gray-700">{item.name}</h4>
+                  <h4 className="mt-4 text-lg font-semibold h-16 text-gray-700">{item.name}</h4>
                   <p>{item.description}</p>
                   <a href="#" className="mt-4 inline-block h-10 text-gray-700 font-semibold text-sm hover:underline">
                     Learn more

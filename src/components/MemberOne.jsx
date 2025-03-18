@@ -121,7 +121,7 @@ const TeamMemberDetail = () => {
     <section className="py-20 bg-gradient-to-br from-[#d9e0fc] to-white">
       <div className="container mx-auto px-4 mb-10">
         <div className="text-center mb-16">
-          <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-bold md:text-6xl text-4xl mt-15 py-10 inline-block relative">
+          <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-semibold md:text-6xl text-4xl mt-15 py-10 inline-block relative">
             Meet Our Leadership Team
           </h2>
           <p className="text-black text-2xl max-w-2xl mx-auto mt-6">
@@ -157,7 +157,7 @@ const TeamMemberDetail = () => {
                       </a>
                     </div>
                   </div>
-                  <h3 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-bold text-2xl  mt-15 pt-10 inline-block relative">
+                  <h3 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-semibold text-2xl  mt-15 pt-10 inline-block relative">
                     {member.name}
                   </h3>
                   <div className="flex items-center mt-2 mb-4">

@@ -23,7 +23,7 @@ export default function Footer() {
 {/* comment */}
           {/* Useful Links Column */}
           <div>
-            <h3 className="text-md font-bold mb-4 uppercase tracking-wider">Useful Links</h3>
+            <h3 className="text-md font-semibold mb-4 uppercase tracking-wider">Useful Links</h3>
             <ul className="space-y-2">
             <li>
                 <Link to="/" className="hover:text-yellow-600 font-medium transition-colors">
@@ -55,7 +55,7 @@ export default function Footer() {
 
           {/* Downloads Column */}
           <div>
-            <h3 className="text-md font-bold mb-4 uppercase tracking-wider">Services</h3>
+            <h3 className="text-md font-semibold mb-4 uppercase tracking-wider">Services</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/services/SalesAndMerchandising" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
@@ -128,7 +128,7 @@ export default function Footer() {
 
           {/* Company Column */}
           {/* <div>
-            <h3 className="text-sm font-bold mb-4 uppercase tracking-wider">Company</h3>
+            <h3 className="text-sm font-semibold mb-4 uppercase tracking-wider">Company</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="#" className="hover:text-purple-900 font-semibold transition-colors">

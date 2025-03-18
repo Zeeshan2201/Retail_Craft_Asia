@@ -103,9 +103,9 @@ const TeamMemberDetail = () => {
                     <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
                   </div>
                   <h3 className="text-gray-800 font-semibold text-xl mt-4">{member.name}</h3>
-                  <p className="text-gray-600 text-sm mt-1 ">{member.role}</p>
-                  <p className="text-gray-600 text-sm mt-2 h-[10vh]">{member.shortBio}</p>
-                  <Link to={`/MemberOne#${member.id}`} className="mt-4 bg-yellow-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-yellow-700">
+                  <p className="text-gray-600 text-lg mt-1 ">{member.role}</p>
+                  <p className="text-gray-600 text-lg mt-2 h-[10vh]">{member.shortBio}</p>
+                  <Link to={`/MemberOne#${member.id}`} className="mt-6 bg-yellow-600  text-white font-semibold px-4 py-2 rounded-xl  hover:bg-yellow-700">
                     Read Full Bio
                   </Link>
                 </div>
