@@ -281,7 +281,7 @@ export default function ServicesPage() {
       <BackgroundAnimation />
 
       {/* Hero Section */}
-      <section className="container mx-auto px-6 py-20 text-center">
+      <section className="container mx-auto px-6 py-20 text-center ">
       <h1 className=" text-4xl sm:text-5xl font-bold  text-yellow-600 bg-clip-text text-transparent mt-7 ">
   Digital Marketing
 </h1>
@@ -302,7 +302,7 @@ export default function ServicesPage() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-yellow-700"
+            className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)]"
           >
             <div className="w-48 h-48 mb-6 md:mb-0 flex items-center justify-center">
               {service.icon}

@@ -607,7 +607,7 @@ export default function ServicesPage() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row items-center bg-white p-6 border-t-4 border-yellow-500 rounded-lg shadow-md hover:shadow-lg hover:shadow-yellow-700 transition-all duration-300 transform hover:scale-105 w-full mx-auto text-center md:text-left"
+            className="flex flex-col md:flex-row items-center bg-white p-6 border-t-4 border-yellow-500 rounded-lg shadow-md  hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)] transition-all duration-300 transform hover:scale-105 w-full mx-auto text-center md:text-left"
           >
             <div className="flex justify-center">
               <Lottie
