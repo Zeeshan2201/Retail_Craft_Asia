@@ -551,7 +551,7 @@ export default function ServicesPage() {
       <BackgroundAnimation />
 
       {/* Hero Section */}
-      <section className="container mx-auto px-6 py-20 text-center">
+      <section className="container mx-auto px-6 py-20 text-center ">
         <h1 className="text-4xl sm:text-5xl  font-bold text-black mt-7">
           Brand{" "}
           <span className="bg-clip-text text-transparent  text-yellow-600 drop-shadow-md">
@@ -577,7 +577,7 @@ export default function ServicesPage() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row items-center bg-white p-6 border-t-4 border-yellow-500 rounded-lg shadow-md hover:shadow-lg hover:shadow-yellow-700 transition-all duration-300 transform hover:scale-105 w-full mx-auto text-center md:text-left"
+            className="flex flex-col md:flex-row items-center bg-white p-6 border-t-4 border-yellow-500 rounded-lg shadow-md hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)]transition-all duration-300 transform hover:scale-105 w-full mx-auto text-center md:text-left"
           >
             <div className="w-48 h-48 flex justify-center items-center mr-6">
               {service.icon}
