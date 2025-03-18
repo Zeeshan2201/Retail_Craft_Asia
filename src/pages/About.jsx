@@ -7,26 +7,55 @@ import collaborationImage from "../assets/collaboration.svg";
 import empowermentImage from "../assets/empowerment.svg";
 import sustainabilityImage from "../assets/sustainability.svg";
 
-import img from "../assets/About/img.png"
+import img from "../assets/About/img.png";
 
 import MangTeam from "../components/MangTeam";
 // import visionSvg from "../assets/vision.svg";
 // import missionSvg from "../assets/mission.svg";
- // Add a background image for the "Who We Are" section
+// Add a background image for the "Who We Are" section
 // Import SVG images for Vision and Mission
 import visionSvg from "../assets/vision.svg"; // Replace with your SVG file pathath
 import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pathath
 
- const FoundationPrinciples = () => {
+const FoundationPrinciples = () => {
   const principles = [
-    { title: "Growth", description: "Driving innovation and expansion to meet evolving consumer needs.", image: growthImage },
-    { title: "Integrity", description: "Ensuring transparency, quality, and trust in every product we deliver.", image: integrityImage },
-    { title: "Entrepreneurship", description: "Encouraging agility and forward-thinking to stay ahead in the market.", image: entrepreneurshipImage },
-    { title: "Collaboration", description: "Building strong partnerships with suppliers, retailers, and customers.", image: collaborationImage },
-    { title: "Empowerment", description: "Enabling employees and stakeholders to make impactful decisions.", image: empowermentImage },
-    { title: "Sustainability", description: "Committed to eco-friendly practices and responsible sourcing.", image: sustainabilityImage },
+    {
+      title: "Growth",
+      description:
+        "Driving innovation and expansion to meet evolving consumer needs.",
+      image: growthImage,
+    },
+    {
+      title: "Integrity",
+      description:
+        "Ensuring transparency, quality, and trust in every product we deliver.",
+      image: integrityImage,
+    },
+    {
+      title: "Entrepreneurship",
+      description:
+        "Encouraging agility and forward-thinking to stay ahead in the market.",
+      image: entrepreneurshipImage,
+    },
+    {
+      title: "Collaboration",
+      description:
+        "Building strong partnerships with suppliers, retailers, and customers.",
+      image: collaborationImage,
+    },
+    {
+      title: "Empowerment",
+      description:
+        "Enabling employees and stakeholders to make impactful decisions.",
+      image: empowermentImage,
+    },
+    {
+      title: "Sustainability",
+      description:
+        "Committed to eco-friendly practices and responsible sourcing.",
+      image: sustainabilityImage,
+    },
   ];
-
 
   const [expandedCard, setExpandedCard] = useState(null);
   const [isVisionVisible, setIsVisionVisible] = useState(false);
@@ -73,29 +102,41 @@ import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pa
     <div className="foundation-principles-container bg-blue-50 shadow-md">
       <div className="text-center font-semibold sm:mt-20 mb-5 pt-20 px-5">
         <h1 className="text-4xl sm:text-6xl font-bold mt-5">
-          <span className="text-yellow-600">Who we are,</span>  
+          <span className="text-yellow-600">Who we are,</span>
           <span className="text-yellow-700"> Your Strategic Partner.</span>
         </h1>
 
         <p className="text-base sm:text-lg text-gray-700 mt-6 max-w-4xl mx-auto">
-          At Retail Craft Asia, we are more than just service providers—we are your strategic partners in business growth and brand transformation.
-          With deep expertise in the FMCG industry, we help you expand your market reach, optimize supply chains, enhance brand visibility, and drive consumer engagement.
-          <br /><br />
-          Our team of industry experts works closely with brands to understand their unique challenges and craft tailored strategies for success.
-          Whether you are looking to break into new markets, refine your branding, or streamline your operations, we provide the insights and execution needed to achieve sustainable growth.
+          At Retail Craft Asia, we are more than just service providers—we are
+          your strategic partners in business growth and brand transformation.
+          With deep expertise in the FMCG industry, we help you expand your
+          market reach, optimize supply chains, enhance brand visibility, and
+          drive consumer engagement.
+          <br />
+          <br />
+          Our team of industry experts works closely with brands to understand
+          their unique challenges and craft tailored strategies for success.
+          Whether you are looking to break into new markets, refine your
+          branding, or streamline your operations, we provide the insights and
+          execution needed to achieve sustainable growth.
         </p>
       </div>
 
       <div className="w-full py-20 bg-gradient-to-b from-blue-50 to-white relative flex flex-col items-center text-center px-5">
         {/* Animated Heading */}
-        <h2 className="text-4xl sm:text-6xl mb-4 font-bold max-w-3xl transition-opacity duration-1000 ease-in-out delay-200 opacity-100">
-          <span className="text-yellow-600">Our expertise</span>  
-          <span className="text-yellow-700"> helps businesses</span>  
-          <span className="text-yellow-600"> build meaningful connections that drive success.</span>
+        <h2 className="text-4xl sm:text-5xl  font-bold max-w-3xl transition-opacity duration-1000 ease-in-out delay-200 opacity-100 text-yellow-600">
+          {/* <span className="text-yellow-600">Our expertise</span>  
+          <span className="text-yellow-600"> helps businesses</span>  
+          <span className="text-yellow-600"> build meaningful connections that drive success.</span> */}
+          Our expertise helps businesses build meaningful connections that drive
+          success.
         </h2>
 
+      
+
+
         {/* User Image with Glow */}
-        <div className="relative mt-12">
+        <div className="relative mt-16">
           <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative z-10">
             <img src={img} alt="User" className="w-full h-full object-cover" />
           </div>
@@ -124,47 +165,88 @@ import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pa
 
         <div className="px-6 py-20 text-center bg-gradient-to-b from-blue-50 to-white">
           {/* Our Vision Section */}
-          <h2 className="text-4xl sm:text-6xl font-bold text-yellow-600">Our Vision for the Future</h2>
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-yellow-600">
+            Our Vision for the Future
+          </h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
-            Our vision shapes everything we aim to achieve. We set new standards, create meaningful impact, and drive transformation in our industry.
+            Our vision shapes everything we aim to achieve. We set new
+            standards, create meaningful impact, and drive transformation in our
+            industry.
           </p>
+          
 
           <div className="flex flex-wrap sm:grid sm:grid-cols-3 justify-center gap-10 mt-16">
             {[
-              { icon: "🚀", title: "Innovation", desc: "We embrace change to create a better future, pushing the boundaries of technology and creativity." },
-              { icon: "🤝", title: "Collaboration", desc: "Success comes from teamwork. We foster strong partnerships with industry leaders, clients, and stakeholders." },
-              { icon: "🌱", title: "Sustainability", desc: "Responsible practices ensure long-term impact. We integrate eco-friendly approaches and ethical business strategies." }
+              {
+                icon: "🚀",
+                title: "Innovation",
+                desc: "We embrace change to create a better future, pushing the boundaries of technology and creativity.",
+              },
+              {
+                icon: "🤝",
+                title: "Collaboration",
+                desc: "Success comes from teamwork. We foster strong partnerships with industry leaders, clients, and stakeholders.",
+              },
+              {
+                icon: "🌱",
+                title: "Sustainability",
+                desc: "Responsible practices ensure long-term impact. We integrate eco-friendly approaches and ethical business strategies.",
+              },
             ].map((item, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="w-full sm:w-96 p-8 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)] text-center"
               >
                 <div className="text-6xl text-[#D4AF37]">{item.icon}</div>
-                <h3 className="text-3xl font-bold text-[#D4AF37] mt-6">{item.title}</h3>
-                <p className="text-lg text-black mt-4 leading-relaxed">{item.desc}</p>
+                <h3 className="text-3xl font-bold text-[#D4AF37] mt-6">
+                  {item.title}
+                </h3>
+                <p className="text-lg text-black mt-4 leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
 
           {/* Our Mission Section */}
-          <h2 className="mt-28 text-4xl sm:text-6xl font-bold text-yellow-600">Fueling Success Through Our Mission</h2>
+          <h2 className="mt-28 text-4xl sm:text-5xl font-extrabold text-yellow-600">
+            Fueling Success Through Our Mission
+          </h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
-            Our mission is to bring out the best in one another, deliver success to our customers, and inspire the industry through excellence and innovation.
+            Our mission is to bring out the best in one another, deliver success
+            to our customers, and inspire the industry through excellence and
+            innovation.
           </p>
 
           <div className="flex flex-wrap sm:grid sm:grid-cols-3 justify-center gap-10 mt-16">
             {[
-              { icon: "🌟", title: "Empowerment", desc: "Helping individuals and businesses thrive in a supportive, growth-oriented environment." },
-              { icon: "🏆", title: "Excellence", desc: "Committed to exceeding expectations through continuous improvement and dedication." },
-              { icon: "💡", title: "Inspiration", desc: "Leading by example, driving innovation, and pioneering ideas that shape the future." }
+              {
+                icon: "🌟",
+                title: "Empowerment",
+                desc: "Helping individuals and businesses thrive in a supportive, growth-oriented environment.",
+              },
+              {
+                icon: "🏆",
+                title: "Excellence",
+                desc: "Committed to exceeding expectations through continuous improvement and dedication.",
+              },
+              {
+                icon: "💡",
+                title: "Inspiration",
+                desc: "Leading by example, driving innovation, and pioneering ideas that shape the future.",
+              },
             ].map((item, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="w-full sm:w-96 p-8 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)] text-center"
               >
                 <div className="text-6xl text-[#D4AF37]">{item.icon}</div>
-                <h3 className="text-3xl font-bold text-[#D4AF37] mt-6">{item.title}</h3>
-                <p className="text-lg text-black mt-4 leading-relaxed">{item.desc}</p>
+                <h3 className="text-3xl font-bold text-[#D4AF37] mt-6">
+                  {item.title}
+                </h3>
+                <p className="text-lg text-black mt-4 leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -172,18 +254,25 @@ import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pa
 
         <div className="w-full px-5 py-16 bg-gray-50">
           <h2 className="text-5xl sm:text-6xl font-bold text-center mb-16 text-yellow-600">
-            Our <span className="text-yellow-600 ">Foundational Principles</span>
+            Our{" "}
+            <span className="text-yellow-600 ">Foundational Principles</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-12 max-w-6xl mx-auto">
             {principles.map((principle, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="relative flex flex-col items-center text-center bg-gradient-to-br from-white to-gray-100 border border-gray-200 rounded-xl w-80 h-88 p-8 shadow-xl hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)] transform hover:-translate-y-2 transition-all duration-300"
               >
                 <div className="w-28 h-28 bg-white flex items-center justify-center rounded-xl shadow-md border border-gray-300 mb-4">
-                  <img src={principle.image} alt={principle.title} className="w-20 h-20 object-contain text-[#D4AF37]" />
+                  <img
+                    src={principle.image}
+                    alt={principle.title}
+                    className="w-20 h-20 object-contain text-[#D4AF37]"
+                  />
                 </div>
-                <h3 className="text-3xl font-bold text-yellow-600">{principle.title}</h3>
+                <h3 className="text-3xl font-bold text-yellow-600">
+                  {principle.title}
+                </h3>
                 <p className="text-black text-lg mt-4 px-6 leading-relaxed">
                   {principle.description}
                 </p>

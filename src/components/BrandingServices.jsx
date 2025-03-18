@@ -45,7 +45,7 @@ export default function BrandingServices() {
       <div className="max-w-7xl mx-auto ">
         <div className="text-center mb-16">
           <h2 className="text-transparent bg-clip-text bg-gradient-to-t text-yellow-600 font-bold text-6xl mb-4">Our Process</h2>
-          <p className="text-black max-w-2xl mx-auto">
+          <p className="text-black max-w-2xl text-xl mx-auto">
           We follow a structured and result-driven approach to ensure seamless execution and maximum impact for our clients. Our process is designed to deliver customized solutions that align with your business goals.
           </p>
         </div>
@@ -82,8 +82,8 @@ export default function BrandingServices() {
               className="bg-black/5 backdrop-blur-sm rounded-lg p-6 hover:bg-black/10 transition-colors duration-300"
             >
               <div className="flex items-center gap-4 mb-4">
-                <div className="p-3 rounded-full bg-cyan-500/20 text-pink-400">{service.icon}</div>
-                <h3 className="text-xl font-semibold">{service.title}</h3>
+                <div className="p-3 rounded-full bg-cyan-500/20 text-yellow-600">{service.icon}</div>
+                <h3 className="text-2xl font-semibold">{service.title}</h3>
               </div>
               <p className="text-black text-sm leading-relaxed">{service.description}</p>
             </div>
