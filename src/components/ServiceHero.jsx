@@ -8,7 +8,14 @@ const ServiceHero = () => {
         <div className="mr-6">
           {/* <h1 className='text-4xl md:text-5xl font-bold leading-tight'>Driving Growth & Innovation for Your Business</h1> */}
           <h1 className="text-transparent bg-clip-text  text-yellow-600 font-bold text-4xl md:text-5xl leading-tight">
-           <span className="text-black "> Driving, Growth & </span> <span className="text-black inline-block mt-[6px] mb-1 ">Innovation <span className="text-yellow-600 ">for Your </span></span><span className="text-yellow-600 ">Business</span>
+           <span className="text-black "> Driving, Growth & </span> <span className="text-black inline-block mt-[6px] mb-1 ">Innovation <span 
+           className="text-yellow-600"
+  // className="text-transparent bg-clip-text bg-cover bg-center"
+  // style={{ backgroundImage: "url('/Team/Member_3.png')" }}
+>
+  for Your
+</span>
+</span><span className="text-yellow-600 ">Business</span>
            </h1>
           <div className="text-lg text-black mt-4 leading-relaxed">
             We provide comprehensive solutions tailored to boost your brand’s
