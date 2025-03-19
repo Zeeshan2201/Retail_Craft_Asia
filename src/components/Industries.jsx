@@ -11,7 +11,7 @@
 //   { icon: FMCGIcon, title: 'FMCG', description: 'Fast-Moving Consumer Goods include packaged food, beverages, toiletries, and over-the-counter drugs, ensuring constant demand.' },
 //   { icon: RetailIcon, title: 'Retail', description: 'Retail involves selling goods and services directly to consumers through supermarkets, department stores, and online platforms.' },
 //   { icon: HealthBeautyIcon, title: 'Health & Beauty', description: 'Personal care, skincare, cosmetics, and wellness products, focusing on enhancing well-being and promoting a healthier lifestyle.' },
-//   { icon: ConsumerDurablesIcon, title: 'Consumer Durables', description: 'Long-lasting goods like appliances, gadgets, and furniture designed for extended use and smart technology integration.' },
+//   { icon: ConsumerDurablesIcon, title: 'Consumer Durables &  Electronics & Electronics', description: 'Long-lasting goods like appliances, gadgets, and furniture designed for extended use and smart technology integration.' },
 //   { icon: BankingIcon, title: 'Hospitality Sector', description: 'Hotels, restaurants, travel, and tourism services that focus on customer experience and leisure industry innovations.' },
 //   { icon: PharmaceuticalsIcon, title: 'Pharmaceuticals', description: 'Prescription and OTC medicines, medical devices, and healthcare solutions that drive advancements in global health.' }
 // ];
@@ -107,7 +107,7 @@
 //         <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
 //       </svg>
 //     )}
-//     {name === "Consumer Durables" && (
+//     {name === "Consumer Durables &  Electronics" && (
 //       <svg
 //         xmlns="http://www.w3.org/2000/svg"
 //         width="24"
@@ -182,7 +182,7 @@
 //       "Personal care, skincare, cosmetics, and wellness products, focusing on enhancing well-being and promoting a healthier lifestyle.",
 //   },
 //   {
-//     title: "Consumer Durables",
+//     title: "Consumer Durables &  Electronics",
 //     description:
 //       "Long-lasting goods like appliances, gadgets, and furniture designed for extended use and smart technology integration.",
 //   },
@@ -457,7 +457,7 @@ const IconPlaceholder = ({ name }) => (
         <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
       </svg>
     )}
-    {name === "Consumer Durables" && (
+    {name === "Consumer Durables &  Electronics" && (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -532,7 +532,7 @@ const industries = [
       "Personal care, skincare, cosmetics, and wellness products, focusing on enhancing well-being and promoting a healthier lifestyle.",
   },
   {
-    title: "Consumer Durables",
+    title: "Consumer Durables &  Electronics",
     description:
       "Long-lasting goods like appliances, gadgets, and furniture designed for extended use and smart technology integration.",
   },

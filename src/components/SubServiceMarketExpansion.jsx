@@ -445,6 +445,22 @@ const services = [
     height={100}
     width={100} />,
   },
+  {
+    title: "After sales services",
+    description: [
+      "Resolving issues and guiding customers post-purchase.",
+      "Ensuring smooth returns and efficient order handling.",
+      " Rewarding customers and boosting repeat purchases.",
+    ],
+    icon: <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:Distribution,
+    }}
+    height={100}
+    width={100} />,
+  },
 ];
 
 export default function ServicesPage() {

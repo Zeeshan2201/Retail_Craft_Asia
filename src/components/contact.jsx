@@ -143,7 +143,12 @@ const ContactCards = () => {
       
       <div className="text-center mt-10 mb-10">
         <h3 className="text-3xl sm:text-4xl font-semibold">Need More Help?</h3>
-        <p className="mt-4">Call us at <a href="tel:+6623658200" className="text-black font-semibold hover:underline">+6623658200</a></p>
+        <p className="mt-4">
+  Call us at 
+  <a href="tel:+6623658200,1103" className="text-black font-semibold hover:underline">
+    +6623658200 ext. 1103
+  </a>
+</p>
         <p className="mt-2">Support Hours: Mon-Fri, 9 AM - 6 PM</p>
         {/* <p>We usually respond within <strong>4-8 hours</strong>.</p> */}
       </div>
