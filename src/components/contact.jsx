@@ -5,7 +5,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 const Card = ({ children, className, onClick }) => {
   return (
     <div onClick={onClick} className={`bg-white p-12 rounded-2xl shadow-lg transition-all duration-300 ease-in-out 
-        hover:scale-105 hover:shadow-2xl w-80 h-52 cursor-pointer transform ${className}`}>
+        hover:scale-105 hover:shadow-2xl  hover:shadow-yellow-700 w-80 h-52 cursor-pointer transform ${className}`}>
       {children}
     </div>
   );
@@ -136,7 +136,7 @@ const ContactCards = () => {
         ))}
       </div>
 
-      <div className="text-center mt-10 bg-white p-6 rounded-4xl shadow-lg rounded-xl">
+      <div className="text-center mt-10 bg-white p-6 rounded-4xl shadow-lg   hover:shadow-yellow-700 rounded-xl">
         <h3 className="text-3xl sm:text-4xl font-semibold text-gray-800">Contact Us</h3>
         <p className="mt-4 text-base sm:text-xl text-gray-600">Office-Address: 65,42 Tower Building, Room No 1107, Sukhumvit 42 Road,<br/> Phra Khanong Sub-district, Khlong Toei District, Bangkok, Thailand - 10110</p>
       </div>
@@ -155,7 +155,7 @@ const ContactCards = () => {
             animate={{ scale: 1 }}
             exit={{ scale: 0 }}
             transition={{ duration: 0.3 }}
-            className="bg-white p-8 rounded-lg shadow-lg w-96"
+            className="bg-white p-8 rounded-lg shadow-lg  w-96"
           >
             <h2 className="text-2xl font-semibold mb-4">Schedule a Call</h2>
             <form onSubmit={handleSubmit}>
