@@ -577,7 +577,7 @@ export default function ServicesPage() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row items-center bg-white p-6 border-t-4 border-yellow-500 rounded-lg shadow-md hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)]transition-all duration-300 transform hover:scale-105 w-full mx-auto text-center md:text-left"
+            className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)]"
           >
             <div className="w-48 h-48 flex justify-center items-center mr-6">
               {service.icon}
