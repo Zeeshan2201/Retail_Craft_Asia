@@ -240,6 +240,7 @@ export default function AnimatedTeamSection() {
   useEffect(() => {
     setIsVisible(true)
     controls.start("visible")
+    scroll("left");
   }, [controls])
 
   const scroll = (direction) => {
