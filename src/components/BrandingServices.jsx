@@ -79,7 +79,7 @@ export default function BrandingServices() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-yellow-50/5 to-yellow-50  backdrop-blur-sm rounded-lg p-6 hover:bg-black/10 transition-colors duration-300"
+              className="bg-gradient-to-br from-yellow-50/5 to-yellow-50  backdrop-blur-sm rounded-xl p-6 hover:bg-black/10 hover:shadow-md hover:shadow-yellow-600/80 transition-colors duration-300"
             >
               <div className="flex items-center gap-4 mb-4">
                 <div className="p-3 rounded-full bg-gray-500/20 text-yellow-600">{service.icon}</div>
