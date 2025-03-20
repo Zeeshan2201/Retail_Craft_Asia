@@ -35,7 +35,7 @@ const MainNav = () => {
               onMouseEnter={() => setActiveDropdown("services")}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <Link to="/Services" className=" flex text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">
+              <Link to="/services" className=" flex text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">
                 <span>Services</span>
                 
               <span className='transition-all duration-300 ease-in-out ml-1 px-1 pt-1'>{activeDropdown ?  (<ChevronUp className="w-6 h-6 transition-all duration-300 ease-in-out " />): (<ChevronDown className="w-6 h-6 transition-all  duration-300 ease-in-out" />)}</span>
