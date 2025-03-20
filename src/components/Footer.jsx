@@ -31,13 +31,19 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/Services" className="hover:text-yellow-600 font-medium transition-colors">
-                  Services
+                <Link to="/about" className="hover:text-yellow-600 font-medium transition-colors">
+                  About Us
                 </Link>
               </li>
               <li>
-                <Link to="/About" className="hover:text-yellow-600 font-medium transition-colors">
-                  About Us
+                <Link to="/services" className="hover:text-yellow-600 font-medium transition-colors">
+                  Services
+                </Link>
+              </li>
+             
+              <li>
+                <Link to="/MangTeam" className="hover:text-yellow-600 font-medium transition-colors">
+                Management
                 </Link>
               </li>
               <li>
@@ -45,11 +51,7 @@ export default function Footer() {
                   Contact us
                 </Link>
               </li>
-              <li>
-                <Link to="/MangTeam" className="hover:text-yellow-600 font-medium transition-colors">
-                  Our Team
-                </Link>
-              </li>
+             
             </ul>
           </div>
 

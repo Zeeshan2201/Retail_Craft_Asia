@@ -29,7 +29,7 @@ const MainNav = () => {
           <nav className="hidden md:flex space-x-4">
             
             <Link to="/" className="px-4 py-2 text-base  font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Home</Link>
-            <Link to="/About" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">About Us</Link>
+            <Link to="/about" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">About Us</Link>
             <div
               className="relative flex flex-row px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black"
               onMouseEnter={() => setActiveDropdown("services")}
@@ -92,8 +92,8 @@ const MainNav = () => {
         </button>
         <nav className="flex flex-col space-y-4">
           <Link to="/" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-            <Link to="/About" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
-          {/* <Link to="/Services" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>Services</Link> */}
+            <Link to="/about" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
+          {/* <Link to="/services" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>Services</Link> */}
           <div className="relative">
         <Link
           to="/services"
