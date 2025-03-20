@@ -375,6 +375,7 @@ import Lottie from "react-lottie";
 import Market from "../animation/Market/MarketResearch.json";
 import Sourcing from "../animation/Market/ProductSourcing.json";
 import Sales from "../animation/Market/sales1.json";
+import aftersales from "../animation/MarketExpansion/aftersales.json";
 
 import Distribution from "../animation/Market/DistributionLogistics.json";
 
@@ -444,6 +445,22 @@ const services = [
     }}
     height={100}
     width={100} />,
+  },
+  {
+    title: "After sales services",
+    description: [
+      "Resolving issues and guiding customers post-purchase.",
+      " Ensuring smooth returns and efficient order handling.",
+      "Rewarding customers and boosting repeat purchases.",
+    ],
+    icon: <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:aftersales,
+    }}
+    height={200}
+    width={200} />,
   },
   
 ];

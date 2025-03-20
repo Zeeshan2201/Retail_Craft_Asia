@@ -9,6 +9,7 @@ import ServiceHero from "../components/ServiceHero"
 
 // import Link from "next/link";
 const Services = () => {
+  
   return (<>
       <ServiceHero/>
     <section className=" min-h-screen py-10  bg-gray-50">

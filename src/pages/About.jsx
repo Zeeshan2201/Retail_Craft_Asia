@@ -102,7 +102,7 @@ const FoundationPrinciples = () => {
   }, []);
 
   return (
-    <div className="foundation-principles-container bg-gradient-to-b from-gray-50 to-yellow-50 shadow-md">
+    <div className="foundation-principles-container bg-gradient-to-b from-gray-50 via-yellow-50/50 to-gray-50 ">
       <div className="text-center font-semibold sm:mt-20 mb-5 pt-20 px-5">
         <h1 className="text-4xl sm:text-6xl font-semibold mt-5">
           <span className="text-yellow-600">Who we are,</span>
@@ -125,7 +125,8 @@ const FoundationPrinciples = () => {
         </p>
       </div>
 
-      <div className="w-full py-20 bg-gradient-to-b from-gray-50 to-yellow-50 relative flex flex-col items-center text-center px-5">
+      <div className="w-full py-20 bg-transparent relative flex flex-col items-center text-center px-5">
+      {/* <div className="w-full py-20 bg-gradient-to-b from-gray-50 via-yellow-50 to-gray-50 relative flex flex-col items-center text-center px-5"> */}
         {/* Animated Heading */}
         <h2 className="text-4xl sm:text-5xl  font-semibold max-w-3xl transition-opacity duration-1000 ease-in-out delay-200 opacity-100 text-yellow-600">
           {/* <span className="text-yellow-600">Our expertise</span>  
@@ -135,9 +136,6 @@ const FoundationPrinciples = () => {
           success.
         </h2>
 
-      
-
-
         {/* User Image with Glow */}
         <div className="relative mt-16">
           <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative z-10">
@@ -146,27 +144,28 @@ const FoundationPrinciples = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-gray-50 to-yellow-50rounded-full blur-3xl opacity-30 animate-pulse"></div>
 
           {/* Floating Icons with Animation */}
-          <button onClick={()=>{setsetselectedImage("mem_1")}} className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+            <button onClick={()=>{setsetselectedImage("mem_1")}} className="absolute hover:shadow-lg hover:shadow-yellow-600/80 -top-12 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
             🏆
           </button>
-          <button onClick={()=>{setsetselectedImage("mem_2")}} className="absolute top-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-yellow rounded-full flex items-center justify-center shadow-md">
+          <button onClick={()=>{setsetselectedImage("mem_2")}} className="absolute   hover:shadow-lg hover:shadow-yellow-600/80 top-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-yellow rounded-full flex items-center justify-center shadow-md">
             💙
           </button>
-          <button onClick={()=>{setsetselectedImage("mem_3")}} className="absolute top-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+          <button onClick={()=>{setsetselectedImage("mem_3")}} className="absolute  hover:shadow-lg hover:shadow-yellow-600/80 top-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
             📊
           </button>
-          <button onClick={()=>{setsetselectedImage("mem_4")}} className="absolute bottom-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+          <button onClick={()=>{setsetselectedImage("mem_4")}} className="absolute  hover:shadow-lg hover:shadow-yellow-600/80 bottom-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
             🛒
           </button>
-          <button onClick={()=>{setsetselectedImage("mem_5")}}className="absolute bottom-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+          <button onClick={()=>{setsetselectedImage("mem_5")}}className="absolute  hover:shadow-lg hover:shadow-yellow-600/80 bottom-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
             💬
           </button>
-          <div onClick={()=>{setsetselectedImage("mem_6")}}className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+          <div onClick={()=>{setsetselectedImage("mem_6")}}className="absolute  hover:shadow-lg hover:shadow-yellow-600/80 bottom-0 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
             🚀
           </div>
         </div>
 
-        <div className="px-6 py-20 text-center bg-gradient-to-b from-gray-50 to-yellow-50">
+        <div className="px-6 py-20 text-center bg-transparent">
+        {/* <div className="px-6 py-20 text-center bg-gradient-to-b from-gray-50 to-yellow-50"> */}
           {/* Our Vision Section */}
           <h2 className="text-4xl sm:text-5xl font-semibold text-yellow-600">
             Our Vision for the Future
@@ -251,7 +250,8 @@ const FoundationPrinciples = () => {
           </div>
         </div>
 
-        <div className="w-full px-5 py-16 bg-gray-50">
+        <div className="w-full px-5 py-16 bg-transparent">
+        {/* <div className="w-full px-5 py-16 bg-gray-50"> */}
           <h2 className="text-5xl sm:text-6xl font-semibold text-center mb-16 text-yellow-600">
             Our{" "}
             <span className="text-yellow-600 ">Foundational Principles</span>

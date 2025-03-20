@@ -76,6 +76,7 @@ const ContactCards = () => {
   // };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setModalOpen(false); // Close modal after submitting
     try {
         const response = await fetch("https://script.google.com/macros/s/AKfycbycQUoonVYOeiLDTw50GLzQubZQDJyK-iQE_MXzR4OS60HAO9JGUKgNXDmUPO5CUjon/exec", {
             method: "POST",

@@ -5,6 +5,7 @@ import Process from '../../src/animation/service/process/animations/62cc34f5 861
 // import Process from '../../src/animation/service/process.json'
 import Lottie from "react-lottie";
 import { div } from "framer-motion/client";
+import BagroundCircle from "./BagroundCircle";
 export default function BrandingServices() {
   const services = [
     {
@@ -40,7 +41,8 @@ export default function BrandingServices() {
   ]
 
   return (
-    <div className="bg-gradient-to-tl bg-gray-50 ">
+    <div className="relative bg-gradient-to-tl bg-gray-50 ">
+      <BagroundCircle/>
     <div className="min-h-screen text-black py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto ">
         <div className="text-center mb-16">
@@ -75,7 +77,7 @@ export default function BrandingServices() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:w-[60%] w-[100%]  grid-cols-1 md:grid-cols-1 gap-8">
+        <div className="grid md:w-[60%] w-[100%] grid-cols-1 md:grid-cols-1 gap-8 ">
           {services.map((service, index) => (
             <div
               key={index}
@@ -87,6 +89,7 @@ export default function BrandingServices() {
               </div>
               <p className="text-black text-sm leading-relaxed">{service.description}</p>
             </div>
+            
           ))}
         </div>
         </div>
