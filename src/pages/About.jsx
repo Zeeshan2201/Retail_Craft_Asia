@@ -18,7 +18,9 @@ import MangTeam from "../components/MangTeam";
 import visionSvg from "../assets/vision.svg"; // Replace with your SVG file pathath
 import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pathath
 
+
 const FoundationPrinciples = () => {
+  const [selectedImage, setsetselectedImage] = useState("mem_1")
   const principles = [
     {
       title: "Growth",
@@ -139,27 +141,27 @@ const FoundationPrinciples = () => {
         {/* User Image with Glow */}
         <div className="relative mt-16">
           <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative z-10">
-            <img src={images_2} alt="User" className="w-full h-full object-cover" />
+            <img src={`/AboutCircle/${selectedImage}.png`} alt="User" className="w-full h-full object-cover" />
           </div>
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-gray-50 to-yellow-50rounded-full blur-3xl opacity-30 animate-pulse"></div>
 
           {/* Floating Icons with Animation */}
-          <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+          <button onClick={()=>{setsetselectedImage("mem_1")}} className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
             🏆
-          </div>
-          <div className="absolute top-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-yellow rounded-full flex items-center justify-center shadow-md">
+          </button>
+          <button onClick={()=>{setsetselectedImage("mem_2")}} className="absolute top-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-yellow rounded-full flex items-center justify-center shadow-md">
             💙
-          </div>
-          <div className="absolute top-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+          </button>
+          <button onClick={()=>{setsetselectedImage("mem_3")}} className="absolute top-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
             📊
-          </div>
-          <div className="absolute bottom-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+          </button>
+          <button onClick={()=>{setsetselectedImage("mem_4")}} className="absolute bottom-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
             🛒
-          </div>
-          <div className="absolute bottom-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+          </button>
+          <button onClick={()=>{setsetselectedImage("mem_5")}}className="absolute bottom-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
             💬
-          </div>
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
+          </button>
+          <div onClick={()=>{setsetselectedImage("mem_6")}}className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md">
             🚀
           </div>
         </div>
