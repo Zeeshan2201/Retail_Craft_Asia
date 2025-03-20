@@ -136,7 +136,7 @@ const IndustrySection = () => {
             <img
               src={Mem_1 || "/placeholder.svg"}
               alt="Industry Expert"
-              className="w-72 h-72 md:w-96 md:h-96 shadow-lg border-8 border-white transition-all duration-300"
+              className="w-72 h-72 md:w-96 md:h-96 shadow-lg border-8 border-white rounded-3xl  transition-all duration-300"
             />
           </motion.div>
         </motion.div>

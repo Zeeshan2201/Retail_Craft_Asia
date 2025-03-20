@@ -262,7 +262,7 @@ const services = [
       "Improves brand authority and customer trust",
       "Boosts website traffic and social media engagement",
     ],
-    icon: <Lottie options={{ loop: true, autoplay: true, animationData: GIF_1 }} height={120} width={120} />,
+    icon: <Lottie options={{ loop: true, autoplay: true, animationData: GIF_2 }} height={120} width={120} />,
   },
   {
     title: "SEO & PPC",
@@ -271,7 +271,7 @@ const services = [
       "Runs targeted pay-per-click (PPC) ad campaigns",
       "Ensures measurable ROI through performance analytics",
     ],
-    icon: <Lottie options={{ loop: true, autoplay: true, animationData: GIF_2 }} height={120} width={120} />,
+    icon: <Lottie options={{ loop: true, autoplay: true, animationData: GIF_1 }} height={120} width={120} />,
   }
 ];
 

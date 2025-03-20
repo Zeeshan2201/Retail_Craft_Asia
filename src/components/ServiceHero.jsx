@@ -45,10 +45,10 @@ const ServiceHero = () => {
           </ul>
         </div>
       </div>
-      <div className="md:ml-20 p-4 md:w-[50%] w-[100%] ">
+      <div className="md:ml-20 p-4 md:w-[50%] w-[100%]">
         {/* <div><Carousel/></div> */}
         <div>
-          <img src="/servicehero.jpeg" alt="servicehero" />
+          <img className="rounded-3xl shadow-lg shadow-gray-300 hover:shadow-yellow-300" src="/servicehero.jpeg" alt="servicehero" />
         </div>
       </div>
     </div>
