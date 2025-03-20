@@ -79,10 +79,10 @@ export default function BrandingServices() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-black/5 backdrop-blur-sm rounded-lg p-6 hover:bg-black/10 transition-colors duration-300"
+              className="bg-gradient-to-br from-yellow-50/5 to-yellow-50  backdrop-blur-sm rounded-lg p-6 hover:bg-black/10 transition-colors duration-300"
             >
               <div className="flex items-center gap-4 mb-4">
-                <div className="p-3 rounded-full bg-cyan-500/20 text-yellow-600">{service.icon}</div>
+                <div className="p-3 rounded-full bg-gray-500/20 text-yellow-600">{service.icon}</div>
                 <h3 className="text-2xl font-semibold">{service.title}</h3>
               </div>
               <p className="text-black text-sm leading-relaxed">{service.description}</p>

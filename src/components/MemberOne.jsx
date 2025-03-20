@@ -73,7 +73,7 @@ Beyond his corporate achievements, Naresh is deeply committed to social impact a
 
 Naresh holds a Bachelor's degree from Hemwati Nandan Bahuguna University in India and a Diploma in Computer Education. Naresh Speaks English, Hindi, a bit Thai also, A strong advocate for continuous learning, he integrates technology and business intelligence to drive efficiency and growth. Outside of work, he is married and a proud father, love traveling.
 `,
-    image: "/Team/Member_3.jpg",
+    image: "/Team/Member_3.png",
     highlights: [
       "RTM & GTM Expertise – Optimized distribution, retail expansion, and channel development",
       "Leadership & Execution – Managed large-scale teams, ensuring seamless operations and brand visibility",
@@ -93,7 +93,7 @@ Naresh holds a Bachelor's degree from Hemwati Nandan Bahuguna University in Indi
 With deep expertise in HR leadership across multiple countries, Wichit has successfully navigated the complexities of diverse cultural environments, strategic business expectations, and organizational dynamics. His capabilities include workforce planning, talent acquisition, compensation and benefits, rewards management, compliance, talent development, cost and budget planning, performance development, HRIS, policies and procedures, succession planning, employee and industrial relations, and customer satisfaction management. He is also highly skilled in learning and development, coaching, and mentoring, ensuring employees and organizations achieve sustained growth.
 
 An expert in change management and organizational transition, Wichit is deeply passionate about people development and talent empowerment. He holds a Bachelor's degree from Assumption University and has earned certifications in Professional HR, Public Industrial Relations, and Professional Occupational Health & Safety. Beyond his professional achievements, he enjoys traveling and listening to jazz music, embracing a lifestyle that balances work excellence with personal fulfillment.`,
-    image: "/Team/Member_3.png",
+    image: "/Team/Member_4.png",
     highlights: [
       "Expert in change management and transition",
       "Deep experience in ASEAN HR leadership",
@@ -118,10 +118,12 @@ const TeamMemberDetail = () => {
   }, [location])
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#d9e0fc] to-white">
+    <section className="py-20 bg-gray-50">
+    {/* <section className="py-20 bg-gradient-to-br from-[#d9e0fc] to-white"> */}
       <div className="container mx-auto px-4 mb-10">
         <div className="text-center mb-16">
-          <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-semibold md:text-6xl text-4xl mt-15 py-10 inline-block relative">
+          <h2 className="text-center text-yellow-600 font-semibold md:text-6xl text-4xl mt-15 py-10 inline-block relative">
+          {/* <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-semibold md:text-6xl text-4xl mt-15 py-10 inline-block relative"> */}
             Meet Our Leadership Team
           </h2>
           <p className="text-black text-2xl max-w-2xl mx-auto mt-6">
@@ -138,20 +140,20 @@ const TeamMemberDetail = () => {
               viewport={{ once: true }}
               key={member.id}
               id={member.id}
-              className="bg-[#EEF1FF] rounded-2xl shadow-lg overflow-hidden"
+              className="bg-[#fff] rounded-2xl shadow-yellow-600/60 shadow-lg overflow-hidden"
             >
               <div className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}>
                 {/* Image Section */}
                 <div className="w-full lg:w-1/3 p-8 flex flex-col items-center justify-center">
                   <div className="relative">
-                    <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                    <div className="w-48 h-48 md:w-56 md:h-56 rounded-full shadow-yellow-600/80 overflow-hidden border-4 border-white shadow-lg">
                       <img
                         src={member.image || "/placeholder.svg"}
                         alt={member.name}
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="absolute -bottom-2 -right-2 bg-blue-500 rounded-full p-2 shadow-lg">
+                    <div className="absolute -bottom-2 -right-2 bg-yellow-600/80 rounded-full p-2 shadow-lg">
                       <a href={member.linkedin} className="text-white hover:text-blue-200 transition-colors">
                         <Linkedin className="w-6 h-6" />
                       </a>
@@ -167,7 +169,7 @@ const TeamMemberDetail = () => {
                   <div className="mt-4 space-y-2 w-full">
                     {member.highlights.map((highlight, i) => (
                       <div key={i} className="flex items-start">
-                        <Award className="w-5 h-5 text-blue-500 mr-2 flex-shrink-0 mt-0.5" />
+                        <Award className="w-5 h-5 text-yellow-600/80 mr-2 flex-shrink-0 mt-0.5" />
                         <p className="text-gray-600 text-left md:text-base text-sm">{highlight}</p>
                       </div>
                     ))}

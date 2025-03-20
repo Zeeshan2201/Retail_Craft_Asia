@@ -8,6 +8,7 @@ import empowermentImage from "../assets/empowerment.svg";
 import sustainabilityImage from "../assets/sustainability.svg";
 
 import img from "../assets/About/img.png";
+import About_2 from "../assets/About/About_2.png"
 
 import MangTeam from "../components/MangTeam";
 // import visionSvg from "../assets/vision.svg";
@@ -138,7 +139,7 @@ const FoundationPrinciples = () => {
         {/* User Image with Glow */}
         <div className="relative mt-16">
           <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative z-10">
-            <img src={img} alt="User" className="w-full h-full object-cover" />
+            <img src={About_2} alt="User" className="w-full h-full object-cover" />
           </div>
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-gray-50 to-yellow-50rounded-full blur-3xl opacity-30 animate-pulse"></div>
 
@@ -169,9 +170,7 @@ const FoundationPrinciples = () => {
             Our Vision for the Future
           </h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
-            Our vision shapes everything we aim to achieve. We set new
-            standards, create meaningful impact, and drive transformation in our
-            industry.
+          To be the trusted business partners for Market expansion and Execution services for Businesses in Asia. 
           </p>
           
 
@@ -213,9 +212,7 @@ const FoundationPrinciples = () => {
             Fueling Success Through Our Mission
           </h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
-            Our mission is to bring out the best in one another, deliver success
-            to our customers, and inspire the industry through excellence and
-            innovation.
+          To be the leading  partners for Brands and Businesses in Asia, recognised for transformation and Growth  with innovative, tehcnology driven solutions leading with expertise and dedication 
           </p>
 
           <div className="flex flex-wrap sm:grid sm:grid-cols-3 justify-center gap-10 mt-16">
