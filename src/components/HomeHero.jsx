@@ -3,6 +3,8 @@ import { motion } from "framer-motion"
 import { FaArrowRight, FaPlay } from "react-icons/fa"
 import { WiCloud } from "react-icons/wi"
 import { Link } from "react-router-dom"
+import HoverAnimation from "./HoverAnimation"
+import HoveAnimationRight from "./HoveAnimationRight"
 // import VantaBirds from "./VantaBirds"
 
 const HeroSection = () => {
@@ -43,6 +45,8 @@ const HeroSection = () => {
 
   return (
     <section className="relative flex items-center justify-center h-screen bg-gradient-to-tl from-[#f1ecd0] via-white to-white text-center px-6 overflow-hidden">
+      <HoverAnimation/>
+      <HoveAnimationRight/>
        {/* <VantaBirds/> */}
       {/* Animated background with parallax effect */}
       <motion.div

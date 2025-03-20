@@ -306,55 +306,56 @@ import {
 
 const services = [
   {
+    category: "Market Expansion Services",
+    // icon: <FaGlobe className="text-6xl text-[#C8A961]" />,
+    items: [
+      { name: "Product Sourcing", icon: <FaRobot />, description: "Identifying and acquiring quality products efficiently.", link:"/services/MarketExpansion" },
+      { name: "Market Research & Insights", icon: <FaGraduationCap />, description: "Analyzing market trends for business growth.", link:"/services/MarketExpansion" },
+      { name: "Sales & Marketing", icon: <FaCogs />, description: "Developing strategies to drive revenue and brand awareness.", link:"/services/MarketExpansion" },
+      { name: "Distribution & Logistics", icon: <FaTruck />, description: "Ensuring smooth supply chain operations.", link:"/services/MarketExpansion" },
+      { name: "After Sales Services", icon: <FaHeadset />, description: "Providing support and solutions post-purchase.", link:"/services/MarketExpansion" }
+    ]
+  },
+  {
     category: "Sales & Merchandising",
     // icon: <FaChartLine className="text-6xl text-[#C8A961]" />,
     items: [
-      { name: "Field Sales", icon: <FaUsers />, description: "Direct in-person sales and client relationship building." },
-      { name: "Merchandising", icon: <FaShoppingCart />, description: "Strategic product placement to maximize sales." },
-      { name: "Retail Audit", icon: <FaClipboardCheck />, description: "Evaluating retail execution and compliance." },
-      { name: "Point of Sale Execution", icon: <FaMoneyBillWave />, description: "Enhancing customer purchase experience." },
-      { name: "Asset Optimisation", icon: <FaBoxOpen />, description: "Maximizing asset utilization for efficiency." },
-      { name: "Product Management", icon: <FaRocket />, description: "Strategic planning and development of products." }
+      { name: "Field Sales", icon: <FaUsers />, description: "Direct in-person sales and client relationship building.", link:"/services/SalesAndMerchandising" },
+      { name: "Merchandising", icon: <FaShoppingCart />, description: "Strategic product placement to maximize sales." , link:"/services/SalesAndMerchandising"},
+      { name: "Retail Audit", icon: <FaClipboardCheck />, description: "Evaluating retail execution and compliance.", link:"/services/SalesAndMerchandising"},
+      { name: "Point of Sale Execution", icon: <FaMoneyBillWave />, description: "Enhancing customer purchase experience." , link:"/services/SalesAndMerchandising"},
+      { name: "Asset Optimisation", icon: <FaBoxOpen />, description: "Maximizing asset utilization for efficiency.", link:"/services/SalesAndMerchandising" },
+      { name: "Product Management", icon: <FaRocket />, description: "Strategic planning and development of products.", link:"/services/SalesAndMerchandising" }
     ]
   },
   {
     category: "Brand Activation & Experiential Marketing",
     // icon: <FaBullhorn className="text-6xl text-[#C8A961]" />,
     items: [
-      { name: "Brand Ambassador Programmes", icon: <FaHandshake />, description: "Engaging brand ambassadors to represent products." },
-      { name: "Events & Road Shows", icon: <FaSearch />, description: "Creating immersive brand experiences for consumers." },
-      { name: "Sampling", icon: <FaTruck />, description: "Providing product samples to boost awareness." },
-      { name: "Shopper Marketing", icon: <FaHeadset />, description: "Influencing customers at the point of purchase." },
-      { name: "Instore Activation", icon: <FaBrain />, description: "Driving sales through in-store promotional activities." }
+      { name: "Brand Ambassador Programmes", icon: <FaHandshake />, description: "Engaging brand ambassadors to represent products." , link:"/services/BrandActivation"},
+      { name: "Events & Road Shows", icon: <FaSearch />, description: "Creating immersive brand experiences for consumers.", link:"/services/BrandActivation" },
+      { name: "Sampling", icon: <FaTruck />, description: "Providing product samples to boost awareness.", link:"/services/BrandActivation" },
+      { name: "Shopper Marketing", icon: <FaHeadset />, description: "Influencing customers at the point of purchase.", link:"/services/BrandActivation" },
+      { name: "Instore Activation", icon: <FaBrain />, description: "Driving sales through in-store promotional activities.", link:"/services/BrandActivation" }
     ]
   },
-  {
-    category: "Market Expansion Services",
-    // icon: <FaGlobe className="text-6xl text-[#C8A961]" />,
-    items: [
-      { name: "Product Sourcing", icon: <FaRobot />, description: "Identifying and acquiring quality products efficiently." },
-      { name: "Market Research & Insights", icon: <FaGraduationCap />, description: "Analyzing market trends for business growth." },
-      { name: "Sales & Marketing", icon: <FaCogs />, description: "Developing strategies to drive revenue and brand awareness." },
-      { name: "Distribution & Logistics", icon: <FaTruck />, description: "Ensuring smooth supply chain operations." },
-      { name: "After Sales Services", icon: <FaHeadset />, description: "Providing support and solutions post-purchase." }
-    ]
-  },
+ 
   {
     category: "Data & Technology",
     // icon: <FaDatabase className="text-6xl text-[#C8A961] pb-4" />,
     items: [
-      { name: "Data & Operation Intelligence", icon: <FaBrain />, description: "Utilizing analytics to optimize operations." },
-      { name: "Sales Force Automation Tools", icon: <FaRobot />, description: "Enhancing sales processes with automation." },
-      { name: "Learning & Development Modules", icon: <FaGraduationCap />, description: "Training solutions for workforce skill enhancement." },
-      { name: "CRM Solutions", icon: <FaCogs />, description: "Managing customer relationships effectively." }
+      { name: "Data & Operation Intelligence", icon: <FaBrain />, description: "Utilizing analytics to optimize operations.", link:"/services/DataAndTechnology" },
+      { name: "Sales Force Automation Tools", icon: <FaRobot />, description: "Enhancing sales processes with automation.", link:"/services/DataAndTechnology" },
+      { name: "Learning & Development Modules", icon: <FaGraduationCap />, description: "Training solutions for workforce skill enhancement." , link:"/services/DataAndTechnology"},
+      { name: "CRM Solutions", icon: <FaCogs />, description: "Managing customer relationships effectively.", link:"/services/DataAndTechnology" }
     ]
   },
   {
     category: "Digital Marketing",
     // icon: <FaLaptop className="text-6xl text-[#C8A961]" />,
     items: [
-      { name: "Content Marketing", icon: <FaPenFancy />, description: "Creating engaging content to attract audiences." },
-      { name: "Social Media Marketing", icon: <FaThumbsUp />, description: "Boosting brand visibility through social platforms." }
+      { name: "Content Marketing", icon: <FaPenFancy />, description: "Creating engaging content to attract audiences.", link:"/services/DigitalMarketing" },
+      { name: "Social Media Marketing", icon: <FaThumbsUp />, description: "Boosting brand visibility through social platforms.", link:"/services/DigitalMarketing" }
     ]
   }
 ];
@@ -403,7 +404,7 @@ const ServicesSection = () => {
                   </div>
                   <h4 className="mt-4 text-lg font-semibold h-16 text-gray-700">{item.name}</h4>
                   <p>{item.description}</p>
-                  <a href="#" className="mt-4 inline-block h-10 text-gray-700 font-semibold text-sm hover:underline">
+                  <a href={item.link} className="mt-4 hover:text-yellow-400 inline-block h-10 text-gray-700 font-semibold text-sm hover:underline">
                     Learn more
                   </a>
                 </div>

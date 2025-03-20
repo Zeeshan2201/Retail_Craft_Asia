@@ -170,9 +170,7 @@ const FoundationPrinciples = () => {
             Our Vision for the Future
           </h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
-            Our vision shapes everything we aim to achieve. We set new
-            standards, create meaningful impact, and drive transformation in our
-            industry.
+          To be the trusted business partners for Market expansion and Execution services for Businesses in Asia. 
           </p>
           
 
@@ -214,9 +212,7 @@ const FoundationPrinciples = () => {
             Fueling Success Through Our Mission
           </h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
-            Our mission is to bring out the best in one another, deliver success
-            to our customers, and inspire the industry through excellence and
-            innovation.
+          To be the leading  partners for Brands and Businesses in Asia, recognised for transformation and Growth  with innovative, tehcnology driven solutions leading with expertise and dedication 
           </p>
 
           <div className="flex flex-wrap sm:grid sm:grid-cols-3 justify-center gap-10 mt-16">

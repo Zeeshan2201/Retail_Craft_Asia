@@ -377,7 +377,7 @@ import Sourcing from "../animation/Market/ProductSourcing.json";
 import Sales from "../animation/Market/sales1.json";
 
 import Distribution from "../animation/Market/DistributionLogistics.json";
-import { FaChartLine, FaShippingFast, FaClipboardList, FaHandshake } from "react-icons/fa";
+
 import BackgroundAnimation from "../components/BackgroundAnimation";
 
 const services = [
@@ -445,6 +445,7 @@ const services = [
     height={100}
     width={100} />,
   },
+  
 ];
 
 export default function ServicesPage() {
