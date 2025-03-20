@@ -5,7 +5,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 const Card = ({ children, className, onClick }) => {
   return (
     <div onClick={onClick} className={`bg-white p-12 rounded-2xl shadow-lg transition-all duration-300 ease-in-out 
-        hover:scale-105 hover:shadow-2xl  hover:shadow-yellow-700 w-80 h-52 cursor-pointer transform ${className}`}>
+        hover:scale-105 hover:shadow-2xl  hover:shadow-yellow-300/80 w-80 h-52 cursor-pointer transform ${className}`}>
       {children}
     </div>
   );
@@ -136,7 +136,7 @@ const ContactCards = () => {
         ))}
       </div>
 
-      <div className="text-center mt-10 bg-white p-6 rounded-4xl shadow-lg   hover:shadow-yellow-700 rounded-xl">
+      <div className="text-center mt-10 bg-white p-6 rounded-4xl shadow-lg   hover:shadow-yellow-300/80 rounded-xl">
         <h3 className="text-3xl sm:text-4xl font-semibold text-gray-800">Contact Us</h3>
         <p className="mt-4 text-base sm:text-xl text-gray-600">Office-Address: 65,42 Tower Building, Room No 1107, Sukhumvit 42 Road,<br/> Phra Khanong Sub-district, Khlong Toei District, Bangkok, Thailand - 10110</p>
       </div>
@@ -146,7 +146,7 @@ const ContactCards = () => {
         <p className="mt-4">
   Call us at 
   <a href="tel:+6623658200,1103" className="text-black font-semibold hover:underline">
-    +6623658200 ext. 1103
+    +6623658200 #1103
   </a>
 </p>
         <p className="mt-2">Support Hours: Mon-Fri, 9 AM - 6 PM</p>
