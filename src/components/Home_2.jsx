@@ -62,16 +62,16 @@ const IndustrySection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            INDUSTRY SOLUTIONS
+            Tailored Solutions for Retail & FMCG –  
           </motion.h3>
 
           <motion.h2
-            className="uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-bold text-gray-900 mt-2 text-center md:text-left"
+            className="uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-semibold text-gray-900 mt-2 text-center md:text-left"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Tailored Solutions for{" "}
+            Driving  Growth Across Industries:{" "}
             <motion.span
               className="mt-4 text-yellow-700"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -83,7 +83,7 @@ const IndustrySection = () => {
                 stiffness: 100,
               }}
             >
-              Retail & FMCG
+           Health, Hospitality and Beyond!
             </motion.span>
           </motion.h2>
 

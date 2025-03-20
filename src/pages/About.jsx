@@ -8,7 +8,7 @@ import empowermentImage from "../assets/empowerment.svg";
 import sustainabilityImage from "../assets/sustainability.svg";
 
 import img from "../assets/About/img.png";
-import About_2 from "../assets/About/About_2.png"
+import images_2 from "../assets/About/images_2.png"
 
 import MangTeam from "../components/MangTeam";
 // import visionSvg from "../assets/vision.svg";
@@ -139,7 +139,7 @@ const FoundationPrinciples = () => {
         {/* User Image with Glow */}
         <div className="relative mt-16">
           <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative z-10">
-            <img src={About_2} alt="User" className="w-full h-full object-cover" />
+            <img src={images_2} alt="User" className="w-full h-full object-cover" />
           </div>
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-gray-50 to-yellow-50rounded-full blur-3xl opacity-30 animate-pulse"></div>
 
