@@ -375,7 +375,7 @@ import Lottie from "react-lottie";
 import Market from "../animation/Market/MarketResearch.json";
 import Sourcing from "../animation/Market/ProductSourcing.json";
 import Sales from "../animation/Market/sales1.json";
-
+import Salesmarket from"../animation/Market/AbxpBcXwaw.json";
 import Distribution from "../animation/Market/DistributionLogistics.json";
 
 import BackgroundAnimation from "../components/BackgroundAnimation";
@@ -445,7 +445,22 @@ const services = [
     height={100}
     width={100} />,
   },
-  
+  {
+    title: "After-Sales Services",
+    description: [
+      "Provides customer support, warranty handling, and issue resolution", 
+      "Enhances customer satisfaction and brand loyalty", 
+      "Includes maintenance, repairs, and product assistance",
+    ],
+    icon: <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData:Salesmarket,
+    }}
+    height={180}
+    width={180} />,
+  },
 ];
 
 export default function ServicesPage() {
