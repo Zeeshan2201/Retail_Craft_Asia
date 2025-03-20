@@ -151,10 +151,9 @@
 // };
 
 // export default TeamMemberDetail;
-
 "use client"
 
-import { useRef, useState, useEffect } from "react"
+import { useRef, useState, useEffect, useCallback } from "react"
 import { Linkedin, Award, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react"
 import { motion, useAnimation } from "framer-motion"
 
@@ -206,7 +205,8 @@ const teamMembers = [
     id: 4,
     name: "Wichit Thammaphimol",
     role: "HR Director",
-    shortBio: "Wichit Thammaphimo, an experienced HR leader, has managed multinational businesses across ASEAN nations.",
+    shortBio:
+      "Wichit Thammaphimo, an experienced HR leader, has managed multinational businesses across ASEAN nations.",
     // shortBio: "Marketing expert with 15+ years of experience in brand strategy and consumer engagement.",
     image: "/Team/Member_4.png",
     highlights: [
@@ -225,40 +225,104 @@ export default function AnimatedTeamSection() {
   const [isVisible, setIsVisible] = useState(false)
   const controls = useAnimation()
 
+  const scroll = useCallback(
+    (direction) => {
+      if (scrollRef.current) {
+        const scrollContainer = scrollRef.current
+        const cards = scrollContainer.querySelectorAll(".team-card")
+        const cardWidth = cards[0].offsetWidth + 24 // Include gap
+
+        let newIndex
+        if (direction === "left") {
+          newIndex = (activeIndex - 1 + cards.length) % cards.length
+        } else {
+          newIndex = (activeIndex + 1) % cards.length
+        }
+
+        setActiveIndex(newIndex)
+
+        // Always scroll with smooth behavior for manual navigation
+        scrollContainer.scrollTo({
+          left: newIndex * cardWidth,
+          behavior: "smooth",
+        })
+      }
+    },
+    [activeIndex],
+  )
+
   // Auto-scroll functionality
   useEffect(() => {
-    const timer = setInterval(() => {
-      if (!isHovering) {
-        scroll("right")
-      }
-    }, 5000)
+    let timer
+    const startTimer = () => {
+      timer = setInterval(() => {
+        if (!isHovering) {
+          const scrollContainer = scrollRef.current
+          if (scrollContainer) {
+            const cards = scrollContainer.querySelectorAll(".team-card")
+            const cardWidth = cards[0].offsetWidth + 24 // Include gap
+
+            // Calculate next index
+            const nextIndex = (activeIndex + 1) % cards.length
+            setActiveIndex(nextIndex)
+
+            // If we're at the last card and about to loop back to the first
+            if (nextIndex === 0) {
+              // First scroll to the current position
+              scrollContainer.scrollTo({
+                left: activeIndex * cardWidth,
+                behavior: "auto",
+              })
+
+              // Then after a tiny delay, scroll to the first card with animation
+              setTimeout(() => {
+                scrollContainer.scrollTo({
+                  left: 0,
+                  behavior: "smooth",
+                })
+              }, 50)
+            } else {
+              // Normal scroll to next card
+              scrollContainer.scrollTo({
+                left: nextIndex * cardWidth,
+                behavior: "smooth",
+              })
+            }
+          }
+        }
+      }, 5000)
+    }
+
+    startTimer()
 
     return () => clearInterval(timer)
-  }, [isHovering])
+  }, [isHovering, activeIndex])
 
   // Animate in on mount
   useEffect(() => {
     setIsVisible(true)
     controls.start("visible")
-    scroll("left");
+    // Don't call scroll here, it's causing the infinite loop
   }, [controls])
 
-  const scroll = (direction) => {
-    if (scrollRef.current) {
-      const scrollContainer = scrollRef.current
-      const cards = scrollContainer.querySelectorAll(".team-card")
-      const cardWidth = cards[0].offsetWidth + 24 // Include gap
-
-      const newIndex =
-        direction === "left" ? (activeIndex - 1 + cards.length) % cards.length : (activeIndex + 1) % cards.length
-
-      setActiveIndex(newIndex)
-      scrollContainer.scrollTo({
-        left: newIndex * cardWidth,
-        behavior: "smooth",
-      })
+  // Separate effect for initial scroll
+  useEffect(() => {
+    // Only run once on mount
+    const initialScroll = () => {
+      if (scrollRef.current) {
+        const scrollContainer = scrollRef.current
+        const cards = scrollContainer.querySelectorAll(".team-card")
+        if (cards.length > 0) {
+          scrollContainer.scrollTo({
+            left: 0,
+            behavior: "auto",
+          })
+        }
+      }
     }
-  }
+
+    initialScroll()
+  }, [])
 
   // Animation variants
   const containerVariants = {

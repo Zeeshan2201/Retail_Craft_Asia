@@ -214,7 +214,7 @@ const ServicesSection = () => {
   return (
     <div
       ref={sectionRef}
-      className="bg-gradient-to-b from-gray-50 to-gray-100 py-24 px-8 md:px-20 lg:px-36 relative overflow-hidden"
+      className="bg-gradient-to-b from-gray-50 to-gray-50 py-24 px-8 md:px-20 lg:px-36 relative overflow-hidden"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">

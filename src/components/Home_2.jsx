@@ -18,7 +18,7 @@ const IndustrySection = () => {
   return (
     <motion.section
       ref={sectionRef}
-      className="relative flex flex-col md:flex-row items-center justify-between px-4 md:px-20 py-8 md:py-16 mb-10 bg-gradient-to-r from-yellow-50 to-gray-100 overflow-hidden"
+      className="relative flex flex-col md:flex-row items-center justify-between px-4 md:px-20 py-8 md:py-16 mb-10 bg-gradient-to-b from-yellow-50 to-gray-50 overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}

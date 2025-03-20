@@ -45,8 +45,8 @@ const HeroSection = () => {
 
   return (
     <section className="relative flex items-center justify-center h-screen bg-gradient-to-tl from-[#f1ecd0] via-white to-white text-center px-6 overflow-hidden">
-      <HoverAnimation/>
-      <HoveAnimationRight/>
+      {/* <HoverAnimation/> */}
+      {/* <HoveAnimationRight/> */}
        {/* <VantaBirds/> */}
       {/* Animated background with parallax effect */}
       <motion.div
