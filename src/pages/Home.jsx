@@ -20,6 +20,7 @@ const Home = () => {
       <Home_Service/>
       
       <Industries />
+      {/* <fmgh/> */}
      
      
      <WhyChooseUs/>
