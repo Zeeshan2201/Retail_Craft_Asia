@@ -62,7 +62,7 @@ const IndustrySection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Tailored Solutions –  
+            Tailored Solutions For–  
           </motion.h3>
 
           <motion.h2
@@ -83,7 +83,7 @@ const IndustrySection = () => {
                 stiffness: 100,
               }}
             >
-          Different Industries and sector!
+          Industries!
             </motion.span>
           </motion.h2>
 
