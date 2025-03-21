@@ -1,5 +1,5 @@
 // import React from 'react';
- 
+
 // import FMCGIcon from '../assets/Industry/fmcg.svg';
 // import RetailIcon from '../assets/Industry/retail.svg';
 // import HealthBeautyIcon from '../assets/Industry/health.svg';
@@ -395,10 +395,10 @@
 //   )
 // }
 
-"use client"
+"use client";
 
-import { useRef, useEffect, useState } from "react"
-import { motion, useInView, useAnimation } from "framer-motion"
+import { useRef, useEffect, useState } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 // We'll use the same icons but import them dynamically in a real project
 // This is just a placeholder for the demo
@@ -407,20 +407,19 @@ const IconPlaceholder = ({ name }) => (
     {name === "FMCG" && (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="32"
+        height="32"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="w-10 h-10"
+        className="w-12 h-12 text-yellow-600"
       >
-        <path d="m7 10 5-6 5 6"></path>
-        <path d="m21 10-2 8c-.17.67-.76 1-1.5 1h-11c-.74 0-1.33-.33-1.5-1l-2-8"></path>
-        <path d="M12 17v-5"></path>
-        <path d="M8 13h8"></path>
+        <circle cx="8" cy="20" r="2"></circle>
+        <circle cx="18" cy="20" r="2"></circle>
+        <path d="M2 3h4l3.6 10.6a2 2 0 0 0 2 1.4h6.8a2 2 0 0 0 2-1.5L22 6H5"></path>
       </svg>
     )}
     {name === "Retail" && (
@@ -476,44 +475,33 @@ const IconPlaceholder = ({ name }) => (
       </svg>
     )}
     {name === "Hospitality Sector" && (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="w-10 h-10"
-      >
-        <path d="M2 20h20"></path>
-        <path d="M5 4h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"></path>
-        <path d="M12 8v3"></path>
-        <path d="M12 15v.01"></path>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 -960 960 960" fill="#ca8a04">
+      <path d="M280-320q0-33 23.5-56.5T360-400q33 0 56.5 23.5T440-320q0 33-23.5 56.5T360-240q-33 0-56.5-23.5T280-320Zm200-80h240q33 0 56.5 23.5T800-320v280h-80v-80H240v80h-80v-400h80v240h240v-200Zm150-40L512-654 406-548l10 68-30 30-47-88-88-48 30-30 68 9 106-106-215-117 38-38 264 68 108-108q12-12 29-12t29 12q12 12 12 29t-12 29L600-742l68 264-38 38Zm90 240v-120H560v120h160Z"/>
+    </svg>
+    
+    
     )}
     {name === "Pharmaceuticals" && (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="32"
+        height="32"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="w-10 h-10"
+        className="w-12 h-12 text-yellow-600"
       >
-        <path d="m9 11 6 6"></path>
-        <path d="m15 11-6 6"></path>
-        <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+        <rect x="3" y="6" width="18" height="12" rx="2"></rect>
+        <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+        <path d="M12 10v4"></path>
+        <path d="M10 12h4"></path>
       </svg>
     )}
   </div>
-)
+);
 
 const industries = [
   {
@@ -546,11 +534,11 @@ const industries = [
     description:
       "Prescription and OTC medicines, medical devices, and healthcare solutions that drive advancements in global health.",
   },
-]
+];
 
 const IndustryCard = ({ title, description, index, isInView, direction }) => {
-  const [isHovered, setIsHovered] = useState(false)
-  const cardControls = useAnimation()
+  const [isHovered, setIsHovered] = useState(false);
+  const cardControls = useAnimation();
 
   useEffect(() => {
     if (isInView) {
@@ -565,7 +553,7 @@ const IndustryCard = ({ title, description, index, isInView, direction }) => {
           delay: index * 0.1,
           duration: 0.5,
         },
-      })
+      });
     } else {
       cardControls.start({
         x: direction === "entering" ? -100 : 100,
@@ -578,9 +566,9 @@ const IndustryCard = ({ title, description, index, isInView, direction }) => {
           delay: (industries.length - index - 1) * 0.05,
           duration: 0.5,
         },
-      })
+      });
     }
-  }, [isInView, index, cardControls, direction])
+  }, [isInView, index, cardControls, direction]);
 
   return (
     <motion.div
@@ -682,33 +670,33 @@ const IndustryCard = ({ title, description, index, isInView, direction }) => {
         transition={{ duration: 0.3 }}
       />
     </motion.div>
-  )
-}
+  );
+};
 
 export default function AnimatedIndustriesGrid() {
-  const [scrollDirection, setScrollDirection] = useState("entering")
-  const [lastScrollY, setLastScrollY] = useState(0)
-  const gridRef = useRef(null)
+  const [scrollDirection, setScrollDirection] = useState("entering");
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const gridRef = useRef(null);
   const isInView = useInView(gridRef, {
     amount: 0.2,
     once: false,
-  })
-  const titleControls = useAnimation()
+  });
+  const titleControls = useAnimation();
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY
+      const currentScrollY = window.scrollY;
       if (currentScrollY > lastScrollY) {
-        setScrollDirection("entering")
+        setScrollDirection("entering");
       } else {
-        setScrollDirection("exiting")
+        setScrollDirection("exiting");
       }
-      setLastScrollY(currentScrollY)
-    }
+      setLastScrollY(currentScrollY);
+    };
 
-    window.addEventListener("scroll", handleScroll, { passive: true })
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [lastScrollY])
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
 
   useEffect(() => {
     if (isInView) {
@@ -719,7 +707,7 @@ export default function AnimatedIndustriesGrid() {
           duration: 0.7,
           ease: "easeOut",
         },
-      })
+      });
     } else {
       titleControls.start({
         opacity: 0,
@@ -728,9 +716,9 @@ export default function AnimatedIndustriesGrid() {
           duration: 0.5,
           ease: "easeIn",
         },
-      })
+      });
     }
-  }, [isInView, titleControls])
+  }, [isInView, titleControls]);
 
   return (
     <div className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
@@ -762,7 +750,11 @@ export default function AnimatedIndustriesGrid() {
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <motion.div initial={{ opacity: 0, y: -20 }} animate={titleControls} className="text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={titleControls}
+          className="text-center mb-16"
+        >
           <motion.h2
             className="text-5xl font-semibold text-yellow-600 uppercase tracking-wide"
             animate={{
@@ -794,13 +786,21 @@ export default function AnimatedIndustriesGrid() {
           />
         </motion.div>
 
-        <div ref={gridRef} className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 lg:gap-10">
+        <div
+          ref={gridRef}
+          className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 lg:gap-10"
+        >
           {industries.map((industry, index) => (
-            <IndustryCard key={index} {...industry} index={index} isInView={isInView} direction={scrollDirection} />
+            <IndustryCard
+              key={index}
+              {...industry}
+              index={index}
+              isInView={isInView}
+              direction={scrollDirection}
+            />
           ))}
         </div>
       </div>
     </div>
-  )
+  );
 }
-

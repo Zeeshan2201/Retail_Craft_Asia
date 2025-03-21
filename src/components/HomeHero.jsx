@@ -246,7 +246,7 @@ const HeroSection = () => {
                 y: 0,
                 transition: { delay: 1.6, duration: 0.5 },
               }}
-              className="px-6 mr-4 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-semibold rounded-lg shadow-md flex items-center gap-2 hover:bg-[#A78A5D] transition"
+              className="px-6 mr-4 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-semibold rounded-3xl shadow-md flex items-center gap-2 hover:bg-[#A78A5D] transition "
             >
               <span>Get Started</span>
               <motion.span
@@ -269,7 +269,7 @@ const HeroSection = () => {
                 y: 0,
                 transition: { delay: 1.8, duration: 0.5 },
               }}
-              className="px-6 py-3 bg-gray-200 text-gray-900 font-semibold rounded-lg shadow-md flex items-center gap-2 hover:bg-gray-300 transition"
+              className="px-6 py-3 bg-gray-200 text-gray-900 font-semibold rounded-3xl shadow-md flex items-center gap-2 hover:bg-gray-300 transition"
             >
               <span>Learn More</span>
               <motion.span
