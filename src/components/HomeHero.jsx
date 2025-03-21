@@ -48,7 +48,19 @@ const HeroSection = () => {
     <div className=" w-[100%]">
     <section className="relative  flex items-center  justify-center h-screen  text-center px-6 overflow-hidden">
     {/* <section className="relative  flex items-center  justify-center h-screen bg-gradient-to-tl from-[#f1ecd0] via-white to-white text-center px-6 overflow-hidden"> */}
-     
+    <video 
+      autoPlay 
+      loop 
+      muted 
+      playsInline 
+      className="absolute top-20 left-0 w-full h-full object-cover z-10"
+    >
+      <source src="/Hero.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    {/* Black Overlay */}
+    <div className="absolute top-0 left-0 w-full h-full bg-black/80 z-20"></div>
       {/* Animated background with parallax effect */}
       <motion.div
         className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-10"
@@ -194,7 +206,7 @@ const HeroSection = () => {
       </motion.div>
 
       {/* Hero Content with staggered animations */}
-      <motion.div variants={container} initial="hidden" animate="show" className="max-w-4xl relative z-10">
+      <motion.div variants={container} initial="hidden" animate="show" className="max-w-4xl relative z-30">
         {/* Main heading with text coming from left */}
         <motion.h1 variants={item} className="text-5xl font-semibold md:text-6xl pb-6">
           {/* Elevate Your Retail Strategy with */}
