@@ -8,7 +8,7 @@ import Home_Service from "../components/Home_Service"
 import Home_2 from "../components/Home_2"
 // import ServicesSlider from '../components/Ser';
 import MangTeam from "../components/MangTeam"
-import AnimatedGrid from '../components/AnimatedGrid';
+// import AnimatedGrid from '../components/AnimatedGrid';
 
 
 const Home = () => {

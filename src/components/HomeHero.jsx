@@ -5,6 +5,7 @@ import { WiCloud } from "react-icons/wi"
 import { Link } from "react-router-dom"
 import HoverAnimation from "./HoverAnimation"
 import HoveAnimationRight from "./HoveAnimationRight"
+import { div } from "framer-motion/client"
 // import VantaBirds from "./VantaBirds"
 
 const HeroSection = () => {
@@ -44,7 +45,9 @@ const HeroSection = () => {
   }
 
   return (
-    <section className="relative flex items-center justify-center h-screen bg-gradient-to-tl from-[#f1ecd0] via-white to-white text-center px-6 overflow-hidden">
+    <div className=" w-[100%]">
+    <section className="relative  flex items-center  justify-center h-screen  text-center px-6 overflow-hidden">
+    {/* <section className="relative  flex items-center  justify-center h-screen bg-gradient-to-tl from-[#f1ecd0] via-white to-white text-center px-6 overflow-hidden"> */}
      
       {/* Animated background with parallax effect */}
       <motion.div
@@ -296,6 +299,7 @@ const HeroSection = () => {
         />
       </motion.div>
     </section>
+    </div>
   )
 }
 
