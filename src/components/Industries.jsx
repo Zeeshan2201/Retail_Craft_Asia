@@ -398,6 +398,7 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
+import Alchohol from "../assets/Industry/liquor.svg"
 import { motion, useInView, useAnimation } from "framer-motion";
 
 // We'll use the same icons but import them dynamically in a real project
@@ -500,40 +501,62 @@ const IconPlaceholder = ({ name }) => (
         <path d="M10 12h4"></path>
       </svg>
     )}
+    <div className="flex items-center justify-center h-full">
+  {name === "Alchohol & Beverages" && (
+    <svg
+    
+      xmlns=""
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-12 h-12 text-yellow-600"
+    >
+      <rect x="3" y="6" width="18" height="12" rx="2"></rect>
+      <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+      <path d="M12 10v4"></path>
+      <path d="M10 12h4"></path>
+    </svg>
+  )}
+</div>
+
   </div>
 );
 
 const industries = [
   {
     title: "FMCG",
-    description:
-      "Fast-Moving Consumer Goods include packaged food, beverages, toiletries, and over-the-counter drugs, ensuring constant demand.",
+   
   },
   {
     title: "Retail",
-    description:
-      "Retail involves selling goods and services directly to consumers through supermarkets, department stores, and online platforms.",
+   
   },
   {
     title: "Health & Beauty",
-    description:
-      "Personal care, skincare, cosmetics, and wellness products, focusing on enhancing well-being and promoting a healthier lifestyle.",
+   
   },
   {
     title: "Consumer Durables &  Electronics",
-    description:
-      "Long-lasting goods like appliances, gadgets, and furniture designed for extended use and smart technology integration.",
+    
   },
   {
     title: "Hospitality Sector",
-    description:
-      "Hotels, restaurants, travel, and tourism services that focus on customer experience and leisure industry innovations.",
+   
   },
   {
     title: "Pharmaceuticals",
-    description:
-      "Prescription and OTC medicines, medical devices, and healthcare solutions that drive advancements in global health.",
+    
   },
+
+  
+  {
+    title: "Alchohol & Beverages"
+  }
 ];
 
 const IndustryCard = ({ title, description, index, isInView, direction }) => {
@@ -578,7 +601,7 @@ const IndustryCard = ({ title, description, index, isInView, direction }) => {
         scale: 1.05,
         transition: { duration: 0.2 },
       }}
-      className="relative hover:bg-gradient-to-r from-[#f1ecd0] via-white to-white hover:shadow-lg hover:bg-yellow-20 hover:shadow-yellow-300 overflow-hidden rounded-2xl"
+      className="relative md:w-[25vw] mb-12 w-full hover:bg-gradient-to-r from-[#f1ecd0] via-white to-white hover:shadow-lg hover:bg-yellow-20 hover:shadow-yellow-300 overflow-hidden rounded-2xl"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
     >
@@ -788,7 +811,8 @@ export default function AnimatedIndustriesGrid() {
 
         <div
           ref={gridRef}
-          className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 lg:gap-10"
+          // className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 lg:gap-10"
+          className="flex justify-evenly flex-wrap md:flex-row flex-col"
         >
           {industries.map((industry, index) => (
             <IndustryCard

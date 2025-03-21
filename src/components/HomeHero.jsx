@@ -225,7 +225,7 @@ const HeroSection = () => {
               transition: { delay: 1.4, duration: 0.5 },
             }}
           >
-             Consistently
+             Consistently.
           </motion.span>
         </motion.h2>
 

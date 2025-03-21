@@ -509,7 +509,7 @@ const services = [
     width={180} />
   },
   {
-    title: "Shopper Marketing",
+    title: "Shopper Marketing & Instore Activation",
     description: [
       "Influences buying decisions at the point of sale.",
       "Uses in-store promotions, displays, and personalized offers.",
@@ -523,22 +523,6 @@ const services = [
     }}
     height={180}
     width={180} />
-  },
-  {
-    title: " Instore Activation",
-    description: [
-      "Influences buying decisions at the point of sale.",
-      "Uses in-store promotions, displays, and personalized offers.",
-      "Enhances customer shopping experience and increases basket value.",
-    ],
-    icon:  <Lottie
-    options={{
-      loop: true,
-      autoplay: true,
-      animationData:Instore,
-    }}
-    height={180}
-    width={180} />,
    
 },
   

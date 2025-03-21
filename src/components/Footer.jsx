@@ -43,7 +43,7 @@ export default function Footer() {
              
               <li>
                 <Link to="/MangTeam" className="hover:text-yellow-600 font-medium transition-colors">
-                Management
+                Leadership Team
                 </Link>
               </li>
               <li>
@@ -59,6 +59,11 @@ export default function Footer() {
           <div>
             <h3 className="text-md font-semibold mb-4 uppercase tracking-wider">Services</h3>
             <ul className="space-y-2">
+            <li>
+                <Link to="/services/MarketExpansion" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
+                Market Expansion Services
+                </Link>
+              </li>
               <li>
                 <Link to="/services/SalesAndMerchandising" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
                 Sales and Merchandising
@@ -69,11 +74,7 @@ export default function Footer() {
                 Brand Activation and Experiental Marketing
                 </Link>
               </li>
-              <li>
-                <Link to="/services/MarketExpansion" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
-                Market Expansion Services
-                </Link>
-              </li>
+              
               <li>
                 <Link to="/services/DataAndTechnology" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
                 Data & Technology

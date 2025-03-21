@@ -104,14 +104,14 @@ const FoundationPrinciples = () => {
     <div className="foundation-principles-container bg-gradient-to-b from-gray-50 via-yellow-50/50 to-gray-50 ">
       <div className="text-center font-semibold sm:mt-20 mb-5 pt-20 px-5">
         <h1 className="text-4xl sm:text-6xl font-semibold mt-5">
-          <span className="text-yellow-600">Who we are,</span>
-          <span className="text-yellow-700"> Your Strategic Partner.</span>
+          <span className="text-yellow-600">We Are Your Strategic Partner For <br></br></span>
+          <span className="text-yellow-700">Growth Transformation And Expansion</span>
         </h1>
 
         <p className="text-base sm:text-lg text-gray-700 mt-6 max-w-4xl mx-auto">
           At Retail Craft Asia, we are more than just service providers—we are
           your strategic partners in business growth and brand transformation.
-          With deep expertise in the FMCG industry, we help you expand your
+          With deep expertise, compities and industry knowledge we help you expand your
           market reach, optimize supply chains, enhance brand visibility, and
           drive consumer engagement.
           <br />
@@ -249,7 +249,7 @@ const FoundationPrinciples = () => {
           </h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
             To be the leading partners for Brands and Businesses in Asia,
-            recognised for transformation and Growth with innovative, tehcnology
+            recognised for transformation and Growth with innovative, technology
             driven solutions leading with expertise and dedication
           </p>
 

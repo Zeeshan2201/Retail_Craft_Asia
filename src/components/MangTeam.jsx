@@ -166,10 +166,10 @@ const teamMembers = [
     id: 1,
     name: "Parag Wasnik",
     role: "CEO",
-    shortBio: "An engineer and MBA with 20+ years of entrepreneurial experience in FMCG, Retail & Healthcare.",
+    shortBio: "An engineer and MBA with 23+ years of entrepreneurial experience in FMCG, Retail & Healthcare.",
     image: "/Team/Member_2.png",
     highlights: [
-      "20+ years experience in South East Asia and India",
+      "23+ years experience in South East Asia and India",
       "Expert in growth strategies and operational excellence",
       "Explored over 40 countries as an avid traveler",
     ],
