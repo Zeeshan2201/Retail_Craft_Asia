@@ -412,7 +412,7 @@ const ServicesSection = () => {
       {services.map((service, index) => (
         <div key={index} className="flex flex-col md:flex-row  items-start justify-center md:mb-16 gap-10 w-full">
           {/* Left Heading */}
-          <div className="w-full md:w-1/4 flex md:h-[50vh] justify-center items-center mb-8 md:mb-0">
+          <div className="w-full md:w-1/4 flex md:h-[50vh] justify-center items-center mb-8 md:mt-0 mt-12 md:mb-0">
             <h3 className="text-4xl font-semibold text-center text-yellow-600">{service.category}</h3>
           </div>
 
