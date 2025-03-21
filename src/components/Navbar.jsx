@@ -96,10 +96,11 @@ const MainNav = () => {
           {/* <Link to="/services" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>Services</Link> */}
           <div className="relative">
         <Link
+         
           to="/services"
           className="flex items-center  w-full text-base font-medium text-black py-2"
         >
-          Services
+          <span onClick={() => setMobileMenuOpen(false)}>Services</span>
           <span className='ml-1 pl-1 pt-1'>{isSubMenuOpen ? <ChevronUp className="w-4 h-4" onClick={() => setIsSubMenuOpen(!isSubMenuOpen)} /> : <ChevronDown className="w-4 h-4" onClick={() => setIsSubMenuOpen(!isSubMenuOpen)} />}</span>
         </Link>
 
@@ -114,7 +115,7 @@ const MainNav = () => {
           </div>
         )}
       </div>
-      <Link to="/MangTeam" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Our Team</Link>
+      <Link to="/MangTeam" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Management</Link>
           <Link to="/Contact" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
          
           {/* <Link to="/faq" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>FAQ</Link> */}

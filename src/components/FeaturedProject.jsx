@@ -410,10 +410,10 @@ const ServicesSection = () => {
       </div> */}
 
       {services.map((service, index) => (
-        <div key={index} className="flex flex-col md:flex-row p items-start justify-center mb-16 gap-10 w-full">
+        <div key={index} className="flex flex-col md:flex-row  items-start justify-center md:mb-16 gap-10 w-full">
           {/* Left Heading */}
-          <div className="w-full md:w-1/4 flex h-[50vh] justify-center items-center mb-8 md:mb-0">
-            <h3 className="text-4xl font-semibold text-yellow-600">{service.category}</h3>
+          <div className="w-full md:w-1/4 flex md:h-[50vh] justify-center items-center mb-8 md:mb-0">
+            <h3 className="text-4xl font-semibold text-center text-yellow-600">{service.category}</h3>
           </div>
 
           {/* Right Cards with Scroll Buttons */}
@@ -423,13 +423,13 @@ const ServicesSection = () => {
               ref={(el) => (scrollContainerRefs.current[index] = el)}
             >
               {service.items.map((item, idx) => (
-                <div key={idx} className="flex-shrink-0 mx-5 w-64 h-[50vh] bg-white rounded-xl shadow-xl border border-gray-300 p-6 text-center transition-all duration-300 hover:shadow-2xl hover:border-[#C8A961]">
+                <div key={idx} className="flex-shrink-0  mx-5 md:w-64 w-72 md:h-[50vh] h-[40vh] bg-white rounded-xl shadow-xl border border-gray-300 p-6 text-center transition-all duration-300 hover:shadow-2xl hover:border-[#C8A961]">
                   <div className="relative mx-auto w-20 h-20 bg-white shadow-lg text-yellow-600 flex items-center justify-center rounded-full border border-gray-300 text-2xl ">
                     {item.icon}
                   </div>
                   <h4 className="mt-4 text-lg font-semibold h-16 text-gray-700">{item.name}</h4>
                   <p>{item.description}</p>
-                  <a href={item.link} className="mt-4 hover:text-yellow-400 inline-block h-10 text-gray-700 font-semibold text-sm hover:underline">
+                  <a href={item.link} className="mt-12 md:mt-4 hover:text-yellow-400 inline-block h-10 text-gray-700 font-semibold text-sm hover:underline">
                     Learn more
                   </a>
                 </div>
@@ -437,7 +437,7 @@ const ServicesSection = () => {
             </div>
 
             {/* Scroll Buttons */}
-            {service.items.length > 3 && (
+            {service.items.length > (window.innerWidth > 768 ? 3 : 1) && (
               <>
                 <button
                   onClick={() => scrollLeft(index)}
