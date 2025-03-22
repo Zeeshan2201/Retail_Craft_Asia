@@ -136,12 +136,12 @@ const FoundationPrinciples = () => {
         </h2>
 
         {/* User Image with Glow */}
-        <div className="relative mt-16">
-          <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative z-10">
+        <div className="relative mt-20">
+          <div className="w-40 h-40 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative z-10">
             <img
               src={`/AboutCircle/${selectedImage}.png`}
               alt="User"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-fit"
             />
           </div>
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-gray-50 to-yellow-50rounded-full blur-3xl opacity-30 animate-pulse"></div>
@@ -161,7 +161,20 @@ const FoundationPrinciples = () => {
             }}
             className="absolute   hover:shadow-lg hover:shadow-yellow-600/80 top-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-yellow rounded-full flex items-center justify-center shadow-md"
           >
-            💙
+            <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="w-8 h-8"
+      >
+        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+      </svg>
           </button>
           <button
             onClick={() => {
