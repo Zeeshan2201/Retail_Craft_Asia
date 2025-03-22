@@ -104,16 +104,20 @@ const FoundationPrinciples = () => {
     <div className="foundation-principles-container bg-gradient-to-b from-gray-50 via-yellow-50/50 to-gray-50 ">
       <div className="text-center font-semibold sm:mt-20 mb-5 pt-20 px-5">
         <h1 className="text-4xl sm:text-6xl font-semibold mt-5">
-          <span className="text-yellow-600">We Are Your Strategic Partner For <br></br></span>
-          <span className="text-yellow-700">Growth Transformation And Expansion</span>
+          <span className="text-yellow-600">
+            We Are Your Strategic Partner For <br></br>
+          </span>
+          <span className="text-yellow-700">
+            Growth Transformation And Expansion
+          </span>
         </h1>
 
         <p className="text-base sm:text-lg text-gray-700 mt-6 max-w-4xl mx-auto">
           At Retail Craft Asia, we are more than just service providers—we are
           your strategic partners in business growth and brand transformation.
-          With deep expertise, compities and industry knowledge we help you expand your
-          market reach, optimize supply chains, enhance brand visibility, and
-          drive consumer engagement.
+          With deep expertise, compities and industry knowledge we help you
+          expand your market reach, optimize supply chains, enhance brand
+          visibility, and drive consumer engagement.
           <br />
           <br />
           Our team of industry experts works closely with brands to understand
@@ -153,7 +157,22 @@ const FoundationPrinciples = () => {
             }}
             className="absolute hover:shadow-lg hover:shadow-yellow-600/80 -top-12 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md"
           >
-            🏆
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-8 h-8 text-yellow-600"
+            >
+              <circle cx="8" cy="20" r="2"></circle>
+              <circle cx="18" cy="20" r="2"></circle>
+              <path d="M2 3h4l3.6 10.6a2 2 0 0 0 2 1.4h6.8a2 2 0 0 0 2-1.5L22 6H5"></path>
+            </svg>
           </button>
           <button
             onClick={() => {
@@ -162,19 +181,19 @@ const FoundationPrinciples = () => {
             className="absolute   hover:shadow-lg hover:shadow-yellow-600/80 top-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-yellow rounded-full flex items-center justify-center shadow-md"
           >
             <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="w-8 h-8"
-      >
-        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
-      </svg>
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-8 h-8 text-yellow-600"
+            >
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+            </svg>
           </button>
           <button
             onClick={() => {
@@ -182,7 +201,22 @@ const FoundationPrinciples = () => {
             }}
             className="absolute  hover:shadow-lg hover:shadow-yellow-600/80 top-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md"
           >
-            📊
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-8 h-8 text-yellow-600"
+            >
+              <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"></path>
+              <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"></path>
+              <path d="M12 3v6"></path>
+            </svg>
           </button>
           <button
             onClick={() => {
@@ -190,7 +224,16 @@ const FoundationPrinciples = () => {
             }}
             className="absolute  hover:shadow-lg hover:shadow-yellow-600/80 bottom-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md"
           >
-            🛒
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 -960 960 960"
+              fill="#ca8a04"
+              className="w-8 h-8 text-yellow-600"
+            >
+              <path d="M280-320q0-33 23.5-56.5T360-400q33 0 56.5 23.5T440-320q0 33-23.5 56.5T360-240q-33 0-56.5-23.5T280-320Zm200-80h240q33 0 56.5 23.5T800-320v280h-80v-80H240v80h-80v-400h80v240h240v-200Zm150-40L512-654 406-548l10 68-30 30-47-88-88-48 30-30 68 9 106-106-215-117 38-38 264 68 108-108q12-12 29-12t29 12q12 12 12 29t-12 29L600-742l68 264-38 38Zm90 240v-120H560v120h160Z" />
+            </svg>
           </button>
           <button
             onClick={() => {
@@ -198,18 +241,74 @@ const FoundationPrinciples = () => {
             }}
             className="absolute  hover:shadow-lg hover:shadow-yellow-600/80 bottom-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md"
           >
-            💬
-          </button>
-          <button
-            onClick={() => {
-              setsetselectedImage("mem_6");
-            }}
-            className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-12 w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:shadow-yellow-600/80"
-          >
-            🚀
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-8 h-8 text-yellow-600"
+            >
+              <rect x="3" y="6" width="18" height="12" rx="2"></rect>
+              <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              <path d="M12 10v4"></path>
+              <path d="M10 12h4"></path>
+            </svg>
           </button>
 
-         
+          <button
+            onClick={() => {
+              setsetselectedImage("mems_7");
+            }}
+            className="absolute bottom-0 left-12 transform -translate-x-1/2 translate-y-12 w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:shadow-yellow-600/80"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-8 h-8 text-yellow-600"
+            >
+              <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+              <line x1="8" x2="16" y1="21" y2="21"></line>
+              <line x1="12" x2="12" y1="17" y2="21"></line>
+            </svg>
+          </button>
+
+           <button
+            onClick={() => {
+              setsetselectedImage("mems_6");
+            }}
+            className="absolute bottom-0 left-52 transform -translate-x-1/2 translate-y-14 w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:shadow-yellow-600/80"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-12 h-12 text-yellow-600"
+            >
+              <path d="M9 21h6" />
+              <path d="M10 21v-6m4 6v-6" />
+              <path d="M7 15h10" />
+              <path d="M12 15V8" />
+              <path d="M8 8h8l-1-4h-6z" />
+            </svg>
+          </button> 
         </div>
 
         <div className="px-6 py-20 text-center bg-transparent">
