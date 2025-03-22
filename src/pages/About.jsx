@@ -111,7 +111,7 @@ const FoundationPrinciples = () => {
         <p className="text-base sm:text-lg text-gray-700 mt-6 max-w-4xl mx-auto">
           At Retail Craft Asia, we are more than just service providers—we are
           your strategic partners in business growth and brand transformation.
-          With deep expertise, compities and industry knowledge we help you expand your
+          With deep expertise, Competence and industry knowledge we help you expand your
           market reach, optimize supply chains, enhance brand visibility, and
           drive consumer engagement.
           <br />
