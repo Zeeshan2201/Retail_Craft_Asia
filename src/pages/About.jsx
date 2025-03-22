@@ -115,7 +115,7 @@ const FoundationPrinciples = () => {
         <p className="text-base sm:text-lg text-gray-700 mt-6 max-w-4xl mx-auto">
           At Retail Craft Asia, we are more than just service providers—we are
           your strategic partners in business growth and brand transformation.
-          With deep expertise, compities and industry knowledge we help you
+          With deep expertise, Competance and industry knowledge we help you
           expand your market reach, optimize supply chains, enhance brand
           visibility, and drive consumer engagement.
           <br />
@@ -264,7 +264,7 @@ const FoundationPrinciples = () => {
             onClick={() => {
               setsetselectedImage("mems_7");
             }}
-            className="absolute bottom-0 left-12 transform -translate-x-1/2 translate-y-12 w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:shadow-yellow-600/80"
+            className="absolute -bottom-2 left-20 transform -translate-x-1/2 translate-y-12 w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:shadow-yellow-600/80"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -288,7 +288,7 @@ const FoundationPrinciples = () => {
             onClick={() => {
               setsetselectedImage("mems_6");
             }}
-            className="absolute bottom-0 left-52 transform -translate-x-1/2 translate-y-14 w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:shadow-yellow-600/80"
+            className="absolute bottom-0 left-56 transform -translate-x-1/2 translate-y-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:shadow-yellow-600/80"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
