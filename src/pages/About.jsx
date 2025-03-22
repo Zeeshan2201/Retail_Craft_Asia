@@ -203,7 +203,7 @@ const FoundationPrinciples = () => {
           {/* <div className="px-6 py-20 text-center bg-gradient-to-b from-gray-50 to-yellow-50"> */}
           {/* Our Vision Section */}
           <h2 className="text-4xl sm:text-5xl font-semibold text-yellow-600">
-            Our Vision for the Future
+            Our Vision
           </h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
             To be the trusted business partners for Market expansion and
@@ -245,7 +245,7 @@ const FoundationPrinciples = () => {
 
           {/* Our Mission Section */}
           <h2 className="mt-28 text-4xl sm:text-5xl font-semibold text-yellow-600">
-            Fueling Success Through Our Mission
+            Our Mission
           </h2>
           <p className="mt-6 text-lg sm:text-xl text-black font-medium max-w-4xl mx-auto">
             To be the leading partners for Brands and Businesses in Asia,
