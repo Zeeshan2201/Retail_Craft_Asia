@@ -61,7 +61,7 @@ const MainNav = () => {
                 </div>
               </div>
             </div>
-            <Link to="/MangTeam" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Management</Link>
+            <Link to="/MangTeam" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Leadership Team</Link>
             <Link to="/Contact" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Contact Us</Link>
             {/* <Link to="/faq" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">FAQ</Link> */}
             

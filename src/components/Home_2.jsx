@@ -62,7 +62,7 @@ const IndustrySection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Tailored Solutions for Retail & FMCG –  
+            Tailored Solutions For–  
           </motion.h3>
 
           <motion.h2
@@ -71,7 +71,7 @@ const IndustrySection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Driving  Growth Across Industries:{" "}
+            Driving Growth Across{" "}
             <motion.span
               className="mt-4 text-yellow-700"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -83,7 +83,7 @@ const IndustrySection = () => {
                 stiffness: 100,
               }}
             >
-           Health, Hospitality and Beyond!
+          Industries!
             </motion.span>
           </motion.h2>
 

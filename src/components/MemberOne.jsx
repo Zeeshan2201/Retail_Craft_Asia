@@ -23,7 +23,7 @@ Parag is not just a leader but an inspiration, embodying excellence in every end
 Outside work, he is an avid traveler and has explored over 40 countries.`,
     image: "/Team/Member_2.png",
     highlights: [
-      "20+ years of experience in South East Asia and India",
+      "23+ years of experience in South East Asia and India",
       "Expert in growth strategies and operational excellence",
       "Driven innovation and digital transformation",
       "Explored over 40 countries as an avid traveler",
