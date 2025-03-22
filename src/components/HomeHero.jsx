@@ -208,7 +208,7 @@ const HeroSection = () => {
       {/* Hero Content with staggered animations */}
       <motion.div variants={container} initial="hidden" animate="show" className="max-w-4xl relative z-30">
         {/* Main heading with text coming from left */}
-        <motion.h1 variants={item} className="text-5xl font-semibold md:text-6xl pb-6">
+        <motion.h1 variants={item} className="text-5xl text-white font-semibold md:text-6xl pb-6">
           {/* Elevate Your Retail Strategy with */}
           Transforming Retail Businesses Across 
 
@@ -243,7 +243,7 @@ const HeroSection = () => {
         </motion.h2>
 
         {/* Paragraph with text coming from left */}
-        <motion.p variants={item} className="mt-4 text-lg text-gray-800 md:text-xl">
+        <motion.p variants={item} className="mt-4 text-lg text-gray-300 md:text-xl">
           Expert consulting services to transform your retail business with innovative solutions and insights.
         </motion.p>
 
