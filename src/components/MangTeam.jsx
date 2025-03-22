@@ -108,13 +108,13 @@ const TeamMemberDetail = () => {
           {/* Scroll Buttons */}
           <button
             onClick={() => scroll("left")}
-            className="absolute -left-12 top-1/2 transform -translate-y-1/2 p-3 bg-white shadow-md rounded-full z-10 hover:bg-gray-200"
+             className="absolute -left-4 md:-left-6 top-1/2 transform -translate-y-1/2 p-3 bg-white shadow-lg rounded-full z-20 hover:bg-gray-200 transition-all"
           >
             <ChevronLeft size={32} />
           </button>
           <button
             onClick={() => scroll("right")}
-            className="absolute -right-12 top-1/2 transform -translate-y-1/2 p-3 bg-white shadow-md rounded-full z-10 hover:bg-gray-200"
+            className="absolute -right-4 top-1/2 transform -translate-y-1/2 p-3 bg-white shadow-md rounded-full z-10 hover:bg-gray-200"
           >
             <ChevronRight size={32} />
           </button>

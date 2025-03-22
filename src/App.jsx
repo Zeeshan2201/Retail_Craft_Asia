@@ -22,7 +22,7 @@ import MemberOne from './components/MemberOne';
 
 function App() {
   return (
-    <>
+    < >
       <Router>
         <ScrollToTop/>
         <Navbar />
