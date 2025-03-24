@@ -62,7 +62,7 @@ const IndustrySection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Tailored Solutions For–  
+            Tailored Business and 
           </motion.h3>
 
           <motion.h2
@@ -71,7 +71,7 @@ const IndustrySection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Driving Growth Across{" "}
+             Marketing Solutions for {" "}
             <motion.span
               className="mt-4 text-yellow-700"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -83,7 +83,7 @@ const IndustrySection = () => {
                 stiffness: 100,
               }}
             >
-          Industries!
+          DRIVING GROWTH
             </motion.span>
           </motion.h2>
 
@@ -93,7 +93,7 @@ const IndustrySection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            We provide expert consulting services to help businesses optimize operations, enhance customer experience,
+            We provide expert consulting ,Marketing, Retail to help businesses optimize operations, enhance customer experience,
             and drive growth in the competitive retail industry.
           </motion.p>
         </motion.div>

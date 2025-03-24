@@ -53,14 +53,14 @@ const HeroSection = () => {
       loop 
       muted 
       playsInline 
-      className="absolute top-20 left-0 w-full h-full object-cover z-10"
+      className="absolute top-20 left-0 w-full h-full object-cover z-10 opacity-90"
     >
       <source src="/Hero.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 
     {/* Black Overlay */}
-    <div className="absolute top-0 left-0 w-full h-full bg-black/70 z-20"></div>
+    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/30 via-black/10 to-transparent z-20"></div>
       {/* Animated background with parallax effect */}
       <motion.div
         className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-10"
