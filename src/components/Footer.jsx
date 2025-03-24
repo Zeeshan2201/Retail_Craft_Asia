@@ -13,7 +13,7 @@ export default function Footer() {
             We are your strategic partners who will help you grow and transform your business and brands at Market Place 
              </p>
             {/* Bird Logo Placeholder */}
-            <div className="md:w-44 md:h-32 w-28 h-28 ">
+            <div className="md:w-44 md:h-40 w-28 h-28 ">
             <Link to="/" >
               <img src='/logo.png' className="w-full h-full object-contain"/>
             </Link>

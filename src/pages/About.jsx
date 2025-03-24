@@ -265,7 +265,7 @@ const FoundationPrinciples = () => {
             onClick={() => {
               setsetselectedImage("mems_7");
             }}
-            className="absolute  hover:scale-110 -bottom-2 left-20 transform -translate-x-1/2 translate-y-12 w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:shadow-yellow-600/80"
+            className="absolute hover:shadow-lg hover:-translate-y-2 hover:scale-110 hover:shadow-yellow-600/80 top-[100%] left-[25%] transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md transition-transform duration-200 ease-in-out"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -289,7 +289,7 @@ const FoundationPrinciples = () => {
             onClick={() => {
               setsetselectedImage("mems_6");
             }}
-            className="absolute  hover:scale-110 bottom-0 left-56 transform -translate-x-1/2 translate-y-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:shadow-yellow-600/80"
+            className="absolute hover:shadow-lg hover:-translate-y-2 hover:scale-110 hover:shadow-yellow-600/80 top-[100%] left-[75%] transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md transition-transform duration-200 ease-in-out"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -301,7 +301,7 @@ const FoundationPrinciples = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-12 h-12 text-yellow-600 hover:scale-125 transition-transform duration-200 ease-in-out"
+              className="w-12 h-12 text-yellow-600 transition-transform duration-200 ease-in-out group-hover:scale-125"
             >
               <path d="M9 21h6" />
               <path d="M10 21v-6m4 6v-6" />
