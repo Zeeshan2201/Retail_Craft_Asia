@@ -184,9 +184,9 @@ export default function ContactForm() {
       </div>
       
       {/* Additional Info */}
-      <div className="mt-16 text-center text-gray-500 text-sm">
+      {/* <div className="mt-16 text-center text-gray-500 text-sm">
         <p>We typically respond to applications within 3-5 business days.</p>
-      </div>
+      </div> */}
     </div>
   );
 }

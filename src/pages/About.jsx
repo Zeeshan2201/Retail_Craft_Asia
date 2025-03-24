@@ -19,7 +19,7 @@ import visionSvg from "../assets/vision.svg"; // Replace with your SVG file path
 import missionSvg from "../assets/mission.svg"; // Replace with your SVG file pathath
 
 const FoundationPrinciples = () => {
-  const [selectedImage, setsetselectedImage] = useState("mem_1");
+  const [selectedImage, setsetselectedImage] = useState("mems_1");
   const principles = [
     {
       title: "Growth",
@@ -108,14 +108,14 @@ const FoundationPrinciples = () => {
             We Are Your Strategic Partner For <br></br>
           </span>
           <span className="text-yellow-700">
-            Growth , Transformation And Expansion
+            Growth, Transformation And Expansion
           </span>
         </h1>
 
         <p className="text-base sm:text-lg text-gray-700 mt-6 max-w-4xl mx-auto">
           At Retail Craft Asia, we are more than just service providers—we are
           your strategic partners in business growth and brand transformation.
-          With deep expertise, competancy and industry knowledge we help you
+          With deep expertise, competency and industry knowledge we help you
           expand your market reach, optimize supply chains, enhance brand
           visibility, and drive consumer engagement.
           <br />
@@ -260,7 +260,6 @@ const FoundationPrinciples = () => {
               <path d="M10 12h4"></path>
             </svg>
           </button>
-
           <button
             onClick={() => {
               setsetselectedImage("mems_7");
@@ -284,7 +283,6 @@ const FoundationPrinciples = () => {
               <line x1="12" x2="12" y1="17" y2="21"></line>
             </svg>
           </button>
-
           <button
             onClick={() => {
               setsetselectedImage("mems_6");

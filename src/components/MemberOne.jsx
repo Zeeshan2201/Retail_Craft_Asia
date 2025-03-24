@@ -28,7 +28,7 @@ Outside work, he is an avid traveler and has explored over 40 countries.`,
       "Driven innovation and digital transformation",
       "Explored over 40 countries as an avid traveler",
     ],
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/paragwasnik?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ JB holds a Master's degree in Business Administration from EDC Business School i
       "Expertise in strategic growth and market expansion",
       "Certified professional coach and Six Sigma Green Belt",
     ],
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/jean-boris-roux-b252774?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 
   {
@@ -80,7 +80,7 @@ Naresh holds a Bachelor's degree from Hemwati Nandan Bahuguna University in Indi
       "Digital & Data-Driven Growth – Leveraged technology for strategic innovation.",
       "Social Impact & Community Development – Supports orphan houses and welfare initiatives.",
     ],
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/naresh-semwal-88875018?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: 4,
@@ -100,7 +100,7 @@ An expert in change management and organizational transition, Wichit is deeply p
       "Extensive background in compliance and workforce planning",
       "Certified in Professional HR and Occupational Health & Safety",
     ],
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/wichit-thammaphimol-6110b85a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ]
 
@@ -153,9 +153,9 @@ const TeamMemberDetail = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="absolute -bottom-2 -right-2 bg-yellow-600/80 rounded-full p-2 shadow-lg">
-                      <a href={member.linkedin} className="text-white hover:text-blue-200 transition-colors">
-                        <Linkedin className="w-6 h-6" />
+                    <div className="absolute -bottom-2 -right-2 group  hover:-right-3 bg-yellow-600/80 rounded-full p-2 shadow-lg">
+                      <a href={member.linkedin} target="_blank" className="text-white hover:text-blue-200 transition-colors">
+                        <Linkedin className="w-6 h-6 group-hover:w-8 group-hover:h-8" />
                       </a>
                     </div>
                   </div>

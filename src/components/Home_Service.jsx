@@ -344,7 +344,7 @@ const ServicesSection = () => {
             <motion.div
               key={index}
               custom={index}
-              className="w-full sm:w-[80%] md:w-[50%] lg:w-[30%] sm:h-[80vh] relative bg-white rounded-3xl shadow-lg p-8 text-center hover:shadow-yellow-300 shadow-gray-300 overflow-hidden"
+              className="w-full sm:w-[80%] md:w-[50%] lg:w-[30%] sm:h-[65vh] relative bg-white rounded-3xl shadow-lg p-8 text-center hover:shadow-yellow-300 shadow-gray-300 overflow-hidden"
               variants={secondRowCardVariants}
               whileHover={{
                 y: -10,

@@ -130,7 +130,7 @@ const TeamMemberDetail = () => {
             {teamMembers.concat(teamMembers).map((member, index) => (
               <motion.div
                 key={index}
-                className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 bg-white rounded-xl shadow-md hover:shadow-yellow-600/60 my-4 p-6 transform hover:scale-105 transition-transform snap-center"
+                className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-[24%] bg-white rounded-xl shadow-md hover:shadow-yellow-600/60 my-4 p-6 transform hover:scale-105 transition-transform snap-center"
               >
                 <div className="flex flex-col items-center text-center">
                   <div className="w-32 md:w-52 md:h-52 h-32 rounded-full overflow-hidden border-4 border-gray-200 shadow-md">

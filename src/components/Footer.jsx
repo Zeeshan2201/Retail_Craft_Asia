@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand and Mission Column */}
           <div className="lg:col-span-2 md:w-[25%]">
             <h2 className="text-2xl mb-4">Retail Craft Asia</h2>
-            <p className="text-black font-medium mb-6 text-lg ">
+            <p className="text-black font-medium text-lg ">
             We are your strategic partners who will help you grow and transform your business and brands at Market Place 
              </p>
             {/* Bird Logo Placeholder */}
