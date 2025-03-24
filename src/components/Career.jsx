@@ -20,23 +20,23 @@ export default function ContactForm() {
     setFormState(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormState({
-        name: "",
-        email: "",
-        company: "",
-        phone: "",
-        message: "",
-      });
-    }, 1500);
-  };
+  //   // Simulate form submission
+  //   setTimeout(() => {
+  //     setIsSubmitting(false);
+  //     setIsSubmitted(true);
+  //     setFormState({
+  //       name: "",
+  //       email: "",
+  //       company: "",
+  //       phone: "",
+  //       message: "",
+  //     });
+  //   }, 1500);
+  // };
 
   if (isSubmitted) {
     return (
@@ -58,6 +58,37 @@ export default function ContactForm() {
     );
   }
 
+  const handleSubmitCareers = async (e) => {
+    e.preventDefault();
+    setFormState({name: "",
+            email: "",
+            company: "",
+            phone: "",
+            message: "",});
+            
+      alert("Careers data successfully sent");
+    try {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbxg5BIz34GzXWa_9ziu2HDf3xZz_zGijNjAwHZ3DCYbpN7w6mWG4hSZsqmhuwWHQVHwWw/exec", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        mode: "no-cors",
+        body: JSON.stringify({
+          type: "careers",
+          ...formState
+          // name: careerFormData.name,
+          // email: careerFormData.email,
+          // resumeLink: careerFormData.resumeLink,
+          // message: careerFormData.message
+        }),
+      });
+      
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+  
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Career Heading Section */}
@@ -80,7 +111,7 @@ export default function ContactForm() {
           <h3 className="text-2xl font-bold text-gray-800">Application Form</h3>
         </div>
         
-        <form onSubmit={handleSubmit} className="space-y-8">
+        <form onSubmit={handleSubmitCareers} className="space-y-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-3">
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -160,6 +191,7 @@ export default function ContactForm() {
           
           <div className="pt-4">
             <button
+
               type="submit"
               className="w-full bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-600 hover:to-amber-700 text-white font-medium py-4 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2"
               disabled={isSubmitting}

@@ -75,26 +75,48 @@ const ContactCards = () => {
   //     console.log('Error:', error);
   //   }
   // };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setModalOpen(false); // Close modal after submitting
-    try {
-        const response = await fetch("https://script.google.com/macros/s/AKfycbycQUoonVYOeiLDTw50GLzQubZQDJyK-iQE_MXzR4OS60HAO9JGUKgNXDmUPO5CUjon/exec", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            mode: "no-cors",
-            body: JSON.stringify(formData),
-        });
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     setModalOpen(false); // Close modal after submitting
+//     try {
+//         const response = await fetch("https://script.google.com/macros/s/AKfycbycQUoonVYOeiLDTw50GLzQubZQDJyK-iQE_MXzR4OS60HAO9JGUKgNXDmUPO5CUjon/exec", {
+//             method: "POST",
+//             headers: {
+//                 "Content-Type": "application/json",
+//             },
+//             mode: "no-cors",
+//             body: JSON.stringify(formData),
+//         });
 
-        console.log("Data successfully sent to Google Sheets");
-        setModalOpen(false); // Close modal after submitting
-        setFormData({})
-        alert("Data successfully sent to Google Sheets")
-    } catch (error) {
-        console.error("Error:", error);
-    }
+//         console.log("Data successfully sent to Google Sheets");
+//         setModalOpen(false); // Close modal after submitting
+//         setFormData({})
+//         alert("Data successfully sent to Google Sheets")
+//     } catch (error) {
+//         console.error("Error:", error);
+//     }
+// };
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setFormData({});
+  setModalOpen(false);
+  alert("Contact data successfully sent");
+  try {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbxg5BIz34GzXWa_9ziu2HDf3xZz_zGijNjAwHZ3DCYbpN7w6mWG4hSZsqmhuwWHQVHwWw/exec", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      mode: "no-cors",
+      body: JSON.stringify({ 
+        type: "contact", 
+        ...formData 
+      }),
+    });
+    
+  } catch (error) {
+    console.error("Error:", error);
+  }
 };
 
   
