@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-
+import { MdPhone } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
 const Card = ({ children, className, onClick }) => {
   return (
     <div onClick={onClick} className={`bg-white p-12 rounded-2xl shadow-lg transition-all duration-300 ease-in-out 
@@ -143,13 +144,29 @@ const ContactCards = () => {
       </div>
       
       <div className="text-center mt-10 mb-10">
-        <h3 className="text-3xl sm:text-4xl font-semibold">Need More Help?</h3>
-        <p className="mt-4">
-  Call us at 
-  <a href="tel:+6623658200,1103" className="text-black font-semibold hover:underline">
-    +6623658200 #1103
-  </a>
-</p>
+  <h3 className="text-3xl sm:text-4xl font-semibold">Need More Help?</h3>
+  <p className="mt-4 ">
+    Call us at <br />
+    <a
+      href="tel:+6623658200,1103"
+      className="text-black font-semibold hover:underline inline-flex items-center gap-2 justify-center mt-2"
+    >
+      <MdPhone className=" text-xl" />
+      +6623658200 #1103
+    </a>
+  </p>
+  <div className="mt-4">
+    <a
+      href="https://wa.me/6623658200"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 justify-center text-black font-semibold hover:underline"
+    >
+      <FaWhatsapp className="text-2xl text-green-600 "/>
+      +6623658200 #1103
+    </a>
+  </div>
+
         <p className="mt-2">Support Hours: Mon-Fri, 9 AM - 6 PM</p>
         {/* <p>We usually respond within <strong>4-8 hours</strong>.</p> */}
       </div>
