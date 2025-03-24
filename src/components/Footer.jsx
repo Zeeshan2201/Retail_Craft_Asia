@@ -46,6 +46,12 @@ export default function Footer() {
                 Leadership Team
                 </Link>
               </li>
+               
+              <li>
+                <Link to="/Career" className="hover:text-yellow-600 font-medium transition-colors">
+                Career
+                </Link>
+              </li>
               <li>
                 <Link to="/Contact" className="hover:text-yellow-600 font-medium transition-colors">
                   Contact us

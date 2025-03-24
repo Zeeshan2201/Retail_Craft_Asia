@@ -62,6 +62,7 @@ const MainNav = () => {
               </div>
             </div>
             <Link to="/MangTeam" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Leadership Team</Link>
+            <Link to="/Career" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Career</Link>
             <Link to="/Contact" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Contact Us</Link>
             {/* <Link to="/faq" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">FAQ</Link> */}
             
@@ -115,7 +116,8 @@ const MainNav = () => {
           </div>
         )}
       </div>
-      <Link to="/MangTeam" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Management</Link>
+      <Link to="/MangTeam" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Leadership Team</Link>
+      <Link to="/Career" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Career</Link>
           <Link to="/Contact" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
          
           {/* <Link to="/faq" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>FAQ</Link> */}
