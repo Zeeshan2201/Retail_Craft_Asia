@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Footer from './components/Footer';
 // import FaQ from './pages/FaQ';
 import Services from './pages/Services';
+import Career from './components/Career';
 // import ServicesPage from './components/ServicesPages';
 // import SubServiceDataAndTechnology from './components/SubServiceDataAndTechnology';
 import SalesAndMerchandising from './pages/Services/SalesAndMerchandising';
@@ -40,6 +41,8 @@ function App() {
           <Route path="/services/DigitalMarketing" element={<DigitalMarketing/>} />
           <Route path="/MangTeam" element={<MangTeam/>}/>
           <Route path="/MemberOne" element={<MemberOne/>}/>
+          <Route path="/Career" element={<Career/>}/>
+
         </Routes>
         <Footer />
       </Router>

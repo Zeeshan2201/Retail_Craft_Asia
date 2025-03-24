@@ -108,14 +108,14 @@ const FoundationPrinciples = () => {
             We Are Your Strategic Partner For <br></br>
           </span>
           <span className="text-yellow-700">
-            Growth Transformation And Expansion
+            Growth , Transformation And Expansion
           </span>
         </h1>
 
         <p className="text-base sm:text-lg text-gray-700 mt-6 max-w-4xl mx-auto">
           At Retail Craft Asia, we are more than just service providers—we are
           your strategic partners in business growth and brand transformation.
-          With deep expertise, Competance and industry knowledge we help you
+          With deep expertise, competancy and industry knowledge we help you
           expand your market reach, optimize supply chains, enhance brand
           visibility, and drive consumer engagement.
           <br />
@@ -124,7 +124,7 @@ const FoundationPrinciples = () => {
           their unique challenges and craft tailored strategies for success.
           Whether you are looking to break into new markets, refine your
           branding, or streamline your operations, we provide the insights and
-          execution needed to achieve sustainable growth.
+          execution needed to achieve sustainable profitable growth.
         </p>
       </div>
 
@@ -155,7 +155,7 @@ const FoundationPrinciples = () => {
             onClick={() => {
               setsetselectedImage("mems_1");
             }}
-            className="absolute hover:shadow-lg hover:shadow-yellow-600/80 -top-12 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md"
+            className="absolute hover:shadow-lg hover:-translate-y-2 hover:scale-110 hover:shadow-yellow-600/80 -top-12 left-1/2 transform -translate-x-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md transition-transform duration-200 ease-in-out"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -167,18 +167,19 @@ const FoundationPrinciples = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-8 h-8 text-yellow-600"
+              className="w-8 h-8 text-yellow-600 transition-transform duration-200 ease-in-out hover:scale-125"
             >
               <circle cx="8" cy="20" r="2"></circle>
               <circle cx="18" cy="20" r="2"></circle>
               <path d="M2 3h4l3.6 10.6a2 2 0 0 0 2 1.4h6.8a2 2 0 0 0 2-1.5L22 6H5"></path>
             </svg>
           </button>
+
           <button
             onClick={() => {
               setsetselectedImage("mems_5");
             }}
-            className="absolute   hover:shadow-lg hover:shadow-yellow-600/80 top-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-yellow rounded-full flex items-center justify-center shadow-md"
+            className="absolute hover:-translate-y-2 hover:scale-110  hover:shadow-lg hover:shadow-yellow-600/80 top-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-yellow rounded-full flex items-center justify-center shadow-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +191,7 @@ const FoundationPrinciples = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-8 h-8 text-yellow-600"
+              className="w-8 h-8 text-yellow-600 hover:scale-125 transition-transform duration-200 ease-in-out"
             >
               <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
             </svg>
@@ -199,7 +200,7 @@ const FoundationPrinciples = () => {
             onClick={() => {
               setsetselectedImage("mems_3");
             }}
-            className="absolute  hover:shadow-lg hover:shadow-yellow-600/80 top-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md"
+            className="absolute hover:-translate-y-2 hover:scale-110 hover:shadow-lg hover:shadow-yellow-600/80 top-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -211,7 +212,7 @@ const FoundationPrinciples = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-8 h-8 text-yellow-600"
+              className="w-8 h-8 text-yellow-600 hover:scale-125 transition-transform duration-200 ease-in-out"
             >
               <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"></path>
               <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"></path>
@@ -220,9 +221,9 @@ const FoundationPrinciples = () => {
           </button>
           <button
             onClick={() => {
-              setsetselectedImage("mems_2");
+              setsetselectedImage("mems_8");
             }}
-            className="absolute  hover:shadow-lg hover:shadow-yellow-600/80 bottom-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md"
+            className="absolute hover:-translate-y-2 hover:scale-110 hover:shadow-lg hover:shadow-yellow-600/80 bottom-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -230,7 +231,7 @@ const FoundationPrinciples = () => {
               height="20"
               viewBox="0 -960 960 960"
               fill="#ca8a04"
-              className="w-8 h-8 text-yellow-600"
+              className="w-8 h-8 text-yellow-600 hover:scale-125 transition-transform duration-200 ease-in-out"
             >
               <path d="M280-320q0-33 23.5-56.5T360-400q33 0 56.5 23.5T440-320q0 33-23.5 56.5T360-240q-33 0-56.5-23.5T280-320Zm200-80h240q33 0 56.5 23.5T800-320v280h-80v-80H240v80h-80v-400h80v240h240v-200Zm150-40L512-654 406-548l10 68-30 30-47-88-88-48 30-30 68 9 106-106-215-117 38-38 264 68 108-108q12-12 29-12t29 12q12 12 12 29t-12 29L600-742l68 264-38 38Zm90 240v-120H560v120h160Z" />
             </svg>
@@ -239,7 +240,7 @@ const FoundationPrinciples = () => {
             onClick={() => {
               setsetselectedImage("mems_4");
             }}
-            className="absolute  hover:shadow-lg hover:shadow-yellow-600/80 bottom-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md"
+            className="absolute hover:-translate-y-2 hover:scale-110 hover:shadow-lg hover:shadow-yellow-600/80 bottom-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -251,7 +252,7 @@ const FoundationPrinciples = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-8 h-8 text-yellow-600"
+              className="w-8 h-8 text-yellow-600 hover:scale-125 transition-transform duration-200 ease-in-out"
             >
               <rect x="3" y="6" width="18" height="12" rx="2"></rect>
               <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
@@ -264,7 +265,7 @@ const FoundationPrinciples = () => {
             onClick={() => {
               setsetselectedImage("mems_7");
             }}
-            className="absolute -bottom-2 left-20 transform -translate-x-1/2 translate-y-12 w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:shadow-yellow-600/80"
+            className="absolute  hover:scale-110 -bottom-2 left-20 transform -translate-x-1/2 translate-y-12 w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:shadow-yellow-600/80"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -276,7 +277,7 @@ const FoundationPrinciples = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-8 h-8 text-yellow-600"
+              className="w-8 h-8 text-yellow-600 hover:scale-125 transition-transform duration-200 ease-in-out"
             >
               <rect width="20" height="14" x="2" y="3" rx="2"></rect>
               <line x1="8" x2="16" y1="21" y2="21"></line>
@@ -284,11 +285,11 @@ const FoundationPrinciples = () => {
             </svg>
           </button>
 
-           <button
+          <button
             onClick={() => {
               setsetselectedImage("mems_6");
             }}
-            className="absolute bottom-0 left-56 transform -translate-x-1/2 translate-y-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:shadow-yellow-600/80"
+            className="absolute  hover:scale-110 bottom-0 left-56 transform -translate-x-1/2 translate-y-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg hover:shadow-yellow-600/80"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -300,7 +301,7 @@ const FoundationPrinciples = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="w-12 h-12 text-yellow-600"
+              className="w-12 h-12 text-yellow-600 hover:scale-125 transition-transform duration-200 ease-in-out"
             >
               <path d="M9 21h6" />
               <path d="M10 21v-6m4 6v-6" />
@@ -308,7 +309,7 @@ const FoundationPrinciples = () => {
               <path d="M12 15V8" />
               <path d="M8 8h8l-1-4h-6z" />
             </svg>
-          </button> 
+          </button>
         </div>
 
         <div className="px-6 py-20 text-center bg-transparent">
