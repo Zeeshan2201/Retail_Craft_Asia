@@ -303,7 +303,7 @@ export default function AnimatedWhyUs() {
               repeatType: "reverse",
             }}
           >
-            Why Choose Us
+            Trusted Growth Partner
           </motion.h2>
 
           <motion.div
@@ -324,7 +324,7 @@ export default function AnimatedWhyUs() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-gray-700 text-xl mt-6 max-w-2xl mx-auto"
           >
-            Partner with us for innovative solutions that drive sustainable growth and excellence
+            Partner with us for innovative solutions that drive sustainable growth and Operational excellence
           </motion.p>
         </motion.div>
 
