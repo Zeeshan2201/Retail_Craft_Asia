@@ -46,7 +46,7 @@ export default function ContactForm() {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbxg5BIz34GzXWa_9ziu2HDf3xZz_zGijNjAwHZ3DCYbpN7w6mWG4hSZsqmhuwWHQVHwWw/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwYliAL6T8echuR0Lg4zboqEaV0uw8Crr6q7NvmTxcrbvhSpshoV3hblfFFDfWXzIem4A/exec", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
