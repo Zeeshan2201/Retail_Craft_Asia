@@ -89,15 +89,8 @@ export default function ContactForm() {
         </p>
       </div>
 
-      {/* Form Section */}
-      <div className="bg-gradient-to-br from-white to-amber-50 p-8 md:p-10 rounded-2xl shadow-lg border border-amber-100 transform hover:shadow-yellow-600 hover:scale-[1.005] transition-transform duration-300">
-        <div className="flex items-center gap-4 mb-8">
-          <div className="h-12 w-1.5 bg-yellow-500 rounded-full"></div>
-          <h3 className="text-2xl font-bold text-gray-800">Application Form</h3>
-        </div>
-        
-        {/* Resume Submission Notice */}
-        <div className="mb-8 p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded-r-lg">
+      {/* Resume Submission Notice */}
+      <div className="mb-8 p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded-r-lg">
           <div className="flex items-start">
             <div className="flex-shrink-0 mt-1">
               <Mail className="h-5 w-5 text-yellow-600" />
@@ -112,6 +105,13 @@ export default function ContactForm() {
               </p>
             </div>
           </div>
+        </div>
+
+      {/* Form Section */}
+      <div className="bg-gradient-to-br from-white to-amber-50 p-8 md:p-10 rounded-2xl shadow-lg border border-amber-100 transform hover:shadow-yellow-600 hover:scale-[1.005] transition-transform duration-300">
+        <div className="flex items-center gap-4 mb-8">
+          <div className="h-12 w-1.5 bg-yellow-500 rounded-full"></div>
+          <h3 className="text-2xl font-bold text-gray-800">Application Form</h3>
         </div>
         
         <form onSubmit={handleSubmitCareers} className="space-y-8">
@@ -182,9 +182,9 @@ export default function ContactForm() {
               LinkedIn Profile URL
             </label>
             <div className="relative">
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              {/* <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <Linkedin className="h-5 w-5 text-gray-400" />
-              </div>
+              </div> */}
               <input
                 id="linkedin"
                 name="linkedin"
@@ -192,7 +192,7 @@ export default function ContactForm() {
                 value={formState.linkedin}
                 onChange={handleChange}
                 placeholder="https://linkedin.com/in/yourprofile"
-                className="w-full pl-10 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200"
               />
             </div>
             <p className="text-xs text-gray-500 mt-1">Please provide your LinkedIn profile URL (optional but recommended)</p>
