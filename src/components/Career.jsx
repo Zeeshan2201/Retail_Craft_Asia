@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import { CheckCircle, ArrowRight } from "lucide-react";
+import { CheckCircle, ArrowRight, Linkedin, Mail } from "lucide-react";
 
 export default function ContactForm() {
   const [formState, setFormState] = useState({
@@ -9,6 +9,7 @@ export default function ContactForm() {
     email: "",
     company: "",
     phone: "",
+    linkedin: "",
     message: "",
   });
 
@@ -19,24 +20,6 @@ export default function ContactForm() {
     const { name, value } = e.target;
     setFormState(prev => ({ ...prev, [name]: value }));
   };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setIsSubmitting(true);
-
-  //   // Simulate form submission
-  //   setTimeout(() => {
-  //     setIsSubmitting(false);
-  //     setIsSubmitted(true);
-  //     setFormState({
-  //       name: "",
-  //       email: "",
-  //       company: "",
-  //       phone: "",
-  //       message: "",
-  //     });
-  //   }, 1500);
-  // };
 
   if (isSubmitted) {
     return (
@@ -60,13 +43,8 @@ export default function ContactForm() {
 
   const handleSubmitCareers = async (e) => {
     e.preventDefault();
-    setFormState({name: "",
-            email: "",
-            company: "",
-            phone: "",
-            message: "",});
-            
-      alert("Careers data successfully sent");
+    setIsSubmitting(true);
+    
     try {
       const response = await fetch("https://script.google.com/macros/s/AKfycbxg5BIz34GzXWa_9ziu2HDf3xZz_zGijNjAwHZ3DCYbpN7w6mWG4hSZsqmhuwWHQVHwWw/exec", {
         method: "POST",
@@ -77,15 +55,22 @@ export default function ContactForm() {
         body: JSON.stringify({
           type: "careers",
           ...formState
-          // name: careerFormData.name,
-          // email: careerFormData.email,
-          // resumeLink: careerFormData.resumeLink,
-          // message: careerFormData.message
         }),
       });
       
+      setIsSubmitted(true);
+      setFormState({
+        name: "",
+        email: "",
+        company: "",
+        phone: "",
+        linkedin: "",
+        message: "",
+      });
     } catch (error) {
       console.error("Error:", error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
   
@@ -109,6 +94,24 @@ export default function ContactForm() {
         <div className="flex items-center gap-4 mb-8">
           <div className="h-12 w-1.5 bg-yellow-500 rounded-full"></div>
           <h3 className="text-2xl font-bold text-gray-800">Application Form</h3>
+        </div>
+        
+        {/* Resume Submission Notice */}
+        <div className="mb-8 p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded-r-lg">
+          <div className="flex items-start">
+            <div className="flex-shrink-0 mt-1">
+              <Mail className="h-5 w-5 text-yellow-600" />
+            </div>
+            <div className="ml-3">
+              <p className="text-sm text-yellow-800">
+                <span className="font-semibold">Please note:</span> After submitting this form, please send your resume to{' '}
+                <a href="mailto:careers@example.com" className="text-yellow-700 underline hover:text-yellow-800">
+                  careers@retailcraftasia.com
+                </a>{' '}
+                with the subject line "Application for [Position Name]".
+              </p>
+            </div>
+          </div>
         </div>
         
         <form onSubmit={handleSubmitCareers} className="space-y-8">
@@ -173,6 +176,28 @@ export default function ContactForm() {
             </div>
           </div>
           
+          {/* LinkedIn Profile Field */}
+          <div className="space-y-3">
+            <label htmlFor="linkedin" className="block text-sm font-medium text-gray-700">
+              LinkedIn Profile URL
+            </label>
+            <div className="relative">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <Linkedin className="h-5 w-5 text-gray-400" />
+              </div>
+              <input
+                id="linkedin"
+                name="linkedin"
+                type="url"
+                value={formState.linkedin}
+                onChange={handleChange}
+                placeholder="https://linkedin.com/in/yourprofile"
+                className="w-full pl-10 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200"
+              />
+            </div>
+            <p className="text-xs text-gray-500 mt-1">Please provide your LinkedIn profile URL (optional but recommended)</p>
+          </div>
+          
           <div className="space-y-3">
             <label htmlFor="message" className="block text-sm font-medium text-gray-700">
               Tell Us More About Yourself <span className="text-red-500">*</span>
@@ -191,7 +216,6 @@ export default function ContactForm() {
           
           <div className="pt-4">
             <button
-
               type="submit"
               className="w-full bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-600 hover:to-amber-700 text-white font-medium py-4 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2"
               disabled={isSubmitting}
@@ -214,11 +238,6 @@ export default function ContactForm() {
           </div>
         </form>
       </div>
-      
-      {/* Additional Info */}
-      {/* <div className="mt-16 text-center text-gray-500 text-sm">
-        <p>We typically respond to applications within 3-5 business days.</p>
-      </div> */}
     </div>
   );
 }
