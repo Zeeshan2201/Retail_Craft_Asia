@@ -139,7 +139,7 @@ const handleSubmit = async (e) => {
           >
             <Card onClick={
   title === 'Email-Support' 
-    ? () => window.location.href = 'mailto:career@retailcraftasia.com' 
+    ? () => window.location.href = 'mailto:support@retailcraftasia.com' 
     : title === 'Get Appointment' 
       ? () => setModalOpen(true) 
       : title === 'FAQ' 
@@ -170,28 +170,46 @@ const handleSubmit = async (e) => {
   <p className="mt-4 ">
     Call us at <br />
     <a
-      href="tel:+6623658200,1103"
+      href="tel:+66935795729,1103"
       className="text-black font-semibold hover:underline inline-flex items-center gap-2 justify-center mt-2"
     >
       <MdPhone className=" text-xl" />
-      +6623658200 #1103
+      +66935795729 #1103
     </a>
   </p>
   <div className="mt-4">
     <a
-      href="https://wa.me/6623658200"
+      href="https://wa.me/66935795729"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center gap-2 justify-center text-black font-semibold hover:underline"
     >
       <FaWhatsapp className="text-2xl text-green-600 "/>
-      +6623658200 #1103
+      +66935795729
     </a>
   </div>
 
         <p className="mt-2">Support Hours: Mon-Fri, 9 AM - 6 PM</p>
         {/* <p>We usually respond within <strong>4-8 hours</strong>.</p> */}
       </div>
+      
+      <div className="flex justify-center h-full w-full items-center min-h-screen bg-gray-100 p-4">
+      <div className="w-full max-w-4xl bg-white p-6 rounded-2xl shadow-lg">
+        <h2 className="text-2xl font-semibold text-center mb-4">Our Location</h2>
+        <div className="relative w-full h-96 rounded-lg overflow-hidden">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full border-0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.0502737775205!2d100.58196407379315!3d13.715404986672683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fa4a1c8ce91%3A0x359e3f04c5542c4a!2s42%20Tower!5e0!3m2!1sen!2sin!4v1742896801818!5m2!1sen!2sin"
+            // width="400"
+            // height="400"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
 
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
