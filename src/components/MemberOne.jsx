@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { useEffect } from "react"
-import { Linkedin, Award, Briefcase } from "lucide-react"
-import { motion } from "framer-motion"
-import { useLocation } from "react-router-dom"
+import { useEffect } from "react";
+import { Linkedin, Award, Briefcase } from "lucide-react";
+import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 const teamMembers = [
   {
     id: 1,
     name: "Parag Wasnik",
-    role: "CEO",
+    role: "Chief Executive Officer",
     shortBio:
       "An engineer and MBA with more than two decades of entrepreneurial experience across FMCG, Retail, Consumer Durables, and Healthcare sectors.",
     fullDescription: `An engineer and an MBA from premier institute, Parag brings in more than two decades of entrepreneurial, South East Asia and Pan India corporate experience across FMCG, Retail, Consumer Durables, and Healthcare sectors with top multinational organizations. His expertise lies in developing and executing growth strategies, driving operational excellence, developing world-class teams, leading strategic transformations, and empowering numerous businesses to achieve remarkable success.
@@ -28,7 +28,8 @@ Outside work, he is an avid traveler and has explored over 40 countries.`,
       "Driven innovation and digital transformation",
       "Explored over 40 countries as an avid traveler",
     ],
-    linkedin: "https://www.linkedin.com/in/paragwasnik?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/paragwasnik?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: 2,
@@ -52,7 +53,8 @@ JB holds a Master's degree in Business Administration from EDC Business School i
       "Expertise in strategic growth and market expansion",
       "Certified professional coach and Six Sigma Green Belt",
     ],
-    linkedin: "https://www.linkedin.com/in/jean-boris-roux-b252774?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/jean-boris-roux-b252774?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 
   {
@@ -80,12 +82,13 @@ Naresh holds a Bachelor's degree from Hemwati Nandan Bahuguna University in Indi
       "Digital & Data-Driven Growth – Leveraged technology for strategic innovation.",
       "Social Impact & Community Development – Supports orphan houses and welfare initiatives.",
     ],
-    linkedin: "https://www.linkedin.com/in/naresh-semwal-88875018?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/naresh-semwal-88875018?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: 4,
     name: "Wichit Thammaphimo",
-    role: "HR Director",
+    role: "Human Resource Director",
     shortBio:
       "Wichit Thammaphimo, a seasoned HR professional, has successfully led and managed numerous multinational businesses across the ASEAN region, including Thailand, Malaysia, Singapore, Indonesia, and Vietnam.",
     fullDescription: `Wichit has played a pivotal role in initiating and implementing continuous organizational development programs, overseeing HR strategies, policies, and processes while ensuring compliance with both organizational and local regulations. His extensive experience spans various industries, where he has provided expert consultation in human resources and general administration to leading companies such as Kerry Logistics, Kerry Freight, Kintetsu World Express, Linfox Logistics, Linfox Transport, LF Logistics, and Formica.
@@ -100,34 +103,36 @@ An expert in change management and organizational transition, Wichit is deeply p
       "Extensive background in compliance and workforce planning",
       "Certified in Professional HR and Occupational Health & Safety",
     ],
-    linkedin: "https://www.linkedin.com/in/wichit-thammaphimol-6110b85a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/wichit-thammaphimol-6110b85a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
-]
+];
 
 const TeamMemberDetail = () => {
-  const location = useLocation()
+  const location = useLocation();
 
   useEffect(() => {
     if (location.hash) {
-      const id = location.hash.replace("#", "") // Remove #
-      const element = document.getElementById(id)
+      const id = location.hash.replace("#", ""); // Remove #
+      const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" })
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
-  }, [location])
+  }, [location]);
 
   return (
     <section className="py-20 bg-gray-50">
-    {/* <section className="py-20 bg-gradient-to-br from-[#d9e0fc] to-white"> */}
+      {/* <section className="py-20 bg-gradient-to-br from-[#d9e0fc] to-white"> */}
       <div className="container mx-auto px-4 mb-10">
         <div className="text-center mb-16">
           <h2 className="text-center text-yellow-600 font-semibold md:text-6xl text-4xl mt-15 py-10 inline-block relative">
-          {/* <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-semibold md:text-6xl text-4xl mt-15 py-10 inline-block relative"> */}
+            {/* <h2 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-semibold md:text-6xl text-4xl mt-15 py-10 inline-block relative"> */}
             Meet Our Leadership Team
           </h2>
           <p className="text-black text-2xl max-w-2xl mx-auto mt-6">
-            Visionary leaders with decades of experience, driving innovation and excellence across global markets.
+            Visionary leaders with decades of experience, driving innovation and
+            excellence across global markets.
           </p>
         </div>
 
@@ -142,7 +147,11 @@ const TeamMemberDetail = () => {
               id={member.id}
               className="bg-[#fff] rounded-2xl shadow-yellow-600/60 shadow-lg overflow-hidden"
             >
-              <div className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}>
+              <div
+                className={`flex flex-col ${
+                  index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+                }`}
+              >
                 {/* Image Section */}
                 <div className="w-full lg:w-1/3 p-8 flex flex-col items-center justify-center">
                   <div className="relative">
@@ -154,7 +163,11 @@ const TeamMemberDetail = () => {
                       />
                     </div>
                     <div className="absolute -bottom-2 -right-2 group  hover:-right-3 bg-yellow-600/80 rounded-full p-2 shadow-lg">
-                      <a href={member.linkedin} target="_blank" className="text-white hover:text-blue-200 transition-colors">
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        className="text-white hover:text-blue-200 transition-colors"
+                      >
                         <Linkedin className="w-6 h-6 group-hover:w-8 group-hover:h-8" />
                       </a>
                     </div>
@@ -164,13 +177,17 @@ const TeamMemberDetail = () => {
                   </h3>
                   <div className="flex items-center mt-2 mb-4">
                     <Briefcase className="w-4 h-4 text-gray-600 mr-2" />
-                    <p className="text-gray-600 md:text-lg font-medium">{member.role}</p>
+                    <p className="text-gray-600 md:text-lg font-medium">
+                      {member.role}
+                    </p>
                   </div>
                   <div className="mt-4 space-y-2 w-full">
                     {member.highlights.map((highlight, i) => (
                       <div key={i} className="flex items-start">
                         <Award className="w-5 h-5 text-yellow-600/80 mr-2 flex-shrink-0 mt-0.5" />
-                        <p className="text-gray-600 text-left md:text-base text-sm">{highlight}</p>
+                        <p className="text-gray-600 text-left md:text-base text-sm">
+                          {highlight}
+                        </p>
                       </div>
                     ))}
                   </div>
@@ -178,13 +195,17 @@ const TeamMemberDetail = () => {
 
                 {/* Content Section */}
                 <div className="w-full lg:w-2/3 p-8 lg:p-12">
-                  <p className="text-lg text-left text-gray-600 font-medium mb-6">{member.shortBio}</p>
+                  <p className="text-lg text-left text-gray-600 font-medium mb-6">
+                    {member.shortBio}
+                  </p>
                   <div className="prose prose-blue max-w-none">
-                    {member.fullDescription.split("\n\n").map((paragraph, i) => (
-                      <p key={i} className="text-gray-600 text-left mb-4">
-                        {paragraph}
-                      </p>
-                    ))}
+                    {member.fullDescription
+                      .split("\n\n")
+                      .map((paragraph, i) => (
+                        <p key={i} className="text-gray-600 text-left mb-4">
+                          {paragraph}
+                        </p>
+                      ))}
                   </div>
                 </div>
               </div>
@@ -193,8 +214,7 @@ const TeamMemberDetail = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TeamMemberDetail
-
+export default TeamMemberDetail;

@@ -93,7 +93,7 @@ const IndustrySection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            We provide expert consulting, Marketing, Retail and last mine execution services to help businesses optimize operations, enhance customer experience,
+            We provide expert Consulting, Marketing, Retail and Execution services to help businesses optimize operations, enhance customer experience,
             and drive growth in the competitive retail industry.
           </motion.p>
         </motion.div>
@@ -145,5 +145,5 @@ const IndustrySection = () => {
   )
 }
 
-export default IndustrySection
+export default IndustrySection;
 

@@ -13,7 +13,7 @@ const teamMembers = [
   },
   {
     name: "Parag Wasnik",
-    role: "CEO",
+    role: "Chief Executive Officer",
     shortDescription: "An engineer and an MBA, Parag has over two decades of experience in FMCG, Retail...",
     image: "/Team/Member_2.png",
   },
