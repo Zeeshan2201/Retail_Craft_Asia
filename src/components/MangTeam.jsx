@@ -66,22 +66,17 @@ const TeamMemberDetail = () => {
 
   const scroll = (direction) => {
     if (scrollRef.current) {
-      // Get the width of the visible container
       const containerWidth = scrollRef.current.clientWidth
-      // Calculate how many cards are visible based on screen size
-      let visibleCards = 4 // Default for large screens
+      let visibleCards = 4
       if (window.innerWidth < 640) {
-        visibleCards = 1 // Mobile
+        visibleCards = 1
       } else if (window.innerWidth < 768) {
-        visibleCards = 2 // Small tablets
+        visibleCards = 2
       } else if (window.innerWidth < 1024) {
-        visibleCards = 3 // Tablets
+        visibleCards = 3
       }
 
-      // Calculate the width of a single card including gap
       const cardWidth = containerWidth / visibleCards
-
-      // Scroll by 4 cards or the number of visible cards, whichever is greater
       const scrollAmount = cardWidth * Math.max(4, visibleCards)
 
       scrollRef.current.scrollBy({
@@ -104,49 +99,6 @@ const TeamMemberDetail = () => {
 
   return (
     <section className="py-20 bg-gray-50">
-      {/* Custom CSS to hide scrollbar */}
-      <style>
-        {`
-          .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-          }
-
-          .scrollbar-hide {
-            -ms-overflow-style: none; /* IE and Edge */
-            scrollbar-width: none; /* Firefox */
-          }
-          
-          .equal-cards {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            gap: 16px;
-            padding: 8px 4px;
-          }
-
-          @media (min-width: 640px) {
-            .equal-cards > div {
-              width: calc(50% - 8px);
-              flex: 0 0 calc(50% - 8px);
-            }
-          }
-
-          @media (min-width: 768px) {
-            .equal-cards > div {
-              width: calc(33.333% - 10.667px);
-              flex: 0 0 calc(33.333% - 10.667px);
-            }
-          }
-
-          @media (min-width: 1024px) {
-            .equal-cards > div {
-              width: calc(25% - 12px);
-              flex: 0 0 calc(25% - 12px);
-            }
-          }
-        `}
-      </style>
-
       <div className="container mx-auto px-4 pr-2">
         <div className="text-center mb-10">
           <h2 className="font-semibold md:text-5xl lg:text-6xl text-3xl mb-6 text-yellow-600">
@@ -158,7 +110,6 @@ const TeamMemberDetail = () => {
         </div>
 
         <div className="relative">
-          {/* Scroll Buttons */}
           <button
             onClick={() => scroll("left")}
             className="absolute -left-4 md:-left-6 top-1/2 transform -translate-y-1/2 p-3 bg-white shadow-lg rounded-full z-20 hover:bg-gray-200 transition-all"
@@ -172,12 +123,11 @@ const TeamMemberDetail = () => {
             <ChevronRight size={32} />
           </button>
 
-          {/* Card Container */}
-          <div ref={scrollRef} className="equal-cards scrollbar-hide">
+          <div ref={scrollRef} className="flex overflow-x-auto scrollbar-hide gap-4 p-4 snap-x snap-mandatory">
             {teamMembers.concat(teamMembers).map((member, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-xl shadow-md hover:shadow-yellow-600/60 my-4 p-6 transform hover:scale-105 transition-transform snap-center h-full flex flex-col"
+                className="bg-white rounded-xl shadow-md hover:shadow-yellow-600/60 p-6 transform hover:scale-105 transition-transform snap-center flex flex-col w-80 min-w-[95%] sm:min-w-[50%] md:min-w-[33.333%] lg:min-w-[25%]"
               >
                 <div className="flex flex-col items-center text-center h-full justify-between">
                   <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44 rounded-full overflow-hidden border-4 border-gray-200 shadow-md">
@@ -208,4 +158,3 @@ const TeamMemberDetail = () => {
 }
 
 export default TeamMemberDetail
-
