@@ -66,17 +66,36 @@ const TeamMemberDetail = () => {
 
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const cardWidth = scrollRef.current.firstChild.offsetWidth + 16 // Width of a single card + gap
-      const scrollAmount = cardWidth * (window.innerWidth < 640 ? 1 : window.innerWidth < 768 ? 2 : 3) // Adjust scroll amount based on viewport
-      scrollRef.current.scrollBy({ left: direction === "left" ? -scrollAmount : scrollAmount, behavior: "smooth" })
+      // Get the width of the visible container
+      const containerWidth = scrollRef.current.clientWidth
+      // Calculate how many cards are visible based on screen size
+      let visibleCards = 4 // Default for large screens
+      if (window.innerWidth < 640) {
+        visibleCards = 1 // Mobile
+      } else if (window.innerWidth < 768) {
+        visibleCards = 2 // Small tablets
+      } else if (window.innerWidth < 1024) {
+        visibleCards = 3 // Tablets
+      }
+
+      // Calculate the width of a single card including gap
+      const cardWidth = containerWidth / visibleCards
+
+      // Scroll by 4 cards or the number of visible cards, whichever is greater
+      const scrollAmount = cardWidth * Math.max(4, visibleCards)
+
+      scrollRef.current.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      })
 
       setTimeout(() => {
         if (
           direction === "right" &&
-          scrollRef.current.scrollLeft + scrollRef.current.clientWidth >= scrollRef.current.scrollWidth
+          scrollRef.current.scrollLeft + scrollRef.current.clientWidth >= scrollRef.current.scrollWidth - 10
         ) {
           scrollRef.current.scrollLeft = 0
-        } else if (direction === "left" && scrollRef.current.scrollLeft <= 0) {
+        } else if (direction === "left" && scrollRef.current.scrollLeft <= 10) {
           scrollRef.current.scrollLeft = scrollRef.current.scrollWidth - scrollRef.current.clientWidth
         }
       }, 500)
@@ -84,7 +103,7 @@ const TeamMemberDetail = () => {
   }
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50">
       {/* Custom CSS to hide scrollbar */}
       <style>
         {`
@@ -96,59 +115,85 @@ const TeamMemberDetail = () => {
             -ms-overflow-style: none; /* IE and Edge */
             scrollbar-width: none; /* Firefox */
           }
+          
+          .equal-cards {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 16px;
+            padding: 8px 4px;
+          }
+
+          @media (min-width: 640px) {
+            .equal-cards > div {
+              width: calc(50% - 8px);
+              flex: 0 0 calc(50% - 8px);
+            }
+          }
+
+          @media (min-width: 768px) {
+            .equal-cards > div {
+              width: calc(33.333% - 10.667px);
+              flex: 0 0 calc(33.333% - 10.667px);
+            }
+          }
+
+          @media (min-width: 1024px) {
+            .equal-cards > div {
+              width: calc(25% - 12px);
+              flex: 0 0 calc(25% - 12px);
+            }
+          }
         `}
       </style>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8 sm:mb-10">
-          <h2 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 sm:mb-6 text-yellow-600">
+      <div className="container mx-auto px-4 pr-2">
+        <div className="text-center mb-10">
+          <h2 className="font-semibold md:text-5xl lg:text-6xl text-3xl mb-6 text-yellow-600">
             Meet Our Leadership Team
           </h2>
-          <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto px-4">
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Visionary leaders with decades of experience, driving innovation and excellence across global markets.
           </p>
         </div>
 
-        <div className="relative px-2 sm:px-4">
+        <div className="relative">
           {/* Scroll Buttons */}
           <button
             onClick={() => scroll("left")}
-            className="absolute -left-2 sm:-left-4 md:-left-6 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 bg-white shadow-lg rounded-full z-20 hover:bg-gray-200 transition-all"
-            aria-label="Scroll left"
+            className="absolute -left-4 md:-left-6 top-1/2 transform -translate-y-1/2 p-3 bg-white shadow-lg rounded-full z-20 hover:bg-gray-200 transition-all"
           >
-            <ChevronLeft size={24} className="sm:w-8 sm:h-8" />
+            <ChevronLeft size={32} />
           </button>
           <button
             onClick={() => scroll("right")}
-            className="absolute -right-2 sm:-right-4 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 bg-white shadow-md rounded-full z-10 hover:bg-gray-200 transition-all"
-            aria-label="Scroll right"
+            className="absolute -right-2 top-1/2 transform -translate-y-1/2 p-3 bg-white shadow-md rounded-full z-10 hover:bg-gray-200"
           >
-            <ChevronRight size={24} className="sm:w-8 sm:h-8" />
+            <ChevronRight size={32} />
           </button>
 
           {/* Card Container */}
-          <div
-            ref={scrollRef}
-            className="flex overflow-x-hidden w-full gap-3 sm:gap-4 snap-x snap-mandatory scrollbar-hide pb-4"
-          >
+          <div ref={scrollRef} className="equal-cards scrollbar-hide">
             {teamMembers.concat(teamMembers).map((member, index) => (
               <motion.div
                 key={index}
-                className="flex-shrink-0 w-[85%] xs:w-[70%] sm:w-1/2 md:w-1/3 lg:w-1/4 bg-white rounded-xl shadow-md hover:shadow-yellow-600/60 my-2 sm:my-4 p-4 sm:p-6 transform hover:scale-105 transition-transform snap-center"
+                className="bg-white rounded-xl shadow-md hover:shadow-yellow-600/60 my-4 p-6 transform hover:scale-105 transition-transform snap-center h-full flex flex-col"
               >
-                <div className="flex flex-col items-center text-center">
-                  <div className="w-24 h-24 xs:w-28 xs:h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 rounded-full overflow-hidden border-4 border-gray-200 shadow-md">
+                <div className="flex flex-col items-center text-center h-full justify-between">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44 rounded-full overflow-hidden border-4 border-gray-200 shadow-md">
                     <img
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-gray-800 font-semibold text-lg sm:text-xl mt-3 sm:mt-4">{member.name}</h3>
-                  <p className="text-gray-600 text-base sm:text-lg mt-1">{member.role}</p>
+                  <div className="mt-4 flex-grow flex flex-col">
+                    <h3 className="text-gray-800 font-semibold text-xl">{member.name}</h3>
+                    <p className="text-gray-600 text-lg mt-1">{member.role}</p>
+                  </div>
                   <Link
                     to={`/MemberOne#${member.id}`}
-                    className="mt-4 sm:mt-6 bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-700 text-black px-6 sm:px-8 py-2 sm:py-3 rounded-3xl text-sm sm:text-base shadow-sm transition-all duration-300 from-yellow-400 to-yellow-600 hover:shadow-md"
+                    className="mt-6 bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-700 text-black px-8 py-3 rounded-3xl shadow-sm transition-all duration-300 from-yellow-400 to-yellow-600 hover:shadow-md"
                   >
                     Read Full Bio
                   </Link>
