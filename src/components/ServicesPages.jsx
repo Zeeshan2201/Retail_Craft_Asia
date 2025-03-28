@@ -610,12 +610,14 @@ export default function ServicesPage() {
             key={index}
             className="flex flex-col md:flex-row items-center bg-white p-6 border-t-4 border-yellow-500 rounded-lg shadow-md  hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)] transition-all duration-300 transform hover:scale-105 w-full mx-auto text-center md:text-left"
           >
+            <div className="w-[17rem] ">
             <div className="flex justify-center">
               <Lottie
                 options={{ loop: true, autoplay: true, animationData: service.animation }}
                 height={service.title ==="Retail Audit" ? 180 : 120} 
                 width={service.title ==="Retail Audit" ? 180 : 120} 
               />
+            </div>
             </div>
             <div className="md:ml-6">
               <h2 className="text-2xl font-semibold text-black">{service.title}</h2>

@@ -468,7 +468,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-900">
-      <BackgroundAnimation />
+      {/* <BackgroundAnimation /> */}
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center ">
@@ -491,8 +491,10 @@ export default function ServicesPage() {
             key={index}
             className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)]"
           >
+            <div className="w-[13rem]">
             <div className="w-48 h-48 mb-6 md:mb-0 flex items-center justify-center">
               {service.icon}
+            </div>
             </div>
             <div className="md:ml-6">
               <h2 className="text-2xl font-semibold text-black">{service.title}</h2>
