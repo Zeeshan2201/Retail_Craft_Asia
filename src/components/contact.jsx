@@ -170,11 +170,11 @@ const handleSubmit = async (e) => {
   <p className="mt-4 ">
     Call us at <br />
     <a
-      href="tel:+66935795729,1103"
+      href="tel:+66935795729"
       className="text-black font-semibold hover:underline inline-flex items-center gap-2 justify-center mt-2"
     >
       <MdPhone className=" text-xl" />
-      +66935795729 #1103
+      +66935795729
     </a>
   </p>
   <div className="mt-4">

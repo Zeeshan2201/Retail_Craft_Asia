@@ -162,7 +162,7 @@ const TeamMemberDetail = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="absolute -bottom-2 -right-2 group  hover:-right-3 bg-yellow-600/80 rounded-full p-2 shadow-lg">
+                    {/* <div className="absolute -bottom-2 -right-2 group  hover:-right-3 bg-yellow-600/80 rounded-full p-2 shadow-lg">
                       <a
                         href={member.linkedin}
                         target="_blank"
@@ -170,7 +170,7 @@ const TeamMemberDetail = () => {
                       >
                         <Linkedin className="w-6 h-6 group-hover:w-8 group-hover:h-8" />
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                   <h3 className="text-center text-transparent bg-clip-text bg-gradient-to-t from-black to-[70%] to-yellow-700 font-semibold text-2xl  mt-15 pt-10 inline-block relative">
                     {member.name}
