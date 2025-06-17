@@ -4,11 +4,11 @@ import { Menu, X } from 'lucide-react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const secondaryLinks = [
-  { title: "Market Expansion Services", href: "/services/MarketExpansion" },
-  { title: "Sales and Merchandising", href: "/services/SalesAndMerchandising" },
-  { title: "Brand Activation and Experiential Marketing", href: "/services/BrandActivation" },
-  { title: "Data & Technology", href: "/services/DataAndTechnology" },
-  { title: "Digital Marketing", href: "/services/DigitalMarketing" },
+  { title: "Market Expansion Services", href: "/services/market-expansion" },
+  { title: "Sales and Merchandising", href: "/services/sales-merchandising" },
+  { title: "Brand Activation and Experiential Marketing", href: "/services/brand-activation" },
+  { title: "Data & Technology", href: "/services/data-technology" },
+  { title: "Digital Marketing", href: "/services/digital-marketing" },
 ];
 
 const MainNav = () => {
@@ -20,9 +20,8 @@ const MainNav = () => {
   return (
     <>
       <header className="fixed left-0 right-0 top-0 z-50 flex h-20 items-center bg-white px-6 md:px-12 shadow-lg">
-        <div className="flex flex-1 items-center justify-between w-full">
-          <Link to="/" className="shrink-0">
-            <img className='h-16' src="/logo.png" alt="Logo" />
+        <div className="flex flex-1 items-center justify-between w-full">          <Link to="/" className="shrink-0" aria-label="Retail Craft Asia Home">
+            <img className='h-16' src="/logo.png" alt="Retail Craft Asia Logo" />
           </Link>
           
           {/* Desktop Navigation */}
@@ -61,7 +60,7 @@ const MainNav = () => {
                 </div>
               </div>
             </div>
-            <Link to="/MangTeam" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Leadership Team</Link>
+            <Link to="/team" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Leadership Team</Link>
             <Link to="/Career" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Career</Link>
             <Link to="/Contact" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Contact Us</Link>
             {/* <Link to="/faq" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">FAQ</Link> */}
@@ -116,7 +115,7 @@ const MainNav = () => {
           </div>
         )}
       </div>
-      <Link to="/MangTeam" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Leadership Team</Link>
+      <Link to="/team" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Leadership Team</Link>
       <Link to="/Career" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Career</Link>
           <Link to="/Contact" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
          

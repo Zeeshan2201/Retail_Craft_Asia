@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import SEOHelmet from '../components/SEOHelmet';
 import "../components/Css/about.css";
 import growthImage from "../assets/growth.svg";
 import integrityImage from "../assets/integrity.svg";
@@ -99,9 +100,30 @@ const FoundationPrinciples = () => {
       }
     };
   }, []);
-
   return (
-    <div className="foundation-principles-container bg-gradient-to-b from-gray-50 via-yellow-50/50 to-gray-50 ">
+    <>
+      <SEOHelmet
+        title="About Us - Retail Craft Asia | Strategic Retail Partners"
+        description="Learn about Retail Craft Asia's mission, vision, and foundation principles. We are your strategic partners for growth, transformation, and expansion in the retail industry across Asia."
+        keywords="about retail craft asia, retail consultancy team, retail transformation partners, retail growth strategy, Asia retail consulting"
+        url="https://retailcraftasia.com/about"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About Retail Craft Asia",
+          "description": "Learn about our foundation principles, vision, and mission as a leading retail consultancy in Asia.",
+          "url": "https://retailcraftasia.com/about",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Retail Craft Asia",
+            "foundingDate": "2020",
+            "description": "Strategic retail consultancy partner for growth, transformation and expansion"
+          }
+        }}
+      />
+      
+      <div className="foundation-principles-container bg-gradient-to-b from-gray-50 via-yellow-50/50 to-gray-50 ">
+      <SEOHelmet title="About Us" description="Learn more about our foundation principles, vision, and mission." />
       <div className="text-center font-semibold sm:mt-20 mb-5 pt-20 px-5">
         <h1 className="text-4xl sm:text-6xl font-semibold mt-5">
           <span className="text-yellow-600">
@@ -224,16 +246,26 @@ const FoundationPrinciples = () => {
               setsetselectedImage("mems_8");
             }}
             className="absolute hover:-translate-y-2 hover:scale-110 hover:shadow-lg hover:shadow-yellow-600/80 bottom-10 -left-10 sm:-left-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md"
-          >
-            <svg
+          >            <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
-              viewBox="0 -960 960 960"
-              fill="#ca8a04"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="w-8 h-8 text-yellow-600 hover:scale-125 transition-transform duration-200 ease-in-out"
             >
-              <path d="M280-320q0-33 23.5-56.5T360-400q33 0 56.5 23.5T440-320q0 33-23.5 56.5T360-240q-33 0-56.5-23.5T280-320Zm200-80h240q33 0 56.5 23.5T800-320v280h-80v-80H240v80h-80v-400h80v240h240v-200Zm150-40L512-654 406-548l10 68-30 30-47-88-88-48 30-30 68 9 106-106-215-117 38-38 264 68 108-108q12-12 29-12t29 12q12 12 12 29t-12 29L600-742l68 264-38 38Zm90 240v-120H560v120h160Z" />
+              {/* Hotel Icon */}
+              <path d="M3 21V7l9-4 9 4v14"></path>
+              <path d="M8 10h8"></path>
+              <path d="M8 14h8"></path>
+              <path d="M8 18h8"></path>
+              <rect x="10" y="6" width="4" height="2"></rect>
+              <path d="M6 21v-4"></path>
+              <path d="M18 21v-4"></path>              <circle cx="12" cy="4" r="1" fill="currentColor"></circle>
             </svg>
           </button>
           <button
@@ -241,8 +273,7 @@ const FoundationPrinciples = () => {
               setsetselectedImage("mems_4");
             }}
             className="absolute hover:-translate-y-2 hover:scale-110 hover:shadow-lg hover:shadow-yellow-600/80 bottom-10 -right-10 sm:-right-14 w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center shadow-md"
-          >
-            <svg
+          >            <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"
@@ -424,12 +455,12 @@ const FoundationPrinciples = () => {
                   {principle.description}
                 </p>
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#D4AF37] to-[#D4AF37] rounded-b-xl"></div>
-              </div>
-            ))}
+              </div>            ))}
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -43,10 +43,9 @@ const HeroSection = () => {
       damping: 10,
     },
   }
-
   return (
     <div className=" w-[100%]">
-    <section className="relative  flex items-center  justify-center h-screen  text-center px-6 overflow-hidden">
+    <section className="relative  flex items-center  justify-center h-screen  text-center px-6 overflow-hidden" role="banner">
     {/* <section className="relative  flex items-center  justify-center h-screen bg-gradient-to-tl from-[#f1ecd0] via-white to-white text-center px-6 overflow-hidden"> */}
     <video 
       autoPlay 
@@ -54,6 +53,7 @@ const HeroSection = () => {
       muted 
       playsInline 
       className="absolute top-20 left-0 w-full h-full object-cover z-10 opacity-90"
+      aria-label="Background video showing retail business environment"
     >
       <source src="/Hero.mp4" type="video/mp4" />
       Your browser does not support the video tag.

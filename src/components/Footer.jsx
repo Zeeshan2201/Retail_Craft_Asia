@@ -3,26 +3,25 @@ import { ExternalLink } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black  font-semibold py-12 px-4 md:px-6">
+    <footer className="bg-white text-black font-semibold py-12 px-4 md:px-6" role="contentinfo">
       <div className="container mx-auto border-t-2 border-yellow-500 pt-16 max-w-7xl">
         <div className="flex justify-evenly md:flex-row flex-col gap-8">
-          {/* Brand and Mission Column */}
-          <div className="lg:col-span-2 md:w-[25%]">
+          {/* Brand and Mission Section */}
+          <section className="lg:col-span-2 md:w-[25%]">
             <h2 className="text-2xl mb-4">Retail Craft Asia</h2>
             <p className="text-black font-medium text-lg ">
             We are your strategic partners who will help you grow and transform your business and brands at Market Place 
              </p>
-            {/* Bird Logo Placeholder */}
+            {/* Company Logo */}
             <div className="md:w-44 md:h-40 w-28 h-28 ">
-            <Link to="/" >
-              <img src='/logo.png' className="w-full h-full object-contain"/>
+            <Link to="/" aria-label="Retail Craft Asia Home">
+              <img src='/logo.png' alt="Retail Craft Asia Logo" className="w-full h-full object-contain"/>
             </Link>
             </div>
-            
-          </div>
-{/* comment */}
-          {/* Useful Links Column */}
-          <div>
+          </section>
+
+          {/* Navigation Links Section */}
+          <nav aria-label="Footer Navigation">
             <h3 className="text-md font-semibold mb-4 uppercase tracking-wider">Useful Links</h3>
             <ul className="space-y-2">
             <li>
@@ -40,54 +39,50 @@ export default function Footer() {
                   Services
                 </Link>
               </li>
-             
-              <li>
-                <Link to="/MangTeam" className="hover:text-yellow-600 font-medium transition-colors">
+               <li>
+                <Link to="/team" className="hover:text-yellow-600 font-medium transition-colors">
                 Leadership Team
                 </Link>
               </li>
-               
               <li>
-                <Link to="/Career" className="hover:text-yellow-600 font-medium transition-colors">
+                <Link to="/career" className="hover:text-yellow-600 font-medium transition-colors">
                 Career
                 </Link>
               </li>
               <li>
-                <Link to="/Contact" className="hover:text-yellow-600 font-medium transition-colors">
+                <Link to="/contact" className="hover:text-yellow-600 font-medium transition-colors">
                   Contact us
                 </Link>
               </li>
              
             </ul>
-          </div>
+          </nav>
 
           {/* Downloads Column */}
           <div>
             <h3 className="text-md font-semibold mb-4 uppercase tracking-wider">Services</h3>
-            <ul className="space-y-2">
-            <li>
-                <Link to="/services/MarketExpansion" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
+            <ul className="space-y-2">            <li>
+                <Link to="/services/market-expansion" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
                 Market Expansion Services
                 </Link>
               </li>
               <li>
-                <Link to="/services/SalesAndMerchandising" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
+                <Link to="/services/sales-merchandising" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
                 Sales and Merchandising
                 </Link>
               </li>
               <li>
-                <Link to="/services/BrandActivation" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
+                <Link to="/services/brand-activation" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
                 Brand Activation and Experiental Marketing
                 </Link>
               </li>
-              
-              <li>
-                <Link to="/services/DataAndTechnology" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
+                <li>
+                <Link to="/services/data-technology" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
                 Data & Technology
                 </Link>
               </li>
               <li>
-                <Link to="/services/DigitalMarketing" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
+                <Link to="/services/digital-marketing" className="hover:text-yellow-600 font-medium transition-colors flex items-center gap-1">
                 Digital Marketing
                 </Link>
               </li>
