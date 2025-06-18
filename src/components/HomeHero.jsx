@@ -227,7 +227,7 @@ const HeroSection = () => {
         </motion.h1>
 
         {/* Subheading with text coming from left */}
-        <motion.h2 variants={item} className="font-semibold text-yellow-600 text-3xl mt-2">
+        <motion.p variants={item} className="font-semibold text-yellow-600 text-3xl mt-2">
           Delivering Growth,
           <motion.span
             className="font-semibold text-yellow-600 text-3xl ml-2"
@@ -240,7 +240,7 @@ const HeroSection = () => {
           >
              Consistently.
           </motion.span>
-        </motion.h2>
+        </motion.p>
 
         {/* Paragraph with text coming from left */}
         <motion.p variants={item} className="mt-4 text-lg text-gray-300 md:text-xl">

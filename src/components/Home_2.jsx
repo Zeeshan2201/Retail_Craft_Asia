@@ -3,6 +3,7 @@
 import { useRef } from "react"
 import { motion, useInView, useScroll, useTransform } from "framer-motion"
 import Mem_1 from "../assets/Home_Hero/Mem_1.png"
+import { Link } from "react-router-dom"
 
 const IndustrySection = () => {
   const sectionRef = useRef(null)
@@ -56,22 +57,22 @@ const IndustrySection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
-          <motion.h3
+          <motion.h2
             className="uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-semibold text-yellow-600 text-center md:text-left"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Tailored Business and 
-          </motion.h3>
+            Tailored Business and Marketing Solutions
+          </motion.h2>
 
-          <motion.h2
+          <motion.h3
             className="uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-semibold text-gray-900 mt-2 text-center md:text-left"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-             Marketing Solutions for {" "}
+            for{" "}
             <motion.span
               className="mt-4 text-yellow-700"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -83,9 +84,9 @@ const IndustrySection = () => {
                 stiffness: 100,
               }}
             >
-          DRIVING GROWTH
+              DRIVING GROWTH
             </motion.span>
-          </motion.h2>
+          </motion.h3>
 
           <motion.p
             className="mt-8 text-base md:text-lg text-gray-700 text-center md:text-left"
@@ -93,7 +94,23 @@ const IndustrySection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            We provide expert Consulting, Marketing, Retail and Execution services to help businesses optimize operations, enhance customer experience
+            We provide expert{" "}
+            <Link to="/services/market-expansion" className="text-yellow-600 hover:underline">
+              Consulting
+            </Link>
+            ,{" "}
+            <Link to="/services/digital-marketing" className="text-yellow-600 hover:underline">
+              Marketing
+            </Link>
+            ,{" "}
+            <Link to="/services/sales-and-merchandising" className="text-yellow-600 hover:underline">
+              Retail
+            </Link>{" "}
+            and{" "}
+            <Link to="/services/brand-activation" className="text-yellow-600 hover:underline">
+              Execution
+            </Link>{" "}
+            services to help businesses optimize operations, enhance customer experience
             and drive growth in the competitive retail industry.
           </motion.p>
         </motion.div>
@@ -145,5 +162,5 @@ const IndustrySection = () => {
   )
 }
 
-export default IndustrySection;
+export default IndustrySection
 

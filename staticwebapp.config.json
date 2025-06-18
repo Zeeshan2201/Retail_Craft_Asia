@@ -1,0 +1,15 @@
+{
+  "routes": [
+    {
+      "host": "www.retailcraftasia.com",
+      "redirect": "https://retailcraftasia.com",
+      "statusCode": 301
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  },
+  "mimeTypes": {
+    ".xml": "application/xml"
+  }
+}

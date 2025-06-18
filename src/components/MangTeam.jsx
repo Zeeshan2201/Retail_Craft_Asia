@@ -62,7 +62,7 @@ const teamMembers = [
 	},
 ]
 
-const TeamMemberDetail = () => {
+const TeamMemberDetail = ({ includeHelmet = true }) => {
 	const scrollRef = useRef(null)
 
 	const scroll = (direction) => {
@@ -99,29 +99,31 @@ const TeamMemberDetail = () => {
 	}
 	return (
 		<>
-			<SEOHelmet
-				title="Leadership Team - Retail Craft Asia | Meet Our Expert Leaders"
-				description="Meet our visionary leadership team with decades of experience driving innovation and excellence across global retail markets. Expert leaders in FMCG, Retail & Healthcare."
-				keywords="leadership team, retail experts, management team, CEO, retail consultancy leaders, business experts, FMCG leaders"
-				url="https://retailcraftasia.com/team"
-				structuredData={{
-					"@context": "https://schema.org",
-					"@type": "Organization",
-					"name": "Retail Craft Asia",
-					"url": "https://retailcraftasia.com/team",
-					"employee": teamMembers.map(member => ({
-						"@type": "Person",
-						"name": member.name,
-						"jobTitle": member.role,
-						"description": member.shortBio,
-						"worksFor": {
-							"@type": "Organization",
-							"name": "Retail Craft Asia"
-						}
-					}))
-				}}
-			/>
-			
+			{includeHelmet && (
+				<SEOHelmet
+					title="Leadership Team - Retail Craft Asia | Meet Our Expert Leaders"
+					description="Meet our visionary leadership team with decades of experience driving innovation and excellence across global retail markets. Expert leaders in FMCG, Retail & Healthcare."
+					keywords="leadership team, retail experts, management team, CEO, retail consultancy leaders, business experts, FMCG leaders"
+					url="https://retailcraftasia.com/team"
+					structuredData={{
+						"@context": "https://schema.org",
+						"@type": "Organization",
+						"name": "Retail Craft Asia",
+						"url": "https://retailcraftasia.com/team",
+						"employee": teamMembers.map(member => ({
+							"@type": "Person",
+							"name": member.name,
+							"jobTitle": member.role,
+							"description": member.shortBio,
+							"worksFor": {
+								"@type": "Organization",
+								"name": "Retail Craft Asia"
+							}
+						}))
+					}}
+				/>
+			)}
+
 			<section className="py-20 bg-gray-50">
 			<div className="container mx-auto px-4 pr-2">
 				<div className="text-center mb-10">

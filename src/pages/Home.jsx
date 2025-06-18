@@ -81,7 +81,7 @@ const Home = () => {
        
        </div>
         {/* <ManagementTeam /> */}
-        <MangTeam />
+        <MangTeam includeHelmet={false} />
         
         {/* <ProductShowcase></ProductShowcase> */}
         {/* <ServicesSlider></ServicesSlider> */}

@@ -244,13 +244,13 @@ const ServicesSection = () => {
 
       <div className="relative z-10">
         <motion.div className="text-center mb-16" initial="hidden" animate={controls} variants={titleVariants}>
-          <motion.h2
+          <motion.h1
             className="text-6xl font-semibold mb-6 text-yellow-600 uppercase tracking-wide drop-shadow-lg"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             Our Services
-          </motion.h2>
+          </motion.h1>
           <motion.div
             className="w-24 h-1 bg-yellow-600 mx-auto"
             initial={{ width: 0 }}
@@ -292,14 +292,14 @@ const ServicesSection = () => {
                 {service.icon}
               </motion.div>
 
-              <motion.h3
+              <motion.h2
                 className="mt-6 text-2xl h-16 font-semibold text-yellow-600"
                 initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ delay: 0.7 + index * 0.1 }}
               >
                 {service.category}
-              </motion.h3>
+              </motion.h2>
 
               <ul className="mt-4 h-44 text-lg text-gray-800 list-disc list-inside text-left ml-6">
                 {service.items.map((item, idx) => (
@@ -367,14 +367,14 @@ const ServicesSection = () => {
                 {service.icon}
               </motion.div>
 
-              <motion.h3
+              <motion.h2
                 className="mt-6 text-2xl h-8 font-semibold text-yellow-600"
                 initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ delay: 0.7 + (index + 3) * 0.1 }}
               >
                 {service.category}
-              </motion.h3>
+              </motion.h2>
 
               <ul className="mt-4 text-lg h-44 text-gray-800 list-disc list-inside text-left ml-6">
                 {service.items.map((item, idx) => (
