@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 const SEOHelmet = ({ 
   title = "Retail Craft Asia - Leading Retail Consultancy & Solutions",
   description = "Retail Craft Asia - Leading retail consultancy providing sales, merchandising, brand activation, market expansion, digital marketing, and data technology solutions across Asia.",
-  keywords = "retail consultancy, sales merchandising, brand activation, market expansion, digital marketing, data technology, retail solutions Asia",
+  keywords = "retail consultancy, sales merchandising, brand activation, market expansion, digital marketing, data technology, retail solutions Asia, retail craft asia, retail craft asia.com, retailcraftasia.com, Retail Craft Co, retailcraftco.com",
   image = "/logo2.png",
   url = "https://retailcraftasia.com",
   type = "website",
@@ -24,8 +24,8 @@ const SEOHelmet = ({
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       
       {/* Additional SEO Meta Tags */}
-      <meta name="geo.region" content="AS" />
-      <meta name="geo.country" content="IN" />
+  <meta name="geo.region" content="AS" />
+  <meta name="geo.country" content="TH" />
       <meta name="classification" content="business" />
       <meta name="category" content="retail consultancy" />
       <meta name="coverage" content="worldwide" />

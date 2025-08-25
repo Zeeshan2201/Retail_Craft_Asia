@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { Linkedin, Award, Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 const teamMembers = [
   {
@@ -106,20 +106,43 @@ An expert in change management and organizational transition, Wichit is deeply p
     linkedin:
       "https://www.linkedin.com/in/wichit-thammaphimol-6110b85a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
+  {
+    id: 5,
+    name: "Sankalp Bansal",
+    role: "Independent Director",
+    shortBio:
+      "Seasoned serial entrepreneur; Co-founder & Chief Strategy Officer at MAssist CRM, leading vision, product strategy, innovation, and growth.",
+    fullDescription: `Sankalp Bansal is a seasoned serial entrepreneur with extensive experience across diverse domains. Known for his strategic foresight and execution excellence, he has built and scaled multiple ventures over the years.
+
+He currently serves as the Co-founder & Chief Strategy Officer at MAssist CRM, where he leads the company's vision, product strategy, innovation, and overall growth. Under his leadership, MAssist has positioned itself as a leading player in its segment, delivering impactful, scalable solutions.
+
+Sankalp began his professional journey in the healthcare sector, where he rose through the ranks to become the Chief Operating Officer. His deep operational understanding of systems, combined with his entrepreneurial mindset, inspired him to venture into building solutions that address real-world challenges.
+
+Today, MAssist CRM stands as a leader in its domain, serving over 350 top enterprises across various industries with a dedicated team of 250 professionals across major metropolitan cities. Sankalp continues to drive innovation, strategic growth, and long-term value creation across every initiative he leads.`,
+    image: "/Team/sankalp-sir-final-pic.png",
+    highlights: [
+      "Built and scaled multiple ventures with execution excellence",
+      "Co-founder & CSO at MAssist CRM, driving product and growth",
+      "Deep operational leadership background from healthcare",
+    ],
+    linkedin: "#",
+  },
 ];
 
 const TeamMemberDetail = () => {
   const location = useLocation();
+  const { id: routeId } = useParams();
 
   useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace("#", ""); // Remove #
-      const element = document.getElementById(id);
+    // Prefer route param for direct member route; fallback to hash anchors
+    const anchorId = routeId || (location.hash ? location.hash.replace("#", "") : "");
+    if (anchorId) {
+      const element = document.getElementById(anchorId);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
-  }, [location]);
+  }, [location, routeId]);
 
   return (
     <section className="py-20 bg-gray-50">
@@ -144,7 +167,7 @@ const TeamMemberDetail = () => {
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
               key={member.id}
-              id={member.id}
+              id={`${member.id}`}
               className="bg-[#fff] rounded-2xl shadow-yellow-600/60 shadow-lg overflow-hidden"
             >
               <div

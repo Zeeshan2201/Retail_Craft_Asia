@@ -2,50 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    
-    <!-- SEO Meta Tags -->
+
+    <!-- Core SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Retail Craft Asia - Leading retail consultancy providing sales, merchandising, brand activation, market expansion, digital marketing, and data technology solutions across Asia." />
     <meta name="keywords" content="retail consultancy, sales merchandising, brand activation, market expansion, digital marketing, data technology, retail solutions Asia" />
     <meta name="author" content="Retail Craft Asia" />
-      <!-- Google Search Console Verification -->
+
+    <!-- Google Search Console Verification (keep only the valid token) -->
     <meta name="google-site-verification" content="lNOozCxGAy8qbH0i4tYaw47wjF-FkeccB_BwzjdXUpw" />
-    <meta name="google-site-verification" content="google75c90b3734e66f99.html" />
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-    
-    <!-- Open Graph Meta Tags -->
+
+    <!-- Canonical & Sitemap -->
+    <link rel="canonical" href="https://retailcraftasia.com/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Retail Craft Asia" />
     <meta property="og:locale" content="en_US" />
-    
-    <!-- Twitter Card Meta Tags -->
+    <meta property="og:title" content="Retail Craft Asia - Leading Retail Consultancy & Solutions" />
+    <meta property="og:description" content="Retail Craft Asia - Leading retail consultancy providing sales, merchandising, brand activation, market expansion, digital marketing, and data technology solutions across Asia." />
+    <meta property="og:image" content="https://retailcraftasia.com/logo2.png" />
+    <meta property="og:url" content="https://retailcraftasia.com/" />
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@retailcraftasia" />
-    
+
     <!-- Favicon and Icons -->
     <link rel="icon" type="image/png" href="/logo2.png" />
     <link rel="apple-touch-icon" href="/logo2.png" />
-    
+
     <!-- Fonts with font-display: swap for performance -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <!-- Canonical URL will be set by React Helmet -->
+
     <title>Retail Craft Asia - Leading Retail Consultancy & Solutions</title>
 
+    <!-- Optional Google Analytics: replace GA_MEASUREMENT_ID to enable -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <noscript>
+      Retail Craft Asia provides retail consultancy solutions across Asia. Please enable JavaScript to experience the full site.
+    </noscript>
   </body>
+  
 </html>

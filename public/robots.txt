@@ -4,6 +4,9 @@ Allow: /
 # Sitemaps
 Sitemap: https://retailcraftasia.com/sitemap.xml
 
+# Hints
+Host: retailcraftasia.com
+
 # Crawl-delay
 Crawl-delay: 1
 

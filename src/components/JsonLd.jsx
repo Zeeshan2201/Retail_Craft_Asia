@@ -21,8 +21,8 @@ export const organizationSchema = {
   "numberOfEmployees": "50-100",
   "address": {
     "@type": "PostalAddress",
-    "addressCountry": "SG",
-    "addressRegion": "Singapore"
+    "addressCountry": "TH",
+    "addressRegion": "Bangkok"
   },
   "contactPoint": {
     "@type": "ContactPoint",
@@ -70,13 +70,13 @@ export const localBusinessSchema = {
   "description": "Professional retail consultancy services across Asia Pacific region",
   "address": {
     "@type": "PostalAddress",
-    "addressCountry": "SG",
-    "addressRegion": "Singapore"
+    "addressCountry": "TH",
+    "addressRegion": "Bangkok"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "1.3521",
-    "longitude": "103.8198"
+    "latitude": "13.7563",
+    "longitude": "100.5018"
   },
   "url": "https://retailcraftasia.com",
   "telephone": "+65-1234-5678",

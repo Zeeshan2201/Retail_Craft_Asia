@@ -34,8 +34,8 @@ const Home = () => {
     },
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "SG",
-      "addressRegion": "Singapore"
+      "addressCountry": "TH",
+      "addressRegion": "Bangkok"
     },
     "founder": {
       "@type": "Person",

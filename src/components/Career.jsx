@@ -103,12 +103,12 @@ export default function ContactForm() {
             "name": "Retail Craft Asia",
             "sameAs": "https://www.retailcraftasia.com"
           },
-          "jobLocation": {
+      "jobLocation": {
             "@type": "Place",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Asia",
-              "addressCountry": "IN"
+        "addressLocality": "Bangkok",
+        "addressCountry": "TH"
             }
           }
         }}

@@ -6,16 +6,25 @@ import { Link, useLocation } from 'react-router-dom';
 
 const teamMembers = [
   {
+    id: 2,
     name: "Jean-Boris ROUX",
     role: "Independent Director",
-    shortDescription: "Jean-Boris ROUX, aka 'JB', is a seasoned leader with over 25 years of experience...",
+    shortDescription: "A seasoned leader with over 25 years of experience across Europe and Asia in FMCG, retail, and hospitality.",
     image: "/Team/Member_1.png",
   },
   {
+    id: 1,
     name: "Parag Wasnik",
     role: "Chief Executive Officer",
-    shortDescription: "An engineer and an MBA, Parag has over two decades of experience in FMCG, Retail...",
+    shortDescription: "An engineer and an MBA with over two decades of experience in FMCG, Retail, and Healthcare.",
     image: "/Team/Member_2.png",
+  },
+  {
+    id: 5,
+    name: "Sankalp Bansal",
+    role: "Independent Director",
+    shortDescription: "Serial entrepreneur; Co-founder & CSO at MAssist CRM, leading vision, product strategy, and growth.",
+    image: "/Team/sankalp-sir-final-pic.png",
   },
 ];
 
@@ -47,8 +56,7 @@ function ManagementTeam() {
             </div>
           </div>
           <p className="mt-4 text-gray-700">{member.shortDescription}</p>
-          {/* <Link to={`/about#${member.name === "Jean-Boris ROUX"?'1':'2'}`} className="mt-4 text-base font-medium text-neutral-900 hover:bg-neutral-300">Read More</Link> */}
-          <Link to={`/MangTeam#${member.name === "Jean-Boris ROUX" ? '1' : '2'}`} 
+          <Link to={`/team/member/${member.id}`} 
       className="mt-4 text-base font-medium text-neutral-900 hover:bg-neutral-300">
   Full Bio
 </Link>

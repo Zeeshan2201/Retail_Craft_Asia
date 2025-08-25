@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import SEOHelmet from "./SEOHelmet"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { motion } from "framer-motion"
@@ -60,43 +60,78 @@ const teamMembers = [
 		],
 		linkedin: "#",
 	},
+	{
+		id: 5,
+		name: "Sankalp Bansal",
+		role: "Independent Director",
+		shortBio:
+			"Serial entrepreneur and strategic leader; Co-founder & Chief Strategy Officer at MAssist CRM, driving vision, product strategy, and growth.",
+		image: "/Team/sankalp-sir-final-pic.png",
+		highlights: [
+			"Built and scaled multiple ventures with execution excellence",
+			"Leading MAssist CRM’s vision, innovation, and market growth",
+			"Deep operating background from healthcare to enterprise tech",
+		],
+		linkedin: "#",
+	},
 ]
 
 const TeamMemberDetail = ({ includeHelmet = true }) => {
 	const scrollRef = useRef(null)
+	const [currentIndex, setCurrentIndex] = useState(0)
 
+	const getVisibleCards = () => {
+		if (window.innerWidth < 640) return 1
+		if (window.innerWidth < 768) return 2
+		if (window.innerWidth < 1024) return 3
+		return 4
+	}
+
+	// Step-wise scroll without infinite looping
 	const scroll = (direction) => {
-		if (scrollRef.current) {
-			const containerWidth = scrollRef.current.clientWidth
-			let visibleCards = 4
-			if (window.innerWidth < 640) {
-				visibleCards = 1
-			} else if (window.innerWidth < 768) {
-				visibleCards = 2
-			} else if (window.innerWidth < 1024) {
-				visibleCards = 3
-			}
+		if (!scrollRef.current) return
 
-			const cardWidth = containerWidth / visibleCards
-			const scrollAmount = cardWidth * Math.max(4, visibleCards)
+		const visible = getVisibleCards()
+		const step = visible // page by visible count; mobile=1, md=3, lg=4
+		const lastStart = Math.max(0, teamMembers.length - visible)
 
-			scrollRef.current.scrollBy({
-				left: direction === "left" ? -scrollAmount : scrollAmount,
-				behavior: "smooth",
-			})
+		let nextIndex = currentIndex
+		if (direction === "right") {
+			nextIndex = Math.min(currentIndex + step, lastStart)
+		} else {
+			nextIndex = Math.max(currentIndex - step, 0)
+		}
 
-			setTimeout(() => {
-				if (
-					direction === "right" &&
-					scrollRef.current.scrollLeft + scrollRef.current.clientWidth >= scrollRef.current.scrollWidth - 10
-				) {
-					scrollRef.current.scrollLeft = 0
-				} else if (direction === "left" && scrollRef.current.scrollLeft <= 10) {
-					scrollRef.current.scrollLeft = scrollRef.current.scrollWidth - scrollRef.current.clientWidth
-				}
-			}, 500)
+		setCurrentIndex(nextIndex)
+
+		const children = scrollRef.current.children
+		const target = children[nextIndex]
+		if (target && target.scrollIntoView) {
+			target.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" })
 		}
 	}
+
+	// Keep alignment and bounds correct on resize and initial mount
+	useEffect(() => {
+		const syncOnResize = () => {
+			if (!scrollRef.current) return
+			const visible = getVisibleCards()
+			const lastStart = Math.max(0, teamMembers.length - visible)
+			const clamped = Math.min(currentIndex, lastStart)
+			const children = scrollRef.current.children
+			const target = children[clamped]
+			if (clamped !== currentIndex) {
+				setCurrentIndex(clamped)
+			}
+			if (target && target.scrollIntoView) {
+				target.scrollIntoView({ behavior: "instant", inline: "start", block: "nearest" })
+			}
+		}
+		// run once and on resize
+		syncOnResize()
+		window.addEventListener("resize", syncOnResize)
+		return () => window.removeEventListener("resize", syncOnResize)
+	}, [currentIndex])
 	return (
 		<>
 			{includeHelmet && (
@@ -153,10 +188,10 @@ const TeamMemberDetail = ({ includeHelmet = true }) => {
 						ref={scrollRef}
 						className="flex overflow-x-auto scrollbar-hide gap-4 p-4 snap-x snap-mandatory"
 					>
-						{teamMembers.concat(teamMembers).map((member, index) => (
+						{teamMembers.map((member, index) => (
 							<motion.div
 								key={index}
-								className="bg-white rounded-xl shadow-md hover:shadow-yellow-600/60 p-6 transform hover:scale-105 transition-transform snap-center flex flex-col w-80 min-w-[95%] sm:min-w-[50%] md:min-w-[33.333%] lg:min-w-[25%]"
+								className="bg-white rounded-xl shadow-md hover:shadow-yellow-600/60 p-6 transform hover:scale-105 transition-transform snap-start flex flex-col w-80 min-w-[95%] sm:min-w-[50%] md:min-w-[33.333%] lg:min-w-[25%]"
 							>
 								<div className="flex flex-col items-center text-center h-full justify-between">
 									<div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44 rounded-full overflow-hidden border-4 border-gray-200 shadow-md">
@@ -171,7 +206,7 @@ const TeamMemberDetail = ({ includeHelmet = true }) => {
 										<p className="text-gray-600 text-lg mt-1">{member.role}</p>
 									</div>
 									<Link
-										to={`/MemberOne#${member.id}`}
+										to={`/team/member/${member.id}`}
 										className="mt-6 bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-700 text-black px-8 py-3 rounded-3xl shadow-sm transition-all duration-300 from-yellow-400 to-yellow-600 hover:shadow-md"
 									>
 										Read Full Bio

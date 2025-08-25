@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { Suspense, lazy } from 'react';
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -45,15 +45,16 @@ function App() {
               {/* <Route path="/faq" element={<FaQ />} /> */}
               <Route path="/services" element={<Services />} />
               <Route path="/services/sales-merchandising" element={<SalesAndMerchandising/>} />
-              <Route path="/services/SalesAndMerchandising" element={<SalesAndMerchandising/>} />
+              {/* Redirect uppercase/legacy URLs to canonical lowercase equivalents */}
+              <Route path="/services/SalesAndMerchandising" element={<Navigate to="/services/sales-merchandising" replace />} />
               <Route path="/services/brand-activation" element={<BrandActivation/>} />
-              <Route path="/services/BrandActivation" element={<BrandActivation/>} />
+              <Route path="/services/BrandActivation" element={<Navigate to="/services/brand-activation" replace />} />
               <Route path="/services/market-expansion" element={<MarketExpansion/>} />
-              <Route path="/services/MarketExpansion" element={<MarketExpansion/>} />
+              <Route path="/services/MarketExpansion" element={<Navigate to="/services/market-expansion" replace />} />
               <Route path="/services/data-technology" element={<DataAndTechnology/>} />
-              <Route path="/services/DataAndTechnology" element={<DataAndTechnology/>} />
+              <Route path="/services/DataAndTechnology" element={<Navigate to="/services/data-technology" replace />} />
               <Route path="/services/digital-marketing" element={<DigitalMarketing/>} />
-              <Route path="/services/DigitalMarketing" element={<DigitalMarketing/>} />
+              <Route path="/services/DigitalMarketing" element={<Navigate to="/services/digital-marketing" replace />} />
               <Route path="/team" element={<MangTeam/>}/>
               {/* <Route path="/MangTeam" element={<MangTeam/>}/> */}
               <Route path="/team/member/:id" element={<MemberOne/>}/>

@@ -128,7 +128,12 @@ const FoundationPrinciples = () => {
           "sameAs": [
             "https://www.facebook.com/RetailCraftAsia",
             "https://www.linkedin.com/company/retailcraftasia"
-          ]
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "TH",
+            "addressRegion": "Bangkok"
+          }
         }}
       />
         <div className="foundation-principles-container bg-gradient-to-b from-gray-50 via-yellow-50/50 to-gray-50 ">

@@ -4,7 +4,14 @@
       "host": "www.retailcraftasia.com",
       "redirect": "https://retailcraftasia.com",
       "statusCode": 301
-    }
+    },
+  { "route": "/about", "rewrite": "/about.html" },
+  { "route": "/services", "rewrite": "/services.html" },
+  { "route": "/services/sales-merchandising", "rewrite": "/services-sales-merchandising.html" },
+  { "route": "/services/brand-activation", "rewrite": "/services-brand-activation.html" },
+  { "route": "/services/market-expansion", "rewrite": "/services-market-expansion.html" },
+  { "route": "/services/digital-marketing", "rewrite": "/services-digital-marketing.html" },
+  { "route": "/services/data-technology", "rewrite": "/services-data-technology.html" }
   ],
   "navigationFallback": {
     "rewrite": "/index.html"
