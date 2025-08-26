@@ -104,10 +104,12 @@ const TeamMemberDetail = ({ includeHelmet = true }) => {
 
 		setCurrentIndex(nextIndex)
 
-		const children = scrollRef.current.children
+		const container = scrollRef.current
+		const children = container.children
 		const target = children[nextIndex]
-		if (target && target.scrollIntoView) {
-			target.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" })
+		if (target) {
+			const left = target.offsetLeft
+			container.scrollTo({ left, behavior: "smooth" })
 		}
 	}
 
@@ -118,13 +120,15 @@ const TeamMemberDetail = ({ includeHelmet = true }) => {
 			const visible = getVisibleCards()
 			const lastStart = Math.max(0, teamMembers.length - visible)
 			const clamped = Math.min(currentIndex, lastStart)
-			const children = scrollRef.current.children
+			const container = scrollRef.current
+			const children = container.children
 			const target = children[clamped]
 			if (clamped !== currentIndex) {
 				setCurrentIndex(clamped)
 			}
-			if (target && target.scrollIntoView) {
-				target.scrollIntoView({ behavior: "instant", inline: "start", block: "nearest" })
+			if (target) {
+				const left = target.offsetLeft
+				container.scrollTo({ left, behavior: "auto" })
 			}
 		}
 		// run once and on resize
