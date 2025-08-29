@@ -169,26 +169,27 @@ const ServicesSection = () => {
       },
     },
   }
-
-  const listItemVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: (i) => ({
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: i * 0.1,
-        duration: 0.4,
-      },
-    }),
-    exit: (i) => ({
-      opacity: 0,
-      x: -20,
-      transition: {
-        delay: i * 0.05,
-        duration: 0.2,
-      },
-    }),
-  }
+const listItemVariants = {
+  hidden: { opacity: 0, y: 20 }, // Increased vertical starting position
+  visible: (i) => ({
+   opacity: 1,
+   y: 0,
+   transition: {
+     delay: i * 0.2, // Increased delay to make the stagger more prominent
+     duration: 0.5, // Slightly longer duration for a smoother feel
+   ease: "easeOut",
+   },
+ }),
+   exit: (i) => ({
+   opacity: 0,
+   y: -20,
+   transition: {
+   delay: i * 0.05,
+   duration: 0.2,
+  },
+ }),
+};
+{/* Above made changes for revaling the description text....*/}
 
   const titleVariants = {
     hidden: { opacity: 0, y: -50 },
