@@ -395,12 +395,13 @@
 //   )
 // }
 
+
+
 "use client";
 
 import { useRef, useEffect, useState } from "react";
 import Alchohol from "../assets/Industry/liquor.svg"
 import { motion, useInView, useAnimation } from "framer-motion";
-import { Typewriter } from "react-simple-typewriter";
 
 // We'll use the same icons but import them dynamically in a real project
 // This is just a placeholder for the demo
@@ -529,27 +530,6 @@ const IconPlaceholder = ({ name }) => (
   </div>
 );
 
-const containerVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: (index) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 120,
-      damping: 20,
-      delay: index * 0.2, // stagger between cards
-      when: "beforeChildren",
-      staggerChildren: 0.2, // stagger icon/title/description
-    },
-  }),
-};
-
-const childVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 },
-};
-
 const industries = [
   {
     title: "FMCG",
@@ -580,173 +560,141 @@ const industries = [
   }
 ];
 
-const cardVariants = {
-  initial: {
-    scale: 1,
-    y: 0,
-  },
-  hover: {
-    scale: 1.03,
-    y: -5,
-    boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
-    transition: {
-      type: "spring",
-      stiffness: 300,
-      damping: 10,
-    },
-  },
-};
-
-// Define variants for the child elements (icon and text)
-const iconVariants = {
-  hover: {
-    scale: 1.15,
-    y: -3,
-    transition: {
-      type: "spring",
-      stiffness: 500,
-      damping: 15,
-    },
-  },
-};
-
-const textVariants = {
-  hover: {
-    y: -5,
-    transition: {
-      type: "spring",
-      stiffness: 400,
-      damping: 12,
-    },
-  },
-};
-
-const IndustryCard = ({ title, description, index, isInView }) => {
+const IndustryCard = ({ title, description, index, isInView, direction }) => {
+  const [isHovered, setIsHovered] = useState(false);
   const cardControls = useAnimation();
-  const iconWrapperControls = useAnimation();
-  const iconControls = useAnimation();
-  const titleControls = useAnimation();
-  const descControls = useAnimation();
 
-  useEffect(() => {
-    if (isInView) {
-      cardControls.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          stiffness: 70,
-          damping: 20,
-          delay: index * 0.1,
-        },
-      });
+useEffect(() => {
+  const isLeftSide = index < industries.length / 2; // first half → left, second half → right
 
-      iconWrapperControls.start({
-        y: 0,
-        opacity: 1,
-        scale: 1,
-        transition: { duration: 0.5, delay: index * 0.1 + 0.2 },
-      });
+  if (isInView) {
+    cardControls.start({
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 120,
+        damping: 12,
+        mass: 0.9,
+        delay: index * 0.1, // stagger
+      },
+    });
+  } else {
+   cardControls.start({
+      x: isLeftSide ? -200 : 200, // left side cards start from left, right side from right
+      opacity: 0,
+      transition: {
+        type: "tween",
+        ease: "easeOut",
+        duration: 0.6,
+      },
+    });
+  }
+}, [isInView, index, cardControls]);
 
-      iconControls.start({
-        scale: 1,
-        opacity: 1,
-        transition: { duration: 0.5, delay: index * 0.1 + 0.3 },
-      });
-
-      titleControls.start({
-        scale: 1,
-        opacity: 1,
-        transition: { duration: 0.5, delay: index * 0.1 + 0.4 },
-      });
-      descControls.start({
-        scale: 1,
-        opacity: 1,
-        transition: { duration: 0.5, delay: index * 0.1 + 0.5 },
-      });
-    } else {
-      cardControls.start({ x: index % 2 === 0 ? -100 : 100, opacity: 0 });
-      iconWrapperControls.start({ y: -20, opacity: 0, scale: 0.8 });
-      iconControls.start({ scale: 0.8, opacity: 0 });
-      titleControls.start({ scale: 0.8, opacity: 0 });
-      descControls.start({ scale: 0.8, opacity: 0 });
-    }
-  }, [isInView, index, cardControls, iconWrapperControls, iconControls, titleControls, descControls]);
 
   return (
     <motion.div
-      initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
+      initial={{ opacity: 0, x: -100 }}
       animate={cardControls}
-      whileHover="hover"
-      variants={cardVariants}
-      className="relative md:w-[25vw] w-full mb-12"
+      whileHover={{
+        scale: 1.05,
+        transition: { duration: 0.2 },
+      }}
+      className="relative md:w-[25vw] mb-12 w-full hover:bg-gradient-to-r from-[#f1ecd0] via-white to-white hover:shadow-lg hover:bg-yellow-20 hover:shadow-yellow-300 overflow-hidden rounded-2xl"
+      onHoverStart={() => setIsHovered(true)}
+      onHoverEnd={() => setIsHovered(false)}
     >
       <motion.div
-        className="absolute inset-0 rounded-2xl z-0 pointer-events-none"
-        style={{
-          boxShadow: "0 0 12px 3px rgba(250, 204, 21, 0.3)",
-        }}
+        className="bg-white shadow-xl rounded-2xl p-8 text-center border flex flex-col items-center h-full z-10 relative"
         animate={{
-          boxShadow: [
-            "0 0 8px 2px rgba(250,204,21,0.2)",
-            "0 0 12px 3px rgba(250,204,21,0.35)",
-            "0 0 8px 2px rgba(250,204,21,0.2)",
-          ],
+          boxShadow: isHovered
+            ? "0 20px 25px -5px rgba(245, 158, 11, 0.1), 0 10px 10px -5px rgba(245, 158, 11, 0.04)"
+            : "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
         }}
-        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="relative z-10 bg-white rounded-2xl p-8 flex flex-col items-center shadow-md border border-gray-100"
-        whileHover={{ boxShadow: "0 10px 25px rgba(0,0,0,0.15)" }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         <motion.div
-          initial={{ y: -20, opacity: 0, scale: 0.8 }}
-          animate={iconWrapperControls}
-          whileHover={{
-            scale: 1.08,
-            boxShadow: "0 12px 20px rgba(0,0,0,0.2), inset 0 0 8px rgba(255,255,255,0.7)",
-            rotateX: 5,
-            rotateY: 5,
-            transition: { type: "spring", stiffness: 300, damping: 10 },
+          className="bg-gradient-to-r from-yellow-50 to-white p-4 rounded-full w-28 h-28 flex items-center justify-center shadow-md mb-4"
+          animate={{
+            rotate: isHovered ? [0, 5, -5, 0] : 0,
+            scale: isHovered ? [1, 1.1, 1] : 1,
           }}
-          className="relative bg-gradient-to-br from-yellow-50 via-white to-white p-4 rounded-full w-28 h-28 flex items-center justify-center shadow-lg mb-4"
-          style={{
-            transformStyle: "preserve-3d",
-            perspective: "1000px",
-            boxShadow: "0 8px 15px rgba(0,0,0,0.1), inset 0 0 5px rgba(255,255,255,0.5)",
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 1],
           }}
         >
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={iconControls}
-            variants={iconVariants}
-            className="w-full h-full flex items-center justify-center"
-          >
-            <IconPlaceholder name={title} />
-          </motion.div>
+          <IconPlaceholder name={title} />
         </motion.div>
 
         <motion.h3
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={titleControls}
-          variants={textVariants}
-          className="text-2xl font-bold text-yellow-600 tracking-wide mb-2 text-center"
+          className="text-3xl font-semibold mt-2 text-yellow-600 tracking-wide"
+          animate={{
+            y: isHovered ? [0, -5, 0] : 0,
+            color: isHovered ? "#d97706" : "#ca8a04",
+          }}
+          transition={{ duration: 0.3 }}
         >
-          <Typewriter words={[title]} loop={1} cursor={false} typeSpeed={80} />
+          {title}
         </motion.h3>
+
+        <motion.div
+          className="h-1 w-12 bg-yellow-400 rounded-full my-3 mx-auto"
+          animate={{
+            width: isHovered ? 80 : 48,
+            backgroundColor: isHovered ? "#f59e0b" : "#facc15",
+          }}
+          transition={{ duration: 0.3 }}
+        />
+
         <motion.p
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={descControls}
-          variants={textVariants}
-          className="text-black/80 text-base text-center leading-relaxed"
+          className="text-black text-lg mt-2 leading-relaxed"
+          animate={{
+            opacity: isHovered ? 1 : 0.9,
+          }}
         >
           {description}
         </motion.p>
+
+        {/* <motion.button
+          className="mt-4 text-yellow-600 font-medium flex items-center gap-1 opacity-0"
+          animate={{
+            opacity: isHovered ? 1 : 0,
+            y: isHovered ? 0 : 10,
+          }}
+          transition={{ duration: 0.3 }}
+        >
+          Learn more
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="w-4 h-4"
+          >
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </motion.button> */}
       </motion.div>
+
+      {/* Background gradient animation */}
+      <motion.div
+        className="absolute inset-0 bg-gradient-to-br from-yellow-100 via-yellow-50 to-white opacity-0 z-0"
+        animate={{
+          opacity: isHovered ? 0.8 : 0,
+        }}
+        transition={{ duration: 0.3 }}
+      />
     </motion.div>
   );
-}
+};
 
 export default function AnimatedIndustriesGrid() {
   const [scrollDirection, setScrollDirection] = useState("entering");
@@ -877,6 +825,6 @@ export default function AnimatedIndustriesGrid() {
           ))}
         </div>
       </div>
-    </div>
-  );
+    </div>
+  );
 }

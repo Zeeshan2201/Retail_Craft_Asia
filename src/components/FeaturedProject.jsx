@@ -277,7 +277,8 @@
 
 
 import { motion, useInView, useAnimation } from "framer-motion"
-import React from "react";
+//import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   FaChartLine,
   FaBullhorn,
@@ -362,22 +363,9 @@ const services = [
 ];
 
 const ServicesSection = () => {
-  const scrollContainerRefs = React.useRef([]);
-
-  const scrollLeft = (index) => {
-    if (scrollContainerRefs.current[index]) {
-      scrollContainerRefs.current[index].scrollBy({ left: -400, behavior: 'smooth' });
-    }
-  };
-
-  const scrollRight = (index) => {
-    if (scrollContainerRefs.current[index]) {
-      scrollContainerRefs.current[index].scrollBy({ left: 400, behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="relative min-h-screen w-full py-24 px-8 md:px-20 lg:px-36">
+      {/* Floating Backgrounds */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(10)].map((_, i) => (
           <motion.div
@@ -402,58 +390,49 @@ const ServicesSection = () => {
           />
         ))}
       </div>
-      {/* <div className="text-center mb-16">
-        <h2 className="text-6xl font-extrabold text-[#C8A961] relative inline-block">
-          Our Services
-          <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#C8A961] rounded"></span>
-        </h2>
-      </div> */}
 
       {services.map((service, index) => (
-        <div key={index} className="flex flex-col md:flex-row  items-start justify-center md:mb-16 gap-10 w-full">
+        <div key={index} className="flex flex-col md:flex-row items-start justify-center md:mb-16 gap-10 w-full">
           {/* Left Heading */}
           <div className="w-full md:w-1/4 flex md:h-[50vh] justify-center items-center mb-8 md:mt-0 mt-12 md:mb-0">
-            <h3 className="text-4xl font-semibold text-center text-yellow-600">{service.category}</h3>
+            <h3 className="text-4xl font-semibold text-center text-yellow-600">
+              {service.category}
+            </h3>
           </div>
 
-          {/* Right Cards with Scroll Buttons */}
-          <div className="w-full md:w-3/4 relative">
-            <div
-              className="flex overflow-x-hidden scroll-smooth "
-              ref={(el) => (scrollContainerRefs.current[index] = el)}
-            >
-              {service.items.map((item, idx) => (
-                <div key={idx} className="flex-shrink-0  mx-5 md:w-64 w-72 md:h-[50vh] h-[40vh] bg-white rounded-xl shadow-xl border border-gray-300 p-6 text-center transition-all duration-300 hover:shadow-2xl hover:border-[#C8A961]">
-                  <div className="relative mx-auto w-20 h-20 bg-white shadow-lg text-yellow-600 flex items-center justify-center rounded-full border border-gray-300 text-2xl ">
-                    {item.icon}
-                  </div>
-                  <h4 className="mt-4 text-lg font-semibold h-16 text-gray-700">{item.name}</h4>
-                  <p>{item.description}</p>
-                  <a href={item.link} className="mt-12 md:mt-4 hover:text-yellow-400 inline-block h-10 text-gray-700 font-semibold text-sm hover:underline">
-                    Learn more
-                  </a>
-                </div>
-              ))}
-            </div>
-
-            {/* Scroll Buttons */}
-            {service.items.length > (window.innerWidth > 768 ? 3 : 1) && (
-              <>
-                <button
-                  onClick={() => scrollLeft(index)}
-                  className="absolute -left-4 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition-all"
-                >
-                  <FaChevronLeft className="text-2xl text-yellow-600" />
-                </button>
-                <button
-                  onClick={() => scrollRight(index)}
-                  className="absolute -right-4 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition-all"
-                >
-                  <FaChevronRight className="text-2xl text-yellow-600" />
-                </button>
-              </>
-            )}
-          </div>
+          {/* Right Cards - 🔥 Motion Infinite Auto Scroll */}
+    <div className="w-full md:w-3/4 relative overflow-hidden">
+  <motion.div
+    className="flex"
+    animate={{ x: ["0%", "-50%"] }} // ✅ only scroll half (one set width)
+    transition={{ duration: 25, ease: "linear", repeat: Infinity }} // smooth infinite
+  >
+    {[...service.items, ...service.items].map((item, idx) => (
+      <div
+        key={idx}
+        className="flex-shrink-0 mx-5 md:w-64 w-72 md:h-[50vh] h-[40vh] 
+                   bg-white rounded-xl shadow-xl border border-gray-300 p-6 text-center"
+      >
+        <div className="relative mx-auto w-20 h-20 bg-white shadow-lg 
+                        text-yellow-600 flex items-center justify-center 
+                        rounded-full border border-gray-300 text-2xl">
+          {item.icon}
+        </div>
+        <h4 className="mt-4 text-lg font-semibold h-16 text-gray-700">
+          {item.name}
+        </h4>
+        <p>{item.description}</p>
+        <a
+          href={item.link}
+          className="mt-12 md:mt-4 hover:text-yellow-400 inline-block 
+                     h-10 text-gray-700 font-semibold text-sm hover:underline"
+        >
+          Learn more
+        </a>
+      </div>
+    ))}
+  </motion.div>
+</div>
         </div>
       ))}
     </div>
