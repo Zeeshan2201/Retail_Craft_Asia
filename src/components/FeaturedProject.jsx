@@ -392,7 +392,10 @@ const ServicesSection = () => {
       </div>
 
       {services.map((service, index) => (
-        <div key={index} className="flex flex-col md:flex-row items-start justify-center md:mb-16 gap-10 w-full">
+        <div
+          key={index}
+          className="flex flex-col md:flex-row items-start justify-center md:mb-16 gap-10 w-full"
+        >
           {/* Left Heading */}
           <div className="w-full md:w-1/4 flex md:h-[50vh] justify-center items-center mb-8 md:mt-0 mt-12 md:mb-0">
             <h3 className="text-4xl font-semibold text-center text-yellow-600">
@@ -401,38 +404,45 @@ const ServicesSection = () => {
           </div>
 
           {/* Right Cards - 🔥 Motion Infinite Auto Scroll */}
-    <div className="w-full md:w-3/4 relative overflow-hidden">
-  <motion.div
-    className="flex"
-    animate={{ x: ["0%", "-50%"] }} // ✅ only scroll half (one set width)
-    transition={{ duration: 25, ease: "linear", repeat: Infinity }} // smooth infinite
-  >
-    {[...service.items, ...service.items].map((item, idx) => (
-      <div
-        key={idx}
-        className="flex-shrink-0 mx-5 md:w-64 w-72 md:h-[50vh] h-[40vh] 
-                   bg-white rounded-xl shadow-xl border border-gray-300 p-6 text-center"
-      >
-        <div className="relative mx-auto w-20 h-20 bg-white shadow-lg 
-                        text-yellow-600 flex items-center justify-center 
-                        rounded-full border border-gray-300 text-2xl">
-          {item.icon}
-        </div>
-        <h4 className="mt-4 text-lg font-semibold h-16 text-gray-700">
-          {item.name}
-        </h4>
-        <p>{item.description}</p>
-        <a
-          href={item.link}
-          className="mt-12 md:mt-4 hover:text-yellow-400 inline-block 
-                     h-10 text-gray-700 font-semibold text-sm hover:underline"
-        >
-          Learn more
-        </a>
-      </div>
-    ))}
-  </motion.div>
-</div>
+          <div className="w-full md:w-3/4 relative overflow-hidden">
+            <motion.div
+              className="flex"
+              animate={{ x: ["0%", "-50%"] }} // ✅ only scroll half (one set width)
+              transition={{ duration: 25, ease: "linear", repeat: Infinity }}
+            >
+              {[...service.items, ...service.items].map((item, idx) => (
+                <div
+                  key={idx}
+                  className="relative flex-shrink-0 mx-5 md:w-64 w-72 md:h-[50vh] h-[40vh]"
+                >
+                  {/* ✨ Gradient border wrapper */}
+                  <div className="relative w-full h-full rounded-xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 p-[2px]">
+                    {/* ✨ Actual card */}
+                    <div className="w-full h-full bg-white rounded-xl shadow-xl border border-gray-100 p-6 text-center">
+                      <div
+                        className="relative mx-auto w-20 h-20 bg-white shadow-lg 
+                                   text-yellow-600 flex items-center justify-center 
+                                   rounded-full border border-gray-300 text-2xl"
+                      >
+                        {item.icon}
+                      </div>
+                      <h4 className="mt-4 text-lg font-semibold h-16 text-gray-700">
+                        {item.name}
+                      </h4>
+                      <p>{item.description}</p>
+                      <a
+                        href={item.link}
+                        className="mt-12 md:mt-4 hover:text-yellow-400 inline-block 
+                                   h-10 text-gray-700 font-semibold text-sm hover:underline"
+                      >
+                        Learn more
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </motion.div>
+          </div>
         </div>
       ))}
     </div>
