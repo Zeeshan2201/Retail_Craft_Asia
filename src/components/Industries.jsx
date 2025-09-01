@@ -400,8 +400,8 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import Alchohol from "../assets/Industry/liquor.svg"
 import { motion, useInView, useAnimation } from "framer-motion";
+import PropTypes from "prop-types";
 
 // We'll use the same icons but import them dynamically in a real project
 // This is just a placeholder for the demo
@@ -530,6 +530,10 @@ const IconPlaceholder = ({ name }) => (
   </div>
 );
 
+IconPlaceholder.propTypes = {
+  name: PropTypes.string.isRequired,
+};
+
 const industries = [
   {
     title: "FMCG",
@@ -560,7 +564,7 @@ const industries = [
   }
 ];
 
-const IndustryCard = ({ title, description, index, isInView, direction }) => {
+const IndustryCard = ({ title, description, index, isInView }) => {
   const [isHovered, setIsHovered] = useState(false);
   const cardControls = useAnimation();
 
@@ -689,6 +693,13 @@ const IndustryCard = ({ title, description, index, isInView, direction }) => {
       />
     </motion.div>
   );
+};
+
+IndustryCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  index: PropTypes.number.isRequired,
+  isInView: PropTypes.bool.isRequired,
 };
 
 export default function AnimatedIndustriesGrid() {
