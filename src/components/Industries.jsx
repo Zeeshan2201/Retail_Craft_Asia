@@ -395,6 +395,8 @@
 //   )
 // }
 
+
+
 "use client";
 
 import { useRef, useEffect, useState } from "react";
@@ -563,133 +565,127 @@ const IndustryCard = ({ title, description, index, isInView, direction }) => {
   const cardControls = useAnimation();
 
   useEffect(() => {
+    const isLeftSide = index < industries.length / 2;
+
     if (isInView) {
       cardControls.start({
         x: 0,
         opacity: 1,
         transition: {
           type: "spring",
-          stiffness: 300,
-          damping: 24,
-          mass: 0.8,
+          stiffness: 120,
+          damping: 12,
+          mass: 0.9,
           delay: index * 0.1,
-          duration: 0.5,
         },
       });
     } else {
       cardControls.start({
-        x: direction === "entering" ? -100 : 100,
+        x: isLeftSide ? -200 : 200,
         opacity: 0,
         transition: {
-          type: "spring",
-          stiffness: 300,
-          damping: 24,
-          mass: 0.8,
-          delay: (industries.length - index - 1) * 0.05,
-          duration: 0.5,
+          type: "tween",
+          ease: "easeOut",
+          duration: 0.6,
         },
       });
     }
-  }, [isInView, index, cardControls, direction]);
+  }, [isInView, index, cardControls]);
 
   return (
     <motion.div
       initial={{ opacity: 0, x: -100 }}
       animate={cardControls}
       whileHover={{
-        scale: 1.05,
-        transition: { duration: 0.2 },
+        scale: 1.08,
+        transition: { duration: 0.3 },
       }}
-      className="relative md:w-[25vw] mb-12 w-full hover:bg-gradient-to-r from-[#f1ecd0] via-white to-white hover:shadow-lg hover:bg-yellow-20 hover:shadow-yellow-300 overflow-hidden rounded-2xl"
+      className="relative md:w-[25vw] mb-12 w-full overflow-hidden rounded-2xl"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
     >
+      {/* Golden gradient border wrapper */}
       <motion.div
-        className="bg-white shadow-xl rounded-2xl p-8 text-center border flex flex-col items-center h-full z-10 relative"
+        className="relative w-full h-full rounded-2xl p-[2px]"
         animate={{
+          background: isHovered
+            ? "linear-gradient(90deg, #FFD700, #FFA500, #FFD700)"
+            : "linear-gradient(90deg, #facc15, #eab308, #facc15)",
           boxShadow: isHovered
-            ? "0 20px 25px -5px rgba(245, 158, 11, 0.1), 0 10px 10px -5px rgba(245, 158, 11, 0.04)"
-            : "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+            ? "0 0 30px rgba(255, 215, 0, 0.6)"
+            : "0 0 0 rgba(0,0,0,0)",
         }}
+        transition={{ duration: 0.4 }}
       >
+        {/* Actual card */}
         <motion.div
-          className="bg-gradient-to-r from-yellow-50 to-white p-4 rounded-full w-28 h-28 flex items-center justify-center shadow-md mb-4"
+          className="bg-white shadow-xl rounded-2xl p-8 text-center border flex flex-col items-center h-full z-10 relative"
           animate={{
-            rotate: isHovered ? [0, 5, -5, 0] : 0,
-            scale: isHovered ? [1, 1.1, 1] : 1,
-          }}
-          transition={{
-            duration: 0.5,
-            ease: "easeInOut",
-            times: [0, 0.2, 0.5, 1],
+            boxShadow: isHovered
+              ? "0 25px 40px rgba(255, 200, 50, 0.5)"
+              : "0 10px 15px rgba(0,0,0,0.1)",
           }}
         >
-          <IconPlaceholder name={title} />
-        </motion.div>
-
-        <motion.h3
-          className="text-3xl font-semibold mt-2 text-yellow-600 tracking-wide"
-          animate={{
-            y: isHovered ? [0, -5, 0] : 0,
-            color: isHovered ? "#d97706" : "#ca8a04",
-          }}
-          transition={{ duration: 0.3 }}
-        >
-          {title}
-        </motion.h3>
-
-        <motion.div
-          className="h-1 w-12 bg-yellow-400 rounded-full my-3 mx-auto"
-          animate={{
-            width: isHovered ? 80 : 48,
-            backgroundColor: isHovered ? "#f59e0b" : "#facc15",
-          }}
-          transition={{ duration: 0.3 }}
-        />
-
-        <motion.p
-          className="text-black text-lg mt-2 leading-relaxed"
-          animate={{
-            opacity: isHovered ? 1 : 0.9,
-          }}
-        >
-          {description}
-        </motion.p>
-
-        {/* <motion.button
-          className="mt-4 text-yellow-600 font-medium flex items-center gap-1 opacity-0"
-          animate={{
-            opacity: isHovered ? 1 : 0,
-            y: isHovered ? 0 : 10,
-          }}
-          transition={{ duration: 0.3 }}
-        >
-          Learn more
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="w-4 h-4"
+          {/* Icon Circle */}
+          <motion.div
+            className="bg-gradient-to-r from-yellow-50 to-white p-4 rounded-full w-28 h-28 flex items-center justify-center shadow-md mb-4 border-2 border-yellow-500"
+            animate={{
+              rotate: isHovered ? [0, 8, -8, 0] : 0,
+              scale: isHovered ? [1, 1.15, 1] : 1,
+              boxShadow: isHovered
+                ? "0 0 20px rgba(255, 215, 0, 0.8)"
+                : "0 0 0 rgba(0,0,0,0)",
+            }}
+            transition={{
+              duration: 0.6,
+              ease: "easeInOut",
+              times: [0, 0.3, 0.6, 1],
+            }}
           >
-            <path d="M5 12h14"></path>
-            <path d="m12 5 7 7-7 7"></path>
-          </svg>
-        </motion.button> */}
+            <IconPlaceholder name={title} />
+          </motion.div>
+
+          {/* Title */}
+          <motion.h3
+            className="text-3xl font-semibold mt-2 text-yellow-600 tracking-wide"
+            animate={{
+              y: isHovered ? [0, -6, 0] : 0,
+              color: isHovered ? "#b45309" : "#ca8a04",
+            }}
+            transition={{ duration: 0.3 }}
+          >
+            {title}
+          </motion.h3>
+
+          {/* Underline */}
+          <motion.div
+            className="h-1 w-12 bg-yellow-400 rounded-full my-3 mx-auto"
+            animate={{
+              width: isHovered ? 90 : 48,
+              backgroundColor: isHovered ? "#fbbf24" : "#facc15",
+            }}
+            transition={{ duration: 0.3 }}
+          />
+
+          {/* Description */}
+          <motion.p
+            className="text-black text-lg mt-2 leading-relaxed"
+            animate={{
+              opacity: isHovered ? 1 : 0.9,
+            }}
+          >
+            {description}
+          </motion.p>
+        </motion.div>
       </motion.div>
 
-      {/* Background gradient animation */}
+      {/* Background soft gold glow */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-yellow-100 via-yellow-50 to-white opacity-0 z-0"
+        className="absolute inset-0 bg-gradient-to-br from-yellow-200 via-yellow-100 to-white opacity-0 z-0"
         animate={{
-          opacity: isHovered ? 0.8 : 0,
+          opacity: isHovered ? 0.4 : 0,
         }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.4 }}
       />
     </motion.div>
   );

@@ -208,92 +208,138 @@ const HeroSection = () => {
       {/* Hero Content with staggered animations */}
       <motion.div variants={container} initial="hidden" animate="show" className="max-w-4xl relative z-30">
         {/* Main heading with text coming from left */}
-        <motion.h1 variants={item} className="text-5xl text-white font-semibold md:text-6xl pb-6">
-          {/* Elevate Your Retail Strategy with */}
-          Transforming Retail Businesses Across 
 
-          <motion.span
-            className="font-bold text-yellow-600 mb-6 inline-block ml-2"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{
-              opacity: 1,
-              scale: 1,
-              transition: { delay: 1.2, duration: 0.5, ease: "easeOut" },
-            }}
-          >
-            {/* Retail Craft Asia */}
-            Asia
-          </motion.span>
-        </motion.h1>
+<motion.h1
+  variants={item}
+  initial={{ opacity: 0, scale: 0.9, y: 30 }}
+  animate={{ opacity: 1, scale: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }}
+className="uppercase tracking-wide text-3xl md:text-5xl font-extrabold 
+  bg-[linear-gradient(180deg,#FFD700_0%,#FFB700_30%,#E6A700_50%,#FFCC00_70%,#FFD700_100%)] 
+  bg-clip-text text-transparent 
+  drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] 
+  [text-shadow:0_1px_0_#B8860B,0_2px_2px_rgba(0,0,0,0.6)] 
+  text-center md:text-centre"
+>
+  Transforming Retail Businesses Across
 
-        {/* Subheading with text coming from left */}
-        <motion.p variants={item} className="font-semibold text-yellow-600 text-3xl mt-2">
-          Delivering Growth,
-          <motion.span
-            className="font-semibold text-yellow-600 text-3xl ml-2"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              transition: { delay: 1.4, duration: 0.5 },
-            }}
-          >
-             Consistently.
-          </motion.span>
-        </motion.p>
+
+
+
+
+  {/* Highlighted "Asia" with realistic effect */}
+  <motion.span
+    className="text-part right font-extrabold text-white ml-2 drop-shadow-[0_0_5px_rgba(255,223,0,0.8)]"
+    initial={{ x: "120%", opacity: 0, scale: 0.6, rotate: -10 }}
+    whileInView={{
+      x: 0,
+      opacity: 1,
+      scale: [0.8, 1.1, 1], // bounce effect
+      rotate: [0, 3, 0],    // small realistic tilt
+    }}
+    transition={{ delay: 0.3, duration: 1.2, ease: "easeOut" }}
+    viewport={{ once: false, amount: 0.3 }}
+  >
+    ASIA
+  </motion.span>
+</motion.h1>
+
+<motion.p
+  className="font-semibold text-yellow-600 text-3xl mt-2 flex justify-center items-center"
+  initial={{ opacity: 1 }}
+>
+  <motion.span
+    className="overflow-hidden whitespace-nowrap border-r-2 border-yellow-600 pr-1   [text-shadow:0_1px_0_#B8860B,0_2px_2px_rgba(0,0,0,0.6)] "
+    initial={{ width: 0 }}
+    animate={{ width: "30ch" }} // Full length for "Delivering Growth, Consistently."
+    transition={{
+      duration: 4,
+      ease: "linear",
+    }}
+  >
+    {"Delivering Growth, Consistently.".split("").map((char, index) => (
+      <motion.span
+        key={index}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: index * 0.12 }} // Adjust speed per character
+      >
+        {char}
+      </motion.span>
+    ))}
+  </motion.span>
+
+  {/* Blinking Cursor */}
+  {/* <motion.span
+    className="ml-1 text-yellow-600"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: [1, 0, 1] }}
+    transition={{ delay: 4, repeat: Infinity, duration: 0.7 }}
+  >
+    |
+  </motion.span> */}
+</motion.p>
 
         {/* Paragraph with text coming from left */}
-        <motion.p variants={item} className="mt-4 text-lg text-gray-300 md:text-xl">
+        <motion.p variants={item} className="mt-4 text-lg text-[#D18B00] md:text-xl   [text-shadow:0_1px_0_#B8860B,0_2px_2px_rgba(0,0,0,0.6)] ">
           Expert consulting services to transform your retail business with innovative solutions and insights.
         </motion.p>
 
         {/* Buttons with enhanced animations */}
         <motion.div variants={item} className="mt-6 flex justify-center gap-4">
           <Link to="/services">
-            <motion.button
-              whileHover={buttonHover}
-              whileTap={{ scale: 0.95 }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{
-                opacity: 1,
-                y: 0,
-                transition: { delay: 1.6, duration: 0.5 },
-              }}
-              className="px-6 mr-4 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-semibold rounded-3xl shadow-md flex items-center gap-2 hover:bg-[#A78A5D] transition "
-            >
-              <span>Get Started</span>
-              <motion.span
-                animate={{
-                  x: [0, 5, 0],
-                  transition: { duration: 1.5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-                }}
-              >
-                <FaArrowRight />
-              </motion.span>
-            </motion.button>
+<motion.button
+  whileHover={buttonHover}
+  whileTap={{ scale: 0.95 }}
+  initial={{ opacity: 0, y: 20 }}
+  animate={{
+    opacity: 1,
+    y: 0,
+    transition: { delay: 1.6, duration: 0.5 },
+  }}
+  className="px-6 mr-4 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-semibold rounded-3xl shadow-md flex items-center gap-2 transition-all duration-500 bg-[length:200%_auto] hover:bg-[position:right_center] hover:shadow-lg"
+>
+  <span>Get Started</span>
+  <motion.span
+    animate={{
+      x: [0, 5, 0],
+      transition: {
+        duration: 1.5,
+        repeat: Number.POSITIVE_INFINITY,
+        ease: "easeInOut",
+      },
+    }}
+  >
+    <FaArrowRight />
+  </motion.span>
+</motion.button>
           </Link>
           <Link to="/about">
             <motion.button
-              whileHover={buttonHover}
-              whileTap={{ scale: 0.95 }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{
-                opacity: 1,
-                y: 0,
-                transition: { delay: 1.8, duration: 0.5 },
-              }}
-              className="px-6 py-3 bg-gray-200 text-gray-900 font-semibold rounded-3xl shadow-md flex items-center gap-2 hover:bg-gray-300 transition"
-            >
-              <span>Learn More</span>
-              <motion.span
-                animate={{
-                  scale: [1, 1.2, 1],
-                  transition: { duration: 1.5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-                }}
-              >
-                <FaPlay />
-              </motion.span>
-            </motion.button>
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  initial={{ opacity: 0, y: 20 }}
+  animate={{
+    opacity: 0.8, // reduced opacity at rest
+    y: 0,
+    transition: { delay: 1.8, duration: 0.5 },
+  }}
+  className="px-6 py-3 bg-gray-200/80 text-gray-900 font-semibold rounded-3xl shadow-md flex items-center gap-2 border border-gray-600 hover:bg-gray-100 hover:opacity-100 hover:shadow-lg transition"
+>
+  <span>Learn More</span>
+  <motion.span
+    animate={{
+      scale: [1, 1.2, 1],
+      transition: {
+        duration: 1.5,
+        repeat: Number.POSITIVE_INFINITY,
+        ease: "easeInOut",
+      },
+    }}
+  >
+    <FaPlay />
+  </motion.span>
+</motion.button>
           </Link>
         </motion.div>
 
@@ -310,6 +356,8 @@ const HeroSection = () => {
           }}
         />
       </motion.div>
+      
+
     </section>
     </div>
   )

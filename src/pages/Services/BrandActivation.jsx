@@ -26,7 +26,24 @@ const BrandActivation = () => {
         url="https://retailcraftasia.com/services/brand-activation"
         structuredData={structuredData}
       />
-      
+      <style>
+          {`
+            @keyframes fadeSlideUp {
+              from {
+                opacity: 0;
+                transform: translateY(40px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+
+            main {
+              animation: fadeSlideUp 1s ease-out forwards;
+            }
+          `}
+        </style>
       <main>
         <SubServiceBrandActivation/>
       </main>

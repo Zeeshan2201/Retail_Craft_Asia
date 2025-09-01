@@ -14,7 +14,7 @@ export default function Hero() {
                 
                 </h2>
                 <p className="mt-4 text-lg text-gray-800 md:text-xl">
-                Expert consulting services to transform your retail business with innovative solutions and insights.
+                EXPERT CONSULTING SERVICES TO TRANSFORM YOUR RETAIL BUSINESS WITH INNOVATIVE SOLUTIONS AND INSIGHTS
                 </p>
         </div>
     </div>

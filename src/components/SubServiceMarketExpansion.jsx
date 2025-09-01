@@ -472,41 +472,92 @@ export default function ServicesPage() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center ">
-        <h1 className="text-4xl sm:text-5xl font-semibold  text-yellow-600 bg-clip-text text-transparent mt-7 ">Market <span className="text-black">Expansion </span>Services</h1>
-        <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-700">
+        <h1 className="hero-title text-4xl sm:text-5xl font-semibold mt-7 text-center leading-snug">
+  {"Market Expansion Services".split("").map((char, i) => (
+    <span
+      key={i}
+      className="letter"
+      style={{ animationDelay: `${i * 0.05}s` }}
+    >
+      {char === " " ? "\u00A0" : char}
+    </span>
+  ))}
+</h1>
+<p className="mt-6 max-w-3xl mx-auto text-lg text-gray-700">
           Expanding into new markets requires strategic planning and execution. We support brands with tailored market entry strategies, local partnerships, and distribution solutions.
         </p>
         <Link
-          to="/contact"bg-gradient-to-r from-yellow-400 to-yellow-600
-          className="mt-8 inline-block bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-8 py-3 rounded-3xl shadow-sm transition-all duration-300 hover:from-yellow-500 hover:to-yellow-700 hover:shadow-md"
-        >
-          Get in Touch →
-        </Link>
+  to="/contact"
+  className="mt-8 inline-block bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-8 py-3 rounded-3xl shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,215,0,0.7)]"
+>
+  Get in Touch →
+</Link>
       </section>
 
       {/* Services Section */}
       <section className="container mx-auto px-6 py-16 grid gap-12 md:grid-cols-2">
         {services.map((service, index) => (
           <div
-            key={index}
-            className="flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)]"
-          >
-            <div className="w-[13rem]">
-            <div className="w-48 h-48 mb-6 md:mb-0 flex items-center justify-center">
-              {service.icon}
-            </div>
-            </div>
-            <div className="md:ml-6">
-              <h2 className="text-2xl font-semibold text-black">{service.title}</h2>
-              <ul className="mt-2 text-gray-600">
-                {service.description.map((point, idx) => (
-                  <li key={idx} className="mt-1">• {point}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
+  key={index}
+  className="group flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)]"
+>
+  <div className="w-[13rem]">
+    <div className="w-48 h-48 mb-6 md:mb-0 flex items-center justify-center">
+      {service.icon}
+    </div>
+  </div>
+  <div className="md:ml-6">
+    <h2 className="text-2xl font-semibold text-black transition-all duration-300 group-hover:text-yellow-600 group-hover:drop-shadow-[0_0_8px_rgba(255,215,0,0.8)]">
+      {service.title}
+    </h2>
+    <ul className="mt-2 text-gray-600 transition-all duration-500 group-hover:translate-x-2 group-hover:text-gray-800">
+      {service.description.map((point, idx) => (
+        <li
+          key={idx}
+          className="mt-1 transition-opacity duration-500 group-hover:opacity-100 opacity-90"
+        >
+          • {point}
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
         ))}
       </section>
+
+     <style>
+{`
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .hero-title {
+    display: flex;              /* allow wrapping */
+    flex-wrap: wrap;            
+    justify-content: center;    /* center text */
+    line-height: 1.3;
+    gap: 2px;                   /* small spacing between letters */
+  }
+
+  .hero-title .letter {
+    display: inline-block;
+    opacity: 0;
+    background: linear-gradient(90deg, #facc15, #f59e0b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideInRight 0.4s ease-out forwards;
+  }
+`}
+</style>
+
     </main>
   );
 }

@@ -3,10 +3,16 @@ import { useState } from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { MdPhone } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
+
 const Card = ({ children, className, onClick }) => {
   return (
-    <div onClick={onClick} className={`bg-white p-12 rounded-2xl shadow-lg transition-all duration-300 ease-in-out 
-        hover:scale-105 hover:shadow-2xl  hover:shadow-yellow-300/80 w-80 h-52 cursor-pointer transform ${className}`}>
+    <div
+      onClick={onClick}
+      className={`bg-white p-12 rounded-2xl shadow-lg border-2 border-yellow-500/70 
+        transition-all duration-300 ease-in-out 
+        hover:scale-105 hover:shadow-2xl hover:shadow-yellow-400/90 
+        hover:border-yellow-400 w-80 h-52 cursor-pointer transform ${className}`}
+    >
       {children}
     </div>
   );
@@ -25,249 +31,222 @@ const ContactCards = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   const url = 'https://script.google.com/macros/s/AKfycbycQUoonVYOeiLDTw50GLzQubZQDJyK-iQE_MXzR4OS60HAO9JGUKgNXDmUPO5CUjon/exec'; // Replace with your Web App URL
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setFormData({});
+    setModalOpen(false);
+    alert("Contact data successfully sent");
+    try {
+      await fetch("https://script.google.com/macros/s/AKfycbwYliAL6T8echuR0Lg4zboqEaV0uw8Crr6q7NvmTxcrbvhSpshoV3hblfFFDfWXzIem4A/exec", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        mode: "no-cors",
+        body: JSON.stringify({ type: "contact", ...formData }),
+      });
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
 
-  //   try {
-  //     const response = await fetch(url, {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       mode: "no-cors",
-  //       body: JSON.stringify(formData),
-  //     });
-
-  //     if (response.ok) {
-  //       console.log('Data successfully sent to Google Sheets');
-  //       setModalOpen(false);
-  //     } else {
-  //       console.error('Failed to send data to Google Sheets');
-  //     }
-  //   } catch (error) {
-  //     console.log('Error:', error);
-  //     console.error('Error:', error);
-  //   }
-  // };
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     const response = await fetch("https://script.google.com/macros/s/AKfycbycQUoonVYOeiLDTw50GLzQubZQDJyK-iQE_MXzR4OS60HAO9JGUKgNXDmUPO5CUjon/exec", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       mode: "no-cors",
-  //       body: JSON.stringify(formData),
-  //       // body: JSON.stringify(formData),
-  //     });
-  // // console.log("formData"+formData)
-  //     const result = await response.json(); // ✅ Parse JSON properly
- 
-  //     if (result.success) {
-  //       console.log('Data successfully sent to Google Sheets');
-  //       setModalOpen(false); // ✅ Ensure this is called correctly
-  //     } else {
-  //       console.log('Failed to send data:', result.message);
-  //     }
-  //   } catch (error) {
-  //     console.log('Error:', error);
-  //   }
-  // };
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     setModalOpen(false); // Close modal after submitting
-//     try {
-//         const response = await fetch("https://script.google.com/macros/s/AKfycbycQUoonVYOeiLDTw50GLzQubZQDJyK-iQE_MXzR4OS60HAO9JGUKgNXDmUPO5CUjon/exec", {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json",
-//             },
-//             mode: "no-cors",
-//             body: JSON.stringify(formData),
-//         });
-
-//         console.log("Data successfully sent to Google Sheets");
-//         setModalOpen(false); // Close modal after submitting
-//         setFormData({})
-//         alert("Data successfully sent to Google Sheets")
-//     } catch (error) {
-//         console.error("Error:", error);
-//     }
-// };
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setFormData({});
-  setModalOpen(false);
-  alert("Contact data successfully sent");
-  try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbwYliAL6T8echuR0Lg4zboqEaV0uw8Crr6q7NvmTxcrbvhSpshoV3hblfFFDfWXzIem4A/exec", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      mode: "no-cors",
-      body: JSON.stringify({ 
-        type: "contact", 
-        ...formData 
-      }),
-    });
-    
-  } catch (error) {
-    console.error("Error:", error);
-  }
-};
-
-  
   return (
-    <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6  bg-gray-50 ">
-      <div className="text-center mb-10 mt-20 ">
-        <h2 className=" text-3xl uppercase font-semibold text-black sm:text-5xl ">How can <span className='text-yellow-600' > Retail Craft Asia </span> customer support help you today?</h2>
-        <p className="text-black mt-5 text-lg sm:text-2xl">Our friendly customer support team is ready & excited to help with any issue!</p>
-      </div>
+    <div className="relative px-4 sm:px-16 md:px-32 flex flex-col items-center p-6 bg-gray-50">
       
-      <div className='sm:mt-5 mb-5 text-black text-xl sm:text-4xl text-center'>Looking for answers? Try one of these helpful resources:</div>
-       
-      <div className=" sm:flex grid grid-cols-1 ml-10 gap-4 sm:ml-0 justify-evenly mt-8 w-full">
-        {['Get Appointment', 'Email-Support',].map((title, index) => (
+      {/* Heading */}
+      <div className="text-center mb-10 mt-20">
+        <h2
+  className="uppercase tracking-wide text-3xl md:text-5xl font-extrabold 
+    bg-[linear-gradient(180deg,#FFD700_0%,#FFB700_30%,#E6A700_50%,#FFCC00_70%,#FFD700_100%)] 
+    bg-clip-text text-transparent  
+    [text-shadow:0_1px_0_#B8860B,0_2px_2px_rgba(0,0,0,0.6)] 
+    text-center"
+>
+  How can <span>Retail Craft Asia</span> customer support help you today?
+</h2>
+
+
+        <p className="mt-5 text-lg sm:text-2xl font-medium 
+          bg-gradient-to-r from-gray-600 via-gray-800 to-black 
+          bg-clip-text text-transparent">
+          Our friendly customer support team is ready & excited to help with any issue!
+        </p>
+      </div>
+
+      {/* Sub-heading */}
+      <div className="sm:mt-5 mb-5 text-xl sm:text-4xl text-center font-semibold text-gray-800">
+        Looking for answers? Try one of these helpful resources:
+      </div>
+
+      {/* Cards Section */}
+      <div className="sm:flex grid grid-cols-1 ml-10 gap-6 sm:ml-0 justify-evenly mt-8 w-full">
+        {['Get Appointment', 'Email-Support'].map((title, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
-            <Card onClick={
-  title === 'Email-Support' 
-    ? () => window.location.href = 'mailto:support@retailcraftasia.com' 
-    : title === 'Get Appointment' 
-      ? () => setModalOpen(true) 
-      : title === 'FAQ' 
-        ? () => window.location.href = '/faq'  // Redirects to FAQ page
-        : null
-}
->
-              <CardContent >
-                {title}
-                <DotLottieReact src={
-                  title === 'Get Appointment' ? 'https://lottie.host/05bf2555-c89c-4afa-8974-b5a3d97d526c/daBQ9OoO2E.lottie' :
-                  title === 'Email-Support' ? 'https://lottie.host/11c0114e-b2b4-4794-a2d4-6e688785eb65/KYjy04r72v.lottie' :
-                  'https://lottie.host/e3eb1d70-ffaf-4934-b4da-cacf984d30fc/DfHEcHfJhI.lottie'
-                } loop autoplay />
+            <Card
+              onClick={
+                title === 'Email-Support'
+                  ? () => (window.location.href = 'mailto:support@retailcraftasia.com')
+                  : title === 'Get Appointment'
+                  ? () => setModalOpen(true)
+                  : null
+              }
+            >
+              <CardContent>
+                <span className="text-yellow-600 text-xl">{title}</span>
+                <DotLottieReact
+                  src={
+                    title === 'Get Appointment'
+                      ? 'https://lottie.host/05bf2555-c89c-4afa-8974-b5a3d97d526c/daBQ9OoO2E.lottie'
+                      : 'https://lottie.host/11c0114e-b2b4-4794-a2d4-6e688785eb65/KYjy04r72v.lottie'
+                  }
+                  loop
+                  autoplay
+                />
               </CardContent>
             </Card>
           </motion.div>
         ))}
       </div>
 
-      <div className="text-center mt-10 bg-white p-6 rounded-4xl shadow-lg   hover:shadow-yellow-300/80 rounded-xl">
-        <h3 className="text-3xl sm:text-4xl font-semibold text-gray-800">Contact Us</h3>
-        <p className="mt-4 text-base sm:text-xl text-gray-600">Office-Address: 65,42 Tower Building, Room No 1107, Sukhumvit 42 Road,<br/> Phra Khanong Sub-district, Khlong Toei District, Bangkok, Thailand - 10110</p>
+      {/* Contact Us Box */}
+      <div className="text-center mt-10 bg-white p-6 rounded-2xl shadow-lg hover:shadow-yellow-300/80">
+        <h3
+          className="text-3xl sm:text-4xl font-bold 
+          bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-700 
+          bg-clip-text text-transparent drop-shadow-md"
+        >
+          Contact Us
+        </h3>
+        <p className="mt-4 text-base sm:text-xl text-gray-700">
+          Office-Address: 65,42 Tower Building, Room No 1107, Sukhumvit 42 Road,<br />
+          Phra Khanong Sub-district, Khlong Toei District, Bangkok, Thailand - 10110
+        </p>
       </div>
-      
-      <div className="text-center mt-10 mb-10">
-  <h3 className="text-3xl sm:text-4xl font-semibold">Need More Help?</h3>
-  <p className="mt-4 ">
-    Call us at <br />
-    <a
-      href="tel:+66935795729"
-      className="text-black font-semibold hover:underline inline-flex items-center gap-2 justify-center mt-2"
-    >
-      <MdPhone className=" text-xl" />
-      +66935795729
-    </a>
-  </p>
-  <div className="mt-4">
-    <a
-      href="https://wa.me/66935795729"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 justify-center text-black font-semibold hover:underline"
-    >
-      <FaWhatsapp className="text-2xl text-green-600 "/>
-      +66935795729
-    </a>
-  </div>
 
-        <p className="mt-2">Support Hours: Mon-Fri, 9 AM - 6 PM</p>
-        {/* <p>We usually respond within <strong>4-8 hours</strong>.</p> */}
+      {/* More Help Section */}
+      <div className="text-center mt-10 mb-10">
+  <h3
+  className="text-3xl sm:text-4xl font-bold 
+  bg-gradient-to-r from-yellow-600 via-orange-500 to-red-500 
+  bg-clip-text text-transparent drop-shadow-md"
+>
+  Need More Help?
+</h3>
+
+        <p className="mt-4 ">
+          Call us at <br />
+          <a
+            href="tel:+66935795729"
+            className="text-black font-semibold hover:underline inline-flex items-center gap-2 justify-center mt-2"
+          >
+            <MdPhone className=" text-xl" />
+            +66935795729
+          </a>
+        </p>
+        <div className="mt-4">
+          <a
+            href="https://wa.me/66935795729"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 justify-center text-black font-semibold hover:underline"
+          >
+            <FaWhatsapp className="text-2xl text-green-600 " />
+            +66935795729
+          </a>
+        </div>
+
+        <p className="mt-2 text-gray-700">Support Hours: Mon-Fri, 9 AM - 6 PM</p>
       </div>
-      
+
+      {/* Map Section */}
       <div className="flex justify-center h-full w-full items-center min-h-screen bg-gray-100 p-4">
-      <div className="w-full max-w-4xl bg-white p-6 rounded-2xl shadow-lg">
-        <h2 className="text-2xl font-semibold text-center mb-4">Our Location</h2>
-        <div className="relative w-full h-96 rounded-lg overflow-hidden">
-          <iframe
-            className="absolute top-0 left-0 w-full h-full border-0"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.0502737775205!2d100.58196407379315!3d13.715404986672683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fa4a1c8ce91%3A0x359e3f04c5542c4a!2s42%20Tower!5e0!3m2!1sen!2sin!4v1742896801818!5m2!1sen!2sin"
-            // width="400"
-            // height="400"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div className="w-full max-w-4xl bg-white p-6 rounded-2xl shadow-lg">
+          <h2 className="text-2xl font-semibold text-center mb-4">Our Location</h2>
+          <div className="relative w-full h-96 rounded-lg overflow-hidden">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full border-0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.0502737775205!2d100.58196407379315!3d13.715404986672683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fa4a1c8ce91%3A0x359e3f04c5542c4a!2s42%20Tower!5e0!3m2!1sen!2sin!4v1742896801818!5m2!1sen!2sin"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
-    </div>
 
+      {/* Appointment Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-          <motion.div 
+          <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             exit={{ scale: 0 }}
             transition={{ duration: 0.3 }}
-            className="bg-white p-8 rounded-lg shadow-lg  w-96"
+            className="bg-white p-8 rounded-lg shadow-lg w-96"
           >
             <h2 className="text-2xl font-semibold mb-4">Schedule a Call</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label className="block text-sm font-semibold mb-2">Name</label>
-                <input 
-                  type="text" 
-                  name="name" 
-                  value={formData.name} 
-                  onChange={handleChange} 
-                  required 
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
                   className="w-full p-2 border border-gray-300 rounded-lg"
                 />
               </div>
               <div className="mb-4">
                 <label className="block text-sm font-semibold mb-2">Phone Number</label>
-                <input 
-                  type="tel" 
-                  name="phone" 
-                  value={formData.phone} 
-                  onChange={handleChange} 
-                  required 
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
                   className="w-full p-2 border border-gray-300 rounded-lg"
                 />
               </div>
               <div className="mb-4">
                 <label className="block text-sm font-semibold mb-2">Email</label>
-                <input 
-                  type="email" 
-                  name="email" 
-                  value={formData.email} 
-                  onChange={handleChange} 
-                  required 
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
                   className="w-full p-2 border border-gray-300 rounded-lg"
                 />
               </div>
               <label className="block text-sm font-semibold mb-2">Schedule Time</label>
-<input 
-  type="time" 
-  name="scheduleTime" 
-  value={formData.scheduleTime} 
-  onChange={handleChange} 
-  required 
-  className="w-full p-2 border border-gray-300 rounded-lg"
-/>
+              <input
+                type="time"
+                name="scheduleTime"
+                value={formData.scheduleTime}
+                onChange={handleChange}
+                required
+                className="w-full p-2 border border-gray-300 rounded-lg"
+              />
 
               <div className="flex mt-4 justify-end">
-                <button type="button" className="bg-gray-300 text-black px-4 py-2 mr-2 hover:bg-gray-400" onClick={() => setModalOpen(false)}>Cancel</button>
-                <button type="submit" className="bg-blue-500 text-white px-4 py-2 hover:bg-blue-600">Submit</button>
+                <button
+                  type="button"
+                  className="bg-gray-300 text-black px-4 py-2 mr-2 hover:bg-gray-400"
+                  onClick={() => setModalOpen(false)}
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="bg-blue-500 text-white px-4 py-2 hover:bg-blue-600"
+                >
+                  Submit
+                </button>
               </div>
             </form>
           </motion.div>
