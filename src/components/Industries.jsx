@@ -565,7 +565,7 @@ const IndustryCard = ({ title, description, index, isInView, direction }) => {
   const cardControls = useAnimation();
 
   useEffect(() => {
-    const isLeftSide = index < industries.length / 2;
+    const isLeftSide = index < industries.length / 2; // first half → left, second half → right
 
     if (isInView) {
       cardControls.start({
@@ -576,12 +576,12 @@ const IndustryCard = ({ title, description, index, isInView, direction }) => {
           stiffness: 120,
           damping: 12,
           mass: 0.9,
-          delay: index * 0.1,
+          delay: index * 0.1, // stagger
         },
       });
     } else {
       cardControls.start({
-        x: isLeftSide ? -200 : 200,
+        x: isLeftSide ? -200 : 200, // left side cards start from left, right side from right
         opacity: 0,
         transition: {
           type: "tween",

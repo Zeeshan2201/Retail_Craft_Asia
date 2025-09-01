@@ -85,6 +85,163 @@ const ServicesSection = () => {
   const rotateLeft = () => setAngle((prev) => prev + 72);
   const rotateRight = () => setAngle((prev) => prev - 72);
 
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
+      },
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        staggerChildren: 0.1,
+        staggerDirection: -1,
+      },
+    },
+  }
+
+  // First row cards come from left
+  const firstRowCardVariants = {
+    hidden: { x: -100, opacity: 0 },
+    visible: (i) => ({
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 80,
+        damping: 12,
+        delay: i * 0.1,
+      },
+    }),
+    exit: (i) => ({
+      x: -100,
+      opacity: 0,
+      transition: {
+        type: "spring",
+        stiffness: 80,
+        damping: 12,
+        delay: i * 0.05,
+      },
+    }),
+  }
+
+  // Second row cards come from right
+  const secondRowCardVariants = {
+    hidden: { x: 100, opacity: 0 },
+    visible: (i) => ({
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 80,
+        damping: 12,
+        delay: i * 0.1 + 0.3,
+      },
+    }),
+    exit: (i) => ({
+      x: 100,
+      opacity: 0,
+      transition: {
+        type: "spring",
+        stiffness: 80,
+        damping: 12,
+        delay: i * 0.05,
+      },
+    }),
+  }
+
+  const iconVariants = {
+    hidden: { scale: 0, rotate: -180 },
+    visible: {
+      scale: 1,
+      rotate: 0,
+      transition: {
+        type: "spring",
+        stiffness: 200,
+        damping: 15,
+        delay: 0.2,
+      },
+    },
+    exit: {
+      scale: 0,
+      rotate: 180,
+      transition: {
+        type: "spring",
+        stiffness: 200,
+        damping: 15,
+      },
+    },
+  }
+
+  const textVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 12,
+        delay: 0.4,
+      },
+    },
+    exit: {
+      y: -20,
+      opacity: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 12,
+      },
+    },
+  }
+
+  const listItemVariants = {
+    hidden: { opacity: 0, y: 20 }, // Increased vertical starting position
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.2, // Increased delay to make the stagger more prominent
+        duration: 0.5, // Slightly longer duration for a smoother feel
+        ease: "easeOut",
+      },
+    }),
+    exit: (i) => ({
+      opacity: 0,
+      y: -20,
+      transition: {
+        delay: i * 0.05,
+        duration: 0.2,
+      },
+    }),
+  };
+
+  const titleVariants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 15,
+        delay: 0.1,
+      },
+    },
+    exit: {
+      opacity: 0,
+      y: -30,
+      transition: {
+        duration: 0.3,
+      },
+    },
+  }
+
   return (
     <div className="w-full flex flex-col items-center justify-center bg-white text-gray-800 py-16 px-4">
       {/* Heading */}
