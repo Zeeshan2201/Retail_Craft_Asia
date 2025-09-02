@@ -63,25 +63,36 @@ const Home = () => {
       <JsonLd data={websiteSchema} />
       <JsonLd data={localBusinessSchema} />
       
-      <div className='bg-gray-50'>
-        <HomeHero />
+      <div className='bg-gray-50 min-h-screen'>
+        <div className="w-full">
+          <HomeHero />
+        </div>
         {/* <AnimatedGrid/> */}
         {/* <HomeHeroNew/> */}
-        <Home_2/>
-        <Home_Service/>
+        <div className="w-full">
+          <Home_2/>
+        </div>
+        <div className="w-full">
+          <Home_Service/>
+        </div>
         
-        <Industries />
+        <div className="w-full">
+          <Industries />
+        </div>
         {/* <fmgh/> */}
        
-       
-       <WhyChooseUs/>
+       <div className="w-full">
+         <WhyChooseUs/>
+       </div>
        {/* <WhyChooseUsNew/> */}
-       <div className="">
+       <div className="w-full">
           {/* services */}
        
        </div>
         {/* <ManagementTeam /> */}
-        <MangTeam includeHelmet={false} />
+        <div className="w-full">
+          <MangTeam includeHelmet={false} />
+        </div>
         
         {/* <ProductShowcase></ProductShowcase> */}
         {/* <ServicesSlider></ServicesSlider> */}

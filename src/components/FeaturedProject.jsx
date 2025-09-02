@@ -80,13 +80,13 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <div className="relative min-h-screen w-full py-24 px-8 md:px-20 lg:px-36">
+    <div className="relative min-h-screen w-full py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-36">
       {/* Floating Backgrounds */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(10)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute rounded-full bg-yellow-200 opacity-20"
+            className="absolute rounded-full bg-yellow-200 opacity-10 sm:opacity-15 md:opacity-20"
             style={{
               width: Math.random() * 100 + 50,
               height: Math.random() * 100 + 50,
@@ -110,46 +110,48 @@ const ServicesSection = () => {
       {services.map((service, index) => (
         <div
           key={index}
-          className="flex flex-col md:flex-row items-start justify-center md:mb-16 gap-10 w-full"
+          className="flex flex-col lg:flex-row items-start justify-center mb-12 sm:mb-14 md:mb-16 lg:mb-20 gap-6 sm:gap-8 md:gap-10 lg:gap-12 w-full"
         >
           {/* Left Heading */}
-          <div className="w-full md:w-1/4 flex md:h-[50vh] justify-center items-center mb-8 md:mt-0 mt-12 md:mb-0">
-            <h3 className="text-4xl font-semibold text-center text-yellow-600">
+          <div className="w-full lg:w-1/4 flex lg:h-[50vh] justify-center items-center mb-6 sm:mb-8 lg:mb-0 mt-8 sm:mt-10 md:mt-12 lg:mt-0">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-semibold text-center text-yellow-600 leading-tight">
               {service.category}
             </h3>
           </div>
 
           {/* Right Cards - 🔥 Motion Infinite Auto Scroll */}
-          <div className="w-full md:w-3/4 relative overflow-hidden">
+          <div className="w-full lg:w-3/4 relative overflow-hidden">
             <motion.div
               className="flex"
               animate={{ x: ["0%", "-50%"] }} 
-              transition={{ duration: 25, ease: "linear", repeat: Infinity }}
+              transition={{ duration: 15, ease: "linear", repeat: Infinity }}
             >
               {[...service.items, ...service.items].map((item, idx) => (
                 <div
                   key={idx}
-                  className="relative flex-shrink-0 mx-5 md:w-64 w-72 md:h-[50vh] h-[40vh]"
+                  className="relative flex-shrink-0 mx-2 sm:mx-3 md:mx-4 lg:mx-5 w-64 sm:w-72 md:w-80 lg:w-64 xl:w-72 h-[35vh] sm:h-[40vh] md:h-[45vh] lg:h-[50vh]"
                 >
                   {/* ✨ Gradient border wrapper */}
-                  <div className="relative w-full h-full rounded-xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 p-[2px]">
+                  <div className="relative w-full h-full rounded-lg sm:rounded-xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 p-[1.5px] sm:p-[2px]">
                     {/* ✨ Actual card */}
-                    <div className="w-full h-full bg-white rounded-xl shadow-xl border border-gray-100 p-6 text-center">
-                      <div
-                        className="relative mx-auto w-20 h-20 bg-white shadow-lg 
-                                   text-yellow-600 flex items-center justify-center 
-                                   rounded-full border border-gray-300 text-2xl"
-                      >
-                        {item.icon}
+                    <div className="w-full h-full bg-white rounded-lg sm:rounded-xl shadow-lg sm:shadow-xl border border-gray-100 p-4 sm:p-5 md:p-6 text-center flex flex-col justify-between">
+                      <div>
+                        <div
+                          className="relative mx-auto w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-white shadow-md sm:shadow-lg 
+                                     text-yellow-600 flex items-center justify-center 
+                                     rounded-full border border-gray-300 text-xl sm:text-2xl"
+                        >
+                          {item.icon}
+                        </div>
+                        <h4 className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl font-semibold text-gray-700 leading-tight min-h-[3rem] sm:min-h-[4rem] flex items-center justify-center">
+                          {item.name}
+                        </h4>
+                        <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed px-1 sm:px-2">{item.description}</p>
                       </div>
-                      <h4 className="mt-4 text-lg font-semibold h-16 text-gray-700">
-                        {item.name}
-                      </h4>
-                      <p>{item.description}</p>
                       <a
                         href={item.link}
-                        className="mt-12 md:mt-4 hover:text-yellow-400 inline-block 
-                                   h-10 text-gray-700 font-semibold text-sm hover:underline"
+                        className="mt-4 sm:mt-6 md:mt-8 lg:mt-4 hover:text-yellow-400 inline-block 
+                                   text-gray-700 font-semibold text-xs sm:text-sm md:text-base hover:underline transition-colors duration-200"
                       >
                         Learn more
                       </a>

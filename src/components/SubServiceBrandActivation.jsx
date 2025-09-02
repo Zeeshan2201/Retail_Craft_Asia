@@ -535,48 +535,60 @@ export default function ServicesPage() {
       <BackgroundAnimation />
 
       {/* Hero Section */}
-      <section className="container mx-auto px-6 py-20 text-center ">
-        <h1 className="hero-title text-4xl sm:text-5xl font-semibold mt-7 text-center leading-snug">
-  {"Brand Activation & Experiential Marketing".split("").map((char, i) => (
-    <span
-      key={i}
-      className="letter"
-      style={{ animationDelay: `${i * 0.05}s` }}
-    >
-      {char === " " ? "\u00A0" : char}
+      <section className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-6 py-12 sm:py-16 md:py-20 text-center">
+        <h1 className="hero-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mt-4 sm:mt-6 md:mt-7 text-center leading-snug text-balance break-normal !break-normal hyphens-none whitespace-normal lg:whitespace-nowrap [word-break:keep-all] [overflow-wrap:normal]">
+  {"Brand Activation & Experiential Marketing".split(" ").map((word, wordIndex) => (
+    <span key={wordIndex} className="inline-block break-keep hyphens-none">
+      {word.split("").map((char, charIndex) => (
+        <span
+          key={`${wordIndex}-${charIndex}`}
+          className="letter"
+          style={{ animationDelay: `${(wordIndex * word.length + charIndex) * 0.05}s` }}
+        >
+          {char}
+        </span>
+      ))}
+      {wordIndex < "Brand Activation & Experiential Marketing".split(" ").length - 1 && (
+        <span
+          className="letter"
+          style={{ animationDelay: `${(wordIndex * word.length + word.length) * 0.05}s` }}
+        >
+          {"\u00A0"}
+        </span>
+      )}
     </span>
   ))}
 </h1>
         
        
-        <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-700">
+        <p className="mt-4 sm:mt-5 md:mt-6 max-w-xl sm:max-w-2xl md:max-w-3xl mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 px-4 sm:px-0">
           We create immersive brand experiences that engage consumers and leave
           a lasting impression through interactive campaigns and live events.
         </p>
 
         <Link
   to="/contact"
-  className="mt-8 inline-block bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-8 py-3 rounded-3xl shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,215,0,0.7)]"
+  className="mt-6 sm:mt-7 md:mt-8 inline-block bg-gradient-to-r from-yellow-400 to-yellow-600 text-black px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-3xl shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,215,0,0.7)] text-sm sm:text-base md:text-lg"
 >
   Get in Touch →
 </Link>
       </section>
 
       {/* Services Section */}
-      <section className="container mx-auto px-6 py-16 grid gap-8 md:grid-cols-2">
+      <section className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-6 py-8 sm:py-12 md:py-16 grid gap-6 sm:gap-8 md:gap-10 lg:gap-12 grid-cols-1 md:grid-cols-2">
         {services.map((service, index) => (
           <div
   key={index}
-  className="group flex flex-col items-center text-center md:text-left md:flex-row bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)]"
+  className="group flex flex-col items-center text-center md:text-left md:flex-row bg-white p-4 sm:p-5 md:p-6 lg:p-7 rounded-lg shadow-md border-t-4 border-yellow-500 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_4px_30px_rgba(255,215,0,0.5)]"
 >
-  <div className="w-48 h-48 flex justify-center items-center mr-6">
+  <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 flex justify-center items-center mb-4 sm:mb-5 md:mb-6 md:mb-0 md:mr-4 lg:mr-6 flex-shrink-0">
     {service.icon}
   </div>
-  <div>
-    <h2 className="text-2xl font-semibold text-black mb-3 transition-all duration-300 group-hover:text-yellow-600 group-hover:drop-shadow-[0_0_8px_rgba(255,215,0,0.8)]">
+  <div className="w-full md:w-auto">
+    <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-black mb-2 sm:mb-3 transition-all duration-300 group-hover:text-yellow-600 group-hover:drop-shadow-[0_0_8px_rgba(255,215,0,0.8)] leading-tight">
       {service.title}
     </h2>
-    <ul className="text-gray-600 mt-2 transition-all duration-500 group-hover:translate-x-2 group-hover:text-gray-800">
+    <ul className="text-sm sm:text-base md:text-base text-gray-600 mt-2 sm:mt-3 transition-all duration-500 group-hover:translate-x-2 group-hover:text-gray-800 space-y-1">
       {service.description.map((point, idx) => (
         <li
           key={idx}

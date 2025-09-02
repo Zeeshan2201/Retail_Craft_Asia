@@ -140,13 +140,13 @@ const About = () => {
       />
 
       {/* WHO WE ARE */}
-      <div className="foundation-principles-container bg-gradient-to-b from-gray-50 via-yellow-50/50 to-gray-50 ">
-        <div className="text-center font-semibold sm:mt-20 mb-5 pt-20 px-5">
+      <div className="foundation-principles-container bg-gradient-to-b from-gray-50 via-yellow-50/50 to-gray-50">
+        <div className="text-center font-semibold sm:mt-20 mb-5 pt-12 sm:pt-16 md:pt-20 px-4 sm:px-6 md:px-8 lg:px-5">
           <motion.h1
-            className="text-4xl sm:text-6xl font-semibold mt-5"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mt-3 sm:mt-4 md:mt-5 leading-tight"
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
+            transition={{ duration: window.innerWidth < 768 ? 0.8 : 1.5, ease: "easeOut" }}
           >
             <span className="text-yellow-600">
               We Are Your Strategic Partner For <br />
@@ -157,31 +157,31 @@ const About = () => {
           </motion.h1>
 
           <motion.p
-            className="text-base sm:text-lg text-gray-700 mt-6 max-w-4xl mx-auto"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mt-4 sm:mt-5 md:mt-6 max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto px-2 sm:px-0 leading-relaxed"
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
+            transition={{ duration: window.innerWidth < 768 ? 0.6 : 1.5, delay: window.innerWidth < 768 ? 0.2 : 0.5, ease: "easeOut" }}
           >
 
            At Retail Craft Asia, we are more than just service providers—we are your strategic partners in business growth and brand transformation. With deep expertise, competency and industry knowledge we help you expand your market reach, optimize supply chains, enhance brand visibility, and drive consumer engagement.
           </motion.p>
 
           <motion.p
-            className="text-base sm:text-lg text-gray-700 mt-6 max-w-4xl mx-auto"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 mt-4 sm:mt-5 md:mt-6 max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto px-2 sm:px-0 leading-relaxed"
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, delay: 1, ease: "easeOut" }}
+            transition={{ duration: window.innerWidth < 768 ? 0.7 : 1.5, delay: window.innerWidth < 768 ? 0.4 : 1, ease: "easeOut" }}
           >
             Our team of industry experts works closely with brands to understand their unique challenges and craft tailored strategies for success. Whether you are looking to break into new markets, refine your branding, or streamline your operations, we provide the insights and execution needed to achieve sustainable profitable growth.
           </motion.p>
         </div>
 
-        <div className="w-full py-20 bg-transparent relative flex flex-col items-center text-center px-5">
+        <div className="w-full py-12 sm:py-16 md:py-20 bg-transparent relative flex flex-col items-center text-center px-4 sm:px-6 md:px-8 lg:px-5">
           <motion.h2
-            className="text-4xl sm:text-5xl font-semibold max-w-3xl mx-auto mt-12 text-yellow-600"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto mt-8 sm:mt-10 md:mt-12 text-yellow-600 leading-tight"
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, delay: 1, ease: "easeOut" }}
+            transition={{ duration: window.innerWidth < 768 ? 0.7 : 1.5, delay: window.innerWidth < 768 ? 0.3 : 1, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.6 }}
           >
             Our expertise helps businesses build meaningful connections that drive
@@ -189,12 +189,12 @@ const About = () => {
           </motion.h2>
 
           {/* User Image with Glow */}
-<div className="relative mt-20">
+<div className="relative mt-12 sm:mt-16 md:mt-20">
   <motion.div
-  className="w-52 h-52 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative z-10"
+  className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-2 sm:border-4 border-white shadow-xl sm:shadow-2xl mx-auto relative z-10"
   initial={{ opacity: 0, scale: 0.8, y: 50 }}
   whileInView={{ opacity: 1, scale: 1, y: 0 }}
-  transition={{ duration: 1.5, ease: "easeOut" }}
+  transition={{ duration: window.innerWidth < 768 ? 0.8 : 1.5, ease: "easeOut" }}
   viewport={{ once: false, amount: 0.5 }}
 >
   <img

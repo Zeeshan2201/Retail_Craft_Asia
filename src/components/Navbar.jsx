@@ -19,39 +19,59 @@ const MainNav = () => {
 
   return (
     <>
-      <header className="fixed left-0 right-0 top-0 z-50 flex h-20 items-center bg-white px-6 md:px-12 shadow-lg">
-        <div className="flex flex-1 items-center justify-between w-full">          <Link to="/" className="shrink-0" aria-label="Retail Craft Asia Home">
-            <img className='h-16' src="/logo.png" alt="Retail Craft Asia Logo" />
+      <header className="fixed left-0 right-0 top-0 z-50 flex h-16 md:h-20 items-center bg-white px-4 sm:px-6 md:px-8 lg:px-12 shadow-lg">
+        <div className="flex flex-1 items-center justify-between w-full max-w-7xl mx-auto">
+          <Link to="/" className="shrink-0" aria-label="Retail Craft Asia Home">
+            <img className='h-12 md:h-16' src="/logo.png" alt="Retail Craft Asia Logo" />
           </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-4">
-            
-            <Link to="/" className="px-4 py-2 text-base  font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Home</Link>
-            <Link to="/about" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">About Us</Link>
+          <nav className="hidden md:flex space-x-1 lg:space-x-2">
+            <Link 
+              to="/" 
+              className="px-3 py-2 text-sm lg:text-base font-medium text-black hover:bg-neutral-100 hover:text-black rounded-md transition-colors"
+            >
+              Home
+            </Link>
+            <Link 
+              to="/about" 
+              className="px-3 py-2 text-sm lg:text-base font-medium text-black hover:bg-neutral-100 hover:text-black rounded-md transition-colors"
+            >
+              About Us
+            </Link>
             <div
-              className="relative flex flex-row px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black"
+              className="relative group"
               onMouseEnter={() => setActiveDropdown("services")}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <Link to="/services" className=" flex text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">
+              <Link 
+                to="/services" 
+                className="flex items-center px-3 py-2 text-sm lg:text-base font-medium text-black hover:bg-neutral-100 hover:text-black rounded-md transition-colors"
+              >
                 <span>Services</span>
-                
-              <span className='transition-all duration-300 ease-in-out ml-1 px-1 pt-1'>{activeDropdown ?  (<ChevronUp className="w-6 h-6 transition-all duration-300 ease-in-out " />): (<ChevronDown className="w-6 h-6 transition-all  duration-300 ease-in-out" />)}</span>
+                <span className="ml-1">
+                  {activeDropdown ? (
+                    <ChevronUp className="w-4 h-4 lg:w-5 lg:h-5 transition-transform duration-200" />
+                  ) : (
+                    <ChevronDown className="w-4 h-4 lg:w-5 lg:h-5 transition-transform duration-200" />
+                  )}
+                </span>
               </Link>
               {/* Dropdown */}
               <div
-                className={`absolute bg-gray-100 left-0 w-56 top-full mt-1 z-50 shadow-lg transition-all duration-300 ease-in-out ${
-                  activeDropdown === "services" ? "opacity-100" : "opacity-0 pointer-events-none"
+                className={`absolute left-0 w-48 sm:w-52 md:w-56 lg:w-60 mt-1 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50 transition-all duration-200 origin-top ${
+                  activeDropdown === "services" 
+                    ? "opacity-100 scale-100" 
+                    : "opacity-0 scale-95 pointer-events-none"
                 }`}
               >
-                <div className="p-4">
+                <div className="p-3 sm:p-4">
                   {secondaryLinks.map((link, index) => (
-                    <div key={index} className="py-2">
+                    <div key={index} className="py-1.5 sm:py-2">
                       <Link
                         onClick={() => setActiveDropdown(null)}
                         to={link.href}
-                        className="text-base text-black hover:text-gray-400"
+                        className="text-sm sm:text-base text-black hover:text-gray-400 transition-colors"
                       >
                         {link.title}
                       </Link>
@@ -60,67 +80,156 @@ const MainNav = () => {
                 </div>
               </div>
             </div>
-            <Link to="/team" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Leadership Team</Link>
-            <Link to="/Career" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Career</Link>
-            <Link to="/Contact" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">Contact Us</Link>
+            <Link to="/team" className="px-2 sm:px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-black hover:bg-neutral-100 hover:text-black rounded-md transition-colors">Leadership Team</Link>
+            <Link to="/Career" className="px-2 sm:px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-black hover:bg-neutral-100 hover:text-black rounded-md transition-colors">Career</Link>
+            <Link to="/Contact" className="px-2 sm:px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-black hover:bg-neutral-100 hover:text-black rounded-md transition-colors">Contact Us</Link>
             {/* <Link to="/faq" className="px-4 py-2 text-base font-medium text-black hover:hover:bg-neutral-100 hover:text-black">FAQ</Link> */}
             
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-md text-black"
+            className="md:hidden p-2 -mr-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-expanded={mobileMenuOpen}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           >
-            {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </header>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-black/50 transition-opacity ${mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+        className={`fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 ${
+          mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
         onClick={() => setMobileMenuOpen(false)}
       />
-      <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white z-50 transform transition-transform duration-300 ease-in-out ${
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        } p-6 shadow-lg`}
-      >
-        <button className="mb-4 text-black" onClick={() => setMobileMenuOpen(false)}>
-          <X size={28} />
-        </button>
-        <nav className="flex flex-col space-y-4">
-          <Link to="/" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-            <Link to="/about" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
-          {/* <Link to="/services" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>Services</Link> */}
-          <div className="relative">
-        <Link
-         
-          to="/services"
-          className="flex items-center  w-full text-base font-medium text-black py-2"
-        >
-          <span onClick={() => setMobileMenuOpen(false)}>Services</span>
-          <span className='ml-1 pl-1 pt-1'>{isSubMenuOpen ? <ChevronUp className="w-4 h-4" onClick={() => setIsSubMenuOpen(!isSubMenuOpen)} /> : <ChevronDown className="w-4 h-4" onClick={() => setIsSubMenuOpen(!isSubMenuOpen)} />}</span>
-        </Link>
 
-        {/* Sub-Services Dropdown */}
-        {isSubMenuOpen && (
-          <div className="ml-4 mt-2 flex flex-col space-y-2">
-            <Link to="/services/SalesAndMerchandising" className="text-sm text-black hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Sales and Merchandising</Link>
-            <Link to="/services/BrandActivation" className="text-sm text-black hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Brand Activation</Link>
-            <Link to="/services/MarketExpansion" className="text-sm text-black hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Market Expansion</Link>
-            <Link to="/services/DataAndTechnology" className="text-sm text-black hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Data & Technology</Link>
-            <Link to="/services/DigitalMarketing" className="text-sm text-black hover:text-purple-900" onClick={() => setMobileMenuOpen(false)}>Digital Marketing</Link>
+      {/* Mobile Menu Panel */}
+      <div
+        className={`fixed top-0 right-0 h-full w-72 sm:w-80 max-w-[90vw] sm:max-w-full bg-white z-50 transform transition-transform duration-300 ease-in-out overflow-y-auto ${
+          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        } shadow-2xl`}
+      >
+        <div className="flex flex-col h-full">
+          <div className="flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 border-b border-gray-200">
+            <img className="h-8 sm:h-10" src="/logo.png" alt="Retail Craft Asia Logo" />
+            <button
+              className="p-2 -mr-2 text-gray-500 hover:text-gray-700 focus:outline-none"
+              onClick={() => setMobileMenuOpen(false)}
+              aria-label="Close menu"
+            >
+              <X size={24} />
+            </button>
           </div>
-        )}
-      </div>
-      <Link to="/team" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Leadership Team</Link>
-      <Link to="/Career" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Career</Link>
-          <Link to="/Contact" className="text-base font-medium text-black" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
-         
-          {/* <Link to="/faq" className="text-base font-medium text-purple-900" onClick={() => setMobileMenuOpen(false)}>FAQ</Link> */}
-        </nav>
+          
+          <nav className="flex-1 px-4 sm:px-6 py-3 sm:py-4 space-y-1">
+            <Link
+              to="/"
+              className="block px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
+            
+            <Link
+              to="/about"
+              className="block px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About Us
+            </Link>
+
+            {/* Services Dropdown */}
+            <div className="space-y-1">
+              <button
+                className="w-full flex items-center justify-between px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+                onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
+                aria-expanded={isSubMenuOpen}
+              >
+                <span>Services</span>
+                {isSubMenuOpen ? (
+                  <ChevronUp className="w-5 h-5 text-gray-500" />
+                ) : (
+                  <ChevronDown className="w-5 h-5 text-gray-500" />
+                )}
+              </button>
+
+              {/* Sub-Services Dropdown */}
+              {isSubMenuOpen && (
+                <div className="ml-3 sm:ml-4 mt-1 space-y-1 border-l-2 border-gray-100 pl-3 sm:pl-4 py-2">
+                  <Link
+                    to="/services/SalesAndMerchandising"
+                    className="block px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Sales and Merchandising
+                  </Link>
+                  <Link
+                    to="/services/BrandActivation"
+                    className="block px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Brand Activation
+                  </Link>
+                  <Link
+                    to="/services/MarketExpansion"
+                    className="block px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Market Expansion
+                  </Link>
+                  <Link
+                    to="/services/DataAndTechnology"
+                    className="block px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Data & Technology
+                  </Link>
+                  <Link
+                    to="/services/DigitalMarketing"
+                    className="block px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Digital Marketing
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            <Link
+              to="/team"
+              className="block px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Leadership Team
+            </Link>
+            
+            <Link
+              to="/Career"
+              className="block px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Career
+            </Link>
+            
+            <Link
+              to="/Contact"
+              className="block px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Contact Us
+            </Link>
+          </nav>
+          
+          <div className="p-4 sm:p-6 border-t border-gray-200 mt-auto">
+            <p className="text-xs sm:text-sm text-gray-500">
+              © {new Date().getFullYear()} Retail Craft Asia. All rights reserved.
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );

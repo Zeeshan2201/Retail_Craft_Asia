@@ -45,14 +45,14 @@ const HeroSection = () => {
   }
   return (
     <div className=" w-[100%]">
-    <section className="relative  flex items-center  justify-center h-screen  text-center px-6 overflow-hidden" role="banner">
+    <section className="relative flex items-center justify-center h-screen text-center px-4 sm:px-6 lg:px-8 overflow-hidden" role="banner">
     {/* <section className="relative  flex items-center  justify-center h-screen bg-gradient-to-tl from-[#f1ecd0] via-white to-white text-center px-6 overflow-hidden"> */}
     <video 
       autoPlay 
       loop 
       muted 
       playsInline 
-      className="absolute top-20 left-0 w-full h-full object-cover z-10 opacity-90"
+      className="absolute top-16 md:top-20 left-0 w-full h-full object-cover z-10 opacity-90"
       aria-label="Background video showing retail business environment"
     >
       <source src="/Hero.mp4" type="video/mp4" />
@@ -73,7 +73,7 @@ const HeroSection = () => {
 
       {/* Floating Clouds with more dynamic animations */}
       <motion.div
-        className="absolute top-5 left-5 text-gray-300 text-9xl"
+        className="absolute top-5 left-2 sm:left-5 text-gray-300 text-4xl sm:text-6xl md:text-8xl lg:text-9xl"
         initial={{ opacity: 0 }}
         animate={{
           x: [0, 30, 0],
@@ -91,7 +91,7 @@ const HeroSection = () => {
       </motion.div>
 
       <motion.div
-        className="absolute top-10 right-10 text-gray-300 text-[120px]"
+        className="absolute top-8 sm:top-10 right-2 sm:right-10 text-gray-300 text-5xl sm:text-7xl md:text-8xl lg:text-[120px]"
         initial={{ opacity: 0 }}
         animate={{
           x: [-25, 0, -20],
@@ -110,7 +110,7 @@ const HeroSection = () => {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-5 left-1/4 text-gray-300 text-8xl"
+        className="absolute bottom-5 left-1/4 text-gray-300 text-4xl sm:text-6xl md:text-7xl lg:text-8xl"
         initial={{ opacity: 0 }}
         animate={{
           y: [0, 15, 0],
@@ -129,7 +129,7 @@ const HeroSection = () => {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-16 right-1/3 text-gray-300 text-9xl"
+        className="absolute bottom-12 sm:bottom-16 right-1/4 sm:right-1/3 text-gray-300 text-5xl sm:text-7xl md:text-8xl lg:text-9xl"
         initial={{ opacity: 0 }}
         animate={{
           y: [0, -15, 0],
@@ -148,7 +148,7 @@ const HeroSection = () => {
       </motion.div>
 
       <motion.div
-        className="absolute top-1/2 left-10 text-gray-300 text-7xl"
+        className="absolute top-1/2 left-2 sm:left-10 text-gray-300 text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
         initial={{ opacity: 0 }}
         animate={{
           x: [0, 20, 0],
@@ -168,7 +168,7 @@ const HeroSection = () => {
 
       {/* Additional floating clouds for more dynamic feel */}
       <motion.div
-        className="absolute top-1/3 right-20 text-gray-300 text-8xl"
+        className="absolute top-1/3 right-4 sm:right-20 text-gray-300 text-4xl sm:text-6xl md:text-7xl lg:text-8xl"
         initial={{ opacity: 0 }}
         animate={{
           x: [0, -15, 0],
@@ -187,7 +187,7 @@ const HeroSection = () => {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-1/4 left-20 text-gray-300 text-6xl"
+        className="absolute bottom-1/4 left-4 sm:left-20 text-gray-300 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
         initial={{ opacity: 0 }}
         animate={{
           x: [0, 10, 0],
@@ -206,7 +206,7 @@ const HeroSection = () => {
       </motion.div>
 
       {/* Hero Content with staggered animations */}
-      <motion.div variants={container} initial="hidden" animate="show" className="max-w-4xl relative z-30">
+      <motion.div variants={container} initial="hidden" animate="show" className="max-w-xs sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl relative z-30 px-4 sm:px-6">
         {/* Main heading with text coming from left */}
 
 <motion.h1
@@ -214,12 +214,12 @@ const HeroSection = () => {
   initial={{ opacity: 0, scale: 0.9, y: 30 }}
   animate={{ opacity: 1, scale: 1, y: 0 }}
   transition={{ duration: 1, ease: "easeOut" }}
-className="uppercase tracking-wide text-3xl md:text-5xl font-extrabold 
+className="uppercase tracking-wide text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold 
   bg-[linear-gradient(180deg,#FFD700_0%,#FFB700_30%,#E6A700_50%,#FFCC00_70%,#FFD700_100%)] 
   bg-clip-text text-transparent 
   drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] 
   [text-shadow:0_1px_0_#B8860B,0_2px_2px_rgba(0,0,0,0.6)] 
-  text-center md:text-centre"
+  text-center leading-tight sm:leading-normal"
 >
   Transforming Retail Businesses Across
 
@@ -229,7 +229,7 @@ className="uppercase tracking-wide text-3xl md:text-5xl font-extrabold
 
   {/* Highlighted "Asia" with realistic effect */}
   <motion.span
-    className="text-part right font-extrabold text-white ml-2 drop-shadow-[0_0_5px_rgba(255,223,0,0.8)]"
+    className="text-part right font-extrabold text-white ml-1 sm:ml-2 drop-shadow-[0_0_5px_rgba(255,223,0,0.8)] block sm:inline"
     initial={{ x: "120%", opacity: 0, scale: 0.6, rotate: -10 }}
     whileInView={{
       x: 0,
@@ -245,7 +245,7 @@ className="uppercase tracking-wide text-3xl md:text-5xl font-extrabold
 </motion.h1>
 
 <motion.p
-  className="font-semibold text-yellow-600 text-3xl mt-2 flex justify-center items-center"
+  className="font-semibold text-yellow-600 text-lg sm:text-xl md:text-2xl lg:text-3xl mt-2 sm:mt-4 flex justify-center items-center px-2 sm:px-0"
   initial={{ opacity: 1 }}
 >
   <motion.span
@@ -281,12 +281,12 @@ className="uppercase tracking-wide text-3xl md:text-5xl font-extrabold
 </motion.p>
 
         {/* Paragraph with text coming from left */}
-        <motion.p variants={item} className="mt-4 text-lg text-[#D18B00] md:text-xl   [text-shadow:0_1px_0_#B8860B,0_2px_2px_rgba(0,0,0,0.6)] ">
+        <motion.p variants={item} className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl text-[#D18B00] [text-shadow:0_1px_0_#B8860B,0_2px_2px_rgba(0,0,0,0.6)] px-2 sm:px-0">
           Expert consulting services to transform your retail business with innovative solutions and insights.
         </motion.p>
 
         {/* Buttons with enhanced animations */}
-        <motion.div variants={item} className="mt-6 flex justify-center gap-4">
+        <motion.div variants={item} className="mt-6 sm:mt-8 lg:mt-10 flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 lg:gap-6">
           <Link to="/services">
 <motion.button
   whileHover={buttonHover}
@@ -297,7 +297,7 @@ className="uppercase tracking-wide text-3xl md:text-5xl font-extrabold
     y: 0,
     transition: { delay: 1.6, duration: 0.5 },
   }}
-  className="px-6 mr-4 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-semibold rounded-3xl shadow-md flex items-center gap-2 transition-all duration-500 bg-[length:200%_auto] hover:bg-[position:right_center] hover:shadow-lg"
+  className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-semibold rounded-3xl shadow-md flex items-center gap-2 transition-all duration-500 bg-[length:200%_auto] hover:bg-[position:right_center] hover:shadow-lg text-sm sm:text-base w-full sm:w-auto justify-center"
 >
   <span>Get Started</span>
   <motion.span
@@ -324,7 +324,7 @@ className="uppercase tracking-wide text-3xl md:text-5xl font-extrabold
     y: 0,
     transition: { delay: 1.8, duration: 0.5 },
   }}
-  className="px-6 py-3 bg-gray-200/80 text-gray-900 font-semibold rounded-3xl shadow-md flex items-center gap-2 border border-gray-600 hover:bg-gray-100 hover:opacity-100 hover:shadow-lg transition"
+  className="px-4 sm:px-6 py-2.5 sm:py-3 bg-gray-200/80 text-gray-900 font-semibold rounded-3xl shadow-md flex items-center gap-2 border border-gray-600 hover:bg-gray-100 hover:opacity-100 hover:shadow-lg transition text-sm sm:text-base w-full sm:w-auto justify-center"
 >
   <span>Learn More</span>
   <motion.span
@@ -345,7 +345,7 @@ className="uppercase tracking-wide text-3xl md:text-5xl font-extrabold
 
         {/* Floating highlight element for extra visual interest */}
         <motion.div
-          className="absolute -z-10 w-64 h-64 rounded-full bg-yellow-300/20 blur-3xl"
+          className="absolute -z-10 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full bg-yellow-300/20 blur-3xl"
           initial={{ opacity: 0 }}
           animate={{
             opacity: [0.4, 0.7, 0.4],

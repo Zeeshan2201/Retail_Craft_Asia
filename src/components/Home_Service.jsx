@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {
   FaChartLine,
@@ -243,15 +243,15 @@ const ServicesSection = () => {
   }
 
   return (
-    <div className="w-full flex flex-col items-center justify-center bg-white text-gray-800 py-16 px-4">
+    <div className="w-full flex flex-col items-center justify-center bg-white text-gray-800 py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       {/* Heading */}
-    <h1 className="text-3xl md:text-5xl font-bold mb-12 text-[#D18B00] text-center drop-shadow-md">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 md:mb-12 text-[#D18B00] text-center drop-shadow-md">
   OUR SERVICES
 </h1>
 
 
       {/* Carousel */}
-      <div className="relative w-full h-[500px] sm:h-[520px] md:h-[550px] perspective">
+      <div className="relative w-full h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] perspective">
         <div className="relative w-full h-full">
           {services.map((service, i) => {
             const rotation = i * (360 / services.length);
@@ -261,7 +261,7 @@ const ServicesSection = () => {
             return (
               <motion.div
                 key={i}
-                className="absolute w-[260px] sm:w-[280px] md:w-[320px] h-[420px] text-left rounded-2xl border border-gray-300 flex flex-col px-6 py-6 bg-white"
+                className="absolute w-[240px] sm:w-[260px] md:w-[280px] lg:w-[320px] h-[350px] sm:h-[380px] md:h-[400px] lg:h-[420px] text-left rounded-xl sm:rounded-2xl border border-gray-300 flex flex-col px-4 sm:px-5 md:px-6 py-4 sm:py-5 md:py-6 bg-white"
                 style={{
                   boxShadow: "0 0 25px rgba(255, 215, 0, 0.6)",
                   left: "50%",
@@ -279,15 +279,19 @@ const ServicesSection = () => {
                 }}
               >
                 {/* Icon */}
-                <div className="mb-4 self-center">{service.icon}</div>
+                <div className="mb-3 sm:mb-4 self-center">
+                  <div className="text-3xl sm:text-4xl md:text-5xl text-yellow-600">
+                    {React.cloneElement(service.icon, { className: "text-3xl sm:text-4xl md:text-5xl text-yellow-600" })}
+                  </div>
+                </div>
 
                 {/* Title */}
-                <h2 className="text-lg md:text-xl font-semibold mb-3 text-yellow-600 text-center w-full">
+                <h2 className="text-base sm:text-lg md:text-xl font-semibold mb-2 sm:mb-3 text-yellow-600 text-center w-full leading-tight">
                   {service.category}
                 </h2>
 
                 {/* Bullet List */}
-                <ul className="list-disc pl-6 space-y-2 text-gray-700 text-sm md:text-base flex-1">
+                <ul className="list-disc pl-4 sm:pl-5 md:pl-6 space-y-1.5 sm:space-y-2 text-gray-700 text-xs sm:text-sm md:text-base flex-1">
                   {service.points.map((point, index) => (
                     <li key={index} className="leading-relaxed">
                       {point}
@@ -296,10 +300,10 @@ const ServicesSection = () => {
                 </ul>
 
                 {/* Button pinned at bottom */}
-                <div className="mt-6 w-full flex justify-center">
+                <div className="mt-4 sm:mt-6 w-full flex justify-center">
                   <a
                     href={service.link}
-                    className="px-4 py-2 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-medium hover:scale-105 transition-transform"
+                    className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-medium hover:scale-105 transition-transform text-xs sm:text-sm md:text-base"
                   >
                     Learn More
                   </a>
@@ -311,18 +315,18 @@ const ServicesSection = () => {
       </div>
 
       {/* Controls */}
-      <div className="flex gap-6 mt-10">
+      <div className="flex gap-4 sm:gap-6 mt-6 sm:mt-8 md:mt-10">
         <button
           onClick={rotateLeft}
-          className="p-3 rounded-full bg-yellow-100 hover:bg-yellow-200 shadow-lg transition"
+          className="p-2 sm:p-3 rounded-full bg-yellow-100 hover:bg-yellow-200 shadow-lg transition-all duration-200"
         >
-          <ChevronLeft className="w-6 h-6 text-yellow-600" />
+          <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-600" />
         </button>
         <button
           onClick={rotateRight}
-          className="p-3 rounded-full bg-yellow-100 hover:bg-yellow-200 shadow-lg transition"
+          className="p-2 sm:p-3 rounded-full bg-yellow-100 hover:bg-yellow-200 shadow-lg transition-all duration-200"
         >
-          <ChevronRight className="w-6 h-6 text-yellow-600" />
+          <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-600" />
         </button>
       </div>
     </div>

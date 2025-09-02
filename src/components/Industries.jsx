@@ -604,7 +604,7 @@ const IndustryCard = ({ title, description, index, isInView }) => {
         scale: 1.08,
         transition: { duration: 0.3 },
       }}
-      className="relative md:w-[25vw] mb-12 w-full overflow-hidden rounded-2xl"
+      className="relative w-full sm:w-[45vw] md:w-[30vw] lg:w-[25vw] xl:w-[22vw] mb-6 sm:mb-8 md:mb-10 lg:mb-12 overflow-hidden rounded-2xl"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
     >
@@ -623,7 +623,7 @@ const IndustryCard = ({ title, description, index, isInView }) => {
       >
         {/* Actual card */}
         <motion.div
-          className="bg-white shadow-xl rounded-2xl p-8 text-center border flex flex-col items-center h-full z-10 relative"
+          className="bg-white shadow-xl rounded-2xl p-4 sm:p-6 md:p-7 lg:p-8 text-center border flex flex-col items-center h-full z-10 relative"
           animate={{
             boxShadow: isHovered
               ? "0 25px 40px rgba(255, 200, 50, 0.5)"
@@ -632,7 +632,7 @@ const IndustryCard = ({ title, description, index, isInView }) => {
         >
           {/* Icon Circle */}
           <motion.div
-            className="bg-gradient-to-r from-yellow-50 to-white p-4 rounded-full w-28 h-28 flex items-center justify-center shadow-md mb-4 border-2 border-yellow-500"
+            className="bg-gradient-to-r from-yellow-50 to-white p-2 sm:p-3 md:p-4 rounded-full w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 flex items-center justify-center shadow-md mb-3 sm:mb-4 border-2 border-yellow-500"
             animate={{
               rotate: isHovered ? [0, 8, -8, 0] : 0,
               scale: isHovered ? [1, 1.15, 1] : 1,
@@ -651,7 +651,7 @@ const IndustryCard = ({ title, description, index, isInView }) => {
 
           {/* Title */}
           <motion.h3
-            className="text-3xl font-semibold mt-2 text-yellow-600 tracking-wide"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mt-1 sm:mt-2 text-yellow-600 tracking-wide"
             animate={{
               y: isHovered ? [0, -6, 0] : 0,
               color: isHovered ? "#b45309" : "#ca8a04",
@@ -663,7 +663,7 @@ const IndustryCard = ({ title, description, index, isInView }) => {
 
           {/* Underline */}
           <motion.div
-            className="h-1 w-12 bg-yellow-400 rounded-full my-3 mx-auto"
+            className="h-1 w-8 sm:w-10 md:w-12 bg-yellow-400 rounded-full my-2 sm:my-3 mx-auto"
             animate={{
               width: isHovered ? 90 : 48,
               backgroundColor: isHovered ? "#fbbf24" : "#facc15",
@@ -673,7 +673,7 @@ const IndustryCard = ({ title, description, index, isInView }) => {
 
           {/* Description */}
           <motion.p
-            className="text-black text-lg mt-2 leading-relaxed"
+            className="text-black text-sm sm:text-base md:text-lg mt-1 sm:mt-2 leading-relaxed px-2 sm:px-0"
             animate={{
               opacity: isHovered ? 1 : 0.9,
             }}
@@ -785,7 +785,7 @@ export default function AnimatedIndustriesGrid() {
           className="text-center mb-16"
         >
           <motion.h2
-            className="text-5xl font-semibold text-yellow-600 uppercase tracking-wide"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-yellow-600 uppercase tracking-wide px-4 sm:px-0"
             animate={{
               textShadow: [
                 "0 4px 6px rgba(0, 0, 0, 0.1)",
@@ -817,8 +817,7 @@ export default function AnimatedIndustriesGrid() {
 
         <div
           ref={gridRef}
-          // className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 lg:gap-10"
-          className="flex justify-evenly flex-wrap md:flex-row flex-col"
+          className="flex justify-center items-start flex-wrap gap-4 sm:gap-6 md:gap-8 lg:gap-10"
         >
           {industries.map((industry, index) => (
             <IndustryCard

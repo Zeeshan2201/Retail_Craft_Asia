@@ -129,27 +129,29 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="flex relative items-center justify-center md:h-screen h-[100vh] bg-gradient-to-br from-purple-900 via-purple-900 via-[40%]  to-[#d4af37] px-10">
-      <div className=" md:w-full md:h-auto h-[40%] md:overflow-auto absolute top-0 left-0">
+    <section className="flex relative items-center justify-center min-h-screen bg-gradient-to-br from-purple-900 via-purple-900 via-[40%] to-[#d4af37] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
+      <div className="w-full h-[40%] sm:h-[45%] md:w-full md:h-auto md:overflow-auto absolute top-0 left-0">
         <AnimatedWave/>
       </div>
         
-      <div className="flex z-10 w-full max-w-5xl items-center justify-between">
-        <div className="text-white max-w-lg">
-          <h1 className="text-5xl uppercase font-bold">Innovative Retail Solutions, Crafted to Perfection</h1>
-          <p className="mt-4 text-lg">
-          We design and deliver cutting-edge retail solutions that enhance customer experiences and drive business success.
+      <div className="flex flex-col lg:flex-row z-10 w-full max-w-7xl items-center justify-between gap-8 lg:gap-12 py-8 sm:py-12 md:py-16 lg:py-20">
+        <div className="text-white w-full lg:max-w-lg xl:max-w-xl text-center lg:text-left">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight">
+            Innovative Retail Solutions, Crafted to Perfection
+          </h1>
+          <p className="mt-3 sm:mt-4 md:mt-5 lg:mt-6 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
+            We design and deliver cutting-edge retail solutions that enhance customer experiences and drive business success.
           </p>
-          <div className="mt-6 flex gap-4">
-            <Link to="/services" className="px-6 py-3 bg-blue-500 border border-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg">
+          <div className="mt-4 sm:mt-5 md:mt-6 lg:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+            <Link to="/services" className="px-4 sm:px-5 md:px-6 lg:px-7 xl:px-8 py-2 sm:py-2.5 md:py-3 lg:py-3.5 bg-blue-500 border border-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg text-sm sm:text-base md:text-lg transition-colors duration-300">
               Get Started
             </Link>
-            <Link to="/about" className="px-6 py-3 border border-white hover:bg-white hover:text-black text-white font-bold rounded-lg">
+            <Link to="/about" className="px-4 sm:px-5 md:px-6 lg:px-7 xl:px-8 py-2 sm:py-2.5 md:py-3 lg:py-3.5 border border-white hover:bg-white hover:text-black text-white font-bold rounded-lg text-sm sm:text-base md:text-lg transition-all duration-300">
               Learn More
             </Link>
           </div>
         </div>
-        <div className="relative md:block hidden pr-40 mt-10">
+        <div className="relative hidden md:block lg:block xl:block md:pr-10 lg:pr-20 xl:pr-40 md:mt-5 lg:mt-8 xl:mt-10 md:scale-75 lg:scale-90 xl:scale-100">
           <Container>
             <Cube color={colors[currentColor]} />
             <Cube color={colors[currentColor]} />

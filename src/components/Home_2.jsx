@@ -19,14 +19,14 @@ const IndustrySection = () => {
   return (
     <motion.section
       ref={sectionRef}
-      className="relative flex flex-col md:flex-row items-center justify-between px-4 md:px-20 py-8 md:py-16 mb-10 bg-gradient-to-b from-yellow-50 to-gray-50 overflow-hidden"
+      className="relative flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 md:py-16 lg:py-20 mb-6 sm:mb-8 md:mb-10 bg-gradient-to-b from-yellow-50 to-gray-50 overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
       {/* Animated background elements */}
       <motion.div
-        className="absolute -top-20 -left-20 w-64 h-64 rounded-full bg-yellow-200 opacity-20 blur-3xl"
+        className="absolute -top-10 sm:-top-20 -left-10 sm:-left-20 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full bg-yellow-200 opacity-20 blur-3xl"
         animate={{
           scale: [1, 1.2, 1],
           rotate: [0, 10, 0],
@@ -38,7 +38,7 @@ const IndustrySection = () => {
         }}
       />
       <motion.div
-        className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-yellow-400 opacity-10 blur-3xl"
+        className="absolute bottom-0 right-0 w-40 h-40 sm:w-60 sm:h-60 md:w-80 md:h-80 rounded-full bg-yellow-400 opacity-10 blur-3xl"
         style={{ y: backgroundY }}
         animate={{
           scale: [1, 1.3, 1],
@@ -51,14 +51,14 @@ const IndustrySection = () => {
       />
 
       {/* Left Content */}
-      <div className="w-full md:max-w-2xl mb-12 md:mb-0 z-10">
+      <div className="w-full lg:max-w-2xl mb-8 sm:mb-12 lg:mb-0 z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
          <motion.h2
-  className="uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-semibold text-[#D18B00] text-center md:text-left"
+  className="uppercase tracking-wide drop-shadow-lg text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#D18B00] text-center lg:text-left"
   initial={{ opacity: 0, x: -50 }}
   animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
   transition={{ duration: 0.6, delay: 0.2 }}
@@ -68,7 +68,7 @@ const IndustrySection = () => {
 
 
          <motion.h3
-  className="uppercase tracking-wide drop-shadow-lg text-3xl md:text-5xl font-semibold text-gray-900 mt-2 text-center md:text-left"
+  className="uppercase tracking-wide drop-shadow-lg text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mt-2 text-center lg:text-left"
   initial={{ opacity: 0, x: -50 }}
   animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
   transition={{ duration: 0.6, delay: 0.4 }}
@@ -91,7 +91,7 @@ const IndustrySection = () => {
 
 
           <motion.p
-            className="mt-8 text-base md:text-lg text-gray-700 text-center md:text-left"
+            className="mt-6 sm:mt-8 text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 text-center lg:text-left leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6, delay: 0.8 }}
@@ -119,13 +119,13 @@ const IndustrySection = () => {
       </div>
 
 {/* Right Content - Single Image with premium animation */}
-<div className="relative w-full md:w-1/2 flex justify-center md:justify-end h-[300px] md:h-[60vh] z-10">
+<div className="relative w-full lg:w-1/2 flex justify-center lg:justify-end h-[250px] sm:h-[300px] md:h-[400px] lg:h-[60vh] z-10">
   <motion.div
-    className="relative w-[300px] md:w-[40vw] h-full flex justify-center items-center"
+    className="relative w-[280px] sm:w-[320px] md:w-[360px] lg:w-[40vw] h-full flex justify-center items-center"
   >
     {/* Premium Glassmorphic Background */}
     <motion.div
-      className="absolute w-80 h-80 md:w-96 md:h-96 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl"
+      className="absolute w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl sm:rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl"
       initial={{ scale: 0.95, opacity: 0.7 }}
       animate={{ scale: [0.95, 1.02, 0.98], opacity: [0.7, 0.85, 0.75] }}
       transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
@@ -147,7 +147,7 @@ const IndustrySection = () => {
       <motion.img
         src={Mem_1 || "/placeholder.svg"}
         alt="Industry Expert"
-        className="w-72 h-72 md:w-96 md:h-96 rounded-3xl border border-white/30 shadow-2xl object-cover transition-all duration-500"
+        className="w-60 h-60 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-2xl sm:rounded-3xl border border-white/30 shadow-2xl object-cover transition-all duration-500"
         animate={{ y: [0, -10, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
       />
